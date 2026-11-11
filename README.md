@@ -118,4 +118,6 @@ Cite the original MBMA report of each test you use. The citation is in the `# So
 
 ## License
 
-The test data is compiled from MBMA research reports; cite the original reports when you use it. The code in [`pipeline/`](pipeline/) and [`docs/report/`](docs/report/) is MIT-licensed (see [LICENSE](LICENSE)).
+The compiled data and documentation are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) (see [LICENSE-DATA](LICENSE-DATA)). This covers everything in [`data/`](data/), [`source_tables/`](source_tables/), [`concordance/`](concordance/), [`review/`](review/) and [`docs/`](docs/). You may share and adapt it for any purpose, including commercially, as long as you give credit. Credit means citing the database (see [CITATION.cff](CITATION.cff)) and the original MBMA report of each test you use. The test results themselves come from those MBMA research reports.
+
+The code in [`pipeline/`](pipeline/) and the scripts in [`docs/report/`](docs/report/) are MIT-licensed (see [LICENSE](LICENSE)).

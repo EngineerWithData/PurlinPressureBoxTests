@@ -12,6 +12,7 @@ authors:
     orcid: https://orcid.org/0000-0001-6589-7419
 repository-code: https://github.com/EngineerWithData/PurlinPressureBoxTests
 version: 1.0.0
+license: CC-BY-4.0
 date-released: 2026-11-10
 keywords:
   - cold-formed steel
