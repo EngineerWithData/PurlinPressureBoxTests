@@ -1,0 +1,38 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 4-2, pp.44
+# Tag: MBMA_9410_TABLE42_SIMTESTAMERICANCONC
+# Content: Simulated (component) concentric-load pullover tests on American panels (Fy = 80 ksi), 11/1/94 to 12/1/94, giving total and per-screw failure loads.
+# Data basis: measured: load cell/actuator load at failure in the simulated component test apparatus
+# Units: span_in in inches; tl_load_lbs and ld_per_scw_lbs in pounds; th_gage in gage
+# Column definitions:
+#   test_no = test specimen number
+#   spacing = screw arrangement: F = one screw at center of each outer valley, C = two screws in center valley
+#   span_in = simulated panel span between supports, inches
+#   tl_load_lbs = total load on the two fasteners at failure, pounds
+#   ld_per_scw_lbs = load per screw (total load divided by two), pounds per screw
+#   comments = observed behaviour and failure mode as printed
+#   th_gage = panel sheet thickness, gage
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: Tests 20 and 21 are printed on one line with two spans ("21 & 17") and approximate loads ("Apx. 1500", "Apx. 750"); preserved verbatim. The printed typo "buckliing" in test 25 is preserved.
+# F = 1 screw placed at center of each outer valley; C = 2 screws placed in center valley.
+# Multi-line printed comments have been joined into one string per row.
+test_no,spacing,span_in,tl_load_lbs,ld_per_scw_lbs,comments,th_gage
+15,F,21,1200,600,Minor plate buckling. Uneven pullover.,26
+16,F,21,2000,1000,Minor plate buckling. Uneven pullover.,26
+17,F,21,1900,950,Minor plate buckling. Uneven pullover.,26
+18,F,21,2000,1000,Minor plate buckling. Uneven pullover.,26
+19,F,21,2100,1050,Minor plate buckling. Uneven pullover.,26
+20 & 21,C,21 & 17,Apx. 1500,Apx. 750,Massive plate buckling. No failure. No pullover.,26
+22,C,13,2000,1000,Massive plate buckling. Even pullover.,26
+23,C,13,2300,1150,Massive plate buckling. Even pullover.,26
+24,C,13,1900,950,Massive plate buckling. Even pullover.,26
+25,C,13,2500,1250,Moderate plate buckliing. Even pullover.,24
+26,C,13,2400,1200,Moderate plate buckling. Even pullover.,24
+27,C,13,2400,1200,Moderate plate buckling. Even pullover.,24
+28,C,13,2100,1050,Moderate plate buckling. Even pullover.,24
+29,F,13,2200,1100,Minor plate buckling. Uneven pullover.,24
+30,F,13,1700,850,Poor Test Results.,24
+31,F,13,2480,1240,Minor plate buckling. Uneven pullover.,24
+32,F,13,2460,1230,Minor plate buckling. Uneven pullover.,24
+33,F,13,2500,1250,Minor plate buckling. Uneven pullover.,24

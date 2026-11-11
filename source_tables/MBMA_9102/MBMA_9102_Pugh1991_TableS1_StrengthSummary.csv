@@ -1,0 +1,55 @@
+# Source: MBMA_9102 | Pugh, A.D. and Murray, T.M. (1991), Table S1, pp.25, 29, 36, 40, 50, 54, 66, 70, 82, 86, 96-99
+# Tag: MBMA_9102_TABLES1_STRENGTHSUMMARY
+# Content: Measured ultimate uplift (vacuum) loads of the eight full-scale standing seam roof system tests performed in 1991 (four simple-span base tests and four corresponding three-span confirming tests), with the base-test moments, failure modes and base-test-method predictions reported for each.
+# Data basis: measured: vacuum-chamber uniform uplift failure loads read from a U-tube manometer and reported on the individual test data sheets; the base-test moments M_US, the predicted loads w_P3 and the actual-to-predicted ratios are values computed by the report from those measurements, and yield stresses are measured tensile-coupon values
+# Units: see column headers
+# Column definitions:
+#   test_id = test designation as printed in the report
+#   load_direction = direction of applied load (gravity or uplift)
+#   section_type = purlin cross-section shape (C or Z)
+#   depth_in = measured purlin web depth(s), in. (range over the purlins of the assembly)
+#   thickness_in = measured purlin thickness(es), in. (range over the purlins of the assembly)
+#   span_ft = individual span length, ft
+#   n_spans = number of spans in the test assembly
+#   n_purlin_lines = number of purlin lines in the test assembly
+#   panel_type = roof panel/deck type as printed (all standing seam panels)
+#   bracing = lateral bracing configuration of the purlins
+#   failure_load_as_printed = failure (ultimate) uniform load per purlin line exactly as printed on the test data sheet / in Appendix E
+#   failure_load_unit = unit of the failure load exactly as printed
+#   failure_moment_as_printed = maximum base-test moment M_US exactly as printed in Appendix E (simple-span tests only)
+#   failure_moment_unit = unit of the failure moment exactly as printed (k" = in.-kips)
+#   failure_mode = failure mode as classified in Table 3.2/3.3 (authoritative; Distortional/Local defined in Sections 3.3-3.4)
+#   value_source = where in the report the recorded failure load is stated
+#   pages = PDF page number(s) where the recorded value is stated
+#   failure_load_table_3_2_plf = failure load for the same test as printed in Table 3.2 (and Table 3.3), plf
+#   failure_mode_data_sheet = failure mode as printed on the individual test data sheet
+#   yield_stress_ksi = measured tensile-coupon yield stress of the purlin steel used in the prediction, ksi
+#   predicted_failure_load_w_p3_plf = base test method predicted multispan failure load w_P3, plf (multispan tests only)
+#   ratio_w_u3_over_w_p3 = actual-to-predicted failure load ratio as printed
+#   clip_type = standing seam clip used
+#   purlin_spacing = purlin line spacing on center as printed
+#   lap_length_in = total lap length at interior supports as printed in Table 2.1, in.
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 14 cells checked (AI, 2026-11-04): 14 correct, 0 errors, 6 unreadable; P(accuracy ≥ 0.8) = 96.5%, ≥ 0.9) = 79.4%, ≥ 0.95) = 53.7%
+# TEXT SOURCE: read from page images by the model (cached transcription)
+# ANOMALY FLAG: Failure loads printed in the appendix test summaries and in Appendix E differ systematically from those in Table 3.2/Table 3.3: base tests are 5.00 plf lower in the appendices (e.g. 102.92 vs 107.92 plf) and multispan tests are 6.00-7.02 plf lower (e.g. 192.16 vs 199.16 plf); the report gives no explanation. Table 4.1 lists M_US = 85.2 k" for UZTR/F 1991, whereas Appendix E computes 85.86 k". In Table 3.3 the 1991 UCRP/S (O) row prints 96.6/189.1 plf, which duplicates the UZTR/F 1991 values and conflicts with Tables 3.2, 4.1, 4.3 and Appendix B. The UZTR/F-1 1991 data sheet states "Pan Type Deck" although the test designation (fourth letter R) and Table 2.1 specify Rib type deck.
+# All tests are uplift (vacuum chamber) tests; negative moment produces tension in the purlin top flange. All roof panels are 24 ga. standing seam (pan or rib profile).
+# Failure loads are uniform loads per purlin line in plf; tributary width equals the purlin spacing (5'-0" o.c. for tests with purlins facing the same direction, 3'-7" o.c. for tests with opposed purlins). Panel lengths were chosen so the uplift load is equally distributed to each purlin line.
+# The report does not state whether the recorded failure loads include dead load. STRENGTH VALUE NOTE (Cris Moen, 2026-10-27; open question MBMA_9102-Q01): failure_load_as_printed is the data-sheet / Appendix E load used in Table 4.1 and all base-test calculations; the Table 3.2/3.3 values exceed the data-sheet values by a constant 5 plf (base tests) and about 6-7 plf (multispan tests); the report does not explain the offset (CORRECTED 2026-10-27, open question MBMA_9102-Q01: earlier wording speculated on a self-weight allowance). Both sets of values are given here (failure_load_as_printed from the appendix data sheets / Appendix E; failure_load_table_3_2_plf from Table 3.2).
+# depth_in and thickness_in are ranges assembled from the per-purlin measured dimensions printed on the test summary sheets and the Purlins program input pages; no values were computed.
+# span_ft 23.5 corresponds to the printed span of 23'-6"; base test spans are printed as 25 ft.
+# Failure in all base tests occurred at midspan and in the multispan tests about 10 ft from the exterior rafter, i.e. near the maximum negative moment location (Section 3.3).
+# UZTR/F-3 1991 terminated by buckling of the deck at the clips rather than by purlin failure, so no actual-to-predicted ratio was computed (Appendix E prints "DECK FAILURE").
+# Base-test (one-span) rows have no w_P3 prediction because the base test is itself the predictor; M_US is the maximum base-test moment computed as w_US L^2/8.
+# FAILURE MODE NOTE: failure_mode now holds the Table 3.2/3.3 classification, which is authoritative (open question MBMA_9102-Q02). The data sheets print 'Local Buckle' for the rafter-braced UZRP/S and UCRP/S (O) tests that Tables 3.2/3.3 classify as Distortional (distortional buckling after significant lateral deflection, pp. 25-26); the data-sheet labels are kept in failure_mode_data_sheet.
+# CORRECTION: UZTR/F-1 1991 panel_type corrected from 'Pan Type Deck' (data sheet, p.82) to 'Rib Type Deck' (open question MBMA_9102-Q03, approved by Cris Moen 2026-10-26). Table 2.1 (p.13), the test ID (4th letter R) and the UZTR/F-3 confirming sheet (p.86) all give rib deck; the p.82 line duplicates the UZTP/F sheets (pp.66, 70) and is treated as a copy error.
+# CORRECTION NOTE: MBMA_9702 (Murray 1997, pp. 3, 7-8) states that the Virginia Tech uplift failure loads in MBMA_9001 and MBMA_9102 were reported with an error in the tributary area, and its Table 1 prints corrected loads. failure_load_as_printed keeps this report's measured value; failure_load_corrected_9702_plf holds the MBMA_9702 Table 1 value where the set match is clear (same designation; confirming loads agree within about 2%). Base-test loads drop 8-27% while confirming loads barely change. Left blank for the two U-Z-T-P/F (O) sets (MBMA_9702 lists the designation twice and the confirming loads 173.2 and 171.2 do not map cleanly to MBMA_9001 169.2 / MBMA_9102 171.18) and for tests not in MBMA_9702 Table 1 (open question MBMA_9702-Q06).
+test_id,load_direction,section_type,depth_in,thickness_in,span_ft,n_spans,n_purlin_lines,panel_type,bracing,failure_load_as_printed,failure_load_unit,failure_moment_as_printed,failure_moment_unit,failure_mode,value_source,pages,failure_load_table_3_2_plf,failure_mode_data_sheet,yield_stress_ksi,predicted_failure_load_w_p3_plf,ratio_w_u3_over_w_p3,clip_type,purlin_spacing,lap_length_in,failure_load_corrected_9702_plf
+UZRP/S-1 1991,uplift,Z,"8-1/8, 8-1/16",0.080,25,1,2,Pan Type Deck,Bracing at Supports Only (rafter),102.92,plf,96.49,"k""",Distortional,text (Appendix A.1 test summary; Appendix E),"36, 96",107.92,Local Buckle,67.3,,,Two Piece Sliding,"5'-0"" O.C.",,87.8
+UZRP/S-3 1991,uplift,Z,7-13/16 to 8-1/4,0.079 to 0.081,23.5,3,3,Pan Type Deck,Bracing at Supports Only (rafter),192.16,plf,,,Distortional,text (Appendix A.5 test summary; Appendix E),"40, 96",199.16,Local Buckle,64.2,185.77,1.03,Two Piece Sliding,"5'-0"" O.C.",28.0,190.2
+UCRP/S-1 (O) 1991,uplift,C,9,0.062,25,1,2,Pan Type Deck,Bracing at Supports Only (rafter),66.67,plf,62.50,"k""",Distortional,text (Appendix B.1 test summary; Appendix E),"50, 97",71.67,Local Buckle,50.8,,,Two Piece Sliding,"5'-0"" O.C.",,56.9
+UCRP/S-3 (O) 1991,uplift,C,8-13/16 to 9-3/16,0.059 to 0.061,23.5,3,4,Pan Type Deck,Bracing at Supports Only (rafter),108.52,plf,,,Distortional,text (Appendix B.5 test summary; Appendix E),"54, 97",115.50,Local Buckle,49.5,123.01,0.882,Two Piece Sliding,"3'-7"" O.C.",57.0,108.5
+UZTP/F-1 (O) 1991,uplift,Z,"8-7/16, 8-1/2",0.069,25,1,2,Pan Type Deck,Third Point Bracing (plus rafter),95.08,plf,89.14,"k""",Local,text (Appendix C.1 test summary; Appendix E),"66, 98",100.08,Local Buckle,61.3,,,One Piece Fixed,"5'-0"" O.C.",,
+UZTP/F-3 (O) 1991,uplift,Z,8-3/8 to 8-9/16,0.067 to 0.071,23.5,3,4,Pan Type Deck,Third Point Bracing (plus rafter),171.18,plf,,,Local,text (Appendix C.5 test summary; Appendix E),"70, 98",178.20,Local Buckle,63.4,173.66,0.986,One Piece Fixed,"3'-7"" O.C.",33.0,
+UZTR/F-1 1991,uplift,Z,8-1/16,0.073,25,1,2,Rib Type Deck,Third Point Bracing (plus rafter),91.58,plf,85.86,"k""",Local,text (Appendix D.1 test summary; Appendix E),"82, 99",96.58,Local Buckle,57.5,,,One Piece Fixed,"5'-0"" O.C.",,
+UZTR/F-3 1991,uplift,Z,8 to 8-1/16,0.073,23.5,3,3,Rib Type Deck,Third Point Bracing (plus rafter),183.08,plf,,,Deck,text (Appendix D.5 test summary; Appendix E),"86, 99",189.08,Deck Failure,56.4,170.22,DECK FAILURE,One Piece Fixed,"5'-0"" O.C.",66.0,

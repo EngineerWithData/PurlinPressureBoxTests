@@ -1,0 +1,2241 @@
+{
+ "dataset_title": "MBMA Full-Scale C- and Z-Purlin Roof System Test Database (1976-1997)",
+ "derivations": [
+  {
+   "note": "12 inches per foot; a pure unit conversion, exact by definition. Used for MBMA_8702, which tabulates span only in inches (237.5 in.).",
+   "op": "divide",
+   "operand_a": "span_inches",
+   "operand_b": "12",
+   "target": "span_ft"
+  },
+  {
+   "note": "1 kip-ft = 12 kip-in; pure unit conversion, exact by definition. Used for MBMA_9501 and MBMA_8404-style moments printed in ft-kips so they can be compared with kip-in moments from MBMA_9001/9102/9105.",
+   "op": "multiply",
+   "operand_a": "failure_moment_ft_kips",
+   "operand_b": "12",
+   "target": "failure_moment_kip_in"
+  },
+  {
+   "note": "A uniform line load on one purlin line is by definition the chamber pressure times the plan width of roof tributary to that purlin line (MBMA_7603 Table S1 tributary-width note: 3.167 ft per purlin). Exact, not a fit.",
+   "op": "multiply",
+   "operand_a": "chamber_pressure_psf",
+   "operand_b": "tributary_width_ft",
+   "target": "failure_load_plf"
+  },
+  {
+   "note": "The lap-to-depth ratio is defined as lap length divided by web depth (MBMA_9105 Table 2.1), so the lap length is the ratio times the depth. Fills the gap only where lap length is not tabulated.",
+   "op": "multiply",
+   "operand_a": "lap_to_depth_ratio",
+   "operand_b": "depth_in",
+   "target": "lap_length_in"
+  }
+ ],
+ "groups": [
+  {
+   "description": "Simple-span (single-span) assemblies of two C or Z purlin lines with a through-fastened (screwed) roof panel on the tension flange, loaded to failure by chamber suction; all rows share the same member type, panel attachment and span condition, so their strengths are directly comparable. Includes the MBMA_1103 wall girt tests (same test arrangement).",
+   "id_columns": [
+    "test_id",
+    "section_type",
+    "load_direction",
+    "panel_type",
+    "bracing",
+    "n_spans",
+    "n_purlin_lines",
+    "purlin_orientation",
+    "insulation_present"
+   ],
+   "key": "simple_span_through_fastened_uplift",
+   "members": [
+    {
+     "code_tag": "MBMA_1103",
+     "primary_table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+     "specimen_id_column": "test_id",
+     "column_map": [
+      {
+       "column": "test_id",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_id"
+      },
+      {
+       "column": "load_direction",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "load_direction"
+      },
+      {
+       "column": "section_type",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "section_type"
+      },
+      {
+       "column": "panel_type",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_type"
+      },
+      {
+       "column": "bracing",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "bracing"
+      },
+      {
+       "column": "n_spans",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_spans"
+      },
+      {
+       "column": "n_purlin_lines",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_purlin_lines"
+      },
+      {
+       "column": "span_ft",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "span_ft"
+      },
+      {
+       "column": "depth_in",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "depth_in"
+      },
+      {
+       "column": "thickness_in",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "thickness_in"
+      },
+      {
+       "column": "insulation_type",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "insulation_material"
+      },
+      {
+       "column": "insulation_thickness_in",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "insulation_thickness_in"
+      },
+      {
+       "column": "tributary_width_ft",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "tributary_width_ft"
+      },
+      {
+       "column": "failure_load_plf",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_load_plf"
+      },
+      {
+       "column": "r_factor",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "r_factor"
+      },
+      {
+       "column": "failure_mode",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_mode"
+      },
+      {
+       "column": "yield_stress_fy_ksi",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "yield_stress_ksi"
+      },
+      {
+       "column": "effective_section_modulus_se_in3",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "effective_section_modulus_in3"
+      },
+      {
+       "column": "screw_location_c_in",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "screw_location_c_in"
+      },
+      {
+       "column": "failure_load_as_printed",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "chamber_pressure_psf"
+      },
+      {
+       "column": "failure_moment_as_printed",
+       "table": "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_moment_kip_in"
+      }
+     ],
+     "constants": [],
+     "lookup_tables": [],
+     "row_filters": [],
+     "note": "50 vacuum-box tests of simple-span through-fastened wall girts (Gao and Moen 2011), tested the same way as the roof purlin tests. chamber_pressure_psf is the printed failure pressure; failure_load_plf is a curator hand calculation from Eq. 14 (pressure x 6.79 ft tributary width plus panel and girt self weight, which add to the suction). failure_moment_kip_in is M_t as printed (Eqs. 14-15). r_factor is raw, as printed, at the measured screw location C (not normalised to C = B/2). thickness_in is the measured Table 7 value. Z8D-1 failed by panel bending and has no strength values."
+    },
+    {
+     "code_tag": "MBMA_9501",
+     "column_map": [
+      {
+       "column": "test_id",
+       "table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_id"
+      },
+      {
+       "column": "load_direction",
+       "table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+       "variable": "load_direction"
+      },
+      {
+       "column": "section_type",
+       "table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+       "variable": "section_type"
+      },
+      {
+       "column": "panel_type",
+       "table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_type"
+      },
+      {
+       "column": "bracing",
+       "table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+       "variable": "bracing"
+      },
+      {
+       "column": "n_spans",
+       "table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_spans"
+      },
+      {
+       "column": "n_purlin_lines",
+       "table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_purlin_lines"
+      },
+      {
+       "column": "span_ft",
+       "table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+       "variable": "span_ft"
+      },
+      {
+       "column": "depth_in",
+       "table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+       "variable": "depth_in"
+      },
+      {
+       "column": "thickness_in",
+       "table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+       "variable": "thickness_in"
+      },
+      {
+       "column": "b1_in",
+       "table": "MBMA_9501_TABLEA1_FAILEDMEMBERDIMENSIONS",
+       "variable": "flange_width_in"
+      },
+      {
+       "column": "l1_in",
+       "table": "MBMA_9501_TABLEA1_FAILEDMEMBERDIMENSIONS",
+       "variable": "lip_length_in"
+      },
+      {
+       "column": "theta1_deg",
+       "table": "MBMA_9501_TABLEA1_FAILEDMEMBERDIMENSIONS",
+       "variable": "lip_angle_deg"
+      },
+      {
+       "column": "insulation_in",
+       "table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+       "variable": "insulation_thickness_in"
+      },
+      {
+       "column": "yield_strength_ksi",
+       "table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+       "variable": "yield_stress_ksi"
+      },
+      {
+       "column": "tensile_strength_ksi",
+       "table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+       "variable": "tensile_strength_ksi"
+      },
+      {
+       "column": "elongation_percent",
+       "table": "MBMA_9501_TABLEA2_YIELDANDTENSILEVALUES",
+       "variable": "elongation_pct"
+      },
+      {
+       "column": "calculated_nominal_moment_ftkips",
+       "table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+       "variable": "calculated_nominal_moment_ft_kips"
+      },
+      {
+       "column": "r_factor",
+       "table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+       "variable": "r_factor"
+      },
+      {
+       "column": "failure_manometer_reading_in",
+       "table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+       "variable": "manometer_reading_at_failure_in_of_water"
+      },
+      {
+       "column": "failure_moment_as_printed",
+       "table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_moment_ft_kips"
+      },
+      {
+       "column": "failure_mode",
+       "table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_mode"
+      }
+     ],
+     "constants": [
+      {
+       "evidence": "Table S1 note: 'Tributary load width for each member was 4.27 ft'",
+       "value": "4.27",
+       "variable": "tributary_width_ft"
+      }
+     ],
+     "lookup_tables": [
+      {
+       "lookup_key_column": "s1_test_id",
+       "match": "exact",
+       "primary_key_column": "test_id",
+       "table": "MBMA_9501_TABLEA1_FAILEDMEMBERDIMENSIONS"
+      },
+      {
+       "lookup_key_column": "s1_test_id",
+       "match": "exact",
+       "primary_key_column": "test_id",
+       "table": "MBMA_9501_TABLEA2_YIELDANDTENSILEVALUES"
+      }
+     ],
+     "note": "29 tests; this paper reports no failure line load, only the tested moment in ft-kips (converted by derivation) and the R factor. Proprietary M1/M2 rows are already excluded from Table S1. Insulation thickness is blank where not stated.",
+     "primary_table": "MBMA_9501_TABLES1_STRENGTHSUMMARY",
+     "row_filters": [],
+     "specimen_id_column": "test_id"
+    },
+    {
+     "code_tag": "MBMA_8702",
+     "column_map": [
+      {
+       "column": "test_id",
+       "table": "MBMA_8702_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_id"
+      },
+      {
+       "column": "load_direction",
+       "table": "MBMA_8702_TABLES1_STRENGTHSUMMARY",
+       "variable": "load_direction"
+      },
+      {
+       "column": "section_type",
+       "table": "MBMA_8702_TABLES1_STRENGTHSUMMARY",
+       "variable": "section_type"
+      },
+      {
+       "column": "panel_type",
+       "table": "MBMA_8702_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_type"
+      },
+      {
+       "column": "bracing",
+       "table": "MBMA_8702_TABLES1_STRENGTHSUMMARY",
+       "variable": "bracing"
+      },
+      {
+       "column": "n_spans",
+       "table": "MBMA_8702_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_spans"
+      },
+      {
+       "column": "n_purlin_lines",
+       "table": "MBMA_8702_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_purlin_lines"
+      },
+      {
+       "column": "span_in_in",
+       "table": "MBMA_8702_TABLES1_STRENGTHSUMMARY",
+       "variable": "span_inches"
+      },
+      {
+       "column": "depth_in",
+       "table": "MBMA_8702_TABLES1_STRENGTHSUMMARY",
+       "variable": "depth_in"
+      },
+      {
+       "column": "thickness_in",
+       "table": "MBMA_8702_TABLES1_STRENGTHSUMMARY",
+       "variable": "thickness_in"
+      },
+      {
+       "column": "lip_angle_deg",
+       "table": "MBMA_8702_TABLES1_STRENGTHSUMMARY",
+       "variable": "lip_angle_deg"
+      },
+      {
+       "column": "fy_ksi",
+       "table": "MBMA_8702_TABLES1_STRENGTHSUMMARY",
+       "variable": "yield_stress_ksi"
+      },
+      {
+       "column": "failure_load_as_printed",
+       "table": "MBMA_8702_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_load_plf"
+      },
+      {
+       "column": "pc_lb_ft",
+       "table": "MBMA_8702_TABLE3_PURLINTESTRESULTS",
+       "variable": "predicted_failure_load_plf"
+      },
+      {
+       "column": "pu_over_pc",
+       "table": "MBMA_8702_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_to_predicted_ratio"
+      },
+      {
+       "column": "failure_mode",
+       "table": "MBMA_8702_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_mode"
+      }
+     ],
+     "constants": [
+      {
+       "evidence": "Table 3 note p.21: P (lb/ft) = transducer reading (psf) x (76 in./2) x (1/12), i.e. 38 in. = 3.167 ft tributary width per purlin line",
+       "value": "3.167",
+       "variable": "tributary_width_ft"
+      }
+     ],
+     "lookup_tables": [
+      {
+       "lookup_key_column": "test_no",
+       "match": "exact",
+       "primary_key_column": "test_id",
+       "table": "MBMA_8702_TABLE3_PURLINTESTRESULTS"
+      }
+     ],
+     "note": "12 braced simple-span tests. depth_in, thickness_in, yield and lip angle are printed as 'north purlin / south purlin' pairs in Table S1 and must be parsed or kept as text. Span is only in inches; span_ft comes from the derivation. Mean/standard-deviation rows of Table 3 do not join to a test_id and will not match.",
+     "primary_table": "MBMA_8702_TABLES1_STRENGTHSUMMARY",
+     "row_filters": [],
+     "specimen_id_column": "test_id"
+    },
+    {
+     "code_tag": "MBMA_8310",
+     "column_map": [
+      {
+       "column": "test_id",
+       "table": "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_id"
+      },
+      {
+       "column": "load_direction",
+       "table": "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+       "variable": "load_direction"
+      },
+      {
+       "column": "section_type",
+       "table": "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+       "variable": "section_type"
+      },
+      {
+       "column": "panel_type",
+       "table": "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_type"
+      },
+      {
+       "column": "bracing",
+       "table": "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+       "variable": "bracing"
+      },
+      {
+       "column": "n_purlin_lines",
+       "table": "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_purlin_lines"
+      },
+      {
+       "column": "span_ft",
+       "table": "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+       "variable": "span_ft"
+      },
+      {
+       "column": "depth_in",
+       "table": "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+       "variable": "depth_in"
+      },
+      {
+       "column": "thickness_in",
+       "table": "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+       "variable": "thickness_in"
+      },
+      {
+       "column": "b1_in",
+       "table": "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS",
+       "variable": "flange_width_in"
+      },
+      {
+       "column": "l1_in",
+       "table": "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS",
+       "variable": "lip_length_in"
+      },
+      {
+       "column": "ao_in",
+       "table": "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS",
+       "variable": "initial_sweep_in"
+      },
+      {
+       "column": "yield_stress_ksi",
+       "table": "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+       "variable": "yield_stress_ksi"
+      },
+      {
+       "column": "rotational_restraint_factor_lb_per_in_per_in",
+       "table": "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+       "variable": "rotational_restraint_k"
+      },
+      {
+       "column": "failure_load_as_printed",
+       "table": "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_load_plf"
+      },
+      {
+       "column": "computed_load_pc_lb_per_ft",
+       "table": "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+       "variable": "predicted_failure_load_plf"
+      },
+      {
+       "column": "ratio_pu_pc",
+       "table": "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_to_predicted_ratio"
+      }
+     ],
+     "constants": [
+      {
+       "evidence": "Table 1 note: 'Each specimen consisted of two 20-ft long purlins with the tension flange screwed to a conventional roof panel' (simple span)",
+       "value": "1",
+       "variable": "n_spans"
+      },
+      {
+       "evidence": "Conversion note under Table 2: P(lb/ft) = Transducer Reading (psf) x (76/2) x (1/12), i.e. 38 in. tributary width per purlin",
+       "value": "3.167",
+       "variable": "tributary_width_ft"
+      },
+      {
+       "evidence": "Table 1 Note (3): 'All edge stiffeners were inclined at 90 degrees to the flange.'",
+       "value": "90",
+       "variable": "lip_angle_deg"
+      }
+     ],
+     "lookup_tables": [
+      {
+       "lookup_key_column": "test_no",
+       "match": "exact",
+       "primary_key_column": "test_id",
+       "table": "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS"
+      }
+     ],
+     "note": "9 laterally unsupported simple-span tests. n_spans is blank in Table S1 and is supplied as a constant from the Table 1 note; rotational restraint K is a per-configuration F-test value carried onto each test by the paper itself.",
+     "primary_table": "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+     "row_filters": [],
+     "specimen_id_column": "test_id"
+    },
+    {
+     "code_tag": "MBMA_8404",
+     "column_map": [
+      {
+       "column": "test_id",
+       "table": "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_id"
+      },
+      {
+       "column": "load_direction",
+       "table": "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+       "variable": "load_direction"
+      },
+      {
+       "column": "section_type",
+       "table": "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+       "variable": "section_type"
+      },
+      {
+       "column": "panel_type",
+       "table": "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_type"
+      },
+      {
+       "column": "bracing",
+       "table": "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+       "variable": "bracing"
+      },
+      {
+       "column": "purlin_orientation",
+       "table": "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+       "variable": "purlin_orientation_as_printed"
+      },
+      {
+       "column": "n_spans",
+       "table": "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_spans"
+      },
+      {
+       "column": "n_purlin_lines",
+       "table": "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_purlin_lines"
+      },
+      {
+       "column": "span_ft",
+       "table": "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+       "variable": "span_ft"
+      },
+      {
+       "column": "depth_in",
+       "table": "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+       "variable": "depth_in"
+      },
+      {
+       "column": "thickness_in",
+       "table": "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+       "variable": "thickness_in"
+      },
+      {
+       "column": "yield_stress_east_ksi",
+       "table": "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+       "variable": "yield_stress_ksi"
+      },
+      {
+       "column": "failure_load_as_printed",
+       "table": "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_load_plf"
+      },
+      {
+       "column": "aisi_predicted_load_plf",
+       "table": "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+       "variable": "predicted_failure_load_plf"
+      },
+      {
+       "column": "actual_to_predicted_ratio",
+       "table": "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_to_predicted_ratio"
+      },
+      {
+       "column": "failure_mode",
+       "table": "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_mode"
+      }
+     ],
+     "constants": [
+      {
+       "evidence": "Table S1 note: 'Purlins were spaced 5 ft. 0 in. on center (tributary width 5 ft.)'",
+       "value": "5.0",
+       "variable": "tributary_width_ft"
+      }
+     ],
+     "lookup_tables": [],
+     "note": "Nine simulated-uplift tests only (the seven gravity tests of the same program form a separate group). yield_stress_ksi uses the east test purlin coupon; the west value is in a second column of Table S1 and differs slightly. Test 13 is flagged by the report as invalid (construction error) and should be reviewed before use.",
+     "primary_table": "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+     "row_filters": [
+      {
+       "column": "load_direction",
+       "op": "equals",
+       "table": "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+       "value": "uplift",
+       "values": []
+      }
+     ],
+     "specimen_id_column": "test_id"
+    },
+    {
+     "code_tag": "MBMA_8001",
+     "primary_table": "MBMA_8001_TABLES1_STRENGTHSUMMARY",
+     "specimen_id_column": "test_id",
+     "column_map": [
+      {
+       "column": "test_id",
+       "table": "MBMA_8001_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_id"
+      },
+      {
+       "column": "load_direction",
+       "table": "MBMA_8001_TABLES1_STRENGTHSUMMARY",
+       "variable": "load_direction"
+      },
+      {
+       "column": "section_type",
+       "table": "MBMA_8001_TABLES1_STRENGTHSUMMARY",
+       "variable": "section_type"
+      },
+      {
+       "column": "panel_type",
+       "table": "MBMA_8001_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_type"
+      },
+      {
+       "column": "bracing",
+       "table": "MBMA_8001_TABLES1_STRENGTHSUMMARY",
+       "variable": "bracing"
+      },
+      {
+       "column": "n_spans",
+       "table": "MBMA_8001_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_spans"
+      },
+      {
+       "column": "n_purlin_lines",
+       "table": "MBMA_8001_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_purlin_lines"
+      },
+      {
+       "column": "span_ft",
+       "table": "MBMA_8001_TABLES1_STRENGTHSUMMARY",
+       "variable": "span_ft"
+      },
+      {
+       "column": "depth_in",
+       "table": "MBMA_8001_TABLES1_STRENGTHSUMMARY",
+       "variable": "depth_in"
+      },
+      {
+       "column": "thickness_in",
+       "table": "MBMA_8001_TABLES1_STRENGTHSUMMARY",
+       "variable": "thickness_in"
+      },
+      {
+       "column": "yield_stress_ksi",
+       "table": "MBMA_8001_TABLES1_STRENGTHSUMMARY",
+       "variable": "yield_stress_ksi"
+      },
+      {
+       "column": "failure_load_as_printed",
+       "table": "MBMA_8001_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_load_plf"
+      },
+      {
+       "column": "failure_mode",
+       "table": "MBMA_8001_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_mode"
+      }
+     ],
+     "constants": [],
+     "lookup_tables": [],
+     "row_filters": [],
+     "note": "Seven vacuum tests V1-V7 (Razak and Pekoz 1980), 20 ft single span, two Z-purlins 5 ft apart, 24 ga through-fastened panel; beam tests B1-B7 are excluded. depth and thickness are the measured Table 3.2 averages per purlin type. V1 had fixed ends. The assembly was tested inverted; whether the loads include self-weight is not stated. (hand edit 2026-11-10, Cris Moen review)"
+    },
+    {
+     "code_tag": "MBMA_9003",
+     "primary_table": "MBMA_9003_TABLES1_STRENGTHSUMMARY",
+     "specimen_id_column": "test_id",
+     "column_map": [
+      {
+       "column": "test_id",
+       "table": "MBMA_9003_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_id"
+      },
+      {
+       "column": "load_direction",
+       "table": "MBMA_9003_TABLES1_STRENGTHSUMMARY",
+       "variable": "load_direction"
+      },
+      {
+       "column": "section_type",
+       "table": "MBMA_9003_TABLES1_STRENGTHSUMMARY",
+       "variable": "section_type"
+      },
+      {
+       "column": "panel_type",
+       "table": "MBMA_9003_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_type"
+      },
+      {
+       "column": "bracing",
+       "table": "MBMA_9003_TABLES1_STRENGTHSUMMARY",
+       "variable": "bracing"
+      },
+      {
+       "column": "n_spans",
+       "table": "MBMA_9003_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_spans"
+      },
+      {
+       "column": "n_purlin_lines",
+       "table": "MBMA_9003_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_purlin_lines"
+      },
+      {
+       "column": "span_ft",
+       "table": "MBMA_9003_TABLES1_STRENGTHSUMMARY",
+       "variable": "span_ft"
+      },
+      {
+       "column": "depth_in",
+       "table": "MBMA_9003_TABLES1_STRENGTHSUMMARY",
+       "variable": "depth_in"
+      },
+      {
+       "column": "thickness_in",
+       "table": "MBMA_9003_TABLES1_STRENGTHSUMMARY",
+       "variable": "thickness_in"
+      },
+      {
+       "column": "yield_stress_ksi",
+       "table": "MBMA_9003_TABLES1_STRENGTHSUMMARY",
+       "variable": "yield_stress_ksi"
+      },
+      {
+       "column": "failure_load_as_printed",
+       "table": "MBMA_9003_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_load_plf"
+      },
+      {
+       "column": "failure_moment_as_printed",
+       "table": "MBMA_9003_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_moment_kip_in"
+      },
+      {
+       "column": "failure_mode",
+       "table": "MBMA_9003_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_mode"
+      }
+     ],
+     "constants": [],
+     "lookup_tables": [],
+     "row_filters": [],
+     "note": "One test, SP-10C-M (Hatch, Easterling and Murray 1990): uplift only, 25 ft single span, 10 in. C, 26 ga through-fastened deck. The combined uplift + axial and axial-only tests are excluded. The load includes about 9 plf roof-system dead weight (p.33). (hand edit 2026-11-10, Cris Moen review)"
+    }
+   ],
+   "name": "Simple-span C and Z purlins with through-fastened panels under uplift",
+   "variables": [
+    "test_id",
+    "section_type",
+    "load_direction",
+    "panel_type",
+    "bracing",
+    "purlin_orientation",
+    "purlin_orientation_as_printed",
+    "opposed_flange_direction",
+    "insulation_present",
+    "insulation_thickness_in",
+    "n_spans",
+    "n_purlin_lines",
+    "span_ft",
+    "span_inches",
+    "tributary_width_ft",
+    "depth_in",
+    "thickness_in",
+    "flange_width_in",
+    "lip_length_in",
+    "lip_angle_deg",
+    "initial_sweep_in",
+    "yield_stress_ksi",
+    "tensile_strength_ksi",
+    "elongation_pct",
+    "rotational_restraint_k",
+    "predicted_failure_load_plf",
+    "calculated_nominal_moment_ft_kips",
+    "test_to_predicted_ratio",
+    "r_factor",
+    "manometer_reading_at_failure_in_of_water",
+    "failure_load_plf",
+    "failure_moment_ft_kips",
+    "failure_moment_kip_in",
+    "failure_mode",
+    "insulation_material",
+    "effective_section_modulus_in3",
+    "screw_location_c_in",
+    "chamber_pressure_psf"
+   ]
+  },
+  {
+   "description": "Vacuum-chamber uplift tests of standing seam roof systems on C or Z purlins, comprising single-span base tests and the matching three-span confirming tests of the Base Test Method; the clip-and-seam restraint makes these a different population from through-fastened assemblies.",
+   "id_columns": [
+    "test_id",
+    "section_type",
+    "load_direction",
+    "panel_type",
+    "clip_type",
+    "bracing",
+    "purlin_orientation",
+    "test_role",
+    "n_spans",
+    "n_purlin_lines"
+   ],
+   "key": "standing_seam_uplift_base_and_confirming",
+   "members": [
+    {
+     "code_tag": "MBMA_9001",
+     "column_map": [
+      {
+       "column": "test_id",
+       "table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_id"
+      },
+      {
+       "column": "load_direction",
+       "table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+       "variable": "load_direction"
+      },
+      {
+       "column": "section_type",
+       "table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+       "variable": "section_type"
+      },
+      {
+       "column": "panel_type",
+       "table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_type"
+      },
+      {
+       "column": "clip_type",
+       "table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+       "variable": "clip_type"
+      },
+      {
+       "column": "bracing",
+       "table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+       "variable": "bracing"
+      },
+      {
+       "column": "purlin_orientation",
+       "table": "MBMA_9001_TABLE31_TESTCONFIGURATIONMATRIX",
+       "variable": "purlin_orientation_as_printed"
+      },
+      {
+       "column": "lap_length_ft_in",
+       "table": "MBMA_9001_TABLE31_TESTCONFIGURATIONMATRIX",
+       "variable": "lap_length_ft_in"
+      },
+      {
+       "column": "n_spans",
+       "table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_spans"
+      },
+      {
+       "column": "n_purlin_lines",
+       "table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_purlin_lines"
+      },
+      {
+       "column": "span_ft",
+       "table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+       "variable": "span_ft"
+      },
+      {
+       "column": "depth_in",
+       "table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+       "variable": "depth_in"
+      },
+      {
+       "column": "thickness_in",
+       "table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+       "variable": "thickness_in"
+      },
+      {
+       "column": "yield_stress_ksi",
+       "table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+       "variable": "yield_stress_ksi"
+      },
+      {
+       "column": "fu_ksi",
+       "table": "MBMA_9001_TABLE41_TENSILETESTRESULTS",
+       "variable": "tensile_strength_ksi"
+      },
+      {
+       "column": "elongation_pct",
+       "table": "MBMA_9001_TABLE41_TENSILETESTRESULTS",
+       "variable": "elongation_pct"
+      },
+      {
+       "column": "failure_load_as_printed",
+       "table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_load_plf"
+      },
+      {
+       "column": "failure_moment_as_printed",
+       "table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_moment_kip_in"
+      },
+      {
+       "column": "predicted_failure_load_plf",
+       "table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+       "variable": "predicted_failure_load_plf"
+      },
+      {
+       "column": "test_to_predicted_ratio",
+       "table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_to_predicted_ratio"
+      },
+      {
+       "column": "failure_load_corrected_9702_plf",
+       "table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_load_table_1_plf"
+      },
+      {
+       "column": "failure_mode",
+       "table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_mode"
+      }
+     ],
+     "constants": [],
+     "lookup_tables": [
+      {
+       "lookup_key_column": "s1_test_id",
+       "match": "exact",
+       "primary_key_column": "test_id",
+       "table": "MBMA_9001_TABLE41_TENSILETESTRESULTS"
+      },
+      {
+       "lookup_key_column": "test_identification",
+       "match": "exact",
+       "primary_key_column": "configuration_id",
+       "table": "MBMA_9001_TABLE31_TESTCONFIGURATIONMATRIX"
+      }
+     ],
+     "note": "16 tests (8 base + 8 confirming). Table 3.1 is keyed by the test-set designation without the -1/-3 suffix, hence the prefix join; note that the suffix order in the printed ids is e.g. 'U-Z-T-P/F-1(0)' while the matrix key is 'U-Z-T-P/F(0)', so the prefix match may need normalisation of the '(0)' marker. Two confirming tests ended in clip failure and have no valid ratio.",
+     "primary_table": "MBMA_9001_TABLES1_STRENGTHSUMMARY",
+     "row_filters": [],
+     "specimen_id_column": "test_id"
+    },
+    {
+     "code_tag": "MBMA_9702",
+     "column_map": [
+      {
+       "column": "test_id",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_id"
+      },
+      {
+       "column": "load_direction",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "load_direction"
+      },
+      {
+       "column": "section_type",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "section_type"
+      },
+      {
+       "column": "panel_type",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_type"
+      },
+      {
+       "column": "bracing",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "bracing"
+      },
+      {
+       "column": "test_role",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_role"
+      },
+      {
+       "column": "n_spans",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_spans"
+      },
+      {
+       "column": "n_purlin_lines",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_purlin_lines"
+      },
+      {
+       "column": "span_ft",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "span_ft"
+      },
+      {
+       "column": "depth_in",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "depth_in"
+      },
+      {
+       "column": "thickness_in",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "thickness_in"
+      },
+      {
+       "column": "yield_stress_ksi",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "yield_stress_ksi"
+      },
+      {
+       "column": "failure_load_as_printed",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_load_plf"
+      },
+      {
+       "column": "failure_load_table_1_plf",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_load_table_1_plf"
+      },
+      {
+       "column": "predicted_failure_load_plf",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "predicted_failure_load_plf"
+      },
+      {
+       "column": "predicted_to_experimental_ratio",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_to_predicted_ratio"
+      },
+      {
+       "column": "test_date",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_date"
+      },
+      {
+       "column": "test_facility",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_facility"
+      },
+      {
+       "column": "failure_mode",
+       "table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_mode"
+      }
+     ],
+     "constants": [
+      {
+       "evidence": "Table S1 note: 'CECO tests used opposed purlins at 5 ft spacing (tributary width 5 ft per purlin line)'",
+       "value": "5.0",
+       "variable": "tributary_width_ft"
+      },
+      {
+       "evidence": "Table S1 note: 'CECO tests used opposed purlins at 5 ft spacing'",
+       "value": "opposed",
+       "variable": "purlin_orientation"
+      }
+     ],
+     "lookup_tables": [],
+     "note": "12 CECO rows (6 base + 6 confirming). failure_load_plf is the test-sheet value, which Cris Moen designated the measured record (open question MBMA_9702); the Table 1 value is carried separately as failure_load_table_1_plf. The report's tributary-area correction (p. 7) is stated for the Virginia Tech loads only. thickness_in and yield are printed as per-purlin / per-bay strings and need parsing.",
+     "primary_table": "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+     "row_filters": [],
+     "specimen_id_column": "test_id"
+    },
+    {
+     "code_tag": "MBMA_9102",
+     "column_map": [
+      {
+       "column": "test_id",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_id"
+      },
+      {
+       "column": "load_direction",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "load_direction"
+      },
+      {
+       "column": "section_type",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "section_type"
+      },
+      {
+       "column": "panel_type",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_type"
+      },
+      {
+       "column": "clip_type",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "clip_type"
+      },
+      {
+       "column": "bracing",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "bracing"
+      },
+      {
+       "column": "n_spans",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_spans"
+      },
+      {
+       "column": "n_purlin_lines",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_purlin_lines"
+      },
+      {
+       "column": "span_ft",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "span_ft"
+      },
+      {
+       "column": "purlin_spacing",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "purlin_spacing_ft"
+      },
+      {
+       "column": "lap_length_in",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "lap_length_in"
+      },
+      {
+       "column": "depth_in",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "depth_in"
+      },
+      {
+       "column": "thickness_in",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "thickness_in"
+      },
+      {
+       "column": "yield_stress_ksi",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "yield_stress_ksi"
+      },
+      {
+       "column": "tensile_strength_ksi",
+       "table": "MBMA_9102_TABLE31_TENSILETESTS1991",
+       "variable": "tensile_strength_ksi"
+      },
+      {
+       "column": "elongation_percent",
+       "table": "MBMA_9102_TABLE31_TENSILETESTS1991",
+       "variable": "elongation_pct"
+      },
+      {
+       "column": "failure_load_as_printed",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_load_plf"
+      },
+      {
+       "column": "failure_moment_as_printed",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_moment_kip_in"
+      },
+      {
+       "column": "predicted_failure_load_w_p3_plf",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "predicted_failure_load_plf"
+      },
+      {
+       "column": "ratio_w_u3_over_w_p3",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_to_predicted_ratio"
+      },
+      {
+       "column": "failure_load_corrected_9702_plf",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_load_table_1_plf"
+      },
+      {
+       "column": "failure_mode",
+       "table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_mode"
+      }
+     ],
+     "constants": [],
+     "lookup_tables": [
+      {
+       "lookup_key_column": "identification",
+       "match": "exact",
+       "primary_key_column": "test_id",
+       "table": "MBMA_9102_TABLE31_TENSILETESTS1991"
+      }
+     ],
+     "note": "8 tests (4 base + 4 confirming) from 1991. failure_load_plf is the appendix data-sheet value used in all the report's calculations; Table 3.2 prints values about 5-7 plf higher (kept in a separate column of Table S1). depth_in and thickness_in are printed as ranges for the three-span tests.",
+     "primary_table": "MBMA_9102_TABLES1_STRENGTHSUMMARY",
+     "row_filters": [],
+     "specimen_id_column": "test_id"
+    },
+    {
+     "code_tag": "MBMA_9902",
+     "primary_table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+     "specimen_id_column": "test_id",
+     "column_map": [
+      {
+       "column": "test_id",
+       "table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_id"
+      },
+      {
+       "column": "load_direction",
+       "table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+       "variable": "load_direction"
+      },
+      {
+       "column": "section_type",
+       "table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+       "variable": "section_type"
+      },
+      {
+       "column": "panel_type",
+       "table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_type"
+      },
+      {
+       "column": "clip_type",
+       "table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+       "variable": "clip_type"
+      },
+      {
+       "column": "bracing",
+       "table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+       "variable": "bracing"
+      },
+      {
+       "column": "n_spans",
+       "table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_spans"
+      },
+      {
+       "column": "n_purlin_lines",
+       "table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_purlin_lines"
+      },
+      {
+       "column": "span_ft",
+       "table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+       "variable": "span_ft"
+      },
+      {
+       "column": "measured_depth_h_in",
+       "table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+       "variable": "depth_in"
+      },
+      {
+       "column": "measured_thickness_t_in",
+       "table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+       "variable": "thickness_in"
+      },
+      {
+       "column": "fy_ksi",
+       "table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+       "variable": "yield_stress_ksi"
+      },
+      {
+       "column": "fu_ksi",
+       "table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+       "variable": "tensile_strength_ksi"
+      },
+      {
+       "column": "elongation_pct",
+       "table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+       "variable": "elongation_pct"
+      },
+      {
+       "column": "failure_moment_as_printed",
+       "table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_moment_ft_kips"
+      },
+      {
+       "column": "max_pressure_psf",
+       "table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+       "variable": "chamber_pressure_psf"
+      },
+      {
+       "column": "insulation",
+       "table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+       "variable": "insulation"
+      },
+      {
+       "column": "failure_mode",
+       "table": "MBMA_9902_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_mode"
+      }
+     ],
+     "constants": [
+      {
+       "variable": "test_role",
+       "value": "base",
+       "evidence": "AISI Base Test Method, Sec. 3.4.2 p.60"
+      },
+      {
+       "variable": "purlin_orientation",
+       "value": "same direction",
+       "evidence": "p.58: 'Each set of purlins tested were oriented with their flanges facing in the same direction.'"
+      }
+     ],
+     "lookup_tables": [],
+     "row_filters": [],
+     "note": "Four single-span uplift base tests F1-F4 (Stolarczyk 2001) in a positive-pressure chamber (membrane under the panel), not a vacuum; the data may be manufacturers' existing base tests (p.50). Axial tests A1-A4 are excluded. depth/thickness are the measured Table 4 values. Moment printed in ft-kips; no failure line load or tributary width is given. (hand edit 2026-11-10, Cris Moen review)"
+    }
+   ],
+   "name": "Standing seam roof systems on C and Z purlins under uplift",
+   "variables": [
+    "test_id",
+    "section_type",
+    "load_direction",
+    "panel_type",
+    "clip_type",
+    "bracing",
+    "purlin_orientation",
+    "purlin_orientation_as_printed",
+    "opposed_flange_direction",
+    "test_role",
+    "n_spans",
+    "n_purlin_lines",
+    "span_ft",
+    "purlin_spacing_ft",
+    "tributary_width_ft",
+    "lap_length_in",
+    "lap_length_ft_in",
+    "depth_in",
+    "thickness_in",
+    "yield_stress_ksi",
+    "tensile_strength_ksi",
+    "elongation_pct",
+    "predicted_failure_load_plf",
+    "test_to_predicted_ratio",
+    "failure_load_table_1_plf",
+    "failure_load_plf",
+    "failure_moment_kip_in",
+    "test_date",
+    "test_facility",
+    "failure_mode",
+    "failure_moment_ft_kips",
+    "chamber_pressure_psf",
+    "insulation"
+   ]
+  },
+  {
+   "description": "Multi-span (mostly three-span) continuous lapped C and Z purlin assemblies with through-fastened panels tested to failure under chamber uplift; continuity over interior supports and the lapped splice make these a distinct population from simple-span tests.",
+   "id_columns": [
+    "test_id",
+    "section_type",
+    "load_direction",
+    "panel_type",
+    "bracing",
+    "n_spans",
+    "n_purlin_lines",
+    "failed_member"
+   ],
+   "key": "continuous_span_through_fastened_uplift",
+   "members": [
+    {
+     "code_tag": "MBMA_8703",
+     "column_map": [
+      {
+       "column": "test_id",
+       "table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_id"
+      },
+      {
+       "column": "load_direction",
+       "table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+       "variable": "load_direction"
+      },
+      {
+       "column": "section_type",
+       "table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+       "variable": "section_type"
+      },
+      {
+       "column": "panel_type",
+       "table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_type"
+      },
+      {
+       "column": "bracing",
+       "table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+       "variable": "bracing"
+      },
+      {
+       "column": "n_spans",
+       "table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_spans"
+      },
+      {
+       "column": "n_purlin_lines",
+       "table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_purlin_lines"
+      },
+      {
+       "column": "span_ft",
+       "table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+       "variable": "span_ft"
+      },
+      {
+       "column": "total_lap_ft",
+       "table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+       "variable": "lap_length_ft_in"
+      },
+      {
+       "column": "depth_in",
+       "table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+       "variable": "depth_in"
+      },
+      {
+       "column": "thickness_in",
+       "table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+       "variable": "thickness_in"
+      },
+      {
+       "column": "flange_width_in",
+       "table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+       "variable": "flange_width_in"
+      },
+      {
+       "column": "initial_sweep_in",
+       "table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+       "variable": "initial_sweep_in"
+      },
+      {
+       "column": "fy_ksi",
+       "table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+       "variable": "yield_stress_ksi"
+      },
+      {
+       "column": "failure_load_as_printed",
+       "table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_load_plf"
+      },
+      {
+       "column": "ratio_test_over_aisi6",
+       "table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_to_predicted_ratio"
+      },
+      {
+       "column": "aisi6_load_lb_ft",
+       "table": "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD",
+       "variable": "predicted_failure_load_plf"
+      },
+      {
+       "column": "failed_member",
+       "table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+       "variable": "failed_member"
+      },
+      {
+       "column": "failure_mode",
+       "table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_mode"
+      }
+     ],
+     "constants": [
+      {
+       "evidence": "Table S1 note: 'Load on the member was calculated as chamber pressure ... times a tributary width of 5.06 ft minus the dead weight of the assembly'",
+       "value": "5.06",
+       "variable": "tributary_width_ft"
+      }
+     ],
+     "lookup_tables": [
+      {
+       "lookup_key_column": "s1_test_id",
+       "match": "exact",
+       "primary_key_column": "test_id",
+       "table": "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD"
+      }
+     ],
+     "note": "19 three-span tests (Z and C). Exhibit D contains unlabelled Mean and standard-deviation rows that will not join to a test_id. Test 12 load is printed '135*' (panels failed first) and Test 10 has no load at all; both need review before use.",
+     "primary_table": "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+     "row_filters": [],
+     "specimen_id_column": "test_id"
+    },
+    {
+     "code_tag": "MBMA_7603",
+     "column_map": [
+      {
+       "column": "test_id",
+       "table": "MBMA_7603_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_id"
+      },
+      {
+       "column": "load_direction",
+       "table": "MBMA_7603_TABLES1_STRENGTHSUMMARY",
+       "variable": "load_direction"
+      },
+      {
+       "column": "section_type",
+       "table": "MBMA_7603_TABLES1_STRENGTHSUMMARY",
+       "variable": "section_type"
+      },
+      {
+       "column": "panel_type",
+       "table": "MBMA_7603_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_type"
+      },
+      {
+       "column": "bracing",
+       "table": "MBMA_7603_TABLES1_STRENGTHSUMMARY",
+       "variable": "bracing"
+      },
+      {
+       "column": "n_spans",
+       "table": "MBMA_7603_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_spans"
+      },
+      {
+       "column": "n_purlin_lines",
+       "table": "MBMA_7603_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_purlin_lines"
+      },
+      {
+       "column": "span_ft",
+       "table": "MBMA_7603_TABLES1_STRENGTHSUMMARY",
+       "variable": "span_ft"
+      },
+      {
+       "column": "purlin_spacing_ft",
+       "table": "MBMA_7603_TABLES1_STRENGTHSUMMARY",
+       "variable": "purlin_spacing_ft"
+      },
+      {
+       "column": "tributary_width_ft",
+       "table": "MBMA_7603_TABLES1_STRENGTHSUMMARY",
+       "variable": "tributary_width_ft"
+      },
+      {
+       "column": "depth_in",
+       "table": "MBMA_7603_TABLES1_STRENGTHSUMMARY",
+       "variable": "depth_in"
+      },
+      {
+       "column": "thickness_in",
+       "table": "MBMA_7603_TABLES1_STRENGTHSUMMARY",
+       "variable": "thickness_in"
+      },
+      {
+       "column": "failure_load_as_printed",
+       "table": "MBMA_7603_TABLES1_STRENGTHSUMMARY",
+       "variable": "chamber_pressure_psf"
+      },
+      {
+       "column": "failure_load_plf",
+       "table": "MBMA_7603_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_load_plf"
+      },
+      {
+       "column": "failure_mode",
+       "table": "MBMA_7603_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_mode"
+      }
+     ],
+     "constants": [],
+     "lookup_tables": [],
+     "note": "Four rows: first and second (induced, reloaded with the first failed purlin propped) failures of the Z and of the C three-span specimens. The second-failure rows are not independent tests and should be flagged. C-purlin thickness is printed as a two-value string ('0.073 (center span); .119 (exterior spans)').",
+     "primary_table": "MBMA_7603_TABLES1_STRENGTHSUMMARY",
+     "row_filters": [],
+     "specimen_id_column": "test_id"
+    },
+    {
+     "code_tag": "MBMA_9105",
+     "column_map": [
+      {
+       "column": "test_id",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_id"
+      },
+      {
+       "column": "load_direction",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "load_direction"
+      },
+      {
+       "column": "section_type",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "section_type"
+      },
+      {
+       "column": "panel_type",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_type"
+      },
+      {
+       "column": "bracing",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "bracing"
+      },
+      {
+       "column": "n_spans",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_spans"
+      },
+      {
+       "column": "n_purlin_lines",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_purlin_lines"
+      },
+      {
+       "column": "span_ft",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "span_ft"
+      },
+      {
+       "column": "lap_length_in",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "lap_length_in"
+      },
+      {
+       "column": "lap_length_over_depth",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "lap_to_depth_ratio"
+      },
+      {
+       "column": "depth_in",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "depth_in"
+      },
+      {
+       "column": "thickness_in",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "thickness_in"
+      },
+      {
+       "column": "flange_width_in",
+       "table": "MBMA_9105_TABLE21_TESTPARAMETERS",
+       "variable": "flange_width_in"
+      },
+      {
+       "column": "measured_fy_ksi",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "yield_stress_ksi"
+      },
+      {
+       "column": "fu_ksi",
+       "table": "MBMA_9105_TABLE22_COUPONTESTRESULTS",
+       "variable": "tensile_strength_ksi"
+      },
+      {
+       "column": "elongation_pct",
+       "table": "MBMA_9105_TABLE22_COUPONTESTRESULTS",
+       "variable": "elongation_pct"
+      },
+      {
+       "column": "avg_se_in3",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "effective_section_modulus_in3"
+      },
+      {
+       "column": "mth_kip_in",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "calculated_nominal_moment_kip_in"
+      },
+      {
+       "column": "mu_over_mth",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "r_factor"
+      },
+      {
+       "column": "failure_load_as_printed",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_load_plf"
+      },
+      {
+       "column": "failure_moment_as_printed",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_moment_kip_in"
+      },
+      {
+       "column": "failure_mode",
+       "table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_mode"
+      }
+     ],
+     "constants": [
+      {
+       "evidence": "Table S1 note: 'Purlin lines spaced 5 ft on center; failure load wu is the uniform load per purlin line based on the tributary area (5 ft tributary width)'",
+       "value": "5.0",
+       "variable": "tributary_width_ft"
+      }
+     ],
+     "lookup_tables": [
+      {
+       "lookup_key_column": "test",
+       "match": "exact",
+       "primary_key_column": "test_id",
+       "table": "MBMA_9105_TABLE21_TESTPARAMETERS"
+      },
+      {
+       "lookup_key_column": "test",
+       "match": "exact",
+       "primary_key_column": "test_id",
+       "table": "MBMA_9105_TABLE22_COUPONTESTRESULTS"
+      }
+     ],
+     "note": "Three unbraced three-span C-purlin tests with reduced laps (1.66d-2.18d). Test C3 ended in excessive lateral deflection rather than a buckling failure.",
+     "primary_table": "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+     "row_filters": [],
+     "specimen_id_column": "test_id"
+    },
+    {
+     "code_tag": "MBMA_8803",
+     "column_map": [
+      {
+       "column": "test_id",
+       "table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_id"
+      },
+      {
+       "column": "load_direction",
+       "table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+       "variable": "load_direction"
+      },
+      {
+       "column": "section_type",
+       "table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+       "variable": "section_type"
+      },
+      {
+       "column": "panel_type",
+       "table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_type"
+      },
+      {
+       "column": "bracing",
+       "table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+       "variable": "bracing"
+      },
+      {
+       "column": "n_spans",
+       "table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_spans"
+      },
+      {
+       "column": "n_purlin_lines",
+       "table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_purlin_lines"
+      },
+      {
+       "column": "span_ft",
+       "table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+       "variable": "span_ft"
+      },
+      {
+       "column": "lap_length_ft_in",
+       "table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+       "variable": "lap_length_ft_in"
+      },
+      {
+       "column": "depth_in",
+       "table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+       "variable": "depth_in"
+      },
+      {
+       "column": "thickness_in",
+       "table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+       "variable": "thickness_in"
+      },
+      {
+       "column": "flange_width_in",
+       "table": "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+       "variable": "flange_width_in"
+      },
+      {
+       "column": "initial_sweep_in",
+       "table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+       "variable": "initial_sweep_in"
+      },
+      {
+       "column": "fy_ksi",
+       "table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+       "variable": "yield_stress_ksi"
+      },
+      {
+       "column": "se_in3",
+       "table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+       "variable": "effective_section_modulus_in3"
+      },
+      {
+       "column": "predicted_load_aisi6_lb_per_ft",
+       "table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+       "variable": "predicted_failure_load_plf"
+      },
+      {
+       "column": "ratio_test_to_aisi6",
+       "table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_to_predicted_ratio"
+      },
+      {
+       "column": "failure_load_as_printed",
+       "table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_load_plf"
+      },
+      {
+       "column": "failure_mode",
+       "table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_mode"
+      }
+     ],
+     "constants": [
+      {
+       "evidence": "Table S1 note: 'Tributary width used in the load conversion: 5.06 ft per purlin line.'",
+       "value": "5.06",
+       "variable": "tributary_width_ft"
+      }
+     ],
+     "lookup_tables": [
+      {
+       "lookup_key_column": "test_no",
+       "match": "exact",
+       "primary_key_column": "test_id",
+       "table": "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS"
+      }
+     ],
+     "note": "Single test B-1, the quarter-point-braced companion to MBMA_8703 Test 3; same Ceco chamber, same 5.06 ft tributary width and dead-load deduction, so it pools directly with the 8703 rows. Failure load carried as the unrounded 133.6 lb/ft.",
+     "primary_table": "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+     "row_filters": [],
+     "specimen_id_column": "test_id"
+    },
+    {
+     "code_tag": "MBMA_7501",
+     "primary_table": "MBMA_7501_TABLES1_STRENGTHSUMMARY",
+     "specimen_id_column": "test_id",
+     "column_map": [
+      {
+       "column": "test_id",
+       "table": "MBMA_7501_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_id"
+      },
+      {
+       "column": "load_direction",
+       "table": "MBMA_7501_TABLES1_STRENGTHSUMMARY",
+       "variable": "load_direction"
+      },
+      {
+       "column": "section_type",
+       "table": "MBMA_7501_TABLES1_STRENGTHSUMMARY",
+       "variable": "section_type"
+      },
+      {
+       "column": "panel_type",
+       "table": "MBMA_7501_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_type"
+      },
+      {
+       "column": "bracing",
+       "table": "MBMA_7501_TABLES1_STRENGTHSUMMARY",
+       "variable": "bracing"
+      },
+      {
+       "column": "n_spans",
+       "table": "MBMA_7501_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_spans"
+      },
+      {
+       "column": "span_ft",
+       "table": "MBMA_7501_TABLES1_STRENGTHSUMMARY",
+       "variable": "span_ft"
+      },
+      {
+       "column": "depth_in",
+       "table": "MBMA_7501_TABLES1_STRENGTHSUMMARY",
+       "variable": "depth_in"
+      },
+      {
+       "column": "thickness_in",
+       "table": "MBMA_7501_TABLES1_STRENGTHSUMMARY",
+       "variable": "thickness_in"
+      },
+      {
+       "column": "yield_stress_ksi",
+       "table": "MBMA_7501_TABLES1_STRENGTHSUMMARY",
+       "variable": "yield_stress_ksi"
+      },
+      {
+       "column": "failure_load_as_printed",
+       "table": "MBMA_7501_TABLES1_STRENGTHSUMMARY",
+       "variable": "chamber_pressure_psf"
+      },
+      {
+       "column": "dead_load_psf",
+       "table": "MBMA_7501_TABLES1_STRENGTHSUMMARY",
+       "variable": "deck_dead_load_psf"
+      },
+      {
+       "column": "failure_mode",
+       "table": "MBMA_7501_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_mode"
+      }
+     ],
+     "constants": [],
+     "lookup_tables": [],
+     "row_filters": [
+      {
+       "column": "section_type",
+       "op": "not_equals",
+       "table": "MBMA_7501_TABLES1_STRENGTHSUMMARY",
+       "value": "",
+       "values": []
+      }
+     ],
+     "note": "Three three-span lapped uplift assemblies (Pekoz 1975), moved from the gravity set. Failure loads are approximate text values in psf of horizontal projection ('about 40/42/50'), carried in chamber_pressure_psf, not converted to plf. First and Second Z assemblies are distinct tests (second built with straightened purlins). yield_stress holds a list of coupon values. The filter on non-blank section_type removes the three pilot screw-connection tests. (hand edit 2026-11-10, Cris Moen review)"
+    }
+   ],
+   "name": "Continuous multi-span C and Z purlins with through-fastened panels under uplift",
+   "variables": [
+    "test_id",
+    "section_type",
+    "load_direction",
+    "panel_type",
+    "bracing",
+    "n_spans",
+    "n_purlin_lines",
+    "span_ft",
+    "purlin_spacing_ft",
+    "tributary_width_ft",
+    "lap_length_ft_in",
+    "lap_length_in",
+    "lap_to_depth_ratio",
+    "depth_in",
+    "thickness_in",
+    "flange_width_in",
+    "initial_sweep_in",
+    "yield_stress_ksi",
+    "tensile_strength_ksi",
+    "elongation_pct",
+    "effective_section_modulus_in3",
+    "calculated_nominal_moment_kip_in",
+    "predicted_failure_load_plf",
+    "test_to_predicted_ratio",
+    "r_factor",
+    "chamber_pressure_psf",
+    "failure_load_plf",
+    "failure_moment_kip_in",
+    "failed_member",
+    "failure_mode",
+    "deck_dead_load_psf"
+   ]
+  },
+  {
+   "description": "Vacuum-box tests of through-fastened panel assemblies instrumented with load cells at every screw, loaded until fastener pullover or pullout; the measured quantity is a fastener load and a chamber pressure, not a purlin bending strength.",
+   "id_columns": [
+    "test_id",
+    "load_direction",
+    "panel_type",
+    "panel_supplier",
+    "panel_gage",
+    "bracing",
+    "n_spans",
+    "n_purlin_lines",
+    "failed_load_cells"
+   ],
+   "key": "panel_fastener_pullover_vacuum_box",
+   "members": [
+    {
+     "code_tag": "MBMA_9410",
+     "column_map": [
+      {
+       "column": "test_id",
+       "table": "MBMA_9410_TABLES1_STRENGTHSUMMARY",
+       "variable": "test_id"
+      },
+      {
+       "column": "load_direction",
+       "table": "MBMA_9410_TABLES1_STRENGTHSUMMARY",
+       "variable": "load_direction"
+      },
+      {
+       "column": "panel_type",
+       "table": "MBMA_9410_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_type"
+      },
+      {
+       "column": "panel_supplier",
+       "table": "MBMA_9410_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_supplier"
+      },
+      {
+       "column": "panel_gage",
+       "table": "MBMA_9410_TABLES1_STRENGTHSUMMARY",
+       "variable": "panel_gage"
+      },
+      {
+       "column": "bracing",
+       "table": "MBMA_9410_TABLES1_STRENGTHSUMMARY",
+       "variable": "bracing"
+      },
+      {
+       "column": "n_spans",
+       "table": "MBMA_9410_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_spans"
+      },
+      {
+       "column": "n_purlin_lines",
+       "table": "MBMA_9410_TABLES1_STRENGTHSUMMARY",
+       "variable": "n_purlin_lines"
+      },
+      {
+       "column": "span_ft",
+       "table": "MBMA_9410_TABLES1_STRENGTHSUMMARY",
+       "variable": "span_ft"
+      },
+      {
+       "column": "failed_load_cells",
+       "table": "MBMA_9410_TABLES1_STRENGTHSUMMARY",
+       "variable": "failed_load_cells"
+      },
+      {
+       "column": "fastener_peak_loads_lb",
+       "table": "MBMA_9410_TABLES1_STRENGTHSUMMARY",
+       "variable": "fastener_pullover_load_lb"
+      },
+      {
+       "column": "failure_load_as_printed",
+       "table": "MBMA_9410_TABLES1_STRENGTHSUMMARY",
+       "variable": "chamber_pressure_psi"
+      },
+      {
+       "column": "peak_lvdt1_in",
+       "table": "MBMA_9410_TABLES1_STRENGTHSUMMARY",
+       "variable": "deflection_lvdt1_in"
+      },
+      {
+       "column": "peak_lvdt2_in",
+       "table": "MBMA_9410_TABLES1_STRENGTHSUMMARY",
+       "variable": "deflection_lvdt2_in"
+      },
+      {
+       "column": "failure_mode",
+       "table": "MBMA_9410_TABLES1_STRENGTHSUMMARY",
+       "variable": "failure_mode"
+      }
+     ],
+     "constants": [],
+     "lookup_tables": [],
+     "note": "12 vacuum-box system tests. Peak pressures and peak fastener loads are taken from each test's summary block (per the paper's own instruction), not from the 2-second time-history tables. Several rows list more than one failed cell and therefore more than one comma-separated peak value, which must be split. Test 1 reached no pullover failure.",
+     "primary_table": "MBMA_9410_TABLES1_STRENGTHSUMMARY",
+     "row_filters": [],
+     "specimen_id_column": "test_id"
+    }
+   ],
+   "name": "Through-fastened panel fastener pullover tests in a vacuum box",
+   "variables": [
+    "test_id",
+    "load_direction",
+    "panel_type",
+    "panel_supplier",
+    "panel_gage",
+    "bracing",
+    "n_spans",
+    "n_purlin_lines",
+    "span_ft",
+    "failed_load_cells",
+    "chamber_pressure_psi",
+    "fastener_pullover_load_lb",
+    "deflection_lvdt1_in",
+    "deflection_lvdt2_in",
+    "failure_mode"
+   ]
+  }
+ ],
+ "label_rules": [
+  {
+   "else_label": "none",
+   "label": "blanket insulation present",
+   "note": "MBMA_9501 states the convention explicitly: 'Test identifiers 3I, 4I, 21I, 22I, 23I, 24I and 25I carry a trailing I denoting tests with blanket insulation'. Does not overwrite the insulation_thickness_in column.",
+   "op": "ends_with",
+   "papers": [
+    "MBMA_9501"
+   ],
+   "pattern": "I",
+   "source": "specimen_id",
+   "target": "insulation_present"
+  },
+  {
+   "else_label": "same direction",
+   "label": "opposed",
+   "note": "MBMA_9001 and MBMA_9102 both state that the suffix (O) - printed in the tables as the digit zero (0) - denotes purlin flanges opposed. Left blank when absent rather than assumed 'facing', because MBMA_9001 Table 3.1 distinguishes 'Facing' from 'Same' explicitly. Tests without (O) have the purlins facing the same direction (MBMA_9102 Table S1 note: 5'-0\" o.c. for tests with purlins facing the same direction, 3'-7\" for opposed; MBMA_9001 Table 3.1 'Facing'). (hand edit 2026-11-10, Cris Moen)",
+   "op": "regex",
+   "papers": [
+    "MBMA_9001",
+    "MBMA_9102"
+   ],
+   "pattern": "\\((0|O)\\)",
+   "source": "specimen_id",
+   "target": "purlin_orientation"
+  },
+  {
+   "else_label": "three-span confirming test",
+   "label": "single-span base test",
+   "note": "Both reports state: 'Suffix -1 denotes the single span base test and -3 the three-span confirming test' (MBMA_9001 Table 4.1 note; MBMA_9102 Table 3.1 note). The n_spans column reports the same fact and always wins where present; this rule only labels the test role.",
+   "op": "regex",
+   "papers": [
+    "MBMA_9001",
+    "MBMA_9102"
+   ],
+   "pattern": "-1(\\s|\\(|$)",
+   "source": "specimen_id",
+   "target": "test_role"
+  },
+  {
+   "target": "purlin_orientation",
+   "source": "purlin_orientation_as_printed",
+   "op": "equals",
+   "pattern": "Same",
+   "label": "same direction",
+   "else_label": "",
+   "papers": [
+    "MBMA_8404"
+   ],
+   "note": "Table 1.1 sketch (p.7). (hand edit 2026-11-10, Cris Moen: orientation labels normalized to 'same direction' / 'opposed')"
+  },
+  {
+   "target": "purlin_orientation",
+   "source": "purlin_orientation_as_printed",
+   "op": "equals",
+   "pattern": "Facing",
+   "label": "opposed",
+   "else_label": "",
+   "papers": [
+    "MBMA_8404"
+   ],
+   "note": "Table 1.1 sketch (p.7): Facing = [ ], flanges toward each other. (hand edit 2026-11-10, Cris Moen: orientation labels normalized to 'same direction' / 'opposed')"
+  },
+  {
+   "target": "purlin_orientation",
+   "source": "purlin_orientation_as_printed",
+   "op": "equals",
+   "pattern": "Opposing",
+   "label": "opposed",
+   "else_label": "",
+   "papers": [
+    "MBMA_8404"
+   ],
+   "note": "Table 1.1 sketch (p.7): Opposing = ] [, flanges away from each other. (hand edit 2026-11-10, Cris Moen: orientation labels normalized to 'same direction' / 'opposed')"
+  },
+  {
+   "target": "opposed_flange_direction",
+   "source": "purlin_orientation_as_printed",
+   "op": "equals",
+   "pattern": "Facing",
+   "label": "in",
+   "else_label": "",
+   "papers": [
+    "MBMA_8404"
+   ],
+   "note": "Table 1.1 sketch (p.7). (hand edit 2026-11-10, Cris Moen: orientation labels normalized to 'same direction' / 'opposed')"
+  },
+  {
+   "target": "opposed_flange_direction",
+   "source": "purlin_orientation_as_printed",
+   "op": "equals",
+   "pattern": "Opposing",
+   "label": "out",
+   "else_label": "",
+   "papers": [
+    "MBMA_8404"
+   ],
+   "note": "Table 1.1 sketch (p.7). (hand edit 2026-11-10, Cris Moen: orientation labels normalized to 'same direction' / 'opposed')"
+  },
+  {
+   "target": "purlin_orientation",
+   "source": "purlin_orientation_as_printed",
+   "op": "equals",
+   "pattern": "Facing",
+   "label": "same direction",
+   "else_label": "",
+   "papers": [
+    "MBMA_9001"
+   ],
+   "note": "In MBMA_9001 Table 3.1 'Facing' marks the tests without the (O) suffix, i.e. flanges facing the same direction (the opposite of MBMA_8404's usage). (hand edit 2026-11-10, Cris Moen: orientation labels normalized to 'same direction' / 'opposed')"
+  },
+  {
+   "target": "purlin_orientation",
+   "source": "purlin_orientation_as_printed",
+   "op": "equals",
+   "pattern": "Opposed",
+   "label": "opposed",
+   "else_label": "",
+   "papers": [
+    "MBMA_9001"
+   ],
+   "note": "Table 3.1; (O) suffix tests. (hand edit 2026-11-10, Cris Moen: orientation labels normalized to 'same direction' / 'opposed')"
+  }
+ ],
+ "notes": [
+  "The central split is loading direction and panel attachment: uplift puts the unattached (compression) flange free to move, gravity does not, and standing seam clips give far less rotational restraint than screwed panels. I therefore kept four purlin groups (simple-span through-fastened uplift, standing seam uplift, continuous through-fastened uplift, simple-span gravity) rather than pooling by section shape. C and Z sections are pooled within each group because section_type is carried as an identifier column and every member reports it.",
+  "MBMA_8404 contributes to two groups (its uplift and its gravity rows), split by a row filter on load_direction.",
+  "The simulated-gravity group (MBMA_8404 only, 7 rows) and the fastener-pullover group (MBMA_9410 only, 12 rows) each come from a single paper. They are retained because they are the only data of their kind in this collection, as permitted; a reviewer may drop them if single-source groups are unwanted.",
+  "MBMA_9410's standard pullover coupon tests (Tables 3-1 to 3-9) and simulated component tests (Tables 4-1 to 4-8) are deliberately excluded: they load one screw directly and are not full-scale assembly tests, so they are not comparable with the vacuum-box rows.",
+  "Reported failure loads are not consistently dead-load corrected: MBMA_8703/8803 subtract the assembly dead weight, MBMA_8404 gravity adds it, MBMA_7603/8310/8702/9001/9105 report applied chamber load only. Any cross-paper strength comparison should carry this flag.",
+  "MBMA_8702, MBMA_9702 and MBMA_9102 print depth, thickness and yield as multi-purlin or multi-bay strings ('0.0746 / 0.0745', 'A: .065 / .066 / .066', '7-13/16 to 8-1/4'). These cells need parsing into a representative value plus a range; no averaging rule is prescribed here.",
+  "MBMA_9501 reports no failure line load at all, only the tested moment (ft-kips) and R; its rows will have an empty failure_load_plf. Its own note warns against back-calculating loads from the appendix manometer readings, so no derivation for that is given.",
+  "MBMA_9001 and MBMA_9102 failure loads were later corrected by MBMA_9702 for a tributary-area error; both the original and corrected values are carried so a reviewer can choose.",
+  "MBMA_7603's two 'second (induced) failure' rows are reloads of an already-failed specimen with the failed purlin propped; they are not independent tests.",
+  "The prefix join from MBMA_9001 Table S1 to Table 3.1 assumes the suffix '-1'/'-3' is appended after the set designation; in the printed ids the '(0)' marker trails the suffix ('U-Z-T-P/F-1(0)' vs key 'U-Z-T-P/F(0)'), so the matcher may need to strip '(0)' before the prefix test.",
+  "Hand edits 2026-11-04: MBMA_9501 manometer readings are in inches of water, so the column is manometer_reading_at_failure_in_of_water (not psf); MBMA_9702 Table 1 loads are failure_load_table_1_plf, not 'corrected'.",
+  "Hand edit 2026-11-05: MBMA_1103 (added at Cris Moen's request) joined to this reviewed plan as a member of the simple-span through-fastened uplift group. A full replan was tried and rejected because it dropped test_id mappings, the MBMA_9410 group, two continuous-span specimens and the 2026-11-04 hand edits. Variable lap_length_over_depth renamed lap_to_depth_ratio so the header carries no inch unit (it is dimensionless). Headers ending _plf_lbft are plf (lb/ft); the suffix is redundant, not a unit change.",
+  "Load-direction filter (hand edit 2026-11-10, Cris Moen review): the 'simple_span_through_fastened_gravity' group (MBMA_8404 Tests 1-6, 16) was removed from the uplift set; those tests are pooled once, in the gravity set. MBMA_7501's three uplift assemblies joined the continuous-span group. MBMA_8404 Test 13 is dropped before harmonizing (authors call it invalid, p.34).",
+  "Partial joins fixed (hand edit 2026-11-10, Cris Moen review): MBMA_8703 Table D, MBMA_9001 Table 4.1 and MBMA_9501 Tables A1/A2 join on an added s1_test_id key (strength-summary spelling); MBMA_9001 Table 3.1 joins on the added configuration_id. Printed IDs are unchanged.",
+  "Variable 'span_in' renamed 'span_inches' (hand edit 2026-11-10): the new concordance appended a wrong unit suffix to it ('span_in_ft'); the values are inches.",
+  "purlin_orientation normalized to 'same direction' / 'opposed' (hand edit 2026-11-10, Cris Moen: orientation labels normalized to 'same direction' / 'opposed'). The printed wording is kept in purlin_orientation_as_printed; where the paper says which way the flanges of an opposed pair point, opposed_flange_direction holds 'in' (toward each other) or 'out'. Note MBMA_8404 'Facing' is opposed (flanges in) while MBMA_9001 'Facing' is same direction."
+ ],
+ "summary": "Eleven MBMA full-scale purlin test reports were pooled into five comparable populations defined by loading direction, panel attachment (through-fastened versus standing seam) and span continuity, with each paper's Table S1 strength summary as the primary table and its dimension, coupon and prediction tables joined as lookups. Rows were pooled only where the member type, panel restraint and span condition match, so MBMA_8404 splits across an uplift and a gravity group and the fastener-pullover program stands alone."
+}

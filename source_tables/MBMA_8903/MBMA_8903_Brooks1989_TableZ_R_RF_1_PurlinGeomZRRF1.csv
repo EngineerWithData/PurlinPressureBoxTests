@@ -1,0 +1,30 @@
+# Source: MBMA_8903 | Brooks, S. and Murray, T.M. (1989), Table Z-R-R/F-1, pp.47
+# Tag: MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1
+# Content: Measured cross-section geometry, coupon yield stress and computed flexural capacity of the two purlin lines of base test Z-R-R/F-1.
+# Data basis: mixed: measured cross-section dimensions and coupon yield stress with computed moment of inertia and AISI capacity
+# Units: units are given in each parameter label (inches, degrees, inches4, ksi, kip-inch)
+# Column definitions:
+#   parameter = measured cross-section dimension or computed property; unit given in the label
+#   ridge = value for the ridge-side purlin line of the single span base test
+#   eave = value for the eave-side purlin line of the single span base test
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 120 pages)
+# ANOMALY FLAG: The eave BOTTOM vertical lip dimension is printed as 0.8253 in. while the corresponding cross-section sketch shows 0.8125 in.; the printed table value is preserved verbatim and NOT corrected.
+# Table is unnumbered; headed "TEST Z-R-R/F-1 MEASURED GEOMETRY OF PURLIN CROSS-SECTIONS" (page A.13).
+parameter,ridge,eave
+TOP Vertical Lip Dimension (inches),0.625,0.5625
+TOP Lip Angle (degree),54.0,53.0
+TOP Flange Width (inches),2.594,2.5940
+TOP Radii Lip to Flange (inches),0.3125,0.3125
+TOP Radii Flange to Web (inches),0.25,0.25
+BOTTOM Vertical Lip Dimension (inches),0.8125,0.8253
+BOTTOM Lip Angle (degree),50.0,50.0
+BOTTOM Flange Width (inches),2.438,2.438
+BOTTOM Radii Lip to Flange (inches),0.3125,0.3125
+BOTTOM Radii Flange to Web (inches),0.25,0.25
+Total Depth (inches),8.406,8.406
+Thickness (inches),0.059,0.059
+Gross Moment of Inertia (inches4),9.16,9.11
+Material Yield Stress (ksi),67.53,67.53
+1986 AISI Allowable flexural capacity x 1.67 (kip-inch),110.9,107.6

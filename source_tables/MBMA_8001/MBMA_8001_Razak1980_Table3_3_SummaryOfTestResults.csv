@@ -1,0 +1,44 @@
+# Source: MBMA_8001 | Razak, M.A.A. and Peköz, T. (1980), Table 3.3, cont'd, pp.76-77
+# Tag: MBMA_8001_TABLE33_SUMMARYOFTESTRESULTS
+# Content: Summary of the fourteen large-scale vacuum and beam tests giving purlin type, nominal section size, failure load per foot and location/type of the local buckle.
+# Data basis: measured: failure loads from water-manometer vacuum pressure or universal testing machine, with visual observation of buckle location
+# Units: nom_depth_in and nom_thick_in and dist_buckle_to_midspan_in in inches; fail_load_lb_per_ft in lb/ft
+# Column definitions:
+#   test_id = test designation, V = vacuum test, B = beam test, followed by sequence number
+#   purlin_type = purlin designation letter A–E
+#   nom_depth_in = nominal depth of the purlin section, inches
+#   nom_thick_in = nominal thickness of the purlin sheet, inches
+#   fail_load_lb_per_ft = failure load per linear foot of purlin, pounds per foot (see footnote 2)
+#   at_a_hole = whether the local buckle occurred at a prepunched hole, Y = yes, N = no
+#   dist_buckle_to_midspan_in = distance from the local buckle to midspan, inches (m.s. = at midspan)
+#   comments = footnote reference number describing the failure (see notes)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 130 pages)
+# ANOMALY FLAG: For test B2 the location columns are printed as dashes ("-") because the buckle location was not recorded; these are preserved verbatim. "m.s." denotes midspan and is preserved as printed.
+# Footnote (1): V designates vacuum - B designates beam test.
+# Footnote (2): In the beam test, failure load is given as the total load on the span divided by the span length.
+# Footnote (3): Y-Yes; N-No.
+# Footnote (4): Unless otherwise noted, local buckle occurred only in one purlin and in the web and the flange.
+# Footnote (5): Yielding accompanied by large deflections.
+# Footnote (6): Indicated buckling was in the web and the flange of one purlin. The other purlin buckled locally in the flange stiffener.
+# Footnote (7): Indicated buckling was in the flange stiffener. The other purlin was restrained by the test machine due to large lateral deflections.
+# Footnote (8): Flange stiffener buckling.
+# Footnote (9): Ends of purlins were fixed.
+# Footnote (10): One purlin was tested previously and was badly distorted.
+# Table continues on the following printed page with the footnotes only; all data rows are on the first page.
+test_id,purlin_type,nom_depth_in,nom_thick_in,fail_load_lb_per_ft,at_a_hole,dist_buckle_to_midspan_in,comments
+V1,A,9-1/2,.063,145,Y,4.8,(9)
+V5,A,9-1/2,.063,114,N,m.s.,
+B1,A,9-1/2,.063,119,Y,15,
+B2,A,9-1/2,.063,96,-,-,(10)
+B3,A,9-1/2,.063,119,N,m.s.,
+V2,B,9-1/2,.110,229,Y,1.6,(5)
+V7,B,9-1/2,.110,224,Y,6,
+B5,B,9-1/2,.110,280,N,m.s.,
+V4,C,8,.063,82,Y,6,(6)
+B6,C,8,.063,95,Y,6,
+V3,D,8,.110,177,N,m.s.,
+B4,D,8,.110,254,N,m.s.,(7)
+V6,E,8,.07,88,N,m.s.,(8)
+B7,E,8,.07,105,N,m.s.,(8)

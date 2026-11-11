@@ -1,0 +1,41 @@
+# Source: MBMA_9003 | Hatch, J., Easterling, W.S. and Murray, T.M. (1990), Table 3.5, pp.40
+# Tag: MBMA_9003_TABLE35_COUPONTESTRESULTS
+# Content: Thickness, yield stress, tensile strength and elongation from standard ASTM tensile coupons cut at midspan from the web of each failed purlin.
+# Data basis: measured: standard ASTM tensile coupon tests at Butler Research and Virginia Tech Structures and Materials Research Laboratory
+# Units: thickness_in inches; yield_stress_ksi ksi; tensile_strength_ksi ksi; elongation_pct percent
+# Column definitions:
+#   test_designation = test from which the coupon was cut (one coupon per failed purlin web)
+#   thickness_in = measured thickness of the coupon, inches
+#   yield_stress_ksi = measured yield stress of the purlin steel, ksi
+#   tensile_strength_ksi = measured ultimate tensile strength of the purlin steel, ksi
+#   elongation_pct = measured elongation at fracture, percent
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 224 pages)
+# ANOMALY FLAG: For SP-10C-12-2 the printed tensile strength (61.5 ksi) equals the yield stress (61.5 ksi), giving a tensile/yield ratio of 1.0, which contradicts the text stating ratios of about 1.1 to 1.3; also SP-10C-0 and SP-10C-M have identical yield, tensile and elongation values (57.1, 65.3, 36.9). Values are preserved verbatim as printed and NOT corrected.
+# One coupon was cut, at approximately midspan, from the web of each purlin that failed.
+test_designation,thickness_in,yield_stress_ksi,tensile_strength_ksi,elongation_pct
+SP-8Z-0,0.058,65.1,82.6,25.0
+SP-8Z-0-2,0.060,65.1,82.8,24.5
+SP-8Z-25,0.059,66.8,83.6,23.5
+SP-8Z-50,0.059,66.0,81.7,25.0
+SP-8Z-75,0.060,65.3,82.8,25.0
+SP-8Z-M,0.059,65.6,82.4,23.2
+SP-10Z-0,0.084,65.0,85.4,18.5
+SP-10Z-25,0.084,66.2,87.4,28.5
+SP-10Z-50,0.083,66.3,86.9,30.8
+SP-10Z-75,0.083,67.8,88.2,15.7
+SP-10Z-M,0.083,66.3,87.7,18.0
+SP-10C-0,0.101,57.1,65.3,36.9
+SP-10C-25,0.103,57.3,66.0,41.8
+SP-10C-50,0.103,56.1,64.4,27.5
+SP-10C-75,0.102,61.7,65.7,22.4
+SP-10C-M,0.103,57.1,65.3,36.9
+SP-7C-12-1,0.075,64.7,80.2,23.5
+SP-7C-12-2,0.080,61.6,78.6,15.0
+SP-7C-12-3,0.083,60.7,78.5,30.0
+SP-10C-12-1,0.100,66.2,90.2,21.5
+SP-10C-12-2,0.102,61.5,61.5,12.5
+SP-10Z-12-1,0.074,61.4,78.6,25.3
+SP-10Z-12-2,0.074,61.9,85.7,26.3
+SP-10Z-12-3,0.075,59.5,82.4,25.0

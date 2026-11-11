@@ -1,0 +1,555 @@
+{
+  "citation": "Murray, T.M. (1990)",
+  "code_tag": "MBMA_9003",
+  "experiment": "Full-scale single-span, two-purlin-line diaphragm-braced strut-purlin roof assemblies (8 and 10 in. C and Z purlins with 26 ga through-fastened deck on one flange) were built upside down in a vacuum chamber and loaded to failure by simulated uplift alone, by concentric axial load alone, or by axial load applied while a preset uplift was held constant, with tensile coupons cut from the web of each failed purlin.",
+  "title": "Strut-Purlin Research: Full-Scale Tests of Diaphragm-Braced Strut-Purlin Roof Assemblies",
+  "variables": [
+    {
+      "availability": "direct",
+      "definition": "Test designation as printed, identifying the purlin depth/shape and the fastener spacing or percentage of uplift moment capacity held during the test.",
+      "evidence": "Table S1 (pp. 25-220) column test_id; Table 3.5 (p. 40) column test_designation",
+      "name": "Test designation",
+      "note": "Table 3.1 lists the same designations in its group notes rather than as a column.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_id",
+        "test_designation"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY",
+        "MBMA_9003_TABLE35_COUPONTESTRESULTS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Letter identifying the group of tests sharing the same purlin, deck and fastener components.",
+      "evidence": "Table 3.1 (p. 25) column test_group",
+      "name": "Test group",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_group"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLE31_TESTCOMPONENTS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Cold-formed purlin cross-section shape, C or Z.",
+      "evidence": "Table 3.1 (p. 25) column purlin_shape; Table S1 column section_type",
+      "name": "Purlin section shape",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "purlin_shape",
+        "section_type"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLE31_TESTCOMPONENTS",
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal depth of the cold-formed purlin section.",
+      "evidence": "Table 3.1 (p. 25) column purlin_depth_in; Table S1 column depth_in",
+      "name": "Purlin depth",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "purlin_depth_in",
+        "depth_in"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLE31_TESTCOMPONENTS",
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal thickness of the purlin material for each test group.",
+      "evidence": "Table 3.1 (p. 25) column purlin_thickness_in",
+      "name": "Nominal purlin thickness",
+      "note": "Distinct from the measured coupon thickness in Table 3.5.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "purlin_thickness_in"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLE31_TESTCOMPONENTS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Thickness measured on the tensile coupon cut from the web of the failed purlin, carried into the strength summary.",
+      "evidence": "Table 3.5 (p. 40) column thickness_in; Table S1 column thickness_in",
+      "name": "Measured purlin thickness",
+      "note": "",
+      "printed_symbol": "t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "thickness_in"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLE35_COUPONTESTRESULTS",
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Gage of the through-fastened roof deck panel used in each test group.",
+      "evidence": "Table 3.1 (p. 25) column deck_gage",
+      "name": "Deck gage",
+      "note": "All decking was 26 ga per header note.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "deck_gage"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLE31_TESTCOMPONENTS"
+      ],
+      "unit": "gage"
+    },
+    {
+      "availability": "direct",
+      "definition": "Type of fastener used to attach the deck to the purlin flange (SDF = #12 self-drilling structural fasteners).",
+      "evidence": "Table 3.1 (p. 25) column fastener and its header note",
+      "name": "Fastener type",
+      "note": "",
+      "printed_symbol": "SDF",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "fastener"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLE31_TESTCOMPONENTS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Spacing of the #12 self-drilling structural fasteners along the purlin flange.",
+      "evidence": "Table 3.1 (p. 25) column fastener_spacing_in; Table S1 column fastener_spacing_in",
+      "name": "Deck-to-purlin fastener spacing",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "fastener_spacing_in"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLE31_TESTCOMPONENTS",
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "implied",
+      "definition": "Spacing of the #14 self-drilling side-lap fasteners, stated as 2 ft 0 in. on center in the header notes of Tables 3.1 and S1.",
+      "evidence": "Header note of Table 3.1 (p. 25) and Table S1",
+      "name": "Side-lap fastener spacing",
+      "note": "Constant for all tests; not a column.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_9003_TABLE31_TESTCOMPONENTS",
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured yield stress of the purlin steel from the ASTM tensile coupon cut at midspan from the web of the failed purlin.",
+      "evidence": "Table 3.5 (p. 40) column yield_stress_ksi; Table S1 column yield_stress_ksi",
+      "name": "Yield stress",
+      "note": "",
+      "printed_symbol": "Fy",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "yield_stress_ksi"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLE35_COUPONTESTRESULTS",
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured ultimate tensile strength of the purlin steel from the tensile coupon.",
+      "evidence": "Table 3.5 (p. 40) column tensile_strength_ksi",
+      "name": "Tensile strength",
+      "note": "Header note flags SP-10C-12-2 where Fu equals Fy as printed.",
+      "printed_symbol": "Fu",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "tensile_strength_ksi"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLE35_COUPONTESTRESULTS"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Elongation at fracture measured on the standard tensile coupon.",
+      "evidence": "Table 3.5 (p. 40) column elongation_pct",
+      "name": "Coupon elongation",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "percentage",
+      "role": "material_property",
+      "symbols": [
+        "elongation_pct"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLE35_COUPONTESTRESULTS"
+      ],
+      "unit": "%"
+    },
+    {
+      "availability": "direct",
+      "definition": "Direction/combination of applied loading for the test (vacuum-simulated uplift, concentric axial load, or both).",
+      "evidence": "Table S1 column load_direction",
+      "name": "Load direction",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "load_direction"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Single span length of the test assembly.",
+      "evidence": "Table S1 column span_ft",
+      "name": "Span length",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "span_ft"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of spans in the test assembly (all single-span).",
+      "evidence": "Table S1 column n_spans",
+      "name": "Number of spans",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_spans"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of parallel purlin lines in the test assembly.",
+      "evidence": "Table S1 column n_purlin_lines",
+      "name": "Number of purlin lines",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_purlin_lines"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Roof deck attachment type and gage used in the assembly (through-fastened 26 ga screw-down).",
+      "evidence": "Table S1 column panel_type",
+      "name": "Panel type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "panel_type"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Description of bracing supplied to the purlins other than the deck (lateral supports at ends only).",
+      "evidence": "Table S1 column bracing",
+      "name": "Bracing condition",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "bracing"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "implied",
+      "definition": "Purlin lines were spaced at 5 ft centers with a 1 ft deck overhang and 7 ft wide deck, stated in the Table S1 header note.",
+      "evidence": "Header note of Table S1",
+      "name": "Purlin spacing and deck width",
+      "note": "Constant for all assemblies; not a column.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Load at failure exactly as printed in the report: an axial load (kips) for the combined-load tests and a uniform uplift load (plf) for the uplift-only tests.",
+      "evidence": "Table S1 column failure_load_as_printed",
+      "name": "Failure load as printed",
+      "note": "Mixed units; read with failure_load_unit.",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "failure_load_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "kips or plf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Unit in which the printed failure load is reported (kips or plf).",
+      "evidence": "Table S1 column failure_load_unit",
+      "name": "Failure load unit",
+      "note": "Metadata column accompanying the failure load.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "failure_load_unit"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Applied midspan bending moment at failure exactly as printed.",
+      "evidence": "Table S1 column failure_moment_as_printed",
+      "name": "Failure moment",
+      "note": "",
+      "printed_symbol": "M",
+      "quantity_kind": "moment",
+      "role": "measured_output",
+      "symbols": [
+        "failure_moment_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in-kip"
+    },
+    {
+      "availability": "direct",
+      "definition": "Unit in which the printed failure moment is reported (in-kip).",
+      "evidence": "Table S1 column failure_moment_unit",
+      "name": "Failure moment unit",
+      "note": "Metadata column accompanying the failure moment.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "failure_moment_unit"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Narrative description of the observed failure mechanism of the assembly.",
+      "evidence": "Table S1 column failure_mode",
+      "name": "Failure mode",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "failure_mode"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Uniformly distributed uplift load held on the assembly at failure, including roof-system dead weight, as printed.",
+      "evidence": "Table S1 column applied_uplift_at_failure_plf",
+      "name": "Applied uplift at failure",
+      "note": "For the uplift-only tests this equals the printed failure load.",
+      "printed_symbol": "",
+      "quantity_kind": "flow",
+      "role": "measured_output",
+      "symbols": [
+        "applied_uplift_at_failure_plf"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "implied",
+      "definition": "Roof-system dead weight included in the reported uplift loads: about 5 plf for 8 in. Z, 7.6 plf for 10 in. Z and 9 plf for 10 in. C assemblies, stated in the Table S1 notes.",
+      "evidence": "Header notes of Table S1 (p. 33)",
+      "name": "Roof system dead weight",
+      "note": "Not a column; given per assembly type in the notes.",
+      "printed_symbol": "",
+      "quantity_kind": "flow",
+      "role": "test_condition",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Theoretical axial failure load of the strut-purlin computed in the report, as printed.",
+      "evidence": "Table S1 column predicted_axial_load_kips (also Table 3.2, p. 29, per header note)",
+      "name": "Predicted axial failure load",
+      "note": "Printed as 'TBD' for the 8 in. Z tests; minor discrepancies noted between Table 3.2 and the data packs.",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "predicted_axial_load_kips"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "kips"
+    },
+    {
+      "availability": "direct",
+      "definition": "Printed ratio of the actual to the predicted axial failure load.",
+      "evidence": "Table S1 column actual_over_predicted",
+      "name": "Actual/predicted axial load",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "actual_over_predicted"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Printed ratio of the axial load at failure to the calculated axial capacity Pa.",
+      "evidence": "Table S1 column p_over_pa_as_printed",
+      "name": "P/Pa ratio",
+      "note": "Header note flags inconsistencies for SP-10Z-0 and SP-10C-0.",
+      "printed_symbol": "P/Pa",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "p_over_pa_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Printed ratio of the applied midspan moment at failure to the calculated uplift moment capacity Max.",
+      "evidence": "Table S1 column m_over_max_as_printed",
+      "name": "M/Max ratio",
+      "note": "",
+      "printed_symbol": "M/Max",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "m_over_max_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "implied",
+      "definition": "Predicted uplift capacity of 117.1 plf (M = 109.7 in-kip) for SP-10C-M, stated in a Table S1 header note for comparison with the measured 151.3 plf.",
+      "evidence": "Header note of Table S1 concerning SP-10C-M",
+      "name": "Predicted uplift capacity",
+      "note": "Given only for SP-10C-M in a note, not as a column.",
+      "printed_symbol": "",
+      "quantity_kind": "flow",
+      "role": "predicted_value",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    }
+  ],
+  "year": "1990"
+}

@@ -1,0 +1,30 @@
+# Source: MBMA_8903 | Brooks, S. and Murray, T.M. (1989), Table Z-T-R/S-1, pp.113
+# Tag: MBMA_8903_TABLEZTRS1_PURLINGEOMZTRS1
+# Content: Measured cross-section geometry, coupon yield stress and computed flexural capacity of the two purlin lines of third point braced base test Z-T-R/S-1.
+# Data basis: mixed: measured cross-section dimensions and coupon yield stress with computed moment of inertia and AISI capacity
+# Units: units are given in each parameter label (inches, degrees, inches4, ksi, kip-inch)
+# Column definitions:
+#   parameter = measured cross-section dimension or computed property; unit given in the label
+#   ridge = value for the ridge-side purlin line of the single span base test
+#   eave = value for the eave-side purlin line of the single span base test
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 120 pages)
+# ANOMALY FLAG: The ridge purlin AISI capacity is printed as 119.9 kip-in. while the eave purlin value is 198.9 kip-in. for essentially identical sections (the test summary uses Mn = 198.9 kip-in.); the printed value 119.9 is preserved verbatim and NOT corrected.
+# Table is unnumbered; headed "TEST Z-T-R/S-1 MEASURED GEOMETRY OF PURLIN CROSS-SECTIONS" (page B.21).
+parameter,ridge,eave
+TOP Vertical Lip Dimension (inches),0.8125,0.8125
+TOP Lip Angle (degree),46.0,46.5
+TOP Flange Width (inches),2.38,2.44
+TOP Radii Lip to Flange (inches),0.344,0.344
+TOP Radii Flange to Web (inches),0.22,0.22
+BOTTOM Vertical Lip Dimension (inches),0.75,0.75
+BOTTOM Lip Angle (degree),43.0,41.5
+BOTTOM Flange Width (inches),2.44,2.50
+BOTTOM Radii Lip to Flange (inches),0.344,0.344
+BOTTOM Radii Flange to Web (inches),0.22,0.22
+Total Depth (inches),9.575,9.575
+Thickness (inches),0.075,0.075
+Gross Moment of Inertia (inches4),15.96,16.19
+Material Yield Stress (ksi),63.51,63.51
+1986 AISI Allowable flexural capacity x 1.67 (kip-inch),119.9,198.9

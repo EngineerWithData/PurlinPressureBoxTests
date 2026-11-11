@@ -1,0 +1,49 @@
+# Source: MBMA_7603 | Guedelhoefer, O.C.; Boggs, D.W. (1976), Table S1, pp.6-8, 69
+# Tag: MBMA_7603_TABLES1_STRENGTHSUMMARY
+# Content: Measured failure (maximum) loads of the two full-scale three-span C and Z purlin roof systems tested to failure under vacuum-simulated wind uplift (including the second, induced failure of each system) and of the three in-plane deck shear tests on the Z purlin assembly.
+# Data basis: measured: vacuum-chamber uplift pressures at purlin buckling as stated in the narrative test descriptions and test logs; deck shear test results reported only as load-displacement curves in Fig. 60
+# Units: see column headers
+# Column definitions:
+#   test_id = identifier assigned to each physical load test / failure event in this report, dimensionless
+#   load_direction = direction of applied loading (uplift, gravity, or in-plane shear), dimensionless
+#   section_type = purlin cross-section shape as printed (C or Z), dimensionless
+#   depth_in = nominal purlin web depth from the construction drawings, in.
+#   thickness_in = purlin base metal thickness as printed on the construction drawings, in.
+#   span_ft = nominal span length between support beams, ft
+#   n_spans = number of continuous spans in the test specimen, count
+#   n_purlin_lines = number of parallel purlin lines in the specimen, count
+#   panel_type = type of roof panel/deck attachment, dimensionless
+#   bracing = bracing arrangement of the purlin top/compression flange, dimensionless
+#   failure_load_as_printed = failure or maximum load exactly as printed in the report, see failure_load_unit
+#   failure_load_unit = unit of the failure load exactly as printed
+#   failure_moment_as_printed = failure moment as printed (none reported), see failure_moment_unit
+#   failure_moment_unit = unit of the failure moment as printed
+#   failure_mode = description of what limited the test, dimensionless
+#   value_source = where in the report the value is stated (text, table, figure)
+#   pages = PDF page number(s) where the value is stated
+#   purlin_spacing_ft = center-to-center spacing of the purlin lines, ft
+#   vacuum_pressure_in_water = corresponding vacuum chamber pressure at failure as printed, in. of water
+#   failure_location = printed location of the buckle relative to the supports, ft-in.
+#   tributary_width_ft = plan width of uplift pressure carried by each purlin line, ft
+#   failure_load_plf = failure load per purlin line = failure_load_as_printed (psf) x tributary_width_ft, lb/ft
+# EXTRACTION QUALITY: ocr_repaired — only unambiguous single-character OCR fixes, each listed under ANOMALY FLAG
+# VALIDATION: 12 cells checked (AI, 2026-11-04): 12 correct, 0 errors, 8 unreadable; P(accuracy ≥ 0.8) = 94.5%, ≥ 0.9) = 74.6%, ≥ 0.95) = 48.7%
+# TEXT SOURCE: read from page images by the model (cached transcription)
+# ANOMALY FLAG: Fig. 4 prints the C-purlin web thickness as "CENTER SPAN t = 0.773" (apparently a typo/OCR artifact for 0.0773) while the exterior spans are printed as "t = .119"; C-purlin cross-section dimensions are read from the drawing on PDF page 13.
+# CORRECTION (Cris Moen, 2026-10-13; open question MBMA_7603-Q04): C-purlin center-span thickness taken as 0.073 in.; the printed "t = 0.773" (PDF p13, Fig. 4) is a scan/typo artefact, as 0.773 in. is implausible for a cold-formed purlin. Exterior spans remain t = 0.119 in. as printed. Thickness column values in the C purlin rows were changed from 0.773 to 0.073.
+# Loading was applied as a uniform uplift (suction) pressure by evacuating a sealed timber/visqueen chamber built around the 75 ft long, 6 ft 4 in. wide three-span specimens; pressures were monitored with a water manometer and checked with load cells at supports.
+# Purlins were spaced 5 ft apart (two purlin lines per specimen); support beams at nominal 25 ft spacing (24'-10 1/2", 25'-0", 24'-10 1/2" for the Z system).
+# Reported loads are applied vacuum pressures in psf; the report does not state whether specimen dead load is included (dead load acts opposite to uplift).
+# Z system: instrumentation was last recorded at 39 psf (Load No. 14); failure occurred while increasing load beyond that point at approximately 8.9 in. water (46.3 psf). After unloading, the buckled purlin was supported by an overhead crane and the system reloaded to a second failure at 46.8 psf (Load No. 16).
+# C system: failure occurred while holding Load No. 34 (11.5 in. water = 59.8 psf), so all instrumentation was recorded at the failure load; a second failure was induced at about 12.4 in. water (64.5 psf) with no data recorded.
+# Deck shear tests (Fig. 7, Fig. 60) reused a 10 ft long section cut from the mid-span of the Z purlin uplift specimen with new deck for Tests 2 and 3; results are presented only as load vs. displacement curves (axes to 4000 lb and 3.0 in.), so no numerical maximum load is printed and the failure-load cells are left empty.
+# Deck attachment in all tests was No. 14 self-tapping sheet metal screws through the deck into the purlin flanges (through-fastened), with bolts substituted where the deck attached to a frame beam in the shear tests.
+# TRIBUTARY WIDTH NOTE (Cris Moen, 2026-10-27; open question MBMA_7603-Q01): tributary_width_ft = 3.167 ft per purlin = 8 in. from purlin to chamber edge + half of the 5'-0" purlin spacing, from Section 1 (Typ. @ Support Beam); two purlins x 38 in. = 6'-4" sealed width (p4). By symmetry this split holds regardless of deck continuity. failure_load_plf = printed psf x 3.167 (applied vacuum load only; dead load inclusion not stated). Deck shear rows left blank.
+test_id,load_direction,section_type,depth_in,thickness_in,span_ft,n_spans,n_purlin_lines,panel_type,bracing,failure_load_as_printed,failure_load_unit,failure_moment_as_printed,failure_moment_unit,failure_mode,value_source,pages,purlin_spacing_ft,vacuum_pressure_in_water,failure_location,tributary_width_ft,failure_load_plf
+Z purlin uplift - first failure,uplift,Z,8,0.075,25,3,2,through-fastened (No. 14 self-tapping screws),steel strap (2.0 in. x 0.0625 in.) welded to purlin flanges with turnbuckles at supports and intermediate (mid-span) brace,46.3,psf,,,Buckle formed in the south span purlin on the east side (purlin buckling),text,6,5,8.9,"7'-3"" from the south support beam",3.167,146.6
+Z purlin uplift - second (induced) failure,uplift,Z,8,0.075,25,3,2,through-fastened (No. 14 self-tapping screws),steel strap (2.0 in. x 0.0625 in.) welded to purlin flanges with turnbuckles at supports and intermediate (mid-span) brace,46.8,psf,,,Similar buckle in the northwest purlin on reloading with the first failed purlin externally supported by an overhead crane,text,7,5,,"8'-11"" south of the northernmost support",3.167,148.2
+C purlin uplift - first failure,uplift,C,7,0.073 (center span); .119 (exterior spans),25,3,2,through-fastened (No. 14 self-tapping screws),steel strap with turnbuckles at supports and intermediate (mid-span) brace,59.8,psf,,,Northeast purlin buckled (top flange buckled outward) while load was held steady,text,7,5,11.5,"8'-4 1/2"" south of the north support",3.167,189.4
+C purlin uplift - second (induced) failure,uplift,C,7,0.073 (center span); .119 (exterior spans),25,3,2,through-fastened (No. 14 self-tapping screws),steel strap with turnbuckles at supports and intermediate (mid-span) brace,64.5,psf,,,Southeast purlin buckled (top flange buckled outward) on reloading with the first failed purlin externally supported,text,7,5,12.4,"8'-0"" north of the southernmost support beam",3.167,204.3
+Deck shear Test 1,in-plane shear,Z,8,0.075,10,,2,through-fastened (No. 14 self-tapping screws),framing beam welded at load end only; beam not used at reaction end; pinned and roller reaction plates welded to purlin ends,,,,,In-plane shear load/deflection test; no numerical maximum load printed (results given only as load vs. displacement curve),figure 60,"8, 69",5,,,,
+Deck shear Test 2,in-plane shear,Z,8,0.075,10,,2,through-fastened (No. 14 self-tapping screws; bolts to frame beams),second framing beam welded at reaction end; deck attached to both frame beams in addition to the purlins,,,,,In-plane shear load/deflection test; no numerical maximum load printed (results given only as load vs. displacement curve),figure 60,"8, 69",5,,,,
+Deck shear Test 3,in-plane shear,Z,8,0.075,10,,2,through-fastened (No. 14 self-tapping screws; bolts to frame beams),framing beams at both ends; deck not attached to the beam at the loading end,,,,,In-plane shear load/deflection test; no numerical maximum load printed (results given only as load vs. displacement curve),figure 60,"8, 69",5,,,,

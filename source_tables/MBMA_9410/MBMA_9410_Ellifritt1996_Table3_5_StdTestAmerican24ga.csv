@@ -1,0 +1,26 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 3-5, pp.33
+# Tag: MBMA_9410_TABLE35_STDTESTAMERICAN24GA
+# Content: Ultimate fastener loads and failure modes from standard pullover tests on 24 gage American steel coupons (Fy = 80 ksi), tested 2/22/95.
+# Data basis: measured: ultimate load in a tensile testing machine using the standard pullover jig
+# Units: tl_load_lbs in pounds; pl_th_gage in gage
+# Column definitions:
+#   test_no = test specimen number
+#   tl_load_lbs = total ultimate load recorded on the fastener, pounds
+#   comments = observed failure mode / remarks as printed
+#   pl_th_gage = panel sheet thickness, gage
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# * in the comments denotes eccentric loading.
+# Printed summary below the table: Mean = 2123 lbs; Standard deviation = 107.3985.
+test_no,tl_load_lbs,comments,pl_th_gage
+1,2150,Pullover *,24
+2,2160,Pullover *,24
+3,2290,Pullover *,24
+4,2010,Pullover,24
+5,2030,Pullover,24
+6,2220,Pullover,24
+7,2190,Pullover,24
+8,2190,Pullover,24
+9,2020,Pullover *,24
+10,1970,Pullover,24

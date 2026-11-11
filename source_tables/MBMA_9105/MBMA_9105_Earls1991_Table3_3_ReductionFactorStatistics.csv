@@ -1,0 +1,19 @@
+# Source: MBMA_9105 | Earls, C.J., Pugh, A.D. and Murray, T.M. (1991), Table 3.3, pp.14
+# Tag: MBMA_9105_TABLE33_REDUCTIONFACTORSTATISTICS
+# Content: Mean and dispersion of the reduction factor R for the previous Laboube et al. C-purlin tests, the three current tests, and the combined set.
+# Data basis: computed: statistics of reduction factors from the current tests combined with previously published C-purlin test results
+# Units: mean_r and std_deviation_r dimensionless
+# Column definitions:
+#   test_set = group of tests averaged (previous Laboube et al. data, current tests, or all)
+#   mean_r = mean value of the reduction factor R = Mu/Mth for that test set, dimensionless
+#   std_deviation_r = printed standard deviation (described in text as coefficient of variation) of R
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 9 cells checked (AI, 2026-11-04): 9 correct, 0 errors; P(accuracy ≥ 0.8) = 89.3%, ≥ 0.9) = 65.1%, ≥ 0.95) = 40.1%
+# TEXT SOURCE: read from page images by the model (all 42 pages)
+# ANOMALY FLAG: The column is headed "Std. Deviation" but the text describes these values as coefficients of variation (0.05, 0.07); printed heading and values preserved verbatim.
+# The companion Table 3.2 (page 14) lists only reduction factors from Laboube et al. (1988) tests 15-19 (0.60, 0.68, 0.64, 0.54, 0.61) and is therefore literature data, not extracted here.
+# "Current" refers to tests C1, C2 and C3 of this report.
+test_set,mean_r,std_deviation_r
+Laboube et al (1988),0.61,0.05
+Current,0.68,0.10
+All,0.64,0.07

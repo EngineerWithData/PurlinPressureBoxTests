@@ -1,0 +1,47 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 4-16, pp.91
+# Tag: MBMA_9410_TABLE416_VACUUMBOXTEST6
+# Content: Time history of panel displacements, chamber pressure and individual fastener loads for vacuum box test 6 (two span system, 24 gage Pascoe panels).
+# Data basis: measured: pressure transducer, LVDTs and six load cells logged during the vacuum box test
+# Units: pt_psi in psi; LVDTs in inches; load cells in pounds
+# Column definitions:
+#   date = calendar date of the scan, mm/dd/yy
+#   time_hhmmss = clock time of the scan
+#   lvdt1_in = displacement measured by LVDT 1, inches
+#   lvdt2_in = displacement measured by LVDT 2, inches
+#   pt_psi = chamber pressure from the pressure transducer, psi
+#   lcell3_lb = load on the fastener at load cell 3, pounds
+#   lcell4_lb = load on the fastener at load cell 4, pounds
+#   lcell5_lb = load on the fastener at load cell 5, pounds
+#   lcell6_lb = load on the fastener at load cell 6, pounds
+#   lcell7_lb = load on the fastener at load cell 7, pounds
+#   lcell8_lb = load on the fastener at load cell 8, pounds
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: Several numeric cells were extracted with a space where the decimal point is printed (e.g. "269 480", "357 152", "269 597", "265 888", "145 873", "624 860", "702 623", "3 304"); these are preserved exactly as extracted and were NOT corrected.
+# Printed summary: Test Number 6; Failed Cells #4 (Pullover, 542.958), #5 (Pullover, 736.705), #6 (Pullout, 628.588), #7 (Pullover, 688.254); Peak Pressures 1.560/1.560/1.462/1.226; Peak LVDT 1 2.396/2.396/5.169/4.465; Peak LVDT 2 1.969/1.969/4.661/3.768; Elapsed Time 00:41; Size 24 Ga.; Type Pascoe.
+# Printed comments: Excellent test. Minor panel buckling. One pullout failure. Striping of the threads may have caused this or perhaps the screw was placed in a hole previously drilled. Purlins were used for more than 1 test.
+date,time_hhmmss,lvdt1_in,lvdt2_in,pt_psi,lcell3_lb,lcell4_lb,lcell5_lb,lcell6_lb,lcell7_lb,lcell8_lb
+12/02/95,16:44:30.399,1.035,0.910,-0.215,61.955,73.594,82.366,172.149,357.131,269 480
+12/02/95,16:44:32.399,1.035,0.910,-0.212,62.199,73.701,82.485,172.427,357.257,269.395
+12/02/95,16:44:34.399,1.035,0.910,-0.216,62.075,73.727,82.494,172.369,357.173,269.462
+12/02/95,16:44:36.399,1.035,0.910,-0.215,62.015,73.683,82.460,172.321,357 152,269 597
+12/02/95,16:44:38.399,1.035,0.910,-0.218,62.055,73.792,82.536,172.321,357.320,269.443
+12/02/95,16:44:40.399,1.035,0.910,-0.215,62.004,73.544,82.351,172.205,357.404,269.506
+12/02/95,16:44:42.399,1.035,0.921,-0.200,62.017,73.111,81.550,172.289,357.341,269.293
+12/02/95,16:44:44.399,1.135,1.032,-0.119,62.495,71.986,74.714,172.835,357.908,265 888
+12/02/95,16:44:46.399,1.310,1.231,0.013,75.470,79.851,94.875,175.283,355.913,260.735
+12/02/95,16:44:48.399,1.498,1.398,0.207,145 873,124.317,152.737,237.529,389.933,256.108
+12/02/95,16:44:50.399,1.690,1.552,0.454,237.580,211.060,252.346,354.505,499.490,321.587
+12/02/95,16:44:52.399,1.922,1.641,0.626,322.470,318.715,348.535,475.403,624 860,376.882
+12/02/95,16:44:54.399,2.234,1.804,0.737,386.254,355.108,440.000,554.761,702 623,438.160
+12/02/95,16:44:56.399,2.590,2.084,0.904,436.960,391.319,554.512,603.357,763.880,527.868
+12/02/95,16:44:58.399,2.940,2.351,1.043,498.604,448.654,633.777,635.255,802.709,591.327
+12/02/95,16:45:00.399,3.143,2.519,1.144,539.196,484.183,702.037,654.265,846.599,596.623
+12/02/95,16:45:02.399,3 304,2.736,1.269,588.629,561.112,784.993,708.793,895.886,588.870
+12/02/95,16:45:04.399,3.431,2.878,1.345,622.242,616.552,819.071,741.629,933.980,587.862
+12/02/95,16:45:06.399,5.501,4.678,1.010,644.544,6.280,-3.286,715.819,1045.385,576.027
+12/02/95,16:45:08.399,5.869,5.172,1.186,723.189,6.322,-4.742,757.339,996.308,482.530
+12/02/95,16:45:10.399,6.205,5.570,1.247,733.264,7.179,-4.044,800.737,1030.538,499.393
+12/02/95,16:45:11.699,6.394,5.782,1.322,771.778,7.314,-4.219,732.167,-4.699,444.636
+12/02/95,16:45:11.800,9.093,6.424,0.827,629.769,7.351,-4.467,-11.119,-1.087,440.381

@@ -1,0 +1,23 @@
+# Source: MBMA_9102 | Pugh, A.D. and Murray, T.M. (1991), Table 2.1, pp.13
+# Tag: MBMA_9102_TABLE21_TESTMATRIX1991
+# Content: Configuration matrix (purlin type, bracing, deck, clip, purlin orientation and total lap length) for the four 1991 uplift test sets.
+# Data basis: input: as-built configuration of the 1991 test assemblies with measured total lap lengths
+# Units: lap_in in inches; other columns are descriptive
+# Column definitions:
+#   test_designation = test set label for the 1991 experiments (see notes for code)
+#   purlin = purlin cross-section type, Z or C
+#   bracing = lateral bracing configuration, at rafters only or rafters plus third points
+#   deck = roof panel type, pan or rib
+#   clip = clip type, sliding (two piece) or fixed (one piece)
+#   orientation = purlin orientation, facing same direction or opposed
+#   lap_in = total lap length measured between the ends of the lap, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 99 pages)
+# Lap values are the total lap length, i.e. the distance between the ends of the lap, not the distance between the web bolts.
+# Laps were not necessarily equal on both sides of the interior rafter; details are in Appendices A-D.
+test_designation,purlin,bracing,deck,clip,orientation,lap_in
+UZRP/S 1991,Z,Rafter,Pan,Sliding,Facing,28.0
+UCRP/S (O) 1991,C,Rafter,Pan,Sliding,Oppose,57.0
+UZTP/F (O) 1991,Z,Third,Pan,Fixed,Oppose,33.0
+UZTR/F 1991,Z,Third,Rib,Fixed,Facing,66.0

@@ -1,0 +1,874 @@
+{
+  "citation": "Brooks, S.D. and Murray, T.M. (1989)",
+  "code_tag": "MBMA_8903",
+  "experiment": "Eighteen full-scale vacuum-chamber gravity load tests (nine single-span base tests and nine three-span confirming tests) of Z- and C-purlin supported standing seam roof systems with different panel, clip, bracing and purlin-orientation configurations were loaded to failure, and the measured three-span strengths were compared with predictions of the base test method.",
+  "title": "A Method for Determining the Strength of Z- and C-Purlin Supported Standing Seam Roof Systems (MBMA Report 8903)",
+  "variables": [
+    {
+      "availability": "direct",
+      "definition": "Label identifying each test set or individual test (purlin type - bracing - panel/clip - number of spans, with \"(0)\" denoting opposed flanges).",
+      "evidence": "Table 2.1 p.11; Table 3.1 p.21; Tables 3.2/3.3 pp.23,25; Tables 4.1-4.3 pp.27-29; Table S1",
+      "name": "Test identification",
+      "note": "In Tables 3.2/3.3 the designation is printed only on the first row of each span pair.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_identification",
+        "test_designation",
+        "test_id"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS",
+        "MBMA_8903_TABLE31_COUPONTESTRESULTS",
+        "MBMA_8903_TABLE32_RAFTERBRACEDTESTRESULTS",
+        "MBMA_8903_TABLE33_THIRDPOINTBRACEDTESTRESULTS",
+        "MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED",
+        "MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED",
+        "MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE",
+        "MBMA_8903_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Position of the individual purlin line within the test setup (ridge, intermediate, eave) and the bay (east, center, west) to which the measured cross-section values apply.",
+      "evidence": "Column headers of the unnumbered appendix cross-section geometry tables, pp.37-118",
+      "name": "Purlin line location",
+      "note": "Appears as the column headings of the geometry tables rather than as a data column.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "ridge",
+        "eave",
+        "east_ridge",
+        "east_intermediate",
+        "east_eave",
+        "center_ridge",
+        "center_intermediate",
+        "center_eave",
+        "west_ridge",
+        "west_intermediate",
+        "west_eave",
+        "east_intermediate_1",
+        "east_intermediate_2",
+        "center_intermediate_1",
+        "center_intermediate_2",
+        "west_intermediate_1",
+        "west_intermediate_2"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLECRPS1_PURLINGEOMCRPS1",
+        "MBMA_8903_TABLECRPS3_PURLINGEOMCRPS3",
+        "MBMA_8903_TABLEZRPF1_PURLINGEOMZRPF1",
+        "MBMA_8903_TABLEZRPF3_PURLINGEOMZRPF3",
+        "MBMA_8903_TABLEZRPS1_PURLINGEOMZRPS1",
+        "MBMA_8903_TABLEZRPS3_PURLINGEOMZRPS3",
+        "MBMA_8903_TABLEZRRF10_PURLINGEOMZRRF1OPP",
+        "MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1",
+        "MBMA_8903_TABLEZRRF30_PURLINGEOMZRRF3OPP",
+        "MBMA_8903_TABLEZRRF3_PURLINGEOMZRRF3",
+        "MBMA_8903_TABLEZRRS1_PURLINGEOMZRRS1",
+        "MBMA_8903_TABLEZRRS3_PURLINGEOMZRRS3",
+        "MBMA_8903_TABLEZTPF1_PURLINGEOMZTPF1",
+        "MBMA_8903_TABLEZTPF3_PURLINGEOMZTPF3",
+        "MBMA_8903_TABLEZTPS1_PURLINGEOMZTPS1",
+        "MBMA_8903_TABLEZTPS3_PURLINGEOMZTPS3",
+        "MBMA_8903_TABLEZTRS1_PURLINGEOMZTRS1",
+        "MBMA_8903_TABLEZTRS3_PURLINGEOMZTRS3"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Cold-formed cross-section shape of the purlin, Z-section or C-section, as stated for each test configuration.",
+      "evidence": "Table 2.1 p.11; Table S1",
+      "name": "Purlin section type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "purlin_type",
+        "section_type"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS",
+        "MBMA_8903_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Lateral bracing arrangement provided to the purlins (rafters/supports only, or rafters plus third points).",
+      "evidence": "Table 2.1 p.11; Table S1",
+      "name": "Bracing arrangement",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "bracing"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS",
+        "MBMA_8903_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Standing seam roof panel profile family used in the test, rib type or pan type.",
+      "evidence": "Table 2.1 p.11; Table S1",
+      "name": "Roof panel type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "panel_type"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS",
+        "MBMA_8903_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Type of standing seam clip connecting panel to purlin: one-piece fixed or two-piece sliding.",
+      "evidence": "Table 2.1 p.11; Table S1",
+      "name": "Clip type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "clip_type"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS",
+        "MBMA_8903_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Whether the purlin top flanges all face the same direction or are opposed in the test assembly.",
+      "evidence": "Table 2.1 p.11",
+      "name": "Purlin orientation",
+      "note": "Opposed configuration also flagged by \"(0)\" in the test designation.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "purlin_orientation"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Total overlap length of the lapped purlins at the interior rafter location in the three-span confirming test.",
+      "evidence": "Table 2.1 p.11; repeated in a Table S1 header note",
+      "name": "Lap length at interior rafter",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "lap_length_3span"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS",
+        "MBMA_8903_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft-in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured base metal thickness of the purlin material, from tensile coupons cut from the web and from the appendix cross-section measurements.",
+      "evidence": "Table 3.1 p.21; appendix cross-section tables; Table S1",
+      "name": "Purlin thickness",
+      "note": "Coupon thickness in Table 3.1 differs slightly from the measured section thickness in Table S1.",
+      "printed_symbol": "t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "thickness_in",
+        "Thickness (inches)"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE31_COUPONTESTRESULTS",
+        "MBMA_8903_TABLES1_STRENGTHSUMMARY",
+        "MBMA_8903_TABLECRPS1_PURLINGEOMCRPS1",
+        "MBMA_8903_TABLECRPS3_PURLINGEOMCRPS3",
+        "MBMA_8903_TABLEZRPF1_PURLINGEOMZRPF1",
+        "MBMA_8903_TABLEZRPF3_PURLINGEOMZRPF3",
+        "MBMA_8903_TABLEZRPS1_PURLINGEOMZRPS1",
+        "MBMA_8903_TABLEZRPS3_PURLINGEOMZRPS3",
+        "MBMA_8903_TABLEZRRF10_PURLINGEOMZRRF1OPP",
+        "MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1",
+        "MBMA_8903_TABLEZRRF30_PURLINGEOMZRRF3OPP",
+        "MBMA_8903_TABLEZRRF3_PURLINGEOMZRRF3",
+        "MBMA_8903_TABLEZRRS1_PURLINGEOMZRRS1",
+        "MBMA_8903_TABLEZRRS3_PURLINGEOMZRRS3",
+        "MBMA_8903_TABLEZTPF1_PURLINGEOMZTPF1",
+        "MBMA_8903_TABLEZTPF3_PURLINGEOMZTPF3",
+        "MBMA_8903_TABLEZTPS1_PURLINGEOMZTPS1",
+        "MBMA_8903_TABLEZTPS3_PURLINGEOMZTPS3",
+        "MBMA_8903_TABLEZTRS1_PURLINGEOMZTRS1",
+        "MBMA_8903_TABLEZTRS3_PURLINGEOMZTRS3"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Average measured yield stress of two standard ASTM tensile coupons cut from the purlin web, also listed on each appendix cross-section table and used in the capacity calculations.",
+      "evidence": "Table 3.1 p.21; Tables 4.1-4.3 pp.27-29; appendix geometry tables; Table S1",
+      "name": "Yield stress",
+      "note": "Z-R-P/S-1 is printed as 62.45 ksi in Table 3.1 but 67.45 ksi in the appendix; Tables 4.1/4.2 use a single (three-span coupon) value per test set.",
+      "printed_symbol": "Fy",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "fy_ksi",
+        "yield_stress_ksi",
+        "Yield Stress (ksi)"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE31_COUPONTESTRESULTS",
+        "MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED",
+        "MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED",
+        "MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE",
+        "MBMA_8903_TABLES1_STRENGTHSUMMARY",
+        "MBMA_8903_TABLECRPS1_PURLINGEOMCRPS1",
+        "MBMA_8903_TABLECRPS3_PURLINGEOMCRPS3",
+        "MBMA_8903_TABLEZRPF1_PURLINGEOMZRPF1",
+        "MBMA_8903_TABLEZRPF3_PURLINGEOMZRPF3",
+        "MBMA_8903_TABLEZRPS1_PURLINGEOMZRPS1",
+        "MBMA_8903_TABLEZRPS3_PURLINGEOMZRPS3",
+        "MBMA_8903_TABLEZRRF10_PURLINGEOMZRRF1OPP",
+        "MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1",
+        "MBMA_8903_TABLEZRRF30_PURLINGEOMZRRF3OPP",
+        "MBMA_8903_TABLEZRRF3_PURLINGEOMZRRF3",
+        "MBMA_8903_TABLEZRRS1_PURLINGEOMZRRS1",
+        "MBMA_8903_TABLEZRRS3_PURLINGEOMZRRS3",
+        "MBMA_8903_TABLEZTPF1_PURLINGEOMZTPF1",
+        "MBMA_8903_TABLEZTPF3_PURLINGEOMZTPF3",
+        "MBMA_8903_TABLEZTPS1_PURLINGEOMZTPS1",
+        "MBMA_8903_TABLEZTPS3_PURLINGEOMZTPS3",
+        "MBMA_8903_TABLEZTRS1_PURLINGEOMZTRS1",
+        "MBMA_8903_TABLEZTRS3_PURLINGEOMZTRS3"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Average measured ultimate tensile strength of two coupons cut from the purlin web.",
+      "evidence": "Table 3.1 p.21",
+      "name": "Tensile strength",
+      "note": "",
+      "printed_symbol": "Fu",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "fu_ksi"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE31_COUPONTESTRESULTS"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Average measured percent elongation of two standard tensile coupons.",
+      "evidence": "Table 3.1 p.21",
+      "name": "Coupon elongation",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "percentage",
+      "role": "material_property",
+      "symbols": [
+        "elongation_pct"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE31_COUPONTESTRESULTS"
+      ],
+      "unit": "%"
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of spans in the test setup, one for the single-span base test and three (two in the reference tests) for the confirming test.",
+      "evidence": "Tables 3.2/3.3 pp.23,25; Table S1",
+      "name": "Number of spans",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "no_of_spans",
+        "n_spans"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE32_RAFTERBRACEDTESTRESULTS",
+        "MBMA_8903_TABLE33_THIRDPOINTBRACEDTESTRESULTS",
+        "MBMA_8903_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of parallel purlin lines in the test assembly (two for base tests, three or four for confirming tests).",
+      "evidence": "Table S1",
+      "name": "Number of purlin lines",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_purlin_lines"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Span length of each span of the test assembly as printed (25 ft 0 in. for base tests, 23 ft 6 in. for three-span tests).",
+      "evidence": "Table S1 column span_ft and header note",
+      "name": "Span length",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "span_ft"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft-in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Direction of the applied vacuum-chamber load; gravity for all tests in this program.",
+      "evidence": "Table S1 column load_direction and header note",
+      "name": "Load direction",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "load_direction"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured ultimate uniform load per purlin line at failure, obtained from vacuum-chamber pressure measured with a U-tube manometer; reported both for single-span base tests (wu) and for the multi-span confirming tests.",
+      "evidence": "Tables 3.2/3.3 pp.23,25; Tables 4.1-4.3 pp.27-29 (wu base and wu 3-span/2-span columns); Table S1",
+      "name": "Measured failure load",
+      "note": "Base-test and confirming-test values appear as separate columns in Tables 4.1-4.3; small print discrepancies exist between the summary tables and the appendix sheets.",
+      "printed_symbol": "wu",
+      "quantity_kind": "flow",
+      "role": "measured_output",
+      "symbols": [
+        "failure_load_plf",
+        "wu_base_plf",
+        "wu_3span_plf",
+        "wu_2span_plf",
+        "failure_load_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE32_RAFTERBRACEDTESTRESULTS",
+        "MBMA_8903_TABLE33_THIRDPOINTBRACEDTESTRESULTS",
+        "MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED",
+        "MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED",
+        "MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE",
+        "MBMA_8903_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Observed mode of failure recorded during the test: LM (failure after considerable lateral movement), LB (local buckling of lip, flange or web) or BR (failure of a lateral brace-to-purlin connection).",
+      "evidence": "Tables 3.2/3.3 pp.23,25 with abbreviation notes; Table S1",
+      "name": "Failure mode",
+      "note": "Appendix sheet for Z-T-P/S-3 calls the BR failure \"lateral torsional buckling\".",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "failure_mode"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE32_RAFTERBRACEDTESTRESULTS",
+        "MBMA_8903_TABLE33_THIRDPOINTBRACEDTESTRESULTS",
+        "MBMA_8903_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in. kips"
+    },
+    {
+      "availability": "direct",
+      "definition": "Maximum simple-span moment of the single-span base test corresponding to the measured base test failure load.",
+      "evidence": "Tables 4.1-4.3 pp.27-29 (mus_kip_in); Table S1 failure_moment_as_printed",
+      "name": "Base test failure moment",
+      "note": "Printed only for the single-span base tests; blank for multi-span tests.",
+      "printed_symbol": "Mus",
+      "quantity_kind": "moment",
+      "role": "measured_output",
+      "symbols": [
+        "mus_kip_in",
+        "failure_moment_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED",
+        "MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED",
+        "MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE",
+        "MBMA_8903_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in.-kips"
+    },
+    {
+      "availability": "direct",
+      "definition": "1986 AISI allowable flexural capacity of the fully braced (constrained bending) purlin multiplied by 1.67, computed from the measured geometry and yield stress.",
+      "evidence": "Tables 4.1-4.3 pp.27-29 (maisi_kip_in); AISI row of each appendix geometry table",
+      "name": "AISI flexural capacity x 1.67",
+      "note": "Printed ridge value 119.9 kip-in. for Z-T-R/S-1 is inconsistent with the eave value 198.9 kip-in.",
+      "printed_symbol": "MAISI",
+      "quantity_kind": "moment",
+      "role": "predicted_value",
+      "symbols": [
+        "maisi_kip_in",
+        "AISI (kip-inch)"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED",
+        "MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED",
+        "MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE",
+        "MBMA_8903_TABLECRPS1_PURLINGEOMCRPS1",
+        "MBMA_8903_TABLECRPS3_PURLINGEOMCRPS3",
+        "MBMA_8903_TABLEZRPF1_PURLINGEOMZRPF1",
+        "MBMA_8903_TABLEZRPF3_PURLINGEOMZRPF3",
+        "MBMA_8903_TABLEZRPS1_PURLINGEOMZRPS1",
+        "MBMA_8903_TABLEZRPS3_PURLINGEOMZRPS3",
+        "MBMA_8903_TABLEZRRF10_PURLINGEOMZRRF1OPP",
+        "MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1",
+        "MBMA_8903_TABLEZRRF30_PURLINGEOMZRRF3OPP",
+        "MBMA_8903_TABLEZRRF3_PURLINGEOMZRRF3",
+        "MBMA_8903_TABLEZRRS1_PURLINGEOMZRRS1",
+        "MBMA_8903_TABLEZRRS3_PURLINGEOMZRRS3",
+        "MBMA_8903_TABLEZTPF1_PURLINGEOMZTPF1",
+        "MBMA_8903_TABLEZTPF3_PURLINGEOMZTPF3",
+        "MBMA_8903_TABLEZTPS1_PURLINGEOMZTPS1",
+        "MBMA_8903_TABLEZTPS3_PURLINGEOMZTPS3",
+        "MBMA_8903_TABLEZTRS1_PURLINGEOMZTRS1",
+        "MBMA_8903_TABLEZTRS3_PURLINGEOMZTRS3"
+      ],
+      "unit": "kip-in."
+    },
+    {
+      "availability": "simulated",
+      "definition": "Maximum negative (support) moment from a stiffness analysis of the continuous test assembly under a uniform load of 100 plf.",
+      "evidence": "Tables 4.1-4.3 pp.27-29",
+      "name": "Negative moment at 100 plf",
+      "note": "",
+      "printed_symbol": "Mmax(-)",
+      "quantity_kind": "moment",
+      "role": "predicted_value",
+      "symbols": [
+        "mmax_neg_kip_in"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED",
+        "MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED",
+        "MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE"
+      ],
+      "unit": "in.-kips"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Maximum positive (span) moment from a stiffness analysis of the continuous test assembly under a uniform load of 100 plf.",
+      "evidence": "Tables 4.1-4.3 pp.27-29",
+      "name": "Positive moment at 100 plf",
+      "note": "",
+      "printed_symbol": "Mmax(+)",
+      "quantity_kind": "moment",
+      "role": "predicted_value",
+      "symbols": [
+        "mmax_pos_kip_in"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED",
+        "MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED",
+        "MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE"
+      ],
+      "unit": "in.-kips"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Continuous-span failure load predicted by the base test method assuming the negative moment region (fully braced AISI capacity) controls.",
+      "evidence": "Tables 4.1-4.3 pp.27-29",
+      "name": "Predicted load, negative moment control",
+      "note": "Z-T-P/F value printed 332.2 plf here but 329.7 plf in Appendix B.5.",
+      "printed_symbol": "wp3(-) / wp2(-)",
+      "quantity_kind": "flow",
+      "role": "predicted_value",
+      "symbols": [
+        "wp3_neg_plf",
+        "wp2_neg_plf"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED",
+        "MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED",
+        "MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Continuous-span failure load predicted by the base test method assuming the positive moment region (base test moment Mus) controls.",
+      "evidence": "Tables 4.1-4.3 pp.27-29",
+      "name": "Predicted load, positive moment control",
+      "note": "",
+      "printed_symbol": "wp3(+) / wp2(+)",
+      "quantity_kind": "flow",
+      "role": "predicted_value",
+      "symbols": [
+        "wp3_pos_plf",
+        "wp2_pos_plf"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED",
+        "MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED",
+        "MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Governing predicted continuous-span failure load, taken as the smaller of the negative- and positive-moment controlled predictions.",
+      "evidence": "Tables 4.1-4.3 pp.27-29",
+      "name": "Predicted failure load",
+      "note": "",
+      "printed_symbol": "wp3 / wp2",
+      "quantity_kind": "flow",
+      "role": "predicted_value",
+      "symbols": [
+        "wp3_plf",
+        "wp2_plf"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED",
+        "MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED",
+        "MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of the measured multi-span failure load to the base-test-method predicted failure load.",
+      "evidence": "Tables 4.1-4.3 pp.27-29; Table S1 actual_to_predicted_load_ratio",
+      "name": "Actual to predicted load ratio",
+      "note": "Ratios 0.61 (Z-R-R/S) and 0.84 (Z-T-P/S) were excluded by the authors as premature failures.",
+      "printed_symbol": "wu/wp3",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "wu_over_wp3",
+        "wu_over_wp2",
+        "actual_to_predicted_load_ratio"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED",
+        "MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED",
+        "MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE",
+        "MBMA_8903_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured out-to-out total depth of the purlin cross-section.",
+      "evidence": "Row \"Total Depth (inches)\" of each appendix geometry table; depth_in column of Table S1",
+      "name": "Total purlin depth",
+      "note": "Range of measured depths given in Table S1 where purlins in one test differed.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "Total Depth (inches)",
+        "depth_in"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLES1_STRENGTHSUMMARY",
+        "MBMA_8903_TABLECRPS1_PURLINGEOMCRPS1",
+        "MBMA_8903_TABLECRPS3_PURLINGEOMCRPS3",
+        "MBMA_8903_TABLEZRPF1_PURLINGEOMZRPF1",
+        "MBMA_8903_TABLEZRPF3_PURLINGEOMZRPF3",
+        "MBMA_8903_TABLEZRPS1_PURLINGEOMZRPS1",
+        "MBMA_8903_TABLEZRPS3_PURLINGEOMZRPS3",
+        "MBMA_8903_TABLEZRRF10_PURLINGEOMZRRF1OPP",
+        "MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1",
+        "MBMA_8903_TABLEZRRF30_PURLINGEOMZRRF3OPP",
+        "MBMA_8903_TABLEZRRF3_PURLINGEOMZRRF3",
+        "MBMA_8903_TABLEZRRS1_PURLINGEOMZRRS1",
+        "MBMA_8903_TABLEZRRS3_PURLINGEOMZRRS3",
+        "MBMA_8903_TABLEZTPF1_PURLINGEOMZTPF1",
+        "MBMA_8903_TABLEZTPF3_PURLINGEOMZTPF3",
+        "MBMA_8903_TABLEZTPS1_PURLINGEOMZTPS1",
+        "MBMA_8903_TABLEZTPS3_PURLINGEOMZTPS3",
+        "MBMA_8903_TABLEZTRS1_PURLINGEOMZTRS1",
+        "MBMA_8903_TABLEZTRS3_PURLINGEOMZTRS3"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured vertical dimension of the stiffening lip on the top flange of the purlin.",
+      "evidence": "Row \"TOP Vertical Lip Dimension (inches)\" of each appendix geometry table",
+      "name": "Top lip dimension",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "TOP Vertical Lip Dimension (inches)"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLECRPS1_PURLINGEOMCRPS1",
+        "MBMA_8903_TABLECRPS3_PURLINGEOMCRPS3",
+        "MBMA_8903_TABLEZRPF1_PURLINGEOMZRPF1",
+        "MBMA_8903_TABLEZRPF3_PURLINGEOMZRPF3",
+        "MBMA_8903_TABLEZRPS1_PURLINGEOMZRPS1",
+        "MBMA_8903_TABLEZRPS3_PURLINGEOMZRPS3",
+        "MBMA_8903_TABLEZRRF10_PURLINGEOMZRRF1OPP",
+        "MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1",
+        "MBMA_8903_TABLEZRRF30_PURLINGEOMZRRF3OPP",
+        "MBMA_8903_TABLEZRRF3_PURLINGEOMZRRF3",
+        "MBMA_8903_TABLEZRRS1_PURLINGEOMZRRS1",
+        "MBMA_8903_TABLEZRRS3_PURLINGEOMZRRS3",
+        "MBMA_8903_TABLEZTPF1_PURLINGEOMZTPF1",
+        "MBMA_8903_TABLEZTPF3_PURLINGEOMZTPF3",
+        "MBMA_8903_TABLEZTPS1_PURLINGEOMZTPS1",
+        "MBMA_8903_TABLEZTPS3_PURLINGEOMZTPS3",
+        "MBMA_8903_TABLEZTRS1_PURLINGEOMZTRS1",
+        "MBMA_8903_TABLEZTRS3_PURLINGEOMZTRS3"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured angle between the top flange stiffening lip and the flange (90 degrees for the C-sections).",
+      "evidence": "Row \"TOP Lip Angle (degree)\" of each appendix geometry table",
+      "name": "Top lip angle",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "angle",
+      "role": "specimen_parameter",
+      "symbols": [
+        "TOP Lip Angle (degree)"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLECRPS1_PURLINGEOMCRPS1",
+        "MBMA_8903_TABLECRPS3_PURLINGEOMCRPS3",
+        "MBMA_8903_TABLEZRPF1_PURLINGEOMZRPF1",
+        "MBMA_8903_TABLEZRPF3_PURLINGEOMZRPF3",
+        "MBMA_8903_TABLEZRPS1_PURLINGEOMZRPS1",
+        "MBMA_8903_TABLEZRPS3_PURLINGEOMZRPS3",
+        "MBMA_8903_TABLEZRRF10_PURLINGEOMZRRF1OPP",
+        "MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1",
+        "MBMA_8903_TABLEZRRF30_PURLINGEOMZRRF3OPP",
+        "MBMA_8903_TABLEZRRF3_PURLINGEOMZRRF3",
+        "MBMA_8903_TABLEZRRS1_PURLINGEOMZRRS1",
+        "MBMA_8903_TABLEZRRS3_PURLINGEOMZRRS3",
+        "MBMA_8903_TABLEZTPF1_PURLINGEOMZTPF1",
+        "MBMA_8903_TABLEZTPF3_PURLINGEOMZTPF3",
+        "MBMA_8903_TABLEZTPS1_PURLINGEOMZTPS1",
+        "MBMA_8903_TABLEZTPS3_PURLINGEOMZTPS3",
+        "MBMA_8903_TABLEZTRS1_PURLINGEOMZTRS1",
+        "MBMA_8903_TABLEZTRS3_PURLINGEOMZTRS3"
+      ],
+      "unit": "degrees"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured width of the top flange of the purlin.",
+      "evidence": "Row \"TOP Flange Width (inches)\" of each appendix geometry table",
+      "name": "Top flange width",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "TOP Flange Width (inches)"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLECRPS1_PURLINGEOMCRPS1",
+        "MBMA_8903_TABLECRPS3_PURLINGEOMCRPS3",
+        "MBMA_8903_TABLEZRPF1_PURLINGEOMZRPF1",
+        "MBMA_8903_TABLEZRPF3_PURLINGEOMZRPF3",
+        "MBMA_8903_TABLEZRPS1_PURLINGEOMZRPS1",
+        "MBMA_8903_TABLEZRPS3_PURLINGEOMZRPS3",
+        "MBMA_8903_TABLEZRRF10_PURLINGEOMZRRF1OPP",
+        "MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1",
+        "MBMA_8903_TABLEZRRF30_PURLINGEOMZRRF3OPP",
+        "MBMA_8903_TABLEZRRF3_PURLINGEOMZRRF3",
+        "MBMA_8903_TABLEZRRS1_PURLINGEOMZRRS1",
+        "MBMA_8903_TABLEZRRS3_PURLINGEOMZRRS3",
+        "MBMA_8903_TABLEZTPF1_PURLINGEOMZTPF1",
+        "MBMA_8903_TABLEZTPF3_PURLINGEOMZTPF3",
+        "MBMA_8903_TABLEZTPS1_PURLINGEOMZTPS1",
+        "MBMA_8903_TABLEZTPS3_PURLINGEOMZTPS3",
+        "MBMA_8903_TABLEZTRS1_PURLINGEOMZTRS1",
+        "MBMA_8903_TABLEZTRS3_PURLINGEOMZTRS3"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured vertical dimension of the stiffening lip on the bottom flange of the purlin.",
+      "evidence": "Row of the appendix geometry tables cited in the Z-R-R/F-1 note (\"eave BOTTOM vertical lip dimension ... 0.8253 in.\"), p.47",
+      "name": "Bottom lip dimension",
+      "note": "Printed table value for Z-R-R/F-1 eave differs from the sketch.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "BOTTOM Vertical Lip Dimension (inches)"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLECRPS1_PURLINGEOMCRPS1",
+        "MBMA_8903_TABLECRPS3_PURLINGEOMCRPS3",
+        "MBMA_8903_TABLEZRPF1_PURLINGEOMZRPF1",
+        "MBMA_8903_TABLEZRPF3_PURLINGEOMZRPF3",
+        "MBMA_8903_TABLEZRPS1_PURLINGEOMZRPS1",
+        "MBMA_8903_TABLEZRPS3_PURLINGEOMZRPS3",
+        "MBMA_8903_TABLEZRRF10_PURLINGEOMZRRF1OPP",
+        "MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1",
+        "MBMA_8903_TABLEZRRF30_PURLINGEOMZRRF3OPP",
+        "MBMA_8903_TABLEZRRF3_PURLINGEOMZRRF3",
+        "MBMA_8903_TABLEZRRS1_PURLINGEOMZRRS1",
+        "MBMA_8903_TABLEZRRS3_PURLINGEOMZRRS3",
+        "MBMA_8903_TABLEZTPF1_PURLINGEOMZTPF1",
+        "MBMA_8903_TABLEZTPF3_PURLINGEOMZTPF3",
+        "MBMA_8903_TABLEZTPS1_PURLINGEOMZTPS1",
+        "MBMA_8903_TABLEZTPS3_PURLINGEOMZTPS3",
+        "MBMA_8903_TABLEZTRS1_PURLINGEOMZTRS1",
+        "MBMA_8903_TABLEZTRS3_PURLINGEOMZTRS3"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured angle between the bottom flange stiffening lip and the flange.",
+      "evidence": "Companion row to the TOP Lip Angle row in the appendix geometry tables",
+      "name": "Bottom lip angle",
+      "note": "Row label not shown in the extracted sample rows; inferred from the top/bottom pairing of the geometry tables.",
+      "printed_symbol": "",
+      "quantity_kind": "angle",
+      "role": "specimen_parameter",
+      "symbols": [
+        "BOTTOM Lip Angle (degree)"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLECRPS1_PURLINGEOMCRPS1",
+        "MBMA_8903_TABLECRPS3_PURLINGEOMCRPS3",
+        "MBMA_8903_TABLEZRPF1_PURLINGEOMZRPF1",
+        "MBMA_8903_TABLEZRPF3_PURLINGEOMZRPF3",
+        "MBMA_8903_TABLEZRPS1_PURLINGEOMZRPS1",
+        "MBMA_8903_TABLEZRPS3_PURLINGEOMZRPS3",
+        "MBMA_8903_TABLEZRRF10_PURLINGEOMZRRF1OPP",
+        "MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1",
+        "MBMA_8903_TABLEZRRF30_PURLINGEOMZRRF3OPP",
+        "MBMA_8903_TABLEZRRF3_PURLINGEOMZRRF3",
+        "MBMA_8903_TABLEZRRS1_PURLINGEOMZRRS1",
+        "MBMA_8903_TABLEZRRS3_PURLINGEOMZRRS3",
+        "MBMA_8903_TABLEZTPF1_PURLINGEOMZTPF1",
+        "MBMA_8903_TABLEZTPF3_PURLINGEOMZTPF3",
+        "MBMA_8903_TABLEZTPS1_PURLINGEOMZTPS1",
+        "MBMA_8903_TABLEZTPS3_PURLINGEOMZTPS3",
+        "MBMA_8903_TABLEZTRS1_PURLINGEOMZTRS1",
+        "MBMA_8903_TABLEZTRS3_PURLINGEOMZTRS3"
+      ],
+      "unit": "degrees"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured width of the bottom flange of the purlin.",
+      "evidence": "Row of the appendix geometry tables cited in the Z-R-P/F-1 and Z-R-P/F-3 notes (\"BOTTOM flange width ... 2.8875 in.\"), pp.56, 61",
+      "name": "Bottom flange width",
+      "note": "Some printed values differ from the accompanying sketches.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "BOTTOM Flange Width (inches)"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLECRPS1_PURLINGEOMCRPS1",
+        "MBMA_8903_TABLECRPS3_PURLINGEOMCRPS3",
+        "MBMA_8903_TABLEZRPF1_PURLINGEOMZRPF1",
+        "MBMA_8903_TABLEZRPF3_PURLINGEOMZRPF3",
+        "MBMA_8903_TABLEZRPS1_PURLINGEOMZRPS1",
+        "MBMA_8903_TABLEZRPS3_PURLINGEOMZRPS3",
+        "MBMA_8903_TABLEZRRF10_PURLINGEOMZRRF1OPP",
+        "MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1",
+        "MBMA_8903_TABLEZRRF30_PURLINGEOMZRRF3OPP",
+        "MBMA_8903_TABLEZRRF3_PURLINGEOMZRRF3",
+        "MBMA_8903_TABLEZRRS1_PURLINGEOMZRRS1",
+        "MBMA_8903_TABLEZRRS3_PURLINGEOMZRRS3",
+        "MBMA_8903_TABLEZTPF1_PURLINGEOMZTPF1",
+        "MBMA_8903_TABLEZTPF3_PURLINGEOMZTPF3",
+        "MBMA_8903_TABLEZTPS1_PURLINGEOMZTPS1",
+        "MBMA_8903_TABLEZTPS3_PURLINGEOMZTPS3",
+        "MBMA_8903_TABLEZTRS1_PURLINGEOMZTRS1",
+        "MBMA_8903_TABLEZTRS3_PURLINGEOMZTRS3"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Gross moment of inertia of the purlin cross-section computed from the measured dimensions.",
+      "evidence": "Row cited in the Z-R-R/F-3 note (\"gross moment of inertia ... 8.31 in.4\"), p.51; appears in all appendix geometry tables",
+      "name": "Gross moment of inertia",
+      "note": "West-bay intermediate value for Z-R-R/F-3 is inconsistent with the other values in the row.",
+      "printed_symbol": "Ix",
+      "quantity_kind": "area",
+      "role": "specimen_parameter",
+      "symbols": [
+        "Gross Moment of Inertia (inches4)"
+      ],
+      "table_tags": [
+        "MBMA_8903_TABLECRPS1_PURLINGEOMCRPS1",
+        "MBMA_8903_TABLECRPS3_PURLINGEOMCRPS3",
+        "MBMA_8903_TABLEZRPF1_PURLINGEOMZRPF1",
+        "MBMA_8903_TABLEZRPF3_PURLINGEOMZRPF3",
+        "MBMA_8903_TABLEZRPS1_PURLINGEOMZRPS1",
+        "MBMA_8903_TABLEZRPS3_PURLINGEOMZRPS3",
+        "MBMA_8903_TABLEZRRF10_PURLINGEOMZRRF1OPP",
+        "MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1",
+        "MBMA_8903_TABLEZRRF30_PURLINGEOMZRRF3OPP",
+        "MBMA_8903_TABLEZRRF3_PURLINGEOMZRRF3",
+        "MBMA_8903_TABLEZRRS1_PURLINGEOMZRRS1",
+        "MBMA_8903_TABLEZRRS3_PURLINGEOMZRRS3",
+        "MBMA_8903_TABLEZTPF1_PURLINGEOMZTPF1",
+        "MBMA_8903_TABLEZTPF3_PURLINGEOMZTPF3",
+        "MBMA_8903_TABLEZTPS1_PURLINGEOMZTPS1",
+        "MBMA_8903_TABLEZTPS3_PURLINGEOMZTPS3",
+        "MBMA_8903_TABLEZTRS1_PURLINGEOMZTRS1",
+        "MBMA_8903_TABLEZTRS3_PURLINGEOMZTRS3"
+      ],
+      "unit": "in.4"
+    }
+  ],
+  "year": "1989"
+}

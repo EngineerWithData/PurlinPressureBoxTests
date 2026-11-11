@@ -1,0 +1,22 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 7-3, pp.175
+# Tag: MBMA_9410_TABLE73_REDUCTIONFACTORS
+# Content: Reduction factors for the Standard Pullover Test and AISI Equation E4.4.2.1 derived from the component and system test capacities.
+# Data basis: computed: ratio of measured simulated-test capacity to standard test capacity
+# Units: dimensionless
+# Column definitions:
+#   panels = panel supplier and sheet gage, or statistic name
+#   component_tests = reduction factor on the Standard Test derived from the component tests, dimensionless
+#   system_tests = reduction factor on the Standard Test derived from the system tests, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# The lowest system-test factor (0.235) is the value recommended in Section 7.1.
+panels,component_tests,system_tests
+Pascoe 24 Ga.,0.451,0.321
+Pascoe 26 Ga.,0.440,0.241
+American 24 Ga.,0.447,0.291
+American 26 Ga.,0.388,0.235
+Average R.F.,0.432,0.272
+Average 1/R.F.,2.317,3.68
+Standard. Deviation,0.029,0.041
+Variance Coefficient,0.068,0.151

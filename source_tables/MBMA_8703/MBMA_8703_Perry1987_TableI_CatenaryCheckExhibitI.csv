@@ -1,0 +1,31 @@
+# Source: MBMA_8703 | Perry, D., Golovin, M., Montague, D., LaBoube, R. and Wilson, L. (1987), Table I, pp.33
+# Tag: MBMA_8703_TABLEI_CATENARYCHECKEXHIBITI
+# Content: Check that the measured inward movement of the end supports exceeded the movement required (Δ = 8d²/3L) to relieve catenary forces in the end-bay members.
+# Data basis: mixed: measured support movements and deflections with the required movement computed from Δ = 8d²/3L
+# Units: deflections and movements in inches; d2 in in^2; L in inches
+# Column definitions:
+#   test_no = test identification
+#   d_h_in = horizontal deflection of the member, inches
+#   d_v_in = vertical deflection of the member, inches
+#   d2_in2 = square of the member deflection d, sum of squares of horizontal and vertical, in^2
+#   l_in = span of the end bay, inches
+#   delta_required_in = required inward movement of one end support to relieve catenary forces, inches
+#   measured_support_movement_in = measured inward movement of the end support(s), inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 76 pages); 1 character(s) were illegible and are marked [?], not guessed
+# Δ = required movement of one end support; d = member deflection = square root of the sum of the squares of horizontal and vertical deflections; L = span.
+# Where one end was measured that value is used; where two ends were measured the average was used.
+# Conclusion: Catenary forces are not a factor in the study.
+test_no,d_h_in,d_v_in,d2_in2,l_in,delta_required_in,measured_support_movement_in
+3,2.00,3.55,16.60,360,.123,.153
+4,2.90,3.65,21.73,360,.161,.264
+5,1.60,2.15,7.18,240,.080,.107
+6,1.05,2.40,6.86,240,.076,.103
+7,4.15,3.70,30.91,288,.286,.231
+8,2.50,3.35,17.47,288,.162,.166
+9,1.65,1.90,6.33,240,.070,.098
+10R,2.90,3.30,19.30,288,.179,.164
+11,3.65,3.25,23.89,240,.265,.170
+12,3.20,4.75,32.80,360,.243,.189
+Ceco 5A,2.40,2.20,10.60,288,.098,.122

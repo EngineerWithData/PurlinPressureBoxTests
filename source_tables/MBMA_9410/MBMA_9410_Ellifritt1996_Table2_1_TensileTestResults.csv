@@ -1,0 +1,31 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 2-1, pp.23
+# Tag: MBMA_9410_TABLE21_TENSILETESTRESULTS
+# Content: Average tensile-coupon properties (thickness, ultimate and yield load, elongation, yield and ultimate stress) of the four panel steels, measured per ASTM A370.
+# Data basis: measured: three tensile coupons per material tested in a tensile test machine (ASTM A370)
+# Units: see units column
+# Column definitions:
+#   property = tensile-coupon property label exactly as printed
+#   units = unit of the property as printed
+#   pascoe_26ga = value for the 26 gage Pascoe sheet (Fy = 55 ksi grade)
+#   pascoe_24ga = value for the 24 gage Pascoe sheet (Fy = 55 ksi grade)
+#   american_26ga = value for the 26 gage American sheet (Fy = 80 ksi grade)
+#   american_24ga = value for the 24 gage American sheet (Fy = 80 ksi grade)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: The 24 gage Pascoe thickness is printed as 0.0234 in. here but 0.0239 in. is used in the Chapter 7 calculations; the printed value is kept verbatim. The 26 gage Pascoe sheet is printed with a HIGHER yield (59300 psi) than the 24 gage sheet (50600 psi); preserved as printed. DLu for the Pascoe sheets (1.2412, 1.2279 in.) is orders of magnitude larger than for the American sheets (0.01125, 0.011 in.); preserved as printed.
+# Th. = coupon thickness; Pu = ultimate load; DLu = elongation at ultimate; Py = yield load; Red. W = reduced-section width; Red. A = reduced-section area; % A Red. = area reduction; % Elong. = percent elongation.
+# Bilinear stress-strain curves derived from these coupons are given in Figures 2-1 and 2-2.
+property,units,pascoe_26ga,pascoe_24ga,american_26ga,american_24ga
+Th. =,(in.),0.021,0.0234,0.018,0.022
+Pu =,(lbs.),2090,2040,925,1180
+DLu =,(in.),1.2412,1.2279,0.01125,0.011
+Py =,(lbs.),1870,1775,857,1150
+Epsilon y =,(in./in.),0.0021,0.0017,0.0033,0.0036
+Red. W =,(in.),1.3065,1.3367,0.483,0.483
+Red. A =,(in.²),0.0274,0.0312,0.0087,0.0106
+Fy =,(psi),59300,50600,97400,106900
+Fu =,(psi),66400,58000,105000,109800
+% A Red. =,(%),12.9,10.9,1.23,1.28
+% Elong. =,(%),24.125,22.788,0.564,0.552
+Epsilon u =,(in./in.),0.24125,0.22788,0.00564,0.00552

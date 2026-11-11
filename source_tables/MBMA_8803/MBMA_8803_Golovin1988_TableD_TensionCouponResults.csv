@@ -1,0 +1,35 @@
+# Source: MBMA_8803 | Golovin, M. and Fisher, J.M. (1988), Table D, cont'd, pp.7-8
+# Tag: MBMA_8803_TABLED_TENSIONCOUPONRESULTS
+# Content: Standard ASTM A370 tension coupon test results (coupons pulled 3-30-88) for the failed 9 1/2 in. Zee members A-3 and B-3 of MBMA Uplift Test #B-1.
+# Data basis: measured: standard ASTM A370 tension coupon tests on material from the tested purlins
+# Units: w_in, t_in, gauge lengths in inches; area in in^2; forces in lb; stresses in psi; elongation in percent
+# Column definitions:
+#   member = purlin member from which the coupons were cut (A-3 or B-3)
+#   test_no = coupon test number on the sheet, or AVER. for the average row
+#   type = coupon type per ASTM A370 (SHEET); ditto mark " as printed
+#   w_in = measured coupon width, inches
+#   t_in = measured coupon thickness, inches
+#   area_in2 = coupon cross-sectional area, square inches
+#   force_yp_lb = load at the yield point, pounds
+#   force_failure_lb = maximum (failure) load, pounds
+#   stress_yp_psi = yield-point stress, pounds per square inch
+#   stress_failure_psi = failure (tensile) stress, pounds per square inch
+#   gauge_g_in = original gauge length G, inches
+#   gauge_g1_in = final gauge length G1 after fracture, inches
+#   elongation_pct = percent elongation over the gauge length, percent
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 15 pages); 4 character(s) were illegible and are marked [?], not guessed
+# ANOMALY FLAG: Printed yield-point stresses for test coupon 3 of both members are inconsistent with the printed yield force divided by the printed area (A-3 coupon 3: 1775 lb / .03501 in^2 = 50,700 psi vs printed 56412; B-3 coupon 3: 1700 lb / .03425 in^2 = 49,600 psi vs printed 53474). Values are preserved verbatim as printed and NOT corrected.
+# Merged from Attachment D sheet 1 (member A-3, page 7) and Attachment D page 2 (member B-3, page 8).
+# AVER. rows carry only the average yield stress, failure stress and elongation as printed.
+# Coupons were sheet-type per ASTM A370 (standard 2 in. gauge length).
+member,test_no,type,w_in,t_in,area_in2,force_yp_lb,force_failure_lb,stress_yp_psi,stress_failure_psi,gauge_g_in,gauge_g1_in,elongation_pct
+A-3,1,SHEET,.5003,.0701,.03507,1850,2650,52752,75563,"2""",2 9/16,28.1
+A-3,2,"""",.4995,.0700,.03497,1900,2650,54332,75779,"2""",2 9/16,28.1
+A-3,3,"""",.5002,.0700,.03501,1775,2725,56412,77835,"2""",2 1/2,25.0
+A-3,AVER.,,,,,,,54499,"76,392",,,27.1
+B-3,1,SHEET,.5008,.0682,.03415,1875,2600,54905,76135,"2""",2 7/16,21.9
+B-3,2,"""",.5009,.0684,.03426,1875,2625,54729,76620,"2""",2 1/2,25.0
+B-3,3,"""",.5008,.0684,.03425,1700,2625,53474,76642,"2""",2 1/2,25.0
+B-3,AVER.,,,,,,,55036,"76,466",,,24.0

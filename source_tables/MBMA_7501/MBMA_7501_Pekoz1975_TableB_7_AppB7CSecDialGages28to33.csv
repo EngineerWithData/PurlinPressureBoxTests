@@ -1,0 +1,40 @@
+# Source: MBMA_7501 | Peköz, T. (1975), Table APPENDIX B Page 7, pp.95
+# Tag: MBMA_7501_TABLEB7_APPB7CSECDIALGAGES28TO33
+# Content: Dial gage readings and the displacements computed from them for gages 28-33 at each load level of the C-section purlin assembly uplift test.
+# Data basis: measured: dial gage readings during the vacuum uplift test, with displacements computed from the readings
+# Units: load_psf in psf; dial readings as printed; displacement columns in inches
+# Column definitions:
+#   load_psf = applied vacuum (uplift) load, psf
+#   g28_rdg = dial gage 28 reading as printed (parenthesised value = reset reading), inches x10^-3
+#   u28_in = displacement computed from gage 28, inches
+#   g29_rdg = dial gage 29 reading as printed (parenthesised value = reset reading), inches x10^-3
+#   u29_in = displacement computed from gage 29, inches
+#   g30_rdg = dial gage 30 reading as printed (parenthesised value = reset reading), inches x10^-3
+#   u30_in = displacement computed from gage 30, inches
+#   g31_rdg = dial gage 31 reading as printed (parenthesised value = reset reading), inches x10^-3
+#   u31_in = displacement computed from gage 31, inches
+#   g32_rdg = dial gage 32 reading as printed (parenthesised value = reset reading), inches
+#   u32_in = displacement computed from gage 32, inches
+#   g33_rdg = dial gage 33 reading as printed, inches x10^-3
+#   u33_in = displacement computed from gage 33, inches
+# EXTRACTION QUALITY: reconstructed — decimal points / column identities were inferred from context; VERIFY against the PDF before use
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 104 pages)
+# ANOMALY FLAG: Reset dial readings are printed in parentheses on the line above the row to which they apply; they have been merged into the following row's reading cell in the form '(reset)reading' (e.g. '(644)558'), so this table is marked reconstructed. Unreadable characters are kept as [?] ('(4.88[?])', '.1[?]1', '(6[?]2)', '(5[?][?])'). Gage 29 at 27 psf carries the printed note 'Crossed turn' and at 39 psf the reading is printed as '694(1.00)'; both are preserved verbatim.
+# Dial gage locations are given in Fig. 22.
+# A dash '-' in the displacement column of the zero-load row means no displacement is defined.
+load_psf,g28_rdg,u28_in,g29_rdg,u29_in,g30_rdg,u30_in,g31_rdg,u31_in,g32_rdg,u32_in,g33_rdg,u33_in
+0,391,-,680,-,267,-,260,-,2.684,-,304,-
+3,358,.017,541,.139,225,.042,426,.166,2.975,.291,308,.004
+6,369,.028,421,.259,189,.078,611,.351,3.275,.591,308,.004
+9,379,.038,204,.476,(644)558,.154,(186)382,.547,(4.88[?])1.214,.909,310,.006
+12,391,.050,(5[?][?])518,.554,547,.175,564,.729,1.505,1.200,312,.008
+15,397,.056,441,.631,531,.1[?]1,745,.910,1.802,1.497,314,.010
+18,410,.069,354,.718,508,.214,(49)301,1.062,(.111)0.349,1.735,319,.015
+21,419,.078,272,.800,492,.230,494,1.255,0.615,2.001,322,.018
+24,419,.078,190,.882,352,.390,162,1.423,1.865,2.251,322,.018
+27,439,.098,(581)498,.945,(651)037,.404,862,1.623,1.011,2.397,335,.031
+30,445,.104,402,1.041,020,.421,(453)428,1.898,(.297).666,2.766,332,.028
+33,457,.116,(6[?]2)366,1.157,(447)415,.453,626,2.096,1.018,3.118,331,.027
+36,467,.126,163,1.360,362,.506,895,2.365,1.249,3.349,334,.030
+39,472,.131,694(1.00),1.528,371,.497,(800)356,2.641,1.593,3.693,336,.032

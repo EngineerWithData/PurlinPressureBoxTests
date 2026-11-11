@@ -1,0 +1,60 @@
+# Source: MBMA_9002 | Rayburn, L. and Murray, T.M. (1990), Table S1, pp.27, 29, 30, 32, 47, 52, 57, 62, 68, 73, 78, 83, 89, 94, 99, 104, 109, 115, 120, 125, 130
+# Tag: MBMA_9002_TABLES1_STRENGTHSUMMARY
+# Content: Experimental failure loads, failure moments and failure modes of the seventeen single-span, two-purlin-line, gravity-loaded (vacuum chamber) standing seam roof base tests conducted in Series I through IV.
+# Data basis: measured: experimental failure loads from vacuum-chamber base tests (Appendix A-D test summary sheets) with corresponding maximum moments Mus and percentages of through-fastened capacity R as tabulated in Tables 4.1-4.4; coupon yield stresses from Table 4.5
+# Units: see column headers
+# Column definitions:
+#   test_id = test designation as printed in the report
+#   load_direction = direction of applied load (gravity or uplift)
+#   section_type = purlin cross-section shape, C or Z
+#   depth_in = nominal purlin depth, in.
+#   thickness_in = nominal purlin thickness from the test designation, in.
+#   span_ft = simple span length as printed, ft (or ft-in.)
+#   n_spans = number of spans in the test
+#   n_purlin_lines = number of purlin lines in the test
+#   panel_type = roof deck panel system used
+#   bracing = lateral bracing provided to the purlins
+#   failure_load_as_printed = experimental failure (ultimate) load per purlin line as printed
+#   failure_load_unit = unit of the failure load as printed
+#   failure_moment_as_printed = maximum moment at the experimental failure load as printed (Mus)
+#   failure_moment_unit = unit of the failure moment as printed
+#   failure_mode = failure mode as printed (LB = local buckling of lip, flange and web; LM = failure of cross section after considerable lateral movement)
+#   value_source = where in the report the values are stated
+#   pages = PDF page number(s) on which the values appear
+#   clip_type = standing seam clip type used (sliding or fixed)
+#   insulation = whether 4 in. blanket insulation was in place (Yes/No)
+#   seff_in3 = effective section modulus of the failed purlin, in^3
+#   yield_stress_ksi = measured tensile coupon yield stress of the failed purlin, ksi
+#   mn_in_kips = nominal section strength Mn = Seff x Fy, in-kips
+#   r_percent = experimental failure moment as a percentage of the 1986 AISI fully constrained (through-fastened) flexural capacity, %
+#   predicted_constrained_bending_failure_load_plf = predicted fully constrained bending failure load printed on the appendix test summary, plf
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 12 cells checked (AI, 2026-11-04): 12 correct, 0 errors, 8 unreadable; P(accuracy ≥ 0.8) = 94.5%, ≥ 0.9) = 74.6%, ≥ 0.95) = 48.7%
+# TEXT SOURCE: read from page images by the model (cached transcription)
+# ANOMALY FLAG: Several test designations are printed inconsistently: Table 4.1 lists the insulated Series I test as "R-S-8Z0.06-25-0  Yes" while Table 3.1 and Appendix A call it "R-S-8.5Z0.06-25-0" (R = 52.2% in Table 4.1 vs 52.1% in Appendix A); Table 4.4 prints the two Series IV C-purlin tests as "R-F-9C0.075-20" and "R-F-9C0.105-30" while Table 3.1/Appendix D use "P-F-..."; the Appendix C summary sheet for the 0.074 in. C-purlin test is headed "P-F-9C0.075-25" although Table 4.3 and the section drawing use "P-F-9C0.074-25"; the Appendix D sheet for "R-S-10Z0.094-20-0" is titled "R-S-10Z0.093-20-O" and lists Failure Mode "Lateral Buckling" while its discussion and Table 4.4 state local buckling (LB).
+# All tests are single span, simply supported, two purlin line base tests loaded by evacuating a vacuum chamber (uniform gravity pressure); purlin lines spaced 5 ft. on center with 1 ft. deck overhang beyond each purlin web.
+# Gravity (positive moment) loading throughout: the flange attached to the clips and panels is in compression; no uplift tests were performed.
+# Failure loads are per purlin line (plf) and include the system dead load as stated on each test summary sheet (7.1-9.74 plf, see individual appendix pages).
+# Tributary width per purlin line is 5 ft. (purlin spacing).
+# Failure mode abbreviations from Tables 4.1-4.4: LB = local buckling of lip, flange and web; LM = failure of cross section after considerable lateral movement (reported as "Lateral Buckling" on the corresponding appendix summary sheets).
+# Mus in Tables 4.1-4.4 is the maximum moment corresponding to the experimental failure load (no factor of safety applied here); R = Mus / M_AISI x 100%.
+# Series I used Z-purlins with top flanges opposed; Series II and III used purlins with top flanges facing the same direction; Series IV repeated Series I (opposed Z, rib/sliding) and Series III (facing C, pan/fixed) component sets at 20 ft. and 30 ft. spans.
+# Span of the first Series I test is printed as 24'-9" (purlins cut 3 in. short).
+test_id,load_direction,section_type,depth_in,thickness_in,span_ft,n_spans,n_purlin_lines,panel_type,bracing,failure_load_as_printed,failure_load_unit,failure_moment_as_printed,failure_moment_unit,failure_mode,value_source,pages,clip_type,insulation,seff_in3,yield_stress_ksi,mn_in_kips,r_percent,predicted_constrained_bending_failure_load_plf
+R-S-8Z0.06-25-0,gravity,Z,8,0.060,"24'-9""",1,2,standing seam (rib),at supports only,59.5,plf,54.7,in-kips,LB,"table 4.1 (Mus, R); Appendix A test summary (load)","27, 47",sliding,No,1.85,56.8,105.0,52.1,114.3
+R-S-8.5Z0.06-25-0,gravity,Z,8.5,0.060,25,1,2,standing seam (rib),at supports only,58.2,plf,54.6,in-kips,LB,"table 4.1 (Mus, R); Appendix A test summary (load)","27, 52",sliding,Yes,1.63,64.3,104.7,52.2,111.7
+R-S-10Z0.073-25-0,gravity,Z,10,0.073,25,1,2,standing seam (rib),at supports only,123.4,plf,115.7,in-kips,LB,"table 4.1 (Mus, R); Appendix A test summary (load)","27, 57",sliding,No,3.22,59.7,191.8,60.3,204.6
+R-S-10Z0.092-25-0,gravity,Z,10,0.092,25,1,2,standing seam (rib),at supports only,170.9,plf,160.2,in-kips,LM,"table 4.1 (Mus, R); Appendix A test summary (load)","27, 62",sliding,No,4.26,61.5,261.9,61.2,279.4
+R-S-8Z0.06-25,gravity,Z,8,0.060,25,1,2,standing seam (rib),at supports only,61.4,plf,57.6,in-kips,LB,"table 4.2 (Mus, R); Appendix B test summary (load)","29, 68",sliding,Yes,1.76,59.5,104.8,54.7,111.8
+R-S-8Z0.10-25,gravity,Z,8,0.10,25,1,2,standing seam (rib),at supports only,127.7,plf,119.7,in-kips,LM,"table 4.2 (Mus, R); Appendix B test summary (load)","29, 73",sliding,No,3.72,54.8,203.8,58.7,217.4
+R-S-10Z0.073-25,gravity,Z,10,0.073,25,1,2,standing seam (rib),at supports only,115.8,plf,108.6,in-kips,LB,"table 4.2 (Mus, R); Appendix B test summary (load)","29, 78",sliding,No,3.22,60.8,195.5,55.5,208.5
+R-S-10Z0.094-25,gravity,Z,10,0.094,25,1,2,standing seam (rib),at supports only,171.5,plf,160.8,in-kips,LB,"table 4.2 (Mus, R); Appendix B test summary (load)","29, 83",sliding,No,4.30,62.2,267.5,60.1,285.3
+P-F-9C0.063-25,gravity,C,9,0.063,25,1,2,standing seam (pan),at supports only,106.8,plf,100.1,in-kips,LB,"table 4.3 (Mus, R); Appendix C test summary (load)","30, 89",fixed,No,2.11,58.3,123.3,81.2,131.5
+P-F-9C0.064-25,gravity,C,9,0.064,25,1,2,standing seam (pan),at supports only,93.3,plf,87.5,in-kips,LB,"table 4.3 (Mus, R); Appendix C test summary (load)","30, 94",fixed,Yes,2.14,51.5,110.3,79.3,117.7
+P-F-9C0.065-25,gravity,C,9,0.065,25,1,2,standing seam (pan),at supports only,116.8,plf,109.5,in-kips,LB,"table 4.3 (Mus, R); Appendix C test summary (load)","30, 99",fixed,No,2.25,57.2,128.7,85.1,137.3
+P-F-9C0.074-25,gravity,C,9,0.074,25,1,2,standing seam (pan),at supports only,147.7,plf,138.5,in-kips,LB,"table 4.3 (Mus, R); Appendix C test summary (load)","30, 104",fixed,No,2.55,59.2,151.2,91.6,161.3
+P-F-9C0.10-25,gravity,C,9,0.10,25,1,2,standing seam (pan),at supports only,264.2,plf,247.7,in-kips,LB,"table 4.3 (Mus, R); Appendix C test summary (load)","30, 109",fixed,No,3.99,59.1,235.8,105.0,251.5
+R-S-10Z0.094-20-0,gravity,Z,10,0.094,20,1,2,standing seam (rib),at supports only,261.6,plf,157.0,in-kips,LB,"table 4.4 (Mus, R); Appendix D test summary (load)","32, 115",sliding,No,4.51,59.3,267.5,58.7,445.8
+R-S-10Z0.093-30-0,gravity,Z,10,0.093,30,1,2,standing seam (rib),at supports only,80.6,plf,108.8,in-kips,LM,"table 4.4 (Mus, R); Appendix D test summary (load)","32, 120",sliding,No,4.64,60.6,281.2,38.7,208.3
+P-F-9C0.075-20,gravity,C,9,0.075,20,1,2,standing seam (pan),at supports only,245.6,plf,147.4,in-kips,LB,"table 4.4 (Mus, R, as ""R-F-9C0.075-20""); Appendix D test summary (load)","32, 125",fixed,No,2.56,57.7,147.7,99.8,246.2
+P-F-9C0.105-30,gravity,C,9,0.105,30,1,2,standing seam (pan),at supports only,142.4,plf,192.2,in-kips,LB,"table 4.4 (Mus, R, as ""R-F-9C0.105-30""); Appendix D test summary (load)","32, 130",fixed,No,3.78,57.8,218.7,87.9,162.0

@@ -1,0 +1,19 @@
+# Source: MBMA_9902 | Stolarczyk, J.A. and Fisher, J.M. (2001), Table 2, pp.62
+# Tag: MBMA_9902_TABLE2_FLEXURALTESTRESULTS
+# Content: Measured span, failure moment and failure mode of the four flexural uplift base tests on the same standing seam roof assemblies.
+# Data basis: measured: pressure chamber uplift base tests per AISI Base Test Method
+# Units: nominal_span_ft in feet; test_moment_ft_kip in foot-kips
+# Column definitions:
+#   test_no = flexural uplift base test designation (F = flexural test, number = assembly 1-4)
+#   nominal_span_ft = nominal purlin span of the uplift base test, feet
+#   test_moment_ft_kip = maximum test moment reached in the uplift base test, foot-kips
+#   failure_mode = failure mode number(s) observed, see notes for key
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 16 cells checked (AI, 2026-11-10): 16 correct, 0 errors; P(accuracy ≥ 0.8) = 97.7%, ≥ 0.9) = 83.3%, ≥ 0.95) = 58.2%
+# TEXT SOURCE: read from page images by the model (all 195 pages)
+# Failure Mode Key (p.62): 1. Lateral Buckle of Unsupported Flange; 2. Clips sheared; 3. Clip failure, panel seam not adequate to laterally support purlin, clips slid within seam; 4. Lateral torsional inelastic buckling of flange and web at maximum moment region; 5. Purlin rolled (lateral torsional buckle, no local buckling).
+test_no,nominal_span_ft,test_moment_ft_kip,failure_mode
+F1,30,10.3,"2, 5"
+F2,30,9.8,4
+F3,23,9.3,"4, 2"
+F4,23,4.9,4

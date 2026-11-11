@@ -1,0 +1,26 @@
+# Source: MBMA_8903 | Brooks, S. and Murray, T.M. (1989), Table 4.3, pp.29
+# Tag: MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE
+# Content: Base test method predictions computed in this study compared with two-span continuous test failure loads reported earlier by Carballo, Holzer and Murray.
+# Data basis: mixed: failure loads taken from Reference 1 with base-test-method predictions computed in this study
+# Units: see column headers
+# Column definitions:
+#   test_designation = test label used in the referenced report for the purlin/panel combination
+#   wu_base_plf = failure load of the single span base test, plf per purlin line
+#   mus_kip_in = maximum moment of the single span base test at wu, inch-kips
+#   fy_ksi = yield stress used in the calculations, ksi
+#   maisi_kip_in = 1986 AISI allowable flexural capacity x 1.67 (constrained bending), inch-kips
+#   mmax_neg_kip_in = maximum negative moment from stiffness analysis at 100 plf, inch-kips
+#   mmax_pos_kip_in = maximum positive moment from stiffness analysis at 100 plf, inch-kips
+#   wp2_neg_plf = predicted two span failure load if the negative moment controls, plf
+#   wp2_pos_plf = predicted two span failure load if the positive moment controls, plf
+#   wp2_plf = predicted two span failure load, minimum of the two values, plf
+#   wu_2span_plf = actual measured failure load of the two span test, plf
+#   wu_over_wp2 = ratio of actual to predicted two span failure load, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 120 pages)
+# ANOMALY FLAG: The table heading is printed "ACTUAL AND PREDICTED TEST RESULTS FROM REFERENCE 3" although the List of Tables and the text call it Reference 1 and only two references are listed; printed heading preserved verbatim and NOT corrected. The footnote "*Assumed yield stress" is printed but no value carries an asterisk.
+# Test data (base tests and two span confirming tests) are from Reference 1 (Carballo, Holzer and Murray, 1989); the predicted loads were computed here using the base test method.
+test_designation,wu_base_plf,mus_kip_in,fy_ksi,maisi_kip_in,mmax_neg_kip_in,mmax_pos_kip_in,wp2_neg_plf,wp2_pos_plf,wp2_plf,wu_2span_plf,wu_over_wp2
+10Z14-P-1-1,91.0,85.31,65.92,207.3,79.30,50.50,261.4,168.9,168.9,155.0,0.92
+10Z14-R-1-1,86.0,80.63,63.94,215.2,79.30,51.70,271.4,156.0,156.0,144.0,0.92

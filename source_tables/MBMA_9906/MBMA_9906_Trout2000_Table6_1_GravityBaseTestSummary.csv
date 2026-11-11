@@ -1,0 +1,28 @@
+# Source: MBMA_9906 | Trout, A.M. and Murray, T.M. (2000), Table 6.1, pp.48
+# Tag: MBMA_9906_TABLE61_GRAVITYBASETESTSUMMARY
+# Content: Summary of the six gravity loading base test results (three thin and three thick 8 in. purlins) used in the illustrative example, with averages and standard deviations.
+# Data basis: mixed: measured purlin thicknesses and experimental Rt-values with computed constrained bending strengths and statistics
+# Units: purlin_thickness_in inches; rt_value dimensionless; mnt_kip_in kip-inches
+# Column definitions:
+#   test_no = base test number used in the illustrative example
+#   purlin_thickness_in = measured purlin thickness, inches
+#   rt_value = experimental modification factor Rt = Mts/Mnt, dimensionless
+#   mnt_kip_in = constrained bending strength Mnt = Seff*Fy, kip-inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 619 pages); 9 character(s) were illegible and are marked [?], not guessed
+# ANOMALY FLAG: The example text states M̄nt_min = 115.03 K-in., matching the table's Average row (115.03), but the reduction-factor equation is written with 115.04 in the denominator; both values are preserved as printed in the surrounding text and the table value 115.03 is kept verbatim.
+# Table header prints the Mnt column as "Mnt = Seff * Fy (K-in.)".
+# Average and Standard Deviation rows are printed spanning the Test No. and Purlin Thickness columns; those cells are given as empty strings here.
+# Rt_min = 0.555 - 0.018 = 0.537 and Rt_max = 0.751 - 0.019 = 0.733 are derived from this table in the text.
+test_no,purlin_thickness_in,rt_value,mnt_kip_in
+1,0.062,0.571,110.5
+8,0.062,0.559,118.3
+9,0.060,0.535,116.3
+Average,,0.555,115.03
+Standard Deviation,,0.018,
+2,0.105,0.770,215.3
+6,0.105,0.751,218.3
+7,0.106,0.733,219.7
+Average,,0.751,217.77
+Standard Deviation,,0.019,

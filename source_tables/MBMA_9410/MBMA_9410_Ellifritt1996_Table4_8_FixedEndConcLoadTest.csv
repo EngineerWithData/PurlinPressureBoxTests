@@ -1,0 +1,22 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 4-8, pp.55
+# Tag: MBMA_9410_TABLE48_FIXEDENDCONCLOADTEST
+# Content: Fixed-end concentric load tests (panel perimeter screwed down) giving maximum and minimum fastener peak loads for each panel type, 6/8/95 to 6/17/95.
+# Data basis: measured: individual load cell peak loads at fastener failure with edges fastened
+# Units: span_in in inches; loads in pounds; panel_thickness_gage in gage
+# Column definitions:
+#   company_fy = panel supplier and nominal yield stress of the sheet
+#   spacing = screw arrangement (C = 2 screws placed in center valley)
+#   span_in = simulated panel span length, inches
+#   peak_load_max_lbs = larger of the two recorded peak fastener loads, pounds
+#   peak_load_min_lbs = smaller of the two recorded peak fastener loads, pounds
+#   panel_thickness_gage = panel sheet thickness, gage
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# Printed note: All Screws Failed Simultaneously.
+# Panel layout shown in Figure 4-13 (one screw per valley around the perimeter; edge stiffeners clamped).
+company_fy,spacing,span_in,peak_load_max_lbs,peak_load_min_lbs,panel_thickness_gage
+Pascoe 55 ksi,C,13,560,504,24
+Pascoe 55 ksi,C,13,413,281,26
+American 80 ksi,C,13,644,570,24
+American 80 ksi,C,13,515,466,26

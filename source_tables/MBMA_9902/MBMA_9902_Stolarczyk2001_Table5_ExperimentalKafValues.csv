@@ -1,0 +1,29 @@
+# Source: MBMA_9902 | Stolarczyk, J.A. and Fisher, J.M. (2001), Table 5, pp.66
+# Tag: MBMA_9902_TABLE5_EXPERIMENTALKAFVALUES
+# Content: Experimentally derived axial-to-flexural strength ratio k_af for each of the four roof assemblies, from corrected axial loads and flexural base-test moments.
+# Data basis: mixed: measured test loads/moments corrected by interaction equation and 25 percent end-fixity reduction, with computed section properties
+# Units: loads in kips; area in in^2; stresses in ksi; moment in ft-kips; section modulus in in^3; k_af dimensionless
+# Column definitions:
+#   test_no = test designation (Ax = axial test, Fx = matching flexural uplift test of same assembly)
+#   axial_load_kip = corrected equivalent pure axial failure load (moment removed, 25% end-fixity reduction), kips
+#   gross_area_in2 = gross cross-sectional area of the purlin, square inches
+#   axial_stress_ksi = corrected axial load divided by gross area, ksi
+#   bending_moment_ft_kip = failure moment from the flexural uplift base test, foot-kips
+#   effective_section_modulus_in3 = effective section modulus used to convert moment to stress, cubic inches
+#   bending_stress_ksi = flexural stress at failure = moment / effective section modulus, ksi
+#   k_af = ratio of axial buckling strength to flexural uplift buckling strength for the assembly
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 195 pages)
+# ANOMALY FLAG: In the printed table the single k_af value is placed on a line between each axial (A) and flexural (F) test pair, since it is the ratio of the two; here it is attached to the axial row of each pair and left empty on the flexural row. No values were altered.
+# Axial loads were reduced by 25 percent to remove the weak-axis end fixity of the test fixture (Section 3.6, Appendix 6).
+# A printed dash '-' means the cell is intentionally blank in that row.
+test_no,axial_load_kip,gross_area_in2,axial_stress_ksi,bending_moment_ft_kip,effective_section_modulus_in3,bending_stress_ksi,k_af
+A1,24.9,1.71,14.6,-,-,-,0.48
+F1,-,-,-,10.27,4.05,30.4,
+A2,27.5,1.67,16.5,-,-,-,0.58
+F2,-,-,-,9.76,4.10,28.5,
+A3,20.8,1.33,15.6,-,-,-,0.47
+F3,-,-,-,9.28,3.36,33.1,
+A4,8.1,0.85,9.5,-,-,-,0.33
+F4,-,-,-,4.89,2.02,29.1,

@@ -1,0 +1,74 @@
+# Source: MBMA_1103 | Gao, T. and Moen, C.D. (2011), Table 5, pp.18
+# Tag: MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX
+# Content: Test matrix of the 50 vacuum box tests listing girt type, web depth, panel type, insulation type and insulation thickness for each test.
+# Data basis: input: test program variables selected for the vacuum box experiments
+# Units: web_in and thickness_in in inches; other columns are labels
+# Column definitions:
+#   test_no = sequential vacuum box test number as printed
+#   test_name = specimen/test label (Z or C = girt type, 8/10 = depth, D/B = panel, TH = Thermax)
+#   girt = girt cross-section type, Zee or Cee (merged cell in print)
+#   web_in = out-to-out girt web depth, inches (merged cell in print)
+#   panel = metal panel type, D or B (merged cell in print)
+#   insulation = insulation type placed between girt and panel (None, R13 fiberglass, Thermax)
+#   thickness_in = nominal insulation thickness, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-05): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 53 pages)
+# ANOMALY FLAG: Girt type, web depth and panel columns are printed as merged cells spanning several rows; cells that carry no printed entry were returned as empty strings (filled, see MERGED CELL NOTE). Tests 4 and 5 are named Z8DR4-1/Z8DR4-2 here but Z8D4R13-1/Z8D4R13-2 in Tables 6 and 7; printed names preserved verbatim. Table 4 (rotational restraint test matrix, page 12) and Table 8 (average screw location C, page 24) were reported as empty grids; see CORRECTED below.
+# Girt spacing 7 ft web to web, span 24.5 ft centerline of bearing to centerline of bearing, fastener spacing 12 in.
+# Panel D rib depth 1-1/8 in. (F_y = 50 ksi); panel B rib depth 1-1/4 in. (F_y = 80 ksi).
+# Test 13 (Z8B-2W) used #12 screws with washers.
+# MERGED CELL NOTE: girt, web_in and panel are printed once per group of rows (merged cells). Each row now carries its group's printed value: Zee tests 1-34, Cee tests 35-50; web 8 in. tests 1-18 and 35-42, 10 in. tests 19-34 and 43-50; panel D tests 1-11, 19-26, 35-50, panel B tests 12-18 and 27-34. The groups agree with the girt/depth/panel letters of every test name.
+# NAME NOTE: tests 4 and 5 (Z8DR4-1, Z8DR4-2) are the same specimens printed as Z8D4R13-1 and Z8D4R13-2 in Tables 6 and 7.
+# CORRECTED (review 2026-11-05, Cris Moen): Tables 4 and 8 are printed in the report; the page transcription missed them. Table 8's per-test C values are the same as the Appendix C C column (e.g. Z8D-2 1.54, C8DTH4-2 0.47), so nothing is lost. Table 4 is the rotational-restraint (stiffness) test matrix, outside the strength database, and is not extracted.
+test_no,test_name,girt,web_in,panel,insulation,thickness_in
+1,Z8D-1,Zee,8,D,None,0
+2,Z8D-2,Zee,8,D,None,0
+3,Z8D-3,Zee,8,D,None,0
+4,Z8DR4-1,Zee,8,D,R13,4
+5,Z8DR4-2,Zee,8,D,R13,4
+6,Z8DTH1-1,Zee,8,D,Thermax,1
+7,Z8DTH1-2,Zee,8,D,Thermax,1
+8,Z8DTH2-1,Zee,8,D,Thermax,2
+9,Z8DTH2-2,Zee,8,D,Thermax,2
+10,Z8DTH4-1,Zee,8,D,Thermax,4
+11,Z8DTH4-2,Zee,8,D,Thermax,4
+12,Z8B-1,Zee,8,B,None,0
+13,Z8B-2W,Zee,8,B,None,0
+14,Z8BTH1-1,Zee,8,B,Thermax,1
+15,Z8BTH1-2,Zee,8,B,Thermax,1
+16,Z8BTH2-1,Zee,8,B,Thermax,2
+17,Z8BTH2-2,Zee,8,B,Thermax,2
+18,Z8BTH4-1,Zee,8,B,Thermax,4
+19,Z10D-1,Zee,10,D,None,0
+20,Z10D-2,Zee,10,D,None,0
+21,Z10DTH1-1,Zee,10,D,Thermax,1
+22,Z10DTH1-2,Zee,10,D,Thermax,1
+23,Z10DTH2-1,Zee,10,D,Thermax,2
+24,Z10DTH2-2,Zee,10,D,Thermax,2
+25,Z10DTH4-1,Zee,10,D,Thermax,4
+26,Z10DTH4-2,Zee,10,D,Thermax,4
+27,Z10B-1,Zee,10,B,None,0
+28,Z10B-2,Zee,10,B,None,0
+29,Z10BTH1-1,Zee,10,B,Thermax,1
+30,Z10BTH1-2,Zee,10,B,Thermax,1
+31,Z10BTH2-1,Zee,10,B,Thermax,2
+32,Z10BTH2-2,Zee,10,B,Thermax,2
+33,Z10BTH4-1,Zee,10,B,Thermax,4
+34,Z10BTH4-2,Zee,10,B,Thermax,4
+35,C8D-1,Cee,8,D,None,0
+36,C8D-2,Cee,8,D,None,0
+37,C8DTH1-1,Cee,8,D,Thermax,1
+38,C8DTH1-2,Cee,8,D,Thermax,1
+39,C8DTH2-1,Cee,8,D,Thermax,2
+40,C8DTH2-2,Cee,8,D,Thermax,2
+41,C8DTH4-1,Cee,8,D,Thermax,4
+42,C8DTH4-2,Cee,8,D,Thermax,4
+43,C10D-1,Cee,10,D,None,0
+44,C10D-2,Cee,10,D,None,0
+45,C10DTH1-1,Cee,10,D,Thermax,1
+46,C10DTH1-2,Cee,10,D,Thermax,1
+47,C10DTH2-1,Cee,10,D,Thermax,2
+48,C10DTH2-2,Cee,10,D,Thermax,2
+49,C10DTH4-1,Cee,10,D,Thermax,4
+50,C10DTH4-2,Cee,10,D,Thermax,4

@@ -1,0 +1,43 @@
+# Source: MBMA_8703 | Perry, D., Golovin, M., Montague, D., LaBoube, R. and Wilson, L. (1987), Table E, pp.29
+# Tag: MBMA_8703_TABLEE_MBMAPROPOSALEXHIBITE
+# Content: Measured failure loads compared with ultimate loads from the proposed MBMA reduction-factor formula (R = 0.70 for continuous zees, 0.60 for continuous cees).
+# Data basis: mixed: measured failure loads with loads computed from w_ult = R Fy Se / (0.08 B^2 x 12)
+# Units: loads in lb./ft.; ratio dimensionless
+# Column definitions:
+#   test_no = test identification (zee tests first, then cee tests, with Mean and sigma rows)
+#   test_failure_load_lb_ft = measured uniform failure load, pounds per foot
+#   w_ult_formula_lb_ft = ultimate load from Mn = R Fy Se with R = 0.70 zees / 0.60 cees, lb/ft
+#   ratio = test failure load divided by the formula ultimate load
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 76 pages); 1 character(s) were illegible and are marked [?], not guessed
+# M = 0.08 wB^2 for end bay, B = bay length; My = Fy Se with Se the effective section modulus per 1986 AISI.
+# w ult = .729 Fy Se / B^2 (lb./ft.) for zees and .625 Fy Se / B^2 (lb./ft.) for cees.
+# The first Mean/sigma pair applies to the zees, the second to the cees, the third (TOTAL) to all tests.
+# Approach suggested by Roger LaBoube.
+test_no,test_failure_load_lb_ft,w_ult_formula_lb_ft,ratio
+1,138,135,1.02
+2,234,198,1.18
+3,136,132,1.03
+4,218,192,1.14
+5,280,295,.95
+6,109,119,.92
+6a,124,133,.93
+6b,121,124,.98
+6c,119,120,.99
+Ceco 4,181,206,.88
+Ceco 5,193,197,.98
+Ceco 2,286,280,1.02
+Ceco 5a,134,130,1.03
+9,241,284,0.85
+Mean,,,0.99
+σ,,,.09
+7,128,128,1.00
+8,98,87,1.13
+10R,217,202,1.07
+11,156,173,0.90
+12,135,133,1.02
+Mean,,,1.02
+σ,,,.08
+Mean,,,1.00
+σ,,,.09

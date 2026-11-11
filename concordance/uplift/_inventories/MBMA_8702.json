@@ -1,0 +1,612 @@
+{
+  "citation": "LaBoube, R.A. (1987)",
+  "code_tag": "MBMA_8702",
+  "experiment": "Twelve full-scale simply supported C- and Z-purlin/through-fastened roof-panel assemblies (two purlin lines at 5 ft spacing, 237.5 in. span, with intermediate lateral braces at mid-span or one-third span) were loaded to failure by uplift in a vacuum chamber, and the measured ultimate uniform loads were compared with Cornell University method, unstiffened-flange, modified Cornell, and 1986 AISI (Se Fy) predictions.",
+  "title": "Uplift Tests of Braced C- and Z-Purlin/Roof Panel Assemblies (MBMA/MRI purlin test program)",
+  "variables": [
+    {
+      "availability": "direct",
+      "definition": "Specimen number identifying each of the 12 purlin uplift tests as printed in the tables.",
+      "evidence": "Table 1 (pp. 4, 13), Table 2 (pp. 5, 15), Table 3 (p. 6), Table 3 (p. 21), Table S1",
+      "name": "Test number",
+      "note": "",
+      "printed_symbol": "Test No.",
+      "quantity_kind": "count",
+      "role": "identifier",
+      "symbols": [
+        "test_no",
+        "test_id"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE1_PURLINTESTSPECIMENS",
+        "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS",
+        "MBMA_8702_TABLE3_MOMENTCAPACITYCOMPARISON",
+        "MBMA_8702_TABLE3_PURLINTESTRESULTS",
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Cross-section shape of the purlin in the specimen, C or Z, as listed in the test matrix.",
+      "evidence": "Table 1 (pp. 4, 13); Table S1 column section_type",
+      "name": "Purlin section type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "purlin_section_type",
+        "section_type"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE1_PURLINTESTSPECIMENS",
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Location along the span of the intermediate discrete lateral brace (mid-span or one-third span) used in each test.",
+      "evidence": "Table 1 (pp. 4, 13); Table S1 column bracing",
+      "name": "Intermediate brace location",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "brace_location",
+        "bracing"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE1_PURLINTESTSPECIMENS",
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Simple-span length of the purlins between supports, printed as 237.5 in. for every test.",
+      "evidence": "Table 1 (pp. 4, 13) column span_in; Table S1 column span_in_in; also used in Mt = w l^2/8 note",
+      "name": "Purlin span length",
+      "note": "span_ft column in Table S1 left empty; report states span only in inches",
+      "printed_symbol": "l",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "span_in",
+        "span_in_in",
+        "span_ft"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE1_PURLINTESTSPECIMENS",
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Position of the individual purlin within each two-purlin specimen: N = north, S = south.",
+      "evidence": "Table 2 (pp. 5, 15) column purlin_location",
+      "name": "Purlin position in pair",
+      "note": "",
+      "printed_symbol": "N / S",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "purlin_location"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured out-to-out depth H of the purlin cross-section (Figure 1 notation), reported per purlin and as north/south pair.",
+      "evidence": "Table 2 (pp. 5, 15) column h_in; Table S1 column depth_in",
+      "name": "Purlin depth",
+      "note": "Test 9 south printed as '9 7.063'; corrected to 9.063 in. in the dataset",
+      "printed_symbol": "H",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "h_in",
+        "depth_in"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS",
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured width of one flange of the purlin, dimension B1 in Figure 1.",
+      "evidence": "Table 2 (pp. 5, 15) column b1_in",
+      "name": "Flange width B1",
+      "note": "Test 3 north printed 3.938 in.; corrected to 2.938 in.",
+      "printed_symbol": "B1",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "b1_in"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured width of the opposite flange of the purlin, dimension B2 in Figure 1.",
+      "evidence": "Table 2 (pp. 5, 15) column b2_in",
+      "name": "Flange width B2",
+      "note": "Printed as 'R2' on p.5 and 'B2' on p.15",
+      "printed_symbol": "B2",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "b2_in"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured length of the edge stiffener (lip) L1 on the B1 flange, Figure 1 notation.",
+      "evidence": "Table 2 (pp. 5, 15) column l1_in",
+      "name": "Lip length L1",
+      "note": "",
+      "printed_symbol": "L1",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "l1_in"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured length of the edge stiffener (lip) L2 on the opposite flange, Figure 1 notation.",
+      "evidence": "Table 2 (pp. 5, 15) column l2_in",
+      "name": "Lip length L2",
+      "note": "Test 5 south printed 8.813 in.; corrected to 0.813 in.",
+      "printed_symbol": "L2",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "l2_in"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured inside corner radius r1 of the purlin cross-section (Figure 1).",
+      "evidence": "Table 2 (pp. 5, 15) column r1_in",
+      "name": "Corner radius r1",
+      "note": "",
+      "printed_symbol": "r1",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "r1_in"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured inside corner radius r2 of the purlin cross-section (Figure 1).",
+      "evidence": "Table 2 (pp. 5, 15) column r2_in",
+      "name": "Corner radius r2",
+      "note": "",
+      "printed_symbol": "r2",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "r2_in"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured base steel thickness of each purlin, reported per purlin and as north/south pair.",
+      "evidence": "Table 2 (pp. 5, 15) column t_in; Table S1 column thickness_in",
+      "name": "Base steel thickness",
+      "note": "",
+      "printed_symbol": "t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "t_in",
+        "thickness_in"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS",
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured angle of the edge stiffener (lip) from the flange, Figure 1 notation.",
+      "evidence": "Table 2 (pp. 5, 15) column phi_deg; Table S1 column lip_angle_deg",
+      "name": "Lip (edge stiffener) angle",
+      "note": "",
+      "printed_symbol": "phi",
+      "quantity_kind": "angle",
+      "role": "specimen_parameter",
+      "symbols": [
+        "phi_deg",
+        "lip_angle_deg"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS",
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "degrees"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured yield stress of the purlin steel from coupon tests, reported per purlin and as north/south pair.",
+      "evidence": "Table 2 (pp. 5, 15) column fy_ksi; Table S1 column fy_ksi",
+      "name": "Yield stress",
+      "note": "",
+      "printed_symbol": "Fy",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "fy_ksi"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS",
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured initial sweep (lateral out-of-straightness) of each purlin; negative values indicate sweep toward the south.",
+      "evidence": "Table 2 (pp. 5, 15) column ao_in",
+      "name": "Initial purlin sweep",
+      "note": "",
+      "printed_symbol": "ao",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "ao_in"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Maximum uniform uplift line load carried at failure, computed from the vacuum-chamber transducer pressure as P (lb/ft) = reading (psf) x (76 in./2)/12.",
+      "evidence": "Table 3 (p. 21) column pu_lb_ft; Table S1 column failure_load_as_printed",
+      "name": "Tested failure load",
+      "note": "Pressure only; no self-weight term included",
+      "printed_symbol": "Pu",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "pu_lb_ft",
+        "failure_load_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE3_PURLINTESTRESULTS",
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "lb/ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Unit in which the failure load is printed (lb/ft) recorded alongside the summary value.",
+      "evidence": "Table S1 column failure_load_unit",
+      "name": "Failure load unit",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "failure_load_unit"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Failure load computed by the Cornell University method (Ref. 1) for each specimen.",
+      "evidence": "Table 3 (p. 21) column pc_lb_ft",
+      "name": "Cornell method predicted load",
+      "note": "",
+      "printed_symbol": "Pc",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "pc_lb_ft"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE3_PURLINTESTRESULTS"
+      ],
+      "unit": "lb/ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Failure load computed treating the purlin as having an unstiffened compression flange.",
+      "evidence": "Table 3 (p. 21) column pc_prime_lb_ft",
+      "name": "Unstiffened-flange predicted load",
+      "note": "",
+      "printed_symbol": "Pc'",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "pc_prime_lb_ft"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE3_PURLINTESTRESULTS"
+      ],
+      "unit": "lb/ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Failure load computed by the modified Cornell University method.",
+      "evidence": "Table 3 (p. 21) column pc_dprime_lb_ft",
+      "name": "Modified Cornell predicted load",
+      "note": "Dashes for tests where not evaluated",
+      "printed_symbol": "Pc\"",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "pc_dprime_lb_ft"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE3_PURLINTESTRESULTS"
+      ],
+      "unit": "lb/ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of measured failure load to the Cornell University method predicted load.",
+      "evidence": "Table 3 (p. 21) column pu_over_pc; Table S1 column pu_over_pc",
+      "name": "Pu/Pc ratio",
+      "note": "",
+      "printed_symbol": "Pu/Pc",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "pu_over_pc"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE3_PURLINTESTRESULTS",
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of measured failure load to the unstiffened-flange computed failure load.",
+      "evidence": "Table 3 (p. 21) column pu_over_pc_prime; Table S1 column pu_over_pc_prime",
+      "name": "Pu/Pc' ratio",
+      "note": "",
+      "printed_symbol": "Pu/Pc'",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "pu_over_pc_prime"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE3_PURLINTESTRESULTS",
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of measured failure load to the modified Cornell method computed failure load; mean 1.026 and standard deviation 0.1010 reported for tests 5-12.",
+      "evidence": "Table 3 (p. 21) column pu_over_pc_dprime plus Mean/Std rows; Table S1 column pu_over_pc_double_prime",
+      "name": "Pu/Pc\" ratio",
+      "note": "Mean and standard deviation rows apply only to this column",
+      "printed_symbol": "Pu/Pc\"",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "pu_over_pc_dprime",
+        "pu_over_pc_double_prime"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE3_PURLINTESTRESULTS",
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of the test moment Mt = w l^2/8 to the nominal moment Mn = Se Fy computed per the 1986 AISI Specification Section C3.1.1.",
+      "evidence": "Table 3 (p. 6) column mt_over_mn; Table S1 column mt_over_mn",
+      "name": "Mt/Mn ratio",
+      "note": "",
+      "printed_symbol": "Mt/Mn",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "mt_over_mn"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLE3_MOMENTCAPACITYCOMPARISON",
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Direction of the applied load, uplift generated by the vacuum chamber, for all tests.",
+      "evidence": "Table S1 column load_direction",
+      "name": "Load direction",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "load_direction"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of spans in each test specimen (1, simply supported single span).",
+      "evidence": "Table S1 column n_spans",
+      "name": "Number of spans",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_spans"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of parallel purlin lines in each test specimen (2).",
+      "evidence": "Table S1 column n_purlin_lines",
+      "name": "Number of purlin lines",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "specimen_parameter",
+      "symbols": [
+        "n_purlin_lines"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Type of roof panel and its attachment to the purlin tension flange (through-fastened 24 ga. panel with self-drilling screws at 12 in. on center).",
+      "evidence": "Table S1 column panel_type and header note",
+      "name": "Roof panel / attachment type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "panel_type"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Purlin spacing within the specimen, stated as 5 ft for all tests in the header notes.",
+      "evidence": "Header note of Table 1 and Table S1: 'Purlins were spaced 5 ft apart'",
+      "name": "Purlin spacing",
+      "note": "Stated in a header note, not a column",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_8702_TABLE1_PURLINTESTSPECIMENS",
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Observed limiting mode of the test, e.g. local buckling of the edge stiffener at about 94 lb/ft followed by beam action with an unstiffened compression flange.",
+      "evidence": "Table S1 column failure_mode",
+      "name": "Observed failure mode",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "failure_mode"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "implied",
+      "definition": "Approximate load at which local buckling of the edge stiffener was first observed in tests 1-4, stated as about 94 lb/ft in the header note.",
+      "evidence": "Table S1 header note: 'buckled the edge stiffener locally at about 94 lb/ft'",
+      "name": "Edge stiffener buckling load",
+      "note": "Given in a note, not as a column",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "lb/ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Provenance fields recording the table and PDF page(s) from which each summary value was taken.",
+      "evidence": "Table S1 columns value_source and pages",
+      "name": "Value source and page",
+      "note": "Bookkeeping, not a physical quantity",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "value_source",
+        "pages"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Failure moment placeholder columns in the summary table; the report does not print failure moments so the fields are empty.",
+      "evidence": "Table S1 columns failure_moment_as_printed and failure_moment_unit",
+      "name": "Failure moment (not reported)",
+      "note": "Columns are empty; moment only available through Mt/Mn",
+      "printed_symbol": "",
+      "quantity_kind": "moment",
+      "role": "measured_output",
+      "symbols": [
+        "failure_moment_as_printed",
+        "failure_moment_unit"
+      ],
+      "table_tags": [
+        "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    }
+  ],
+  "year": "1987"
+}

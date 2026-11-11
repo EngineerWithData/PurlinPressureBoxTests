@@ -1,0 +1,29 @@
+# Source: MBMA_8903 | Brooks, S. and Murray, T.M. (1989), Table 2.1, pp.11
+# Tag: MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS
+# Content: Configuration (purlin, bracing, panel, clip, orientation and three-span lap length) of each of the nine test sets in the program.
+# Data basis: input: test configurations selected and components supplied by MBMA member manufacturers
+# Units: lap_length_3span in feet and inches; other columns are descriptive
+# Column definitions:
+#   test_identification = test set label (see notes for the letter/number coding)
+#   purlin_type = cross-section shape of the purlin, Z- or C-section
+#   bracing = location of lateral bracing provided to the purlins
+#   panel_type = roof panel profile used, rib type or pan type
+#   clip_type = standing seam clip used, one-piece fixed or two-piece sliding
+#   purlin_orientation = top flanges facing the same direction or opposed
+#   lap_length_3span = total overlap of purlins at the interior rafter in the 3-span test, ft-in
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 120 pages)
+# Test ID coding: first letter C or Z = purlin type; second letter R or T = rafter only or rafter plus third point bracing; third letter R or P = rib or pan panel; fourth letter S or F = two-piece sliding or one-piece fixed clip; trailing number = number of spans; (0) = opposed purlin flanges.
+# Footnote: *Bracing at rafters and intermediate third points of span.
+# Note: Lap length is total overlap at interior rafter location.
+test_identification,purlin_type,bracing,panel_type,clip_type,purlin_orientation,lap_length_3span
+Z-R-R/S,Z-,Rafter,Rib,Sliding,Facing,4 ft. 0 in.
+Z-R-R/F,Z-,Rafter,Rib,Fixed,Facing,3 ft. 0 in.
+Z-R-P/F,Z-,Rafter,Pan,Fixed,Facing,3 ft. 0 in.
+Z-R-P/S,Z-,Rafter,Pan,Sliding,Facing,3 ft. 4 3/4 in.
+C-R-P/S,C-,Rafter,Pan,Sliding,Facing,4 ft. 9 in.
+Z-R-R/F (0),Z-,Rafter,Rib,Fixed,Opposed,3 ft. 0 in.
+Z-T-P/F,Z-,Third*,Pan,Fixed,Facing,5 ft. 4 in.
+Z-T-P/S,Z-,Third*,Pan,Sliding,Facing,4 ft. 5 1/2 in.
+Z-T-R/S,Z-,Third*,Rib,Sliding,Facing,4 ft. 0 in.

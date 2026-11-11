@@ -1,0 +1,37 @@
+# Source: MBMA_8903 | Brooks, S. and Murray, T.M. (1989), Table Z-R-P/F-3, pp.61
+# Tag: MBMA_8903_TABLEZRPF3_PURLINGEOMZRPF3
+# Content: Measured cross-section geometry, coupon yield stress and computed flexural capacity of the nine purlins of three span confirming test Z-R-P/F-3.
+# Data basis: mixed: measured cross-section dimensions and coupon yield stress with computed moment of inertia and AISI capacity
+# Units: units are given in each parameter label (inches, degrees, inches4, ksi, kip-inch)
+# Column definitions:
+#   parameter = measured cross-section dimension or computed property; unit given in the label
+#   east_ridge = value for the ridge purlin line in the east bay
+#   east_intermediate = value for the intermediate purlin line in the east bay
+#   east_eave = value for the eave purlin line in the east bay
+#   center_ridge = value for the ridge purlin line in the center bay
+#   center_intermediate = value for the intermediate purlin line in the center bay
+#   center_eave = value for the eave purlin line in the center bay
+#   west_ridge = value for the ridge purlin line in the west bay
+#   west_intermediate = value for the intermediate purlin line in the west bay
+#   west_eave = value for the eave purlin line in the west bay
+# EXTRACTION QUALITY: ocr_repaired — only unambiguous single-character OCR fixes, each listed under ANOMALY FLAG
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 120 pages)
+# ANOMALY FLAG: OCR REPAIR: "7I936" → "7.936" (row Total Depth (inches), column center_intermediate). Also the center bay intermediate BOTTOM flange width is printed 2.5983 in. in the table but 2.5838 in. on the sketch; printed table value preserved verbatim and NOT corrected.
+# Table is unnumbered; headed "TEST Z-R-P/F-3 MEASURED GEOMETRY OF PURLIN CROSS-SECTIONS" (page A.27).
+parameter,east_ridge,east_intermediate,east_eave,center_ridge,center_intermediate,center_eave,west_ridge,west_intermediate,west_eave
+TOP Vertical Lip Dimension (inches),0.5938,0.625,0.625,0.625,0.625,0.625,0.625,0.625,0.625
+TOP Lip Angle (degree),42.0,44.0,45.0,44.5,45.0,43.5,43.0,43.0,43.0
+TOP Flange Width (inches),2.375,2.4375,2.4375,2.4375,2.4375,2.4375,2.4375,2.4375,2.4375
+TOP Radii Lip to Flange (inches),0.3125,0.3125,0.3125,0.3125,0.3125,0.3125,0.3125,0.3125,0.3125
+TOP Radii Flange to Web (inches),0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25
+BOTTOM Vertical Lip Dimension (inches),0.7188,0.6875,0.6875,0.6875,0.7188,0.6875,0.7188,0.6875,0.6875
+BOTTOM Lip Angle (degree),44.0,46.0,45.0,45.0,48.5,48.0,47.0,45.0,45.0
+BOTTOM Flange Width (inches),2.6563,2.5938,2.625,2.6563,2.5983,2.6563,2.6563,2.6563,2.6875
+BOTTOM Radii Lip to Flange (inches),0.3125,0.3125,0.3125,0.3125,0.3125,0.3125,0.3125,0.3125,0.3125
+BOTTOM Radii Flange to Web (inches),0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25
+Total Depth (inches),7.936,7.936,7.9360,7.936,7.936,7.936,7.936,7.936,7.936
+Thickness (inches),0.061,0.061,0.061,0.061,0.061,0.061,0.061,0.061,0.061
+Gross Moment of Inertia (inches4),8.36,8.31,8.34,8.38,8.37,8.35,8.40,8.40,8.36
+Material Yield Stress (ksi),59.93,59.93,59.93,59.93,59.93,59.93,59.93,59.93,59.93
+1986 AISI Allowable flexural capacity x 1.67 (kip-inch),103.1,105.3,104.8,104.9,105.3,105.4,105.4,105.5,101.4

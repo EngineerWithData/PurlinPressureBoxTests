@@ -1,0 +1,38 @@
+# Source: MBMA_9702 | Murray, T.M. (1997), Table 1, pp.8
+# Tag: MBMA_9702_TABLE1_UPLIFTBASETESTSUMMARY
+# Content: Base test and three-span confirming test uplift failure loads, the Base Test Method prediction of the confirming test load, and the predicted-to-experimental ratio for nine Virginia Tech and six CECO test sets.
+# Data basis: mixed: measured vacuum-chamber uplift failure loads with Base Test Method predicted confirming-test loads
+# Units: base, confirming and predicted loads in plf; ratio dimensionless
+# Column definitions:
+#   test_nos = test set designation: base test and confirming test numbers as printed
+#   base_test_failure_load_plf = failure load of the single-span two-purlin base test, plf
+#   confirming_test_failure_load_plf = failure load of the three-span confirming test, plf
+#   predicted_confirming_failure_load_plf = confirming-test load predicted by Base Test Method, plf
+#   predicted_over_experiment = ratio of predicted to experimental confirming-test failure load
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 35 pages)
+# ANOMALY FLAG: The test identifiers "U-Z-R-P/S-1&-3", "U-C-R-P/S-1(0)&-3(0)" and "U-Z-T-P/F-1(0)&-3(0)" each appear twice in the Virginia Tech group (different test sets with the same nominal designation); duplicates are preserved verbatim as printed and NOT corrected. The two laboratory sub-heading lines printed inside the table body are kept as rows with blank numeric cells. The text states the ratio range is 0.63 to 1.15 excluding the CECO clip/panel-failure tests, while the printed table lists 1.18* and 1.05** for those tests; preserved as printed.
+# Footnotes as printed: *Clip Failure; **Panel Failure.
+# Virginia Tech specimen designation: this report does not define the codes; they are defined in the cited earlier reports (MBMA_9001, MBMA_9102). From this report only: U = uplift, Z or C = purlin shape, -1 = single span base test, -3 = three span confirming test (pp. 6-8). REWORDED 2026-10-26 (open question MBMA_9702-Q03): the earlier note decoded R/T, P/S, P/F and (0) by inference.
+# Failure loads for the Virginia Tech tests were corrected for a previously reported tributary-area error.
+# Base test failure loads for the CECO sets differ slightly from the raw values on the appendix test-summary sheets (e.g. 39.4 vs 39.87 plf for SS1a), apparently due to weight/area corrections.
+# A ratio less than 1.0 indicates a conservative prediction; the average ratio reported in the text is 0.90.
+test_nos,base_test_failure_load_plf,confirming_test_failure_load_plf,predicted_confirming_failure_load_plf,predicted_over_experiment
+Tests Conducted at Virginia Tech,,,,
+U-Z-R-P/S-1&-3,87.8,190.2,158.5,0.83
+U-C-R-P/S-1(0)&-3(0),56.9,108.5,103.3,0.95
+U-Z-T-P/F-1(0)&-3(0),82.4,173.2,150.6,0.87
+U-Z-R-P/F-1&-3,47.8,131.3,88.7,0.68
+U-Z-R-P/S-1&-3,83.8,140.5,152.7,1.09
+U-Z-R-R/S-1(0)&-3(0),66.0,169.2,121.7,0.72
+U-C-R-P/S-1(0)&-3(0),38.7,113.8,72.0,0.63
+U-Z-T-P/F-1(0)&-3(0),96.9,171.2,176.5,1.03
+U-Z-T-R/F-1&-3,51.4,127.8,95.4,0.75
+Tests Conducted at CECO Building Systems,,,,
+SS1a&3S1,39.4,64.5,63.5,0.98
+SS2&3S2,66.6,106.9,106.7,1.00
+SS3&3S3,128.1,178.6,205.3,1.15
+SS4&3S4,162.5,220.4,260.4,1.18*
+SS5&3S5,86.3,129.2,140.0,1.08
+SS6&3S6,152.7,235.9,247.8,1.05**

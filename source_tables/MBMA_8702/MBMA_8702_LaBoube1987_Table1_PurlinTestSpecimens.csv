@@ -1,0 +1,29 @@
+# Source: MBMA_8702 | LaBoube, R.A. (1987), Table 1, pp.4, 13
+# Tag: MBMA_8702_TABLE1_PURLINTESTSPECIMENS
+# Content: Test matrix listing the purlin cross-section type, intermediate brace location and span length for the 12 purlin-roof panel uplift test specimens.
+# Data basis: input: test program configuration of the purlin uplift specimens
+# Units: span_in in inches; other columns dimensionless/descriptive
+# Column definitions:
+#   test_no = purlin test specimen number as printed
+#   purlin_section_type = cross-section shape of the purlin, C or Z
+#   brace_location = location of the intermediate lateral brace along the span
+#   span_in = purlin simple-span length between supports, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 34 pages)
+# ANOMALY FLAG: Table 1 is printed twice in the document (page 4 of the 1987 LaBoube report and page 13 of the 1982 MRI Observer's Report) with identical content; the two printings are merged here as one table.
+# Purlins were simply supported, spaced 5 ft apart and screwed to a standard 24 ga roof panel; load applied by vacuum chamber (uplift).
+# Identical table appears on PDF pages 4 and 13.
+test_no,purlin_section_type,brace_location,span_in
+1,Z,One-third span,237.5
+2,Z,One-third span,237.5
+3,Z,Mid-span,237.5
+4,Z,Mid-span,237.5
+5,Z,Mid-span,237.5
+6,Z,Mid-span,237.5
+7,Z,One-third span,237.5
+8,Z,One-third span,237.5
+9,C,One-third span,237.5
+10,C,One-third span,237.5
+11,C,Mid-span,237.5
+12,C,Mid-span,237.5

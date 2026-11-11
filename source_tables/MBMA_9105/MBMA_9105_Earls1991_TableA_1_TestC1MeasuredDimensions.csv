@@ -1,0 +1,23 @@
+# Source: MBMA_9105 | Earls, C.J., Pugh, A.D. and Murray, T.M. (1991), Table unlabeled (Appendix A, p. A.1), pp.17
+# Tag: MBMA_9105_TABLEA1_TESTC1MEASUREDDIMENSIONS
+# Content: Measured thickness and sweep of each of the six purlin segments of Test C1 (3 @ 20 ft spans), recorded before testing.
+# Data basis: measured: micrometer thickness and sweep measurements of the purlins before testing
+# Units: thickness_in inches; sweep_in inches or text
+# Column definitions:
+#   purlin_line = purlin line of the two-purlin assembly (North or South), as printed
+#   bay = span number of the three-span continuous system (1, 2 or 3)
+#   thickness_in = measured purlin base-metal thickness in that bay, inches
+#   sweep_in = measured initial sweep (lateral crookedness) of the purlin in that bay, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 42 pages)
+# Table is unlabeled in the report; it appears in the Test C1 Test Summary sheet, page A.1.
+# Sweep recorded as "Negligible" for all six C1 purlin segments; value kept verbatim.
+# Test C1 failure load 327.6 plf, failure mode local buckle, test date June 13, 1991.
+purlin_line,bay,thickness_in,sweep_in
+North,1,0.107,Negligible
+North,2,0.107,Negligible
+North,3,0.107,Negligible
+South,1,0.106,Negligible
+South,2,0.105,Negligible
+South,3,0.107,Negligible

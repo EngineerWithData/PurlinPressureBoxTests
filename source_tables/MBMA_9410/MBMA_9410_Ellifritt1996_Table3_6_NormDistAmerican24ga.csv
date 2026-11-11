@@ -1,0 +1,23 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 3-6, pp.34
+# Tag: MBMA_9410_TABLE36_NORMDISTAMERICAN24GA
+# Content: Standardized normal distribution (Z) values computed from the 24 gage American standard pullover test loads.
+# Data basis: computed: standardized normal variate from the Table 3-5 mean and standard deviation
+# Units: sorted_cmpsta dimensionless; sorted_loads_lbs in pounds
+# Column definitions:
+#   sorted_cmpsta = standardized normal variate (composita) of the sorted load, dimensionless
+#   sorted_loads_lbs = ultimate load sorted in ascending order, pounds
+#   test_no = test number from Table 3-5 corresponding to the load
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+sorted_cmpsta,sorted_loads_lbs,test_no
+-1.4246,1970,10
+-1.05216,2010,4
+-0.95904,2020,9
+-0.86593,2030,5
+0.2514,2150,1
+0.344511,2160,2
+0.623845,2190,7
+0.623845,2190,8
+0.903178,2220,6
+1.554956,2290,3

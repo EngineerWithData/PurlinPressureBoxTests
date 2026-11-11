@@ -1,0 +1,48 @@
+# Source: MBMA_8803 | Golovin, M.; Fisher, J.M. (1988), Table S1, pp.2-3, 9, 11
+# Tag: MBMA_8803_TABLES1_STRENGTHSUMMARY
+# Content: Measured failure load of the single full-scale three-span continuous Z-purlin roof assembly (MBMA Uplift Test #B-1) tested under uplift pressure with discrete angle braces at the quarter points of the end-bay bottom (compression) flanges.
+# Data basis: measured: failure pressure of 2.7 in. H2O converted by the report to a uniform uplift line load (dead load deducted); purlin geometry and yield stress from coupon tests; predicted loads and ratios computed by the report
+# Units: see column headers
+# Column definitions:
+#   test_id = designation of the full-scale test as printed
+#   load_direction = direction of applied load (uplift or gravity)
+#   section_type = purlin cross-section shape as printed (Z or C)
+#   depth_in = nominal purlin depth, inches
+#   thickness_in = measured base steel thickness of the failed member, inches
+#   span_ft = individual span length, feet
+#   n_spans = number of continuous spans in the test setup
+#   n_purlin_lines = number of parallel purlin lines tested
+#   panel_type = roof panel/sheeting description and attachment type
+#   bracing = compression (bottom) flange bracing provided
+#   failure_load_as_printed = measured failure load exactly as printed
+#   failure_load_unit = unit of the failure load exactly as printed
+#   failure_moment_as_printed = measured failure moment exactly as printed (blank if not stated)
+#   failure_moment_unit = unit of the failure moment as printed
+#   failure_mode = observed mode and location that terminated the test
+#   value_source = where in the report the failure value is stated
+#   pages = PDF page number(s) where the value is stated
+#   lap_length_ft_in = length of purlin lap at interior supports as printed
+#   initial_sweep_in = initial lateral sweep of the purlins before loading, inches
+#   fy_ksi = yield stress of the failed member used in evaluation, ksi
+#   se_in3 = effective section modulus used in evaluation, in^3
+#   predicted_load_aisi6_lb_per_ft = predicted failure load by the modified AISI (AISI-6) method, lb/ft
+#   ratio_test_to_aisi6 = test failure load divided by AISI-6 predicted load
+#   predicted_load_mbma_lb_per_ft = predicted failure load by the MBMA Ad Hoc Task Force method, lb/ft
+#   ratio_test_to_mbma = test failure load divided by MBMA predicted load
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (cached transcription)
+# ANOMALY FLAG: The failure load is printed three slightly different ways in the report: 134 lb/ft (comparison tables, pp. 2-3), 133.7 lb/ft (Attachment E tabulation, p. 9) and 133.6 lb/ft (hand calculation, p. 11); all correspond to the same 2.7 in. H2O failure pressure.
+# Only one physical test was performed for this report (MBMA Uplift Test #B-1, run March 28, 1988). Test #3 quoted in the report's comparison tables is from the earlier 'MBMA Continuous Span Purlin Uplift Tests' and is therefore not included here.
+# Load convention: uplift (suction) applied with a pressure box; the reported failure load is the net uniform uplift line load after deducting the 8.5 lb/ft dead load (2.7 in. H2O x 10.4 psf/in. x 5.06 ft tributary width = 142.1 lb/ft; 142.1 - 8.5 = 133.6 lb/ft).
+# Tributary width used in the load conversion: 5.06 ft per purlin line.
+# Test setup: 3 continuous 30 ft spans, 2 purlin lines (lines A and B), 24 ga. ribbed panels screw-fastened at 1'-0 centers (through-fastened).
+# Initial sweep was zero in all members because the discrete braces held the purlins straight.
+# Member A-3 did not completely fail but showed a residual buckle in the compression flange lip 14'-7 1/2" from the end support; the bottom flange lip 'tented' about 6" south of the middle brace.
+# Longitudinal horizontal movement of the end supports (avg. 0.161 in.) was judged sufficient to relieve catenary forces.
+# Yield stress of failed member B-3 from coupon tests: average 55,036 psi (reported as Fy = 55.0 ksi).
+# SECTION MODULUS NOTE: se_in3 = 2.74 in^3 is the effective (reduced) section modulus at the compression fiber, as used by the report (open question MBMA_8803-Q03, Cris Moen 2026-10-26). The p.12 printout gives Ix = 14.047 in^4 (reduced from a gross value of roughly 16 in^4), N.A. = 4.376 in. and SX-T = 2.7416 = 14.047/5.124, the farther (compression) fiber; the compression flange is not fully effective at t = 0.0681 in., Fy = 55 ksi. Calculated value carried as printed, not recomputed. The report does not state whether the measured thickness 0.0681 in. (p.4) is base metal or coated.
+# FAILURE LOAD NOTE (Cris Moen, 2026-10-27; open question MBMA_8803-Q02): failure_load_as_printed changed from 134 to 133.6 lb/ft, the unrounded value from the hand calculation (p.11: 2.7 in. H2O x 10.4 x 5.06 = 142.1 - 8.5 dead load = 133.6), from which the report computes its test/predicted ratios (133.6/136 = 0.98, 133.6/122.1 = 1.09). The comparison tables print 134 (pp.2-3, kept in Table1/Table2) and the Attachment E log prints 133.7 (p.9).
+# FACTORS NOTE (Cris Moen, 2026-10-27; open question MBMA_8803-Q01): 10.4 converts the one-leg manometer reading (in. H2O) to chamber pressure (psf); 5.06 ft is the tributary width per purlin line; the dead weight of the assembly (8.5 lb/ft) is subtracted. Stated in the companion report MBMA_8703 p.4 (same Ceco chamber; Ceco tests run under suction with the assembly upside down) and applied on 8803 p.11.
+test_id,load_direction,section_type,depth_in,thickness_in,span_ft,n_spans,n_purlin_lines,panel_type,bracing,failure_load_as_printed,failure_load_unit,failure_moment_as_printed,failure_moment_unit,failure_mode,value_source,pages,lap_length_ft_in,initial_sweep_in,fy_ksi,se_in3,predicted_load_aisi6_lb_per_ft,ratio_test_to_aisi6,predicted_load_mbma_lb_per_ft,ratio_test_to_mbma
+B-1,uplift,Zee,9.5,.0681,30,3,2,"24 GA. RIBBED (AMER.), through-fastened","2 x 2 x 1/8"" angle braces at quarter points on bottom (compression) flange of end bay purlins",133.6,lb/ft,,,"Member B3 failed by buckling of the web and compression flange at a distance of 10'-3"" from the end support (bottom flange/web buckled between middle and outside brace)",hand calculation,"2-3, 9, 11",2-6,0,55.0,2.74,136,0.98,122,1.10

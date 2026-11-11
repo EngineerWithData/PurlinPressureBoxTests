@@ -1,0 +1,37 @@
+# Source: MBMA_8803 | Golovin, M. and Fisher, J.M. (1988), Table A, pp.4
+# Tag: MBMA_8803_TABLEA_PURLINDIMENSIONDATA
+# Content: Measured cross-section dimensions, lip angles, corner radii and yield strengths of the six 9 1/2 in. Z-purlins used in MBMA Uplift Test #B-1.
+# Data basis: measured: physical measurements of the purlins (depth and thickness at one end, flange/lip/radius at mid-span) plus coupon yield strengths
+# Units: dimensions in inches (as printed, including fractions); lip angles in degrees; yield in ksi
+# Column definitions:
+#   line = purlin line in the test frame (A or B)
+#   span = bay(s) spanned by the specimen (e.g. 1/2 = spans 1 and 2)
+#   specimen_no = specimen identification number of the purlin piece
+#   pc_mark = piece mark printed in parentheses with the specimen number
+#   depth_in = measured purlin web depth at one end, inches
+#   thickness_in = measured base metal thickness at one end, inches
+#   yield_ksi = measured yield strength of the member, ksi (blank where not tested)
+#   flange_width_top_in = measured top flange width at mid-span, inches
+#   flange_width_bot_in = measured bottom flange width at mid-span, inches
+#   lip_length_top_in = measured top lip length at mid-span, inches
+#   lip_length_bot_in = measured bottom lip length at mid-span, inches
+#   lip_angle_top_deg = measured top lip angle at mid-span, degrees
+#   lip_angle_bot_deg = measured bottom lip angle at mid-span, degrees
+#   radius_top_web_in = inside bend radius at the top web-flange corner, inches
+#   radius_top_lip_in = inside bend radius at the top flange-lip corner, inches
+#   radius_bot_web_in = inside bend radius at the bottom web-flange corner, inches
+#   radius_bot_lip_in = inside bend radius at the bottom flange-lip corner, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 15 pages); 4 character(s) were illegible and are marked [?], not guessed
+# Depth, thickness and yield are measured at one end; flange width, lip length, lip angle and radii are mid-span values only.
+# Lip angles are measured in degrees (footnote on the sheet).
+# Bottom flange of the zee is the flange with holes punched in it to connect to the support.
+# Yield strength was reported only for specimens A-3 and B-3 (the coupon-tested members); other cells are blank as printed.
+line,span,specimen_no,pc_mark,depth_in,thickness_in,yield_ksi,flange_width_top_in,flange_width_bot_in,lip_length_top_in,lip_length_bot_in,lip_angle_top_deg,lip_angle_bot_deg,radius_top_web_in,radius_top_lip_in,radius_bot_web_in,radius_bot_lip_in
+A,1/2,A-1,(P5L),"9 1/2""",.0697,,"3""","3 1/16""","15/16""","1 1/16""",48,47,"11/64""","5/16""","11/64""","5/16"""
+A,2/3,A-2,(P6),"9 1/2""",.0694,,"3""","3 1/16""","1""","15/16""",48,45,"11/64""","5/16""","11/64""","5/16"""
+A,3/4,A-3,(P5R),"9 1/2""",.0695,54.5,"3""","3""","1 1/16""","15/16""",47,45,"11/64""","5/16""","11/64""","5/16"""
+B,1/2,B-1,(P5R),"9 1/2""",.0693,,"3""","3 1/8""","1""","15/16""",48,49,"11/64""","5/16""","11/64""","5/16"""
+B,2/3,B-2,(P-6),"9 1/2""",.0692,,"3""","3 1/16""","1""","15/16""",48,46,"11/64""","5/16""","11/64""","5/16"""
+B,3/4,B-3,(P5L),"9 1/2""",.0681,55.0,"3""","3 1/8""","15/16""","1""",48,48,"11/64""","5/16""","11/64""","5/16"""

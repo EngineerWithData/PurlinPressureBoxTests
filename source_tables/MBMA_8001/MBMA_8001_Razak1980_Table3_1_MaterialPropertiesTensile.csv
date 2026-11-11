@@ -1,0 +1,20 @@
+# Source: MBMA_8001 | Razak, M.A.A. and Peköz, T. (1980), Table 3.1, pp.74
+# Tag: MBMA_8001_TABLE31_MATERIALPROPERTIESTENSILE
+# Content: Average tensile coupon properties (yield stress, ultimate stress and elongation) of each of the five Z-purlin types used in the vacuum tests.
+# Data basis: measured: tensile coupon tests per ASTM on three coupons cut from lightly stressed regions of each failed purlin
+# Units: fy_ksi and fu_ksi in ksi; elongation_pct in percent; purlin_type dimensionless
+# Column definitions:
+#   purlin_type = purlin designation letter A–E identifying the Z-section tested
+#   fy_ksi = average tensile yield stress of three coupons, ksi
+#   fu_ksi = average tensile ultimate stress of three coupons, ksi
+#   elongation_pct = average percent elongation from the tensile coupon tests, percent
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 130 pages)
+# Three tensile coupons per purlin type; values are the averages (Section 3.7).
+purlin_type,fy_ksi,fu_ksi,elongation_pct
+A,57.3,79.9,26.0
+B,57.6,81.2,27.5
+C,61.5,85.0,23.5
+D,65.9,91.2,23.2
+E,70.5,94.8,17.8

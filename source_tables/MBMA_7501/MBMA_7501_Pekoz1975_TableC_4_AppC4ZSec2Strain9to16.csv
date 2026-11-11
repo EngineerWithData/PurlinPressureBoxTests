@@ -1,0 +1,48 @@
+# Source: MBMA_7501 | Peköz, T. (1975), Table APPENDIX C Page 4, pp.99
+# Tag: MBMA_7501_TABLEC4_APPC4ZSEC2STRAIN9TO16
+# Content: Strain gage readings and computed stresses for gages 9-16 at each load level of the second Z-section purlin assembly uplift test.
+# Data basis: mixed: strain gage readings measured during the vacuum uplift test with stresses computed from the readings (E = 30x10^6 psi)
+# Units: p_psf in psf; gage readings in micro in/in; stresses in ksi
+# Column definitions:
+#   p_psf = applied vacuum (uplift) load, psf
+#   g9_rdg_microin = strain gage 9 reading, micro in/in
+#   g9_stress_ksi = stress from gage 9, ksi
+#   g10_rdg_microin = strain gage 10 reading, micro in/in
+#   g10_stress_ksi = stress from gage 10, ksi
+#   g11_rdg_microin = strain gage 11 reading, micro in/in
+#   g11_stress_ksi = stress from gage 11, ksi
+#   g12_rdg_microin = strain gage 12 reading, micro in/in
+#   g12_stress_ksi = stress from gage 12, ksi
+#   g13_rdg_microin = strain gage 13 reading, micro in/in
+#   g13_stress_ksi = stress from gage 13, ksi
+#   g14_rdg_microin = strain gage 14 reading, micro in/in
+#   g14_stress_ksi = stress from gage 14, ksi
+#   g15_rdg_microin = strain gage 15 reading, micro in/in
+#   g15_stress_ksi = stress from gage 15, ksi
+#   g16_rdg_microin = strain gage 16 reading, micro in/in
+#   g16_stress_ksi = stress from gage 16, ksi
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 104 pages)
+# ANOMALY FLAG: Gage 15 readings are printed with three digits from 6 psf on ('479', '462', ...) while the 0 and 3 psf rows show four digits ('0575', '0515'); values are preserved verbatim. Two readings contain the unreadable-character marker [?] ('69[?]', '6[?]30', '7[?]5[?]', '-2.2[?]'). The stress -38.1 for gage 15 at 45 psf and 10.14 / 28.14 at 48 psf contradict neighbouring values but are preserved as printed.
+# Strain gage locations are given in Fig. 44.
+# The row labelled 'reset 21' gives the re-zeroed gage readings at 21 psf.
+p_psf,g9_rdg_microin,g9_stress_ksi,g10_rdg_microin,g10_stress_ksi,g11_rdg_microin,g11_stress_ksi,g12_rdg_microin,g12_stress_ksi,g13_rdg_microin,g13_stress_ksi,g14_rdg_microin,g14_stress_ksi,g15_rdg_microin,g15_stress_ksi,g16_rdg_microin,g16_stress_ksi
+0,7781,-,7933,,7136,,69[?],,7780,,3980,,0575,,7115,
+3,7741,-1.20,7883,-1.50,7062,-2.22,6[?]30,1.35,7[?]5[?],2.34,3921,-1.77,0515,-1.80,7039,-2.2[?]
+6,7668,-3.39,7833,-3.00,6796,-4.20,6956,2.19,7938,4.74,3884,-2.88,479,-2.88,6972,-4.29
+9,7658,-3.69,7812,-3.63,6957,-5.37,6959,3.12,7955,6.15,3866,-3.42,462,-3.89,6926,-5.67
+12,7619,-4.86,7777,-4.68,6909,-6.81,7023,4.14,8054,8.22,3836,-4.32,450,-3.75,6849,-7.38
+15,7585,-5.88,7748,-5.55,6860,-8.28,7045,4.80,8109,9.87,3808,-5.16,418,-4.71,6816,-8.97
+18,7535,-7.29,7703,-6.90,6800,-10.08,7074,5.67,8164,11.52,3770,-6.30,392,-5.49,6752,-10.89
+21,7485,-8.88,7661,-8.16,6736,-12.00,7097,6.36,8219,13.17,3730,-7.50,368,-6.21,6684,-12.93
+reset 21,7487,,7656,,6744,,7092,,8198,,3738,,373,,6695,
+24,7447,-10.08,7618,-9.18,6683,-13.83,7135,7.65,8279,15.60,3702,-8.58,346,-7.02,6616,-15.30
+27,7405,-11.34,7587,-10.53,6630,-15.42,7178,8.94,8345,17.58,3682,-9.18,331,-7.47,6552,-17.22
+30,7377,-12.18,7570,-11.04,6558,-16.68,7190,9.30,8387,18.84,3658,-9.90,321,-7.77,6488,-19.14
+33,7363,-12.60,7598,-10.2,6589,-17.25,7186,9.18,8444,20.55,3649,-10.17,328,-7.56,6430,-20.88
+36,7344,-13.17,7588,-10.59,6530,-18.72,7215,10.05,8502,22.29,3641,-10.41,329,-7.53,6382,-22.32
+39,7313,-14.10,7572,-10.98,6470,-20.22,7231,10.53,8547,23.64,3661,-9.81,376,-6.12,6349,-23.31
+42,7284,-14.97,7553,-11.55,6409,-22.05,7251,11.13,8604,25.35,3667,-9.63,390,-5.70,6291,-25.05
+45,7252,-15.93,7533,-12.15,6336,-24.24,7277,11.91,8669,27.30,3668,-9.60,453,-38.1,6222,-27.12
+48,7224,-16.77,7527,-12.33,6254,-26.70,7299,12.57,8758,29.97,3650,10.14,410,-5.10,6188,28.14

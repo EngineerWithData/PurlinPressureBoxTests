@@ -1,0 +1,27 @@
+# Source: MBMA_8903 | Brooks, S. and Murray, T.M. (1989), Table 4.2, pp.28
+# Tag: MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED
+# Content: Comparison of measured three span failure loads with loads predicted by the base test method for the third point braced test sets.
+# Data basis: mixed: measured base test and three span failure loads with base-test-method predicted capacities
+# Units: see column headers
+# Column definitions:
+#   test_designation = test set label (purlin, bracing, panel, clip code)
+#   wu_base_plf = failure load of the single span base test, plf per purlin line
+#   mus_kip_in = maximum moment of the single span base test at wu, inch-kips
+#   fy_ksi = measured yield stress used in the calculations, ksi
+#   maisi_kip_in = 1986 AISI allowable flexural capacity x 1.67 (constrained bending), inch-kips
+#   mmax_neg_kip_in = maximum negative moment from stiffness analysis at 100 plf, inch-kips
+#   mmax_pos_kip_in = maximum positive moment from stiffness analysis at 100 plf, inch-kips
+#   wp3_neg_plf = predicted three span failure load if the negative moment controls, plf
+#   wp3_pos_plf = predicted three span failure load if the positive moment controls, plf
+#   wp3_plf = predicted three span failure load, minimum of the two values, plf
+#   wu_3span_plf = actual measured failure load of the three span test, plf
+#   wu_over_wp3 = ratio of actual to predicted three span failure load, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 120 pages)
+# ANOMALY FLAG: The footnote "*Assumed yield stress" is printed but no value in the table carries an asterisk; preserved as printed. The value wp3_neg for Z-T-P/F is printed as 332.2 plf here but as 329.7 plf in the Appendix B.5 test summary; both preserved verbatim and NOT corrected.
+# For test set Z-T-P/S the three span failure was caused by failure of a lateral brace-to-purlin connection, so the ratio 0.84 was excluded from the evaluation.
+test_designation,wu_base_plf,mus_kip_in,fy_ksi,maisi_kip_in,mmax_neg_kip_in,mmax_pos_kip_in,wp3_neg_plf,wp3_pos_plf,wp3_plf,wu_3span_plf,wu_over_wp3
+Z-T-P/F,126.0,118.1,52.44,133.2,40.10,50.20,332.2,235.3,235.3,223.0,0.95
+Z-T-P/S,120.0,112.5,62.29,177.1,48.10,50.50,368.2,222.8,222.8,188.0,0.84
+Z-T-R/S,126.0,118.1,62.57,196.8,46.20,50.70,426.0,232.9,232.9,238.0,1.02

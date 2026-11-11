@@ -1,0 +1,36 @@
+# Source: MBMA_8903 | Brooks, S. and Murray, T.M. (1989), Table 3.1, pp.21
+# Tag: MBMA_8903_TABLE31_COUPONTESTRESULTS
+# Content: Average measured thickness, yield stress, tensile strength and elongation from standard ASTM tensile coupons cut from the web of representative purlins for each test.
+# Data basis: measured: standard ASTM tensile coupon tests conducted by Butler Manufacturing Company
+# Units: see column headers
+# Column definitions:
+#   test_id = test identification of the purlin from which the coupons were taken
+#   thickness_in = measured thickness of the coupon material, inches
+#   fy_ksi = average measured yield stress of two coupons, ksi
+#   fu_ksi = average measured tensile strength of two coupons, ksi
+#   elongation_pct = average measured elongation of two coupons, percent
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 120 pages)
+# ANOMALY FLAG: Coupon yield stress for Z-R-P/S-1 is 62.45 ksi here, whereas the Appendix A test summary for Z-R-P/S-1 uses Fy = 67.45 ksi; both values preserved verbatim as printed and NOT corrected.
+# Footnote: *Average of two tests (yield stress and tensile strength columns).
+# Coupons were taken from the web area of representative purlins used in each test.
+test_id,thickness_in,fy_ksi,fu_ksi,elongation_pct
+Z-R-R/S-1,0.078,63.21,79.27,22.75
+Z-R-R/S-3,0.078,59.80,77.28,23.40
+Z-R-R/F-1,0.058,67.53,85.52,21.50
+Z-R-R/F-3,0.059,68.51,87.11,20.50
+Z-R-P/F-1,0.060,57.61,80.35,20.25
+Z-R-P/F-3,0.059,59.93,81.71,20.75
+Z-R-P/S-1,0.072,62.45,77.82,25.75
+Z-R-P/S-3,0.073,59.02,73.64,27.25
+C-R-P/S-1,0.065,66.72,74.42,21.75
+C-R-P/S-3,0.065,66.00,73.85,23.00
+Z-R-R/F-1 (0),0.058,66.15,82.16,20.50
+Z-R-R/F-3 (0),0.060,61.57,80.61,24.00
+Z-T-P/F-1,0.078,53.59,75.77,28.25
+Z-T-P/F-3,0.077,52.44,74.83,26.25
+Z-T-P/S-1,0.074,63.65,76.76,26.75
+Z-T-P/S-3,0.074,62.29,76.24,27.25
+Z-T-R/S-1,0.074,63.51,79.73,21.25
+Z-T-R/S-3,0.076,62.57,80.56,22.75

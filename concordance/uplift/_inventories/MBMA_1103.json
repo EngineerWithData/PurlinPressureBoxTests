@@ -1,0 +1,849 @@
+{
+  "citation": "MBMA Research Report 1103 (2003)",
+  "code_tag": "MBMA_1103",
+  "experiment": "Eight bare panel-to-girt rotational restraint (F-) tests on 5 ft Cee and Zee girts through-fastened to 0.018 in. panels were used to measure panel-to-girt rotational stiffness and calibrate a mechanical model, and fifty full-scale vacuum box tests of 24.5 ft simple-span through-fastened wall girt assemblies (with no insulation, R13 fiberglass blanket, or Thermax rigid board) were loaded in uplift to failure to obtain failure pressures, failure moments and R-factors.",
+  "title": "Rotational Restraint and Strength of Through-Fastened Metal Building Wall Girt Assemblies",
+  "variables": [
+    {
+      "availability": "direct",
+      "definition": "Label identifying each rotational-restraint girt specimen or vacuum box test specimen as printed in the report.",
+      "evidence": "Table 1 p.5; Table 2 p.11; Table 3 p.12; Table 5 p.18; Table 6 p.21; Table 7 p.22; Table C p.49; Table S1",
+      "name": "Specimen/test label",
+      "note": "Names differ between tables (C250-1 vs C10-1; Z8DR4-1 vs Z8D4R13-1) and are preserved verbatim.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "specimen_name",
+        "test_name",
+        "test_id",
+        "specimen"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE1_ROTRESTRAINTSPECIMENDIMS",
+        "MBMA_1103_TABLE2_MODELVSTESTSTIFFNESS",
+        "MBMA_1103_TABLE3_UNITROTATIONALSTIFFNESSKO",
+        "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX",
+        "MBMA_1103_TABLE6_MEASUREDGIRTYIELDSTRESS",
+        "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS",
+        "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Sequential number assigned to each of the 50 vacuum box tests as printed in the test matrix and results summary.",
+      "evidence": "Table 5 p.18; Table C p.49",
+      "name": "Vacuum box test number",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "identifier",
+      "symbols": [
+        "test_no"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX",
+        "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Cross-section shape of the girt, Zee or Cee, as printed in each table.",
+      "evidence": "Table 1 p.5 (member_profile); Table 5 p.18 and Table C p.49 (girt); Table S1 (section_type)",
+      "name": "Girt cross-section type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "member_profile",
+        "girt",
+        "section_type"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE1_ROTRESTRAINTSPECIMENDIMS",
+        "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX",
+        "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Out-to-out web depth of the girt, measured on the specimen (Fig. 3) or listed nominally in the test matrix.",
+      "evidence": "Table 1 p.5 (h_in); Table 5 p.18 and Table C p.49 (web_in); Table 7 p.22 (h_in); Table S1 (depth_in)",
+      "name": "Girt web depth",
+      "note": "",
+      "printed_symbol": "h",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "h_in",
+        "web_in",
+        "depth_in"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE1_ROTRESTRAINTSPECIMENDIMS",
+        "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX",
+        "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS",
+        "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Average measured distance from the screw centerline to the web-flange corner of a Cee girt (Fig. 3); printed as '---' for Zee specimens.",
+      "evidence": "Table 1 p.5",
+      "name": "Screw to web-flange corner, B",
+      "note": "Reported only for Cee specimens in the rotational restraint tests.",
+      "printed_symbol": "B",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "b_avg_in"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE1_ROTRESTRAINTSPECIMENDIMS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Average measured distance from the screw centerline to the pivot point of the fastened flange (web-flange corner for Zee, lip-flange corner for Cee), measured on the failed girt in the vacuum box tests.",
+      "evidence": "Table 1 p.5 (c_avg_in); Table C p.49 (c_in); Table S1 (screw_location_c_in); Table 8 p.24 holds the same per-test values",
+      "name": "Screw location C",
+      "note": "R-factors in the tables are not normalized to C = B/2.",
+      "printed_symbol": "C",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "c_avg_in",
+        "c_in",
+        "screw_location_c_in"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE1_ROTRESTRAINTSPECIMENDIMS",
+        "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured bare (base) metal thickness of the girt, taken after removing paint with acetone and steel wool.",
+      "evidence": "Table 1 p.5 (t_in); Table 7 p.22 (t_in); Table S1 (thickness_in)",
+      "name": "Girt base metal thickness",
+      "note": "In Tables 5 and C the column named thickness_in is the insulation thickness, not the girt thickness.",
+      "printed_symbol": "t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "t_in",
+        "thickness_in"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE1_ROTRESTRAINTSPECIMENDIMS",
+        "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS",
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal girt thickness stated in the Appendix C footnote (0.1 in. for 8 in. webs, 0.06 in. for 10 in. webs).",
+      "evidence": "Appendix C footnote, carried as a column in Table S1",
+      "name": "Nominal girt thickness",
+      "note": "Footnote value, not a per-specimen measurement.",
+      "printed_symbol": "t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "thickness_nominal_in"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Width of the compression (free) flange of the girt measured at midspan.",
+      "evidence": "Table 7 p.22",
+      "name": "Compression flange width",
+      "note": "",
+      "printed_symbol": "b",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "b_comp_in"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Width of the tension flange (the flange through-fastened to the panel) measured at midspan.",
+      "evidence": "Table 7 p.22",
+      "name": "Tension flange width",
+      "note": "",
+      "printed_symbol": "b",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "b_tens_in"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Length of the stiffening lip on the compression (free) flange measured at midspan.",
+      "evidence": "Table 7 p.22",
+      "name": "Compression flange lip length",
+      "note": "",
+      "printed_symbol": "d",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "d_comp_in"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Length of the stiffening lip on the tension (fastened) flange measured at midspan.",
+      "evidence": "Table 7 p.22",
+      "name": "Tension flange lip length",
+      "note": "",
+      "printed_symbol": "d",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "d_tens_in"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured angle between the web and the compression flange.",
+      "evidence": "Table 7 p.22",
+      "name": "Web to compression flange angle",
+      "note": "",
+      "printed_symbol": "alpha",
+      "quantity_kind": "angle",
+      "role": "specimen_parameter",
+      "symbols": [
+        "alpha_comp_deg"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS"
+      ],
+      "unit": "degrees"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured angle between the web and the tension flange.",
+      "evidence": "Table 7 p.22",
+      "name": "Web to tension flange angle",
+      "note": "",
+      "printed_symbol": "alpha",
+      "quantity_kind": "angle",
+      "role": "specimen_parameter",
+      "symbols": [
+        "alpha_tens_deg"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS"
+      ],
+      "unit": "degrees"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured angle of the stiffening lip on the compression flange.",
+      "evidence": "Table 7 p.22",
+      "name": "Compression flange lip angle",
+      "note": "",
+      "printed_symbol": "theta",
+      "quantity_kind": "angle",
+      "role": "specimen_parameter",
+      "symbols": [
+        "theta_comp_deg"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS"
+      ],
+      "unit": "degrees"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured angle of the stiffening lip on the tension flange.",
+      "evidence": "Table 7 p.22",
+      "name": "Tension flange lip angle",
+      "note": "",
+      "printed_symbol": "theta",
+      "quantity_kind": "angle",
+      "role": "specimen_parameter",
+      "symbols": [
+        "theta_tens_deg"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS"
+      ],
+      "unit": "degrees"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured inside corner radius of the girt cross-section.",
+      "evidence": "Table 7 p.22",
+      "name": "Corner radius",
+      "note": "",
+      "printed_symbol": "r",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "r_in"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Sweep (lateral) imperfection of the girt measured at midspan before testing.",
+      "evidence": "Table 7 p.22",
+      "name": "Midspan sweep imperfection",
+      "note": "Printed as '-' (not measured) for many specimens.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "imperfection_in"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Effective section modulus of the girt computed with the software CFS from the measured cross-section dimensions.",
+      "evidence": "Table 7 p.22 (se_in3); Table C p.49 (se_in3); Table S1",
+      "name": "Effective section modulus",
+      "note": "Computed, not measured.",
+      "printed_symbol": "S_e",
+      "quantity_kind": "area",
+      "role": "predicted_value",
+      "symbols": [
+        "se_in3",
+        "effective_section_modulus_se_in3"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS",
+        "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in^3"
+    },
+    {
+      "availability": "direct",
+      "definition": "Average tensile yield stress of three coupons (two flanges and the web) cut from the failed girt of each vacuum box test.",
+      "evidence": "Table 6 p.21; Table C p.49; Table S1",
+      "name": "Girt yield stress",
+      "note": "",
+      "printed_symbol": "F_y",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "fy_ksi",
+        "yield_stress_fy_ksi"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE6_MEASUREDGIRTYIELDSTRESS",
+        "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "implied",
+      "definition": "Yield stress of the metal panels measured with one coupon each: 50 ksi for panel D and 80 ksi for panel B.",
+      "evidence": "Note under Table 6 p.21 and note under Table 5 p.18",
+      "name": "Panel yield stress",
+      "note": "Single stated value per panel type, not a column.",
+      "printed_symbol": "F_y",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX",
+        "MBMA_1103_TABLE6_MEASUREDGIRTYIELDSTRESS"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Metal building wall panel designation used in the test, D or B.",
+      "evidence": "Table 5 p.18; Table C p.49; Table S1 (panel_designation)",
+      "name": "Panel type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "panel",
+        "panel_designation"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX",
+        "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Panel-to-girt attachment type, through-fastened for all tests.",
+      "evidence": "Table S1 column panel_type",
+      "name": "Panel attachment type",
+      "note": "Constant for all 50 tests.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "panel_type"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "implied",
+      "definition": "Rib depth of the metal panels: 1-1/8 in. for panel D and 1-1/4 in. for panel B.",
+      "evidence": "Note under Table 5 p.18",
+      "name": "Panel rib depth",
+      "note": "Stated in a note, not a column.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Type of insulation placed between the girt flange and the panel (None, R13 fiberglass blanket, or Thermax rigid board).",
+      "evidence": "Table 5 p.18; Table C p.49; Table S1 (insulation_type)",
+      "name": "Insulation type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "insulation",
+        "insulation_type"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX",
+        "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal thickness of the insulation blanket or board placed between panel and girt.",
+      "evidence": "Table 5 p.18 (thickness_in); Table C p.49 (thickness_in); Table S1 (insulation_thickness_in)",
+      "name": "Insulation thickness",
+      "note": "Column name thickness_in in Tables 5 and C refers to insulation, not steel thickness.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "thickness_in",
+        "insulation_thickness_in"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX",
+        "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Maximum vacuum box suction pressure recorded at failure of the assembly.",
+      "evidence": "Table C p.49 (pressure_psf); Table S1 (failure_load_as_printed with failure_load_unit)",
+      "name": "Failure pressure",
+      "note": "Blank for test Z8D-1, which failed by panel bending.",
+      "printed_symbol": "P",
+      "quantity_kind": "stress",
+      "role": "measured_output",
+      "symbols": [
+        "pressure_psf",
+        "failure_load_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "psf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Midspan failure moment of the girt computed from the failure pressure plus panel and girt self weight using Eqs. (14) and (15).",
+      "evidence": "Table C p.49 (mt_kip_in); Table S1 (failure_moment_as_printed)",
+      "name": "Failure moment",
+      "note": "",
+      "printed_symbol": "M_t",
+      "quantity_kind": "moment",
+      "role": "measured_output",
+      "symbols": [
+        "mt_kip_in",
+        "failure_moment_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "kip-in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Experimentally derived strength reduction factor R = M_t/(S_e F_y) for the failed girt (Eq. 16).",
+      "evidence": "Table C p.49 (r); Table S1 (r_factor)",
+      "name": "R-factor",
+      "note": "As printed; not normalized to screw location C = B/2.",
+      "printed_symbol": "R",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "r",
+        "r_factor"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Observed failure mode code(s): 1 = panel bending, 2 = screw pull over, 3 = screw broken or bent, 4 = girt yielding.",
+      "evidence": "Table C p.49; Table S1; legend printed with Appendix C",
+      "name": "Failure mode",
+      "note": "Combinations printed as e.g. '2,3,4'.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "failure_mode"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Girt span from centerline of bearing to centerline of bearing in the vacuum box tests, 24.5 ft for all tests.",
+      "evidence": "Note under Table C p.49 ('All spans = 24.5 ft'); Table S1 column span_ft",
+      "name": "Girt span",
+      "note": "Constant for all 50 tests.",
+      "printed_symbol": "L_g",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "span_ft"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+        "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of spans in each test specimen (simple span, 1).",
+      "evidence": "Table S1 column n_spans",
+      "name": "Number of spans",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_spans"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of parallel girt lines in each vacuum box test assembly (two).",
+      "evidence": "Table S1 column n_purlin_lines; Section 4.2 p.17",
+      "name": "Number of girt lines",
+      "note": "Typically only one of the two girts failed.",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_purlin_lines"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Direction of the applied load relative to the girt; uplift (wind suction simulated by the vacuum box) for all tests.",
+      "evidence": "Table S1 column load_direction",
+      "name": "Load direction",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "load_direction"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Intermediate bracing provided in the test, printed blank (none stated) for all specimens.",
+      "evidence": "Table S1 column bracing",
+      "name": "Intermediate bracing",
+      "note": "All entries blank.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "bracing"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "inferred",
+      "definition": "Per-girt tributary width of the vacuum pressure, taken as half the transverse panel span, L_p/2 = 6.79 ft (Eq. 14).",
+      "evidence": "Table S1 column tributary_width_ft; note citing Eq. 14 p.21",
+      "name": "Tributary width",
+      "note": "Derived from Eq. 14, constant for all tests.",
+      "printed_symbol": "L_p/2",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "tributary_width_ft"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "inferred",
+      "definition": "Girt line load at failure, D x 12 from Eq. 14, hand-computed from the printed pressure plus panel and girt self weight.",
+      "evidence": "Table S1 column failure_load_plf; hand-calculation note (review 2026-11-05)",
+      "name": "Failure line load on girt",
+      "note": "Hand calculation during extraction, not printed in the report.",
+      "printed_symbol": "D",
+      "quantity_kind": "force",
+      "role": "derived_ratio",
+      "symbols": [
+        "failure_load_plf"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Initial rotational-restraint stiffness of the panel-girt connection predicted by the mechanical model, Eqs. (10)/(11).",
+      "evidence": "Table 2 p.11",
+      "name": "Model stiffness slope",
+      "note": "Units printed as N/mm although test plots are in lbs and in.; panel bending term 9Hh/160 subtracted before comparison.",
+      "printed_symbol": "a",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "model_slope_n_per_mm"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE2_MODELVSTESTSTIFFNESS"
+      ],
+      "unit": "N/mm"
+    },
+    {
+      "availability": "direct",
+      "definition": "Initial stiffness measured as the slope of the linear region of the bare panel-to-girt rotational restraint test load-deformation curve (Fig. 10).",
+      "evidence": "Table 2 p.11",
+      "name": "Measured test stiffness slope",
+      "note": "Units printed as N/mm; panel bending term 9Hh/160 subtracted before comparison.",
+      "printed_symbol": "b",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "test_slope_n_per_mm"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE2_MODELVSTESTSTIFFNESS"
+      ],
+      "unit": "N/mm"
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of model-predicted stiffness to measured test stiffness, expressed as a percentage.",
+      "evidence": "Table 2 p.11, header printed as 'a/b' with 100.0% on the units line",
+      "name": "Model to test stiffness ratio",
+      "note": "",
+      "printed_symbol": "a/b",
+      "quantity_kind": "percentage",
+      "role": "derived_ratio",
+      "symbols": [
+        "a_over_b_percent"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE2_MODELVSTESTSTIFFNESS"
+      ],
+      "unit": "%"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Unit panel-to-girt rotational stiffness K_o computed with the mechanical model, Eqs. (12)/(13), using the measured dimensions of Table 1.",
+      "evidence": "Table 3 p.12",
+      "name": "Unit rotational stiffness Ko",
+      "note": "K_o of Cee sections is generally lower than that of Zee sections.",
+      "printed_symbol": "K_o",
+      "quantity_kind": "moment",
+      "role": "predicted_value",
+      "symbols": [
+        "ko_kip_in_per_rad_per_in"
+      ],
+      "table_tags": [
+        "MBMA_1103_TABLE3_UNITROTATIONALSTIFFNESSKO"
+      ],
+      "unit": "kips-in/rad/in"
+    },
+    {
+      "availability": "implied",
+      "definition": "Screw spacing along the girt, 12 in. on center with #12-14 screws in the rotational restraint tests and screws placed next to the panel rib in the vacuum box tests; test 13 used #12 screws with washers.",
+      "evidence": "Notes under Table 1 p.5, Table 5 p.18 and Section 4.2 p.17",
+      "name": "Fastener spacing and type",
+      "note": "Stated in notes, not a column.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_1103_TABLE1_ROTRESTRAINTSPECIMENDIMS",
+        "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX",
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "implied",
+      "definition": "Out-to-out web-to-web spacing of the two parallel girts in each vacuum box test, 7 ft.",
+      "evidence": "Note under Table 5 p.18; Section 4.2 p.17",
+      "name": "Girt spacing",
+      "note": "Stated in a note, not a column.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX",
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "implied",
+      "definition": "Transverse span of the panel between girt lines, 13 ft-7 in. (13.58 ft), used in the Eq. 14 load calculation.",
+      "evidence": "Section 4.2 p.17 note in Table S1",
+      "name": "Transverse panel span",
+      "note": "Stated in a note, not a column.",
+      "printed_symbol": "L_p",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "implied",
+      "definition": "Panel dead weight used in Eq. 14, 35 lbs per 3 ft wide by 13.58 ft long panel.",
+      "evidence": "Note under Table S1 citing Eq. 14 p.21",
+      "name": "Panel dead weight",
+      "note": "Stated in a note, not a column.",
+      "printed_symbol": "d_p",
+      "quantity_kind": "force",
+      "role": "test_condition",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "lbs"
+    },
+    {
+      "availability": "implied",
+      "definition": "Girt self weight used in Eq. 14: 118 lbs for Z8, 80 lbs for Z10, 114 lbs for C8 and 78 lbs for C10 members.",
+      "evidence": "Note under Table S1 citing Eq. 14 p.21",
+      "name": "Girt self weight",
+      "note": "Stated in a note, not a column.",
+      "printed_symbol": "d_g",
+      "quantity_kind": "force",
+      "role": "specimen_parameter",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "lbs"
+    },
+    {
+      "availability": "implied",
+      "definition": "Configuration of the bare-panel rotational restraint tests: a 5 ft girt through-fastened to two 0.018 in. thick panels forming a 6 ft x 6 ft panel assembly.",
+      "evidence": "Note under Table 1 p.5",
+      "name": "F-test panel configuration",
+      "note": "Stated in a note, not a column; includes panel thickness 0.018 in.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_1103_TABLE1_ROTRESTRAINTSPECIMENDIMS"
+      ],
+      "unit": "in/ft"
+    }
+  ],
+  "year": "2003"
+}

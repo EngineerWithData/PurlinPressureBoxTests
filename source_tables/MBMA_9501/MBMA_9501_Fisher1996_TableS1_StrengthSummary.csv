@@ -1,0 +1,73 @@
+# Source: MBMA_9501 | Fisher, J.M. (1996), Table S1, pp.7, 17, 19-47
+# Tag: MBMA_9501_TABLES1_STRENGTHSUMMARY
+# Content: Measured uplift (wind-uplift) strength of 29 full-scale simple-span cee and zee purlin tests with 26 gage through-fastened roof panels, tested to failure in a vacuum/pressure chamber, with and without blanket insulation.
+# Data basis: measured: tested moment capacities and R values from Table 1 (loads computed from manometer readings), with failure manometer readings from the Appendix 2 test logs and material properties from Table A2
+# Units: see column headers
+# Column definitions:
+#   test_id = test designation as printed in Table 1 (suffix I denotes test with blanket insulation), unitless
+#   load_direction = direction of applied loading (uplift, produced by air pressure in vacuum/pressure chamber), unitless
+#   section_type = member profile, C or Z, unitless
+#   depth_in = nominal member depth, in.
+#   thickness_in = measured member thickness, in.
+#   span_ft = member (simple) span length, ft
+#   n_spans = number of spans of the test member, count
+#   n_purlin_lines = number of test members (purlin lines) in the test assembly, count
+#   panel_type = type of roof panel attachment, unitless
+#   bracing = discrete bracing other than the panel, unitless (not reported)
+#   failure_load_as_printed = measured failure load, as printed (not reported as a load in the report)
+#   failure_load_unit = unit of failure load as printed
+#   failure_moment_as_printed = tested moment capacity at failure, as printed, ft.-kips
+#   failure_moment_unit = unit of the tested moment capacity as printed
+#   failure_mode = failure mode code(s) as printed in Table 1 (1 = screw pull through deck, 2 = local buckling of member, 3 = deck failure, 4 = purlin had wavy stiffener lips)
+#   value_source = where the strength value is stated in the report
+#   pages = PDF page(s) where the values in the row are stated
+#   insulation_in = thickness of blanket insulation used in the test, in. (as stated in text/appendix descriptions)
+#   calculated_nominal_moment_ftkips = calculated nominal moment strength of the member, ft. kips
+#   r_factor = ratio of tested moment capacity to calculated nominal moment (R value), unitless
+#   yield_strength_ksi = measured yield strength of the failed member (Table A2), ksi
+#   tensile_strength_ksi = measured tensile strength of the failed member (Table A2), ksi
+#   failure_manometer_reading_in = manometer reading at which failure was recorded in Appendix 2, inches of water (applied pressure, psf = reading x 5.2)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (cached transcription)
+# ANOMALY FLAG: Test 15 failure manometer reading printed as "3.9375"; Test 8 appendix shows the word "Failure" in the east-purlin deflection column at manometer reading 6.0
+# Load direction is uplift; a uniform outward pressure was produced by pressurizing the air inside the test chamber and measured with a U-tube manometer.
+# Applied load in psf = manometer reading x 5.2; the uniform uplift load per member = applied load (psf) x tributary width, minus the panel and member dead load (panel dead load 1.2 psf). Tributary load width for each member was 4.27 ft, i.e. the net uplift loads (and hence the tested moments) are dead-load-corrected.
+# Each test assembly contained two test members placed 5 ft apart in the opposed position, attached at their ends to support beams with 12 gage unstiffened clips; one support beam was free to deflect to avoid catenary forces. End clips were attached to the east member for all tests. No other bracing is reported, so the bracing column is left empty.
+# Panels: 26 gage, 7 ft 6 in. long, 1.5 in. high ribs at 12 in. on center, measured thickness 0.018 in., average yield 72 ksi, average tensile 78 ksi; No. 12 self-drilling fasteners placed adjacent to the high rib.
+# Failure mode codes printed with Table 1: 1 = screw pull through deck; 2 = local buckling of member; 3 = deck failure; 4 = purlin had wavy stiffener lips.
+# Insulation thicknesses from the text (page 4): Test 21 = 3 in.; Tests 3, 22, 23 = 4 in.; Tests 4, 24, 25 = 6 in.; Tests 1, 2, 19, 20 were base (no insulation) tests per Table 12. Insulation is left blank where the report does not state it.
+# The failure manometer readings are the pressure readings at which failure was explicitly recorded in the Appendix 2 test logs (pages 19-47); they are raw gage readings, not loads.
+# Proprietary test data supplied by two metal building manufacturers (rows labeled M1 and M2 in Tables 2-10) are excluded because those tests were not performed as part of this report.
+# FAILED MEMBER NOTE: the Appendix 1 dimensions and material data are for the failed member of each two-purlin assembly only (p.4: 'for each of the failed members'). Whether the second purlin was identical is not reported; do not assume it (open question MBMA_9501-Q05).
+# MANOMETER NOTE (Cris Moen, 2026-10-29; open question MBMA_9501-Q01): the Table 1 tested moments are the strength values, as printed. For Tests 1, 2, 3, 4, 9, 10, 11, 15 and 29, back-calculating from the Appendix 2 failure manometer reading with the p.4 rule (psf = reading x 5.2; x 4.27 ft tributary width; minus dead load) gives about half the Table 1 moment (e.g. Test 1: 4.75 in., 9.23 ft-k). The report does not explain this and states no other convention; do not convert these tests' manometer readings to loads with the p.4 rule.
+test_id,load_direction,section_type,depth_in,thickness_in,span_ft,n_spans,n_purlin_lines,panel_type,bracing,failure_load_as_printed,failure_load_unit,failure_moment_as_printed,failure_moment_unit,failure_mode,value_source,pages,insulation_in,calculated_nominal_moment_ftkips,r_factor,yield_strength_ksi,tensile_strength_ksi,failure_manometer_reading_in
+1,uplift,Z,8.0,0.1023,19.17,1,2,through-fastened,,,,9.23,ft.-kips,"1,2",table 1,"7, 19",None,15.78,0.59,58.7,77.7,4.75
+2,uplift,Z,8.0,0.1023,19.17,1,2,through-fastened,,,,8.98,ft.-kips,2,table 1,"7, 20",None,15.74,0.57,59.0,78.6,4.625
+3I,uplift,Z,8.0,0.1028,19.17,1,2,through-fastened,,,,8.73,ft.-kips,2,table 1,"7, 21",4,15.76,0.55,59.1,78.2,4.5
+4I,uplift,Z,8.0,0.1026,19.17,1,2,through-fastened,,,,7.70,ft.-kips,2,table 1,"7, 22",6,15.88,0.49,58.8,77.8,4.0
+5,uplift,Z,6.5,0.0605,19.17,1,2,through-fastened,,,,3.94,ft.-kips,2,table 1,"7, 23",,6.15,0.64,59.6,81.7,4.2
+6,uplift,Z,6.5,0.0610,19.17,1,2,through-fastened,,,,3.64,ft.-kips,2,table 1,"7, 24",,6.25,0.58,61.1,82.9,3.9
+7,uplift,Z,8.0,0.0600,19.17,1,2,through-fastened,,,,4.53,ft.-kips,"2,3,4",table 1,"7, 25",,9.47,0.48,63.4,81.7,4.8
+8,uplift,Z,8.0,0.0704,19.17,1,2,through-fastened,,,,5.73,ft.-kips,"2,3,4",table 1,"7, 26",,10.83,0.53,58.0,78.2,6.0
+9,uplift,Z,9.5,0.0656,19.17,1,2,through-fastened,,,,6.12,ft.-kips,"2,3",table 1,"7, 27",,12.98,0.47,62.5,84.0,3.20
+10,uplift,Z,9.5,0.0738,19.17,1,2,through-fastened,,,,8.25,ft.-kips,2,table 1,"7, 28",,15.18,0.54,60.9,85.0,4.25
+11,uplift,Z,11.5,0.0825,19.17,1,2,through-fastened,,,,9.45,ft.-kips,3,table 1,"7, 29",,20.22,0.47,55.9,76.0,4.875
+12,uplift,C,6.5,0.0598,19.17,1,2,through-fastened,,,,4.14,ft.-kips,2,table 1,"7, 30",,6.43,0.64,61.9,83.4,4.40
+13,uplift,C,6.5,0.0599,19.17,1,2,through-fastened,,,,4.34,ft.-kips,2,table 1,"7, 31",,6.50,0.67,62.1,82.8,4.60
+14,uplift,C,8.0,0.0602,18.75,1,2,through-fastened,,,,4.14,ft.-kips,2,table 1,"7, 32",,8.40,0.49,60.9,80.6,4.60
+15,uplift,C,8.0,0.0760,18.75,1,2,through-fastened,,,,7.30,ft.-kips,2,table 1,"7, 33",,10.75,0.68,59.2,79.2,3.9375
+16,uplift,Z,6.5,0.0827,24.17,1,2,through-fastened,,,,5.56,ft.-kips,2,table 1,"7, 34",,8.93,0.62,62.4,75.6,3.80
+17,uplift,C,6.5,0.0821,24.17,1,2,through-fastened,,,,7.80,ft.-kips,2,table 1,"7, 35",,9.94,0.79,61.0,81.8,5.20
+18,uplift,Z,8.0,0.0807,24.17,1,2,through-fastened,,,,7.76,ft.-kips,2,table 1,"7, 36",,13.45,0.58,62.1,81.4,5.20
+19,uplift,Z,8.0,0.0814,24.17,1,2,through-fastened,,,,7.44,ft.-kips,2,table 1,"7, 37",None,12.57,0.59,56.7,81.9,5.00
+20,uplift,Z,8.0,0.0819,24.17,1,2,through-fastened,,,,8.25,ft.-kips,2,table 1,"7, 38",None,13.17,0.63,58.0,80.0,5.50
+21I,uplift,Z,8.0,0.0820,24.17,1,2,through-fastened,,,,7.27,ft.-kips,2,table 1,"7, 39",3,11.64,0.62,48.5,80.4,4.90
+22I,uplift,Z,8.0,0.0812,24.17,1,2,through-fastened,,,,7.76,ft.-kips,2,table 1,"7, 40",4,13.08,0.59,58.7,79.8,5.20
+23I,uplift,Z,8.0,0.0818,24.17,1,2,through-fastened,,,,7.11,ft.-kips,2,table 1,"7, 41",4,13.33,0.53,59.6,80.5,4.80
+24I,uplift,Z,8.0,0.0814,24.17,1,2,through-fastened,,,,7.27,ft.-kips,2,table 1,"7, 42",6,13.19,0.55,58.6,81.3,4.90
+25I,uplift,Z,8.0,0.0807,24.17,1,2,through-fastened,,,,7.28,ft.-kips,2,table 1,"7, 43",6,13.02,0.56,60.7,80.6,4.90
+26,uplift,Z,8.0,0.1034,29.17,1,2,through-fastened,,,,7.80,ft.-kips,1,table 1,"7, 44",,16.03,0.49,59.5,76.8,3.75
+27,uplift,Z,9.5,0.1178,29.17,1,2,through-fastened,,,,11.74,ft.-kips,1,table 1,"7, 45",,22.28,0.53,49.5,76.0,5.50
+28,uplift,C,8.0,0.1015,29.17,1,2,through-fastened,,,,9.11,ft.-kips,1,table 1,"7, 46",,13.38,0.68,51.8,75.7,4.30
+29,uplift,C,9.5,0.0895,29.17,1,2,through-fastened,,,,10.14,ft.-kips,1,table 1,"7, 47",,17.72,0.57,55.9,75.6,2.38

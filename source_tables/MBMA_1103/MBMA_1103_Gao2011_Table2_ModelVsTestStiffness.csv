@@ -1,0 +1,25 @@
+# Source: MBMA_1103 | Gao, T. and Moen, C.D. (2011), Table 2, pp.11
+# Tag: MBMA_1103_TABLE2_MODELVSTESTSTIFFNESS
+# Content: Predicted versus experimentally measured initial stiffness of the bare panel-to-girt rotational restraint tests (slopes of the linear region in Figure 10).
+# Data basis: mixed: measured test slopes compared with mechanical-model predicted slopes
+# Units: slopes in N/mm; a_over_b_percent in percent
+# Column definitions:
+#   specimen_name = specimen label as printed (see Table 1 for dimensions)
+#   model_slope_n_per_mm = stiffness predicted by the mechanical model, Eq. (10)/(11), N/mm
+#   test_slope_n_per_mm = stiffness measured in the linear region of the test curve, N/mm
+#   a_over_b_percent = model slope divided by test slope, expressed as a percentage
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-05): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 53 pages)
+# ANOMALY FLAG: The ratio column header is printed as "a/b" with "100.0%" placed on the units line of the header; the ratio values are percentages and are preserved verbatim. The slope units are printed as N/mm although the load-deformation plots (Fig. 10) are in lbs and in.; printed units kept as-is.
+# Specimens C10-1 and C6-1 correspond to C250-1 and C150-1 of Table 1.
+# The panel bending term 9Hh/160 was subtracted from both model and experimental results before comparison.
+specimen_name,model_slope_n_per_mm,test_slope_n_per_mm,a_over_b_percent
+Z8-1,173.3,164.4,105.4
+Z8-2,210.6,211.1,99.7
+Z10-1,128.3,135.6,94.5
+Z10-2,139.4,138.9,100.5
+C8-1,153.9,153.3,100.2
+C8-2,163.9,164.4,99.6
+C10-1,120.6,117.8,102.5
+C6-1,177.8,197.8,89.8

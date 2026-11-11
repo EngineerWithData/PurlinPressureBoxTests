@@ -1,0 +1,76 @@
+# Source: MBMA_1103 | Gao, T. and Moen, C.D. (2011), Table 7, pp.22
+# Tag: MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS
+# Content: Measured midspan cross-section dimensions and sweep imperfection of each vacuum box test girt, together with the effective section modulus computed with CFS.
+# Data basis: mixed: measured cross-section dimensions and imperfections with S_e computed by the CFS software
+# Units: b, d, h, r, t and imperfection in inches; alpha and theta in degrees; se_in3 in in^3
+# Column definitions:
+#   specimen = test/specimen label as printed
+#   b_comp_in = flange width of the compression (free) flange, inches (Table 7 definition figure)
+#   d_comp_in = stiffening lip length of the compression flange, inches
+#   alpha_comp_deg = angle between web and compression flange, degrees
+#   theta_comp_deg = angle of the compression flange stiffening lip, degrees
+#   b_tens_in = flange width of the tension (through-fastened) flange, inches
+#   d_tens_in = stiffening lip length of the tension flange, inches
+#   alpha_tens_deg = angle between web and tension flange, degrees
+#   theta_tens_deg = angle of the tension flange stiffening lip, degrees
+#   h_in = out-to-out web depth of the girt, inches
+#   r_in = corner radius of the cross-section, inches
+#   t_in = base metal thickness of the girt, inches
+#   se_in3 = effective section modulus computed with the software CFS, in^3
+#   imperfection_in = girt sweep imperfection measured at midspan before testing, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-05): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 53 pages)
+# ANOMALY FLAG: Tests Z8DR4-1/Z8DR4-2 of Table 5 appear here as Z8D4R13-1/Z8D4R13-2; printed names preserved verbatim. Test Z8D-1 is not listed. Midspan sweep imperfection is printed as "-" (not measured) for many specimens and is kept as "-".
+# Dimension symbols are defined by the C- and Z-section figure printed above Table 7.
+# Compression flange = free flange; tension flange = flange through-fastened to the panel.
+specimen,b_comp_in,d_comp_in,alpha_comp_deg,theta_comp_deg,b_tens_in,d_tens_in,alpha_tens_deg,theta_tens_deg,h_in,r_in,t_in,se_in3,imperfection_in
+Z8D-2,2.69,1.04,92,47,2.85,1.08,92,53,8,0.26,0.102,3.57,-
+Z8D-3,2.68,0.99,91,47,2.58,1.01,90,53,8,0.32,0.100,3.50,-
+Z8DTH1-1,2.78,1.00,92,46,2.79,1.10,91,52,8,0.28,0.100,3.50,-
+Z8DTH1-2,2.60,1.04,90,47,2.73,1.04,89,53,8,0.25,0.100,3.59,-
+Z8DTH2-1,2.89,0.95,91,48,2.73,1.03,90,53,8,0.30,0.101,3.39,-
+Z8DTH2-2,2.71,1.03,91,47,2.63,0.84,91,52,8,0.41,0.101,3.36,-
+Z8DTH4-1,2.75,0.89,92,47,2.76,1.05,90,53,8,0.30,0.101,3.32,-
+Z8DTH4-2,2.74,0.99,90,46,2.79,1.12,90,54,8,0.27,0.102,3.49,-
+Z8D4R13-1,2.68,0.99,90,48,2.68,1.09,90,53,8,0.22,0.100,3.51,-
+Z8D4R13-2,2.67,1.01,90,47,2.67,1.04,90,52,8,0.25,0.099,3.55,-
+Z8B-1,2.70,0.96,90,47,2.76,1.10,90,52,8,0.29,0.101,3.47,-
+Z8B-2W,2.68,1.02,91,46,2.76,1.03,91,53,8,0.26,0.101,3.56,0.01
+Z8BTH1-1,2.76,1.03,90,46,2.77,1.09,88,53,8,0.24,0.100,3.56,-
+Z8BTH1-2,2.71,1.05,91,46,2.68,1.05,91,53,8,0.26,0.100,3.59,-
+Z8BTH2-1,2.84,0.99,89,48,2.81,1.10,89,53,8,0.30,0.101,3.49,-
+Z8BTH2-2,2.68,0.99,90,47,2.70,1.05,90,53,8,0.31,0.101,3.54,-
+Z8BTH4-1,2.68,1.02,90,47,2.71,0.99,90,52,8,0.27,0.101,3.51,-0.21
+Z10D-1,2.83,0.78,90,55,2.89,0.80,91,46,10,0.28,0.060,2.19,0.00
+Z10D-2,2.83,0.82,90,55,2.86,0.84,90,48,10,0.25,0.060,2.21,0.07
+Z10DTH1-1,2.69,0.79,92,54,2.91,0.82,91,47,10,0.25,0.059,2.16,-
+Z10DTH1-2,2.66,0.74,91,55,2.86,0.80,90,47,10,0.22,0.059,2.12,-
+Z10DTH2-1,2.65,0.83,90,54,2.83,0.81,91,47,10,0.26,0.061,2.18,-0.15
+Z10DTH2-2,2.83,0.79,91,56,2.87,0.81,91,47,10,0.25,0.061,2.18,0.11
+Z10DTH4-1,2.83,0.86,91,55,2.82,0.78,90,48,10,0.27,0.060,2.30,0.08
+Z10DTH4-2,2.84,0.87,90,54,2.87,0.79,90,46,10,0.24,0.060,2.23,0.33
+Z10B-1,2.82,0.83,91,55,2.87,0.87,90,47,10,0.23,0.059,2.20,-0.01
+Z10B-2,2.78,0.88,91,54,2.88,0.80,91,47,10,0.24,0.059,2.24,-0.12
+Z10BTH1-1,2.94,0.87,91,55,2.76,0.85,91,47,10,0.24,0.059,2.27,0.21
+Z10BTH1-2,2.73,0.80,90,55,2.86,0.79,89,47,10,0.25,0.060,2.23,0.06
+Z10BTH2-1,2.73,0.75,90,55,2.80,0.81,90,48,10,0.23,0.060,2.12,0.00
+Z10BTH2-2,2.68,0.76,90,55,2.75,0.78,90,48,10,0.22,0.060,2.13,0.15
+Z10BTH4-1,2.68,0.71,90,53,2.87,0.79,88,45,10,0.20,0.060,2.08,0.25
+Z10BTH4-2,2.68,0.89,90,54,2.87,0.80,88,47,10,0.27,0.060,2.27,0.12
+C8D-1,2.57,0.84,92,90,2.56,0.85,92,90,8,0.20,0.101,3.11,-0.51
+C8D-2,2.59,0.84,88,90,2.54,0.84,88,90,8,0.23,0.101,3.11,-0.33
+C8DTH1-1,2.51,0.83,93,90,2.54,0.83,93,90,8,0.19,0.101,3.11,-0.40
+C8DTH1-2,2.63,0.80,92,90,2.54,0.82,92,90,8,0.18,0.101,3.04,-0.50
+C8DTH2-1,2.42,0.83,91,90,2.47,0.79,91,90,8,0.16,0.101,3.11,-0.49
+C8DTH2-2,2.45,0.79,88,90,2.68,0.85,88,90,8,0.23,0.101,3.07,-0.33
+C8DTH4-1,2.55,0.83,87,90,2.59,0.83,87,90,8,0.25,0.101,3.08,-0.41
+C8DTH4-2,2.54,0.84,88,91,2.56,0.83,88,91,8,0.18,0.101,3.07,-0.31
+C10D-1,2.54,0.82,90,89,2.58,0.77,90,89,10,0.22,0.059,2.06,0.01
+C10D-2,2.51,0.82,89,91,2.56,0.76,89,91,10,0.22,0.059,2.07,-0.12
+C10DTH1-1,2.49,0.83,89,90,2.49,0.82,89,90,10,0.17,0.059,2.09,-0.20
+C10DTH1-2,2.48,0.82,89,89,2.54,0.80,89,89,10,0.17,0.059,2.08,-0.13
+C10DTH2-1,2.48,0.79,90,90,2.68,0.84,90,90,10,0.19,0.059,2.04,-0.01
+C10DTH2-2,2.49,0.83,90,90,2.71,0.75,90,90,10,0.22,0.059,2.08,0.01
+C10DTH4-1,2.52,0.78,90,89,2.57,0.75,90,89,10,0.17,0.059,2.03,0.08
+C10DTH4-2,2.47,0.82,90,91,2.56,0.71,90,91,10,0.19,0.059,2.07,0.10

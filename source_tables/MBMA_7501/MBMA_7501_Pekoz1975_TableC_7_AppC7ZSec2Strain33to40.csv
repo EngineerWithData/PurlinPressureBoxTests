@@ -1,0 +1,48 @@
+# Source: MBMA_7501 | Peköz, T. (1975), Table APPENDIX C Page 7, pp.102
+# Tag: MBMA_7501_TABLEC7_APPC7ZSEC2STRAIN33TO40
+# Content: Strain gage readings and computed stresses for gages 33-40 at each load level of the second Z-section purlin assembly uplift test.
+# Data basis: mixed: strain gage readings measured during the vacuum uplift test with stresses computed from the readings (E = 30x10^6 psi)
+# Units: p_psf in psf; gage readings in micro in/in; stresses in ksi
+# Column definitions:
+#   p_psf = applied vacuum (uplift) load, psf (label printed verbatim)
+#   g33_rdg_microin = strain gage 33 reading, micro in/in
+#   g33_stress_ksi = stress from gage 33, ksi
+#   g34_rdg_microin = strain gage 34 reading, micro in/in
+#   g34_stress_ksi = stress from gage 34, ksi
+#   g35_rdg_microin = strain gage 35 reading, micro in/in
+#   g35_stress_ksi = stress from gage 35, ksi
+#   g36_rdg_microin = strain gage 36 reading, micro in/in
+#   g36_stress_ksi = stress from gage 36, ksi
+#   g37_rdg_microin = strain gage 37 reading, micro in/in
+#   g37_stress_ksi = stress from gage 37, ksi
+#   g38_rdg_microin = strain gage 38 reading, micro in/in
+#   g38_stress_ksi = stress from gage 38, ksi
+#   g39_rdg_microin = strain gage 39 reading, micro in/in
+#   g39_stress_ksi = stress from gage 39, ksi
+#   g40_rdg_microin = strain gage 40 reading, micro in/in
+#   g40_stress_ksi = stress from gage 40, ksi
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 19 cells checked (AI, 2026-11-04): 19 correct, 0 errors, 1 unreadable; P(accuracy ≥ 0.8) = 98.8%, ≥ 0.9) = 87.8%, ≥ 0.95) = 64.2%
+# TEXT SOURCE: read from page images by the model (all 104 pages)
+# ANOMALY FLAG: The load column prints '15' twice (the second '15' row would be 18 psf by the series) and '21' twice (the second '21' is a reset reading set with no stresses); the row at 27 psf is labelled '27 Base' and several of its stresses are printed in parentheses. All labels and values are preserved exactly as printed. Three readings contain the unreadable-character marker ('9[?][?]2', '9[?][?]8').
+# Strain gage locations are given in Fig. 44.
+# The row labelled '27 Base' marks the re-zeroing of the gages; stresses printed in parentheses there refer to the previous base.
+p_psf,g33_rdg_microin,g33_stress_ksi,g34_rdg_microin,g34_stress_ksi,g35_rdg_microin,g35_stress_ksi,g36_rdg_microin,g36_stress_ksi,g37_rdg_microin,g37_stress_ksi,g38_rdg_microin,g38_stress_ksi,g39_rdg_microin,g39_stress_ksi,g40_rdg_microin,g40_stress_ksi
+0,9275,,8659,,10362,,9[?][?]2,,8726,,5943,,9633,,7704,
+3,9096,-5.37,8615,-1.32,10196,-4.98,9412,2.70,9108,3.66,5906,-1.11,9587,-1.38,7664,-1.20
+6,9039,-7.08,8680,0.63,10153,-6.27,9[?][?]8,3.78,9206,6.60,5869,-22.2,9544,-2.67,7636,-2.04
+9,9043,-6.96,8760,3.03,10166,-5.88,9522,6.00,9270,8.52,5840,-3.09,9507,-3.78,7600,-3.12
+12,9143,-3.96,8955,8.88,10278,-2.52,9665,10.29,9440,13.62,5908,-1.05,9579,-1.62,7682,-0.66
+15,8900,-11.25,8810,4.53,10060,-9.06,9511,5.67,9316,9.90,5681,-7.86,9353,-8.40,7368,-10.08
+15,8814,-13.83,8824,4.95,9959,-12.09,9494,5.16,9323,10.11,5577,-10.98,9245,-11.64,7355,-10.47
+21,8865,-12.30,8958,8.97,10031,-9.93,9626,9.12,9484,14.94,5625,-9.54,9302,-9.93,7402,-9.06
+21,8946,,9019,,10106,,9658,,9544,,5701,,9386,,7488,
+24,8987,-8.07,9169,13.47,10166,-8.13,9868,14.52,9760,21.42,5790,-6.87,9474,-7.29,7575,-6.45
+27 Base,8578,-9.99,8843,17.70,9648,(8.13),9460,(2.28),9388,27.00,5299,6.87,9063,(-19.62),7117,(-20.19)
+30,8554,-0.72,8867,0.72,9656,0.24,9463,0.09,9410,6.66,5262,-1.11,9076,0.29,7104,-0.39
+33,8500,-2.34,8930,2.61,9628,-0.6,9484,0.72,9476,2.64,5193,-3.18,9071,0.24,7086,-0.93
+36,8452,-3.78,8972,3.87,9605,-1.29,9497,1.11,9525,4.11,5132,-5.01,9066,0.09,7065,-1.56
+39,8403,-5.25,9019,5.28,9575,-2.19,9516,1.68,9568,5.40,5084,-6.45,9045,-0.54,7045,-2.16
+42,8355,-6.69,9064,6.63,9542,-3.18,9534,2.22,9615,6.81,5028,-8.13,9034,-0.87,7024,-2.79
+45,8290,-8.64,9117,8.22,9499,-4.47,9560,3.00,9669,8.43,4957,-10.20,9010,-1.59,6991,-3.78
+48,8207,-11.13,9207,10.92,9431,-6.51,9605,4.35,9763,11.25,4881,-12.54,9003,-1.80,6956,-4.83

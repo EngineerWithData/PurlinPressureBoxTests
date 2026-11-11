@@ -1,0 +1,58 @@
+# Source: MBMA_9001 | Anderson, B.B. and Murray, T.M. (1990), Table S1, pp.33-44, 48-165
+# Tag: MBMA_9001_TABLES1_STRENGTHSUMMARY
+# Content: Measured failure (maximum) loads, and base-test ultimate moments, of sixteen full-scale vacuum-chamber uplift tests on C- and Z-purlin supported standing seam roof systems (eight single-span two-purlin-line base tests and eight corresponding three-span confirming tests).
+# Data basis: measured: full-scale uplift (vacuum chamber) tests; failure loads, failure modes and base-test ultimate moments copied from Tables 4.2, 4.3, 5.1, 5.2 and the appendix test summary sheets; added columns for predicted loads and test-to-predicted ratios are computed values printed in the same tables/appendices
+# Units: see column headers
+# Column definitions:
+#   test_id = test designation as printed in the report (suffix -1 = single span base test, -3 = three-span confirming test, (O) = purlin flanges opposed)
+#   load_direction = direction of applied load (all tests simulated uplift by vacuum chamber)
+#   section_type = purlin cross-section shape, C or Z
+#   depth_in = measured purlin depth(s) of the purlins in the assembly, in.; a range is given when the individual purlins differed (values from the appendix purlin-property sheets)
+#   thickness_in = measured material thickness of the tensile coupon cut from the failed purlin, in. (Table 4.1)
+#   span_ft = individual span length, ft (25'-0" base tests; 23'-6" confirming tests)
+#   n_spans = number of spans in the test assembly
+#   n_purlin_lines = number of parallel purlin lines in the test assembly
+#   panel_type = roof panel/attachment system, standing seam with pan or rib profile
+#   bracing = lateral bracing configuration of the purlins
+#   failure_load_as_printed = measured uniform failure (maximum) load per purlin line, exactly as printed
+#   failure_load_unit = unit of the failure load as printed
+#   failure_moment_as_printed = ultimate moment determined from the single-span base test failure load (M_us), exactly as printed; given only for base tests
+#   failure_moment_unit = unit of the failure moment as printed
+#   failure_mode = failure mode code as printed in Tables 4.2 and 4.3 (see notes)
+#   value_source = report location(s) from which the failure load/moment were taken
+#   pages = PDF page number(s) where the values are stated
+#   clip_type = standing seam panel-to-purlin clip type (Table 3.1)
+#   yield_stress_ksi = measured yield stress of the purlin coupon, ksi (Table 4.1)
+#   predicted_failure_load_plf = predicted failure load, plf; for single-span base tests the fully constrained bending prediction printed on the appendix summary sheet, for three-span tests the base test method prediction W_p3 from Tables 5.1/5.2
+#   test_to_predicted_ratio = actual-to-predicted failure load ratio W_u/W_p3 as printed in Tables 5.1/5.2 (three-span tests only; "--" where the test ended in clip failure)
+# EXTRACTION QUALITY: ocr_repaired — only unambiguous single-character OCR fixes, each listed under ANOMALY FLAG
+# VALIDATION: 13 cells checked (AI, 2026-11-04): 13 correct, 0 errors, 7 unreadable; P(accuracy ≥ 0.8) = 95.6%, ≥ 0.9) = 77.1%, ≥ 0.95) = 51.2%
+# TEXT SOURCE: read from page images by the model (cached transcription)
+# ANOMALY FLAG: Failure loads printed in Tables 4.2/4.3 differ slightly from the appendix summary sheets and Table 5.2 for three tests (U-Z-T-P/S-3(O): 212.9 plf vs 213.0 plf; U-Z-T-R/S-1: 195.8 plf vs 195.85 plf and 195.9 plf in Table 5.2; U-Z-T-R/S-3: 222.9 plf vs 223.0 plf). Measured thickness in Table 4.1 (tensile coupon) also differs by 0.001 in. from some appendix summary sheets.
+# Failure mode codes as printed: DB = distortional buckling of compression lip, flange, and web (Table 4.2 footnote); LB = local buckling of compression lip, flange, and web (Table 4.3 footnote); CLIP = separation of deck from purlin by failure of clip (Table 4.3 footnote). The appendix summary sheets describe the base-test failures as "Local Buckling" even where Table 4.2 lists DB.
+# Tests U-Z-T-P/S-3(O) and U-Z-T-R/S-3 were terminated by standing seam clip failure (deck separated from the purlin / the upper piece of the two-piece sliding clip ruptured) before the purlins reached their strength, so no purlin failure load and no actual-to-predicted ratio are reported for them in Table 5.2; the loads listed are the maximum loads reached.
+# Loads are uniform uplift loads in pounds per lineal foot (plf) per purlin line, applied by evacuating a vacuum chamber above the roof system; the reported loads are applied (vacuum) loads only and do not include dead load.
+# Tributary width: base tests and three-purlin-line confirming tests used purlins 5 ft on center with 1 ft (base) or 2 ft 2-3/8 in. (confirming) panel overhangs; four-purlin-line (opposed) confirming tests used purlins 3 ft 7 in. on center with 1 ft 9-7/8 in. overhangs. Panel/deck stiffness analysis (Figure 3.2) showed that in four purlin line tests the external (eave and ridge) purlins receive about 12% more load than the interior purlins.
+# depth_in is reported as the range of individually measured purlin depths within the assembly (each end value is printed in the appendix purlin-property sheets); a single value is given where all purlins had the same measured depth.
+# thickness_in and yield_stress_ksi are the tensile-coupon values of Table 4.1 (one coupon per test, cut from a failed purlin); the appendix summary sheets list measured thicknesses that may differ by 0.001 in.
+# Base-test predicted loads are the fully constrained (1986 AISI) bending capacity predictions printed on the appendix summary sheets; three-span predicted loads W_p3 are from the base test method (Tables 5.1 and 5.2) and were in all cases governed by the negative moment region.
+# Lap lengths over the interior supports of the three-span tests (Table 3.1): U-Z-R-P/F 4'8", U-Z-R-P/S 2'4", U-Z-R-R/S(O) 3'6", U-C-R-P/S(O) 4'9", U-Z-T-P/F(O) 2'7", U-Z-T-P/S(O) 3'11", U-Z-T-R/F 5'5", U-Z-T-R/S 4'5".
+# CORRECTION NOTE: MBMA_9702 (Murray 1997, pp. 3, 7-8) states that the Virginia Tech uplift failure loads in MBMA_9001 and MBMA_9102 were reported with an error in the tributary area, and its Table 1 prints corrected loads. failure_load_as_printed keeps this report's measured value; failure_load_corrected_9702_plf holds the MBMA_9702 Table 1 value where the set match is clear (same designation; confirming loads agree within about 2%). Base-test loads drop 8-27% while confirming loads barely change. Left blank for the two U-Z-T-P/F (O) sets (MBMA_9702 lists the designation twice and the confirming loads 173.2 and 171.2 do not map cleanly to MBMA_9001 169.2 / MBMA_9102 171.18) and for tests not in MBMA_9702 Table 1 (open question MBMA_9702-Q06).
+# NAME NOTE (review 2026-11-10, Cris Moen): configuration_id is a join key added for aggregation; it is the test name without the -1 (base test) / -3 (confirming test) suffix, spelled as printed in Table 3.1 (opposed suffix '(0)'), so each Table 3.1 configuration row joins to both of its tests.
+test_id,load_direction,section_type,depth_in,thickness_in,span_ft,n_spans,n_purlin_lines,panel_type,bracing,failure_load_as_printed,failure_load_unit,failure_moment_as_printed,failure_moment_unit,failure_mode,value_source,pages,clip_type,yield_stress_ksi,predicted_failure_load_plf,test_to_predicted_ratio,failure_load_corrected_9702_plf,configuration_id
+U-Z-R-P/F-1,uplift,Z,7.8-7.95,0.068,25,1,2,"standing seam, pan type",rafters only,65.3,plf,61.2,in. kips,DB,table 4.2; table 5.1; appendix A summary sheet,"34, 43, 48",one piece fixed,52.4,105.76,,47.8,U-Z-R-P/F
+U-Z-R-P/F-3,uplift,Z,8.005-8.038,0.068,23.5,3,3,"standing seam, pan type",rafters only,132.7,plf,,,DB,table 4.2; table 5.1; appendix A summary sheet,"34, 43, 52",one piece fixed,51.3,125.9,1.05,131.3,U-Z-R-P/F
+U-Z-R-P/S-1,uplift,Z,8.063,0.069,25,1,2,"standing seam, pan type",rafters only,95.6,plf,89.6,in. kips,DB,table 4.2; table 5.1; appendix B summary sheet,"34, 43, 63",two piece sliding,64.4,137.50,,83.8,U-Z-R-P/S
+U-Z-R-P/S-3,uplift,Z,7.944-8.038,0.068,23.5,3,3,"standing seam, pan type",rafters only,140.6,plf,,,DB,table 4.2; table 5.1; appendix B summary sheet,"34, 43, 67",two piece sliding,65.6,180.5,0.78,140.5,U-Z-R-P/S
+U-Z-R-R/S-1(O),uplift,Z,9.45,0.073,25,1,2,"standing seam, rib type",rafters only,84.4,plf,79.2,in. kips,DB,table 4.2; table 5.1; appendix C summary sheet,"34, 43, 78",two piece sliding,63.4,185.63,,66.0,U-Z-R-R/S(0)
+U-Z-R-R/S-3(O),uplift,Z,9.479-9.576,0.073,23.5,3,4,"standing seam, rib type",rafters only,167.8,plf,,,DB,table 4.2; table 5.1; appendix C summary sheet,"34, 43, 82",two piece sliding,60.3,163.0,1.03,169.2,U-Z-R-R/S(0)
+U-C-R-P/S-1(O),uplift,C,9.06,0.062,25,1,2,"standing seam, pan type",rafters only,50.8,plf,47.6,in. kips,DB,table 4.2; table 5.1; appendix D summary sheet,"34, 43, 95",two piece sliding,55.1,114.36,,38.7,U-C-R-P/S(0)
+U-C-R-P/S-3(O),uplift,C,8.874-9.156,0.063,23.5,3,4,"standing seam, pan type",rafters only,112.4,plf,,,DB,table 4.2; table 5.1; appendix D summary sheet,"34, 43, 99",two piece sliding,53.5,97.8,1.15,113.8,U-C-R-P/S(0)
+U-Z-T-P/F-1(O),uplift,Z,8.473,0.068,25,1,2,"standing seam, pan type",rafters and third points,104.2,plf,97.7,in. kips,LB,table 4.3; table 5.2; appendix E summary sheet,"38, 44, 112",one piece fixed,58.4,129.75,,,U-Z-T-P/F(0)
+U-Z-T-P/F-3(O),uplift,Z,8.381-8.474,0.068,23.5,3,4,"standing seam, pan type",rafters and third points,169.2,plf,,,LB,table 4.3; table 5.2; appendix E summary sheet,"38, 44, 116",one piece fixed,60.4,205.0,0.83,,U-Z-T-P/F(0)
+U-Z-T-P/S-1(O),uplift,Z,9.39-9.449,0.074,25,1,2,"standing seam, pan type",rafters and third points,142.2,plf,133.3,in. kips,LB,table 4.3; table 5.2; appendix F summary sheet,"38, 44, 129",two piece sliding,67.5,175.41,,,U-Z-T-P/S(0)
+U-Z-T-P/S-3(O),uplift,Z,9.356-9.512,0.073,23.5,3,4,"standing seam, pan type",rafters and third points,212.9,plf,,,CLIP,table 4.3; table 5.2; appendix F summary sheet,"38, 44, 133",two piece sliding,65.1,281.7,--,,U-Z-T-P/S(0)
+U-Z-T-R/F-1,uplift,Z,8.0,0.060,25,1,2,"standing seam, rib type",rafters and third points,55.8,plf,52.3,in. kips,LB,table 4.3; table 5.2; appendix G summary sheet,"38, 44, 146",one piece fixed,61.8,103.69,,51.4,U-Z-T-R/F
+U-Z-T-R/F-3,uplift,Z,7.936-7.999,0.060,23.5,3,3,"standing seam, rib type",rafters and third points,129.4,plf,,,LB,table 4.3; table 5.2; appendix G summary sheet,"38, 44, 150",one piece fixed,63.0,111.7,1.16,127.8,U-Z-T-R/F
+U-Z-T-R/S-1,uplift,Z,8.098,0.098,25,1,2,"standing seam, rib type",rafters and third points,195.8,plf,183.7,in. kips,LB,table 4.3; table 5.2; appendix H summary sheet,"38, 44, 161",two piece sliding,56.7,204.66,,,U-Z-T-R/S
+U-Z-T-R/S-3,uplift,Z,8.035-8.072,0.098,23.5,3,3,"standing seam, rib type",rafters and third points,222.9,plf,,,CLIP,table 4.3; table 5.2; appendix H summary sheet,"38, 44, 165",two piece sliding,64.8,387.7,--,,U-Z-T-R/S

@@ -1,0 +1,32 @@
+# Source: MBMA_8310 | LaBoube, R.A. (1983), Table 2, pp.5
+# Tag: MBMA_8310_TABLE2_UPLIFTLOADCOMPARISONS
+# Content: Tested failure loads, Cornell-method computed failure loads and their ratio for the nine laterally unsupported C- and Z-purlin uplift tests, with group averages.
+# Data basis: mixed: measured failure loads from vacuum-chamber uplift tests with Cornell-method computed capacities
+# Units: pu_lb_per_ft and pc_lb_per_ft in lb/ft; pu_over_pc dimensionless
+# Column definitions:
+#   test_no = full-scale test specimen number, or 'Average' for the group mean row
+#   section_type = purlin thickness and shape designation (e.g. .07 C), dimensionless
+#   pu_lb_per_ft = maximum uniform uplift load at failure, pounds per foot
+#   pc_lb_per_ft = computed failure load using the Cornell analytical method, pounds per foot
+#   pu_over_pc = ratio of tested failure load to computed failure load, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 8 pages)
+# ANOMALY FLAG: Printed table interleaves 'Average' summary rows (average tested load only) between specimen rows; these are preserved as separate rows with blank cells where no value was printed. The ratio column header was printed in a broken two-line form ('P u/P /c'), interpreted as Pu/Pc.
+# Pu = maximum load at failure; Pc = computed failure load using Cornell method.
+# Conversion note printed with table: P(lb/ft) = Transducer Reading (psf) x 76/2 x 1/12.
+# 'Average' rows give the average tested load Pu for the preceding group of specimens.
+test_no,section_type,pu_lb_per_ft,pc_lb_per_ft,pu_over_pc
+1,.07 C,104.5,110.8,.94
+2,.07 C,99.8,110.8,.90
+Average,,102.2,,
+3,.07 Z,123.5,218.5,.57
+4,.07 Z,136.2,218.5,.62
+5,.07 Z,120.3,218.5,.55
+Average,,126.7,,
+6,.10 C,197.6,215.3,.92
+7,.10 C,210.3,215.3,.98
+Average,,204.0,,
+8,.10 Z,234.7,380.0,.62
+9,.10 Z,243.8,380.0,.64
+Average,,239.3,,

@@ -1,0 +1,21 @@
+# Source: MBMA_8001 | Razak, M.A.A. and Peköz, T. (1980), Table 4.3, pp.80
+# Tag: MBMA_8001_TABLE43_WEBROTATIONALDEFORMATION
+# Content: Fraction of the total rotation made up by cross-sectional (web) rotational deformation in the diaphragm-braced and channel-braced rotational restraint tests, as a function of web slenderness.
+# Data basis: mixed: measured deflections near the web mid-point in the F tests, converted to rotation ratios
+# Units: all columns dimensionless
+# Column definitions:
+#   purlin_type = purlin designation letter A–E
+#   h_over_t = web depth to thickness ratio H/t of the purlin, dimensionless
+#   theta_p_over_theta_v = ratio of web rotational deformation θ_p to total rotation θ in diaphragm-braced F tests
+#   theta_p_over_theta_b = ratio of web rotational deformation θ_p to total rotation θ in channel-braced F tests
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 130 pages)
+# Footnote (1): Ratio of rotational deformation of purlin web (θ_p) to total rotation (θ) in diaphragm-braced F tests.
+# Footnote (2): Ratio of rotational deformation of purlin web (θ_p) to total rotation (θ) in channel-braced F tests.
+purlin_type,h_over_t,theta_p_over_theta_v,theta_p_over_theta_b
+A,150.0,.32,.53
+B,86.8,.11,.29
+C,132.0,.31,.58
+D,69.0,.10,.27
+E,114.8,.39,.66

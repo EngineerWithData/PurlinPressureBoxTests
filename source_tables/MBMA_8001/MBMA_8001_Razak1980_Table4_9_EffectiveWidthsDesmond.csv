@@ -1,0 +1,26 @@
+# Source: MBMA_8001 | Razak, M.A.A. and Peköz, T. (1980), Table 4.9, pp.86
+# Tag: MBMA_8001_TABLE49_EFFECTIVEWIDTHSDESMOND
+# Content: Effective widths of the compression flanges and lip-stiffeners of the five purlin types computed by Desmond's method on total-width, flat-width and unstiffened bases.
+# Data basis: computed: Desmond's edge-stiffened element design method (Appendix B) using measured dimensions and coupon yield stress F_y
+# Units: all width columns in inches
+# Column definitions:
+#   purlin_type = purlin designation letter A–E
+#   w_total_in = effective width of the compression flange based on total width (case I), inches
+#   s_total_in = reduced length of partial stiffener (or effective stiffener width) based on total width, inches
+#   w_flat_in = effective width of the compression flange based on flat width (case II), inches
+#   s_flat_in = reduced length of partial stiffener (or effective stiffener width) based on flat width, inches
+#   w_unstiff_in = effective width based on total length of flange plus stiffener considered unstiffened, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 130 pages)
+# ANOMALY FLAG: The printed column header for the first width column reads "W(in(" (typographic error), preserved as read. In the purlin D row the flat-width value is printed as "1.86²" (superscript footnote 2) rather than "1.86(2)"; it is preserved verbatim as printed and not corrected.
+# Column group I: Based on total width; II: Based on flat width; III: Based on total length of flange + stiffener and considered as unstiffened.
+# Footnote (1): Reduced length of partial stiffener unless otherwise noted.
+# Footnote (2): Fully effective.
+# W = flange width; S = stiffener length.
+purlin_type,w_total_in,s_total_in,w_flat_in,s_flat_in,w_unstiff_in
+A,1.75,0.17,1.64,0.14,1.051
+B,2.56,0.67,2.02(2),0.90(2),1.736
+C,1.58,0.16,1.51,0.13,0.973
+D,2.44,0.56,1.86²,0.81(2),1.709
+E,1.68,0.08,1.50,0.03,1.047

@@ -1,0 +1,48 @@
+# Source: MBMA_7501 | Peköz, T. (1975), Table S1, pp.5, 7, 8, 11, 98
+# Tag: MBMA_7501_TABLES1_STRENGTHSUMMARY
+# Content: Measured failure (ultimate) loads of the three full-scale, three-span continuous lapped purlin assemblies tested under simulated wind-uplift (vacuum) loading, plus the three pilot screw-connection load-capacity tests reported in Section 5.
+# Data basis: measured: failure and maximum loads observed in the physical tests, as stated in the narrative text and in the Appendix C data sheet; geometry, bracing, dead load and coupon yield stresses taken verbatim from the report text and figures
+# Units: see column headers
+# Column definitions:
+#   test_id = identification of the test specimen/assembly as named in the report
+#   load_direction = direction of applied load (uplift = simulated wind uplift by vacuum)
+#   section_type = purlin cross-section shape, C or Z
+#   depth_in = nominal purlin depth, in.
+#   thickness_in = purlin base steel thickness, in.
+#   span_ft = individual span length, ft
+#   n_spans = number of continuous spans in the assembly
+#   n_purlin_lines = number of parallel purlin lines in the assembly (not stated numerically in the text)
+#   panel_type = type of roof panel/attachment to purlins
+#   bracing = lateral/torsional bracing provided during the final test
+#   failure_load_as_printed = failure or maximum load exactly as printed in the report
+#   failure_load_unit = unit of the failure load exactly as printed
+#   failure_moment_as_printed = failure moment as printed (none reported)
+#   failure_moment_unit = unit of the failure moment as printed (none reported)
+#   failure_mode = description of the observed mode that terminated the test
+#   value_source = where in the report the strength value is stated
+#   pages = PDF page number(s) where the value is stated
+#   last_recorded_load_psf = highest load level at which gage readings were recorded, psf
+#   dead_load_psf = dead weight of the assembly per sq ft of horizontal projection, psf
+#   yield_stress_ksi = measured tensile coupon yield stress(es) of the purlin steel, ksi
+# EXTRACTION QUALITY: ocr_repaired — only unambiguous single-character OCR fixes, each listed under ANOMALY FLAG
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (cached transcription)
+# ANOMALY FLAG: Purlin thickness for the C-section end spans is printed as "T = .119"" in Fig. 2b but as ".1119 inches thick channel section purlin (used for the end spans)" in Section 6; the support members are labelled "W 10 x 14" in Fig. 1a and "W 10 x 15" in Fig. 2a and in the text.
+# Loading was applied as vacuum (simulated wind uplift) over the whole assembly; loads are given in psf of the horizontal projection of the test assembly.
+# Loads in psf are the applied vacuum pressure; the dead weight of the assembly (2.25 psf for the Z assemblies, 2.52 psf end spans / 2.32 psf center span for the C assembly) acts in addition and the plot origins were taken 2.25 (or 2.52/2.32) psf below zero vacuum pressure.
+# Each assembly had three 25 ft spans with lapped (nested) purlins over the interior supports; roof deck was the "SR" panel, t = .021 in., attached with #14 self-tapping sheet metal screws, and the deck was cantilevered out beyond the outside purlins to simulate cupping under uplift.
+# Purlin spacing is shown in the figures as 5 ft (Fig. 1a) with 8 in. deck overhangs for the Z assemblies and about 61 in. with 5.5 in. overhangs for the C assembly; the number of purlin lines is not stated in words, so n_purlin_lines is left blank.
+# Braces were used at all supports in all three full-scale tests to prevent lateral displacement and twist; rake channels were used at the purlin ends in the C-section assembly but not in the Z-section assemblies. No intermediate braces were used in the Z-section tests; an intermediate brace was used only in a preliminary (not final) C-section test.
+# The first Z-section assembly had a large initial sweep and twist (Fig. 5); the C-section and second Z-section assemblies were built with temporary wood bracing and straightened purlins to minimize initial sweep and twist (Figs. 21 and 36).
+# Section 6 reports coupon yield stresses by purlin type only ("Coupons from the Z-section purlin had yield stresses of 55.4, 55.5 and 55.7 ksi"); the report does not distinguish between the first and second Z-section assemblies, so these values are listed for the first Z test row and repeated for the second Z test row.
+# Rows 4-6 are the pilot screw-connection load and rotation capacity tests of Section 5 (component tests, not full-scale assemblies); loads are per screw. The author states that the prying action was not satisfactorily simulated in the first two (Cornell fixture) tests.
+# No failure moments are reported anywhere in the document; the failure_moment columns are therefore empty.
+# The cantilever shear tests (Q, Figs. 70-72) and the rotational restraint tests (F, Figs. 58-67) determined stiffness values only; no ultimate strengths are printed for them and they are not listed as strength rows.
+# REVIEW 2026-11-10 (Cris Moen): the First and Second Z-Section assemblies are distinct tests, not duplicates (merge-audit flag). The second assembly repeats the first with straightened purlins and temporary wood bracing to reduce sweep and twist (Figs. 5 and 36), so depth, thickness, spans, dead load and yield stresses match; failure loads differ (about 40 psf, p.5; about 50 psf, pp.8, 98). Yield stresses are reported by purlin type only and are repeated on both rows.
+test_id,load_direction,section_type,depth_in,thickness_in,span_ft,n_spans,n_purlin_lines,panel_type,bracing,failure_load_as_printed,failure_load_unit,failure_moment_as_printed,failure_moment_unit,failure_mode,value_source,pages,last_recorded_load_psf,dead_load_psf,yield_stress_ksi
+First Z-Section Purlin Assembly,uplift,Z,8,0.075,25,3,,through-fastened,braces at supports only; no intermediate braces,about 40,psf,,,"plastic buckle of very short wave length at 10 feet from the outside end of the end spans (indicating yielding), with some tearing of the roof deck around the screws in the vicinity of the same location",text,5,36,2.25,"55.4, 55.5, 55.7"
+C-Section Purlin Assembly,uplift,C,7,0.0773 (center span); 0.1119 (end spans),25,3,,through-fastened,braces at supports only (an intermediate brace was used only in a preliminary test),about 42,psf,,,"simultaneous sudden increase in the rate of deflections and twist, with pull-over type failure of the connections in one end span about 10 feet from the outside end; not clear whether the pull-over failure precipitated the purlin failure or vice versa",text,7,39,2.52 (end spans); 2.32 (center span),"47.5, 45.0, 48.9 (center span, t = .0773 in.); 40 average (end spans, t = .1119 in.)"
+Second Z-Section Purlin Assembly,uplift,Z,8,0.075,25,3,,through-fastened,braces at supports only; no intermediate braces,about 50,psf,,,plastic buckles of very short wave lengths at 10 feet from the outside supports of the end spans,"text; Appendix C sheet states ""ULTIMATE LOAD = 50 PSF""","8, 98",48,2.25,"55.4, 55.5, 55.7"
+"Connection pilot test 1 (Cornell uplift-pull-over fixture, concentric load)",uplift,,,,,,,through-fastened,,700,lbs. per screw,,,screw connection failure under concentrically applied load (prying action of purlin twisting judged not satisfactorily simulated),text,11,,,
+"Connection pilot test 2 (Cornell uplift-pull-over fixture, 3/4 in. eccentricity)",uplift,,,,,,,through-fastened,,446,lbs. per screw,,,screw connection failure under load applied with 3/4 in. eccentricity (prying action judged not satisfactorily simulated),text,11,,,
+Connection pilot test 3 (fixture of Fig. 56),uplift,,,,,,,through-fastened,,P = 80 lbs/screw with V kept constant at 125 lbs/screw,lbs/screw,,,"sudden connection failure under combined P and V; rotation at failure could not be measured accurately, estimated between .2 and .3 radians (11 to 17 degrees)",text,11,,,

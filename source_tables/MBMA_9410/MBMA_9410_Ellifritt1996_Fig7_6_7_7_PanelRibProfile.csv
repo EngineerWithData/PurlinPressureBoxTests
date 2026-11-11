@@ -1,0 +1,27 @@
+# Source: MBMA_9410 | Ellifritt, D.S.; Kreiner, J.S. (1996), Figures 7-6 and 7-7, PDF p.196 (printed p.183)
+# Tag: MBMA_9410_FIG7_6_7_7_PANELRIBPROFILE
+# Content: Dimensioned rib profile (one stiffener, one half of the rib from its centreline) of the American and Pascoe through-fastened roof panels, with the transverse stiffness model values printed beside each profile.
+# Data basis: as printed: dimensions read from the figure annotations; not a full panel cross-section (panel width, number of ribs and rib pitch are not shown)
+# Units: see column headers
+# Column definitions:
+#   panel_supplier = panel steel supplier as printed in the figure title
+#   figure = figure number
+#   pages = PDF page number
+#   rib_top_half_width_in = horizontal distance from the rib centreline to the start of the web (half of the flat rib top), in.
+#   web_horizontal_projection_in = horizontal projection of the sloping rib web, in.
+#   rib_height_in = vertical height of the rib from valley to rib top, in.
+#   web_slant_length_in = length of the sloping rib web measured along the web, in.
+#   l_o_in = horizontal reference length from the rib centreline used as l_o in the strain calculation (arrow labelled 6), in.
+#   delta_max_in = web slant length minus web horizontal projection, as printed, in.
+#   eps_beta_u = ultimate transverse strain delta_max / l_o, in./in., as printed (boxed)
+#   eps_beta_knee = strain at the knee of the bilinear transverse stress-strain model, in./in., as printed on the graph axis
+#   F_beta_knee_ksi_as_printed = transverse stress at the knee, ksi, exactly as printed (two comma-separated values on the axis)
+#   F_beta_u_ksi_as_printed = transverse stress at eps_beta_u, ksi, exactly as printed (two comma-separated values on the axis)
+# EXTRACTION QUALITY: clean - values read from the 150 dpi page image; geometry checked: 1.5^2 + 1.125^2 = 1.875^2 (American) and 2^2 + 1.5^2 = 2.5^2 (Pascoe)
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# Panel gage is not stated in these figures; both 24 ga and 26 ga panels of each supplier were tested (Table 1-1, p.20). The report does not say which pair of F_beta values belongs to which gage or grade.
+# Related: Figure 4-19 (PDF p.73, Strain Gage Configuration, 24 ga Pascoe, Fy = 55 ksi) is a plan view of a component-test specimen printed with widths 12 in., 2.5 in., 7 in., 2.5 in., 12 in. (36 in. total) and specimen length 18 in. + 18 in.; its 2.5 in. strips do not match the 2 in. Pascoe web projection of Fig. 7-7, so it is not merged here.
+# Extracted by Claude, 2026-10-13, at the request of Cris Moen (open question MBMA_9410-Q03).
+panel_supplier,figure,pages,rib_top_half_width_in,web_horizontal_projection_in,rib_height_in,web_slant_length_in,l_o_in,delta_max_in,eps_beta_u,eps_beta_knee,F_beta_knee_ksi_as_printed,F_beta_u_ksi_as_printed
+American,7-6,196,0.5,1.5,1.125,1.875,6,0.375,0.06,0.045,"10.5, 11","105, 110"
+Pascoe,7-7,196,1,2,1.5,2.5,6,0.5,0.08,0.06,"5.8, 6.6","58, 66"

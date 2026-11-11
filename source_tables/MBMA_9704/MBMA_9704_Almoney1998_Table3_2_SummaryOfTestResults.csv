@@ -1,0 +1,24 @@
+# Source: MBMA_9704 | Almoney, K. and Murray, T.M. (1998), Table 3.2, pp.16
+# Tag: MBMA_9704_TABLE32_SUMMARYOFTESTRESULTS
+# Content: Comparison of measured failure loads with the loads predicted by the shear plus bending limit state, with an indication of whether the expected failure mode occurred.
+# Data basis: mixed: measured failure loads with AISI shear plus bending predicted capacities
+# Units: actual_failure_load_plf and predicted_failure_load_plf in plf; percent_of_predicted_load in percent; expected_failure_mode text
+# Column definitions:
+#   test_identification = test designation
+#   actual_failure_load_plf = total load at failure including purlin self-weight, pounds per lineal foot
+#   predicted_failure_load_plf = failure load predicted by the shear plus bending limit state, pounds per lineal foot
+#   percent_of_predicted_load = actual failure load as a percentage of the predicted failure load
+#   expected_failure_mode = whether the shear plus bending limit state was the observed failure mode (see footnotes)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 92 pages)
+# Footnote 1 as printed: Purlin failed at exterior support.
+# Footnote 2 as printed: Bottom flanges of lapped purlins buckled over support.
+# Superscript footnote markers are printed attached to the 'No' entries (No1, No2) and are preserved as printed.
+test_identification,actual_failure_load_plf,predicted_failure_load_plf,percent_of_predicted_load,expected_failure_mode
+FV20-1,259.6,297.1,87.4,No1
+FV20-2,261.5,298.3,87.7,No1
+FV20-3,339.6,340.2,99.8,Yes
+FV20-4,317.4,339.4,93.5,Yes
+FV25-1,234.1,254.9,91.8,Yes
+FV25-2,240.1,302.5,79.4,No2

@@ -1,0 +1,238 @@
+cff-version: 1.2.0
+message: >-
+  If you use this database, cite the original MBMA research report of each test
+  you use (listed below and in the citation column of the data). You may also
+  cite the database itself.
+title: Purlin Pressure Box Test Database
+type: dataset
+authors:
+  - name: EngineerWithData
+  - family-names: Moen
+    given-names: Cristopher D.
+    orcid: https://orcid.org/0000-0001-6589-7419
+repository-code: https://github.com/EngineerWithData/PurlinPressureBoxTests
+version: 1.0.0
+date-released: 2026-11-10
+keywords:
+  - cold-formed steel
+  - purlins
+  - metal buildings
+  - vacuum chamber tests
+  - base test method
+references:
+  - type: report
+    title: "Continuous Purlin Tests"
+    authors:
+      - name: "Peköz, T."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 7501"
+    year: 1975
+  - type: report
+    title: "Gravity Load Tests of C and Z Purlin Roof Systems"
+    authors:
+      - name: "Linehan, P.W."
+      - name: "Guedelhoefer, O.C."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 7506"
+    year: 1975
+  - type: report
+    title: "Wind Uplift Tests of C and Z Purlin Roof Systems"
+    authors:
+      - name: "Guedelhoefer, O.C."
+      - name: "Boggs, D.W."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 7603"
+    year: 1976
+  - type: report
+    title: "Ultimate Strength of Cold-Formed Steel Z-Purlins - Progress Report"
+    authors:
+      - name: "Razak, M.A.A."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 8001"
+    year: 1980
+  - type: report
+    title: "Laterally Unsupported Purlins Subjected to Uplift"
+    authors:
+      - name: "LaBoube, R.A."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 8310"
+    year: 1983
+  - type: report
+    title: "Experimental Investigation of C-Purlin Supported Roof Systems - Progress Report"
+    authors:
+      - name: "Hendrick, D."
+      - name: "Murray, T.M."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 8404"
+    year: 1984
+  - type: report
+    title: "Braced Purlins Subjected to Uplift Load"
+    authors:
+      - name: "LaBoube, R.A."
+      - name: "Thompson, M.B."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 8702"
+    year: 1987
+  - type: report
+    title: "MBMA Continuous Purlin Uplift Tests"
+    authors:
+      - name: "Perry, D."
+      - name: "Golovin, M."
+      - name: "Montague, D."
+      - name: "LaBoube, R."
+      - name: "Wilson, L."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 8703"
+    year: 1987
+  - type: report
+    title: "Discrete Point Bracing Purlin Uplift Research - MBMA 303 and 304"
+    authors:
+      - name: "Golovin, M."
+      - name: "Fisher, J.M."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 8803"
+    year: 1988
+  - type: report
+    title: "Evaluation of the Base Test Method for Predicting the Flexural Strength of Standing Seam Roof Systems Under Gravity Loading"
+    authors:
+      - name: "Brooks, S."
+      - name: "Murray, T.M."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 8903"
+    year: 1989
+  - type: report
+    title: "Base Test Method for Standing Seam Roof Systems Subject to Uplift Loading - Phase I"
+    authors:
+      - name: "Anderson, B.B."
+      - name: "Murray, T.M."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 9001"
+    year: 1990
+  - type: report
+    title: "Base Test Method for Gravity Loaded Standing Seam Roof Systems"
+    authors:
+      - name: "Rayburn, L."
+      - name: "Murray, T.M."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 9002"
+    year: 1990
+  - type: report
+    title: "Strength Evaluation of Strut Purlins"
+    authors:
+      - name: "Hatch, J."
+      - name: "Easterling, W.S."
+      - name: "Murray, T.M."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 9003"
+    year: 1990
+  - type: report
+    title: "Base Test Method for Standing Seam Roof Systems Subject to Uplift Loading - Phase II"
+    authors:
+      - name: "Pugh, A.D."
+      - name: "Murray, T.M."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 9102"
+    year: 1991
+  - type: report
+    title: "Structural Evaluation of Multispan C-Purlin Roof Systems Under Uplift Loading"
+    authors:
+      - name: "Earls, C.J."
+      - name: "Pugh, A.D."
+      - name: "Murray, T.M."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 9105"
+    year: 1991
+  - type: report
+    title: "Static Load Tests for Through-Fastened Metal Roof and Wall Systems"
+    authors:
+      - name: "Ellifritt, D.S."
+      - name: "Kreiner, J.S."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 9410"
+    year: 1996
+  - type: report
+    title: "Uplift Capacity of Simple Span Cee and Zee Members with Through-Fastened Roof Panels"
+    authors:
+      - name: "Fisher, J.M."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 9501"
+    year: 1996
+  - type: report
+    title: "Stability of Standing Seam Roof - Purlin Systems"
+    authors:
+      - name: "Fisher, J.M."
+      - name: "Nunnery, J.N."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 9610"
+    year: 1996
+  - type: report
+    title: "The Base Test Method for Uplift Loading"
+    authors:
+      - name: "Murray, T.M."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 9702"
+    year: 1997
+  - type: report
+    title: "Shear Plus Bending in Lapped Z-Purlins"
+    authors:
+      - name: "Almoney, K."
+      - name: "Murray, T.M."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 9704"
+    year: 1998
+  - type: report
+    title: "Investigation of Inflection Points as Brace Points in Multi-Span Purlin Roof Systems"
+    authors:
+      - name: "Bryant, M.R."
+      - name: "Murray, T.M."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 9804"
+    year: 1999
+  - type: report
+    title: "Axial Strength of Purlins Attached to Standing Seam Roof Panels"
+    authors:
+      - name: "Stolarczyk, J.A."
+      - name: "Fisher, J.M."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 9902"
+    year: 2001
+  - type: report
+    title: "Reduced Number of Gravity Loading Base Tests"
+    authors:
+      - name: "Trout, A.M."
+      - name: "Murray, T.M."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 9906"
+    year: 2000
+  - type: report
+    title: "Flexural Strength of Exterior Metal Building Wall Assemblies with Rigid Insulation"
+    authors:
+      - name: "Gao, T."
+      - name: "Moen, C.D."
+    institution:
+      name: Metal Building Manufacturers Association
+    number: "MBMA 1103"
+    year: 2011

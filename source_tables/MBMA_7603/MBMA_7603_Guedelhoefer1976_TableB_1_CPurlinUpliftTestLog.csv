@@ -1,0 +1,36 @@
+# Source: MBMA_7603 | Guedelhoefer, O.C. and Boggs, D.W. (1976), Table B-1, pp.82
+# Tag: MBMA_7603_TABLEB1_CPURLINUPLIFTTESTLOG
+# Content: Log of the C purlin uplift test giving the vacuum pressure and the specimen/instrumentation condition at each recorded load stage, through failure at 59.8 psf.
+# Data basis: measured: manometer vacuum pressures with test-log observations
+# Units: load_no dimensionless; load_psf in psf; description is text
+# Column definitions:
+#   load_no = load stage number of the C purlin uplift test
+#   load_psf = uplift (vacuum) pressure held at that load stage, pounds per square foot
+#   description = printed note describing the condition of the specimen/instrumentation at that stage
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 90 pages); 13 character(s) were illegible and are marked [?], not guessed
+# ANOMALY FLAG: Load No. 23 is printed as "0.[?]" in the sensor 16-20 block and Load No. 22 as "0.[?]" in the sensor 91-95 block; the merged load_psf column uses the legible value 0.0 printed in the other blocks and the [?] variants are noted here. The word "purlin" is printed as "putlin" in the Load No. 35 note of the test log.
+# Table is unlabeled in the report; it is printed on appendix page B-1.
+# The printed description 'Initial loading sequence.' is bracketed across Load Nos. 20, 21 and 22; it is placed on the Load No. 21 row here and the other two rows are left blank.
+# Load numbering continues from the Z purlin test (starts at 17).
+load_no,load_psf,description
+17,0,No vacuum. Turnbuckles not attached to bracing straps; no tension in straps. Displacement data (sensors 58 to 99 not recorded.
+18,0,No vacuum. Turnbuckles attached and tightened. Displacement data not recorded.
+19,0,Same state as Load No. 18. Sensors 1 thru 57 scanned to initialize to zero. Displacement sensors recorded for zero.
+20,10.4,
+21,20.8,"Initial loading sequence. (bracketed note spans Load Nos. 20, 21 and 22)"
+22,0,
+23,0,Additional tension put in bracing straps by tightening turnbuckles. Displacement data not recorded.
+24,0,Same state as Load No. 23. Sensors 1 thru 57 scanned for initial zero. Displacement sensors recorded for zero.
+25,10.4,Load of 2 in. water vacuum pressure.
+26,18.2,Load of 3.5 in. water vacuum pressure.
+27,26.0,Load of 5.0 in. water vacuum pressure.
+28,33.8,Load of 6.5 in. water vacuum pressure.
+29,33.8,Bracing straps levelled; no change in loading.
+30,39.0,Load of 7.5 in. water vacuum pressure.
+31,44.2,Load of 8.5 in. water vacuum pressure.
+32,49.4,Load of 9.5 in. water vacuum pressure.
+33,54.6,Load of 10.5 in. water vacuum pressure.
+34,59.8,Load of 11.5 in. water vacuum pressure. Failure occurred on this load after holding vacuum constant for about 5 minutes.
+35,0,"Conditions immediately following removal of vacuum after failure. By externally supporting the failed putlin, it was possible to reload the structure. A second failure occurred at a load of about 12.4 in. water vacuum pressure (64.5 psf). No data was recorded."

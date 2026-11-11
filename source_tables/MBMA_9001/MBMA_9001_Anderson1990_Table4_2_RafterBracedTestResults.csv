@@ -1,0 +1,24 @@
+# Source: MBMA_9001 | Anderson, B.B. and Murray, T.M. (1990), Table 4.2, pp.34
+# Tag: MBMA_9001_TABLE42_RAFTERBRACEDTESTRESULTS
+# Content: Failure loads and failure modes of the four rafter-braced base tests and their corresponding three-span confirming uplift tests.
+# Data basis: measured: vacuum chamber uplift tests with manometer / pressure transducer load measurement
+# Units: failure_load_plf in plf; other columns descriptive
+# Column definitions:
+#   test_designation = test set label as printed (see Table 3.1 notes for the ID code)
+#   no_of_spans = number of spans in the test assembly, One (base test) or Three (confirming test)
+#   failure_load_plf = uniform uplift failure load of the assembly, pounds per lineal foot
+#   failure_mode = observed mode of failure (DB defined in the table footnote)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 174 pages)
+# ANOMALY FLAG: The test designation is printed only once for each pair of rows (one-span and three-span); the blank cell of the second row of each pair is given as "" and NOT filled in. Opposed-purlin designation printed as "(0)" (digit zero).
+# Footnote printed below table: "DB - Distortional buckling of compression lip, flange, and web."
+test_designation,no_of_spans,failure_load_plf,failure_mode
+U-Z-R-P/F,One,65.3,DB
+,Three,132.7,DB
+U-Z-R-P/S,One,95.6,DB
+,Three,140.6,DB
+U-Z-R-R/S(0),One,84.4,DB
+,Three,167.8,DB
+U-C-R-P/S(0),One,50.8,DB
+,Three,112.4,DB

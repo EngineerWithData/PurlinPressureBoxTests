@@ -1,0 +1,21 @@
+# Source: MBMA_9704 | Almoney, K. and Murray, T.M. (1998), Table 2.2, pp.8
+# Tag: MBMA_9704_TABLE22_TENSILECOUPONTESTRESULTS
+# Content: Standard tensile coupon test results for coupons machined from undamaged web material of the failed purlin in each test.
+# Data basis: measured: standard tensile coupon tests on web material of the failed purlins
+# Units: see column headers
+# Column definitions:
+#   test_identification = test designation for which the coupon was taken
+#   thickness_in = measured thickness of the tensile coupon, inches
+#   yield_stress_ksi = measured yield stress of the purlin steel, ksi
+#   tensile_strength_ksi = measured ultimate tensile strength of the purlin steel, ksi
+#   elongation_pct = measured elongation of the coupon at fracture, percent
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 92 pages)
+test_identification,thickness_in,yield_stress_ksi,tensile_strength_ksi,elongation_pct
+FV20-1,0.065,64.7,77.1,21.78
+FV20-2,0.065,65.8,78.7,20.58
+FV20-3,0.069,64.4,75.3,20.06
+FV20-4,0.070,65.6,75.1,19.38
+FV25-1,0.072,69.5,78.4,18.12
+FV25-2,0.079,69.5,75.5,22.58

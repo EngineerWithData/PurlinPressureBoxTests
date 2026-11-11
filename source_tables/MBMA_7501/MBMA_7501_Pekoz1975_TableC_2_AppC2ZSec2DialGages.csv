@@ -1,0 +1,43 @@
+# Source: MBMA_7501 | Peköz, T. (1975), Table APPENDIX C Page 2, pp.97
+# Tag: MBMA_7501_TABLEC2_APPC2ZSEC2DIALGAGES
+# Content: Dial gage readings for gages 16-19 with the derived mean web displacements and twist angles at each load level of the second Z-section purlin assembly test.
+# Data basis: mixed: dial gage readings measured during the vacuum uplift test with mean displacements and twist angles computed from them
+# Units: load_psf in psf; readings and displacements in inches; tangent columns dimensionless
+# Column definitions:
+#   load_psf = applied vacuum (uplift) load, psf
+#   g16_rdg = dial gage 16 reading as printed (bracketed value = reset reading), inches
+#   u16_in = horizontal displacement at gage 16, inches
+#   u15_u16_avg_in = (U15+U16)/2, mean horizontal displacement of web from gages 15,16, inches
+#   u15_u16_tan = (U15-U16)/4, twist angle (tangent) from gages 15 and 16, dimensionless
+#   g17_rdg = dial gage 17 reading as printed (bracketed value = reset reading), inches
+#   u17_in = horizontal displacement at gage 17, inches
+#   g18_rdg = dial gage 18 reading as printed (bracketed value = reset reading), inches
+#   u18_in = horizontal displacement at gage 18, inches
+#   g19_rdg = dial gage 19 reading as printed (bracketed value = reset reading), inches
+#   u19_in = horizontal displacement at gage 19, inches
+#   u18_u19_avg_in = (U18+U19)/2, mean horizontal displacement of web from gages 18,19, inches
+#   u18_u19_tan = (U18-U19)/4, twist angle (tangent) from gages 18 and 19, dimensionless
+# EXTRACTION QUALITY: reconstructed — decimal points / column identities were inferred from context; VERIFY against the PDF before use
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 104 pages)
+# ANOMALY FLAG: The zero-load row does not follow the column pattern of the other rows (only five numeric entries are printed, with '.019(crossed)' and a stray '-.032 .0065'); it has been placed in the nearest matching columns and left blank elsewhere, so the table is marked reconstructed. Values printed in square brackets are reset readings (paper note: 'The values in the boxes are reset values') and are kept attached to the reading, e.g. '[122].263'.
+# Dial gage locations are given in Fig. 37.
+# Printed notes: 1) the values in the boxes are reset values; 2) '*' indicates these values were not recorded.
+load_psf,g16_rdg,u16_in,u15_u16_avg_in,u15_u16_tan,g17_rdg,u17_in,g18_rdg,u18_in,g19_rdg,u19_in,u18_u19_avg_in,u18_u19_tan
+0,.428,.019(crossed),-.032,.0065,.088,,.191,,.250,,,
+3,.447,.019,.032,.0065,.239,.151,.231,.040,.266,.016,.028,.006
+6,.460,.032,.054,.01075,.384,.296,.272,.081,.280,.030,.056,.01275
+9,.469,.041,.068,.0135,.475,.387,.301,.110,.291,.041,.076,.01725
+12,.480,.052,.086,.017,.591,.503,.343,.152,.306,.056,.104,.024
+15,.490,.062,.102,.01975,.700,.612,.394,.203,.324,.074,.139,.03225
+18,.504,.076,.122,.0230,.830,.742,.463,.272,.351,.101,.187,.04275
+21,.519,.091,.144,.0265,[122].263,.883,.548,.357,.385,.135,.246,.05375
+24,[.520][.201] .531,.102,.164,.0310,[248].395,1.030,[543].629,.443,[.416],.166,.305,.06925
+27,.218,.111,.180,.03425,[081].218,1.167,[050].247,.640,[081].121,.206,.423,.1085
+30,.230,.123,.195,.0360,.369,1.378,.256,.649,.161,.246,.448,.10075
+33,.245,.138,.219,.04025,[063].592,1.541,[079].403,.796,.216,.301,.548,.12375
+36,.260,.153,.239,.04275,.225,1.703,.205,.922,.280,.365,.643,.13925
+39,.275,.168,.260,.0460,.442,1.920,.379,1.096,.345,.430,.761,.1665
+42,.291,.184,.286,.0510,[066].637,2.115,[040].550,1.267,.415,.500,.884,.19175
+45,.307,.200,.302,.0510,.332,2.381,.267,1.494,.507,.592,1.043,.2255
+48,.321,.214,.318,.052,.765,2.814,.621,1.848,.660,.745,1.297,.27575

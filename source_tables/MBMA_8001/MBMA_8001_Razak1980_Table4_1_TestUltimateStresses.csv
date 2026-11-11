@@ -1,0 +1,25 @@
+# Source: MBMA_8001 | Razak, M.A.A. and Peköz, T. (1980), Table 4.1, pp.78
+# Tag: MBMA_8001_TABLE41_TESTULTIMATESTRESSES
+# Content: Ultimate stresses reached in the vacuum and beam tests, computed from the last recorded strains before failure, compared with the coupon yield stress.
+# Data basis: measured: last recorded strain gage readings before failure multiplied by E = 29500 ksi
+# Units: fy_ksi, vacuum_stress_ksi, beam_stress_ksi in ksi; percent columns in percent of yield stress
+# Column definitions:
+#   purlin_type = purlin designation letter A–E
+#   fy_ksi = tensile coupon yield stress σ_y of the purlin type, ksi
+#   vacuum_stress_ksi = ultimate stress at failure in the vacuum test, ksi (y = yielded)
+#   vacuum_pct_fy = vacuum-test ultimate stress as a percent of yield stress, percent
+#   beam_stress_ksi = ultimate stress at failure in the beam test, ksi (y = yielded)
+#   beam_pct_fy = beam-test ultimate stress as a percent of yield stress, percent
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 130 pages)
+# ANOMALY FLAG: For purlin type B the vacuum-test stress cell contains the letter "y" (yielded) with footnotes (1,2) instead of a number, and the beam-test stress cells for purlin types B, C and D contain "y" only; the corresponding percent-of-yield cells are blank. These are preserved verbatim as printed and not corrected.
+# Footnote (1): (y)ield.
+# Footnote (2): Duplicate test (V7) gave ultimate stress of 45.6 ksi (79.2 %σ_y).
+# Footnote (3): All stresses are in ksi.
+purlin_type,fy_ksi,vacuum_stress_ksi,vacuum_pct_fy,beam_stress_ksi,beam_pct_fy
+A,57.3,39.2,68.4,53.8,93.9
+B,57.6,"y(1,2)",,y,
+C,61.5,45.5,74.0,y,
+D,65.9,57.5,87.3,y,
+E,70.5,31.9,45.3,45.4,64.4

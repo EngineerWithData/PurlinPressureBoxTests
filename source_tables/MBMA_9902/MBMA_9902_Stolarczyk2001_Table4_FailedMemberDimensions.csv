@@ -1,0 +1,28 @@
+# Source: MBMA_9902 | Stolarczyk, J.A. and Fisher, J.M. (2001), Table 4, pp.64
+# Tag: MBMA_9902_TABLE4_FAILEDMEMBERDIMENSIONS
+# Content: Measured cross-sectional dimensions of each purlin that failed in the axial and flexural tests.
+# Data basis: measured: physical measurement of the failed Z-purlin cross-sections
+# Units: all lengths in inches; angles in degrees
+# Column definitions:
+#   test_no = test specimen designation (A = axial test purlin, F = flexural test purlin)
+#   h_in = measured overall depth of the Z-section web, inches (sketch below table)
+#   t_in = measured thickness of the purlin material, inches
+#   b1_in = measured width of flange 1, inches
+#   b2_in = measured width of flange 2, inches
+#   l1_in = measured stiffener lip length at flange 1, inches
+#   l2_in = measured stiffener lip length at flange 2, inches
+#   theta1_deg = measured angle of stiffener lip 1, degrees
+#   theta2_deg = measured angle of stiffener lip 2, degrees
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 195 pages)
+# Dimensions H, t, B1, B2, L1, L2, theta1, theta2 are defined on the Z-purlin cross-section sketch printed below Table 4 (p.64).
+test_no,h_in,t_in,b1_in,b2_in,l1_in,l2_in,theta1_deg,theta2_deg
+A1,8.52,0.120,2.38,2.37,0.83,0.87,53.0,53.0
+A2,8.53,0.116,2.37,2.55,0.87,0.83,53.0,55.0
+A3,7.93,0.095,2.38,2.46,0.95,0.88,52.0,46.5
+A4,7.93,0.060,2.38,2.43,0.88,0.97,42.0,50.0
+F1,8.35,0.116,2.52,2.46,0.99,0.87,53.5,49.0
+F2,8.38,0.118,2.48,2.48,1.05,0.82,54.0,54.0
+F3,8.00,0.100,2.71,2.39,0.93,1.13,53.5,49.0
+F4,8.00,0.059,2.48,2.50,1.09,0.96,46.0,46.5

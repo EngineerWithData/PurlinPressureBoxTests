@@ -1,0 +1,62 @@
+# Source: MBMA_7501 | Peköz, T. (1975), Table APPENDIX A Page 2, pp.87
+# Tag: MBMA_7501_TABLEA2_APPA2ZSEC1ROTATIONS
+# Content: Twist angles and horizontal displacements of the middle of the web, computed from paired dial-gage readings at increasing simulated wind-uplift load in the first Z-section purlin assembly test.
+# Data basis: mixed: dial-gage displacements measured during the vacuum uplift test with twist angles and web mid-height displacements computed from them
+# Units: load_psf in psf; all displacement columns in inches; tan_theta columns dimensionless
+# Column definitions:
+#   load_psf = applied vacuum (uplift) load, psf
+#   u5_in = horizontal displacement at dial gage 5, inches
+#   u6_in = horizontal displacement at dial gage 6, inches
+#   u6_minus_u5_in = difference of gage 6 and gage 5 displacements, inches
+#   tan_theta_5_6 = twist angle (tangent) from gages 5 and 6, dimensionless
+#   um_5_6_in = horizontal displacement of middle of web from gages 5,6, inches
+#   u7_in = horizontal displacement at dial gage 7, inches
+#   u8_in = horizontal displacement at dial gage 8, inches
+#   u8_minus_u7_in = difference of gage 8 and gage 7 displacements, inches
+#   tan_theta_7_8 = twist angle (tangent) from gages 7 and 8, dimensionless
+#   um_7_8_in = horizontal displacement of middle of web from gages 7,8, inches
+#   u11_in = horizontal displacement at dial gage 11, inches
+#   u12_in = horizontal displacement at dial gage 12, inches
+#   u12_minus_u11_in = difference of gage 12 and gage 11 displacements, inches
+#   tan_theta_11_12 = twist angle (tangent) from gages 11 and 12, dimensionless
+#   um_11_12_in = horizontal displacement of middle of web from gages 11,12, inches
+#   u13_in = horizontal displacement at dial gage 13, inches
+#   u14_in = horizontal displacement at dial gage 14, inches
+#   u14_minus_u13_in = difference of gage 14 and gage 13 displacements, inches
+#   tan_theta_13_14 = twist angle (tangent) from gages 13 and 14, dimensionless
+#   um_13_14_in = horizontal displacement of middle of web from gages 13,14, inches
+#   u17_in = horizontal displacement at dial gage 17, inches
+#   u18_in = horizontal displacement at dial gage 18, inches
+#   u18_minus_u17_in = difference of gage 18 and gage 17 displacements, inches
+#   tan_theta_17_18 = twist angle (tangent) from gages 17 and 18, dimensionless
+#   um_17_18_in = horizontal displacement of middle of web from gages 17,18, inches
+#   u19_in = horizontal displacement at dial gage 19, inches
+#   u20_in = horizontal displacement at dial gage 20, inches
+#   u20_minus_u19_in = difference of gage 20 and gage 19 displacements, inches
+#   tan_theta_19_20 = twist angle (tangent) from gages 19 and 20, dimensionless
+#   um_19_20_in = horizontal displacement of middle of web from gages 19,20, inches
+#   u25_in = horizontal displacement at dial gage 25, inches
+#   u26_in = horizontal displacement at dial gage 26, inches
+#   u26_minus_u25_in = difference of gage 26 and gage 25 displacements, inches
+#   tan_theta_25_26 = twist angle (tangent) from gages 25 and 26, dimensionless
+#   um_25_26_in = horizontal displacement of middle of web from gages 25,26, inches
+#   u27_in = horizontal displacement at dial gage 27, inches
+#   u28_in = horizontal displacement at dial gage 28, inches
+#   u28_minus_u27_in = difference of gage 28 and gage 27 displacements, inches
+#   tan_theta_27_28 = twist angle (tangent) from gages 27 and 28, dimensionless
+#   um_27_28_in = horizontal displacement of middle of web from gages 27,28, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 104 pages)
+# ANOMALY FLAG: Appendix A page 1 (PDF p.86, dial-gage readings and u,v for the first Z-section test) was omitted because many rows are printed on two physical lines with nested reset values in parentheses that cannot be assigned to columns without guesswork. Cells containing the unreadable-character marker [?] are preserved verbatim.
+# Dial gage locations are given in Fig. 6.
+# Paper note: a (-) sign indicates that rotations and horizontal displacements are opposite to those shown on the 'dial gage locations' diagram.
+# A dash '-' means no reading was taken (gages gone at 36 psf).
+# The two printed row-bands (gages 5-14 and gages 17-28) share the same load values and have been merged side by side into one table.
+load_psf,u5_in,u6_in,u6_minus_u5_in,tan_theta_5_6,um_5_6_in,u7_in,u8_in,u8_minus_u7_in,tan_theta_7_8,um_7_8_in,u11_in,u12_in,u12_minus_u11_in,tan_theta_11_12,um_11_12_in,u13_in,u14_in,u14_minus_u13_in,tan_theta_13_14,um_13_14_in,u17_in,u18_in,u18_minus_u17_in,tan_theta_17_18,um_17_18_in,u19_in,u20_in,u20_minus_u19_in,tan_theta_19_20,um_19_20_in,u25_in,u26_in,u26_minus_u25_in,tan_theta_25_26,um_25_26_in,u27_in,u28_in,u28_minus_u27_in,tan_theta_27_28,um_27_28_in
+6,.047,.116,.069,.01725,.0815,.058,.157,.099,.02475,.1075,.[?]0,.008,.008,.0020,.004,.002,.00,-.002,+.0005,-.001,+.002,+.002,.000,.00,-.002,.022,.054,.032,.0080,.038,.001,.00,.001,.00025,.0005,.069,.138,.069,.01725,.1035
+12,.088,.243,.155,.03875,.1655,.136,.354,.218,.0545,.245,.00,.016,.006,.0015,.003,-.002,.00,-.002,+.002,-.001,-.004,-.006,.002,.0015,.005,.047,.112,.065,.01625,.0795,.001,.00,.001,.00025,.0005,.165,.338,.173,.04325,.2515
+18,.167,.363,.196,.049,.265,.261,.626,.365,.09125,.4435,-.0[?],-.005,-.005,-.00125,-.0025,.000,.005,.005,.00125,.0025,-.011,-.015,.004,.0010,.013,.071,.172,.091,.02275,.1265,-.008,.280,.272,-.068,-.144,.308,.619,.311,.07775,.4635
+24,.256,.506,.250,.0625,.381,.356,1.037,.681,.17025,.6965,.00,-.009,-.009,-.00225,-.0045,.000,.005,.005,.00125,.0025,-.000,-.013,.013,.00325,.0065,.102,.222,.120,.030,.162,-.013,.419,.406,-.1015,-.216,.[?]87,.778,.491,.12275,.7325
+30,.589,.986,.397,.09925,.7875,.574,1.368,.794,.1985,.9710,.00,-.012,-.012,-.0030,-.060,.000,.005,.005,.00125,.0025,+.004,-.011,.015,.00375,.0035,.122,.275,.153,.03825,.1985,-.024,.678,.654,-.1635,-.351,.778,1.144,.366,.0915,.961
+36,-,-,-,-,-,-,-,-,-,-,.00,-.014,-.014,-.0035,-.070,.003,.004,.001,.00025,.0035,+.032,-.014,.046,.0115,-.009,.138,.309,.171,.04275,.2235,-,-,-,-,-,-,-,-,-,-

@@ -1,0 +1,53 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 4-18, pp.93
+# Tag: MBMA_9410_TABLE418_VACUUMBOXTEST8
+# Content: Time history of panel displacements, chamber pressure and individual fastener loads for vacuum box test 8 (two span system, 26 gage American panels).
+# Data basis: measured: pressure transducer, LVDTs and six load cells logged during the vacuum box test
+# Units: pt_psi in psi; LVDTs in inches; load cells in pounds
+# Column definitions:
+#   date = calendar date of the scan, mm/dd/yy
+#   time_hhmmss = clock time of the scan
+#   lvdt1_in = displacement measured by LVDT 1, inches
+#   lvdt2_in = displacement measured by LVDT 2, inches
+#   pt_psi = chamber pressure from the pressure transducer, psi
+#   lcell3_lb = load on the fastener at load cell 3, pounds
+#   lcell4_lb = load on the fastener at load cell 4, pounds
+#   lcell5_lb = load on the fastener at load cell 5, pounds
+#   lcell6_lb = load on the fastener at load cell 6, pounds
+#   lcell7_lb = load on the fastener at load cell 7, pounds
+#   lcell8_lb = load on the fastener at load cell 8, pounds
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: Load cell 8 reads large negative values (about -5300 to -7900 lb) throughout, i.e. a lost/malfunctioning channel (noted in the printed comments); preserved verbatim. The printed summary lists the first failed cell as "3#" rather than "#3"; preserved verbatim.
+# Printed summary: Test Number 8; Failed Cells 3#, #4, #5, #6, #7, all Pullover; Peak Loads 652.790 / 606.828 / 706.583 / 434.938 / 715.617; Peak Pressures 1.122/1.286/1.286/1.286/1.223; Peak LVDT 1 4.727/2.605/2.605/2.605/2.466; Peak LVDT 2 6.183/3.644/3.644/3.644/3.490; Elapsed Time 00:53; Size 26 Ga.; Type American.
+# Printed comments: Excellent test. Used a new brace for plastic sheathing. No seams. No pullout failure. Lost Load Cell #8 due to handling.
+date,time_hhmmss,lvdt1_in,lvdt2_in,pt_psi,lcell3_lb,lcell4_lb,lcell5_lb,lcell6_lb,lcell7_lb,lcell8_lb
+12/04/95,16:56:24.800,1.195,0.442,0.012,63.481,125.734,63.365,335.717,131.528,-7362.857
+12/04/95,16:56:26.800,1.195,0.442,0.013,63.527,125.868,63.313,335.805,131.675,-6163.188
+12/04/95,16:56:28.800,1.195,0.442,0.012,63.422,125.882,63.494,335.671,131.717,-5290.414
+12/04/95,16:56:30.800,1.195,0.442,0.015,63.535,125.901,63.334,335.751,131.801,-5738.928
+12/04/95,16:56:32.800,1.195,0.442,0.013,63.602,126.021,63.431,335.759,131.633,-7360.175
+12/04/95,16:56:34.800,1.195,0.442,0.014,63.469,125.825,63.340,335.721,131.675,-7792.261
+12/04/95,16:56:36.800,1.195,0.442,0.013,63.486,126.130,63.553,335.731,131.822,-6976.503
+12/04/95,16:56:38.800,1.301,0.550,0.043,67.776,132.561,68.631,337.777,134.279,-6848.502
+12/04/95,16:56:40.800,1.614,0.808,0.124,96.461,171.400,115.693,369.177,179.303,-6073.925
+12/04/95,16:56:42.800,1.937,1.078,0.274,162.209,231.373,213.679,439.099,283.862,-6870.073
+12/04/95,16:56:44.800,2.263,1.409,0.445,228.162,306.006,271.615,511.547,380.168,-6421.911
+12/04/95,16:56:46.800,2.551,1.765,0.601,290.570,383.273,338.884,582.807,472.736,-7005.937
+12/04/95,16:56:48.800,2.722,2.021,0.709,334.784,437.767,400.560,617.263,547.391,-5713.175
+12/04/95,16:56:50.800,2.957,2.437,0.824,381.440,501.597,485.768,620.457,645.398,-7696.931
+12/04/95,16:56:52.800,3.178,2.801,0.925,423.776,546.591,518.902,632.725,654.092,-7882.689
+12/04/95,16:56:54.800,3.329,3.000,1.025,445.421,596.280,573.737,641.265,724.862,-6921.281
+12/04/95,16:56:56.800,3.467,3.226,1.121,463.599,650.961,630.851,649.397,776.438,-7354.977
+12/04/95,16:56:58.800,3.565,3.399,1.181,493.582,677.736,678.916,653.969,817.871,-6713.138
+12/04/95,16:57:00.800,3.662,3.932,1.235,526.335,708.003,723.446,660.087,847.145,-7388.036
+12/04/95,16:57:02.800,3.800,4.086,1.298,558.162,732.562,769.949,770.655,810.542,-6564.953
+12/04/95,16:57:04.800,4.152,4.406,1.255,569.057,700.933,684.565,733.067,702.077,-6135.882
+12/04/95,16:57:06.800,4.362,4.600,0.901,562.915,11.961,16.593,455.969,486.092,-5979.409
+12/04/95,16:57:08.800,4.418,6.230,1.027,658.878,15.881,16.824,591.325,541.280,-5602.638
+12/04/95,16:57:10.800,5.922,6.625,1.134,716.270,16.599,16.835,659.761,576.245,-5373.220
+12/04/95,16:57:12.800,6.359,6.826,1.032,-19.802,16.707,17.825,590.223,527.168,-5767.825
+12/04/95,16:57:14.800,6.576,7.051,1.169,-19.264,17.339,17.691,686.601,561.125,-5941.762
+12/04/95,16:57:16.800,6.818,7.352,1.245,-19.090,17.519,17.926,687.451,572.360,-7074.017
+12/04/95,16:57:17.699,6.862,7.421,1.269,-19.030,17.572,17.886,724.957,579.563,-6057.331
+12/04/95,16:57:17.800,6.916,7.485,1.286,-18.872,17.759,17.867,4.809,3.785,-7705.440

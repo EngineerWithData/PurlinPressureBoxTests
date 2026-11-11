@@ -1,0 +1,53 @@
+# Source: MBMA_9501 | Fisher, J.M. (1996), Table 9, pp.10
+# Tag: MBMA_9501_TABLE9_RVALUES8AND85INCHCANDZ
+# Content: R values for all 8 and 8.5 inch deep C and Z members grouped together regardless of profile.
+# Data basis: mixed: measured uplift test results from this study and from proprietary manufacturer tests
+# Units: see column headers; R dimensionless
+# Column definitions:
+#   test_no = test identifier; M1/M2 denote proprietary tests from manufacturers 1 and 2
+#   member_type = cross-section profile, C or Z
+#   member_depth_in = nominal depth of the member, inches
+#   member_length_ft = simple span length of the member, feet
+#   member_thick_in = member thickness, inches
+#   r = reduction factor, tested moment divided by calculated nominal moment
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 47 pages)
+# ANOMALY FLAG: Test identifiers 'M1' and 'M2' are repeated on many rows (proprietary manufacturer test sets); preserved verbatim as printed.
+# Combination of Tables 3 and 6
+test_no,member_type,member_depth_in,member_length_ft,member_thick_in,r
+1,Z,8.0,19.17,0.102,0.59
+2,Z,8.0,19.17,0.102,0.57
+18,Z,8.0,24.17,0.081,0.58
+19,Z,8.0,24.17,0.081,0.59
+26,Z,8.0,29.17,0.103,0.49
+M1,Z,8.5,20.00,0.058,0.64
+M1,Z,8.5,20.00,0.057,0.65
+M1,Z,8.5,20.00,0.059,0.62
+M1,Z,8.5,20.00,0.088,0.62
+M1,Z,8.5,30.00,0.072,0.57
+M1,Z,8.5,30.00,0.078,0.70
+M1,Z,8.5,30.00,0.064,0.74
+M1,Z,8.5,20.00,0.058,0.66
+M1,Z,8.5,30.00,0.088,0.54
+M2,Z,8.5,25.00,0.073,0.72
+M2,Z,8.5,25.00,0.073,0.67
+M2,Z,8.5,25.00,0.090,0.68
+M2,Z,8.5,25.00,0.089,0.63
+M2,Z,8.5,20.00,0.063,0.65
+M2,Z,8.5,20.00,0.063,0.63
+M2,Z,8.5,20.00,0.089,0.70
+M2,Z,8.5,20.00,0.089,0.66
+M2,Z,8.5,30.00,0.073,0.83
+M2,Z,8.5,30.00,0.073,0.84
+M2,Z,8.5,30.00,0.120,0.68
+14,C,8.0,18.75,0.060,0.49
+15,C,8.0,18.75,0.076,0.68
+28,C,8.0,29.17,0.102,0.68
+M2,C,8.5,25.00,0.059,0.80
+M2,C,8.5,25.00,0.058,0.81
+M2,C,8.5,25.00,0.089,0.68
+M2,C,8.5,20.00,0.059,0.69
+M2,C,8.5,20.00,0.089,0.72
+M2,C,8.5,30.00,0.074,0.69
+M2,C,8.5,30.00,0.073,0.77

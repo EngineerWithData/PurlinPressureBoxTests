@@ -1,0 +1,11 @@
+# Origin of every cell in aggregate_single_span_through_fastened_gravity.csv
+# R = reported as a column in that paper; C = constant stated in a table note;
+# D = derived from other variables by an exact rule; - = not available.
+source_paper,specimen_id,source_tables,specimen_id,load_direction,section_type,panel_type,bracing,purlin_orientation,purlin_orientation_as_printed,opposed_flange_direction,n_spans,n_purlin_lines,span_ft,purlin_spacing_ft,depth_in,thickness_in,yield_stress_ksi,assumed_yield_stress_ksi,predicted_failure_load_plf,failure_load_plf,load_unit_as_printed,test_to_predicted_ratio,failure_mode
+MBMA_8404,1,MBMA_8404_TABLES1_STRENGTHSUMMARY,-,R,R,R,R,D,R,-,R,R,R,C,R,R,R,-,R,R,R,R,R
+MBMA_8404,2,MBMA_8404_TABLES1_STRENGTHSUMMARY,-,R,R,R,R,D,R,D,R,R,R,C,R,R,R,-,R,R,R,R,R
+MBMA_8404,3,MBMA_8404_TABLES1_STRENGTHSUMMARY,-,R,R,R,R,D,R,D,R,R,R,C,R,R,R,-,R,R,R,R,R
+MBMA_8404,4,MBMA_8404_TABLES1_STRENGTHSUMMARY,-,R,R,R,R,D,R,-,R,R,R,C,R,R,R,-,R,R,R,R,R
+MBMA_8404,5,MBMA_8404_TABLES1_STRENGTHSUMMARY,-,R,R,R,R,D,R,D,R,R,R,C,R,R,R,-,R,R,R,R,R
+MBMA_8404,6,MBMA_8404_TABLES1_STRENGTHSUMMARY,-,R,R,R,R,D,R,D,R,R,R,C,R,R,R,-,R,R,R,R,R
+MBMA_8404,16,MBMA_8404_TABLES1_STRENGTHSUMMARY,-,R,R,R,R,D,R,D,R,R,R,C,R,R,R,-,R,R,R,R,R

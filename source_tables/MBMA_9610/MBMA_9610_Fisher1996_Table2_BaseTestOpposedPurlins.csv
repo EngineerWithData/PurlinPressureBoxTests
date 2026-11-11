@@ -1,0 +1,29 @@
+# Source: MBMA_9610 | Fisher, J.M. and Nunnery, J.N. (1996), Table 2, pp.4
+# Tag: MBMA_9610_TABLE2_BASETESTOPPOSEDPURLINS
+# Content: Base-test results for seven 8.5 in. deep Z-purlin standing seam roof assemblies tested with the purlins in the opposed orientation.
+# Data basis: mixed: measured failure loads from vacuum-chamber base tests with computed section moment capacities
+# Units: see column headers
+# Column definitions:
+#   test_id = test specimen designation
+#   span_ft = simple span length of the test purlins, feet
+#   t_in = purlin base metal thickness, inches
+#   se_in3 = effective section modulus of the purlin, cubic inches
+#   fy_ksi = measured yield stress of the purlin steel, ksi
+#   mn_k_ft = nominal flexural strength of the purlin section, kip-feet
+#   w_tot_lb_ft = total applied uniform load at failure per foot, pounds per foot
+#   mt_k_ft = maximum test moment reached, kip-feet
+#   mt_over_mn = ratio of test moment to nominal section moment, dimensionless
+#   failure_mode = observed mode of failure of the assembly
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 9 pages)
+# Mt/Mn results do not include the effect of overturning moment due to anchorage forces.
+# "Section" failure mode denotes failure of the purlin cross section.
+test_id,span_ft,t_in,se_in3,fy_ksi,mn_k_ft,w_tot_lb_ft,mt_k_ft,mt_over_mn,failure_mode
+94-1,19.50,0.119,4.34,56.23,20.34,374.28,17.79,0.87,SSR Clip Tab
+94-2,24.50,0.120,4.38,55.78,20.36,249.36,18.71,0.92,SSR Clip Tab
+94-3,29.50,0.119,4.33,54.89,19.81,156.64,17.04,0.86,SSR Clip Tab
+94-4,19.50,0.059,1.75,57.33,8.35,173.78,8.26,0.99,Section
+94-5,25.00,0.058,1.71,55.29,7.86,103.17,8.06,1.03,Section
+94-6,28.50,0.060,1.80,57.18,8.57,93.17,9.46,1.10,Section
+94-7,24.50,0.104,3.82,56.00,17.82,224.44,16.84,0.94,SSR Clip Tab

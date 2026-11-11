@@ -1,0 +1,33 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 4-11, pp.86
+# Tag: MBMA_9410_TABLE411_VACUUMBOXTEST1
+# Content: Time history of chamber pressure, panel displacements and individual fastener loads for vacuum box test 1 (single span, 26 gage Pascoe panels).
+# Data basis: measured: pressure transducer/manometer, LVDTs and eight load cells logged during the vacuum box test
+# Units: pt_psi in psi; LVDTs in inches; load cells in pounds
+# Column definitions:
+#   date = calendar date of the scan, mm/dd/yy
+#   time_hhmmss = clock time of the scan
+#   pt_psi = chamber pressure (manometer/transducer reading), psi
+#   lvdt1_in = displacement measured by LVDT 1, inches
+#   lvdt2_in = displacement measured by LVDT 2, inches
+#   lcell1_lb = load on the fastener at load cell 1, pounds
+#   lcell2_lb = load on the fastener at load cell 2, pounds
+#   lcell3_lb = load on the fastener at load cell 3, pounds
+#   lcell4_lb = load on the fastener at load cell 4, pounds
+#   lcell5_lb = load on the fastener at load cell 5, pounds
+#   lcell6_lb = load on the fastener at load cell 6, pounds
+#   lcell7_lb = load on the fastener at load cell 7, pounds
+#   lcell8_lb = load on the fastener at load cell 8, pounds
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: Load cell 2 reads large negative values (-807 to -966 lb) throughout, i.e. a malfunctioning channel; preserved verbatim.
+# Printed summary: Test Number 1; Failed Cells NA; Peak Loads NA; Peak Pressures 0.38 psi; Peak LVDT 1 NA; Peak LVDT 2 NA; Elapsed Time 02:50; Size 26 Ga.; Type Pascoe.
+# Printed comments: Purlins lacked lateral support and rolled. Panels buckled at midspan. A U-tube manometer filled with mercury was used instead of a pressure transducer.
+# Specimen layout: 1 ft overhang, 5 ft span, 1 ft overhang, 6 ft wide.
+date,time_hhmmss,pt_psi,lvdt1_in,lvdt2_in,lcell1_lb,lcell2_lb,lcell3_lb,lcell4_lb,lcell5_lb,lcell6_lb,lcell7_lb,lcell8_lb
+11/14/95,16:10,0,2.089,0.954,-3.774,-807.058,55.862,-4.741,-19.819,0.863,-24.522,0.899
+11/14/95,16:10:25,0.03,1.964,1.075,-3.122,-715.436,57.148,-0.667,-16.795,1.729,-21.099,3.188
+11/14/95,16:10:56,0.09,1.125,0.903,13.322,-966.786,104.919,47.154,12.070,33.961,26.130,29.006
+11/14/95,16:11:27,0.19,-0.212,2.159,112.708,-562.648,257.305,113.129,142.358,115.239,190.245,101.461
+11/14/95,16:11:56,0.29,-0.212,2.172,259.143,-493.476,322.603,194.220,210.464,205.551,278.466,123.327
+11/14/95,16:12:50,0.38,-0.212,2.062,390.310,388.130,368.689,212.485,198.289,223.641,298.689,120.616

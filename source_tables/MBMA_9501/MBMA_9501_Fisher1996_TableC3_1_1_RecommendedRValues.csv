@@ -1,0 +1,26 @@
+# Source: MBMA_9501 | Fisher, J.M. (1996), Table C3.1-1, pp.6
+# Tag: MBMA_9501_TABLEC311_RECOMMENDEDRVALUES
+# Content: Recommended simple span C- and Z-section R values by member depth range, proposed by this study for the AISI Specification.
+# Data basis: computed: R values recommended from the statistical evaluation of the uplift test data
+# Units: depth in inches (mm in parentheses); R dimensionless
+# Column definitions:
+#   depth_range = member depth range d, inches (or mm when shown in parentheses)
+#   profile = member profile to which the R value applies, C or Z
+#   r = recommended reduction factor for simple span members, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 47 pages)
+# ANOMALY FLAG: Each depth range is printed twice, once in inches and once in millimetres (parentheses); both rows are preserved verbatim as printed.
+# Proposed Table C3.1-1 of AISI Specification Section C3.1.3
+# For simple span members R is multiplied by r = 1.00 - 0.01t (t in inches) for insulation
+depth_range,profile,r
+d ≤ 6.5,C or Z,0.70
+d ≤ (165),C or Z,0.70
+6.5 < d ≤ 8.5,C or Z,0.65
+(165) < d ≤ (216),C or Z,0.65
+8.5 < d ≤ 9.5,C or Z,0.50
+(216) < d ≤ (241),C or Z,0.50
+9.5 < d ≤ 11.5,C,0.40
+(241) < d ≤ (292),C,0.40
+9.5 < d ≤ 11.5,Z,0.50
+(241) < d ≤ (292),Z,0.50

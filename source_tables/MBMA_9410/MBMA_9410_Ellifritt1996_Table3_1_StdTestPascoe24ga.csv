@@ -1,0 +1,38 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 3-1, pp.28
+# Tag: MBMA_9410_TABLE31_STDTESTPASCOE24GA
+# Content: Ultimate fastener loads and failure modes from standard (AISI) pullover tests on 24 gage Pascoe steel coupons (Fy = 55 ksi), tested 8/4/94 to 9/2/94.
+# Data basis: measured: ultimate load in a tensile testing machine using the standard pullover jig
+# Units: tl_load_lbs in pounds; pl_th_gage in gage
+# Column definitions:
+#   test_no = test specimen number
+#   tl_load_lbs = total ultimate load recorded on the fastener, pounds
+#   comments = observed failure mode / remarks as printed
+#   pl_th_gage = panel sheet thickness, gage
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# * in the comments denotes eccentric loading.
+# Printed summary below the table: Mean = 1790.952 lbs; Standard Deviation = 180.8288; Revised Mean = 1809; Revised Standard Deviation = 164.9848.
+# Supplier Pascoe, Fy = 55 ksi, #12 self-drilling screw.
+test_no,tl_load_lbs,comments,pl_th_gage
+1,1920,Pullover,24
+2,1650,Pullover,24
+3,1800,Pullover,24
+4,1750,Pullover,24
+5,2110,Pullover,24
+6,1720,Pullover *,24
+7,2040,Pullover,24
+8,1590,Pullover *,24
+9,1930,Pullover,24
+10,1870,Pullover,24
+11,1920,Pullover,24
+12,1550,Pullover *,24
+13,1800,Pullover *,24
+14,1720,Pullover *,24
+15,1430,Disregard-Misfire w/ screw gun. *,24
+16,1510,Pullover *,24
+17,2080,Pullover,24
+18,1860,Pullover *,24
+19,1740,Pullover *,24
+20,1820,Pullover *,24
+21,1800,Pullover *,24

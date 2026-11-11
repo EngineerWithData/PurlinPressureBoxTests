@@ -1,0 +1,38 @@
+# Source: MBMA_8404 | Hendrick, D. and Murray, T.M. (1984), Table 1.1, pp.7
+# Tag: MBMA_8404_TABLE11_TESTMATRIX
+# Content: Configuration parameters (gage, purlin orientation, clips, torsional restraint, intermediate bracing) for the sixteen simple-span C-purlin roof-system tests.
+# Data basis: input: test configurations selected for the test program
+# Units: nominal_purlin_gage in gage number; all other columns are descriptive
+# Column definitions:
+#   test_no = test designation number as printed in the test matrix
+#   loading_type = type of simulated loading applied (side heading of the table)
+#   nominal_purlin_gage = nominal sheet gage of the test purlin material, gage number
+#   purlin_orientation = relative orientation of the two test purlins (same, facing, opposing)
+#   shear_clips = whether shear clips were used to connect purlins to rafters (Yes/No)
+#   torsional_restraint = whether torsional restraint braces were installed at the rafters
+#   intermediate_braces = location/spacing of intermediate lateral braces along the span
+#   remarks = additional configuration notes printed in the remarks column
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 199 pages)
+# Tests 1-6 and 16 were simulated gravity loading tests; Tests 7-15 were uplift loading tests (printed as rotated side headings spanning the row groups, captured here in the loading_type column).
+# Span was 25 ft 0 in. for all tests except Tests 15 and 16 (24 ft 8 in.).
+# Sketches at the bottom of the printed table define Same, Facing and Opposing orientation.
+# BRACING NOTE: The report contradicts itself on intermediate bracing for Tests 10 and 14 (open question MBMA_8404-Q04, resolved by Cris Moen 2026-10-26). Test 10: braced at ends and midspan (Section 1.2 p.8, Section 3.3 p.33 'similar to Test 9', Table 3.2 remark, test summary B.31 p.140); Table 1.1's 'None' is the outlier. Test 14: braced at ends and third points (Table 1.1 p.7, Section 1.2 p.8, Table 3.2 remark, test summary B.71 p.180); Section 3.3's '2.5 ft each side of midspan' (p.34) repeats the Test 13 description and is treated as a text error.
+test_no,loading_type,nominal_purlin_gage,purlin_orientation,shear_clips,torsional_restraint,intermediate_braces,remarks
+1,Simulated Gravity Loading,14,Same,No,Yes,None,
+2,Simulated Gravity Loading,14,Facing,Yes,No,None,
+3,Simulated Gravity Loading,14,Facing,Yes,No,None,
+4,Simulated Gravity Loading,14,Same,Yes,No,None,
+5,Simulated Gravity Loading,12,Facing,Yes,No,None,Same as 2
+6,Simulated Gravity Loading,16,Facing,Yes,No,None,
+16,Simulated Gravity Loading,14,Opposing,Yes,No,1/3rd Pts.,
+7,Uplift Loading,14,Facing,Yes,No,None,
+8,Uplift Loading,14,Opposing,Yes,No,Midspan,
+9,Uplift Loading,14,Opposing,Yes,No,Midspan,Wood Stiffener @ midspan
+10,Uplift Loading,14,Opposing,Yes,No,None,Wood stiffeners (7)
+11,Uplift Loading,14,Opposing,Yes,No,None,7x3 C-Purlin added
+12,Uplift Loading,14,Opposing,Yes,No,1/3rd Pts.,
+13,Uplift Loading,14,Opposing,Yes,No,Yes,2.5' ea. side of midspan
+14,Uplift Loading,14,Opposing,Yes,No,1/3rd Pts.,
+15,Uplift Loading,14,Opposing,Yes,No,1/3rd Pts.,

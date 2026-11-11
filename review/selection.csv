@@ -1,0 +1,36 @@
+code_tag,load_type,reason
+MBMA_7501,uplift,1975 continuous purlin system tests -- load type changed gravity -> uplift 2026-11-10 (Cris Moen): the three assemblies are vacuum uplift tests
+MBMA_7506,gravity,1975 gravity load tests of C and Z purlin roof systems
+MBMA_8002,exclude,simulated live load tests of conventional and thermal-bridge roof systems -- EXCLUDED 2026-11-05 (Cris Moen): concrete-block loading; the database is limited to pressure (vacuum) box tests
+MBMA_8201,exclude,simple-span Z-purlin system tests with various restraint systems (failure loads) -- EXCLUDED 2026-11-05 (Cris Moen): concrete-block loading (33 lb blocks); the database is limited to pressure (vacuum) box tests
+MBMA_8302,exclude,simple-span C-purlin system tests with various restraint systems (failure loads) -- EXCLUDED 2026-11-05 (Cris Moen): concrete-block loading; the database is limited to pressure (vacuum) box tests
+MBMA_8404,both,C-purlin supported roof system tests under gravity and uplift
+MBMA_8802,exclude,"Z-purlin standing seam roof systems under gravity -- EXCLUDED 2026-11-05 (Cris Moen): concrete-block loading; its 13 tests are the MBMA_8806 Rivard and Murray tests (Table 1.1 p.9 ""data from previous project""), which used concrete blocks; the database is limited to pressure (vacuum) box tests"
+MBMA_8903,gravity,base test method evaluation: standing seam gravity system tests
+MBMA_9002,gravity,base test method for gravity-loaded standing seam roof systems
+MBMA_9804,gravity,multi-span purlin system tests (inflection points as brace points)
+MBMA_9906,gravity,reduced number of gravity base tests (test data vols I and II)
+MBMA_7603,uplift,1976 wind uplift tests of C and Z purlin roof systems
+MBMA_8102,exclude,analytical study; its Table 5.1 re-lists the MBMA_7603 tests (duplicate - keep originals only)
+MBMA_8203,exclude,observer report of the same 12 tests published in MBMA_8702 (duplicate - keep originals only)
+MBMA_8310,uplift,laterally unsupported purlins under uplift
+MBMA_8702,uplift,braced purlins under uplift load
+MBMA_8703,uplift,continuous purlin uplift tests 1986-87
+MBMA_8803,uplift,discrete point bracing purlin uplift tests (MBMA 303/304)
+MBMA_9001,uplift,base test method standing seam uplift phase I
+MBMA_9102,uplift,base test method standing seam uplift phase II
+MBMA_9105,uplift,multispan C-purlin roof systems under uplift
+MBMA_9410,uplift,static (vacuum) load tests of through-fastened roof and wall systems
+MBMA_9501,uplift,simple-span C and Z with through-fastened panels under uplift
+MBMA_9702,uplift,base test method for uplift loading
+MBMA_1103,uplift,simple-span girt and through-fastened wall panel suction (vacuum box) flexural strength tests with rigid board insulation (Gao and Moen 2011); added 2026-11-05 at Cris Moen's request
+MBMA_1205,exclude,Gao dissertation: Ch. 3 republishes the MBMA_1103 tests and Ch. 4 compiles other programs' tests (duplicate - keep originals only)
+MBMA_1206,exclude,journal version (JCSR 2013) of the MBMA_1103 tests (duplicate - keep originals only)
+MBMA_1207,exclude,"rotational restraint (k-phi) stiffness tests, not flexural strength tests"
+MBMA_8309,exclude,EXCLUDED 2026-11-10 (Cris Moen): edge-stiffener study on a narrow two-purlin specimen (purlins 18 in. apart under a 34 in. panel, Fig. 3 p.11); failure moments only, panel/fastening/bracing not described; not a roof-system test
+MBMA_9610,gravity,Fisher and Nunnery: 15 standing seam base tests in a vacuum chamber -- added 2026-11-05 (Cris Moen): pressure (vacuum) box tests only
+MBMA_9704,gravity,shear plus bending in lapped Z-purlins: 6 three-span vacuum-chamber tests -- added 2026-11-05 (Cris Moen): pressure (vacuum) box tests only
+MBMA_8001,uplift,Cornell Z-purlin vacuum-suction tests V1-V7; point-loaded beam tests B1-B7 are not pressure box tests and are left out -- added 2026-11-05 (Cris Moen): pressure (vacuum) box tests only
+MBMA_9902,uplift,standing seam uplift base tests F1-F4 in a pressure chamber; axial tests A1-A4 are left out -- added 2026-11-05 (Cris Moen): pressure (vacuum) box tests only
+MBMA_9003,uplift,strut-purlin vacuum-chamber tests; only SP-10C-M (uplift only) is kept -- added 2026-11-05 (Cris Moen): pressure (vacuum) box tests only; REVISED 2026-11-10 (Cris Moen): the combined uplift + axial tests are left out because they fail under the ram axial load, and the axial-only tests are left out
+MBMA_8401,exclude,"EXCLUDED 2026-11-06 (Cris Moen): re-publication of the nine MBMA_8310 Butler vacuum-chamber uplift tests (8401 Appendix A, Table 2, p.29); the tests are kept in MBMA_8310"

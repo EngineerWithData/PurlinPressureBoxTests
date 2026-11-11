@@ -1,0 +1,88 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 7-12, pp.189
+# Tag: MBMA_9410_TABLE712_SYSCALCPASCOE26GA
+# Content: Spreadsheet calculation of the biaxial eccentric pullover strength for the 26 gage Pascoe vacuum box system test (free edge), following the Chapter 5 design procedure.
+# Data basis: computed: pullover design spreadsheet applying the Chapter 5 theory
+# Units: see unit column
+# Column definitions:
+#   block = section of the printed spreadsheet (Data Input, Step 1 ... Step 7)
+#   parameter = parameter name exactly as printed in the spreadsheet
+#   value = value printed for the parameter
+#   unit = unit printed beside the value (blank if none)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: The free-edge condition is modelled with dummy large/small numbers: εβminu = 9999, ε βminy = 8888, Λβminu = 172000 in, Eeβmin = 0.000743 ksi, Epβmin = 0.053465 ksi and F βmin = 2.06E-05 ksi; these are preserved verbatim. The printed sheet is laid out in three side-by-side blocks and has been flattened to one parameter per row.
+# Result Pnov = 0.36564 kips is compared with the system test value in Table 7-6; the hand back-check is Figure 7-5.
+block,parameter,value,unit
+Data Input,L αmax,17.4,in
+Data Input,L αmin,24.6,in
+Data Input,L βmax,10,in
+Data Input,L βmin,17.2,in
+Data Input,ε αmaxu,0.24,
+Data Input,ε αminu,0.24,
+Data Input,εβmaxu,0.08,
+Data Input,εβminu,9999,
+Data Input,ε αmaxy,0.002,
+Data Input,ε αminy,0.002,
+Data Input,ε βmaxy,0.06,
+Data Input,ε βminy,8888,
+Data Input,Fαmaxu,66,ksi
+Data Input,Fαminu,66,ksi
+Data Input,Fαmaxy,59,ksi
+Data Input,Fαminy,59,ksi
+Data Input,Fβmaxu,66,ksi
+Data Input,Fβminu,66,ksi
+Data Input,Fβmaxy,6.6,ksi
+Data Input,Fβminy,6.6,ksi
+Data Input,dw,0.625,in
+Data Input,dh,0.1875,in
+Data Input,t,0.018,in
+Data Input,Eeαmax,29500,ksi
+Data Input,Eeαmin,29500,ksi
+Data Input,Epαmax,29.41176,ksi
+Data Input,Epαmin,29.41176,ksi
+Data Input,Eeβmax,110,ksi
+Data Input,Eeβmin,0.000743,ksi
+Data Input,Epβmax,2970,ksi
+Data Input,Epβmin,0.053465,ksi
+Step 1,sin βmaxu,0.377705,
+Step 1,sin βminu,1,
+Step 1,sin αmaxu,0.5913,
+Step 1,sin αminu,0.5913,
+Step 1,βmaxu,22.20286,degrees
+Step 1,βminu,90.03992,degrees
+Step 1,αmaxu,36.26771,degrees
+Step 1,αminu,36.26771,degrees
+Step 1,Λβmaxu,4.079216,in
+Step 1,Λβminu,172000,in
+Step 1,Λαmaxu,12.75789,in
+Step 1,Λαminu,18.03702,in
+Step 1,θαu,22.20286,degrees
+Step 1,sin θαu,0.377705,
+Step 2,sin βmax,0.377705,
+Step 2,sin βmin,0.230763,
+Step 2,sin αmax,0.228249,
+Step 2,sin αmin,0.163588,
+Step 2,βmax,22.20286,degrees
+Step 2,βmin,13.34874,degrees
+Step 2,αmax,13.20071,degrees
+Step 2,αmin,9.419991,degrees
+Step 2,Λ,4.079216,in
+Step 3,ε βmax,0.08,
+Step 3,ε βmin,0.027739,
+Step 3,ε αmax,0.027113,
+Step 3,ε αmin,0.013655,
+Step 4,F βmax,66,ksi
+Step 4,F βmin,2.06E-05,ksi
+Step 4,F αmax,59.73862,ksi
+Step 4,F αmin,59.3428,ksi
+Step 5,F β,66.00002,ksi
+Step 5,F α,119.0814,ksi
+Step 5,φ,29.01181,degrees
+Step 6,Fαu/Fαy,1.118644,
+Step 6,L αmin / L αmax,1.413793,
+Step 6,L βmin / L βmax,1.72,
+Step 6,(dw+dh)/(dw-dh),1.857143,
+Step 6,dα,0.546653,in
+Step 6,dβ,0.302978,in
+Step 7,Pnov,0.36564,kips

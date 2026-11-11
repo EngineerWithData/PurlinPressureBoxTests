@@ -1,0 +1,59 @@
+# Source: MBMA_9704 | Almoney, K. and Murray, T.M. (1998), Table S1, pp.8,16,22,31,42,55,68,81
+# Tag: MBMA_9704_TABLES1_STRENGTHSUMMARY
+# Content: Measured ultimate (failure) loads of the six three-span, two-purlin-line continuous lapped Z-purlin vacuum-chamber tests, with the corresponding observed failure modes, coupon properties and AISI shear-plus-bending predicted loads.
+# Data basis: measured: failure loads and pressures recorded in the vacuum chamber tests (Table 3.2 and appendix test summaries), coupon yield/tensile stresses from tensile coupon tests (Table 2.2); the predicted-load and percent-of-predicted columns are computed per the AISI Specification and are included for reference.
+# Units: see column headers
+# Column definitions:
+#   test_id = test identification as printed in the report
+#   load_direction = direction of applied load (gravity = simulated by vacuum chamber)
+#   section_type = cross-section shape of the purlin (Z)
+#   depth_in = nominal purlin depth, in.
+#   thickness_in = measured thickness of the tensile coupon machined from the web of the failed purlin, in. (Table 2.2)
+#   span_ft = individual span length of each of the three spans, ft
+#   n_spans = number of continuous spans in the test setup
+#   n_purlin_lines = number of parallel purlin lines in the test setup
+#   panel_type = roof panel/deck type as printed in the appendix test summary (screw down = through-fastened)
+#   bracing = lateral bracing condition as printed in the appendix test summary
+#   failure_load_as_printed = actual failure load (total uniform line load on one purlin, including self-weight) exactly as printed in Table 3.2
+#   failure_load_unit = unit of the failure load exactly as printed
+#   failure_moment_as_printed = measured failure moment (not reported as a measured quantity)
+#   failure_moment_unit = unit of the failure moment
+#   failure_mode = observed failure mode as described in the report
+#   value_source = where in the report the failure load is stated
+#   pages = PDF page number(s) where the values for this row are stated
+#   pressure_at_failure_psf = chamber differential pressure at failure as printed in the appendix test summary, psf
+#   predicted_failure_load_plf = AISI shear-plus-bending predicted failure load as printed in Table 3.2, plf
+#   percent_of_predicted_load = actual failure load as a percentage of the predicted load, as printed in Table 3.2
+#   expected_failure_mode_flag = Table 3.2 entry indicating whether the predicted (shear plus bending) failure mode occurred, with footnote marker
+#   yield_stress_ksi = tensile coupon yield stress of the failed purlin, ksi (Table 2.2)
+#   tensile_strength_ksi = tensile coupon ultimate tensile strength of the failed purlin, ksi (Table 2.2)
+#   purlin_orientation = purlin direction as printed on each test's summary sheet (pp.22, 31, 42, 55, 68, 81)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 18 cells checked (AI, 2026-11-10): 18 correct, 0 errors, 2 unreadable; P(accuracy ≥ 0.8) = 98.6%, ≥ 0.9) = 86.5%, ≥ 0.95) = 62.3%
+# TEXT SOURCE: read from page images by the model (cached transcription)
+# ANOMALY FLAG: Appendix C (FV20-3) prints the failure load computation as "Total Loading at Failure = 327.6 - 12 (self-weight) = 339.6 plf" (minus sign printed although the result is the sum); Figures/plots for Test FV20-3 are labelled "FV20-3A".
+# Load direction is gravity, simulated by evacuating air from a vacuum chamber; differential pressure measured with U-tube manometers.
+# Failure load is a line load on a single purlin: Applied Loading = 3.75 (ft tributary width) x pressure (psf), and the tabulated total includes purlin self-weight (8 plf for all tests except FV20-3, where 12 plf was used for the doubled panel configuration).
+# Purlin spacing was 4'-11" o.c. with 1'-0" deck overhang for FV20-1 and FV20-2, and 5'-0" o.c. with 1'-0" deck overhang for the remaining tests.
+# Purlin sizes: FV20 tests used 8.5Z64 exterior bays and 8.5Z57 center bay, 20 ft spans, laps 1.50 ft and 2.90 ft into the bays; FV25 tests used 8.5Z72 exterior bays and 8.5Z64 center bay, 25 ft spans, laps 1.50 ft and 3.50 ft into the bays (Table 2.1).
+# Table 3.2 footnotes: 1 = "Purlin failed at exterior support"; 2 = "Bottom flanges of lapped purlins buckled over support".
+# Approximate pressures were reported for FV20-4 ("Approximate Pressure = 16.5 in. of water or 82.5 psf") and FV25-2 ("Approximate Pressure = 11.9 in. of water or 61.88 psf").
+# FV20-1 and FV20-2 had anti-roll clips at all supports on the north purlin line and web stiffeners at all supports on the south purlin line; the other tests had anti-roll clips at all supports and no web stiffeners.
+# No measured failure moments are reported; the Mu values in Table 3.1 are computed from a stiffness analysis at the recorded failure load and are therefore not entered in the failure_moment columns.
+# REVIEW 2026-11-06 (Cris Moen): all 6 tests enter the database. Failure loads are Table 3.2 (p.16) line loads on one purlin: 3.75 ft x pressure plus purlin self-weight (8 plf; 12 plf for FV20-3 with the doubled panel).
+# REVIEW 2026-11-06 (Cris Moen): the FV20-3 appendix sheet prints '327.6 - 12 (self-weight) = 339.6 plf' (p.42); the minus sign is a typo, the printed total 339.6 is the sum and agrees with Table 3.2. No value changed.
+# REVIEW 2026-11-06 (Cris Moen): thickness_in is the tensile coupon thickness for each test (Table 2.2, p.8). The end bays and the center bay are different sections (Table 2.1), and the report does not say which purlin the coupon came from.
+# REVIEW 2026-11-06 (Cris Moen): predicted failure loads, percent of predicted and the Table 3.1 unity checks are computed values carried as printed; Mu is analysis and is not entered as a failure moment. No duplicates found in MBMA_9804.
+# REVIEW 2026-11-10 (Cris Moen): the 3.75 ft pressure-to-line-load factor is the report's own and is used for every test; the report does not explain it and it does not follow from the 4'-11" / 5'-0" purlin spacing. Printed line loads are carried as they are (MBMA_9704-Q01).
+# REVIEW 2026-11-10 (Cris Moen): FV20-4 prints 'Approximate Pressure = 16.5 in. of water or 82.5 psf' (factor 5.0; the other tests use 5.2) and 3.75 x 82.5 + 8 = 317.4 plf (p.55), which agrees with Table 3.2. At 5.2 the values would be 85.8 psf and 329.8 plf; it is not known which printed number is wrong, so 317.4 is kept as printed (MBMA_9704-Q02).
+# REVIEW 2026-11-10 (Cris Moen): the Table 3.2 predicted load is a single value per test; the report does not say whether the north or south line governs (p.14). Carried as printed (MBMA_9704-Q03).
+# REVIEW 2026-11-10 (Cris Moen): orientation conflict: Chapter 2 says all tests had top flanges facing inward (opposed, p.7), but the FV20-1 and FV20-2 summary sheets say both top flanges point out (pp.22, 31). purlin_orientation follows the per-test sheets (MBMA_9704-Q04).
+# REVIEW 2026-11-10 (Cris Moen): FV20-3 and FV20-3A are the same test: the text uses FV20-3A data for FV20-3 (p.15). The FV20-3 sheet is dated November 24, 1997 (p.42) and the FV20-3A plots September 24; FV20-4 photos are dated 9/26/97 (p.12) against a November 26 sheet (p.55), so the sheet months appear to be clerical (MBMA_9704-Q05).
+# REVIEW 2026-11-10 (Cris Moen): the 12 plf self-weight for FV20-3 reflects its doubled panel (p.42) and is added, as the printed total 339.6 plf shows (MBMA_9704-Q06).
+test_id,load_direction,section_type,depth_in,thickness_in,span_ft,n_spans,n_purlin_lines,panel_type,bracing,failure_load_as_printed,failure_load_unit,failure_moment_as_printed,failure_moment_unit,failure_mode,value_source,pages,pressure_at_failure_psf,predicted_failure_load_plf,percent_of_predicted_load,expected_failure_mode_flag,yield_stress_ksi,tensile_strength_ksi,purlin_orientation
+FV20-1,gravity,Z,8.5,0.065,20.0,3,2,Screw Down Roof Panel,At supports only,259.6,plf,,,Rolling of the purlin at the support thus causing the web to cripple.,table 3.2,16; 22,67.08,297.1,87.4,No1,64.7,77.1,top flanges point out
+FV20-2,gravity,Z,8.5,0.065,20.0,3,2,Screw Down Roof Panel,At supports only,261.5,plf,,,Rolling of the purlin at the support thus causing the web to cripple.,table 3.2,16; 31,67.6,298.3,87.7,No1,65.8,78.7,top flanges point out
+FV20-3,gravity,Z,8.5,0.069,20.0,3,2,Screw Down Roof Panel (Doubled),At supports only,339.6,plf,,,Flexural failure of the purlin caused by a redistribution of moment due lateral buckling of the web.,table 3.2,16; 42,87.36,340.2,99.8,Yes,64.4,75.3,top flanges point in (opposed)
+FV20-4,gravity,Z,8.5,0.070,20.0,3,2,Screw Down Roof Panel,At supports only,317.4,plf,,,Flexural failure of the purlin caused by a redistribution of moment due local buckling of the web.,table 3.2,16; 55,82.5,339.4,93.5,Yes,65.6,75.1,top flanges point in (opposed)
+FV25-1,gravity,Z,8.5,0.072,25.0,3,2,Screw Down Roof Panel,At supports only,234.1,plf,,,Flexural failure of the purlin caused by a redistribution of moment due local buckling of the web.,table 3.2,16; 68,60.32,254.9,91.8,Yes,69.5,78.4,top flanges point in (opposed)
+FV25-2,gravity,Z,8.5,0.079,25.0,3,2,Screw Down Roof Panel,At supports only,240.1,plf,,,Buckling of the bottom flanges of the lapped purlins at the interior support between the center and west bays.  This also caused the webs to buckle.,table 3.2,16; 81,61.88,302.5,79.4,No2,69.5,75.5,top flanges point in (opposed)

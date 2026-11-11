@@ -1,0 +1,28 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 7-2, pp.174
+# Tag: MBMA_9410_TABLE72_AVGSYSTEMTESTCAPACITIES
+# Content: Maximum and minimum fastener peak loads and their averages from the vacuum box (system) tests for each panel type.
+# Data basis: computed: averages of the measured vacuum box system test peak fastener loads
+# Units: loads in pounds
+# Column definitions:
+#   quantity = quantity listed (peak load entries, averages); blank where the printed label continues from the row above
+#   pascoe_24ga = value for the 24 gage Pascoe system tests, pounds (letter code = loading type)
+#   pascoe_26ga = value for the 26 gage Pascoe system tests, pounds (letter code = loading type)
+#   american_24ga = value for the 24 gage American system tests, pounds (letter code = loading type)
+#   american_26ga = value for the 26 gage American system tests, pounds (letter code = loading type)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: Individual peak-load entries are printed with a loading-type code (e, e*, c) beside the value; the code has been kept with the value. Rows without a label repeat the preceding label (Max. Peak Loads / Min. Peak Loads) as printed; dashes are entries printed as "-".
+# Printed key: e = eccentric load (biaxial tension); e* = eccentric load (uniaxial tension); c = concentric load.
+quantity,pascoe_24ga,pascoe_26ga,american_24ga,american_26ga
+Max. Peak Loads:,728.60 e,-,-,-
+,781.60 c,-,761.13 e,715.60 e
+,736.70 e,442.70 e*,725.60 c,658.40 e*
+,870.30 e*,353.60 e,794.50 c,721.00 c
+Av. Max. Peak Loads:,779.30,398.15,760.41,698.33
+Min. Peak Loads:,535.10 c,-,-,-
+,690.00 e,-,576.20 c,434.90 e
+,543.00 c,442.70 e*,605.00 e,363.80 e
+,553.00 e,353.60 e,672.90 c,348.20 c
+Av. Min. Peak Loads:,580.27,398.15,618.03,382.30
+Overall Av. Load:,679.79,398.15,689.22,540.32

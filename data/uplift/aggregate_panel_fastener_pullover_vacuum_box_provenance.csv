@@ -1,0 +1,16 @@
+# Origin of every cell in aggregate_panel_fastener_pullover_vacuum_box.csv
+# R = reported as a column in that paper; C = constant stated in a table note;
+# D = derived from other variables by an exact rule; - = not available.
+source_paper,specimen_id,source_tables,load_direction,panel_type,panel_supplier,panel_gage,bracing,n_spans,n_purlin_lines,span_ft,failed_load_cells,chamber_pressure_psi,fastener_pullover_load_lb,deflection_lvdt1_in,deflection_lvdt2_in,failure_mode
+MBMA_9410,2,MBMA_9410_TABLES1_STRENGTHSUMMARY,R,R,R,R,R,R,R,R,R,R,R,R,R,R
+MBMA_9410,3,MBMA_9410_TABLES1_STRENGTHSUMMARY,R,R,R,R,-,R,-,R,R,R,R,R,R,R
+MBMA_9410,4,MBMA_9410_TABLES1_STRENGTHSUMMARY,R,R,R,R,-,R,-,R,R,R,R,R,R,R
+MBMA_9410,5,MBMA_9410_TABLES1_STRENGTHSUMMARY,R,R,R,R,-,R,-,R,R,R,R,R,R,R
+MBMA_9410,6,MBMA_9410_TABLES1_STRENGTHSUMMARY,R,R,R,R,-,R,-,R,R,R,R,R,R,R
+MBMA_9410,7,MBMA_9410_TABLES1_STRENGTHSUMMARY,R,R,R,R,-,R,-,R,R,R,R,R,R,R
+MBMA_9410,8,MBMA_9410_TABLES1_STRENGTHSUMMARY,R,R,R,R,-,R,-,R,R,R,R,R,R,R
+MBMA_9410,9,MBMA_9410_TABLES1_STRENGTHSUMMARY,R,R,R,R,-,R,-,R,R,R,R,R,R,R
+MBMA_9410,10,MBMA_9410_TABLES1_STRENGTHSUMMARY,R,R,R,R,-,R,-,R,R,R,R,R,R,R
+MBMA_9410,11,MBMA_9410_TABLES1_STRENGTHSUMMARY,R,R,R,R,-,R,-,R,R,R,R,R,R,R
+MBMA_9410,12,MBMA_9410_TABLES1_STRENGTHSUMMARY,R,R,R,R,-,R,-,R,R,R,R,R,R,R
+MBMA_9410,13,MBMA_9410_TABLES1_STRENGTHSUMMARY,R,R,R,R,-,R,-,R,R,R,R,R,R,R

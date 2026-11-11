@@ -1,0 +1,27 @@
+# Source: MBMA_1103 | Gao, T. and Moen, C.D. (2011), Table 1, pp.5
+# Tag: MBMA_1103_TABLE1_ROTRESTRAINTSPECIMENDIMS
+# Content: Cross-section type, depth, fastener location and bare metal thickness of the eight girt specimens used in the bare-panel rotational restraint (F-) tests.
+# Data basis: measured: girt dimensions and fastener locations measured on the rotational restraint test specimens
+# Units: h_in, b_avg_in, c_avg_in, t_in in inches; member_profile dimensionless label
+# Column definitions:
+#   specimen_name = specimen label as printed (Z = Zee girt, C = Cee girt, number = web depth)
+#   member_profile = girt cross-section type, Z (Zee) or C (Cee)
+#   h_in = member (web) depth, inches (Fig. 3)
+#   b_avg_in = average distance from screw to web-flange corner in a Cee, inches (Fig. 3)
+#   c_avg_in = average distance from screw to pivot point (web-flange corner for Zee, lip-flange corner for Cee), inches
+#   t_in = bare (base) metal thickness of the girt, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-05): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 53 pages)
+# ANOMALY FLAG: Specimens are named "C250-1" and "C150-1" in this table but are referred to as "C10-1" and "C6-1" in Tables 2 and 3 and in the text; the printed names are preserved verbatim. The average B column is printed as "---" for the Zee specimens (B is not defined for Zees).
+# Figure 3 defines h, B and C.
+# Each specimen was a 5 ft girt through-fastened to two 0.018 in. thick panels forming a 6 ft x 6 ft panel, with #12-14 screws at 12 in. spacing.
+specimen_name,member_profile,h_in,b_avg_in,c_avg_in,t_in
+Z8-1,Z,8,---,1.13,0.102
+Z8-2,Z,8,---,1.34,0.102
+Z10-1,Z,10,---,1.31,0.106
+Z10-2,Z,10,---,1.41,0.106
+C8-1,C,8,1.47,1.15,0.103
+C8-2,C,8,1.15,1.18,0.103
+C250-1,C,10,1.61,1.47,0.105
+C150-1,C,6,0.95,1.05,0.069

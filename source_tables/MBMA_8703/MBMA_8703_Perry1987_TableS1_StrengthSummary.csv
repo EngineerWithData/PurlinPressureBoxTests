@@ -1,0 +1,64 @@
+# Source: MBMA_8703 | Perry, D., Golovin, M., Montague, D., LaBoube, R., Wilson, L. (MBMA Ad Hoc Task Force on Purlin Uplift) (1987), Table S1, pp.11
+# Tag: MBMA_8703_TABLES1_STRENGTHSUMMARY
+# Content: Measured failure (ultimate) uniform loads of 19 full-scale three-span continuous lapped Z- and C-purlin roof assemblies tested under uplift (air pressure) with the tension flange through-fastened to steel panels and the compression flange laterally unbraced, together with member dimensions, yield stress, initial sweep, failed member and test-to-predicted ratios.
+# Data basis: measured: failure loads from the pressure-chamber uplift tests (Exhibit B), member dimensions/yield/initial sweep measured on the failed members; test-to-predicted ratios computed in Exhibits D and E
+# Units: see column headers
+# Column definitions:
+#   test_id = test designation as printed in the report
+#   load_direction = direction of applied load on the roof assembly (uplift or gravity)
+#   section_type = purlin cross-section type as printed (Zee or Cee)
+#   depth_in = nominal purlin web depth, in.
+#   thickness_in = measured base-metal thickness of the failed member, in.
+#   span_ft = end-bay span length, ft (bays given are end bay)
+#   n_spans = number of continuous spans in the test assembly
+#   n_purlin_lines = number of parallel purlin lines in the test assembly
+#   panel_type = roof panel/attachment system used
+#   bracing = lateral/torsional bracing condition of the purlins
+#   failure_load_as_printed = failure (ultimate) uniform load per purlin exactly as printed
+#   failure_load_unit = unit of the failure load exactly as printed
+#   failure_moment_as_printed = failure moment as printed (not reported)
+#   failure_moment_unit = unit of the failure moment as printed (not reported)
+#   failure_mode = observed mode or limiting condition that ended the test
+#   value_source = where in the report the load value is stated
+#   pages = PDF page number(s) where the load value is stated
+#   flange_width_in = nominal flange width of the purlin, in.
+#   total_lap_ft = total lap length, lap bolts to lap bolts, ft-in. as printed
+#   fy_ksi = measured yield stress of the failed member, ksi
+#   initial_sweep_in = measured initial sweep of the failed member, in. (+ toward bottom flange lip, - toward web)
+#   failed_member = purlin line/span designation of the member that failed
+#   ratio_test_over_aisi6 = ratio of test failure load to load predicted by modification AISI-6 of the 5/1/86 draft Section C3.1.3
+#   ratio_test_over_mbma = ratio of test failure load to load predicted by the proposed MBMA formula (R = 0.70 Zees, 0.60 Cees)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 15 cells checked (AI, 2026-11-04): 15 correct, 0 errors, 5 unreadable; P(accuracy ≥ 0.8) = 97.2%, ≥ 0.9) = 81.5%, ≥ 0.95) = 56.0%
+# TEXT SOURCE: read from page images by the model (cached transcription)
+# ANOMALY FLAG: Exhibit B footnote: "*Test #12 not taken to purlin failure.  Panels failed at 135 lb./ft. and test had to be aborted.  Purlins appeared close to failure."  Test #10 (original run) is not listed in Exhibit B because the panel failed by tearing at the screws before the purlin failed; no load is printed for it.
+# Load direction: all tests are uplift (suction) on the purlins; load applied as air pressure in the test chamber, except Ceco tests 4 and 5 which were run under suction with the test assembly turned upside-down.
+# Load on the member was calculated as chamber pressure (manometer reading x 10.4) times a tributary width of 5.06 ft minus the dead weight of the assembly, i.e. the tabulated loads are net of dead load.
+# All tests had two lines of purlins (flanges opposed) on three continuous spans; spans shown are end-bay spans. Tests 1-6C, 9, 11 and 12 had three equal spans; the other tests had an end bay 1'-0" less than the interior bay (24 ft end / 25 ft interior).
+# Initial sweep sign convention: positive in the direction of the bottom flange lip, negative in the direction of the web.
+# Panels were 26 or 24 gauge galvanized panels with 1 1/4 in. ribs at 12 in. o.c. attached with 12 x 14 self-drilling screws at 12 in. o.c. (through-fastened). Tests 10R and 11 used a double thickness of 26 gauge panels.
+# Top flanges were torsionally restrained at each support by a wide-flange shape attached to the panels (not attached directly to the purlins).
+# Failure mode text from narrative p.5: all failures occurred in an end bay member at or near the point of maximum positive moment; all except Ceco Test #4 were by yielding at the web/compression flange juncture with buckling of the web and compression flange; Ceco Test #4 failed by local buckling of the flange and lip.
+# Failed-member designations (A/B purlin line, span number) are from the list on p.6; ratio columns are from Exhibit D (AISI-6) and Exhibit E (MBMA proposal).
+# Test #10 (original run) produced no reported failure load: the single-thickness panel tore at the screws before the purlin failed and the test was re-run as Test 10R using double panels.
+test_id,load_direction,section_type,depth_in,thickness_in,span_ft,n_spans,n_purlin_lines,panel_type,bracing,failure_load_as_printed,failure_load_unit,failure_moment_as_printed,failure_moment_unit,failure_mode,value_source,pages,flange_width_in,total_lap_ft,fy_ksi,initial_sweep_in,failed_member,ratio_test_over_aisi6,ratio_test_over_mbma
+1,uplift,Zee,9 1/2,.0701,30,3,2,"through-fastened (26 or 24 ga., 12x14 screws @ 12"" o.c.)",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,138,lb./ft.,,,yielding at web/compression flange juncture and buckling of web and compression flange,table B,11,3,6-0,63.1,-.375,A3,0.90,1.02
+2,uplift,Zee,9 1/2,.1013,30,3,2,"through-fastened (26 or 24 ga., 12x14 screws @ 12"" o.c.)",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,234,lb./ft.,,,yielding at web/compression flange juncture and buckling of web and compression flange,table B,11,3,6-0,58.1,-.438,B3,1.09,1.18
+3,uplift,Zee,9 1/2,.0696,30,3,2,"through-fastened (26 or 24 ga., 12x14 screws @ 12"" o.c.)",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,136,lb./ft.,,,yielding at web/compression flange juncture and buckling of web and compression flange,table B,11,3,2-6,61.6,-.125,B3,0.91,1.03
+4,uplift,Zee,9 1/2,.1002,30,3,2,"through-fastened (26 or 24 ga., 12x14 screws @ 12"" o.c.)",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,218,lb./ft.,,,yielding at web/compression flange juncture and buckling of web and compression flange,table B,11,3,2-6,58.2,0,B3,1.08,1.14
+5,uplift,Zee,9 1/2,.0695,20,3,2,"through-fastened (26 or 24 ga., 12x14 screws @ 12"" o.c.)",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,280,lb./ft.,,,yielding at web/compression flange juncture and buckling of web and compression flange,table B,11,3,2-6,61.3,+.313,B3,1.52,.95
+6,uplift,Zee,6 1/2,.0587,20,3,2,"through-fastened (26 or 24 ga., 12x14 screws @ 12"" o.c.)",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,109,lb./ft.,,,yielding at web/compression flange juncture and buckling of web and compression flange,table B,11,2,4-0,55.2,-.313,A1,0.88,.92
+6a,uplift,Zee,6 1/2,.0613,20,3,2,"through-fastened (26 or 24 ga., 12x14 screws @ 12"" o.c.)",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,124,lb./ft.,,,yielding at web/compression flange juncture and buckling of web and compression flange,table B,11,2,4-0,57.4,-.375,A1,0.89,.93
+6b,uplift,Zee,6 1/2,.0600,20,3,2,"through-fastened (26 or 24 ga., 12x14 screws @ 12"" o.c.)",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,121,lb./ft.,,,yielding at web/compression flange juncture and buckling of web and compression flange,table B,11,2,4-0,56.1,-.313,A1,0.98,.98
+6c,uplift,Zee,6 1/2,.0590,20,3,2,"through-fastened (26 or 24 ga., 12x14 screws @ 12"" o.c.)",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,119,lb./ft.,,,yielding at web/compression flange juncture and buckling of web and compression flange,table B,11,2,4-0,55.8,-.188,A3,0.95,.99
+7,uplift,Cee,9,.0607,24,3,2,"through-fastened (26 or 24 ga., 12x14 screws @ 12"" o.c.)",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,128,lb./ft.,,,yielding at web/compression flange juncture and buckling of web and compression flange,table B,11,2 3/8,4-6,56.5,-.188,B3,1.02,1.00
+8,uplift,Cee,7,.0598,24,3,2,"through-fastened (26 or 24 ga., 12x14 screws @ 12"" o.c.)",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,98,lb./ft.,,,yielding at web/compression flange juncture and buckling of web and compression flange,table B,11,2 1/2,4-6,54.6,+.500,B3,1.32,1.13
+Ceco #4,uplift,Zee,8 1/2,.0847,24,3,2,"through-fastened (26 or 24 ga., 12x14 screws @ 12"" o.c.)",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,181,lb./ft.,,,local buckling of the flange and lip (member had a very large negative initial sweep); tested under suction with assembly inverted,table B,11,2,5-0,60.2,+.688,B1,0.83,.88
+Ceco #5,uplift,Zee,8 1/2,.0845,24,3,2,"through-fastened (26 or 24 ga., 12x14 screws @ 12"" o.c.)",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,193,lb./ft.,,,yielding at web/compression flange juncture and buckling of web and compression flange; tested under suction with assembly inverted,table B,11,2,5-0,57.8,+.188,B1,0.86,.98
+Ceco #2,uplift,Zee,10,.0833,24,3,2,"through-fastened (26 or 24 ga., 12x14 screws @ 12"" o.c.)",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,286,lb./ft.,,,yielding at web/compression flange juncture and buckling of web and compression flange,table B,11,2 3/4,5-0,61.5,0,A3,1.11,1.02
+Ceco #5a,uplift,Zee,8 1/2,.0613,24,3,2,"through-fastened (26 or 24 ga., 12x14 screws @ 12"" o.c.)",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,134,lb./ft.,,,yielding at web/compression flange juncture and buckling of web and compression flange,table B,11,2 1/2,4-0,58.5,0,A3,0.92,1.03
+9,uplift,Zee,9 1/2,.0660,20,3,2,"through-fastened (26 or 24 ga., 12x14 screws @ 12"" o.c.)",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,241,lb./ft.,,,yielding at web/compression flange juncture and buckling of web and compression flange (repeat of Test #5),table B,11,3,2-6,63.9,-.125,A1,1.31,0.85
+10,uplift,Cee,8 1/2,,,3,2,"through-fastened, single 26 gauge panel",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,,,,,panel failed by tearing at the screws before the purlin failed; test re-run as Test 10R with double 26 gauge panels,text,4,2 1/2,,,,,,
+10R,uplift,Cee,8 1/2,.0897,24,3,2,"through-fastened, double thickness 26 gauge panels",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,217,lb./ft.,,,yielding at web/compression flange juncture and buckling of web and compression flange,table B,11,2 1/2,5-0,58.3,+.313,A3,1.48,1.07
+11,uplift,Cee,8 1/2,.0561,20,3,2,"through-fastened, double panels",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,156,lb./ft.,,,yielding at web/compression flange juncture and buckling of web and compression flange,table B,11,2 1/2,4-0,65.3,-.375,A3,1.32,0.90
+12,uplift,Cee,8 1/2,.0895,30,3,2,"through-fastened, single 26 gauge panels",tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports,135*,lb./ft.,,,"panel failure at the screws at 135 lb./ft.; test aborted, purlins not taken to failure but appeared close to failure",table B,11,2 1/2,6-0,58.3,-.125,-,0.98,1.02

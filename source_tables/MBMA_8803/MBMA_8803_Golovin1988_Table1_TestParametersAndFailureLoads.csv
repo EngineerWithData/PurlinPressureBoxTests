@@ -1,0 +1,24 @@
+# Source: MBMA_8803 | Golovin, M. and Fisher, J.M. (1988), Table 1, pp.2
+# Tag: MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS
+# Content: Test parameters and measured failure loads for the unbraced reference test #3 and the discrete-point-braced uplift test #B-1 on continuous-span 9.5 in. Z-purlins.
+# Data basis: measured: purlin dimensions, coupon yield strengths and pressure-box failure loads from the full-scale uplift tests
+# Units: depth_in, flange_width_in, t_in, initial_sweep_in in inches; span_ft in feet; lap_ft_in in feet-inches; fy_ksi in ksi; failure_load_lb_per_ft in lb/ft
+# Column definitions:
+#   test_no = test identification number (#3 from earlier MBMA series, #B-1 braced test)
+#   section = purlin cross-section type (Zee)
+#   depth_in = nominal purlin web depth, inches
+#   flange_width_in = nominal purlin flange width, inches
+#   span_ft = span length of each continuous bay, feet
+#   lap_ft_in = length of lap at interior supports, feet-inches
+#   t_in = purlin base metal thickness, inches
+#   fy_ksi = measured yield strength of the failed member, ksi
+#   initial_sweep_in = initial lateral sweep of the purlins before loading, inches
+#   failure_load_lb_per_ft = uplift load per foot of purlin at failure, pounds per foot
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 15 pages); 4 character(s) were illegible and are marked [?], not guessed
+# Table is printed without a label in the April 4, 1988 letter from Ceco Buildings Division; label '1' assigned here for reference.
+# Test #3 is from the earlier MBMA Continuous Span Purlin Uplift Tests (no compression-flange braces); Test #B-1 had bottom flanges of the end-bay purlins braced at the quarter points.
+test_no,section,depth_in,flange_width_in,span_ft,lap_ft_in,t_in,fy_ksi,initial_sweep_in,failure_load_lb_per_ft
+3,Zee,9.5,3,30,2-6,.0696,61.6,-.125,136
+B-1,Zee,9.5,3,30,2-6,.0681,55.0,0,134

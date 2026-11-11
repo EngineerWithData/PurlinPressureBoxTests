@@ -1,0 +1,63 @@
+# Source: MBMA_9610 | Fisher, J.M. and Nunnery, J.N. (1996), Table S1, pp.4, 6
+# Tag: MBMA_9610_TABLES1_STRENGTHSUMMARY
+# Content: Measured ultimate loads, test moments and failure modes of fifteen single-span, two-purlin-line standing seam roof base tests on 8.5 in. zee purlins loaded in simulated gravity (vacuum chamber) loading, with purlins either facing the same direction or opposed.
+# Data basis: measured: failure loads W(tot), test moments M_t and failure modes from the authors' vacuum-chamber base tests (Tables 1 and 2), with purlin dimensions (Table 3) and failure pressures (Table 4) attached for the same specimens; S_e, F_y, M_n and M_t/M_n are the report's accompanying section-property/evaluation values
+# Units: see column headers
+# Column definitions:
+#   test_id = test designation as printed in the report
+#   load_direction = direction of applied load (gravity = simulated positive/gravity pressure by evacuating the vacuum chamber)
+#   section_type = purlin cross-section shape (Z = zee purlin, per Table 4 title "8" Zee Tests")
+#   depth_in = nominal/measured purlin web depth, inches
+#   thickness_in = purlin base steel thickness, inches
+#   span_ft = test span (purlin web spacing / simple span length), feet
+#   n_spans = number of spans in the test specimen (single-span base test), count
+#   n_purlin_lines = number of purlin lines in the test assembly, count
+#   panel_type = type of roof panel used in the assembly
+#   bracing = restraint / bracing details of the test assembly as described in the text
+#   failure_load_as_printed = total failure load W(tot) exactly as printed in Table 1 or Table 2
+#   failure_load_unit = unit of the printed failure load
+#   failure_moment_as_printed = test failure moment M_t exactly as printed
+#   failure_moment_unit = unit of the printed failure moment
+#   failure_mode = failure mode exactly as printed in Table 1 or Table 2
+#   value_source = where in the report the value is stated
+#   pages = PDF page number(s) where the values are stated
+#   purlin_orientation = orientation of the two purlin lines in the test (same direction or opposed)
+#   se_in3 = effective section modulus S_e used in evaluation, in^3
+#   fy_ksi = yield stress F_y, ksi
+#   mn_ft_kips = nominal (predicted) flexural strength M_n, kip-ft
+#   mt_over_mn = ratio of test moment to nominal moment, dimensionless
+#   failure_load_psf = failure load expressed as pressure, psf (Tables 4 and 5, 8.5 in. zee tests 1-8 correspond to tests 93-1 through 93-8)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (cached transcription)
+# Load sign convention: loads are simulated gravity (positive) pressures produced by evacuating air from a 9'-0" wide x 4'-0" high pressure chamber; pressures measured by manometer.
+# W(tot) is the total failure load reported in lb/ft in Tables 1 and 2; the corresponding failure pressure in psf for the 8.5 in. zee tests 93-1 through 93-8 is listed in Tables 4 and 5 (rows labeled 1 through 8).
+# The report does not state whether the reported loads include specimen dead load, nor the tributary width used.
+# The M_t/M_n results do not include the effect of the overturning moment on the system due to the anchorage forces.
+# Tests 93-1 through 93-4 had no diaphragm edge angles and no rotational restraint between the purlin and the beam support; tests 93-5 through 93-8 used a 6 in. high, 0.12 in. thick clip connecting one purlin at both ends to the support beam plus a 1.5 in. x 1.5 in. x 0.12 in. continuous angle at the panel edges, with the diaphragm unanchored (free to float).
+# Tests 94-1 through 94-7 were conducted with the purlins in the opposed orientation (compression flanges pointing toward each other); the report gives no separate edge-angle/clip detail for these tests, so the bracing cell is left empty.
+# Measured purlin cross-section dimensions for every test are given in Table 3 (all specimens 8.5 in. deep, top/bottom flange about 2.48-2.52 in., lip 0.69-1.03 in., lip angle 50-53 deg).
+# REVIEW 2026-11-06 (Cris Moen): all 15 base tests enter the database. Tests were run in a 9 ft x 4 ft pressure chamber sealed with polyethylene over the specimen, air evacuated (gravity load, p.4).
+# REVIEW 2026-11-06 (Cris Moen): failure_load_psf for 93-1 to 93-8 comes from Table 4 rows 1-8 (p.6); the rows match Tests 93-1 to 93-8 one for one by span and thickness. No pressure is printed for the 94 tests.
+# REVIEW 2026-11-06 (Cris Moen): tributary width and dead-load treatment are not stated; W_tot / pressure is not constant across tests (about 4.2 to 4.8 ft), so no tributary width is back-calculated. Bracing for the 94 tests is not described and is left blank.
+# REVIEW 2026-11-06 (Cris Moen): F_y = 55 ksi for the 93 tests, S_e, M_n and M_t/M_n are the paper's values, carried as printed; M_t/M_n excludes the overturning moment from anchorage forces (p.3). No duplicates found in MBMA_9906, 9002 or 8903.
+# REVIEW 2026-11-10 (Cris Moen): W(tot) is the line load on one purlin line: M_t = W(tot) L^2/8 reproduces every printed M_t (e.g. 93-1: 103.22 x 19.5^2/8 = 4.91 k-ft) and M_t is divided by the single-purlin M_n (Tables 1-2, p.4). The report does not state this explicitly (MBMA_9610-Q01).
+# REVIEW 2026-11-10 (Cris Moen): F_y is carried as printed: 55 ksi for every 93 test (Table 1) looks nominal; the 94 values (54.89-57.33 ksi, Table 2) appear measured. The report says samples were measured for geometric and physical data (p.4) but does not say whether F_y is a coupon value (MBMA_9610-Q04).
+# REVIEW 2026-11-10 (Cris Moen): the standing seam panel profile and clip are not identified; only the failure mode 'SSR Clip Tab' and one fastener in the center of each panel flat are given (p.4) (MBMA_9610-Q05).
+# REVIEW 2026-11-10 (Cris Moen): duplicate check extended to every extracted report (2026-11-10): no W(tot), test ID or 8.5 in. Z span/thickness match outside MBMA_9610.
+test_id,load_direction,section_type,depth_in,thickness_in,span_ft,n_spans,n_purlin_lines,panel_type,bracing,failure_load_as_printed,failure_load_unit,failure_moment_as_printed,failure_moment_unit,failure_mode,value_source,pages,purlin_orientation,se_in3,fy_ksi,mn_ft_kips,mt_over_mn,failure_load_psf
+93-1,gravity,Z,8.5,0.059,19.50,1,2,standing seam,no diaphragm edge angle; no rotational restraint between purlin and support beam,103.22,lb/ft,4.91,k-ft,Lateral Torsional Buckling,table 1,"4, 6",purlins facing same direction,1.77,55,8.15,0.60,23.4
+93-2,gravity,Z,8.5,0.120,19.50,1,2,standing seam,no diaphragm edge angle; no rotational restraint between purlin and support beam,207.11,lb/ft,9.84,k-ft,Diaphragm/Purlin,table 1,"4, 6",purlins facing same direction,4.40,55,20.17,0.49,49.4
+93-3,gravity,Z,8.5,0.059,28.50,1,2,standing seam,no diaphragm edge angle; no rotational restraint between purlin and support beam,62.92,lb/ft,6.39,k-ft,Lateral Torsional Buckling,table 1,"4, 6",purlins facing same direction,1.77,55,8.15,0.78,13.0
+93-4,gravity,Z,8.5,0.120,28.50,1,2,standing seam,no diaphragm edge angle; no rotational restraint between purlin and support beam,136.58,lb/ft,13.87,k-ft,SSR Clip Tab,table 1,"4, 6",purlins facing same direction,4.40,55,20.17,0.69,31.2
+93-5,gravity,Z,8.5,0.120,28.50,1,2,standing seam,6 in. high x 0.12 in. thick end clip on one purlin at both ends; 1.5 x 1.5 x 0.12 continuous edge angle; diaphragm not anchored,166.81,lb/ft,16.94,k-ft,SSR Clip Tab,table 1,"4, 6",purlins facing same direction,4.40,55,20.17,0.84,39.0
+93-6,gravity,Z,8.5,0.120,19.50,1,2,standing seam,6 in. high x 0.12 in. thick end clip on one purlin at both ends; 1.5 x 1.5 x 0.12 continuous edge angle; diaphragm not anchored,287.71,lb/ft,13.68,k-ft,SSR Clip Tab,table 1,"4, 6",purlins facing same direction,4.40,55,20.17,0.68,70.2
+93-7,gravity,Z,8.5,0.059,19.50,1,2,standing seam,6 in. high x 0.12 in. thick end clip on one purlin at both ends; 1.5 x 1.5 x 0.12 continuous edge angle; diaphragm not anchored,143.52,lb/ft,6.82,k-ft,Lateral Torsional Buckling,table 1,"4, 6",purlins facing same direction,1.77,55,8.15,0.84,33.8
+93-8,gravity,Z,8.5,0.059,28.50,1,2,standing seam,6 in. high x 0.12 in. thick end clip on one purlin at both ends; 1.5 x 1.5 x 0.12 continuous edge angle; diaphragm not anchored,83.07,lb/ft,8.43,k-ft,Lateral Torsional Buckling,table 1,"4, 6",purlins facing same direction,1.77,55,8.15,1.03,18.2
+94-1,gravity,Z,8.5,0.119,19.50,1,2,standing seam,,374.28,lb/ft,17.79,k-ft,SSR Clip Tab,table 2,4,opposed,4.34,56.23,20.34,0.87,
+94-2,gravity,Z,8.5,0.120,24.50,1,2,standing seam,,249.36,lb/ft,18.71,k-ft,SSR Clip Tab,table 2,4,opposed,4.38,55.78,20.36,0.92,
+94-3,gravity,Z,8.5,0.119,29.50,1,2,standing seam,,156.64,lb/ft,17.04,k-ft,SSR Clip Tab,table 2,4,opposed,4.33,54.89,19.81,0.86,
+94-4,gravity,Z,8.5,0.059,19.50,1,2,standing seam,,173.78,lb/ft,8.26,k-ft,Section,table 2,4,opposed,1.75,57.33,8.35,0.99,
+94-5,gravity,Z,8.5,0.058,25.00,1,2,standing seam,,103.17,lb/ft,8.06,k-ft,Section,table 2,4,opposed,1.71,55.29,7.86,1.03,
+94-6,gravity,Z,8.5,0.060,28.50,1,2,standing seam,,93.17,lb/ft,9.46,k-ft,Section,table 2,4,opposed,1.80,57.18,8.57,1.10,
+94-7,gravity,Z,8.5,0.104,24.50,1,2,standing seam,,224.44,lb/ft,16.84,k-ft,SSR Clip Tab,table 2,4,opposed,3.82,56.00,17.82,0.94,

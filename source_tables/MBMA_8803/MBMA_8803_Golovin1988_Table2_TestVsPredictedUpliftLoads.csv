@@ -1,0 +1,23 @@
+# Source: MBMA_8803 | Golovin, M. and Fisher, J.M. (1988), Table 2, pp.3
+# Tag: MBMA_8803_TABLE2_TESTVSPREDICTEDUPLIFTLOADS
+# Content: Comparison of measured uplift failure loads with loads predicted by the AISI-6 and MBMA Ad Hoc Task Force methods, with test-to-predicted ratios, for tests #3 and #B-1.
+# Data basis: mixed: measured failure loads with capacities predicted by the AISI-6 and MBMA Ad Hoc Task Force procedures
+# Units: failure and predicted loads in lb/ft; fy_ksi in ksi; se_in3 in in^3; ratios dimensionless
+# Column definitions:
+#   test_no = test identification number (#3 unbraced, #B-1 discrete point braced)
+#   failure_load_lb_per_ft = measured uplift failure load per foot of purlin, pounds per foot
+#   fy_ksi = measured yield strength used in the capacity prediction, ksi
+#   se_in3 = effective section modulus of the purlin section, cubic inches
+#   aisi6_load_lb_per_ft = predicted failure load by AISI-6 method of the Ad Hoc Task Force report, lb/ft
+#   aisi6_ratio = test failure load divided by AISI-6 predicted load, dimensionless
+#   mbma_load_lb_per_ft = predicted failure load by the MBMA Ad Hoc Task Force proposal, lb/ft
+#   mbma_ratio = test failure load divided by MBMA predicted load, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 16 cells checked (AI, 2026-11-04): 16 correct, 0 errors; P(accuracy ≥ 0.8) = 97.7%, ≥ 0.9) = 83.3%, ≥ 0.95) = 58.2%
+# TEXT SOURCE: read from page images by the model (all 15 pages); 4 character(s) were illegible and are marked [?], not guessed
+# Table is printed without a label in the April 4, 1988 letter; label '2' assigned here for reference.
+# AISI-6 refers to the May 1986 draft AISI specification method as modified in the MBMA Ad Hoc Task Force Report.
+# SECTION MODULUS NOTE: se_in3 = 2.74 in^3 is the effective (reduced) section modulus at the compression fiber, as used by the report (open question MBMA_8803-Q03, Cris Moen 2026-10-26). The p.12 printout gives Ix = 14.047 in^4 (reduced from a gross value of roughly 16 in^4), N.A. = 4.376 in. and SX-T = 2.7416 = 14.047/5.124, the farther (compression) fiber; the compression flange is not fully effective at t = 0.0681 in., Fy = 55 ksi. Calculated value carried as printed, not recomputed. The report does not state whether the measured thickness 0.0681 in. (p.4) is base metal or coated.
+test_no,failure_load_lb_per_ft,fy_ksi,se_in3,aisi6_load_lb_per_ft,aisi6_ratio,mbma_load_lb_per_ft,mbma_ratio
+3,136,61.6,2.65,150,0.91,132,1.03
+B-1,134,55.0,2.74,136,0.98,122,1.10

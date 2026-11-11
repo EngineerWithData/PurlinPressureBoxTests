@@ -1,0 +1,26 @@
+# Source: MBMA_9002 | Rayburn, L. and Murray, T.M. (1990), Table 4.3, pp.30
+# Tag: MBMA_9002_TABLE43_SERIESIIITESTRESULTS
+# Content: Measured failure moments and computed section strengths for the five Series III single-span base tests (9 in. C-purlins facing, pan deck with fixed clips, 25 ft span).
+# Data basis: mixed: measured experimental failure moments with 1986 AISI constrained-bending computed section strengths
+# Units: see column headers
+# Column definitions:
+#   test = base test identification label (see notes for suffixes)
+#   insulation = whether 4 in. insulation was in place during the test (Yes/No)
+#   seff_in3 = effective section modulus of the purlin that failed, cubic inches
+#   fy_ksi = yield stress of material taken from the purlin which failed, ksi
+#   mn_in_kips = nominal section strength, Seff x Fy, inch-kips
+#   mus_in_kips = maximum moment corresponding to the experimental failure load, inch-kips
+#   r_percent = percentage of through-fastened capacity, x 100, percent
+#   failure_mode = observed mode of failure (LB = local buckling of lip, flange and web)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 134 pages); 2 character(s) were illegible and are marked [?], not guessed
+# ANOMALY FLAG: The printed legend defines Wus and WAISI (loads) and R = Wus/WAISI x 100% while the columns are headed Mus (in-kips); preserved verbatim as printed and NOT corrected.
+# LB = local buckling of lip, flange, and web
+# Legend printed with the table: Seff = effective section modules; Fy = yield stress of material taken from purlin which failed; Mn = nominal section strength, Seff x Fy; Wus = experimental failure load of base test; WAISI = 1986 AISI fully constrained flexural strength; R = Wus/WAISI x 100%
+test,insulation,seff_in3,fy_ksi,mn_in_kips,mus_in_kips,r_percent,failure_mode
+P-F-9C0.063-25,No,2.11,58.3,123.3,100.1,81.2,LB
+P-F-9C0.064-25,Yes,2.14,51.5,110.3,87.5,79.3,LB
+P-F-9C0.065-25,No,2.25,57.2,128.7,109.5,85.1,LB
+P-F-9C0.074-25,No,2.55,59.2,151.2,138.5,91.6,LB
+P-F-9C0.10-25,No,3.99,59.1,235.8,247.7,105.0,LB

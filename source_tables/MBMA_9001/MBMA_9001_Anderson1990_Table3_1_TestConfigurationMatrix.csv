@@ -1,0 +1,30 @@
+# Source: MBMA_9001 | Anderson, B.B. and Murray, T.M. (1990), Table 3.1, pp.17
+# Tag: MBMA_9001_TABLE31_TESTCONFIGURATIONMATRIX
+# Content: Configuration of each of the eight test sets (purlin, bracing, panel, clip, seam, orientation and lap length) used in the uplift base-test program.
+# Data basis: input: as-built configuration of the test assemblies selected for the experimental program
+# Units: lap_length_ft_in in feet and inches; all other columns are descriptive
+# Column definitions:
+#   test_identification = test set label as printed, coded per Section 3.1 (see notes)
+#   purlin_type = purlin cross-section shape used, Z or C
+#   bracing = lateral bracing scheme (Rafter = rafters only; Third = rafters plus third points)
+#   panel_type = standing seam roof panel profile, Pan or Rib
+#   clip_type = panel-to-purlin clip, Fixed (one piece) or Sliding (two piece)
+#   seam_type = method of making the panel side seam: Snap, Mech. (machine) or Hand
+#   purlin_orientation = purlin flange orientation: Facing (same direction) or Opposed
+#   lap_length_ft_in = total purlin lap length over interior supports in the three-span tests, ft-in
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 174 pages)
+# ANOMALY FLAG: Table is printed with the caption "Matrix of Test Configurations" while the List of Tables calls it "Test Configuration Matrix"; both preserved as printed. The opposed-purlin tests are written "(0)" (digit zero) in the printed table body although the text defines the suffix as "(O)" for opposite orientation; values kept verbatim.
+# Test ID code: first letter U = uplift loading; second letter = Z- or C-purlin; third letter R or T = rafter bracing or rafter plus third point bracing; fourth letter = panel type (P pan, R rib); fifth letter = clip type (F one-piece fixed, S two-piece sliding); (O) = purlin flanges opposed.
+# Footnote printed below table: "*Bracing at rafters and third points."
+# Lap length is the sum of the two purlin overhangs measured from the center of the support.
+test_identification,purlin_type,bracing,panel_type,clip_type,seam_type,purlin_orientation,lap_length_ft_in
+U-Z-R-P/F,Z,Rafter,Pan,Fixed,Snap,Facing,"4'8"""
+U-Z-R-P/S,Z,Rafter,Pan,Sliding,Mech.,Facing,"2'4"""
+U-Z-R-R/S(0),Z,Rafter,Rib,Sliding,Mech.,Opposed,"3'6"""
+U-C-R-P/S(0),C,Rafter,Pan,Sliding,Snap,Opposed,"4'9"""
+U-Z-T-P/F(0),Z,Third*,Pan,Fixed,Snap,Opposed,"2'7"""
+U-Z-T-P/S(0),Z,Third*,Pan,Sliding,Mech.,Opposed,"3'11"""
+U-Z-T-R/F,Z,Third*,Rib,Fixed,Hand,Facing,"5'5"""
+U-Z-T-R/S,Z,Third*,Rib,Sliding,Mech.,Facing,"4'5"""

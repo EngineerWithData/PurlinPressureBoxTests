@@ -1,0 +1,1065 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vacuum-chamber tests of cold-formed C and Z purlin roofs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>  :root{
+    --paper:#f1f0ec; --card:#fbfaf7; --ink:#15202f; --slate:#5c6b7d; --faint:#8b97a5;
+    --rule:#d3d6da; --hair:#e2e4e6; --direct:#2f7d5a; --direct-soft:#cfe3d8;
+    --qual:#c25a16; --qual-soft:#f0dcc9; --absent:#a6adb6; --navy:#1b2a44; --track:#e4e5e3;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#101820; --card:#17212b; --ink:#e4e2db; --slate:#9aa7b4; --faint:#6d7b89;
+      --rule:#2c3a49; --hair:#232f3c; --direct:#5fbe8c; --direct-soft:#1e4436;
+      --qual:#f08640; --qual-soft:#4a2e18; --absent:#5b6875; --navy:#c3cedd; --track:#22303d;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#101820; --card:#17212b; --ink:#e4e2db; --slate:#9aa7b4; --faint:#6d7b89;
+    --rule:#2c3a49; --hair:#232f3c; --direct:#5fbe8c; --direct-soft:#1e4436;
+    --qual:#f08640; --qual-soft:#4a2e18; --absent:#5b6875; --navy:#c3cedd; --track:#22303d;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--paper);color:var(--ink);
+    font-family:"IBM Plex Sans","Segoe UI",Helvetica,Arial,sans-serif;font-size:15px;line-height:1.55;
+    -webkit-font-smoothing:antialiased;margin:0}
+  .wrap{max-width:1340px;margin:0 auto;padding:0 20px;padding-block:44px 64px;display:flex;flex-direction:column;gap:38px}
+  .eyebrow{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--slate);margin:0 0 14px}
+  h1{font-family:"IBM Plex Sans Condensed","IBM Plex Sans",sans-serif;font-weight:700;
+    font-size:clamp(28px,4.2vw,44px);line-height:1.05;letter-spacing:-.015em;margin:0;text-wrap:balance}
+  .lede{margin:14px 0 0;max-width:66ch;color:var(--slate);font-size:16px}
+  .rule-heavy{height:2px;background:var(--ink);margin-top:22px;opacity:.85}
+  .sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+  h2{font-family:"IBM Plex Sans Condensed","IBM Plex Sans",sans-serif;font-weight:600;font-size:22px;margin:0}
+  .sec-meta{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--faint);letter-spacing:.04em}
+  .sec-note{margin:0 0 18px;color:var(--slate);font-size:14px;max-width:74ch}
+  .register{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px}
+  .src{background:var(--card);border:1px solid var(--hair);border-top:3px solid var(--navy);padding:14px 16px 15px}
+  .src-tag{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:13px;color:var(--ink)}
+  .src-cite{font-size:13.5px;color:var(--slate);margin-top:3px;font-style:italic}
+  .src-title{font-size:13.5px;margin-top:7px;line-height:1.45}
+  .src-exp{font-size:12.5px;margin-top:8px;line-height:1.5;color:var(--slate)}
+  .tagrow{display:flex;flex-wrap:wrap;gap:5px;margin-top:11px}
+  .ttag{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.02em;padding:2px 6px;
+    border:1px solid var(--rule);color:var(--slate);background:var(--paper);white-space:nowrap;cursor:help}
+  .legend{display:flex;flex-wrap:wrap;gap:8px 26px;padding:14px 16px;background:var(--card);border:1px solid var(--hair)}
+  .leg{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--slate)}
+  .leg b{color:var(--ink);font-weight:500}
+  .mk{display:inline-flex;align-items:center;justify-content:center;width:17px;height:17px;flex:0 0 17px;
+    border-radius:2px;font-size:11px;font-weight:700;line-height:1}
+  .mk.direct{background:var(--direct-soft);color:var(--direct)}
+  .mk.qual{background:var(--qual-soft);color:var(--qual)}
+  .mk.absent{background:transparent;color:var(--absent);border:1px solid var(--rule)}
+  .qcode{font-family:"IBM Plex Mono",monospace;font-size:9.5px;font-weight:600;letter-spacing:.06em;
+    color:var(--qual);text-transform:uppercase}
+  .scroll{overflow-x:auto;border:1px solid var(--rule);background:var(--card)}
+  table{border-collapse:collapse;width:100%;font-size:13.5px}
+  thead th{position:sticky;top:0;z-index:3;background:var(--card);
+    font-family:"IBM Plex Sans Condensed","IBM Plex Sans",sans-serif;font-weight:600;font-size:12px;
+    letter-spacing:.06em;text-transform:uppercase;color:var(--slate);text-align:left;vertical-align:bottom;
+    padding:12px 12px 9px;border-bottom:2px solid var(--ink);white-space:nowrap}
+  thead th .code{display:block;font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.01em;
+    text-transform:none;color:var(--ink);font-weight:600}
+  thead th .yr{display:block;font-size:11px;text-transform:none;letter-spacing:0;color:var(--faint);
+    font-weight:400;font-style:italic}
+  tbody td{padding:11px 12px;border-bottom:1px solid var(--hair);vertical-align:top}
+  tbody tr:hover td{background:color-mix(in srgb,var(--navy) 4%,transparent)}
+  tr.role-break td{background:var(--paper);border-bottom:1px solid var(--rule);padding:9px 12px 7px}
+  tr.role-break span{font-family:"IBM Plex Sans Condensed","IBM Plex Sans",sans-serif;font-size:11.5px;
+    font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--slate)}
+  .c-var{min-width:250px}
+  th.c-var,td.c-var{position:sticky;left:0;z-index:2;background:var(--card)}
+  thead th.c-var{z-index:4}
+  tr.role-break td.c-var{background:var(--paper)}
+  tbody tr:hover td.c-var{background:color-mix(in srgb,var(--navy) 4%,var(--card))}
+  .vname{font-weight:600;font-size:14px;line-height:1.3}
+  .vdesc{color:var(--slate);font-size:12.5px;line-height:1.45;margin-top:3px;max-width:38ch}
+  .c-unit{min-width:96px;white-space:nowrap}
+  .unit{font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:13px}
+  .unit-si{display:block;font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--faint);margin-top:3px}
+  .c-avail{min-width:128px}
+  .bar{display:flex;height:6px;background:var(--track);overflow:hidden;margin-bottom:5px}
+  .bar span{display:block;height:100%}
+  .bar .s-direct{background:var(--direct)}
+  .bar .s-qual{background:var(--qual)}
+  .avail-n{font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-weight:600;font-variant-numeric:tabular-nums}
+  .avail-sub{font-size:11px;color:var(--faint);margin-top:1px}
+  .cell{display:flex;gap:7px;align-items:flex-start}
+  .cell-body{min-width:0}
+  .sym{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500;line-height:1.35;word-break:break-word}
+  .sym.none{color:var(--absent);font-style:italic;font-family:inherit;font-size:12.5px}
+  .from{display:inline-block;margin-top:4px;margin-right:3px;font-family:"IBM Plex Mono",monospace;font-size:10px;
+    color:var(--slate);border:1px solid var(--rule);padding:1px 5px;cursor:help;white-space:nowrap}
+  .conv{display:inline-block;margin-top:4px;font-family:"IBM Plex Mono",monospace;font-size:10px;
+    color:var(--qual);border:1px solid var(--qual);padding:1px 5px;white-space:nowrap}
+  .qnote{font-size:11.5px;color:var(--slate);margin-top:3px;line-height:1.4;font-style:italic}
+  .c-paper{min-width:176px}
+  .notes{border-top:2px solid var(--ink);padding-top:18px;display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+  .note h3{font-family:"IBM Plex Sans Condensed","IBM Plex Sans",sans-serif;font-size:13px;letter-spacing:.07em;
+    text-transform:uppercase;color:var(--slate);margin:0 0 7px;font-weight:600}
+  .note p,.note li{margin:0 0 9px;font-size:13.5px;color:var(--slate);line-height:1.55}
+  .note ul{margin:0;padding-left:18px}
+  .note code{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink);background:var(--card);
+    padding:1px 4px;border:1px solid var(--hair)}
+  .colophon{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--faint);letter-spacing:.03em}
+  @media (max-width:640px){
+    .wrap{padding-block:32px 48px;gap:30px}
+    th.c-var,td.c-var{position:static}
+    .c-var{min-width:210px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<p class="eyebrow">SteelData Initiative &middot; Module 4 &middot; Harmonization</p>
+<h1>Summary Table of Common Measured Variables</h1>
+<div class="rule-heavy"></div>
+<p class="lede"><strong>Vacuum-chamber tests of cold-formed C and Z purlin roofs.</strong> All nine MBMA reports are full-scale vacuum-chamber load tests of cold-formed C- and Z-purlin roof assemblies, reporting a measured failure load (or moment), the observed failure mode, the measured purlin geometry and coupon yield stress, and a comparison with an AISI or base-test predicted capacity. They diverge in span arrangement (single-span base tests vs two- and three-span lapped systems), panel system (through-fastened vs standing seam with various clips and insulation), load direction (gravity in most, gravity plus uplift in MBMA_8404), and in how strength is normalised — line load in plf, moment in kip-in., or pressure in psf — while MBMA_7506 alone reports instrument-level strain, deflection and rotation histories.</p>
+</header>
+<section>
+<div class="sec-head"><h2>Source register</h2><span class="sec-meta">8 PAPERS &middot; 73 TABLES</span></div>
+<p class="sec-note">Chips are the tag of every extracted table read for that paper. Every mark in the concordance carries the tag it came from, so a row resolves back to a file on disk.</p>
+<div class="register">
+<article class="src">
+<div class="src-tag">MBMA_7506</div>
+<div class="src-cite">Linehan, P.W. and Guedelhoefer, O.C. (1975)</div>
+<div class="src-title">Full-Scale Vacuum-Chamber Gravity Load Tests of Z and C Purlin Roof Systems</div>
+<div class="src-exp">Two full-scale three-span continuous roof purlin assemblies (one 8 in. Z purlin system and one 7 in. C purlin system, each with two purlin lines and through-fastened metal roof deck) were loaded to failure with simulated gravity load in a vacuum chamber while strain gages, support load cells, potentiometers and optical deflection targets were read at each load increment.</div>
+<div class="tagrow"><span class="ttag" title="MBMA_7506_TABLE1_ZPURLINLOADCOMPARISONS &mdash; pp.10 &mdash; Comparison of approximate (manometer) and load-cell-computed vacuum pressures, with interior-to-exterior support reaction ratio, for each load increment of the Z purlin gravity load test.">T1 Comparison of approximat…</span><span class="ttag" title="MBMA_7506_TABLE2_CPURLINLOADCOMPARISONS &mdash; pp.11 &mdash; Comparison of approximate (manometer) and load-cell-computed vacuum pressures, with interior-to-exterior support reaction ratio, for each load increment of the C purlin gravity load test.">T2 Comparison of approximat…</span><span class="ttag" title="MBMA_7506_TABLEA_ZPURLINSENSORREADINGS &mdash; pp.51-56 &mdash; All sensor readings (strain gages, support load cells, potentiometers and optically read vertical deflections) recorded at each vacuum load increment of the Z purlin gravity load test.">TA All sensor readings (str…</span><span class="ttag" title="MBMA_7506_TABLEB_ZPURLINROTATIONMOVEMENT &mdash; pp.58-59 &mdash; Cross-section rotation angle and horizontal movement components derived from paired potentiometer readings at each load increment of the Z purlin gravity load test.">TB Cross-section rotation a…</span><span class="ttag" title="MBMA_7506_TABLEC_CPURLINSENSORREADINGS &mdash; pp.61-68 &mdash; All sensor readings (strain gages, support load cells, potentiometers and optically read vertical deflections) recorded at each vacuum load increment of the C purlin gravity load test.">TC All sensor readings (str…</span><span class="ttag" title="MBMA_7506_TABLED_CPURLINROTATIONMOVEMENT &mdash; pp.70-72 &mdash; Cross-section rotation angle and horizontal movement components derived from paired potentiometer readings at each load increment of the C purlin gravity load test.">TD Cross-section rotation a…</span><span class="ttag" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; pp.6-8, 10-11 &mdash; Maximum/failure gravity load reached in the two full-scale three-span vacuum-chamber roof purlin system tests (one Z purlin system, one C purlin system).">TS1 Maximum/failure gravity …</span></div>
+</article>
+<article class="src">
+<div class="src-tag">MBMA_8404</div>
+<div class="src-cite">Hendrick, D. and Murray, T.M. (1984)</div>
+<div class="src-title">Simple Span Cold-Formed C-Purlin Supported Roof System Tests</div>
+<div class="src-exp">Sixteen full-scale, simple-span cold-formed 9x3 C-purlin supported roof assemblies (four purlin lines, through-fastened 26 gage panels) were loaded to failure in a vacuum chamber under simulated gravity (7 tests) and simulated uplift (9 tests), with measured cross-section dimensions, tensile coupon properties and AISI constrained-bending predicted loads reported for comparison.</div>
+<div class="tagrow"><span class="ttag" title="MBMA_8404_TABLE11_TESTMATRIX &mdash; pp.7 &mdash; Configuration parameters (gage, purlin orientation, clips, torsional restraint, intermediate bracing) for the sixteen simple-span C-purlin roof-system tests.">T1.1 Configuration parameters…</span><span class="ttag" title="MBMA_8404_TABLE21_MEASUREDCPURLINDIMENSIONS &mdash; pp.18 &mdash; Measured cross-section dimensions of the two interior (test) 9x3 C-purlins used in each of the sixteen tests.">T2.1 Measured cross-section d…</span><span class="ttag" title="MBMA_8404_TABLE22_CPURLINPROPERTIES &mdash; pp.20 &mdash; Computed cross-sectional properties, AISI moment capacities and uniform-load/deflection values for each interior test purlin, based on measured dimensions and an assumed yield stress of 56 ksi.">T2.2 Computed cross-sectional…</span><span class="ttag" title="MBMA_8404_TABLE31_GRAVITYTESTRESULTS &mdash; pp.26 &mdash; Predicted (AISI constrained bending) and measured failure loads, failure modes and configurations for the seven simulated gravity loading tests.">T3.1 Predicted (AISI constrai…</span><span class="ttag" title="MBMA_8404_TABLE32_UPLIFTTESTRESULTS &mdash; pp.27 &mdash; Predicted (AISI constrained bending reference) and measured failure loads, failure modes and bracing configurations for the nine simulated uplift loading tests.">T3.2 Predicted (AISI constrai…</span><span class="ttag" title="MBMA_8404_TABLE33_COUPONTESTRESULTS &mdash; pp.36 &mdash; Standard tensile coupon test results (thickness, width, yield stress, ultimate stress and elongation) for samples cut from the test purlins of each test.">T3.3 Standard tensile coupon …</span><span class="ttag" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; pp.26-27, 36, 42, 52, 61, 70, 80, 89, 99, 110, 120, 130, 140, 150, 160, 170, 180, 190 &mdash; Ultimate (failure) loads of sixteen full-scale, simple-span, cold-formed C-purlin supported roof system tests (seven simulated gravity and nine simulated uplift) loaded to failure in a vacuum chamber, with the corresponding AISI constrained-bending reference loads, test-to-predicted ratios and observed failure modes.">TS1 Ultimate (failure) loads…</span></div>
+</article>
+<article class="src">
+<div class="src-tag">MBMA_8903</div>
+<div class="src-cite">Brooks, S. and Murray, T.M. (1989)</div>
+<div class="src-title">A Method for Determining the Strength of Z- and C-Purlin Supported Standing Seam Roof Systems (MBMA Report 8903)</div>
+<div class="src-exp">Eighteen full-scale vacuum-chamber gravity load tests (nine single-span base tests and nine three-span confirming tests) of Z- and C-purlin supported standing seam roof systems with different panel, clip, bracing and purlin-orientation configurations were loaded to failure, and the measured three-span strengths were compared with predictions of the base test method.</div>
+<div class="tagrow"><span class="ttag" title="MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS &mdash; pp.11 &mdash; Configuration (purlin, bracing, panel, clip, orientation and three-span lap length) of each of the nine test sets in the program.">T2.1 Configuration (purlin, b…</span><span class="ttag" title="MBMA_8903_TABLE31_COUPONTESTRESULTS &mdash; pp.21 &mdash; Average measured thickness, yield stress, tensile strength and elongation from standard ASTM tensile coupons cut from the web of representative purlins for each test.">T3.1 Average measured thickne…</span><span class="ttag" title="MBMA_8903_TABLE32_RAFTERBRACEDTESTRESULTS &mdash; pp.23 &mdash; Measured failure loads and observed failure modes of the single span base tests and three span confirming tests with bracing at the rafters only.">T3.2 Measured failure loads a…</span><span class="ttag" title="MBMA_8903_TABLE33_THIRDPOINTBRACEDTESTRESULTS &mdash; pp.25 &mdash; Measured failure loads and observed failure modes of the single span base tests and three span confirming tests braced at the rafters and third points.">T3.3 Measured failure loads a…</span><span class="ttag" title="MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED &mdash; pp.27 &mdash; Comparison of measured three span failure loads with loads predicted by the base test method for the rafter braced test sets.">T4.1 Comparison of measured t…</span><span class="ttag" title="MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED &mdash; pp.28 &mdash; Comparison of measured three span failure loads with loads predicted by the base test method for the third point braced test sets.">T4.2 Comparison of measured t…</span><span class="ttag" title="MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE &mdash; pp.29 &mdash; Base test method predictions computed in this study compared with two-span continuous test failure loads reported earlier by Carballo, Holzer and Murray.">T4.3 Base test method predict…</span><span class="ttag" title="MBMA_8903_TABLECRPS1_PURLINGEOMCRPS1 &mdash; pp.74 &mdash; Measured cross-section geometry, coupon yield stress and computed flexural capacity of the two C-purlin lines of base test C-R-P/S-1.">TC-R-P Measured cross-section g…</span><span class="ttag" title="MBMA_8903_TABLECRPS3_PURLINGEOMCRPS3 &mdash; pp.78 &mdash; Measured cross-section geometry, coupon yield stress and computed flexural capacity of the nine C-purlins of three span confirming test C-R-P/S-3.">TC-R-P Measured cross-section g…</span><span class="ttag" title="MBMA_8903_TABLES1_STRENGTHSUMMARY &mdash; pp.23, 25, 27, 28, 35-120 &mdash; Measured ultimate (failure) loads, corresponding base-test failure moments and failure modes for all eighteen full-scale vacuum-chamber gravity load tests (nine single-span base tests and nine multi-span confirming tests) of Z- and C-purlin supported standing seam roof systems.">TS1 Measured ultimate (failu…</span><span class="ttag" title="MBMA_8903_TABLEZRPF1_PURLINGEOMZRPF1 &mdash; pp.56 &mdash; Measured cross-section geometry, coupon yield stress and computed flexural capacity of the two purlin lines of base test Z-R-P/F-1.">TZ-R-P Measured cross-section g…</span><span class="ttag" title="MBMA_8903_TABLEZRPF3_PURLINGEOMZRPF3 &mdash; pp.61 &mdash; Measured cross-section geometry, coupon yield stress and computed flexural capacity of the nine purlins of three span confirming test Z-R-P/F-3.">TZ-R-P Measured cross-section g…</span><span class="ttag" title="MBMA_8903_TABLEZRPS1_PURLINGEOMZRPS1 &mdash; pp.65 &mdash; Measured cross-section geometry, yield stress and computed flexural capacity of the two purlin lines of base test Z-R-P/S-1.">TZ-R-P Measured cross-section g…</span><span class="ttag" title="MBMA_8903_TABLEZRPS3_PURLINGEOMZRPS3 &mdash; pp.69 &mdash; Measured cross-section geometry, coupon yield stress and computed flexural capacity of the nine purlins of three span confirming test Z-R-P/S-3.">TZ-R-P Measured cross-section g…</span><span class="ttag" title="MBMA_8903_TABLEZRRF10_PURLINGEOMZRRF1OPP &mdash; pp.83 &mdash; Measured cross-section geometry, coupon yield stress and computed flexural capacity of the two opposed purlin lines of base test Z-R-R/F-1 (0).">TZ-R-R Measured cross-section g…</span><span class="ttag" title="MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1 &mdash; pp.47 &mdash; Measured cross-section geometry, coupon yield stress and computed flexural capacity of the two purlin lines of base test Z-R-R/F-1.">TZ-R-R Measured cross-section g…</span><span class="ttag" title="MBMA_8903_TABLEZRRF30_PURLINGEOMZRRF3OPP &mdash; pp.88-89 &mdash; Measured cross-section geometry, coupon yield stress and computed flexural capacity of the twelve opposed purlins of three span confirming test Z-R-R/F-3 (0).">TZ-R-R Measured cross-section g…</span><span class="ttag" title="MBMA_8903_TABLEZRRF3_PURLINGEOMZRRF3 &mdash; pp.51 &mdash; Measured cross-section geometry, coupon yield stress and computed flexural capacity of the nine purlins of three span confirming test Z-R-R/F-3.">TZ-R-R Measured cross-section g…</span><span class="ttag" title="MBMA_8903_TABLEZRRS1_PURLINGEOMZRRS1 &mdash; pp.37 &mdash; Measured cross-section geometry, coupon yield stress and computed flexural capacity of the two purlin lines of base test Z-R-R/S-1.">TZ-R-R Measured cross-section g…</span><span class="ttag" title="MBMA_8903_TABLEZRRS3_PURLINGEOMZRRS3 &mdash; pp.42 &mdash; Measured cross-section geometry, coupon yield stress and computed flexural capacity of the nine purlins of three span confirming test Z-R-R/S-3.">TZ-R-R Measured cross-section g…</span><span class="ttag" title="MBMA_8903_TABLEZTPF1_PURLINGEOMZTPF1 &mdash; pp.95 &mdash; Measured cross-section geometry, coupon yield stress and computed flexural capacity of the two purlin lines of third point braced base test Z-T-P/F-1.">TZ-T-P Measured cross-section g…</span><span class="ttag" title="MBMA_8903_TABLEZTPF3_PURLINGEOMZTPF3 &mdash; pp.99 &mdash; Measured cross-section geometry, coupon yield stress and computed flexural capacity of the nine purlins of third point braced three span confirming test Z-T-P/F-3.">TZ-T-P Measured cross-section g…</span><span class="ttag" title="MBMA_8903_TABLEZTPS1_PURLINGEOMZTPS1 &mdash; pp.104 &mdash; Measured cross-section geometry, coupon yield stress and computed flexural capacity of the two purlin lines of third point braced base test Z-T-P/S-1.">TZ-T-P Measured cross-section g…</span><span class="ttag" title="MBMA_8903_TABLEZTPS3_PURLINGEOMZTPS3 &mdash; pp.108 &mdash; Measured cross-section geometry, coupon yield stress and computed flexural capacity of the nine purlins of third point braced three span confirming test Z-T-P/S-3.">TZ-T-P Measured cross-section g…</span><span class="ttag" title="MBMA_8903_TABLEZTRS1_PURLINGEOMZTRS1 &mdash; pp.113 &mdash; Measured cross-section geometry, coupon yield stress and computed flexural capacity of the two purlin lines of third point braced base test Z-T-R/S-1.">TZ-T-R Measured cross-section g…</span><span class="ttag" title="MBMA_8903_TABLEZTRS3_PURLINGEOMZTRS3 &mdash; pp.118 &mdash; Measured cross-section geometry, coupon yield stress and computed flexural capacity of the nine purlins of third point braced three span confirming test Z-T-R/S-3.">TZ-T-R Measured cross-section g…</span></div>
+</article>
+<article class="src">
+<div class="src-tag">MBMA_9002</div>
+<div class="src-cite">Rayburn, L. and Murray, T.M. (1990)</div>
+<div class="src-title">Base Test Method for Gravity Loaded Standing Seam Roof Systems</div>
+<div class="src-exp">Seventeen single-span, two-purlin-line standing seam roof assemblies (Z- and C-purlins with rib or pan panels, sliding or fixed clips, with and without blanket insulation, at 20, 25 and 30 ft spans) were loaded to failure by gravity (vacuum chamber) pressure, and tensile coupons were cut from the web of each failed purlin.</div>
+<div class="tagrow"><span class="ttag" title="MBMA_9002_TABLE31_TESTCONFIGURATIONMATRIX &mdash; pp.16 &mdash; Matrix of the 17 single-span base test configurations, giving purlin type and orientation, panel and clip type, presence of insulation, and span length.">T3.1 Matrix of the 17 single-…</span><span class="ttag" title="MBMA_9002_TABLE41_SERIESITESTRESULTS &mdash; pp.27 &mdash; Measured failure moments and computed section strengths for the four Series I single-span base tests (Z-purlins, flanges opposed, rib deck with sliding clips).">T4.1 Measured failure moments…</span><span class="ttag" title="MBMA_9002_TABLE42_SERIESIITESTRESULTS &mdash; pp.29 &mdash; Measured failure moments and computed section strengths for the four Series II single-span base tests (Z-purlins facing the same direction, rib deck with sliding clips).">T4.2 Measured failure moments…</span><span class="ttag" title="MBMA_9002_TABLE43_SERIESIIITESTRESULTS &mdash; pp.30 &mdash; Measured failure moments and computed section strengths for the five Series III single-span base tests (9 in. C-purlins facing, pan deck with fixed clips, 25 ft span).">T4.3 Measured failure moments…</span><span class="ttag" title="MBMA_9002_TABLE44_SERIESIVTESTRESULTS &mdash; pp.32 &mdash; Measured failure moments and computed section strengths for the four Series IV single-span base tests conducted at 20 ft and 30 ft spans.">T4.4 Measured failure moments…</span><span class="ttag" title="MBMA_9002_TABLE45_TENSILECOUPONTESTRESULTS &mdash; pp.34 &mdash; Tensile coupon results (thickness, yield stress, tensile strength, elongation) for coupons cut from the web of the failed purlin of each of the 17 base tests.">T4.5 Tensile coupon results (…</span><span class="ttag" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; pp.27, 29, 30, 32, 47, 52, 57, 62, 68, 73, 78, 83, 89, 94, 99, 104, 109, 115, 120, 125, 130 &mdash; Experimental failure loads, failure moments and failure modes of the seventeen single-span, two-purlin-line, gravity-loaded (vacuum chamber) standing seam roof base tests conducted in Series I through IV.">TS1 Experimental failure loa…</span></div>
+</article>
+<article class="src">
+<div class="src-tag">MBMA_9610</div>
+<div class="src-cite">Fisher, J.M. and Nunnery, J.N. (1996)</div>
+<div class="tagrow"><span class="ttag" title="MBMA_9610_TABLE1_BASETESTSAMEDIRECTION &mdash; pp.4 &mdash; Base-test results (span, section properties, failure load, test moment and test-to-nominal moment ratio) for eight 8.5 in. deep Z-purlin standing seam roof assemblies with both purlins facing the same direction.">T1 Base-test results (span,…</span><span class="ttag" title="MBMA_9610_TABLE2_BASETESTOPPOSEDPURLINS &mdash; pp.4 &mdash; Base-test results for seven 8.5 in. deep Z-purlin standing seam roof assemblies tested with the purlins in the opposed orientation.">T2 Base-test results for se…</span><span class="ttag" title="MBMA_9610_TABLE3_PURLINPHYSICALDIMENSIONS &mdash; pp.5 &mdash; Measured cross-sectional dimensions of the Z-purlins used in all fifteen base tests.">T3 Measured cross-sectional…</span><span class="ttag" title="MBMA_9610_TABLE4_ANCHORAGEFORCETESTEVAL &mdash; pp.6 &mdash; Anchorage force, diaphragm shear and required diaphragm strength computed from the AISI anchorage equation for the eight 8 in. Zee base tests of Table 1.">T4 Anchorage force, diaphra…</span><span class="ttag" title="MBMA_9610_TABLE5_ANCHORAGEREQ100FTROOF &mdash; pp.6 &mdash; Predicted anchorage forces and diaphragm shear requirements at the first interior support for a 100 ft wide flat roof plane, computed for the same eight purlin configurations as the base tests.">T5 Predicted anchorage forc…</span><span class="ttag" title="MBMA_9610_TABLES1_STRENGTHSUMMARY &mdash; pp.4, 6 &mdash; Measured ultimate loads, test moments and failure modes of fifteen single-span, two-purlin-line standing seam roof base tests on 8.5 in. zee purlins loaded in simulated gravity (vacuum chamber) loading, with purlins either facing the same direction or opposed.">TS1 Measured ultimate loads,…</span></div>
+</article>
+<article class="src">
+<div class="src-tag">MBMA_9704</div>
+<div class="src-cite">Almoney, K. and Murray, T.M. (1998)</div>
+<div class="src-title">Vacuum Chamber Tests of Three-Span Continuous Lapped Z-Purlin Systems: Shear Plus Bending Limit State</div>
+<div class="src-exp">Six three-span continuous lapped Z-purlin assemblies (two purlin lines, 20 ft spans, through-fastened roof panel) were loaded to failure with simulated gravity load in a vacuum chamber, and the measured failure loads and modes were compared with AISI shear-plus-bending predictions.</div>
+<div class="tagrow"><span class="ttag" title="MBMA_9704_TABLE21_TESTMATRIX &mdash; pp.8 &mdash; Test matrix listing the purlin size, span and lap length into each of the three bays for the six three-span continuous lapped Z-purlin tests.">T2.1 Test matrix listing the …</span><span class="ttag" title="MBMA_9704_TABLE22_TENSILECOUPONTESTRESULTS &mdash; pp.8 &mdash; Standard tensile coupon test results for coupons machined from undamaged web material of the failed purlin in each test.">T2.2 Standard tensile coupon …</span><span class="ttag" title="MBMA_9704_TABLE31_UNITYCHECKCALCRESULTS &mdash; pp.16 &mdash; Required and nominal moment and shear values with resulting unity checks in the positive and negative moment regions at the recorded failure load of each test.">T3.1 Required and nominal mom…</span><span class="ttag" title="MBMA_9704_TABLE32_SUMMARYOFTESTRESULTS &mdash; pp.16 &mdash; Comparison of measured failure loads with the loads predicted by the shear plus bending limit state, with an indication of whether the expected failure mode occurred.">T3.2 Comparison of measured f…</span><span class="ttag" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; pp.8,16,22,31,42,55,68,81 &mdash; Measured ultimate (failure) loads of the six three-span, two-purlin-line continuous lapped Z-purlin vacuum-chamber tests, with the corresponding observed failure modes, coupon properties and AISI shear-plus-bending predicted loads.">TS1 Measured ultimate (failu…</span></div>
+</article>
+<article class="src">
+<div class="src-tag">MBMA_9804</div>
+<div class="src-cite">Bryant, M.R. and Murray, T.M. (1999)</div>
+<div class="src-title">Investigation of Inflection Points as Brace Points in Multi-Span Purlin Roof Systems</div>
+<div class="src-exp">Seven full-scale multi-span continuous C- and Z-purlin roof assemblies (through-fastened and standing seam panels, lapped at interior supports) were loaded to failure under simulated uniform gravity load in a vacuum chamber, and the measured failure loads were compared with 1996 AISI predicted strengths computed under three negative-moment bracing assumptions.</div>
+<div class="tagrow"><span class="ttag" title="MBMA_9804_TABLE21_TESTMATRIX &mdash; pp.24 &mdash; Configuration matrix of the seven multi-span purlin roof tests (purlin type, depth, panel type and span arrangement).">T2.1 Configuration matrix of …</span><span class="ttag" title="MBMA_9804_TABLE22_TESTDETAILS &mdash; pp.30 &mdash; Detailed span lengths, lap lengths and panel types for each of the seven tests.">T2.2 Detailed span lengths, l…</span><span class="ttag" title="MBMA_9804_TABLE31_TENSILETESTRESULTS &mdash; pp.37 &mdash; Measured tensile coupon properties of material cut from the web of a failed purlin in each test.">T3.1 Measured tensile coupon …</span><span class="ttag" title="MBMA_9804_TABLE32_FAILURELOADSANDLOCATIONS &mdash; pp.38 &mdash; Applied uniform line load at failure and the observed failure location for each of the seven vacuum-chamber gravity load tests.">T3.2 Applied uniform line loa…</span><span class="ttag" title="MBMA_9804_TABLE51_PURLINPROPERTIES &mdash; pp.64 &mdash; Section and material properties of the failed purlin in each test used for the AISI strength predictions.">T5.1 Section and material pro…</span><span class="ttag" title="MBMA_9804_TABLE52_STRENGTHIPNOTBRACEPOINT &mdash; pp.65 &mdash; Predicted strengths and failure loads from the 1996 AISI Specifications assuming the inflection point is NOT a brace point (Cb = 1.0), compared with experimental failure loads.">T5.2 Predicted strengths and …</span><span class="ttag" title="MBMA_9804_TABLE53_STRENGTHIPASBRACEPOINT &mdash; pp.65 &mdash; Predicted strengths and failure loads from the 1996 AISI Specifications assuming the inflection point IS a brace point (Cb from Eq. C3.1.2-11), compared with experimental failure loads.">T5.3 Predicted strengths and …</span><span class="ttag" title="MBMA_9804_TABLE54_STRENGTHFULLYBRACED &mdash; pp.66 &mdash; Predicted strengths and failure loads assuming the negative moment region is fully braced (negative moment strength equal to the effective yield moment), compared with experimental failure loads.">T5.4 Predicted strengths and …</span><span class="ttag" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; pp.29, 38, 65, 66, 78, 93, 107, 123, 139, 151, 161 &mdash; Measured failure (ultimate) loads, governing moments, failure modes and test-to-predicted ratios for the seven full-scale multi-span continuous C- and Z-purlin roof assemblies tested under simulated uniform gravity load in a vacuum chamber.">TS1 Measured failure (ultima…</span></div>
+</article>
+<article class="src">
+<div class="src-tag">MBMA_9906</div>
+<div class="src-cite">Trout, A.M. and Murray, T.M. (2000)</div>
+<div class="src-title">Base Test Method: Gravity Loading Tests of Standing Seam Roof Systems (Series 1-10)</div>
+<div class="src-exp">Single-span, two-purlin-line standing seam roof assemblies with Z-purlins of varying depth, thickness and flange width, several standing seam clip types, 22/24 gage panels and with or without insulation were loaded to failure by gravity (downward) vacuum-chamber pressure to measure failure loads, maximum moments and experimental base-test reduction factors (Rt).</div>
+<div class="tagrow"><span class="ttag" title="MBMA_9906_TABLE41_TESTMATRIX &mdash; pp.22 &mdash; Overview of the ten gravity-loading base test series listing number of tests, span, purlin depth and flange width, panel gage, insulation and bracing.">T4.1 Overview of the ten grav…</span><span class="ttag" title="MBMA_9906_TABLE51_AVGRVALUESFLANGEWIDTH &mdash; pp.35 &mdash; Average experimental Rt-values for the controlling clip type compared between 2 1/2 in. and 3 1/2 in. purlin flange widths for 10 in. deep purlins with 22 and 24 gage panels.">T5.1 Average experimental Rt-…</span><span class="ttag" title="MBMA_9906_TABLE52_AVGRVALUESPANELTHICKNESS &mdash; pp.39 &mdash; Average experimental Rt-values for the controlling clip type compared between 22 and 24 gage roof panels for 8 in. and 10 in. deep purlins.">T5.2 Average experimental Rt-…</span><span class="ttag" title="MBMA_9906_TABLE61_GRAVITYBASETESTSUMMARY &mdash; pp.48 &mdash; Summary of the six gravity loading base test results (three thin and three thick 8 in. purlins) used in the illustrative example, with averages and standard deviations.">T6.1 Summary of the six gravi…</span><span class="ttag" title="MBMA_9906_TABLEA_MEASUREDFLANGEWIDTHS &mdash; pp.185-614 &mdash; Measured top and bottom flange widths of the ridge and eave purlins of each base test, from the per-test 'Measured Dimensions' cross-section drawings.">TA Measured top and bottom …</span><span class="ttag" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; pp.53-192, 195, 200, 208, 216, 226, 234, 239, 246, 253, 260, 267, 274, 281, 288, 295, 302, 309, 316, 323, 330, 338, 345, 352, 359, 366, 373, 380-545, 546-619 &mdash; Measured ultimate (failure) loads, maximum moments and reduction factors of single-span, two-purlin-line, gravity (vacuum-chamber) loaded standing seam roof system base tests reported in Appendices A, B, C, D, E, F, G, H and I (Series 1, 2, 3, 5, 6, 7, 8, 9 and 10) of this report.">TS1 Measured ultimate (failu…</span></div>
+</article>
+</div>
+</section>
+<section>
+<div class="legend"><span class="leg"><span class="mk direct">&check;</span><b>Direct</b> &mdash; reported as its own column</span><span class="leg"><span class="mk qual">&check;</span><b>Implied</b> &mdash; stated in a note, not a column</span><span class="leg"><span class="mk qual">&check;</span><b>Inferred</b> &mdash; needs outside context or a figure</span><span class="leg"><span class="mk qual">&check;</span><b>Simulated</b> &mdash; from a model or code equation</span><span class="leg"><span class="mk absent">&times;</span><b>Absent</b> &mdash; not addressed</span></div>
+</section>
+<section>
+<div class="sec-head"><h2>Concordance</h2><span class="sec-meta">65 CANONICAL VARIABLES &middot; 0 IN EVERY PAPER</span></div>
+<p class="sec-note">Rows are grouped by what the quantity does in the experiment, measured outputs first. Hover a tag chip for the full table tag it resolves to.</p>
+<div class="scroll">
+<table>
+<thead>
+<tr><th class="c-var">Common variable</th><th class="c-unit">Canonical unit</th><th class="c-avail">Availability</th><th class="c-paper"><span class="code">MBMA_7506</span><span class="yr">Linehan, P.W. and Guedelhoefer, O.C. (1975)</span></th><th class="c-paper"><span class="code">MBMA_8404</span><span class="yr">Hendrick, D. and Murray, T.M. (1984)</span></th><th class="c-paper"><span class="code">MBMA_8903</span><span class="yr">Brooks, S. and Murray, T.M. (1989)</span></th><th class="c-paper"><span class="code">MBMA_9002</span><span class="yr">Rayburn, L. and Murray, T.M. (1990)</span></th><th class="c-paper"><span class="code">MBMA_9610</span><span class="yr">Fisher, J.M. and Nunnery, J.N. (1996)</span></th><th class="c-paper"><span class="code">MBMA_9704</span><span class="yr">Almoney, K. and Murray, T.M. (1998)</span></th><th class="c-paper"><span class="code">MBMA_9804</span><span class="yr">Bryant, M.R. and Murray, T.M. (1999)</span></th><th class="c-paper"><span class="code">MBMA_9906</span><span class="yr">Trout, A.M. and Murray, T.M. (2000)</span></th></tr>
+</thead>
+<tbody>
+<tr class="role-break"><td class="c-var" colspan="11"><span>Measured output</span></td></tr>
+<tr>
+<td class="c-var"><div class="vname">Measured failure load</div><div class="vdesc">The ultimate uniform load per purlin line (or equivalent applied pressure) reached when the test assembly failed, the primary strength result of each test.</div></td>
+<td class="c-unit"><span class="unit">plf</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:87.5%"></span></div><div class="avail-n">7 / 8 &middot; 88%</div><div class="avail-sub">7 direct &middot; 1 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">failure_load_as_printed<br>failure_load_unit</div><span class="from" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="conv" title="reported in psf, converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">p_test_plf<br>failure_load_as_printed</div><span class="from" title="MBMA_8404_TABLE31_GRAVITYTESTRESULTS &mdash; Table 3.1">T3.1</span><span class="from" title="MBMA_8404_TABLE32_UPLIFTTESTRESULTS &mdash; Table 3.2">T3.2</span><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">failure_load_plf<br>wu_base_plf<br>wu_3span_plf<br>wu_2span_plf<br>failure_load_as_printed</div><span class="from" title="MBMA_8903_TABLE32_RAFTERBRACEDTESTRESULTS &mdash; Table 3.2">T3.2</span><span class="from" title="MBMA_8903_TABLE33_THIRDPOINTBRACEDTESTRESULTS &mdash; Table 3.3">T3.3</span><span class="from" title="MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED &mdash; Table 4.1">T4.1</span><span class="from" title="MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED &mdash; Table 4.2">T4.2</span><span class="from" title="MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE &mdash; Table 4.3">T4.3</span><span class="from" title="MBMA_8903_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">failure_load_as_printed</div><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">actual_failure_load_plf<br>failure_load_as_printed</div><span class="from" title="MBMA_9704_TABLE32_SUMMARYOFTESTRESULTS &mdash; Table 3.2">T3.2</span><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">applied_load_at_failure_plf<br>failure_load_as_printed</div><span class="from" title="MBMA_9804_TABLE32_FAILURELOADSANDLOCATIONS &mdash; Table 3.2">T3.2</span><span class="from" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">failure_load_as_printed</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Observed failure mode</div><div class="vdesc">Description of how the assembly failed (local buckling, lateral movement, brace or fastener failure), used to interpret the measured strength.</div></td>
+<td class="c-unit"><span class="unit">text</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:87.5%"></span></div><div class="avail-n">7 / 8 &middot; 88%</div><div class="avail-sub">7 direct &middot; 1 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">failure_mode</div><span class="from" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">failure_mode</div><span class="from" title="MBMA_8404_TABLE31_GRAVITYTESTRESULTS &mdash; Table 3.1">T3.1</span><span class="from" title="MBMA_8404_TABLE32_UPLIFTTESTRESULTS &mdash; Table 3.2">T3.2</span><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">failure_mode</div><span class="from" title="MBMA_8903_TABLE32_RAFTERBRACEDTESTRESULTS &mdash; Table 3.2">T3.2</span><span class="from" title="MBMA_8903_TABLE33_THIRDPOINTBRACEDTESTRESULTS &mdash; Table 3.3">T3.3</span><span class="from" title="MBMA_8903_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">failure_mode</div><span class="from" title="MBMA_9002_TABLE41_SERIESITESTRESULTS &mdash; Table 4.1">T4.1</span><span class="from" title="MBMA_9002_TABLE42_SERIESIITESTRESULTS &mdash; Table 4.2">T4.2</span><span class="from" title="MBMA_9002_TABLE43_SERIESIIITESTRESULTS &mdash; Table 4.3">T4.3</span><span class="from" title="MBMA_9002_TABLE44_SERIESIVTESTRESULTS &mdash; Table 4.4">T4.4</span><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">failure_mode</div><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">failure_location<br>failure_mode</div><span class="from" title="MBMA_9804_TABLE32_FAILURELOADSANDLOCATIONS &mdash; Table 3.2">T3.2</span><span class="from" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">failure_mode</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Measured failure moment</div><div class="vdesc">Bending moment in the purlin corresponding to the measured failure load, the strength result expressed as a moment.</div></td>
+<td class="c-unit"><span class="unit">kip-in.</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:62.5%"></span></div><div class="avail-n">5 / 8 &middot; 62%</div><div class="avail-sub">5 direct &middot; 3 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">failure_moment_as_printed<br>failure_moment_unit</div><span class="from" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">mus_kip_in<br>failure_moment_as_printed</div><span class="from" title="MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED &mdash; Table 4.1">T4.1</span><span class="from" title="MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED &mdash; Table 4.2">T4.2</span><span class="from" title="MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE &mdash; Table 4.3">T4.3</span><span class="from" title="MBMA_8903_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="conv" title="reported in in.-kips, converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">mus_in_kips<br>failure_moment_as_printed</div><span class="from" title="MBMA_9002_TABLE41_SERIESITESTRESULTS &mdash; Table 4.1">T4.1</span><span class="from" title="MBMA_9002_TABLE42_SERIESIITESTRESULTS &mdash; Table 4.2">T4.2</span><span class="from" title="MBMA_9002_TABLE43_SERIESIIITESTRESULTS &mdash; Table 4.3">T4.3</span><span class="from" title="MBMA_9002_TABLE44_SERIESIVTESTRESULTS &mdash; Table 4.4">T4.4</span><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="conv" title="reported in in-kips, converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">failure_moment_as_printed</div><span class="from" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="conv" title="reported in kip in., converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">failure_moment_as_printed</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Chamber pressure at failure</div><div class="vdesc">Air-pressure differential in the vacuum chamber at the instant of failure, the raw measurement from which line loads are computed.</div></td>
+<td class="c-unit"><span class="unit">psf</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:50.0%"></span></div><div class="avail-n">4 / 8 &middot; 50%</div><div class="avail-sub">4 direct &middot; 4 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">load_approx_psf<br>load_psf</div><span class="from" title="MBMA_7506_TABLE1_ZPURLINLOADCOMPARISONS &mdash; Table 1">T1</span><span class="from" title="MBMA_7506_TABLE2_CPURLINLOADCOMPARISONS &mdash; Table 2">T2</span><span class="from" title="MBMA_7506_TABLEA_ZPURLINSENSORREADINGS &mdash; Table A">TA</span><span class="from" title="MBMA_7506_TABLEC_CPURLINSENSORREADINGS &mdash; Table C">TC</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">pressure_at_failure_psf</div><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">failure_pressure_in_h2o</div><span class="from" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="conv" title="reported in in. of water, converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">pressure_in_h2o<br>failure_pressure_in_h2o</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="conv" title="reported in in. H2O, converted to the canonical unit">check</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Cross-section rotation</div><div class="vdesc">Rotation of the purlin cross-section computed from paired potentiometer readings, showing torsional response.</div></td>
+<td class="c-unit"><span class="unit">degrees</span><span class="unit-si">= 0.01745 rad</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">angle_deg</div><span class="from" title="MBMA_7506_TABLEB_ZPURLINROTATIONMOVEMENT &mdash; Table B">TB</span><span class="from" title="MBMA_7506_TABLED_CPURLINROTATIONMOVEMENT &mdash; Table D">TD</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Deck buckling onset load</div><div class="vdesc">Applied load at which buckling of the roof deck was first observed, an intermediate event prior to failure.</div></td>
+<td class="c-unit"><span class="unit">psf</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">deck_buckling_onset_psf</div><span class="from" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Expected failure mode occurred</div><div class="vdesc">Yes/No record of whether the predicted limit state was the one actually observed in the test.</div></td>
+<td class="c-unit"><span class="unit">text</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">expected_failure_mode<br>expected_failure_mode_flag</div><span class="from" title="MBMA_9704_TABLE32_SUMMARYOFTESTRESULTS &mdash; Table 3.2">T3.2</span><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Lateral movement of cross-section</div><div class="vdesc">Horizontal (lateral) movement of the purlin cross-section derived from the paired potentiometer readings, with its two components and total.</div></td>
+<td class="c-unit"><span class="unit">in.</span><span class="unit-si">= 25.4 mm</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">horiz_move_1_in<br>horiz_move_2_in<br>horiz_move_total_in</div><span class="from" title="MBMA_7506_TABLEB_ZPURLINROTATIONMOVEMENT &mdash; Table B">TB</span><span class="from" title="MBMA_7506_TABLED_CPURLINROTATIONMOVEMENT &mdash; Table D">TD</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Load computed from load cells</div><div class="vdesc">Uniform load back-calculated from the measured support reactions at each increment, cross-checking the manometer pressure.</div></td>
+<td class="c-unit"><span class="unit">psf</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">load_computed_psf<br>computed_load_at_last_increment_psf</div><span class="from" title="MBMA_7506_TABLE1_ZPURLINLOADCOMPARISONS &mdash; Table 1">T1</span><span class="from" title="MBMA_7506_TABLE2_CPURLINLOADCOMPARISONS &mdash; Table 2">T2</span><span class="from" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Maximum measured purlin stress</div><div class="vdesc">Maximum tensile and compressive stresses in the purlins computed from the strain gage readings during the test.</div></td>
+<td class="c-unit"><span class="unit">psi</span><span class="unit-si">= 0.00689 MPa</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">max_tensile_stress_psi<br>max_compressive_stress_psi</div><span class="from" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Measured deflections</div><div class="vdesc">Displacements of the purlins and deck measured by potentiometers and by optical survey at each load increment.</div></td>
+<td class="c-unit"><span class="unit">in.</span><span class="unit-si">= 25.4 mm</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">sensor_69 … sensor_108<br>sensor_52 … sensor_90</div><span class="from" title="MBMA_7506_TABLEA_ZPURLINSENSORREADINGS &mdash; Table A">TA</span><span class="from" title="MBMA_7506_TABLEC_CPURLINSENSORREADINGS &mdash; Table C">TC</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Strain gage readings</div><div class="vdesc">Strains recorded by gages on the purlin cross-sections and on the bracing straps at each load increment.</div></td>
+<td class="c-unit"><span class="unit">microstrain</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">sensor_1 … sensor_66 (gage numbers vary by test)</div><span class="from" title="MBMA_7506_TABLEA_ZPURLINSENSORREADINGS &mdash; Table A">TA</span><span class="from" title="MBMA_7506_TABLEC_CPURLINSENSORREADINGS &mdash; Table C">TC</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Support reaction at load cells</div><div class="vdesc">Load-cell reaction measured under a purlin at exterior and interior supports at each load increment, used to check load distribution and continuity.</div></td>
+<td class="c-unit"><span class="unit">lb</span><span class="unit-si">= 4.448 N</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">sensor_67_lb<br>sensor_50_lb<br>sensor_68_lb<br>sensor_51_lb</div><span class="from" title="MBMA_7506_TABLE1_ZPURLINLOADCOMPARISONS &mdash; Table 1">T1</span><span class="from" title="MBMA_7506_TABLE2_CPURLINLOADCOMPARISONS &mdash; Table 2">T2</span><span class="from" title="MBMA_7506_TABLEA_ZPURLINSENSORREADINGS &mdash; Table A">TA</span><span class="from" title="MBMA_7506_TABLEC_CPURLINSENSORREADINGS &mdash; Table C">TC</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr class="role-break"><td class="c-var" colspan="11"><span>Material property</span></td></tr>
+<tr>
+<td class="c-var"><div class="vname">Yield stress of purlin steel</div><div class="vdesc">Yield stress of the purlin steel measured on tensile coupons, the key material input to computed capacities.</div></td>
+<td class="c-unit"><span class="unit">ksi</span><span class="unit-si">= 6.895 MPa</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:75.0%"></span></div><div class="avail-n">6 / 8 &middot; 75%</div><div class="avail-sub">6 direct &middot; 2 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">fy_ksi<br>yield_stress_east_ksi<br>yield_stress_west_ksi</div><span class="from" title="MBMA_8404_TABLE33_COUPONTESTRESULTS &mdash; Table 3.3">T3.3</span><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">fy_ksi<br>yield_stress_ksi</div><span class="from" title="MBMA_8903_TABLE31_COUPONTESTRESULTS &mdash; Table 3.1">T3.1</span><span class="from" title="MBMA_8903_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">fy_ksi<br>yield_stress_ksi</div><span class="from" title="MBMA_9002_TABLE45_TENSILECOUPONTESTRESULTS &mdash; Table 4.5">T4.5</span><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">yield_stress_ksi</div><span class="from" title="MBMA_9704_TABLE22_TENSILECOUPONTESTRESULTS &mdash; Table 2.2">T2.2</span><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">yield_stress_ksi<br>fy_ksi</div><span class="from" title="MBMA_9804_TABLE31_TENSILETESTRESULTS &mdash; Table 3.1">T3.1</span><span class="from" title="MBMA_9804_TABLE51_PURLINPROPERTIES &mdash; Table 5.1">T5.1</span><span class="from" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">yield_stress_fy_ksi<br>fy_ksi<br>yield_stress_ksi</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Coupon elongation</div><div class="vdesc">Percent elongation of the tensile coupon at fracture, a measure of the steel's ductility.</div></td>
+<td class="c-unit"><span class="unit">%</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:62.5%"></span></div><div class="avail-n">5 / 8 &middot; 62%</div><div class="avail-sub">5 direct &middot; 3 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">elongation_pct</div><span class="from" title="MBMA_8404_TABLE33_COUPONTESTRESULTS &mdash; Table 3.3">T3.3</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">elongation_pct</div><span class="from" title="MBMA_8903_TABLE31_COUPONTESTRESULTS &mdash; Table 3.1">T3.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">elongation_percent</div><span class="from" title="MBMA_9002_TABLE45_TENSILECOUPONTESTRESULTS &mdash; Table 4.5">T4.5</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">elongation_pct</div><span class="from" title="MBMA_9704_TABLE22_TENSILECOUPONTESTRESULTS &mdash; Table 2.2">T2.2</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">elongation_pct</div><span class="from" title="MBMA_9804_TABLE31_TENSILETESTRESULTS &mdash; Table 3.1">T3.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Tensile strength of purlin steel</div><div class="vdesc">Ultimate tensile strength of the purlin steel from coupon tests, reported alongside yield stress to characterise the material.</div></td>
+<td class="c-unit"><span class="unit">ksi</span><span class="unit-si">= 6.895 MPa</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:62.5%"></span></div><div class="avail-n">5 / 8 &middot; 62%</div><div class="avail-sub">5 direct &middot; 3 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">fu_ksi</div><span class="from" title="MBMA_8404_TABLE33_COUPONTESTRESULTS &mdash; Table 3.3">T3.3</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">fu_ksi</div><span class="from" title="MBMA_8903_TABLE31_COUPONTESTRESULTS &mdash; Table 3.1">T3.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">fu_ksi</div><span class="from" title="MBMA_9002_TABLE45_TENSILECOUPONTESTRESULTS &mdash; Table 4.5">T4.5</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">tensile_strength_ksi</div><span class="from" title="MBMA_9704_TABLE22_TENSILECOUPONTESTRESULTS &mdash; Table 2.2">T2.2</span><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">tensile_strength_ksi</div><span class="from" title="MBMA_9804_TABLE31_TENSILETESTRESULTS &mdash; Table 3.1">T3.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Tensile coupon thickness</div><div class="vdesc">Measured thickness of the tensile coupon machined from the purlin web, reported separately from the section thickness.</div></td>
+<td class="c-unit"><span class="unit">in.</span><span class="unit-si">= 25.4 mm</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:37.5%"></span></div><div class="avail-n">3 / 8 &middot; 38%</div><div class="avail-sub">3 direct &middot; 5 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">thickness_in</div><span class="from" title="MBMA_8404_TABLE33_COUPONTESTRESULTS &mdash; Table 3.3">T3.3</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">thickness_in</div><span class="from" title="MBMA_9002_TABLE45_TENSILECOUPONTESTRESULTS &mdash; Table 4.5">T4.5</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">thickness_in</div><span class="from" title="MBMA_9804_TABLE31_TENSILETESTRESULTS &mdash; Table 3.1">T3.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Tensile coupon width</div><div class="vdesc">Measured width of the reduced section of the tensile coupon, needed to compute coupon stresses.</div></td>
+<td class="c-unit"><span class="unit">in.</span><span class="unit-si">= 25.4 mm</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:25.0%"></span></div><div class="avail-n">2 / 8 &middot; 25%</div><div class="avail-sub">2 direct &middot; 6 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">width_in</div><span class="from" title="MBMA_8404_TABLE33_COUPONTESTRESULTS &mdash; Table 3.3">T3.3</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">width_in</div><span class="from" title="MBMA_9804_TABLE31_TENSILETESTRESULTS &mdash; Table 3.1">T3.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr class="role-break"><td class="c-var" colspan="11"><span>Specimen parameter</span></td></tr>
+<tr>
+<td class="c-var"><div class="vname">Purlin depth</div><div class="vdesc">Depth of the purlin cross-section, the dominant geometric parameter governing bending stiffness and strength.</div></td>
+<td class="c-unit"><span class="unit">in.</span><span class="unit-si">= 25.4 mm</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:87.5%"></span></div><div class="avail-n">7 / 8 &middot; 88%</div><div class="avail-sub">7 direct &middot; 1 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">depth_in</div><span class="from" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">total_depth_in<br>depth_in</div><span class="from" title="MBMA_8404_TABLE21_MEASUREDCPURLINDIMENSIONS &mdash; Table 2.1">T2.1</span><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">Total Depth (inches)<br>depth_in</div><span class="from" title="MBMA_8903_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="from" title="MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1 &mdash; Table Z-R-R">TZ-R-R</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">depth_in</div><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">depth_in</div><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">depth_in</div><span class="from" title="MBMA_9804_TABLE21_TESTMATRIX &mdash; Table 2.1">T2.1</span><span class="from" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">depth_in<br>purlin_depth_in</div><span class="from" title="MBMA_9906_TABLE41_TESTMATRIX &mdash; Table 4.1">T4.1</span><span class="from" title="MBMA_9906_TABLE51_AVGRVALUESFLANGEWIDTH &mdash; Table 5.1">T5.1</span><span class="from" title="MBMA_9906_TABLE52_AVGRVALUESPANELTHICKNESS &mdash; Table 5.2">T5.2</span><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Purlin section shape</div><div class="vdesc">Shape of the cold-formed purlin cross-section (C or Z), which changes the bending and torsional behaviour.</div></td>
+<td class="c-unit"><span class="unit">text</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:87.5%"></span></div><div class="avail-n">7 / 8 &middot; 88%</div><div class="avail-sub">7 direct &middot; 1 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">section_type</div><span class="from" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">section_type</div><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">purlin_type<br>section_type</div><span class="from" title="MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS &mdash; Table 2.1">T2.1</span><span class="from" title="MBMA_8903_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">purlin_type<br>section_type</div><span class="from" title="MBMA_9002_TABLE31_TESTCONFIGURATIONMATRIX &mdash; Table 3.1">T3.1</span><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">section_type</div><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">purlin_type<br>section_type</div><span class="from" title="MBMA_9804_TABLE21_TESTMATRIX &mdash; Table 2.1">T2.1</span><span class="from" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">section_type</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Purlin thickness</div><div class="vdesc">Base-metal thickness of the purlin sheet steel, measured on the section or taken from the designation, controlling local buckling and capacity.</div></td>
+<td class="c-unit"><span class="unit">in.</span><span class="unit-si">= 25.4 mm</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:87.5%"></span></div><div class="avail-n">7 / 8 &middot; 88%</div><div class="avail-sub">7 direct &middot; 1 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">thickness_in</div><span class="from" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">thickness_in</div><span class="from" title="MBMA_8404_TABLE21_MEASUREDCPURLINDIMENSIONS &mdash; Table 2.1">T2.1</span><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">thickness_in<br>Thickness (inches)</div><span class="from" title="MBMA_8903_TABLE31_COUPONTESTRESULTS &mdash; Table 3.1">T3.1</span><span class="from" title="MBMA_8903_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">thickness_in</div><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">thickness_in</div><span class="from" title="MBMA_9704_TABLE22_TENSILECOUPONTESTRESULTS &mdash; Table 2.2">T2.2</span><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">thickness_in</div><span class="from" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">thickness_in<br>purlin_thickness_in</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="from" title="MBMA_9906_TABLE51_AVGRVALUESFLANGEWIDTH &mdash; Table 5.1">T5.1</span><span class="from" title="MBMA_9906_TABLE52_AVGRVALUESPANELTHICKNESS &mdash; Table 5.2">T5.2</span><span class="from" title="MBMA_9906_TABLE61_GRAVITYBASETESTSUMMARY &mdash; Table 6.1">T6.1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Effective section modulus</div><div class="vdesc">Effective section modulus of the purlin computed by AISI effective-width rules, used to obtain the theoretical bending strength.</div></td>
+<td class="c-unit"><span class="unit">in^3</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:37.5%"></span><span class="s-qual" style="width:12.5%"></span></div><div class="avail-n">4 / 8 &middot; 50%</div><div class="avail-sub">3 direct &middot; 1 qualified &middot; 4 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">simulated</span><div class="sym">s_t_strength_in3<br>s_b_strength_in3</div><div class="qnote">Table 2.2 p.20 s_t_strength_in3, s_b_strength_in3</div><span class="from" title="MBMA_8404_TABLE22_CPURLINPROPERTIES &mdash; Table 2.2">T2.2</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">seff_in3</div><span class="from" title="MBMA_9002_TABLE41_SERIESITESTRESULTS &mdash; Table 4.1">T4.1</span><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">se_in3</div><span class="from" title="MBMA_9804_TABLE51_PURLINPROPERTIES &mdash; Table 5.1">T5.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">seff_in3</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Purlin flange width</div><div class="vdesc">Width of the purlin flange, measured or nominal, which controls local buckling of the compression flange.</div></td>
+<td class="c-unit"><span class="unit">in.</span><span class="unit-si">= 25.4 mm</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:37.5%"></span></div><div class="avail-n">3 / 8 &middot; 38%</div><div class="avail-sub">3 direct &middot; 5 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">w1_in<br>w2_in</div><span class="from" title="MBMA_8404_TABLE21_MEASUREDCPURLINDIMENSIONS &mdash; Table 2.1">T2.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">TOP Flange Width (inches)<br>BOTTOM Flange Width (inches)</div><span class="from" title="MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1 &mdash; Table Z-R-R">TZ-R-R</span><span class="from" title="MBMA_8903_TABLECRPS1_PURLINGEOMCRPS1 &mdash; Table C-R-P">TC-R-P</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">flange_width_nominal_in<br>top_flange_width_in<br>bottom_flange_width_in</div><span class="from" title="MBMA_9906_TABLE41_TESTMATRIX &mdash; Table 4.1">T4.1</span><span class="from" title="MBMA_9906_TABLEA_MEASUREDFLANGEWIDTHS &mdash; Table A">TA</span><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Purlin lap length at interior support</div><div class="vdesc">Overlap length of the lapped purlins at an interior support in continuous assemblies, affecting negative-moment strength.</div></td>
+<td class="c-unit"><span class="unit">ft</span><span class="unit-si">= 0.3048 m</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:37.5%"></span></div><div class="avail-n">3 / 8 &middot; 38%</div><div class="avail-sub">3 direct &middot; 5 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">lap_length_3span</div><span class="from" title="MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS &mdash; Table 2.1">T2.1</span><span class="from" title="MBMA_8903_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="conv" title="reported in ft-in., converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">lap_length_ft</div><span class="from" title="MBMA_9704_TABLE21_TESTMATRIX &mdash; Table 2.1">T2.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">total_lap_ft<br>lap_into_test_bay_ft</div><span class="from" title="MBMA_9804_TABLE22_TESTDETAILS &mdash; Table 2.2">T2.2</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Edge stiffener (lip) length</div><div class="vdesc">Length or vertical dimension of the edge stiffening lip on the purlin flange, which stiffens the flange against local buckling.</div></td>
+<td class="c-unit"><span class="unit">in.</span><span class="unit-si">= 25.4 mm</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:25.0%"></span></div><div class="avail-n">2 / 8 &middot; 25%</div><div class="avail-sub">2 direct &middot; 6 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">t1_in<br>t2_in</div><span class="from" title="MBMA_8404_TABLE21_MEASUREDCPURLINDIMENSIONS &mdash; Table 2.1">T2.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">TOP<br>BOTTOM Vertical Lip Dimension (inches)</div><span class="from" title="MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1 &mdash; Table Z-R-R">TZ-R-R</span><span class="from" title="MBMA_8903_TABLECRPS1_PURLINGEOMCRPS1 &mdash; Table C-R-P">TC-R-P</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Gross moment of inertia</div><div class="vdesc">Gross moment of inertia of the purlin cross-section about the bending axis, computed from the measured dimensions.</div></td>
+<td class="c-unit"><span class="unit">in^4</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:25.0%"></span></div><div class="avail-n">2 / 8 &middot; 25%</div><div class="avail-sub">2 direct &middot; 6 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">i_gross_in4</div><span class="from" title="MBMA_8404_TABLE22_CPURLINPROPERTIES &mdash; Table 2.2">T2.2</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">Gross Moment of Inertia (inches4)</div><span class="from" title="MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1 &mdash; Table Z-R-R">TZ-R-R</span><span class="from" title="MBMA_8903_TABLECRPS1_PURLINGEOMCRPS1 &mdash; Table C-R-P">TC-R-P</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Lip-to-flange angle</div><div class="vdesc">Angle between the edge stiffening lip and the flange it stiffens, a key geometric variable for stiffener effectiveness.</div></td>
+<td class="c-unit"><span class="unit">degrees</span><span class="unit-si">= 0.01745 rad</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:25.0%"></span></div><div class="avail-n">2 / 8 &middot; 25%</div><div class="avail-sub">2 direct &middot; 6 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">theta1_deg<br>theta2_deg</div><span class="from" title="MBMA_8404_TABLE21_MEASUREDCPURLINDIMENSIONS &mdash; Table 2.1">T2.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">TOP Lip Angle (degree)<br>BOTTOM Lip Angle (degree)</div><span class="from" title="MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1 &mdash; Table Z-R-R">TZ-R-R</span><span class="from" title="MBMA_8903_TABLECRPS1_PURLINGEOMCRPS1 &mdash; Table C-R-P">TC-R-P</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Corner bend radii</div><div class="vdesc">Inside bend radii at the web-to-flange and flange-to-lip corners of the cold-formed section.</div></td>
+<td class="c-unit"><span class="unit">in.</span><span class="unit-si">= 25.4 mm</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">r1_in<br>r4_in<br>r2_in<br>r3_in</div><span class="from" title="MBMA_8404_TABLE21_MEASUREDCPURLINDIMENSIONS &mdash; Table 2.1">T2.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Gross section moduli</div><div class="vdesc">Gross (unreduced) section moduli of the purlin referred to the top and bottom extreme fibres.</div></td>
+<td class="c-unit"><span class="unit">in^3</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">s_t_gross_in3<br>s_b_gross_in3</div><span class="from" title="MBMA_8404_TABLE22_CPURLINPROPERTIES &mdash; Table 2.2">T2.2</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Unbraced length to inflection point</div><div class="vdesc">Unbraced length taken as the distance from the end of the lap to the theoretical inflection point, used in lateral-buckling checks.</div></td>
+<td class="c-unit"><span class="unit">in.</span><span class="unit-si">= 25.4 mm</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">lb_in</div><span class="from" title="MBMA_9804_TABLE51_PURLINPROPERTIES &mdash; Table 5.1">T5.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr class="role-break"><td class="c-var" colspan="11"><span>Derived ratio</span></td></tr>
+<tr>
+<td class="c-var"><div class="vname">Test-to-predicted strength ratio</div><div class="vdesc">Measured failure load or moment divided by the corresponding computed capacity, the headline measure of prediction accuracy.</div></td>
+<td class="c-unit"><span class="unit">—</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:75.0%"></span></div><div class="avail-n">6 / 8 &middot; 75%</div><div class="avail-sub">6 direct &middot; 2 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">p_test_over_p_pred<br>actual_to_predicted_ratio</div><span class="from" title="MBMA_8404_TABLE31_GRAVITYTESTRESULTS &mdash; Table 3.1">T3.1</span><span class="from" title="MBMA_8404_TABLE32_UPLIFTTESTRESULTS &mdash; Table 3.2">T3.2</span><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">wu_over_wp3<br>wu_over_wp2<br>actual_to_predicted_load_ratio</div><span class="from" title="MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED &mdash; Table 4.1">T4.1</span><span class="from" title="MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED &mdash; Table 4.2">T4.2</span><span class="from" title="MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE &mdash; Table 4.3">T4.3</span><span class="from" title="MBMA_8903_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">r_percent</div><span class="from" title="MBMA_9002_TABLE41_SERIESITESTRESULTS &mdash; Table 4.1">T4.1</span><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="conv" title="reported in %, converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">percent_of_predicted_load</div><span class="from" title="MBMA_9704_TABLE32_SUMMARYOFTESTRESULTS &mdash; Table 3.2">T3.2</span><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="conv" title="reported in %, converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">exp_over_pred_critical<br>exp_to_pred_ip_not_brace_point<br>exp_to_pred_ip_brace_point</div><span class="from" title="MBMA_9804_TABLE52_STRENGTHIPNOTBRACEPOINT &mdash; Table 5.2">T5.2</span><span class="from" title="MBMA_9804_TABLE53_STRENGTHIPASBRACEPOINT &mdash; Table 5.3">T5.3</span><span class="from" title="MBMA_9804_TABLE54_STRENGTHFULLYBRACED &mdash; Table 5.4">T5.4</span><span class="from" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">r_value<br>rt_value<br>r_value_2<br>r_value_test_to_predicted</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="from" title="MBMA_9906_TABLE61_GRAVITYBASETESTSUMMARY &mdash; Table 6.1">T6.1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Unity check / interaction ratio</div><div class="vdesc">Ratio of required to nominal strength at the failure load, including the AISI shear-plus-bending interaction check.</div></td>
+<td class="c-unit"><span class="unit">—</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:25.0%"></span></div><div class="avail-n">2 / 8 &middot; 25%</div><div class="avail-sub">2 direct &middot; 6 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">unity_check_pos<br>unity_check_neg<br>mu_over_mnxo_neg<br>vu_over_vn</div><span class="from" title="MBMA_9704_TABLE31_UNITYCHECKCALCRESULTS &mdash; Table 3.1">T3.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">exp_over_pred_shear_bending</div><span class="from" title="MBMA_9804_TABLE52_STRENGTHIPNOTBRACEPOINT &mdash; Table 5.2">T5.2</span><span class="from" title="MBMA_9804_TABLE53_STRENGTHIPASBRACEPOINT &mdash; Table 5.3">T5.3</span><span class="from" title="MBMA_9804_TABLE54_STRENGTHFULLYBRACED &mdash; Table 5.4">T5.4</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Average Rt and percent difference</div><div class="vdesc">Average experimental base-test reduction factors for compared parameter sets and the percent difference between them, used to judge whether a parameter matters.</div></td>
+<td class="c-unit"><span class="unit">%</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">average_rt_x100<br>percent_difference<br>note</div><span class="from" title="MBMA_9906_TABLE51_AVGRVALUESFLANGEWIDTH &mdash; Table 5.1">T5.1</span><span class="from" title="MBMA_9906_TABLE52_AVGRVALUESPANELTHICKNESS &mdash; Table 5.2">T5.2</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Base test reduction factor R</div><div class="vdesc">Standing seam roof strength reduction factor from the AISI Base Test Method, applied to the purlin capacity (1.00 for through-fastened).</div></td>
+<td class="c-unit"><span class="unit">—</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">r</div><span class="from" title="MBMA_9804_TABLE51_PURLINPROPERTIES &mdash; Table 5.1">T5.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Interior/exterior reaction ratio</div><div class="vdesc">Ratio of interior to exterior support reaction, showing how much continuity the three-span assembly developed.</div></td>
+<td class="c-unit"><span class="unit">—</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">ratio_68_over_67<br>ratio_51_over_50</div><span class="from" title="MBMA_7506_TABLE1_ZPURLINLOADCOMPARISONS &mdash; Table 1">T1</span><span class="from" title="MBMA_7506_TABLE2_CPURLINLOADCOMPARISONS &mdash; Table 2">T2</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr class="role-break"><td class="c-var" colspan="11"><span>Predicted value</span></td></tr>
+<tr>
+<td class="c-var"><div class="vname">Predicted failure load</div><div class="vdesc">Uniform line load per purlin line predicted to cause failure by a code or base-test calculation, compared with the measured value.</div></td>
+<td class="c-unit"><span class="unit">plf</span></td>
+<td class="c-avail"><div class="bar"><span class="s-qual" style="width:75.0%"></span></div><div class="avail-n">6 / 8 &middot; 75%</div><div class="avail-sub">6 qualified &middot; 2 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">simulated</span><div class="sym">p_pred_plf<br>w_u_plf<br>aisi_predicted_load_plf</div><div class="qnote">Table 2.2 p.20; Tables 3.1/3.2; Table S1</div><span class="from" title="MBMA_8404_TABLE22_CPURLINPROPERTIES &mdash; Table 2.2">T2.2</span><span class="from" title="MBMA_8404_TABLE31_GRAVITYTESTRESULTS &mdash; Table 3.1">T3.1</span><span class="from" title="MBMA_8404_TABLE32_UPLIFTTESTRESULTS &mdash; Table 3.2">T3.2</span><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">simulated</span><div class="sym">wp3_plf<br>wp2_plf</div><div class="qnote">Tables 4.1-4.3 pp.27-29</div><span class="from" title="MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED &mdash; Table 4.1">T4.1</span><span class="from" title="MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED &mdash; Table 4.2">T4.2</span><span class="from" title="MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE &mdash; Table 4.3">T4.3</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">simulated</span><div class="sym">predicted_constrained_bending_failure_load_plf</div><div class="qnote">Table S1, from appendix summaries</div><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">simulated</span><div class="sym">predicted_failure_load_plf</div><div class="qnote">Table 3.2 p.16; Table S1</div><span class="from" title="MBMA_9704_TABLE32_SUMMARYOFTESTRESULTS &mdash; Table 3.2">T3.2</span><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">simulated</span><div class="sym">predicted_failure_load_plf</div><div class="qnote">Tables 5.2-5.4 pp.65-66</div><span class="from" title="MBMA_9804_TABLE52_STRENGTHIPNOTBRACEPOINT &mdash; Table 5.2">T5.2</span><span class="from" title="MBMA_9804_TABLE53_STRENGTHIPASBRACEPOINT &mdash; Table 5.3">T5.3</span><span class="from" title="MBMA_9804_TABLE54_STRENGTHFULLYBRACED &mdash; Table 5.4">T5.4</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">simulated</span><div class="sym">theoretical_line_load_plf</div><div class="qnote">Table S1 theoretical_line_load_plf</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Computed flexural capacity</div><div class="vdesc">Nominal or allowable flexural capacity of the purlin computed from the measured section and yield stress, the benchmark for the test moment.</div></td>
+<td class="c-unit"><span class="unit">kip-in.</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:50.0%"></span><span class="s-qual" style="width:12.5%"></span></div><div class="avail-n">5 / 8 &middot; 62%</div><div class="avail-sub">4 direct &middot; 1 qualified &middot; 3 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">simulated</span><div class="sym">m_c_ftk<br>m_t_ftk<br>m_w_ftk<br>m_u_ftk</div><div class="qnote">Table 2.2 p.20</div><span class="from" title="MBMA_8404_TABLE22_CPURLINPROPERTIES &mdash; Table 2.2">T2.2</span><span class="conv" title="reported in ft-kips, converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">maisi_kip_in</div><span class="from" title="MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED &mdash; Table 4.1">T4.1</span><span class="from" title="MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED &mdash; Table 4.2">T4.2</span><span class="from" title="MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE &mdash; Table 4.3">T4.3</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">mn_in_kips</div><span class="from" title="MBMA_9002_TABLE41_SERIESITESTRESULTS &mdash; Table 4.1">T4.1</span><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="conv" title="reported in in-kips, converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">se_fy_kip_in</div><span class="from" title="MBMA_9804_TABLE51_PURLINPROPERTIES &mdash; Table 5.1">T5.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">theoretical_moment_kip_in<br>mnt_kip_in</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="from" title="MBMA_9906_TABLE61_GRAVITYBASETESTSUMMARY &mdash; Table 6.1">T6.1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Analysed required moments</div><div class="vdesc">Positive- and negative-region moments computed from a stiffness analysis of the continuous assembly, used in the prediction of failure load.</div></td>
+<td class="c-unit"><span class="unit">kip-in.</span></td>
+<td class="c-avail"><div class="bar"><span class="s-qual" style="width:25.0%"></span></div><div class="avail-n">2 / 8 &middot; 25%</div><div class="avail-sub">2 qualified &middot; 6 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">simulated</span><div class="sym">mmax_pos_kip_in<br>mmax_neg_kip_in</div><div class="qnote">Tables 4.1-4.3 pp.27-29</div><span class="from" title="MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED &mdash; Table 4.1">T4.1</span><span class="from" title="MBMA_8903_TABLE42_ACTUALVSPREDTHIRDPTBRACED &mdash; Table 4.2">T4.2</span><span class="from" title="MBMA_8903_TABLE43_ACTUALVSPREDFROMREFERENCE &mdash; Table 4.3">T4.3</span><span class="conv" title="reported in in.-kips, converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">simulated</span><div class="sym">mu_pos_ft_kips<br>mu_neg_ft_kips</div><div class="qnote">Table 3.1 p.16</div><span class="from" title="MBMA_9704_TABLE31_UNITYCHECKCALCRESULTS &mdash; Table 3.1">T3.1</span><span class="conv" title="reported in ft-kips, converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Region moment strengths</div><div class="vdesc">Nominal flexural strength assigned to the positive and negative moment regions of a continuous purlin under a given bracing assumption.</div></td>
+<td class="c-unit"><span class="unit">kip-in.</span></td>
+<td class="c-avail"><div class="bar"><span class="s-qual" style="width:25.0%"></span></div><div class="avail-n">2 / 8 &middot; 25%</div><div class="avail-sub">2 qualified &middot; 6 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">simulated</span><div class="sym">mnxo_pos_ft_kips<br>mnxo_neg_ft_kips</div><div class="qnote">Table 3.1 p.16</div><span class="from" title="MBMA_9704_TABLE31_UNITYCHECKCALCRESULTS &mdash; Table 3.1">T3.1</span><span class="conv" title="reported in ft-kips, converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">simulated</span><div class="sym">positive_moment_strength_kip_in<br>negative_moment_strength_kip_in<br>shear_bending_neg_moment_kip_in</div><div class="qnote">Tables 5.2-5.4 pp.65-66</div><span class="from" title="MBMA_9804_TABLE52_STRENGTHIPNOTBRACEPOINT &mdash; Table 5.2">T5.2</span><span class="from" title="MBMA_9804_TABLE53_STRENGTHIPASBRACEPOINT &mdash; Table 5.3">T5.3</span><span class="from" title="MBMA_9804_TABLE54_STRENGTHFULLYBRACED &mdash; Table 5.4">T5.4</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Shear strength and demand</div><div class="vdesc">Nominal shear strength of the purlin web per AISI, and the shear demand at the failure load, used in the shear-plus-bending check.</div></td>
+<td class="c-unit"><span class="unit">kips</span><span class="unit-si">= 4.448 kN</span></td>
+<td class="c-avail"><div class="bar"><span class="s-qual" style="width:25.0%"></span></div><div class="avail-n">2 / 8 &middot; 25%</div><div class="avail-sub">2 qualified &middot; 6 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">simulated</span><div class="sym">vu_kips<br>vn_kips</div><div class="qnote">Table 3.1 p.16</div><span class="from" title="MBMA_9704_TABLE31_UNITYCHECKCALCRESULTS &mdash; Table 3.1">T3.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">simulated</span><div class="sym">shear_strength_kip</div><div class="qnote">Tables 5.2-5.4 pp.65-66</div><span class="from" title="MBMA_9804_TABLE52_STRENGTHIPNOTBRACEPOINT &mdash; Table 5.2">T5.2</span><span class="from" title="MBMA_9804_TABLE53_STRENGTHIPASBRACEPOINT &mdash; Table 5.3">T5.3</span><span class="from" title="MBMA_9804_TABLE54_STRENGTHFULLYBRACED &mdash; Table 5.4">T5.4</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Moment gradient coefficient Cb</div><div class="vdesc">Moment gradient coefficient Cb computed for the negative moment region in the lateral-buckling calculation.</div></td>
+<td class="c-unit"><span class="unit">—</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">cb</div><span class="from" title="MBMA_9804_TABLE51_PURLINPROPERTIES &mdash; Table 5.1">T5.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Predicted critical limit state</div><div class="vdesc">Governing predicted limit state (positive moment, negative moment or combined shear and bending) for each assembly.</div></td>
+<td class="c-unit"><span class="unit">—</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">critical_limit_state</div><span class="from" title="MBMA_9804_TABLE52_STRENGTHIPNOTBRACEPOINT &mdash; Table 5.2">T5.2</span><span class="from" title="MBMA_9804_TABLE53_STRENGTHIPASBRACEPOINT &mdash; Table 5.3">T5.3</span><span class="from" title="MBMA_9804_TABLE54_STRENGTHFULLYBRACED &mdash; Table 5.4">T5.4</span><span class="conv" title="reported in text, converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Allowable element stresses</div><div class="vdesc">Allowable stresses for compression flange, tension flange and web used in the AISI capacity calculation.</div></td>
+<td class="c-unit"><span class="unit">ksi</span><span class="unit-si">= 6.895 MPa</span></td>
+<td class="c-avail"><div class="bar"><span class="s-qual" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 qualified &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">simulated</span><div class="sym">f_c_ksi<br>f_t_ksi<br>f_bw_ksi</div><div class="qnote">Table 2.2 p.20</div><span class="from" title="MBMA_8404_TABLE22_CPURLINPROPERTIES &mdash; Table 2.2">T2.2</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Effective and deflection inertia</div><div class="vdesc">Moments of inertia used in the strength and deflection calculations, together with the computed deflection per unit load.</div></td>
+<td class="c-unit"><span class="unit">in^4</span></td>
+<td class="c-avail"><div class="bar"><span class="s-qual" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 qualified &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">simulated</span><div class="sym">i_strength_in4<br>i_defl_in4<br>delta_per_100_in</div><div class="qnote">Table 2.2 p.20</div><span class="from" title="MBMA_8404_TABLE22_CPURLINPROPERTIES &mdash; Table 2.2">T2.2</span><span class="conv" title="reported in in^4 / in, converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr class="role-break"><td class="c-var" colspan="11"><span>Test condition</span></td></tr>
+<tr>
+<td class="c-var"><div class="vname">Bracing arrangement</div><div class="vdesc">Lateral bracing and anti-roll restraint provided to the purlins, a main variable affecting system strength.</div></td>
+<td class="c-unit"><span class="unit">text</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:87.5%"></span></div><div class="avail-n">7 / 8 &middot; 88%</div><div class="avail-sub">7 direct &middot; 1 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">bracing</div><span class="from" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">intermediate_braces<br>bracing<br>torsional_restraint<br>shear_clips</div><span class="from" title="MBMA_8404_TABLE11_TESTMATRIX &mdash; Table 1.1">T1.1</span><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">bracing</div><span class="from" title="MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS &mdash; Table 2.1">T2.1</span><span class="from" title="MBMA_8903_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">bracing</div><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">bracing</div><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">bracing</div><span class="from" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">bracing</div><span class="from" title="MBMA_9906_TABLE41_TESTMATRIX &mdash; Table 4.1">T4.1</span><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Load direction</div><div class="vdesc">Whether the simulated load acts downward (gravity) or upward (uplift), which changes which flange is in compression.</div></td>
+<td class="c-unit"><span class="unit">text</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:87.5%"></span></div><div class="avail-n">7 / 8 &middot; 88%</div><div class="avail-sub">7 direct &middot; 1 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">load_direction</div><span class="from" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">loading_type<br>load_direction</div><span class="from" title="MBMA_8404_TABLE11_TESTMATRIX &mdash; Table 1.1">T1.1</span><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">load_direction</div><span class="from" title="MBMA_8903_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">load_direction</div><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">load_direction</div><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">load_direction</div><span class="from" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">load_direction</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Number of purlin lines</div><div class="vdesc">Number of parallel purlin lines loaded in the test assembly, which sets how load is shared.</div></td>
+<td class="c-unit"><span class="unit">count</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:87.5%"></span></div><div class="avail-n">7 / 8 &middot; 88%</div><div class="avail-sub">7 direct &middot; 1 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">n_purlin_lines</div><span class="from" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">n_purlin_lines</div><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">n_purlin_lines</div><span class="from" title="MBMA_8903_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">n_purlin_lines</div><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">n_purlin_lines</div><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">n_purlin_lines</div><span class="from" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">n_purlin_lines</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Number of spans</div><div class="vdesc">Number of continuous spans in the tested assembly, distinguishing simple-span base tests from multi-span systems.</div></td>
+<td class="c-unit"><span class="unit">count</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:87.5%"></span></div><div class="avail-n">7 / 8 &middot; 88%</div><div class="avail-sub">7 direct &middot; 1 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">n_spans</div><span class="from" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">n_spans</div><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">no_of_spans<br>n_spans</div><span class="from" title="MBMA_8903_TABLE32_RAFTERBRACEDTESTRESULTS &mdash; Table 3.2">T3.2</span><span class="from" title="MBMA_8903_TABLE33_THIRDPOINTBRACEDTESTRESULTS &mdash; Table 3.3">T3.3</span><span class="from" title="MBMA_8903_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">n_spans</div><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">n_spans</div><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">number_of_spans<br>n_spans</div><span class="from" title="MBMA_9804_TABLE32_FAILURELOADSANDLOCATIONS &mdash; Table 3.2">T3.2</span><span class="from" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">n_spans</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Roof panel type</div><div class="vdesc">Type of roof sheeting attached to the purlins (through-fastened or standing seam, with gage and fastener details), which determines how much restraint the deck gives.</div></td>
+<td class="c-unit"><span class="unit">text</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:87.5%"></span></div><div class="avail-n">7 / 8 &middot; 88%</div><div class="avail-sub">7 direct &middot; 1 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">panel_type</div><span class="from" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">panel_type</div><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">panel_type</div><span class="from" title="MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS &mdash; Table 2.1">T2.1</span><span class="from" title="MBMA_8903_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">panel_type</div><span class="from" title="MBMA_9002_TABLE31_TESTCONFIGURATIONMATRIX &mdash; Table 3.1">T3.1</span><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">panel_type</div><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">panel_type</div><span class="from" title="MBMA_9804_TABLE21_TESTMATRIX &mdash; Table 2.1">T2.1</span><span class="from" title="MBMA_9804_TABLE22_TESTDETAILS &mdash; Table 2.2">T2.2</span><span class="from" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">panel_gage<br>panel_type</div><span class="from" title="MBMA_9906_TABLE41_TESTMATRIX &mdash; Table 4.1">T4.1</span><span class="from" title="MBMA_9906_TABLE51_AVGRVALUESFLANGEWIDTH &mdash; Table 5.1">T5.1</span><span class="from" title="MBMA_9906_TABLE52_AVGRVALUESPANELTHICKNESS &mdash; Table 5.2">T5.2</span><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="conv" title="reported in gage, converted to the canonical unit">check</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Span length</div><div class="vdesc">Span length between supports of the test assembly, the geometric condition that sets the moment for a given load.</div></td>
+<td class="c-unit"><span class="unit">ft</span><span class="unit-si">= 0.3048 m</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:87.5%"></span></div><div class="avail-n">7 / 8 &middot; 88%</div><div class="avail-sub">7 direct &middot; 1 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">span_ft</div><span class="from" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">span_ft</div><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="from" title="MBMA_8404_TABLE11_TESTMATRIX &mdash; Table 1.1">T1.1</span><span class="from" title="MBMA_8404_TABLE22_CPURLINPROPERTIES &mdash; Table 2.2">T2.2</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">span_ft</div><span class="from" title="MBMA_8903_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="conv" title="reported in ft-in., converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">span_length<br>span_ft</div><span class="from" title="MBMA_9002_TABLE31_TESTCONFIGURATIONMATRIX &mdash; Table 3.1">T3.1</span><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="conv" title="reported in ft-in., converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">span_ft</div><span class="from" title="MBMA_9704_TABLE21_TESTMATRIX &mdash; Table 2.1">T2.1</span><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">spans_ft<br>span_ft<br>test_bay_span_ft<br>middle_bay_span_ft<br>end_bay_span_ft</div><span class="from" title="MBMA_9804_TABLE21_TESTMATRIX &mdash; Table 2.1">T2.1</span><span class="from" title="MBMA_9804_TABLE22_TESTDETAILS &mdash; Table 2.2">T2.2</span><span class="from" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">span_ft<br>span_length_ft_in</div><span class="from" title="MBMA_9906_TABLE41_TESTMATRIX &mdash; Table 4.1">T4.1</span><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="conv" title="reported in ft-in / ft, converted to the canonical unit">check</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Deck and purlin self weight</div><div class="vdesc">Self weight of the deck and purlin per foot of purlin line, added to (or excluded from) the applied load when reporting failure load.</div></td>
+<td class="c-unit"><span class="unit">plf</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span><span class="s-qual" style="width:50.0%"></span></div><div class="avail-n">5 / 8 &middot; 62%</div><div class="avail-sub">1 direct &middot; 4 qualified &middot; 3 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">implied</span><div class="sym">?</div><div class="qnote">Header notes to Tables 3.1/3.2 and S1</div><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="from" title="MBMA_8404_TABLE31_GRAVITYTESTRESULTS &mdash; Table 3.1">T3.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">implied</span><div class="sym">failure_load_as_printed (note)</div><div class="qnote">Table S1 header note</div><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">implied</span><div class="sym">self-weight (note)</div><div class="qnote">Table S1 header notes</div><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">implied</span><div class="sym">?</div><div class="qnote">Table S1 header note</div><span class="from" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">weight_of_deck_plf<br>weight_of_purlin_plf</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Purlin spacing / tributary width</div><div class="vdesc">Centre-to-centre spacing of purlin lines (with deck overhang), which fixes the tributary width used to convert chamber pressure to line load.</div></td>
+<td class="c-unit"><span class="unit">ft</span><span class="unit-si">= 0.3048 m</span></td>
+<td class="c-avail"><div class="bar"><span class="s-qual" style="width:62.5%"></span></div><div class="avail-n">5 / 8 &middot; 62%</div><div class="avail-sub">5 qualified &middot; 3 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">implied</span><div class="sym">?</div><div class="qnote">Header note to Table S1</div><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">implied</span><div class="sym">—</div><div class="qnote">Table S1 header notes</div><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">implied</span><div class="sym">purlin spacing (note)<br>3.75 ft tributary width (note)</div><div class="qnote">Table S1 header notes</div><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="conv" title="reported in ft-in, converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">implied</span><div class="sym">?</div><div class="qnote">Table S1 header note</div><span class="from" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">implied</span><div class="sym">?</div><div class="qnote">Table S1 header note</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Purlin flange orientation</div><div class="vdesc">Whether the purlin top flanges face the same direction or are opposed, affecting system torsional behaviour.</div></td>
+<td class="c-unit"><span class="unit">text</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:50.0%"></span></div><div class="avail-n">4 / 8 &middot; 50%</div><div class="avail-sub">4 direct &middot; 4 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">purlin_orientation</div><span class="from" title="MBMA_8404_TABLE11_TESTMATRIX &mdash; Table 1.1">T1.1</span><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">purlin_orientation</div><span class="from" title="MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS &mdash; Table 2.1">T2.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">purlin_orientation</div><span class="from" title="MBMA_9002_TABLE31_TESTCONFIGURATIONMATRIX &mdash; Table 3.1">T3.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">purlin_orientation</div><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Standing seam clip type</div><div class="vdesc">Type of standing seam clip connecting the panel to the purlin (fixed or sliding, low or tall), a key restraint variable.</div></td>
+<td class="c-unit"><span class="unit">text</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:37.5%"></span></div><div class="avail-n">3 / 8 &middot; 38%</div><div class="avail-sub">3 direct &middot; 5 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">clip_type</div><span class="from" title="MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS &mdash; Table 2.1">T2.1</span><span class="from" title="MBMA_8903_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">clip_type</div><span class="from" title="MBMA_9002_TABLE31_TESTCONFIGURATIONMATRIX &mdash; Table 3.1">T3.1</span><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">clip_type<br>controlling_clip_type</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="from" title="MBMA_9906_TABLE51_AVGRVALUESFLANGEWIDTH &mdash; Table 5.1">T5.1</span><span class="from" title="MBMA_9906_TABLE52_AVGRVALUESPANELTHICKNESS &mdash; Table 5.2">T5.2</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Insulation present</div><div class="vdesc">Whether blanket insulation was placed between the purlin flange and the panel, which reduces restraint.</div></td>
+<td class="c-unit"><span class="unit">text</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:25.0%"></span></div><div class="avail-n">2 / 8 &middot; 25%</div><div class="avail-sub">2 direct &middot; 6 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">insulation_used<br>insulation</div><span class="from" title="MBMA_9002_TABLE31_TESTCONFIGURATIONMATRIX &mdash; Table 3.1">T3.1</span><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">insulation</div><span class="from" title="MBMA_9906_TABLE41_TESTMATRIX &mdash; Table 4.1">T4.1</span><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Configuration remarks / support detail</div><div class="vdesc">Narrative notes on the test configuration or support detail that do not fit a numeric column.</div></td>
+<td class="c-unit"><span class="unit">text</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span><span class="s-qual" style="width:12.5%"></span></div><div class="avail-n">2 / 8 &middot; 25%</div><div class="avail-sub">1 direct &middot; 1 qualified &middot; 6 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">remarks</div><span class="from" title="MBMA_8404_TABLE11_TESTMATRIX &mdash; Table 1.1">T1.1</span><span class="from" title="MBMA_8404_TABLE31_GRAVITYTESTRESULTS &mdash; Table 3.1">T3.1</span><span class="from" title="MBMA_8404_TABLE32_UPLIFTTESTRESULTS &mdash; Table 3.2">T3.2</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">implied</span><div class="sym">anti-roll clips<br>web stiffeners (note)</div><div class="qnote">Table S1 header note on anti-roll clips and web stiffeners</div><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Nominal purlin gage</div><div class="vdesc">Nominal sheet gage designation of the purlin material used in the test.</div></td>
+<td class="c-unit"><span class="unit">text</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">nominal_purlin_gage<br>nominal_gage</div><span class="from" title="MBMA_8404_TABLE11_TESTMATRIX &mdash; Table 1.1">T1.1</span><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="conv" title="reported in gage, converted to the canonical unit">check</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Number of tests in series</div><div class="vdesc">Number of individual base tests performed within a test series.</div></td>
+<td class="c-unit"><span class="unit">count</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">number_of_tests</div><span class="from" title="MBMA_9906_TABLE41_TESTMATRIX &mdash; Table 4.1">T4.1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Factor of safety removed</div><div class="vdesc">Safety factor of 1.67 (printed 1.65 in one heading) removed from the AISI allowable moment to form a reference capacity.</div></td>
+<td class="c-unit"><span class="unit">—</span></td>
+<td class="c-avail"><div class="bar"><span class="s-qual" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 qualified &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk qual">&check;</span><div class="cell-body"><span class="qcode">implied</span><div class="sym">?</div><div class="qnote">Table 2.2 column group heading p.20; Table S1 header note</div><span class="from" title="MBMA_8404_TABLE22_CPURLINPROPERTIES &mdash; Table 2.2">T2.2</span><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr class="role-break"><td class="c-var" colspan="11"><span>Identifier</span></td></tr>
+<tr>
+<td class="c-var"><div class="vname">Test identification</div><div class="vdesc">Label identifying each test or specimen, the key for joining all other data of that paper.</div></td>
+<td class="c-unit"><span class="unit">text</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:87.5%"></span></div><div class="avail-n">7 / 8 &middot; 88%</div><div class="avail-sub">7 direct &middot; 1 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">test_id<br>test_no</div><span class="from" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="from" title="MBMA_7506_TABLE1_ZPURLINLOADCOMPARISONS &mdash; Table 1">T1</span><span class="from" title="MBMA_7506_TABLE2_CPURLINLOADCOMPARISONS &mdash; Table 2">T2</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">test_no<br>test_id</div><span class="from" title="MBMA_8404_TABLE11_TESTMATRIX &mdash; Table 1.1">T1.1</span><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">test_identification<br>test_designation<br>test_id</div><span class="from" title="MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS &mdash; Table 2.1">T2.1</span><span class="from" title="MBMA_8903_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">test_identification<br>test<br>test_id</div><span class="from" title="MBMA_9002_TABLE31_TESTCONFIGURATIONMATRIX &mdash; Table 3.1">T3.1</span><span class="from" title="MBMA_9002_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">test_identification<br>test_no<br>test_id</div><span class="from" title="MBMA_9704_TABLE21_TESTMATRIX &mdash; Table 2.1">T2.1</span><span class="from" title="MBMA_9704_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">test_designation<br>test_number<br>identification<br>test_id</div><span class="from" title="MBMA_9804_TABLE21_TESTMATRIX &mdash; Table 2.1">T2.1</span><span class="from" title="MBMA_9804_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">test_id<br>test_no</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="from" title="MBMA_9906_TABLEA_MEASUREDFLANGEWIDTHS &mdash; Table A">TA</span><span class="from" title="MBMA_9906_TABLE61_GRAVITYBASETESTSUMMARY &mdash; Table 6.1">T6.1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Purlin line position</div><div class="vdesc">Which purlin line within the assembly (east/west, ridge/eave, interior/exterior) a measurement refers to.</div></td>
+<td class="c-unit"><span class="unit">text</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:37.5%"></span></div><div class="avail-n">3 / 8 &middot; 38%</div><div class="avail-sub">3 direct &middot; 5 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">purlin_location</div><span class="from" title="MBMA_8404_TABLE21_MEASUREDCPURLINDIMENSIONS &mdash; Table 2.1">T2.1</span><span class="from" title="MBMA_8404_TABLE22_CPURLINPROPERTIES &mdash; Table 2.2">T2.2</span><span class="from" title="MBMA_8404_TABLE33_COUPONTESTRESULTS &mdash; Table 3.3">T3.3</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">ridge<br>eave<br>east_*<br>center_*<br>west_*</div><span class="from" title="MBMA_8903_TABLEZRRF1_PURLINGEOMZRRF1 &mdash; Table Z-R-R">TZ-R-R</span><span class="from" title="MBMA_8903_TABLECRPS1_PURLINGEOMCRPS1 &mdash; Table C-R-P">TC-R-P</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">purlin</div><span class="from" title="MBMA_9906_TABLEA_MEASUREDFLANGEWIDTHS &mdash; Table A">TA</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Value provenance metadata</div><div class="vdesc">Bookkeeping fields giving the table, page or date from which a reported value was taken.</div></td>
+<td class="c-unit"><span class="unit">text</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:37.5%"></span></div><div class="avail-n">3 / 8 &middot; 38%</div><div class="avail-sub">3 direct &middot; 5 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">value_source<br>pages</div><span class="from" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">value_source<br>pages</div><span class="from" title="MBMA_8404_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">date<br>figure</div><span class="from" title="MBMA_9906_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span><span class="from" title="MBMA_9906_TABLE51_AVGRVALUESFLANGEWIDTH &mdash; Table 5.1">T5.1</span><span class="from" title="MBMA_9906_TABLE52_AVGRVALUESPANELTHICKNESS &mdash; Table 5.2">T5.2</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Test series designation</div><div class="vdesc">Series or group label collecting tests that share configuration parameters.</div></td>
+<td class="c-unit"><span class="unit">text</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:25.0%"></span></div><div class="avail-n">2 / 8 &middot; 25%</div><div class="avail-sub">2 direct &middot; 6 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">series</div><span class="from" title="MBMA_9002_TABLE31_TESTCONFIGURATIONMATRIX &mdash; Table 3.1">T3.1</span><span class="from" title="MBMA_9002_TABLE45_TENSILECOUPONTESTRESULTS &mdash; Table 4.5">T4.5</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">series</div><span class="from" title="MBMA_9906_TABLE41_TESTMATRIX &mdash; Table 4.1">T4.1</span></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Deck manufacturer</div><div class="vdesc">Manufacturer of the roof decking used in each full-scale test.</div></td>
+<td class="c-unit"><span class="unit">text</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">deck_manufacturer</div><span class="from" title="MBMA_7506_TABLES1_STRENGTHSUMMARY &mdash; Table S1">TS1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+<tr>
+<td class="c-var"><div class="vname">Purlin size designation</div><div class="vdesc">Manufacturer designation of the Z-purlin section giving depth and nominal thickness.</div></td>
+<td class="c-unit"><span class="unit">text</span></td>
+<td class="c-avail"><div class="bar"><span class="s-direct" style="width:12.5%"></span></div><div class="avail-n">1 / 8 &middot; 12%</div><div class="avail-sub">1 direct &middot; 7 absent</div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk direct">&check;</span><div class="cell-body"><div class="sym">purlin_size</div><span class="from" title="MBMA_9704_TABLE21_TESTMATRIX &mdash; Table 2.1">T2.1</span></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+<td class="c-paper"><div class="cell"><span class="mk absent">&times;</span><div class="cell-body"><div class="sym none">not addressed</div></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="notes">
+<div class="note"><h3>How a row is built</h3><p>Every quantity in every extracted table is inventoried under the exact column name the paper printed, one paper at a time. Those inventories are then clustered by physical meaning, so the same quantity under three different symbols becomes one row. Notation is normalised only at the end, never before the clustering.</p></div>
+<div class="note"><h3>Units</h3><p>One canonical unit per row, the one most common across the sources, with its SI equivalence beside it. A paper reporting in another unit keeps its own value in its CSV and carries a conversion chip here, so the step is visible and reversible.</p></div>
+<div class="note"><h3>Availability</h3><p>The fraction counts every paper where the variable can be obtained at all. The bar splits that into directly reported and qualified, because a row that is fully available but mostly implied is weaker than one that is fully direct, and a single percentage hides it.</p></div>
+<div class="note"><h3>Judgement calls to review</h3><ul><li>Failure load is canonicalized as plf per purlin line, but MBMA_7506 reports it as a uniform pressure in psf; a tributary-width conversion is needed and the tributary width differs between papers (and is explicitly questioned in MBMA_9704, where 3.75 ft is used despite ~5 ft spacing).</li><li>Papers differ on whether the reported failure load includes dead load: MBMA_8404, MBMA_9002, MBMA_9704 and MBMA_9906 include self weight, MBMA_9804 reports applied load separately from total load, and MBMA_8309/MBMA_7506 do not state it.</li><li>Chamber pressure at failure was merged across psf (MBMA_9704) and inches of water (MBMA_9804, MBMA_9906); MBMA_7506's per-increment manometer load was placed here too although it is a load history rather than a single failure value — reviewers may prefer a separate row.</li><li>Test-to-predicted ratio merges dimensionless ratios (MBMA_8309, 8404, 8903, 9804, 9906 Rt) with percentages (MBMA_9704 percent_of_predicted, MBMA_9002 R%). The denominators differ substantially (AISI 1980, AISI 1986, base-test method, shear+bending), so the row should not be pooled statistically without noting the method.</li><li>Computed flexural capacity merges allowable-based values multiplied by a safety factor (MBMA_8309 M1/M2, MBMA_8903 maisi, MBMA_8404 m_u) with nominal SeFy values (MBMA_9002 Mn, MBMA_9804 SeFy, MBMA_9906 Mnt); units include in-kip and ft-kips.</li><li>Measured section thickness and tensile coupon thickness were deliberately kept as separate rows, since several papers report both and they differ.</li><li>Effective section modulus (post-buckling, AISI) was kept separate from gross section moduli; MBMA_8404's s_e_in3 is actually an effective flange width despite its heading and was not placed in either row.</li><li>Flange width, lip length, lip angle and corner radii rows each merge top/bottom (or B/B1) columns of the same paper into one canonical row; per-flange resolution is preserved only in the symbol field.</li><li>MBMA_9610 supplied no inventory content and therefore appears in no row.</li><li>MBMA_9804's 'r' (base test reduction factor) is labelled a material_property in the source but was placed under derived_ratio as it is a system factor, not a steel property.</li><li>MBMA_8309 removed by hand 2026-11-10 (Cris Moen): EXCLUDED 2026-11-10 (Cris Moen): edge-stiffener study on a narrow two-purlin specimen (purlins 18 in. apart under a 34 in. panel, Fig. 3 p.11); failure moments only, panel/fastening/bracing not described; not a roof-system test</li></ul></div>
+<div class="note"><h3>Automatic checks</h3><ul><li>row &quot;Measured failure load&quot; (MBMA_7506): cannot convert &quot;psf&quot; to &quot;plf&quot;; check the unit</li><li>row &quot;Measured failure moment&quot; (MBMA_8903): cannot convert &quot;in.-kips&quot; to &quot;kip-in.&quot;; check the unit</li><li>row &quot;Measured failure moment&quot; (MBMA_9002): cannot convert &quot;in-kips&quot; to &quot;kip-in.&quot;; check the unit</li><li>row &quot;Measured failure moment&quot; (MBMA_9804): cannot convert &quot;kip in.&quot; to &quot;kip-in.&quot;; check the unit</li><li>row &quot;Chamber pressure at failure&quot; (MBMA_9804): cannot convert &quot;in. of water&quot; to &quot;psf&quot;; check the unit</li><li>row &quot;Chamber pressure at failure&quot; (MBMA_9906): cannot convert &quot;in. H2O&quot; to &quot;psf&quot;; check the unit</li><li>row &quot;Yield stress of purlin steel&quot;: paper MBMA_8404 listed twice; kept the first</li><li>row &quot;Purlin lap length at interior support&quot; (MBMA_8903): cannot convert &quot;ft-in.&quot; to &quot;ft&quot;; check the unit</li><li>row &quot;Test-to-predicted strength ratio&quot; (MBMA_9704): cannot convert &quot;%&quot; to &quot;—&quot;; check the unit</li><li>row &quot;Test-to-predicted strength ratio&quot; (MBMA_9002): cannot convert &quot;%&quot; to &quot;—&quot;; check the unit</li><li>row &quot;Computed flexural capacity&quot; (MBMA_9002): cannot convert &quot;in-kips&quot; to &quot;kip-in.&quot;; check the unit</li><li>row &quot;Computed flexural capacity&quot; (MBMA_8404): cannot convert &quot;ft-kips&quot; to &quot;kip-in.&quot;; check the unit</li><li>27 more in the run log</li></ul></div>
+<div class="note"><h3>Traceability</h3><p>Each mark carries the tag of the table it came from, matching the tag line in the extracted CSV. <code>source_tables.csv</code> resolves every tag to a file, a table label and a page range in the original report.</p><p class="colophon">SteelData Initiative &middot; Module 4 &middot; 2026-11-10</p></div>
+</section>
+</div>
+</body>
+</html>

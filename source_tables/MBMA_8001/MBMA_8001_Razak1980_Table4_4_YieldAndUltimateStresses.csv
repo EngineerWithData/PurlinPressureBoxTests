@@ -1,0 +1,21 @@
+# Source: MBMA_8001 | Razak, M.A.A. and Peköz, T. (1980), Table 4.4, pp.81
+# Tag: MBMA_8001_TABLE44_YIELDANDULTIMATESTRESSES
+# Content: Coupon yield stress and the computed maximum web compressive stresses F_bw (stiffened and unstiffened compression flange forms) for each purlin type.
+# Data basis: mixed: measured coupon yield stresses with F_bw computed from Yu's empirical web stress equations
+# Units: all stress columns in ksi
+# Column definitions:
+#   purlin_type = purlin designation letter A–E
+#   fy_ksi = tensile coupon yield stress F_y, ksi
+#   fbw_s_ksi = maximum web compressive stress F_bw for beams with stiffened compression flanges, ksi
+#   fbw_u_ksi = maximum web compressive stress F_bw for beams with unstiffened compression flanges, ksi
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 130 pages)
+# Footnote (1): Computed using the F_bw equation for beams with stiffened compression flanges (Reference 13): F_bw = [1.21 - .000337(h/t)√F_y]F_y.
+# Footnote (2): Computed using the F_bw equation for beams with unstiffened compression flanges (Reference 13): F_bw = [1.257 - .000508(h/t)√F_y]F_y.
+purlin_type,fy_ksi,fbw_s_ksi,fbw_u_ksi
+A,57.3,47.41,38.97
+B,57.6,56.91,53.13
+C,61.5,52.96,44.96
+D,65.9,67.31,64.10
+E,70.5,62.41,54.10

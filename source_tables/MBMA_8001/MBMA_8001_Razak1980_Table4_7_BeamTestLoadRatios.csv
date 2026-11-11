@@ -1,0 +1,32 @@
+# Source: MBMA_8001 | Razak, M.A.A. and Peköz, T. (1980), Table 4.7, pp.84
+# Tag: MBMA_8001_TABLE47_BEAMTESTLOADRATIOS
+# Content: Ratios of observed to computed ultimate loads ((load)_test/(load)_comp) for the beam tests under eight analysis types, with mean and standard deviation statistics.
+# Data basis: mixed: measured beam-test failure loads divided by loads computed with the AISI/Douty approach using various flange effective-width and ultimate-stress assumptions
+# Units: f_kin_per_in_per_rad in kip-in/in/radian; all ratio columns dimensionless
+# Column definitions:
+#   purlin_type = purlin designation letter A–E, or the printed statistic label (Mean, St. Dev., St. Dev./Mean)
+#   f_kin_per_in_per_rad = rotational restraint factor F used in the analysis (channel-braced), kip-in/in/radian
+#   ratio_a = test load / computed load for analysis type (a): F_y, full flange width
+#   ratio_b = test load / computed load for analysis type (b): F_bw, full flange width
+#   ratio_c = test load / computed load for analysis type (c): F_y, stiffened effective width on total widths
+#   ratio_d = test load / computed load for analysis type (d): F_bw, stiffened effective width on total widths
+#   ratio_e = test load / computed load for analysis type (e): F_y, effective width on flat widths
+#   ratio_f = test load / computed load for analysis type (f): F_bw, effective width on flat widths
+#   ratio_g = test load / computed load for analysis type (g): F_y, unstiffened flange effective width
+#   ratio_h = test load / computed load for analysis type (h): F_bw, unstiffened flange effective width
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 130 pages)
+# ANOMALY FLAG: The statistics rows ("Mean", "St. Dev.", "St. Dev./Mean") are printed as part of the table and are retained as data rows with an empty F cell.
+# Footnote (1): See Table 4.5 for further information.
+# Analysis type definitions are the same as for Table 4.6 (see its notes).
+# Printed column footer rows repeat Ultimate Stress (F_y/F_bw), Flange Type (F/S/U) and Basis of eff. w (NA/TW/FW) for each analysis column.
+purlin_type,f_kin_per_in_per_rad,ratio_a,ratio_b,ratio_c,ratio_d,ratio_e,ratio_f,ratio_g,ratio_h
+A,.173,.91,1.06,1.06,1.26,1.00,1.18,3.47,3.47
+B,.392,1.00,1.04,1.06,1.09,1.00,1.04,2.15,2.15
+C,.185,.81,.95,.98,1.18,.90,1.07,3.09,3.09
+D,.413,.97,.98,1.03,1.04,.97,.98,1.96,1.96
+E,.246,.62,.71,.77,.91,.69,.81,2.47,2.47
+Mean,,.86,.95,.98,1.10,.91,1.02,2.63,2.63
+St. Dev.,,.15,.14,.12,.13,.13,.14,.64,.64
+St. Dev./Mean,,.18,.15,.12,.12,.14,.13,.24,.24

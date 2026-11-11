@@ -1,0 +1,994 @@
+{
+  "citation": "Ceco Buildings Division (1988)",
+  "code_tag": "MBMA_8803",
+  "experiment": "A single full-scale three-span continuous roof assembly of 9 1/2 in. Z-purlins (two purlin lines, 30 ft spans, 24 ga. through-fastened ribbed panels) was tested in a vacuum chamber under uplift pressure with 2x2x1/8 in. angle braces at the quarter points of the end-bay bottom (compression) flanges, and the measured failure load was compared with AISI-6 and MBMA Ad Hoc Task Force predictions.",
+  "title": "MBMA Uplift Test #B-1: Discrete Point Braced Compression Flange, Continuous Span 9 1/2 in. Z-Purlin Uplift Test (April 4, 1988 Ceco Buildings Division Report)",
+  "variables": [
+    {
+      "availability": "direct",
+      "definition": "Designation of the uplift test specimen assembly as printed (#B-1 braced test; #3 is the earlier unbraced reference test).",
+      "evidence": "Table 1 p.2; Table 2 p.3; Table S1 pp.2-3,9,11",
+      "name": "Test identification",
+      "note": "",
+      "printed_symbol": "Test #",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_no",
+        "test_id"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+        "MBMA_8803_TABLE2_TESTVSPREDICTEDUPLIFTLOADS",
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Purlin cross-section shape as printed (Zee).",
+      "evidence": "Table 1 p.2; Table S1",
+      "name": "Section type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "section",
+        "section_type"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Direction of the applied load on the assembly (uplift).",
+      "evidence": "Table S1 column load_direction",
+      "name": "Load direction",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "load_direction"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal (Tables 1 and S1) and measured end (Table A) web depth of the Z-purlin.",
+      "evidence": "Table 1 p.2; Table A p.4; Table S1",
+      "name": "Purlin web depth",
+      "note": "Table A value is measured at one end; Tables 1 and S1 give the nominal 9.5 in.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "depth_in"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+        "MBMA_8803_TABLEA_PURLINDIMENSIONDATA",
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal flange width of the Z-purlin as printed in the test parameter table.",
+      "evidence": "Table 1 p.2",
+      "name": "Nominal flange width",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "flange_width_in"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured width of the top flange of each purlin at mid-span.",
+      "evidence": "Table A p.4",
+      "name": "Measured top flange width",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "flange_width_top_in"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLEA_PURLINDIMENSIONDATA"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured width of the bottom (punched) flange of each purlin at mid-span.",
+      "evidence": "Table A p.4",
+      "name": "Measured bottom flange width",
+      "note": "Bottom flange is the one with connection holes punched in it.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "flange_width_bot_in"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLEA_PURLINDIMENSIONDATA"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured length of the top flange stiffening lip at mid-span.",
+      "evidence": "Table A p.4",
+      "name": "Top lip length",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "lip_length_top_in"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLEA_PURLINDIMENSIONDATA"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured length of the bottom flange stiffening lip at mid-span.",
+      "evidence": "Table A p.4",
+      "name": "Bottom lip length",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "lip_length_bot_in"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLEA_PURLINDIMENSIONDATA"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured angle between the top flange and its stiffening lip at mid-span.",
+      "evidence": "Table A p.4 (footnote: lip angles in degrees)",
+      "name": "Top lip angle",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "angle",
+      "role": "specimen_parameter",
+      "symbols": [
+        "lip_angle_top_deg"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLEA_PURLINDIMENSIONDATA"
+      ],
+      "unit": "degrees"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured angle between the bottom flange and its stiffening lip at mid-span.",
+      "evidence": "Table A p.4",
+      "name": "Bottom lip angle",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "angle",
+      "role": "specimen_parameter",
+      "symbols": [
+        "lip_angle_bot_deg"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLEA_PURLINDIMENSIONDATA"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured inside bend radius at the web-to-flange corners (top and bottom) of each purlin.",
+      "evidence": "Table A p.4",
+      "name": "Web-flange corner radius",
+      "note": "Reported separately for the top and bottom corners.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "radius_top_web_in",
+        "radius_bot_web_in"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLEA_PURLINDIMENSIONDATA"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured inside bend radius at the flange-to-lip corners (top and bottom) of each purlin.",
+      "evidence": "Table A p.4",
+      "name": "Flange-lip corner radius",
+      "note": "Reported separately for the top and bottom corners.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "radius_top_lip_in",
+        "radius_bot_lip_in"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLEA_PURLINDIMENSIONDATA"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured base metal thickness of the purlin (micrometer reading at one end in Table A; failed-member value in Tables 1 and S1).",
+      "evidence": "Table 1 p.2; Table A p.4; Table S1",
+      "name": "Purlin base metal thickness",
+      "note": "",
+      "printed_symbol": "t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "t_in",
+        "thickness_in"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+        "MBMA_8803_TABLEA_PURLINDIMENSIONDATA",
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Length of each individual continuous bay of the test assembly.",
+      "evidence": "Table 1 p.2; Table S1",
+      "name": "Span length",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "span_ft"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of continuous spans in the test setup.",
+      "evidence": "Table S1 column n_spans",
+      "name": "Number of spans",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_spans"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of parallel purlin lines in the tested assembly.",
+      "evidence": "Table S1 column n_purlin_lines",
+      "name": "Number of purlin lines",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_purlin_lines"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Length of the purlin lap splice at the interior supports.",
+      "evidence": "Table 1 p.2; Table S1",
+      "name": "Lap length at interior supports",
+      "note": "Printed as feet-inches (2-6).",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "lap_ft_in",
+        "lap_length_ft_in"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft-in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Initial lateral sweep of the purlins measured before loading (zero because the discrete braces held them straight).",
+      "evidence": "Table 1 p.2; Table S1",
+      "name": "Initial lateral sweep",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "initial_sweep_in"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Description of the roof sheeting and its attachment (24 ga. ribbed, through-fastened).",
+      "evidence": "Table S1 column panel_type",
+      "name": "Roof panel type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "panel_type"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Description of the discrete compression-flange bracing provided (2 x 2 x 1/8 in. angle braces at quarter points of end-bay bottom flanges).",
+      "evidence": "Table S1 column bracing",
+      "name": "Compression flange bracing",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "bracing"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Uplift load per foot of purlin sustained at failure (printed as 134, 133.7 and 133.6 lb/ft in different places for the same 2.7 in. H2O failure pressure).",
+      "evidence": "Table 1 p.2; Table 2 p.3; Table S1 (pp.2-3, 9, 11)",
+      "name": "Failure uplift load per foot",
+      "note": "Three printed roundings of the same result; dead load of 8.5 lb/ft already deducted.",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "failure_load_lb_per_ft",
+        "failure_load_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+        "MBMA_8803_TABLE2_TESTVSPREDICTEDUPLIFTLOADS",
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "lb/ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Observed failure mode and its location (web and compression-flange buckling of member B-3 at 10 ft 3 in. from the end support).",
+      "evidence": "Table S1 column failure_mode; Table E observations",
+      "name": "Failure mode and location",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "failure_mode"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured yield strength of the failed purlin member used in the capacity evaluation, taken from the tension coupon averages.",
+      "evidence": "Table 1 p.2; Table 2 p.3; Table A p.4; Table S1",
+      "name": "Member yield strength",
+      "note": "Table A reports yield only for coupon-tested members A-3 and B-3.",
+      "printed_symbol": "Fy",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "fy_ksi",
+        "yield_ksi"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+        "MBMA_8803_TABLE2_TESTVSPREDICTEDUPLIFTLOADS",
+        "MBMA_8803_TABLEA_PURLINDIMENSIONDATA",
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Effective section modulus of the Z-purlin section used in the predicted-capacity calculations.",
+      "evidence": "Table 2 p.3; Table S1",
+      "name": "Effective section modulus",
+      "note": "",
+      "printed_symbol": "Se",
+      "quantity_kind": "area",
+      "role": "predicted_value",
+      "symbols": [
+        "se_in3"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLE2_TESTVSPREDICTEDUPLIFTLOADS",
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in^3"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Uplift failure load predicted by the AISI-6 (May 1986 draft AISI specification as modified in the MBMA Ad Hoc Task Force report) method.",
+      "evidence": "Table 2 p.3; Table S1",
+      "name": "Predicted load, AISI-6 method",
+      "note": "",
+      "printed_symbol": "AISI-6",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "aisi6_load_lb_per_ft",
+        "predicted_load_aisi6_lb_per_ft"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLE2_TESTVSPREDICTEDUPLIFTLOADS",
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "lb/ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured failure load divided by the AISI-6 predicted load.",
+      "evidence": "Table 2 p.3; Table S1",
+      "name": "Test-to-AISI-6 ratio",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "aisi6_ratio",
+        "ratio_test_to_aisi6"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLE2_TESTVSPREDICTEDUPLIFTLOADS",
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "simulated",
+      "definition": "Uplift failure load predicted by the MBMA Ad Hoc Task Force proposal.",
+      "evidence": "Table 2 p.3; Table S1",
+      "name": "Predicted load, MBMA method",
+      "note": "",
+      "printed_symbol": "MBMA",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "mbma_load_lb_per_ft",
+        "predicted_load_mbma_lb_per_ft"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLE2_TESTVSPREDICTEDUPLIFTLOADS",
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "lb/ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured failure load divided by the MBMA Ad Hoc Task Force predicted load.",
+      "evidence": "Table 2 p.3; Table S1",
+      "name": "Test-to-MBMA ratio",
+      "note": "Printed as 1.10 in the tables and 1.09 in the hand calculation note.",
+      "printed_symbol": "",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "mbma_ratio",
+        "ratio_test_to_mbma"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLE2_TESTVSPREDICTEDUPLIFTLOADS",
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Purlin line (A or B) in the test frame from which a dimension specimen came.",
+      "evidence": "Table A p.4",
+      "name": "Purlin line",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "line"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLEA_PURLINDIMENSIONDATA"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Bay or bays spanned by each purlin piece (e.g. 1/2 = spans 1 and 2).",
+      "evidence": "Table A p.4",
+      "name": "Spans covered by piece",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "span"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLEA_PURLINDIMENSIONDATA"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Identification number of the individual purlin piece (A-1 ... B-3).",
+      "evidence": "Table A p.4",
+      "name": "Specimen number",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "specimen_no"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLEA_PURLINDIMENSIONDATA"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Shop piece mark printed in parentheses with each specimen number.",
+      "evidence": "Table A p.4",
+      "name": "Piece mark",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "pc_mark"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLEA_PURLINDIMENSIONDATA"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Purlin member (A-3 or B-3) from which each tension coupon was cut.",
+      "evidence": "Table D pp.7-8",
+      "name": "Coupon source member",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "member"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLED_TENSIONCOUPONRESULTS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Coupon test number on the laboratory sheet, or AVER. for the averaged row.",
+      "evidence": "Table D pp.7-8",
+      "name": "Coupon test number",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_no"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLED_TENSIONCOUPONRESULTS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Coupon geometry type per ASTM A370 (SHEET).",
+      "evidence": "Table D pp.7-8",
+      "name": "Coupon type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "type"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLED_TENSIONCOUPONRESULTS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured width of the tension coupon.",
+      "evidence": "Table D pp.7-8",
+      "name": "Coupon width",
+      "note": "",
+      "printed_symbol": "W",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "w_in"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLED_TENSIONCOUPONRESULTS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured thickness of the tension coupon.",
+      "evidence": "Table D pp.7-8",
+      "name": "Coupon thickness",
+      "note": "Distinct from the purlin thickness measured in Table A.",
+      "printed_symbol": "T",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "t_in"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLED_TENSIONCOUPONRESULTS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Cross-sectional area of the coupon, width times thickness.",
+      "evidence": "Table D pp.7-8",
+      "name": "Coupon area",
+      "note": "",
+      "printed_symbol": "AREA",
+      "quantity_kind": "area",
+      "role": "specimen_parameter",
+      "symbols": [
+        "area_in2"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLED_TENSIONCOUPONRESULTS"
+      ],
+      "unit": "in^2"
+    },
+    {
+      "availability": "direct",
+      "definition": "Load recorded at the yield point of the coupon in the tension test.",
+      "evidence": "Table D pp.7-8",
+      "name": "Coupon yield-point load",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "material_property",
+      "symbols": [
+        "force_yp_lb"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLED_TENSIONCOUPONRESULTS"
+      ],
+      "unit": "lb"
+    },
+    {
+      "availability": "direct",
+      "definition": "Maximum (failure) load reached by the coupon in the tension test.",
+      "evidence": "Table D pp.7-8",
+      "name": "Coupon maximum load",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "material_property",
+      "symbols": [
+        "force_failure_lb"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLED_TENSIONCOUPONRESULTS"
+      ],
+      "unit": "lb"
+    },
+    {
+      "availability": "direct",
+      "definition": "Yield-point stress of each coupon and the per-member average as printed.",
+      "evidence": "Table D pp.7-8",
+      "name": "Coupon yield stress",
+      "note": "Printed coupon-3 values are inconsistent with load/area and were preserved verbatim.",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "stress_yp_psi"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLED_TENSIONCOUPONRESULTS"
+      ],
+      "unit": "psi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Failure (ultimate tensile) stress of each coupon and the per-member average as printed.",
+      "evidence": "Table D pp.7-8",
+      "name": "Coupon tensile strength",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "stress_failure_psi"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLED_TENSIONCOUPONRESULTS"
+      ],
+      "unit": "psi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Original gauge length marked on the coupon (2 in. per ASTM A370).",
+      "evidence": "Table D pp.7-8",
+      "name": "Original gauge length",
+      "note": "",
+      "printed_symbol": "G",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "gauge_g_in"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLED_TENSIONCOUPONRESULTS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Gauge length measured after fracture of the coupon.",
+      "evidence": "Table D pp.7-8",
+      "name": "Final gauge length",
+      "note": "",
+      "printed_symbol": "G1",
+      "quantity_kind": "length",
+      "role": "material_property",
+      "symbols": [
+        "gauge_g1_in"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLED_TENSIONCOUPONRESULTS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Percent elongation of the coupon over the 2 in. gauge length, and the per-member average.",
+      "evidence": "Table D pp.7-8",
+      "name": "Coupon elongation",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "percentage",
+      "role": "material_property",
+      "symbols": [
+        "elongation_pct"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLED_TENSIONCOUPONRESULTS"
+      ],
+      "unit": "%"
+    },
+    {
+      "availability": "direct",
+      "definition": "Pressure-box manometer reading on one leg at each load step, indicating the applied chamber pressure.",
+      "evidence": "Table E p.9",
+      "name": "Manometer pressure reading",
+      "note": "Failure occurred at 2.7 in. H2O.",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "test_condition",
+      "symbols": [
+        "manometer_reading_in_h2o"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLEE_UPLIFTTESTREADINGS"
+      ],
+      "unit": "in H2O"
+    },
+    {
+      "availability": "direct",
+      "definition": "Total uplift load per foot of purlin at each load step, converted from the manometer reading with the dead load subtracted.",
+      "evidence": "Table E p.9",
+      "name": "Applied uplift load per step",
+      "note": "Negative value (-8.5 lb/ft) at zero manometer reading is the dead load.",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "test_condition",
+      "symbols": [
+        "total_load_lb_per_ft"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLEE_UPLIFTTESTREADINGS"
+      ],
+      "unit": "lb/ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Flag identifying whether a row of readings is a vertical deflection (Δ) or a bottom-flange horizontal movement (B).",
+      "evidence": "Table E p.9",
+      "name": "Reading type flag",
+      "note": "",
+      "printed_symbol": "Δ / B",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "reading_type"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLEE_UPLIFTTESTREADINGS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Dial readings of vertical deflection or bottom-flange horizontal movement on purlins A-1, B-1 (north end bay) and A-3, B-3 (south end bay) at each load step.",
+      "evidence": "Table E p.9",
+      "name": "Purlin deflection/movement readings",
+      "note": "Readings at the failure step are blank with 'FAILURE' printed for B-3.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "measured_output",
+      "symbols": [
+        "a1_in",
+        "b1_in",
+        "a3_in",
+        "b3_in"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLEE_UPLIFTTESTREADINGS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Horizontal (longitudinal) movement of the end support beams at lines 1 and 4 at each load step.",
+      "evidence": "Table E p.9; note in Table S1 (avg. 0.161 in.)",
+      "name": "End support horizontal movement",
+      "note": "Average movement 0.161 in. judged sufficient to relieve catenary forces.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "measured_output",
+      "symbols": [
+        "line1_in",
+        "line4_in"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLEE_UPLIFTTESTREADINGS",
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Observer notes recorded at each load step describing specimen behavior.",
+      "evidence": "Table E p.9",
+      "name": "Test observations",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "observations"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLEE_UPLIFTTESTREADINGS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "implied",
+      "definition": "Roof tributary width per purlin line (5.06 ft) used to convert chamber pressure into load per foot.",
+      "evidence": "Table S1 header note on load conversion (p.11 hand calculation)",
+      "name": "Tributary width per purlin line",
+      "note": "Stated in a note, not a column.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "implied",
+      "definition": "Self weight of the assembly (8.5 lb/ft) subtracted from the applied pressure load to get net uplift load.",
+      "evidence": "Table S1 FACTORS note; Table E note on -8.5 lb/ft at zero manometer",
+      "name": "Assembly dead load",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "test_condition",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+        "MBMA_8803_TABLEE_UPLIFTTESTREADINGS"
+      ],
+      "unit": "lb/ft"
+    },
+    {
+      "availability": "implied",
+      "definition": "Factor 10.4 converting a one-leg manometer reading in inches of water to chamber pressure in psf.",
+      "evidence": "Table S1 FACTORS note (p.11 hand calculation)",
+      "name": "Manometer-to-pressure factor",
+      "note": "Stated in a note, not a column.",
+      "printed_symbol": "",
+      "quantity_kind": "ratio",
+      "role": "test_condition",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "psf per in H2O"
+    },
+    {
+      "availability": "direct",
+      "definition": "Source location in the report from which the summarized failure value was taken (hand calculation) and the corresponding PDF pages.",
+      "evidence": "Table S1 columns value_source and pages",
+      "name": "Failure value source",
+      "note": "Provenance metadata rather than a physical quantity.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "value_source",
+        "pages"
+      ],
+      "table_tags": [
+        "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    }
+  ],
+  "year": "1988"
+}

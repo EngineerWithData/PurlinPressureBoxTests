@@ -1,0 +1,42 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 4-12, pp.87
+# Tag: MBMA_9410_TABLE412_VACUUMBOXTEST2
+# Content: Time history of panel displacements, chamber pressure and individual fastener loads for vacuum box test 2 (revised single span, 4.1 ft, 26 gage Pascoe panels).
+# Data basis: measured: pressure transducer, LVDTs and load cells logged during the vacuum box test
+# Units: pt_psi in psi; LVDTs in inches; load cells in pounds
+# Column definitions:
+#   date = calendar date of the scan, mm/dd/yy
+#   time_hhmmss = clock time of the scan
+#   lvdt1_in = displacement measured by LVDT 1, inches
+#   lvdt2_in = displacement measured by LVDT 2, inches
+#   lcell1_lb = load on the fastener at load cell 1, pounds
+#   pt_psi = chamber pressure from the pressure transducer, psi
+#   lcell3_lb = load on the fastener at load cell 3, pounds
+#   lcell4_lb = load on the fastener at load cell 4, pounds
+#   lcell5_lb = load on the fastener at load cell 5, pounds
+#   lcell6_lb = load on the fastener at load cell 6, pounds
+#   lcell7_lb = load on the fastener at load cell 7, pounds
+#   lcell8_lb = load on the fastener at load cell 8, pounds
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: The printed column order is unusual: LCELL1 appears before P.T. and there is no LCELL2 column (the summary notes Load Cell #2 was inactive); the order is preserved as printed.
+# Printed summary: Test Number 2; Failed Cells #4; Failure Type Pullover; Peak Loads 442.770; Peak Pressures 1.054; Peak LVDT 1 NA; Peak LVDT 2 NA; Elapsed Time 00:29; Size 26 Ga.; Type Pascoe.
+# Printed comments: Pressure Transducer Installed. Failures generated on second attempt. Load Cell #2 inactive. Supports laterally braced. Major panel buckling. Air leaks abundant.
+# Specimen layout: 1.45 ft overhang, 4.1 ft span, 1.45 ft overhang.
+date,time_hhmmss,lvdt1_in,lvdt2_in,lcell1_lb,pt_psi,lcell3_lb,lcell4_lb,lcell5_lb,lcell6_lb,lcell7_lb,lcell8_lb
+11/28/95,17:38:17.800,-0.064,-0.212,140.419,-0.202,-80.001,91.176,86.490,8.887,180.521,64.003
+11/28/95,17:38:19.899,-0.065,-0.212,140.560,-0.191,-28.578,89.260,104.643,27.293,180.038,63.775
+11/28/95,17:38:21.899,-0.065,-0.212,140.501,-0.207,-28.821,89.306,104.500,27.141,179.828,63.866
+11/28/95,17:38:23.899,-0.065,-0.212,140.610,-0.240,-29.281,89.323,104.412,27.061,180.038,63.877
+11/28/95,17:38:25.899,-0.065,-0.212,140.772,-0.007,-30.130,89.571,104.349,26.809,177.791,64.284
+11/28/95,17:38:27.899,-0.064,-0.212,141.273,-0.008,-30.985,90.164,104.567,27.015,175.376,65.118
+11/28/95,17:38:29.899,-0.065,-0.212,143.393,0.004,-34.707,92.279,105.486,27.491,165.380,69.501
+11/28/95,17:38:31.899,-0.065,-0.212,153.055,0.041,-36.392,96.680,111.699,34.713,136.652,86.180
+11/28/95,17:38:33.899,-0.065,-0.212,197.348,0.177,-9.245,123.951,148.352,89.317,142.826,154.699
+11/28/95,17:38:35.899,-0.064,-0.212,259.258,0.333,51.712,202.241,207.880,165.517,229.430,263.988
+11/28/95,17:38:37.899,-0.065,-0.212,329.193,0.469,114.218,287.295,265.160,233.513,300.683,363.038
+11/28/95,17:38:39.899,-0.065,-0.212,428.787,0.642,260.675,394.084,386.087,283.543,430.946,481.263
+11/28/95,17:38:41.899,-0.065,-0.212,490.819,0.748,324.404,460.120,406.429,326.873,510.557,534.358
+11/28/95,17:38:43.899,-0.065,-0.212,550.549,0.852,386.815,533.946,433.427,362.769,563.477,596.026
+11/28/95,17:38:45.899,-0.065,-0.212,598.880,0.838,287.413,15.275,416.035,356.567,590.945,539.886
+11/28/95,17:38:47.000,-0.065,-0.212,617.461,0.878,278.954,15.641,434.274,363.619,587.963,539.695

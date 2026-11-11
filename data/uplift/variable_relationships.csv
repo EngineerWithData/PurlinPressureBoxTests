@@ -1,0 +1,24 @@
+# How the pooled variables move together (Pearson correlation).
+# This is association across pooled specimens, not a design equation, and the papers'
+#   unequal parameter coverage can drive it. Read it as a pointer, not a result.
+group,variable_a,variable_b,n,correlation,strength
+simple_span_through_fastened_uplift,failure_mode,effective_section_modulus_in3,49,0.417,weak
+simple_span_through_fastened_uplift,failure_mode,flange_width_in,29,-0.347,weak
+simple_span_through_fastened_uplift,failure_mode,failure_load_plf,49,0.318,weak
+simple_span_through_fastened_uplift,failure_mode,chamber_pressure_psf,49,0.315,weak
+simple_span_through_fastened_uplift,failure_mode,manometer_reading_at_failure_in_of_water,29,0.301,weak
+simple_span_through_fastened_uplift,failure_mode,failure_moment_ft_kips,29,-0.285,negligible
+simple_span_through_fastened_uplift,failure_mode,screw_location_c_in,49,0.241,negligible
+simple_span_through_fastened_uplift,failure_mode,elongation_pct,29,-0.193,negligible
+simple_span_through_fastened_uplift,failure_mode,insulation_thickness_in,57,-0.187,negligible
+simple_span_through_fastened_uplift,failure_mode,calculated_nominal_moment_ft_kips,29,-0.172,negligible
+simple_span_through_fastened_uplift,failure_mode,depth_in,79,-0.162,negligible
+simple_span_through_fastened_uplift,failure_mode,lip_angle_deg,29,-0.145,negligible
+simple_span_through_fastened_uplift,failure_mode,thickness_in,78,0.14,negligible
+simple_span_through_fastened_uplift,failure_mode,span_ft,79,-0.11,negligible
+simple_span_through_fastened_uplift,failure_mode,failure_moment_kip_in,78,0.11,negligible
+simple_span_through_fastened_uplift,failure_mode,lip_length_in,29,0.058,negligible
+simple_span_through_fastened_uplift,failure_mode,r_factor,78,-0.053,negligible
+simple_span_through_fastened_uplift,failure_mode,tributary_width_ft,79,0.049,negligible
+simple_span_through_fastened_uplift,failure_mode,tensile_strength_ksi,29,0.029,negligible
+simple_span_through_fastened_uplift,failure_mode,yield_stress_ksi,78,0.016,negligible

@@ -1,0 +1,58 @@
+# Source: MBMA_7501 | Peköz, T. (1975), Table APPENDIX B Page 2, pp.90
+# Tag: MBMA_7501_TABLEB2_APPB2CSECSTRAIN15TO28
+# Content: Strain gage readings and computed stresses for gages 15-28 at each load level of the C-section purlin assembly uplift test, including the final unloaded reading.
+# Data basis: mixed: strain gage readings measured during the vacuum uplift test with stresses computed as gage reading x .03 ksi (E = 30x10^6 psi)
+# Units: p_psf in psf; gage readings in micro in/in; stresses in ksi
+# Column definitions:
+#   p_psf = applied vacuum (uplift) load, psf
+#   g15_rdg_microin = strain gage 15 reading, micro in/in
+#   g15_stress_ksi = stress from gage 15 (reading x .03), ksi
+#   g16_rdg_microin = strain gage 16 reading, micro in/in
+#   g16_stress_ksi = stress from gage 16, ksi
+#   g17_rdg_microin = strain gage 17 reading, micro in/in
+#   g17_stress_ksi = stress from gage 17, ksi
+#   g18_rdg_microin = strain gage 18 reading, micro in/in
+#   g18_stress_ksi = stress from gage 18, ksi
+#   g19_rdg_microin = strain gage 19 reading, micro in/in
+#   g19_stress_ksi = stress from gage 19, ksi
+#   g20_rdg_microin = strain gage 20 reading, micro in/in
+#   g20_stress_ksi = stress from gage 20, ksi
+#   g21_rdg_microin = strain gage 21 reading, micro in/in
+#   g21_stress_ksi = stress from gage 21, ksi
+#   g22_rdg_microin = strain gage 22 reading, micro in/in
+#   g22_stress_ksi = stress from gage 22, ksi
+#   g23_rdg_microin = strain gage 23 reading, micro in/in
+#   g23_stress_ksi = stress from gage 23, ksi
+#   g24_rdg_microin = strain gage 24 reading, micro in/in
+#   g24_stress_ksi = stress from gage 24, ksi
+#   g25_rdg_microin = strain gage 25 reading, micro in/in
+#   g25_stress_ksi = stress from gage 25, ksi
+#   g26_rdg_microin = strain gage 26 reading, micro in/in
+#   g26_stress_ksi = stress from gage 26, ksi
+#   g27_rdg_microin = strain gage 27 reading, micro in/in
+#   g27_stress_ksi = stress from gage 27, ksi
+#   g28_rdg_microin = strain gage 28 reading, micro in/in
+#   g28_stress_ksi = stress from gage 28, ksi
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 18 cells checked (AI, 2026-11-04): 18 correct, 0 errors, 2 unreadable; P(accuracy ≥ 0.8) = 98.6%, ≥ 0.9) = 86.5%, ≥ 0.95) = 62.3%
+# TEXT SOURCE: read from page images by the model (all 104 pages)
+# ANOMALY FLAG: Several cells are truncated at the right edge of the printed page or contain unreadable-character markers ([?] and a bare '?' as extracted, e.g. '7[?]?[?]', '6[?]18', '2[?].[?]9'); all are preserved verbatim. At 9 psf gages 22-28 have no readings (printed as dashes). The zero-load rows carry sign markers instead of stresses.
+# Strain gage locations are given in Fig. 29.
+# Printed notes: (1) E = 30x10^6 psi; (2) Stress = Gage Rdg x .[?]3 (ksi).
+# The last row (load 0) is the reading after unloading.
+p_psf,g15_rdg_microin,g15_stress_ksi,g16_rdg_microin,g16_stress_ksi,g17_rdg_microin,g17_stress_ksi,g18_rdg_microin,g18_stress_ksi,g19_rdg_microin,g19_stress_ksi,g20_rdg_microin,g20_stress_ksi,g21_rdg_microin,g21_stress_ksi,g22_rdg_microin,g22_stress_ksi,g23_rdg_microin,g23_stress_ksi,g24_rdg_microin,g24_stress_ksi,g25_rdg_microin,g25_stress_ksi,g26_rdg_microin,g26_stress_ksi,g27_rdg_microin,g27_stress_ksi,g28_rdg_microin,g28_stress_ksi
+0,4557,+,5285,-,3497,-,4338,-,7312,-,8559,+,6613,"(+,-)",6386,+,8435,+,6362,-,7112,+,6812,"(+,-)",7246,+,6[?]18,+
+3,4666,3.27,5379,0.18,3479,0.54,4358,0.99,7238,2.22,8945,11.58,6585,-.75,6397,.33,8540,3.15,6288,2.22,7160,1.44,6745,-.51,7324,2.34,7[?]?[?],[?]
+6,4727,5.10,5353,1.56,3452,1.35,4335,1.59,7158,4.62,8895,10.08,6637,2.22,6514,3.84,8588,4.59,6210,4.56,7146,1.02,6841,.87,7358,3.36,7130,3.[?]0
+9,4815,7.74,5307,2.34,3426,2.13,4265,3.69,7092,6.60,8850,8.73,6612,-.03,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+12,4857,9.00,5286,2.97,3406,2.73,4223,4.95,6999,9.39,8663,3.12,6734,2.73,6553,5.01,8675,7.20,6124,7.14,7156,1.32,6897,-.15,7518,8.16,72[?][?],[?]
+15,4927,11.10,5267,3.54,3375,3.66,4196,5.76,6923,11.67,8706,4.41,6524,-.87,6635,7.47,8778,10.29,6054,9.12,7140,.84,6834,.66,7503,7.7[?],7209,3.13
+18,4974,12.51,5261,3.72,3376,3.63,4165,6.69,6883,12.87,8682,3.69,6755,4.26,6740,10.62,8880,13.35,5927,13.05,7168,1.68,6999,2.64,7630,11.52,7430,[?].2[?]
+21,5026,14.07,5275,3.30,3370,3.81,4135,7.59,6823,14.67,8615,4.08,6613,0.0,6825,13.17,9041,18.18,5859,15.09,7168,1.68,6878,1.08,7676,13.5[?],7[?][?]2,[?].[?]
+24,5084,15.81,5265,3.60,3328,5.07,4082,9.18,6728,17.52,8679,3.60,6625,.36,6892,15.18,9066,18.93,5785,17.31,7164,1.56,6839,.81,7740,[?].[?]2,7[?][?]2,16.[?]2
+27,5132,17.25,5237,4.44,3212,5.55,4049,10.17,6663,19.47,8702,4.29,6631,.54,6939,16.59,9041,19.68,5726,19.08,7178,1.98,6854,1.26,7796,[?].2[?],75[?]7,[?]
+30,5197,19.10,5221,4.92,3285,6.36,4005,11.49,6570,22.26,8852,8.79,6639,.78,7041,19.65,9174,22.17,5607,22.65,7199,2.61,6869,1.71,7837,19.4[?],75[?][?],[?]
+33,5254,20.91,5206,5.37,3268,6.87,3962,12.78,6486,24.76,8767,6.24,6711,2.94,7157,23.13,9238,24.09,5543,24.57,7237,3.75,6908,2.88,7[?]49,2[?].[?]9,[?],[?]
+36,5349,23.61,5189,5.88,3235,7.86,3913,14.25,6385,27.81,8892,7.99,6751,4.14,7175,22.67,9334,26.97,5453,27.27,7297,5.55,6991,5.37,8336,23.10,72[?]3,[?]
+39,5404,26.41,5181,6.12,3195,9.86,3851,15.81,6268,31.32,8940,11.43,6837,6.72,7275,26.67,9422,29.61,5376,29.58,7357,7.35,7046,7.02,8135,26.67,7[?],27.[?]
+0,4658,3.03,5387,+.12,3547,+1.5,4403,+.45,7298,.42,8818,7.77,6757,4.32,6438,1.56,8467,.96,6319,1.29,7302,5.7,6946,4.56,7320,2.22,73[?]5,.81

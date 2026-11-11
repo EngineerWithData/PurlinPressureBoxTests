@@ -1,0 +1,58 @@
+# Source: MBMA_8702 | LaBoube, R.A.; Thompson, M.B. (1987), Table S1, pp.4-6, 13, 15, 21, 25
+# Tag: MBMA_8702_TABLES1_STRENGTHSUMMARY
+# Content: Maximum (failure) uniformly distributed uplift load of 12 full-scale simple-span braced C- and Z-purlin/roof-panel assemblies tested in a vacuum chamber, with measured section properties and test-to-predicted ratios.
+# Data basis: measured: maximum uplift load Pu at failure from vacuum-chamber tests (Table 3, p. 21) with measured cross-section dimensions and yield stresses (Table 2, pp. 5/15); ratio columns are mixed (measured load divided by computed capacities from Table 3, p. 21, and Table 3 of the 1987 LaBoube memo, p. 6).
+# Units: see column headers
+# Column definitions:
+#   test_id = test number as printed in Tables 1-3, dimensionless
+#   load_direction = direction of applied load (uplift by vacuum), text
+#   section_type = purlin cross-section shape (C or Z), text
+#   depth_in = measured out-to-out depth H of the north/south purlin of the specimen, in.
+#   thickness_in = measured base steel thickness t of the north/south purlin, in.
+#   span_ft = clear span of the purlins in feet (not printed in feet in the report), ft
+#   n_spans = number of spans of the test specimen (simply supported single span), count
+#   n_purlin_lines = number of parallel purlin lines in each test specimen, count
+#   panel_type = type of roof panel and attachment to the purlin tension flange, text
+#   bracing = location of the intermediate (discrete) lateral braces, text
+#   failure_load_as_printed = maximum (failure) uniform load Pu as printed in Table 3, number
+#   failure_load_unit = unit of the failure load as printed, text
+#   failure_moment_as_printed = failure moment as printed (not reported), number
+#   failure_moment_unit = unit of the failure moment, text
+#   failure_mode = observed mode that limited the test, text
+#   value_source = where in the report the failure load is stated, text
+#   pages = PDF page(s) on which the listed values appear, page numbers
+#   span_in_in = purlin span length as printed in Table 1, in.
+#   fy_ksi = measured yield stress of north/south purlin, ksi
+#   lip_angle_deg = measured edge stiffener (lip) angle phi of north/south purlin, degrees
+#   pu_over_pc = ratio of test failure load to load computed by the Cornell University method, dimensionless
+#   pu_over_pc_prime = ratio of test failure load to computed failure load for an unstiffened-flange purlin, dimensionless
+#   pu_over_pc_double_prime = ratio of test failure load to load computed by the modified Cornell method, dimensionless
+#   mt_over_mn = ratio of test moment (w l^2/8) to nominal moment Se*Fy per 1986 AISI, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 14 cells checked (AI, 2026-11-04): 14 correct, 0 errors, 6 unreadable; P(accuracy ≥ 0.8) = 96.5%, ≥ 0.9) = 79.4%, ≥ 0.95) = 53.7%
+# TEXT SOURCE: read from page images by the model (cached transcription)
+# ANOMALY FLAG: Table 2 (pp. 5 and 15) prints the Test 9 south-purlin depth as "9 7.063" (stray leading digit; value preserved verbatim); Figure 10 (p. 24) is captioned "Test No. 13" although only 12 tests are reported.
+# CORRECTION (Cris Moen, 2026-10-13; open question MBMA_8702-Q03): Test 9 south-purlin depth corrected from the printed "9 7.063" to 9.063 in. (typing error); see the CORRECTION note in MBMA_8702_LaBoube1987_Table2_PurlinCrossSectionDims.csv.
+# Load sign convention: all loads are wind UPLIFT, applied by evacuating air from a vacuum chamber with the specimen mounted inverted (purlins on top).
+# Table 3 note: P(lb/ft) = Transducer Reading (psf) x (76 in./2) x (1/12), i.e. a 76 in. chamber width shared by two purlin lines (38 in. ≈ 3.167 ft tributary per purlin line).
+# Purlins were spaced 5 ft apart in the specimen; the tension flange was attached to conventional (24 ga.) roof panels with self-drilling screws at 12 in. on center.
+# Report does not state whether the quoted loads include specimen dead load; values are the recorded vacuum pressure converted to line load.
+# Notation of Table 3: Pu = maximum load at failure; Pc = failure load computed by Cornell University method (Ref. 1); Pc' = failure load for unstiffened flange purlin; Pc" = failure load computed by modified Cornell University method. A dash "-" means the quantity was not computed for that test.
+# Mt/Mn values are from Table 3 of the 1987 LaBoube memo (p. 6), where Mt = w l^2/8 from the test ultimate load and Mn = Se Fy per the 1986 AISI Specification.
+# Depth, thickness, Fy and lip angle are given as "north purlin / south purlin" because each test specimen contained two purlin lines with individually measured properties.
+# span_ft left empty because the report states span length only in inches (237.5 in.; purlins were 20 ft long overall).
+# Tests 1-4 (Z with shallow lip angle 31-35 deg) buckled the edge stiffener locally at about 94 lb/ft and then carried additional load as beams with an unstiffened compression flange before failing.
+# SELF-WEIGHT NOTE (Cris Moen, 2026-10-27; open question MBMA_8702-Q05): P_u is pressure only, by the report's formula P (lb/ft) = transducer reading (psf) x (76 in./2) x (1/12) (Table 3 note, p.21); no self-weight term. The specimen was mounted inverted, purlins on top (p.12). The report does not address self-weight; values carried as printed with no adjustment.
+test_id,load_direction,section_type,depth_in,thickness_in,span_ft,n_spans,n_purlin_lines,panel_type,bracing,failure_load_as_printed,failure_load_unit,failure_moment_as_printed,failure_moment_unit,failure_mode,value_source,pages,span_in_in,fy_ksi,lip_angle_deg,pu_over_pc,pu_over_pc_prime,pu_over_pc_double_prime,mt_over_mn
+1,uplift,Z,8.125 / 8.125,0.0746 / 0.0745,,1,2,through-fastened,One-third span,123.5,lb/ft,,,"Local buckling of edge stiffener (at approx. 94 lb/ft), then behaved as beam with unstiffened compression flange until failure",table 3,21,237.5,60.60 / 61.49,32 / 34,0.633,0.867,-,0.52
+2,uplift,Z,8.125 / 8.125,0.0745 / 0.0731,,1,2,through-fastened,One-third span,139.3,lb/ft,,,"Local buckling of edge stiffener (at approx. 94 lb/ft), then behaved as beam with unstiffened compression flange until failure",table 3,21,237.5,59.66 / 59.04,31 / 31,0.600,0.998,-,0.59
+3,uplift,Z,8.125 / 8.125,0.0760 / 0.0760,,1,2,through-fastened,Mid-span,136.2,lb/ft,,,"Local buckling of edge stiffener (at approx. 94 lb/ft), then behaved as beam with unstiffened compression flange until failure",table 3,21,237.5,57.07 / 57.07,32 / 33,0.825,0.964,-,0.58
+4,uplift,Z,8.125 / 8.188,0.0781 / 0.0781,,1,2,through-fastened,Mid-span,146.8,lb/ft,,,"Local buckling of edge stiffener (at approx. 94 lb/ft), then behaved as beam with unstiffened compression flange until failure",table 3,21,237.5,64.60 / 64.60,35 / 35,0.765,0.914,-,0.55
+5,uplift,Z,8.125 / 8.125,0.0870 / 0.0870,,1,2,through-fastened,Mid-span,225.0,lb/ft,,,Local buckling in the web,table 3,21,237.5,55.16 / 55.16,76 / 74,1.286,-,1.154,0.86
+6,uplift,Z,8.125 / 8.125,0.0863 / 0.0851,,1,2,through-fastened,Mid-span,215.6,lb/ft,,,Local buckling in the web,table 3,21,237.5,55.40 / 57.76,74 / 72,1.169,-,1.027,0.81
+7,uplift,Z,8.188 / 8.188,0.0920 / 0.0920,,1,2,through-fastened,One-third span,265.6,lb/ft,,,Local buckling in the web,table 3,21,237.5,58.00 / 58.00,74 / 76,1.155,-,1.130,0.91
+8,uplift,Z,8.188 / 8.188,0.0920 / 0.0920,,1,2,through-fastened,One-third span,259.4,lb/ft,,,Local buckling in the web,table 3,21,237.5,56.50 / 56.50,74 / 75,1.128,-,1.113,0.89
+9,uplift,C,9.125 / 9.063,0.0785 / 0.0780,,1,2,through-fastened,One-third span,181.3,lb/ft,,,Local buckling of the web,table 3,21,237.5,62.93 / 63.85,85 / 82,1.289,-,0.863,0.60
+10,uplift,C,9.063 / 9.063,0.0780 / 0.0791,,1,2,through-fastened,One-third span,187.5,lb/ft,,,Local buckling of the web,table 3,21,237.5,61.16 / 62.45,86 / 83,1.765,-,0.938,0.61
+11,uplift,C,9.063 / 9.063,0.0798 / 0.0796,,1,2,through-fastened,Mid-span,184.4,lb/ft,,,Local buckling of the web,table 3,21,237.5,64.04 / 63.26,87 / 87,2.107,-,0.997,0.60
+12,uplift,C,9.063 / 9.063,0.0775 / 0.0795,,1,2,through-fastened,Mid-span,171.9,lb/ft,,,Local buckling of the web,table 3,21,237.5,63.09 / 60.37,85 / 86,2.115,-,0.987,0.59

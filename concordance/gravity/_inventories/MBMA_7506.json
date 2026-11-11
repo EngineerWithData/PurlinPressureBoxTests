@@ -1,0 +1,745 @@
+{
+  "citation": "Metal Building Manufacturers Association (1975)",
+  "code_tag": "MBMA_7506",
+  "experiment": "Two full-scale three-span continuous roof purlin assemblies (one 8 in. Z purlin system and one 7 in. C purlin system, each with two purlin lines and through-fastened metal roof deck) were loaded to failure with simulated gravity load in a vacuum chamber while strain gages, support load cells, potentiometers and optical deflection targets were read at each load increment.",
+  "title": "Full-Scale Vacuum-Chamber Gravity Load Tests of Z and C Purlin Roof Systems",
+  "variables": [
+    {
+      "availability": "direct",
+      "definition": "Sequential number identifying each vacuum load increment (test step) as printed in the report.",
+      "evidence": "Tables 1 and 2 (pp. 10-11) and Appendices A-D column 'test_no'",
+      "name": "Load increment (test) number",
+      "note": "",
+      "printed_symbol": "TEST NO.",
+      "quantity_kind": "count",
+      "role": "identifier",
+      "symbols": [
+        "test_no"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLE1_ZPURLINLOADCOMPARISONS",
+        "MBMA_7506_TABLE2_CPURLINLOADCOMPARISONS",
+        "MBMA_7506_TABLEA_ZPURLINSENSORREADINGS",
+        "MBMA_7506_TABLEB_ZPURLINROTATIONMOVEMENT",
+        "MBMA_7506_TABLEC_CPURLINSENSORREADINGS",
+        "MBMA_7506_TABLED_CPURLINROTATIONMOVEMENT"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Approximate applied vacuum pressure at the load increment, taken from manometer readings.",
+      "evidence": "Table 1 'load_approx_psf' (p. 10), Table 2 (p. 11), Appendices A-D 'load_psf'",
+      "name": "Applied vacuum load (manometer)",
+      "note": "Load values for the same test numbers differ slightly between Appendix A/C and Appendix B/D and Table 2; preserved verbatim in the source.",
+      "printed_symbol": "APPROXIMATE LOAD",
+      "quantity_kind": "stress",
+      "role": "test_condition",
+      "symbols": [
+        "load_approx_psf",
+        "load_psf"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLE1_ZPURLINLOADCOMPARISONS",
+        "MBMA_7506_TABLE2_CPURLINLOADCOMPARISONS",
+        "MBMA_7506_TABLEA_ZPURLINSENSORREADINGS",
+        "MBMA_7506_TABLEB_ZPURLINROTATIONMOVEMENT",
+        "MBMA_7506_TABLEC_CPURLINSENSORREADINGS",
+        "MBMA_7506_TABLED_CPURLINROTATIONMOVEMENT"
+      ],
+      "unit": "psf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Applied uniform load back-calculated from the measured support load-cell reactions at each increment, including the value at the last recorded increment of each test.",
+      "evidence": "Table 1/Table 2 'load_computed_psf' (pp. 10-11); Table S1 'computed_load_at_last_increment_psf'",
+      "name": "Load computed from load cells",
+      "note": "",
+      "printed_symbol": "COMPUTED LOAD",
+      "quantity_kind": "stress",
+      "role": "measured_output",
+      "symbols": [
+        "load_computed_psf",
+        "computed_load_at_last_increment_psf"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLE1_ZPURLINLOADCOMPARISONS",
+        "MBMA_7506_TABLE2_CPURLINLOADCOMPARISONS",
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "psf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Reaction measured by the load cell under one purlin at a typical exterior (end) support at each load increment.",
+      "evidence": "Table 1 'sensor_67_lb', Table 2 'sensor_50_lb', Appendix A 'sensor_67', Appendix C 'sensor_50'",
+      "name": "Exterior support reaction",
+      "note": "Sensor number is 67 in the Z test and 50 in the C test.",
+      "printed_symbol": "SENSOR NO. 67 / NO. 50",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "sensor_67_lb",
+        "sensor_50_lb",
+        "sensor_67",
+        "sensor_50"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLE1_ZPURLINLOADCOMPARISONS",
+        "MBMA_7506_TABLE2_CPURLINLOADCOMPARISONS",
+        "MBMA_7506_TABLEA_ZPURLINSENSORREADINGS",
+        "MBMA_7506_TABLEC_CPURLINSENSORREADINGS"
+      ],
+      "unit": "lb"
+    },
+    {
+      "availability": "direct",
+      "definition": "Reaction measured by the load cell under one purlin at a typical interior support at each load increment.",
+      "evidence": "Table 1 'sensor_68_lb', Table 2 'sensor_51_lb', Appendix A 'sensor_68', Appendix C 'sensor_51'",
+      "name": "Interior support reaction",
+      "note": "Sensor 68 values for Z tests 3 and 18 differ between Table 1 and Appendix A.",
+      "printed_symbol": "SENSOR NO. 68 / NO. 51",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "sensor_68_lb",
+        "sensor_51_lb",
+        "sensor_68",
+        "sensor_51"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLE1_ZPURLINLOADCOMPARISONS",
+        "MBMA_7506_TABLE2_CPURLINLOADCOMPARISONS",
+        "MBMA_7506_TABLEA_ZPURLINSENSORREADINGS",
+        "MBMA_7506_TABLEC_CPURLINSENSORREADINGS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of the interior support reaction to the exterior support reaction at the same load increment, indicating degree of continuity/fixity.",
+      "evidence": "Table 1 'ratio_68_over_67' (p. 10), Table 2 'ratio_51_over_50' (p. 11)",
+      "name": "Interior/exterior reaction ratio",
+      "note": "Values of 3.00 (Z test 11) and 4.75/4.69 (C tests 57, 62) lie outside the expected 2.00-2.75 range and are preserved verbatim.",
+      "printed_symbol": "RATIO",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "ratio_68_over_67",
+        "ratio_51_over_50"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLE1_ZPURLINLOADCOMPARISONS",
+        "MBMA_7506_TABLE2_CPURLINLOADCOMPARISONS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Strain measured by individual electrical resistance strain gages mounted on the purlin cross sections at each load increment (gage positions in Figs. 3 and 5).",
+      "evidence": "Appendix A columns sensor_1 to sensor_58 (pp. 51-56); Appendix C columns sensor_1 to sensor_40 and sensor_49 (pp. 61-68)",
+      "name": "Purlin strain gage reading",
+      "note": "Column numbering differs between tests: purlin gages are 1-58 in Appendix A and 1-40 plus 49 in Appendix C; several readings (e.g. sensor_5=915, sensor_8=1617-3009, sensor_23=-2531) are printed out of line and preserved verbatim, and some Appendix C sensor_12 values are illegible ([?]).",
+      "printed_symbol": "SENSOR NO.",
+      "quantity_kind": "ratio",
+      "role": "measured_output",
+      "symbols": [
+        "sensor_1",
+        "sensor_2",
+        "sensor_3",
+        "sensor_4",
+        "sensor_5",
+        "sensor_6",
+        "sensor_7",
+        "sensor_8",
+        "sensor_9",
+        "sensor_10",
+        "sensor_11",
+        "sensor_12",
+        "sensor_13",
+        "sensor_14",
+        "sensor_15",
+        "sensor_16",
+        "sensor_17",
+        "sensor_18",
+        "sensor_19",
+        "sensor_20",
+        "sensor_21",
+        "sensor_22",
+        "sensor_23",
+        "sensor_24",
+        "sensor_25",
+        "sensor_26",
+        "sensor_27",
+        "sensor_28",
+        "sensor_29",
+        "sensor_30",
+        "sensor_31",
+        "sensor_32",
+        "sensor_33",
+        "sensor_34",
+        "sensor_35",
+        "sensor_36",
+        "sensor_37",
+        "sensor_38",
+        "sensor_39",
+        "sensor_40",
+        "sensor_41",
+        "sensor_42",
+        "sensor_43",
+        "sensor_44",
+        "sensor_45",
+        "sensor_46",
+        "sensor_47",
+        "sensor_48",
+        "sensor_49",
+        "sensor_50",
+        "sensor_51",
+        "sensor_52",
+        "sensor_53",
+        "sensor_54",
+        "sensor_55",
+        "sensor_56",
+        "sensor_57",
+        "sensor_58"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLEA_ZPURLINSENSORREADINGS",
+        "MBMA_7506_TABLEC_CPURLINSENSORREADINGS"
+      ],
+      "unit": "microstrain"
+    },
+    {
+      "availability": "direct",
+      "definition": "Strain measured by gages mounted on the top and bottom instrumented bracing straps at the supports at each load increment.",
+      "evidence": "Appendix A columns sensor_59 to sensor_66; Appendix C columns sensor_41 to sensor_48",
+      "name": "Bracing strap strain gage reading",
+      "note": "Appendix C sensor_47 reads 3966-3936 for tests 59-67, apparently off-scale; preserved verbatim.",
+      "printed_symbol": "SENSOR NO.",
+      "quantity_kind": "ratio",
+      "role": "measured_output",
+      "symbols": [
+        "sensor_59",
+        "sensor_60",
+        "sensor_61",
+        "sensor_62",
+        "sensor_63",
+        "sensor_64",
+        "sensor_65",
+        "sensor_66",
+        "sensor_41",
+        "sensor_42",
+        "sensor_43",
+        "sensor_44",
+        "sensor_45",
+        "sensor_46",
+        "sensor_47",
+        "sensor_48"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLEA_ZPURLINSENSORREADINGS",
+        "MBMA_7506_TABLEC_CPURLINSENSORREADINGS"
+      ],
+      "unit": "microstrain"
+    },
+    {
+      "availability": "direct",
+      "definition": "Displacement measured by individual potentiometers mounted at upper/lower (or top/bottom) points on the purlins at each load increment.",
+      "evidence": "Appendix A columns sensor_69 to sensor_100 (Fig. 4); Appendix C columns sensor_52 to sensor_83 (Fig. 6)",
+      "name": "Potentiometer displacement",
+      "note": "Column numbers overlap between the two tests (e.g. sensor_52-58 are strain gages in Appendix A but potentiometers in Appendix C); mounting offsets A and B are given in Figs. 4 and 6.",
+      "printed_symbol": "SENSOR NO.",
+      "quantity_kind": "length",
+      "role": "measured_output",
+      "symbols": [
+        "sensor_69",
+        "sensor_70",
+        "sensor_71",
+        "sensor_72",
+        "sensor_73",
+        "sensor_74",
+        "sensor_75",
+        "sensor_76",
+        "sensor_77",
+        "sensor_78",
+        "sensor_79",
+        "sensor_80",
+        "sensor_81",
+        "sensor_82",
+        "sensor_83",
+        "sensor_84",
+        "sensor_85",
+        "sensor_86",
+        "sensor_87",
+        "sensor_88",
+        "sensor_89",
+        "sensor_90",
+        "sensor_91",
+        "sensor_92",
+        "sensor_93",
+        "sensor_94",
+        "sensor_95",
+        "sensor_96",
+        "sensor_97",
+        "sensor_98",
+        "sensor_99",
+        "sensor_100",
+        "sensor_52",
+        "sensor_53",
+        "sensor_54",
+        "sensor_55",
+        "sensor_56",
+        "sensor_57",
+        "sensor_58",
+        "sensor_59",
+        "sensor_60",
+        "sensor_61",
+        "sensor_62",
+        "sensor_63",
+        "sensor_64",
+        "sensor_65",
+        "sensor_66",
+        "sensor_67",
+        "sensor_68"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLEA_ZPURLINSENSORREADINGS",
+        "MBMA_7506_TABLEC_CPURLINSENSORREADINGS"
+      ],
+      "unit": "inches"
+    },
+    {
+      "availability": "direct",
+      "definition": "Vertical deflection read optically (surveying instrument) at designated points on the purlins and deck at each load increment.",
+      "evidence": "Appendix A columns sensor_101 to sensor_108; Appendix C columns sensor_84 to sensor_90",
+      "name": "Optically read vertical deflection",
+      "note": "In Appendix A the final printed block is headed 103-108 but only five values per row are printed; sensor_108 is left empty and the column identity of the missing value is uncertain.",
+      "printed_symbol": "SENSOR NO.",
+      "quantity_kind": "length",
+      "role": "measured_output",
+      "symbols": [
+        "sensor_101",
+        "sensor_102",
+        "sensor_103",
+        "sensor_104",
+        "sensor_105",
+        "sensor_106",
+        "sensor_107",
+        "sensor_108",
+        "sensor_84",
+        "sensor_85",
+        "sensor_86",
+        "sensor_87",
+        "sensor_88",
+        "sensor_89",
+        "sensor_90"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLEA_ZPURLINSENSORREADINGS",
+        "MBMA_7506_TABLEC_CPURLINSENSORREADINGS"
+      ],
+      "unit": "inches"
+    },
+    {
+      "availability": "direct",
+      "definition": "Numbers of the two paired potentiometers (upper/top and lower/bottom) whose readings were used to compute rotation and horizontal movement.",
+      "evidence": "Appendix B (pp. 58-59) and Appendix D (pp. 70-72) columns 'sensor_no_1' and 'sensor_no_2'",
+      "name": "Potentiometer pair numbers",
+      "note": "One block header is printed 'SENSOR NU.' instead of 'NO.'",
+      "printed_symbol": "SENSOR NO.",
+      "quantity_kind": "count",
+      "role": "identifier",
+      "symbols": [
+        "sensor_no_1",
+        "sensor_no_2"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLEB_ZPURLINROTATIONMOVEMENT",
+        "MBMA_7506_TABLED_CPURLINROTATIONMOVEMENT"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Rotation of the purlin cross section at an instrumented point, computed from the difference of the paired potentiometer readings and their mounting offsets.",
+      "evidence": "Appendix B and Appendix D column 'angle_deg'",
+      "name": "Cross-section rotation angle",
+      "note": "Rows of all zeros at the highest loads indicate readings lost or not taken.",
+      "printed_symbol": "ANGLE",
+      "quantity_kind": "angle",
+      "role": "measured_output",
+      "symbols": [
+        "angle_deg"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLEB_ZPURLINROTATIONMOVEMENT",
+        "MBMA_7506_TABLED_CPURLINROTATIONMOVEMENT"
+      ],
+      "unit": "degrees"
+    },
+    {
+      "availability": "direct",
+      "definition": "First component of the horizontal movement of the purlin cross section, derived from the paired potentiometer readings.",
+      "evidence": "Appendix B and Appendix D column 'horiz_move_1_in' under header 'HORRIZONTAL MOVEMENT (1)'",
+      "name": "Horizontal movement component 1",
+      "note": "",
+      "printed_symbol": "HORRIZONTAL MOVEMENT (1)",
+      "quantity_kind": "length",
+      "role": "measured_output",
+      "symbols": [
+        "horiz_move_1_in"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLEB_ZPURLINROTATIONMOVEMENT",
+        "MBMA_7506_TABLED_CPURLINROTATIONMOVEMENT"
+      ],
+      "unit": "inches"
+    },
+    {
+      "availability": "direct",
+      "definition": "Second component of the horizontal movement of the purlin cross section, derived from the paired potentiometer readings.",
+      "evidence": "Appendix B and Appendix D column 'horiz_move_2_in' under header 'HORRIZONTAL MOVEMENT (2)'",
+      "name": "Horizontal movement component 2",
+      "note": "For sensor pair 76/77 at C test 61 the printed value +0.4090 is out of line with its neighbours.",
+      "printed_symbol": "HORRIZONTAL MOVEMENT (2)",
+      "quantity_kind": "length",
+      "role": "measured_output",
+      "symbols": [
+        "horiz_move_2_in"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLEB_ZPURLINROTATIONMOVEMENT",
+        "MBMA_7506_TABLED_CPURLINROTATIONMOVEMENT"
+      ],
+      "unit": "inches"
+    },
+    {
+      "availability": "direct",
+      "definition": "Total horizontal movement of the cross section, printed as the sum of components (1) and (2).",
+      "evidence": "Appendix B and Appendix D column 'horiz_move_total_in'",
+      "name": "Total horizontal movement",
+      "note": "",
+      "printed_symbol": "TOTAL",
+      "quantity_kind": "length",
+      "role": "measured_output",
+      "symbols": [
+        "horiz_move_total_in"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLEB_ZPURLINROTATIONMOVEMENT",
+        "MBMA_7506_TABLED_CPURLINROTATIONMOVEMENT"
+      ],
+      "unit": "inches"
+    },
+    {
+      "availability": "direct",
+      "definition": "Name of the full-scale system test (Z Purlin Test or C Purlin Test) as used in the report.",
+      "evidence": "Table S1 column 'test_id' (pp. 6-8, 10-11)",
+      "name": "Full-scale test identifier",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_id"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Direction of the applied load on the roof assembly (gravity for both tests).",
+      "evidence": "Table S1 column 'load_direction'",
+      "name": "Load direction",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "load_direction"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Shape of the purlin cross section used in the test assembly (C or Z).",
+      "evidence": "Table S1 column 'section_type'",
+      "name": "Purlin section shape",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "section_type"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal web depth of the purlin section (8 in. for the Z test, 7 in. for the C test).",
+      "evidence": "Table S1 column 'depth_in'",
+      "name": "Purlin depth",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "depth_in"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Base steel thickness of the purlin material as printed in the report.",
+      "evidence": "Table S1 column 'thickness_in' and header note",
+      "name": "Purlin thickness",
+      "note": "C purlin exterior spans used 0.119 in. material and the interior span 0.0773 in.; both values are in one cell.",
+      "printed_symbol": "t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "thickness_in"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Individual span lengths between supports of the three-span continuous assembly.",
+      "evidence": "Table S1 column 'span_ft'",
+      "name": "Span length",
+      "note": "Given as three span values per test in feet and inches.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "span_ft"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of continuous spans in the tested purlin assembly (three in both tests).",
+      "evidence": "Table S1 column 'n_spans'",
+      "name": "Number of spans",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_spans"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of parallel purlin lines loaded in the test assembly (two in both tests).",
+      "evidence": "Table S1 column 'n_purlin_lines'",
+      "name": "Number of purlin lines",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_purlin_lines"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Description of the roof deck and its attachment to the purlins (through-fastened with No. 14 self-tapping screws).",
+      "evidence": "Table S1 column 'panel_type'",
+      "name": "Roof panel/attachment type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "panel_type"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Description of the bracing provided to the purlin flanges (instrumented steel straps at supports, no intermediate braces; rake channels in the C test only).",
+      "evidence": "Table S1 column 'bracing'",
+      "name": "Bracing arrangement",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "bracing"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Maximum or failure applied vacuum load reached in the test exactly as printed in the report (58.12 psf for the Z test, 80 psf for the C test).",
+      "evidence": "Table S1 columns 'failure_load_as_printed' and 'failure_load_unit'",
+      "name": "Failure (maximum) applied load",
+      "note": "The report does not state whether specimen dead load is included.",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "measured_output",
+      "symbols": [
+        "failure_load_as_printed",
+        "failure_load_unit"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "psf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Failure moment column provided in the summary table but left blank because the report reports no failure moments.",
+      "evidence": "Table S1 columns 'failure_moment_as_printed' and 'failure_moment_unit' (both empty)",
+      "name": "Failure moment (not reported)",
+      "note": "No values reported in either test row.",
+      "printed_symbol": "",
+      "quantity_kind": "moment",
+      "role": "measured_output",
+      "symbols": [
+        "failure_moment_as_printed",
+        "failure_moment_unit"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Narrative description of what limited the strength of the assembly (deck buckling for the Z test, exterior-span purlin buckling for the C test).",
+      "evidence": "Table S1 column 'failure_mode'",
+      "name": "Failure mode",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "failure_mode"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Note of where in the report the reported strength value is stated (table or text) and the PDF page(s).",
+      "evidence": "Table S1 columns 'value_source' and 'pages'",
+      "name": "Source of strength value",
+      "note": "Bookkeeping fields rather than physical quantities.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "value_source",
+        "pages"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Applied load at which buckling of the roof deck was first observed (33.36 psf for the Z test, 73.64 psf for the C test).",
+      "evidence": "Table S1 column 'deck_buckling_onset_psf'",
+      "name": "Deck buckling onset load",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "measured_output",
+      "symbols": [
+        "deck_buckling_onset_psf"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "psf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Maximum tensile stress observed in the purlins during the test, computed from the strain gage readings.",
+      "evidence": "Table S1 column 'max_tensile_stress_psi'",
+      "name": "Maximum tensile stress",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "measured_output",
+      "symbols": [
+        "max_tensile_stress_psi"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "psi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Maximum compressive stress observed in the purlins during the test, from the strain gage readings.",
+      "evidence": "Table S1 column 'max_compressive_stress_psi' and header note",
+      "name": "Maximum compressive stress",
+      "note": "For the Z test it is reported only as '50,000 psi or greater' at Sensors 5, 30, 34 and 56.",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "measured_output",
+      "symbols": [
+        "max_compressive_stress_psi"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "psi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Manufacturer of the roof decking used in each test (Strand Steel for the Z test, Inland Ryerson for the C test).",
+      "evidence": "Table S1 column 'deck_manufacturer'",
+      "name": "Deck manufacturer",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "deck_manufacturer"
+      ],
+      "table_tags": [
+        "MBMA_7506_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    }
+  ],
+  "year": "1975"
+}

@@ -1,0 +1,30 @@
+# Source: MBMA_9003 | Hatch, J., Easterling, W.S. and Murray, T.M. (1990), Table 3.2, pp.29
+# Tag: MBMA_9003_TABLE32_AXIALLOADVERIFICATION
+# Content: Measured versus predicted axial failure loads for the eight axial-load-only strut-purlin tests used to verify Simaan's method.
+# Data basis: mixed: measured axial failure loads from vacuum-chamber tests with Simaan-method predicted capacities
+# Units: purlin_depth_in, purlin_thickness_in, initial_sweep_in inches; span_ft feet; p_predicted_kip, p_actual_kip kips; ratio dimensionless
+# Column definitions:
+#   test_designation = test identification label (SP = strut purlin project, see notes)
+#   purlin_depth_in = measured depth of the purlin section, inches
+#   purlin_thickness_in = measured thickness of the purlin material, inches
+#   span_ft = simple span length of the tested purlins, feet
+#   initial_sweep_in = initial lateral sweep (out-of-straightness) of the purlin, inches
+#   p_predicted_kip = axial failure load predicted by Simaan's method with interaction equation, kips
+#   p_actual_kip = axial failure load measured in the test, kips
+#   p_actual_over_p_predicted = ratio of actual to predicted axial failure load, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 224 pages)
+# ANOMALY FLAG: Some ratios and loads printed in this summary differ slightly from the corresponding data packs (e.g. SP-7C-12-3 is listed as 12.8/11.7 = 0.91 here but the data pack gives 12.7 k predicted and a ratio of .92; SP-10Z-12-1 ratio .89 and SP-10Z-12-2 ratio .98 in the data packs versus 0.88 and 0.96 here). Values are preserved verbatim as printed and NOT corrected.
+# Test ID convention: SP = strut purlin strength evaluation project; 10C/10Z/7C = purlin depth and shape; 12 = fastener spacing in inches; final digit = sequence number.
+# Predicted values are based on experimentally determined rotational stiffnesses for the actual (measured) fastener locations and measured yield stresses.
+# Printed header for the last column reads 'Actual / Predicted'.
+test_designation,purlin_depth_in,purlin_thickness_in,span_ft,initial_sweep_in,p_predicted_kip,p_actual_kip,p_actual_over_p_predicted
+SP-7C-12-3,7.0,0.076,15,0.25,12.8,11.7,0.91
+SP-7C-12-1,7.1,0.075,17,0.50,11.4,10.7,0.94
+SP-7C-12-2,7.0,0.076,19,0.50,13.4,11.1,0.83
+SP-10Z-12-1,10.0,0.074,17,0.25,17.1,15.0,0.88
+SP-10Z-12-3,10.0,0.074,21,0.0,17.4,18.2,1.05
+SP-10Z-12-2,10.0,0.074,25,0.0,13.1,12.6,0.96
+SP-10C-12-1,10.0,0.100,17,0.38,19.8,20.8,1.05
+SP-10C-12-2,10.0,0.100,25,0.25,16.8,18.0,1.07

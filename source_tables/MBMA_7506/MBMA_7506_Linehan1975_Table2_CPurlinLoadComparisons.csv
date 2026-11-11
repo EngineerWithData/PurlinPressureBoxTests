@@ -1,0 +1,42 @@
+# Source: MBMA_7506 | Linehan, P.W. and Guedelhoefer, O.C. (1975), Table 2, pp.11
+# Tag: MBMA_7506_TABLE2_CPURLINLOADCOMPARISONS
+# Content: Comparison of approximate (manometer) and load-cell-computed vacuum pressures, with interior-to-exterior support reaction ratio, for each load increment of the C purlin gravity load test.
+# Data basis: mixed: manometer-measured approximate pressures with pressures and ratios computed from load cell readings
+# Units: test_no dimensionless; loads in psf; sensor readings in lb; ratio dimensionless
+# Column definitions:
+#   test_no = test (load increment) number as printed
+#   load_approx_psf = approximate applied vacuum load from manometer readings, psf
+#   load_computed_psf = load computed from the load-cell readings, psf
+#   sensor_50_lb = load cell reading under one purlin at a typical exterior support, lb
+#   sensor_51_lb = load cell reading under one purlin at a typical interior support, lb
+#   ratio_51_over_50 = interior support load divided by exterior support load, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 72 pages)
+# ANOMALY FLAG: Tests 57 and 62 give ratios of 4.75 and 4.69, far outside the 2.00-2.75 range, caused by exterior load-cell readings (771 and 761) that are lower than those of the preceding lower-load increments; preserved verbatim and NOT corrected. Test 76 approximate load is printed as 72.6 here but as 72.8 in Appendix C; preserved verbatim.
+# Sensor locations 50 (exterior support load cell) and 51 (interior support load cell) are shown in Fig. 5.
+# Blank lines in the printed table separate the cyclic load series (tests 52-57, 59-67) from the test to failure (tests 69-76).
+test_no,load_approx_psf,load_computed_psf,sensor_50_lb,sensor_51_lb,ratio_51_over_50
+52,5.2,5.80,195,501,2.57
+53,10.4,11.27,401,951,2.37
+54,15.6,16.82,603,1415,2.34
+55,20.8,22.85,812,1930,2.37
+56,26.0,28.72,1026,2420,2.36
+57,31.2,36.91,771,3659,4.75
+59,10.4,11.22,396,951,2.40
+60,20.8,23.53,842,1982,2.35
+61,26.0,26.57,949,2240,2.36
+62,31.2,36.08,761,3569,4.69
+63,36.4,40.55,1453,3414,2.35
+64,41.6,44.84,1618,3763,2.32
+65,46.8,50.24,1814,4215,2.32
+66,52.0,55.77,2026,4667,2.30
+67,57.2,59.11,2156,4938,2.29
+69,31.2,34.25,1226,2885,2.35
+70,41.6,45.43,1638,3814,2.32
+71,46.8,47.65,1711,4008,2.34
+72,52.0,55.39,1980,4667,2.35
+73,57.2,59.00,2114,4977,2.35
+74,62.4,69.18,2473,5829,2.36
+75,67.6,73.67,2624,6217,2.37
+76,72.6,78.25,2759,6631,2.40

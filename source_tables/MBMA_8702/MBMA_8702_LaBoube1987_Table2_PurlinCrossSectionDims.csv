@@ -1,0 +1,54 @@
+# Source: MBMA_8702 | LaBoube, R.A. (1987), Table 2, pp.5, 15
+# Tag: MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS
+# Content: Measured cross-section dimensions, lip angle, yield stress and initial sweep of the north and south purlin of each of the 12 uplift test specimens.
+# Data basis: measured: cross-section dimensions, lip angles, initial sweep and coupon yield stress of the test purlins
+# Units: see column headers
+# Column definitions:
+#   test_no = purlin test specimen number (blank on the second line of each pair)
+#   purlin_location = purlin position in the pair: N = north purlin, S = south purlin
+#   h_in = overall depth of the purlin section, inches (Fig. 1)
+#   b1_in = flange width, dimension B1 of the section, inches (Fig. 1)
+#   b2_in = width of the opposite flange, dimension B2 of the section, inches (Fig. 1)
+#   l1_in = edge stiffener (lip) length L1, inches (Fig. 1)
+#   l2_in = edge stiffener (lip) length L2 on the opposite flange, inches (Fig. 1)
+#   r1_in = inside corner radius r1, inches (Fig. 1)
+#   r2_in = inside corner radius r2, inches (Fig. 1)
+#   t_in = base steel thickness of the purlin, inches
+#   phi_deg = angle of the edge stiffener (lip) from the flange, degrees (Fig. 1)
+#   fy_ksi = measured yield stress of the purlin steel, ksi
+#   ao_in = initial purlin sweep; negative = sweep to south, positive = sweep to north, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 34 pages)
+# ANOMALY FLAG: Printed oddities preserved verbatim and NOT corrected: (a) on PDF page 5 the third dimension column is headed "R2" while on PDF page 15 the same column is headed "B2" (B2 is used here, per Figure 1); (b) Test 3 North row prints B1 = 3.938 in., inconsistent with all other Z-section flange widths (~2.9-3.1 in.); (c) Test 5 South row prints L2 = 8.813 in., inconsistent with all other lip lengths (~0.75-0.88 in.); (d) Test 6 South row prints B1 = 2.738 in.; (e) Test 9 South row prints the depth as "9 7.063" (stray leading digit) and is kept exactly as printed; (f) footnote b refers to "Figure 3" for the cross-section notation although the notation is defined in Figure 1. The table is printed twice (pages 5 and 15) with identical values and the two printings are merged here.
+# CORRECTION (Cris Moen, 2026-10-13; open question MBMA_8702-Q03): three typing errors in Table 2 (identical in both printings, pp. 5 and 15) corrected: Test 3 north purlin B1 3.938 -> 2.938 in. (other Z flange widths 2.738-3.188 in.); Test 5 south purlin L2 8.813 -> 0.813 in. (other lips 0.686-0.875 in.); Test 9 south purlin H "9 7.063" -> 9.063 in. (other C depths 9.063-9.125 in.). Items (b), (c) and (e) of the ANOMALY FLAG above refer to the printed values.
+# Footnote a: Purlin location designation: N = North Purlin, S = South Purlin.
+# Footnote b: Refer to Figure 3 (as printed; the notation is actually shown in Figure 1) for definition of cross-section notations.
+# Footnote c: Initial sweep sign convention: negative indicates sweep to the south, positive indicates sweep to the north.
+# Test number is printed only on the first (N) line of each purlin pair; the second (S) line is left blank as printed.
+# Identical table appears on PDF pages 5 and 15.
+test_no,purlin_location,h_in,b1_in,b2_in,l1_in,l2_in,r1_in,r2_in,t_in,phi_deg,fy_ksi,ao_in
+1,N,8.125,2.938,3.125,0.750,0.750,0.344,0.875,0.0746,32,60.60,0
+,S,8.125,3.125,2.938,0.750,0.750,0.375,0.875,0.0745,34,61.49,-0.0625
+2,N,8.125,2.938,3.188,0.750,0.750,0.281,0.813,0.0745,31,59.66,-0.0625
+,S,8.125,3.000,3.125,0.750,0.750,0.328,0.813,0.0731,31,59.04,-0.0938
+3,N,8.125,2.938,3.125,0.750,0.750,0.313,0.875,0.0760,32,57.07,-0.2500
+,S,8.125,3.000,3.063,0.813,0.750,0.422,0.875,0.0760,33,57.07,0
+4,N,8.125,2.938,3.125,0.750,0.750,0.359,0.688,0.0781,35,64.60,-0.0625
+,S,8.188,2.938,3.125,0.813,0.750,0.375,0.688,0.0781,35,64.60,-0.0625
+5,N,8.125,3.000,2.750,0.813,0.813,0.234,0.344,0.0870,76,55.16,-0.0625
+,S,8.125,3.000,2.750,0.750,0.813,0.250,0.359,0.0870,74,55.16,-0.0625
+6,N,8.125,3.000,2.750,0.813,0.813,0.266,0.375,0.0863,74,55.40,-0.1875
+,S,8.125,2.738,2.750,0.813,0.813,0.234,0.375,0.0851,72,57.76,-0.1563
+7,N,8.188,2.938,2.688,0.750,0.875,0.297,0.344,0.0920,74,58.00,0
+,S,8.188,3.000,2.688,0.813,0.875,0.281,0.375,0.0920,76,58.00,0
+8,N,8.188,3.000,2.688,0.813,0.875,0.266,0.344,0.0920,74,56.50,0
+,S,8.188,3.000,2.688,0.813,0.875,0.281,0.344,0.0920,75,56.50,0
+9,N,9.125,2.563,2.500,0.813,0.750,0.297,0.234,0.0785,85,62.93,+0.2500
+,S,9.063,2.500,2.563,0.813,0.750,0.266,0.219,0.0780,82,63.85,+0.2500
+10,N,9.063,2.563,2.438,0.813,0.750,0.297,0.234,0.0780,86,61.16,+0.1250
+,S,9.063,2.500,2.563,0.813,0.750,0.297,0.234,0.0791,83,62.45,+0.0625
+11,N,9.063,2.563,2.500,0.813,0.686,0.266,0.234,0.0798,87,64.04,-0.0313
+,S,9.063,2.563,2.500,0.813,0.750,0.277,0.234,0.0796,87,63.26,-0.0625
+12,N,9.063,2.563,2.500,0.813,0.750,0.266,0.234,0.0775,85,63.09,0
+,S,9.063,2.625,2.500,0.813,0.750,0.281,0.234,0.0795,86,60.37,0

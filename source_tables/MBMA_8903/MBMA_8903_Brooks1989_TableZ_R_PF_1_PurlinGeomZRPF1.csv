@@ -1,0 +1,30 @@
+# Source: MBMA_8903 | Brooks, S. and Murray, T.M. (1989), Table Z-R-P/F-1, pp.56
+# Tag: MBMA_8903_TABLEZRPF1_PURLINGEOMZRPF1
+# Content: Measured cross-section geometry, coupon yield stress and computed flexural capacity of the two purlin lines of base test Z-R-P/F-1.
+# Data basis: mixed: measured cross-section dimensions and coupon yield stress with computed moment of inertia and AISI capacity
+# Units: units are given in each parameter label (inches, degrees, inches4, ksi, kip-inch)
+# Column definitions:
+#   parameter = measured cross-section dimension or computed property; unit given in the label
+#   ridge = value for the ridge-side purlin line of the single span base test
+#   eave = value for the eave-side purlin line of the single span base test
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 120 pages)
+# ANOMALY FLAG: The eave BOTTOM flange width is printed as 2.8875 in. while the corresponding sketch shows 2.69 in.; preserved verbatim as printed and NOT corrected.
+# Table is unnumbered; headed "TEST Z-R-P/F-1 MEASURED GEOMETRY OF PURLIN CROSS-SECTIONS" (page A.22).
+parameter,ridge,eave
+TOP Vertical Lip Dimension (inches),0.5625,0.5938
+TOP Lip Angle (degree),47,46
+TOP Flange Width (inches),2.5,2.4375
+TOP Radii Lip to Flange (inches),0.2188,0.18
+TOP Radii Flange to Web (inches),0.25,0.25
+BOTTOM Vertical Lip Dimension (inches),0.6563,0.6875
+BOTTOM Lip Angle (degree),49,50
+BOTTOM Flange Width (inches),2.8125,2.8875
+BOTTOM Radii Lip to Flange (inches),0.2188,0.18
+BOTTOM Radii Flange to Web (inches),0.25,0.25
+Total Depth (inches),7.936,7.936
+Thickness (inches),0.061,0.061
+Gross Moment of Inertia (inches4),8.42,8.31
+Material Yield Stress (ksi),57.61,57.61
+1986 AISI Allowable flexural capacity x 1.67 (kip-inch),98.9,101.1

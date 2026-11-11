@@ -1,0 +1,56 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 4-15, pp.90
+# Tag: MBMA_9410_TABLE415_VACUUMBOXTEST5
+# Content: Time history of panel displacements, chamber pressure and individual fastener loads for vacuum box test 5 (two span system, 24 gage Pascoe panels).
+# Data basis: measured: pressure transducer, LVDTs and six load cells logged during the vacuum box test
+# Units: pt_psi in psi; LVDTs in inches; load cells in pounds
+# Column definitions:
+#   date = calendar date of the scan, mm/dd/yy
+#   time_hhmmss = clock time of the scan
+#   lvdt1_in = displacement measured by LVDT 1, inches
+#   lvdt2_in = displacement measured by LVDT 2, inches
+#   pt_psi = chamber pressure from the pressure transducer, psi
+#   lcell3_lb = load on the fastener at load cell 3, pounds
+#   lcell4_lb = load on the fastener at load cell 4, pounds
+#   lcell5_lb = load on the fastener at load cell 5, pounds
+#   lcell6_lb = load on the fastener at load cell 6, pounds
+#   lcell7_lb = load on the fastener at load cell 7, pounds
+#   lcell8_lb = load on the fastener at load cell 8, pounds
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: Several numeric cells were extracted with a space where the decimal point is printed (e.g. "248 261", "228 088", "135 728", "135 854", "781 625", "570 623", "780 512", "588 682", "782 948", "557 888", "806 489", "566 640", "815 813", "570 074", "856 637", "899 057", "599 387", "546 504", "596 065", "3 999", "830 340", "850 190", "-0 677"); these are preserved exactly as extracted and were NOT corrected.
+# Printed summary: Test Number 5; Failed Cells #6 (Pullover, peak 690.154), #7 (Pullout, peak 781.599); Peak Pressures 1.145/1.272; Peak LVDT 1 1.084/1.424; Peak LVDT 2 1.942/2.365; Elapsed Time 02:21; Size 24 Ga.; Type Pascoe.
+# Printed comments: Good test. Minor panel buckling. One pullout failure was observed. Striping of the threads may have caused this or perhaps the screw was placed in a hole previously drilled. Purlins were used for more than 1 test.
+# The printed table caption reads "Vacuum Box Number 5" (the word Test is omitted).
+date,time_hhmmss,lvdt1_in,lvdt2_in,pt_psi,lcell3_lb,lcell4_lb,lcell5_lb,lcell6_lb,lcell7_lb,lcell8_lb
+12/01/95,18:09:08.305,0.016,-0.014,-0.015,248 261,228 088,302.832,93.497,135 728,141.814
+12/01/95,18:09:13.300,0.016,-0.014,-0.019,248.077,227.967,302.870,93.521,135.623,141.775
+12/01/95,18:09:18.300,0.016,-0.014,-0.015,248.219,228.010,302.755,93.467,135.812,141.758
+12/01/95,18:09:23.300,0.016,-0.014,-0.016,248.221,227.867,302.732,93.573,135 854,141.753
+12/01/95,18:09:28.300,0.016,-0.014,-0.020,248.168,227.849,302.917,93.519,135.791,141.806
+12/01/95,18:09:33.300,0.016,-0.014,-0.018,249.256,228.361,302.845,94.231,136.001,141.978
+12/01/95,18:09:38.300,0.016,-0.010,0.000,258.109,232.278,303.822,103.581,137.996,145.591
+12/01/95,18:09:43.300,0.016,0.071,0.149,323.360,292.686,352.440,182.937,192.197,219.932
+12/01/95,18:09:48.300,0.037,0.721,0.457,423.191,354.774,462.193,347.913,406.901,331.404
+12/01/95,18:09:53.300,0.357,1.091,0.667,456.594,399.993,557.705,458.959,546.089,408.556
+12/01/95,18:09:58.300,0.594,1.384,0.856,486.111,457.340,651.212,574.789,650.900,497.428
+12/01/95,18:10:03.300,0.758,1.555,0.980,515.674,501.170,722.437,664.957,719.906,539.721
+12/01/95,18:10:08.300,0.968,1.767,1.075,534.240,545.337,807.905,726.901,753.338,569.722
+12/01/95,18:10:13.300,1.100,1.929,1.130,538.164,576.825,837.354,783.651,781 625,585.420
+12/01/95,18:10:18.300,1.142,2.028,1.147,537.045,587.074,833.810,764.701,785.342,580.058
+12/01/95,18:10:23.300,1.170,2.063,1.157,535.341,590.619,831.746,688.843,787.085,570 623
+12/01/95,18:10:28.300,1.181,2.071,1.155,530.727,588.660,823.872,652.939,780 512,560.112
+12/01/95,18:10:33.300,1.188,2.079,1.153,528.888,588 682,822.071,633.285,782 948,557 888
+12/01/95,18:10:38.300,1.216,2.124,1.183,535.807,600.411,845.960,598.371,806 489,566 640
+12/01/95,18:10:43.300,1.234,2.151,1.188,536.857,604.753,856.763,563.303,815 813,570 074
+12/01/95,18:10:48.300,1.298,2.226,1.229,548.195,628.267,854.143,504.509,856 637,590.825
+12/01/95,18:10:53.300,1.346,2.292,1.247,553.124,638.706,848.354,250.447,899 057,601.814
+12/01/95,18:10:58.300,1.388,2.317,1.254,552.348,642.623,845.777,174.707,911.258,604.536
+12/01/95,18:11:03.300,1.411,2.327,1.257,549.280,641.683,840.177,157.047,908.171,599 387
+12/01/95,18:11:08.300,1.418,2.331,1.251,546 504,639.983,835.532,145.015,905.021,594.708
+12/01/95,18:11:13.300,1.424,2.334,1.240,543.893,638.695,831.420,134.133,902.879,592.401
+12/01/95,18:11:18.300,1.426,2.335,1.242,542.032,637.024,828.476,125.001,901.346,589.630
+12/01/95,18:11:23.300,1.440,2.351,1.257,545.449,641.246,842.351,109.997,917.327,596 065
+12/01/95,18:11:28.300,2.691,3.971,1.115,513.450,592.578,827.912,2.287,827.153,593.206
+12/01/95,18:11:29.300,2.711,3 999,1.126,515.904,594.715,830 340,2.671,850 190,462.596
+12/01/95,18:11:29.399,3.140,3.958,0.840,442.524,498.360,740.275,-0 677,-11.146,465.149

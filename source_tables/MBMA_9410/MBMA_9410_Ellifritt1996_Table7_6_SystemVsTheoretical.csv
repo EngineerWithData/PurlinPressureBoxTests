@@ -1,0 +1,19 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 7-6, pp.175
+# Tag: MBMA_9410_TABLE76_SYSTEMVSTHEORETICAL
+# Content: Comparison of vacuum box system test pullover strengths with the theoretical predictions of Chapter 5.
+# Data basis: mixed: measured system test means with theory-predicted capacities
+# Units: strengths in pounds; percent_error in percent
+# Column definitions:
+#   panels = panel supplier and sheet gage
+#   system_test_pullover_strength_lb = mean pullover strength measured in the vacuum box system tests, pounds
+#   theoretical_pullover_strength_lb = pullover strength predicted by the derived theory, pounds
+#   percent_error = difference between test and predicted strength, percent
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 16 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# Supporting spreadsheet calculations are Tables 7-11 through 7-14.
+panels,system_test_pullover_strength_lb,theoretical_pullover_strength_lb,percent_error
+Pascoe 24 Ga.,680,608,10.588
+Pascoe 26 Ga.,398,366,8.040
+American 24 Ga.,689,702,1.852
+American 26 Ga.,540,505,6.481

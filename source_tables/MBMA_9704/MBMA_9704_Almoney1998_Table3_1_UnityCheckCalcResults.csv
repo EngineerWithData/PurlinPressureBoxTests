@@ -1,0 +1,30 @@
+# Source: MBMA_9704 | Almoney, K. and Murray, T.M. (1998), Table 3.1, pp.16
+# Tag: MBMA_9704_TABLE31_UNITYCHECKCALCRESULTS
+# Content: Required and nominal moment and shear values with resulting unity checks in the positive and negative moment regions at the recorded failure load of each test.
+# Data basis: computed: stiffness analysis at measured failure load combined with AISI Specification nominal strengths
+# Units: see column headers; unity checks and ratios dimensionless
+# Column definitions:
+#   test_no = test designation
+#   mu_pos_ft_kips = required moment at the positive moment region at failure load, ft-kips
+#   mnxo_pos_ft_kips = nominal flexural strength about centroidal x-axis, positive moment region, ft-kips
+#   unity_check_pos = ratio Mu/Mnxo in the positive moment region, dimensionless
+#   mu_neg_ft_kips = required moment just outside the lap in the negative moment region, ft-kips
+#   mnxo_neg_ft_kips = nominal flexural strength in the negative moment region, ft-kips
+#   mu_over_mnxo_neg = ratio of required to nominal moment in the negative moment region
+#   vu_kips = required shear strength just outside the lap at failure load, kips
+#   vn_kips = nominal shear strength when shear alone exists, kips
+#   vu_over_vn = ratio of required to nominal shear strength, dimensionless
+#   unity_check_neg = result of AISI Eq. C3.3.2-1 shear plus bending interaction in negative moment region
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 92 pages)
+# Note 1 as printed: Mu and Vu were determined using the actual failure load and assuming full continuity in the lap.
+# Note 2 as printed: See appendices for Mnxo and Vn values.
+# Positive-moment unity check = Mu/Mnxo; negative-moment unity check = AISI Eq. C3.3.2-1 (Mu/Mnxo)^2 + (Vu/Vn)^2.
+test_no,mu_pos_ft_kips,mnxo_pos_ft_kips,unity_check_pos,mu_neg_ft_kips,mnxo_neg_ft_kips,mu_over_mnxo_neg,vu_kips,vn_kips,vu_over_vn,unity_check_neg
+FV20-1,4.70,10.59,0.44,6.86,10.72,0.64,2.76,4.59,0.60,0.77
+FV20-2,4.73,10.45,0.45,6.91,10.73,0.64,2.78,4.59,0.61,0.78
+FV20-3,6.11,11.68,0.52,8.89,11.41,0.78,3.60,5.74,0.63,1.00
+FV20-4,5.70,11.94,0.48,8.34,11.42,0.73,3.37,5.74,0.59,0.88
+FV25-1,6.69,12.40,0.54,10.62,13.44,0.79,3.19,6.26,0.51,0.88
+FV25-2,6.87,15.22,0.45,10.69,15.39,0.69,3.26,8.67,0.38,0.62

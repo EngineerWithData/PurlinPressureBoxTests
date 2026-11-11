@@ -1,0 +1,68 @@
+# Source: MBMA_7501 | Peköz, T. (1975), Table APPENDIX B Page 6, pp.94
+# Tag: MBMA_7501_TABLEB6_APPB6CSECROTATIONS
+# Content: Twist angles and horizontal deflections at the middle of the web, computed from paired dial-gage readings at each load level of the C-section purlin assembly test (braces only at supports).
+# Data basis: mixed: dial-gage displacements measured during the vacuum uplift test with twist angles and web mid-height displacements computed from them
+# Units: load_psf in psf; all displacement columns in inches; tan_theta columns dimensionless
+# Column definitions:
+#   load_psf = applied vacuum (uplift) load, psf
+#   u2_in = horizontal displacement at dial gage 2, inches
+#   u3_in = horizontal displacement at dial gage 3, inches
+#   u2_minus_u3_in = difference of gage 2 and gage 3 displacements, inches
+#   tan_theta_2_3 = twist angle (tangent) from gages 2 and 3, dimensionless
+#   um_2_3_in = horizontal displacement of middle of web from gages 2,3, inches
+#   u9_in = horizontal displacement at dial gage 9, inches
+#   u10_in = horizontal displacement at dial gage 10, inches
+#   u9_minus_u10_in = difference of gage 9 and gage 10 displacements, inches
+#   tan_theta_9_10 = twist angle (tangent) from gages 9 and 10, dimensionless
+#   um_9_10_in = horizontal displacement of middle of web from gages 9,10, inches
+#   u6_in = horizontal displacement at dial gage 6, inches
+#   u7_in = horizontal displacement at dial gage 7, inches
+#   u6_minus_u7_in = difference of gage 6 and gage 7 displacements, inches
+#   tan_theta_6_7 = twist angle (tangent) from gages 6 and 7, dimensionless
+#   um_6_7_in = horizontal displacement of middle of web from gages 6,7, inches
+#   u22_in = horizontal displacement at dial gage 22, inches
+#   u23_in = horizontal displacement at dial gage 23, inches
+#   u22_minus_u23_in = difference of gage 22 and gage 23 displacements, inches
+#   tan_theta_22_23 = twist angle (tangent) from gages 22 and 23, dimensionless
+#   um_22_23_in = horizontal displacement of middle of web from gages 22,23, inches
+#   u19_in = horizontal displacement at dial gage 19 (header printed 'u[?]'), inches
+#   u20_in = horizontal displacement at dial gage 20, inches
+#   u19_minus_u20_in = difference of gage 19 and gage 20 displacements, inches
+#   tan_theta_19_20 = twist angle (tangent) from gages 19 and 20, dimensionless
+#   um_19_20_in = horizontal displacement of middle of web from gages 19,20, inches
+#   u25_in = horizontal displacement at dial gage 25, inches
+#   u26_in = horizontal displacement at dial gage 26, inches
+#   u25_minus_u26_in = difference of gage 25 and gage 26 displacements, inches
+#   tan_theta_25_26 = twist angle (tangent) from gages 25 and 26, dimensionless
+#   um_25_26_in = horizontal displacement of middle of web from gages 25,26, inches
+#   u4_in = horizontal displacement at dial gage 4, inches
+#   u5_in = horizontal displacement at dial gage 5, inches
+#   u4_minus_u5_in = difference of gage 4 and gage 5 displacements, inches
+#   tan_theta_4_5 = twist angle (tangent) from gages 4 and 5, dimensionless
+#   um_4_5_in = horizontal displacement of middle of web from gages 4,5, inches
+#   u28_in = horizontal displacement at dial gage 28, inches
+#   u29_in = horizontal displacement at dial gage 29, inches
+#   u28_minus_u29_in = difference of gage 28 and gage 29 displacements, inches
+#   tan_theta_28_29 = twist angle (tangent) from gages 28 and 29, dimensionless
+#   um_28_29_in = horizontal displacement of middle of web from gages 28,29, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 104 pages)
+# ANOMALY FLAG: The header of the fifth gage group is printed as 'u[?]' (its paired gage is 20, so the gage is presumably 19); the column is named u19_in and the printed ambiguity is reported here. One value is printed as '1.04[?]' and one as '.[?]87'-type markers; all [?] markers are preserved verbatim. A footnote dot marks readings affected by excessive twist.
+# Dial gage locations are given in Fig. 22.
+# Printed footnote: a dot marks excessive twist of purlin, touching the string, therefore the reading is more than what it actually was (see the original data).
+# The two printed row-bands share the same load values and have been merged side by side into one table.
+load_psf,u2_in,u3_in,u2_minus_u3_in,tan_theta_2_3,um_2_3_in,u9_in,u10_in,u9_minus_u10_in,tan_theta_9_10,um_9_10_in,u6_in,u7_in,u6_minus_u7_in,tan_theta_6_7,um_6_7_in,u22_in,u23_in,u22_minus_u23_in,tan_theta_22_23,um_22_23_in,u19_in,u20_in,u19_minus_u20_in,tan_theta_19_20,um_19_20_in,u25_in,u26_in,u25_minus_u26_in,tan_theta_25_26,um_25_26_in,u4_in,u5_in,u4_minus_u5_in,tan_theta_4_5,um_4_5_in,u28_in,u29_in,u28_minus_u29_in,tan_theta_28_29,um_28_29_in
+3,.128,.040,.088,.022,.084,.091,.019,.072,.018,.055,.011,.00,.011,.00275,.0055,.004,.006,-.002,-.0005,+.005,.091,.029,.062,.0155,.06,.077,.022,.055,.01375,.0495,.10,.027,.073,.01825,.0636,.137,.042,.097,.02425,.0905
+6,.236,.074,.162,.0405,.155,.276,.039,.237,.05925,.1575,.012,.001,.013,.00325,.1055,.010,.009,.001,.00025,.0095,.184,.060,.124,.031,.122,.154,.038,.116,.029,.096,.225,.074,.151,.03775,.1495,.259,-.078,.181,.04525,.1185
+9,.338,.103,.235,.05875,.2205,.350,.054,.296,.074,.202,.015,.003,.018,.0045,.006,.018,.014,.004,.001,.016,.283,.090,.193,.04825,.1865,.234,.059,.175,.04375,.1465,.340,.109,.231,.05775,.2245,.476,.154,.322,.0805,.315
+12,.420,.126,.294,.0735,.273,.505,.066,.439,.10975,.2855,.019,-.004,.015,.00375,.0115,.028,.022,.006,.0015,.025,.367,.118,.249,.06225,.2425,.298,.076,.222,.0555,.187,.435,.137,.298,.0745,.276,.556,.175,.379,.09475,.3645
+15,.496,.143,.353,.08825,.3175,.561,.074,.487,.12175,.3175,.022,.010,.032,.008,.006,.034,.027,.007,.00175,.0305,.451,.145,.306,.0765,.298,.378,.095,.283,.07075,.2365,.517,.163,.354,.0885,.340,.631,.191,.440,.110,.4110
+18,.569,.162,.407,.10175,.3655,.637,.092,.545,.13625,.3645,.029,.018,.047,.01175,.0055,.151,.042,.109,.02725,.0965,.523,.174,.349,.08725,.3485,.426,.101,.325,.08125,.2635,.597,.194,.403,.10075,.3955,.718,.214,.504,.126,.466
+21,.654,.199,.455,.11375,.4265,.672,.090,.582,.1455,.381,.044,.004,.148,.012,.02,.166,.140,.026,.0065,.152,.601,.198,.403,.10075,.3995,.488,.121,.367,.09175,.3045,.672,.213,.459,.11475,.1425,.800,.230,.570,.1425,.515
+24,.801,.215,.586,.1465,.502,.665,.126,.539,.13475,.3955,.044,.004,.148,.012,.02,.170,.148,.022,.0055,.157,.669,.220,.449,.11225,.4495,.542,.154,.408,.102,.358,.711,.222,.489,.12225,.4665,.882,.390,.492,.123,.636
+27,.896,.241,.655,.16375,.5625,.752,.097,.655,.16375,.4245,.047,.009,.056,.014,.019,.184,.159,.025,.00625,.1715,.731,.251,.480,.120,.491,.580,.137,.443,.11075,.3585,.760,.234,.526,.1315,.4970,.945,.404,.541,.13525,.6745
+30,1.004,.272,.732,.183,.638,.803,.102,.701,.17525,.4525,.050,.014,.064,.016,.018,.194,.169,.025,.00625,.1815,.811,.283,.528,.132,.547,.649,.156,.493,.12325,.4025,.859,.262,.597,.14925,.5605,1.04[?],.421,.620,.155,.731
+33,1.085,.361,.724,.181,.723,.847,.109,.738,.1845,.478,.052,.019,.071,.01775,.0165,.209,.178,.031,.00775,.1935,.879,.306,.573,.14325,.5925,.689,.166,.523,.13075,.4275,.736,.279,.657,.16425,.6075,1.157,.453,.704,.176,.805
+36,1.233,.411,.822,.2055,.822,.912,.117,.795,.19875,.5145,.053,.025,.078,.0195,.014,.222,.190,.032,.008,.206,.954,.335,.619,.15475,.6445,.745,.276,.469,.11725,.5115,1.096,.306,.790,.185,.676,1.360,.506,.854,.2135,.933
+39,1.330,.459,.871,.21775,.8945,.997,.122,.875,.21875,.5595,.053,.035,.088,.022,.009,.233,.202,.031,.00775,.2175,1.024,.365,.659,.16475,.6945,.795,.191,.604,.151,.493,1.149,.331,.818,.2045,.740,1.518,.497,1.031,.25775,1.0125

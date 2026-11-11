@@ -1,0 +1,17 @@
+# Merge audit: PASS WITH WARNINGS
+# 125 identity checks run, 0 failed; worst residual 0.53%
+# join coverage 92.5%; 322 rows pooled from 331 source rows
+# Identity checks re-derive a reported value from the paper's own ratios. They are
+#   independent of how the merge was built, so they can contradict it.
+severity,check,group,paper,detail
+warning,join,,MBMA_9002,"MBMA_9002_TABLE31_TESTCONFIGURATIONMATRIX attached to 14 of 17 specimens; 3 found no matching row, so those specimens carry no columns from it"
+info,range,multi_span_continuous_gravity,MBMA_7506 vs MBMA_9704,"""depth_in"" ranges do not overlap (7 to 8 against 8.5 to 8.5); pooled statistics for it describe two separate populations"
+info,range,multi_span_continuous_gravity,MBMA_8903 vs MBMA_7506,"""n_purlin_lines"" ranges do not overlap (3 to 4 against 2 to 2); pooled statistics for it describe two separate populations"
+info,range,multi_span_continuous_gravity,MBMA_8903 vs MBMA_9704,"""n_purlin_lines"" ranges do not overlap (3 to 4 against 2 to 2); pooled statistics for it describe two separate populations"
+info,range,multi_span_continuous_gravity,MBMA_8903 vs MBMA_9804,"""n_purlin_lines"" ranges do not overlap (3 to 4 against 2 to 2); pooled statistics for it describe two separate populations"
+info,range,multi_span_continuous_gravity,MBMA_9804 vs MBMA_7506,"""thickness_in"" ranges do not overlap (0.078 to 0.103 against 0.075 to 0.075); pooled statistics for it describe two separate populations"
+info,range,tensile_coupons,MBMA_8404 vs MBMA_8903,"""ultimate_tensile_strength_ksi"" ranges do not overlap (67.76 to 72.68 against 73.64 to 87.11); pooled statistics for it describe two separate populations"
+info,range,tensile_coupons,MBMA_8404 vs MBMA_9804,"""coupon_width_in"" ranges do not overlap (0.487 to 0.501 against 1.501 to 2.05); pooled statistics for it describe two separate populations"
+info,range,tensile_coupons,MBMA_8404 vs MBMA_9804,"""ultimate_tensile_strength_ksi"" ranges do not overlap (67.76 to 72.68 against 76.5 to 101.6); pooled statistics for it describe two separate populations"
+info,rows,,MBMA_8404,30 of 31 rows of MBMA_8404_TABLE33_COUPONTESTRESULTS pooled; 1 excluded by the group filters
+info,rows,,MBMA_8404,7 of 15 rows of MBMA_8404_TABLES1_STRENGTHSUMMARY pooled; 8 excluded by the group filters

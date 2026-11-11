@@ -1,0 +1,25 @@
+# Source: MBMA_9501 | Fisher, J.M. (1996), Table 11, pp.11
+# Tag: MBMA_9501_TABLE11_MEANRVALUESSTATISTICS
+# Content: Statistical summary (mean, standard deviation and printed coefficient of variation) of R values for each member depth and profile grouping.
+# Data basis: computed: statistics of the R values grouped in Tables 2 through 10
+# Units: all columns dimensionless
+# Column definitions:
+#   member_type = member depth group and profile designation (C, Z, or C & Z)
+#   mean_r = arithmetic mean of the R values in that depth/profile group, dimensionless
+#   standard_deviation = standard deviation of the group R values, dimensionless
+#   coef_of_variation = value printed under 'Coef. of Variation' for the group, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 47 pages)
+# ANOMALY FLAG: The values printed in the 'Coef. of Variation' column equal the square of the standard deviation (i.e. the variance) rather than a coefficient of variation; printed values are preserved verbatim and NOT corrected. 'NA' is printed for the single 9.5" C test.
+# NA = not applicable, only one test in that group
+member_type,mean_r,standard_deviation,coef_of_variation
+"6.5"" Z",0.70,0.08944,0.00800
+"8"" & 8.5"" Z",0.65,0.07854,0.00617
+"9.5"" & 10"" Z",0.52,0.02638,0.00070
+"6.5"" C",0.70,0.06481,0.00420
+"8"" & 8.5"" C",0.70,0.08538,0.00729
+"9.5"" C",0.57,NA,NA
+"6.5"" C & Z",0.70,0.08206,0.00673
+"8"" & 8.5"" C & Z",0.66,0.08378,0.00702
+"9.5"" & 10"" C & Z",0.53,0.03091,0.00096

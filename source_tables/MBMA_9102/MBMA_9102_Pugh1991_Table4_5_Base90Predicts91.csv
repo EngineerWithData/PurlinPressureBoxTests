@@ -1,0 +1,17 @@
+# Source: MBMA_9102 | Pugh, A.D. and Murray, T.M. (1991), Table 4.5, pp.32
+# Tag: MBMA_9102_TABLE45_BASE90PREDICTS91
+# Content: Predicted versus actual failure loads obtained by using the 1990 base test results, with the 1991 stiffness model, to predict the 1991 multispan test results.
+# Data basis: mixed: measured 1991 multispan failure loads with base-test-method predictions from the 1990 base tests
+# Units: loads in plf; ratio dimensionless
+# Column definitions:
+#   test_designation = test set label (see notes for code)
+#   w_p3_1990_plf = failure load of the 1991 multispan test predicted using the 1990 base test result, plf
+#   w_u3_1991_plf = actual measured failure load of the 1991 multispan test, plf
+#   w_u3_over_w_p3 = ratio of actual 1991 failure load to the prediction from the 1990 base test
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 8 cells checked (AI, 2026-11-04): 8 correct, 0 errors; P(accuracy ≥ 0.8) = 86.6%, ≥ 0.9) = 61.3%, ≥ 0.95) = 37.0%
+# TEXT SOURCE: read from page images by the model (all 99 pages)
+# The stiffness model used for the prediction is that of the 1991 calculations.
+test_designation,w_p3_1990_plf,w_u3_1991_plf,w_u3_over_w_p3
+UCRP/S (O),93.7,108.5,1.16
+UZTP/F (O),190.3,171.2,0.900

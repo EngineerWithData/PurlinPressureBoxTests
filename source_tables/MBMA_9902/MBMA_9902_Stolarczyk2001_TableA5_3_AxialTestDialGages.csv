@@ -1,0 +1,77 @@
+# Source: MBMA_9902 | Stolarczyk, J.A. and Fisher, J.M. (2001), Table A5-3, cont'd, pp.172-179
+# Tag: MBMA_9902_TABLEA53_AXIALTESTDIALGAGES
+# Content: Dial gage readings recorded at each axial load increment during the four full-scale axial tests.
+# Data basis: measured: dial gages at midspan and ends during axial load tests
+# Units: load_kip in kips; all dial gage readings in inches
+# Column definitions:
+#   test_no = axial test designation (A1-A4)
+#   load_kip = applied axial load at the reading, kips
+#   d1_in = dial gage 1 reading (vertical), inches (locations in Figure 41)
+#   d2_in = dial gage 2 reading (vertical), inches
+#   d3_in = dial gage 3 reading (vertical), inches
+#   d4_in = dial gage 4 reading (vertical), inches
+#   d5_in = dial gage 5 reading (vertical), inches
+#   d6_in = dial gage 6 reading (vertical), inches
+#   d7_in = dial gage 7 reading (lateral), inches
+#   d8_in = dial gage 8 reading (lateral), inches
+#   comments = observation recorded at that load increment (see notes)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 7 cells checked (AI, 2026-11-10): 7 correct, 0 errors, 13 unreadable; P(accuracy ≥ 0.8) = 83.2%, ≥ 0.9) = 57.0%, ≥ 0.95) = 33.7%
+# TEXT SOURCE: read from page images by the model (all 195 pages)
+# ANOMALY FLAG: In test A1 an extra row is printed at a load of 55 kips where dial gage 2 was re-zeroed (reading 0.400, comment 'Rezero D2'); the duplicate 55-kip load and the dashes in the other gages are preserved verbatim. The comments column of test A1 is blank for most rows (returned as "") while tests A2-A4 print a dash.
+# Gage locations are shown in Figure 41 (p.174): gages 1-6 vertical, gages 7-8 lateral.
+# Comment 'i' footnote meanings: A1 - flange of east purlin deflecting laterally; A2 - sweep noticed in unsupported flange of west purlin; A3 - noticeable sweep of west purlin; A4 - multiple sine wave buckles along entire length of purlin web.
+# Reported failure loads: A1 = 62.1 kips, A2 = 70 kips, A3 = 54.7 kips, A4 = 21 kips (see test data sheets).
+test_no,load_kip,d1_in,d2_in,d3_in,d4_in,d5_in,d6_in,d7_in,d8_in,comments
+A1,0,0.496,0.495,0.704,0.801,0.500,0.500,0.402,-,
+A1,5,0.482,0.484,0.704,0.802,0.497,0.492,0.395,-,
+A1,10,0.479,0.496,0.704,0.802,0.497,0.493,0.380,-,
+A1,15,0.475,0.513,0.704,0.802,0.500,0.496,0.361,-,
+A1,20,0.473,0.533,0.701,0.800,0.502,0.499,0.338,-,
+A1,25,0.470,0.560,0.697,0.796,0.506,0.504,0.311,-,i
+A1,30,0.468,0.590,0.691,0.789,0.509,0.511,0.278,-,
+A1,35,0.468,0.629,0.688,0.783,0.512,0.520,0.238,-,
+A1,40,0.468,0.673,0.684,0.780,0.508,0.526,0.203,-,
+A1,45,0.469,0.722,0.684,0.776,0.504,0.535,0.172,-,
+A1,50,0.474,0.798,0.680,0.768,0.511,0.554,0.145,-,
+A1,55,0.477,0.900,0.673,0.760,0.524,0.580,0.120,-,
+A1,55,-,0.400,-,-,-,-,-,-,Rezero Δ2
+A1,60,0.486,0.533,0.669,0.751,0.545,0.612,0.093,-,
+A2,0,0.490,0.193,0.489,0.401,0.450,0.498,0.571,0.403,-
+A2,5,0.488,0.198,0.489,0.402,0.450,0.501,0.579,0.406,-
+A2,10,0.482,0.205,0.489,0.402,0.450,0.501,0.590,0.409,-
+A2,15,0.478,0.210,0.489,0.401,0.450,0.510,0.606,0.415,-
+A2,20,0.473,0.215,0.489,0.394,0.449,0.513,0.621,0.417,-
+A2,25,0.470,0.214,0.489,0.394,0.449,0.517,0.640,0.420,-
+A2,30,0.468,0.209,0.489,0.394,0.448,0.523,0.660,0.422,i
+A2,35,0.467,0.201,0.489,0.394,0.448,0.533,0.682,0.423,-
+A2,40,0.465,0.194,0.489,0.394,0.449,0.546,0.705,0.425,-
+A2,45,0.464,0.185,0.489,0.394,0.449,0.556,0.730,0.424,-
+A2,50,0.461,0.178,0.489,0.395,0.453,0.565,0.756,0.420,-
+A2,55,0.460,0.185,0.489,0.399,0.453,0.571,0.780,0.410,-
+A2,60,0.462,0.172,0.489,0.402,0.456,0.576,0.806,0.391,-
+A2,65,0.476,0.163,0.487,0.410,0.458,0.577,0.849,0.345,-
+A3,0,0.512,0.502,0.502,0.596,0.357,0.500,0.500,0.502,-
+A3,2,0.512,0.503,0.501,0.596,0.355,0.499,0.504,0.505,-
+A3,4,0.512,0.503,0.501,0.596,0.348,0.499,0.511,0.509,-
+A3,6,0.512,0.506,0.501,0.595,0.343,0.498,0.521,0.516,-
+A3,8,0.513,0.507,0.497,0.595,0.343,0.498,0.529,0.523,-
+A3,10,0.515,0.510,0.496,0.595,0.343,0.498,0.539,0.529,-
+A3,15,0.521,0.519,0.489,0.593,0.343,0.498,0.564,0.544,-
+A3,20,0.527,0.526,0.481,0.589,0.341,0.498,0.598,0.558,-
+A3,25,0.538,0.535,0.476,0.585,0.340,0.498,0.634,0.572,-
+A3,30,0.549,0.543,0.464,0.580,0.340,0.498,0.668,0.590,i
+A3,35,0.566,0.546,0.448,0.574,0.341,0.498,0.711,0.610,-
+A3,40,0.586,0.549,0.433,0.568,0.394,0.499,0.767,0.629,-
+A3,45,0.615,0.548,0.415,0.563,0.387,0.501,0.832,0.646,-
+A3,50,0.657,0.539,0.390,0.562,0.407,0.502,0.934,0.681,-
+A4,0,0.506,1.642,0.698,0.843,0.482,0.376,0.397,0.393,-
+A4,2,0.504,1.642,0.698,0.844,0.478,0.375,0.419,0.397,-
+A4,4,0.507,1.642,0.698,0.848,0.477,0.373,0.448,0.404,-
+A4,6,0.510,1.642,0.696,0.850,0.481,0.371,0.483,0.410,-
+A4,8,0.514,1.642,0.682,0.859,0.486,0.370,0.521,0.417,-
+A4,10,0.523,1.640,0.680,0.864,0.485,0.368,0.560,0.424,-
+A4,12,0.531,1.638,0.670,0.871,0.486,0.365,0.605,0.428,-
+A4,14,0.542,1.634,0.662,0.881,0.488,0.360,0.658,0.429,-
+A4,16,0.554,1.628,0.654,0.892,0.493,0.355,0.718,0.419,-
+A4,18,0.569,1.620,0.632,0.920,0.506,0.345,0.793,0.388,i

@@ -1,0 +1,18 @@
+# Source: MBMA_9902 | Stolarczyk, J.A. and Fisher, J.M. (2001), Table 9, pp.75
+# Tag: MBMA_9902_TABLE9_PREDICTEDVSTESTEDAXIAL
+# Content: Comparison of the axial loads predicted by the proposed design equations with the corrected experimental axial test results.
+# Data basis: mixed: computed predictions compared with measured (corrected) axial test loads
+# Units: loads in kips; ratio dimensionless
+# Column definitions:
+#   test_no = axial test designation (A1-A4)
+#   predicted_kip = axial load predicted with the proposed k_af equations, kips
+#   tested_kip = corrected experimental axial test load, kips
+#   predicted_over_tested = ratio of predicted to tested axial load, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 16 cells checked (AI, 2026-11-10): 16 correct, 0 errors; P(accuracy ≥ 0.8) = 97.7%, ≥ 0.9) = 83.3%, ≥ 0.95) = 58.2%
+# TEXT SOURCE: read from page images by the model (all 195 pages)
+test_no,predicted_kip,tested_kip,predicted_over_tested
+A1,18.7,24.9,0.75
+A2,17.1,27.5,0.62
+A3,15.8,20.8,0.76
+A4,4.9,8.1,0.60

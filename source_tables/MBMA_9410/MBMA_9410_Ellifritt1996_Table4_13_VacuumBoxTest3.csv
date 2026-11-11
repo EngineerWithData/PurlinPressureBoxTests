@@ -1,0 +1,53 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 4-13, pp.88
+# Tag: MBMA_9410_TABLE413_VACUUMBOXTEST3
+# Content: Time history of panel displacements, chamber pressure and individual fastener loads for vacuum box test 3 (two span system, 3.5 ft spans, 26 gage Pascoe panels).
+# Data basis: measured: pressure transducer, LVDTs and six load cells logged during the vacuum box test
+# Units: pt_psi in psi; LVDTs in inches; load cells in pounds
+# Column definitions:
+#   date = calendar date of the scan, mm/dd/yy
+#   time_hhmmss = clock time of the scan
+#   lvdt1_in = displacement measured by LVDT 1, inches
+#   lvdt2_in = displacement measured by LVDT 2, inches
+#   pt_psi = chamber pressure from the pressure transducer, psi
+#   lcell3_lb = load on the fastener at load cell 3, pounds
+#   lcell4_lb = load on the fastener at load cell 4, pounds
+#   lcell5_lb = load on the fastener at load cell 5, pounds
+#   lcell6_lb = load on the fastener at load cell 6, pounds
+#   lcell7_lb = load on the fastener at load cell 7, pounds
+#   lcell8_lb = load on the fastener at load cell 8, pounds
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: Several numeric cells were extracted with a space where the decimal point is printed (e.g. "0 259", "524 963", "4 647", "0 850", "329 269", "442 757", "586 976", "448 667", "350 917", "379 918", "649 913"); these are preserved exactly as extracted and were NOT corrected.
+# Printed summary: Test Number 3; Failed Cells #5; Failure Type Pullover; Peak Loads 353.575; Peak Pressures 0.817; Peak LVDT 1 2.204; Peak LVDT 2 2.827; Elapsed Time 04:29; Size 26 Ga.; Type Pascoe.
+# Printed comments: Air leaks around perimeter. Failure generated on third attempt. Minor panel buckling. Big improvement.
+date,time_hhmmss,lvdt1_in,lvdt2_in,pt_psi,lcell3_lb,lcell4_lb,lcell5_lb,lcell6_lb,lcell7_lb,lcell8_lb
+11/30/95,19:59:52.000,2.423,2.080,-0.076,46.924,133.747,125.234,106.717,124.115,52.744
+11/30/95,20:00:02.000,3.391,3.442,0 259,86.908,213.001,185.371,190.035,245.117,123.767
+11/30/95,20:00:12.000,3.819,3.857,0.446,142.402,297.866,303.572,259.125,330.776,191.468
+11/30/95,20:00:22.000,3.968,4.049,0.620,173.102,350.225,371.863,302.719,387.119,226.471
+11/30/95,20:00:32.000,4.041,4.131,0.668,190.565,378.694,401.001,325.087,420.509,246.468
+11/30/95,20:00:42.000,4.103,4.194,0.635,202.373,399.529,418.120,342.865,447.158,262.639
+11/30/95,20:00:52.000,4.154,4.243,0.741,210.066,415.498,428.159,356.837,466.961,274.044
+11/30/95,20:01:02.000,4.199,4.288,0 761,216.856,427.210,434.211,367.105,483.194,283.324
+11/30/95,20:01:12.000,4.235,4.324,0.780,222.341,436.174,439.870,377.169,497.810,291.366
+11/30/95,20:01:22.000,4.271,4.367,0.798,227.064,444.439,444.980,386.493,511.922,299.337
+11/30/95,20:01:32.000,4.312,4.470,0.812,231.423,451.645,449.285,392.795,524 963,305 851
+11/30/95,20:01:42.000,4.339,4.506,0.824,235.646,458.043,452.654,400 443,535.316,311.335
+11/30/95,20:01:52.000,4.361,4.544,0.839,239.189,464.144,456.057,408.343,545.732,317.227
+11/30/95,20:02:02.004,4.381,4.578,0 850,245.555,470.639,460.764,418.059,556.253,322.559
+11/30/95,20:02:12.000,4.399,4.612,0.860,249.010,477.131,464.602,426.877,567.488,329 269
+11/30/95,20:02:22.000,4.417,4 647,0.868,252.054,482.844,467.896,435.519,577.736,334.700
+11/30/95,20:02:32.000,4.435,4.681,0.746,255.832,487.404,470.358,442 757,586 976,339.225
+11/30/95,20:02:42.009,4.450,4.710,0.815,258.117,491.309,472.209,448 667,594.074,344.137
+11/30/95,20:02:52.000,4.464,4.738,0.767,260.189,494.789,473.736,453.885,600.269,347.584
+11/30/95,20:03:02.000,4.557,4.792,0.676,260.772,495.807,473.591,452.401,602.999,349.789
+11/30/95,20:03:12.000,4.560,4.804,0.633,261.440,497.092,472.832,453.907,604.511,350 917
+11/30/95,20:03:22.000,4.568,4.821,0.756,262.070,498.622,472.771,455.973,605.960,352.549
+11/30/95,20:03:32.000,4.598,4.857,0.712,265.279,503.327,475.360,461.337,613.394,358.097
+11/30/95,20:03:42.000,4.627,4.906,0.741,271.767,509.489,478.810,472.221,626.750,367.110
+11/30/95,20:03:52.000,4.641,4.964,0.725,271.206,507.939,473.769,473.003,627.170,377.870
+11/30/95,20:04:02.000,4.663,4.969,0.811,274.886,511.833,466.315,478.643,633.953,379 918
+11/30/95,20:04:12.000,4.711,5.047,0.847,283.653,518.034,435.830,492.909,649 913,390.739
+11/30/95,20:04:20.899,4.725,5.101,0.846,282.506,518.029,342.693,498.099,650.060,392.072
+11/30/95,20:04:22.000,5.625,5.704,0.697,246.192,502.130,-4.393,404.623,547.769,334.754

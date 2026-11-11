@@ -1,0 +1,30 @@
+# Source: MBMA_9702 | Murray, T.M. (1997), Table Appendix test summaries (unlabeled), cont'd, pp.12-23
+# Tag: MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS
+# Content: Measured purlin thickness and yield stress, uplift failure load and failure mode for the six single-span (base) uplift tests conducted at the CECO test facility.
+# Data basis: measured: purlin thickness and tensile-coupon yield stress plus vacuum-chamber uplift failure loads
+# Units: span_ft feet; t_a_in, t_b_in inches; fy_a_ksi, fy_b_ksi ksi; failure_load_plf plf
+# Column definitions:
+#   test_id = CECO simple span base test designation as printed on the test summary sheet
+#   test_date = date the test was performed, month/day/year
+#   span_ft = clear span of the single-span test assembly, feet
+#   t_a_in = measured base metal thickness of Purlin A, inches
+#   t_b_in = measured base metal thickness of Purlin B, inches
+#   fy_a_ksi = measured average yield stress reported for Purlin A, ksi
+#   fy_b_ksi = measured average yield stress reported for Purlin B, ksi
+#   failure_load_plf = uplift failure load of the base test assembly, plf
+#   failure_mode = observed mode of failure as described on the test summary sheet
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 6 cells checked (AI, 2026-11-04): 6 correct, 0 errors, 14 unreadable; P(accuracy ≥ 0.8) = 79.0%, ≥ 0.9) = 52.2%, ≥ 0.95) = 30.2%
+# TEXT SOURCE: read from page images by the model (all 35 pages)
+# ANOMALY FLAG: These data are printed on individual "TEST SUMMARY" sheets in the Appendix and carry no printed table label; they have been compiled into one table (label assigned as A1). Blank cells mean no value was printed for Purlin B on that sheet (yield stress was often reported only once, under the PURLIN A column). Values preserved exactly as printed.
+# All CECO tests used opposed purlins at 5 ft spacing (Appendix cover page).
+# Purlins are Z-sections, 8 in. deep for tests SS1a-SS4 and 9.5 in. deep for tests SS5 and SS6, per the cross-section sketches accompanying each test summary.
+# Corresponding purlin lap lengths used in the three-span tests (figure on page 11): 8 in. deep zee, end bay (a) 0'-11 3/4", interior bay (b) 1'-11 3/4"; 9.5 in. deep zee, end bay (a) 1'-5 3/4", interior bay (b) 2'-11 3/4".
+# Question marks in the failure mode descriptions (e.g. "PANELS, CLIPS ?") are as printed.
+test_id,test_date,span_ft,t_a_in,t_b_in,fy_a_ksi,fy_b_ksi,failure_load_plf,failure_mode
+SS1a,8/25/94,30,.0572,,64.13,,39.87,PURLIN A BUCKLED ABOUT MIDSPAN
+SS2a,5/17/94,30,.066,.067,63.66,63.05,69.91,"PURLIN B, LOCAL (LIP) BUCKLING"
+SS3,5/18/94,30,.098,.098,60.72,,133.03,"PURLIN A, LATERAL TORSIONAL BUCKLING CLOSE TO MIDSPAN"
+SS4,5/24/94,30,.118,.119,65.37,,162.38,"PANELS, CLIPS ?"
+SS5,5/25/94,30,.068,.068,61.71,61.59,90.12,"PURLINS A AND B, LOCAL BUCKLING ?"
+SS6,5/26/94,30,.099,.100,61.11,,158.27,"PURLIN A, LATERAL TORSIONAL BUCKLING AT 1/4 POINT"

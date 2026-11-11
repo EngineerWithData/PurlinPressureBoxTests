@@ -1,0 +1,45 @@
+# Source: MBMA_8703 | Perry, D., Golovin, M., Montague, D., LaBoube, R. and Wilson, L. (1987), Table B, pp.11
+# Tag: MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB
+# Content: Test parameters and measured failure loads for the 19 full-scale three-span continuous purlin uplift (air-pressure) tests.
+# Data basis: measured: specimen dimensions, coupon yield stresses, initial sweep and manometer pressure at failure in full-scale uplift chamber tests
+# Units: see column headers
+# Column definitions:
+#   test_no = test identification as printed (Ceco tests are earlier Ceco full-scale tests)
+#   section = member cross-section type, Cee or Zee
+#   depth_in = nominal member depth, inches
+#   flange_in = nominal flange width, inches
+#   span_ft = end bay span length, feet
+#   lap_ft = total lap length, lap bolts to lap bolts, feet-inches
+#   t_in = measured base-metal thickness of the failed member, inches
+#   fy_ksi = yield stress from tension coupons of the failed member, ksi
+#   initial_sweep_in = measured initial sweep of the failed member, inches (+ toward lip)
+#   failure_load_lb_ft = uniform load on the member at failure, pounds per foot
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 76 pages); 1 character(s) were illegible and are marked [?], not guessed
+# ANOMALY FLAG: Test #12 failure load is printed as "135*" with the footnote that the test was not taken to purlin failure; the value is preserved verbatim including the asterisk.
+# Tests 1-6C and Tests 9, 11 and 12 had three equal spans; other tests had end bay 1'-0" less than interior bay.
+# Lap lengths given are total lap; bays given are end bay.
+# Initial sweep in the direction of the bottom flange lip is positive, in the direction of the web negative.
+# *Test #12 not taken to purlin failure. Panels failed at 135 lb./ft. and test had to be aborted. Purlins appeared close to failure.
+# Load on the member was computed as chamber pressure times a tributary area of 5.06 ft. minus the dead weight of the assembly.
+test_no,section,depth_in,flange_in,span_ft,lap_ft,t_in,fy_ksi,initial_sweep_in,failure_load_lb_ft
+1,Zee,9 1/2,3,30,6-0,.0701,63.1,-.375,138
+2,Zee,9 1/2,3,30,6-0,.1013,58.1,-.438,234
+3,Zee,9 1/2,3,30,2-6,.0696,61.6,-.125,136
+4,Zee,9 1/2,3,30,2-6,.1002,58.2,0,218
+5,Zee,9 1/2,3,20,2-6,.0695,61.3,+.313,280
+6,Zee,6 1/2,2,20,4-0,.0587,55.2,-.313,109
+6a,Zee,6 1/2,2,20,4-0,.0613,57.4,-.375,124
+6b,Zee,6 1/2,2,20,4-0,.0600,56.1,-.313,121
+6c,Zee,6 1/2,2,20,4-0,.0590,55.8,-.188,119
+7,Cee,9,2 3/8,24,4-6,.0607,56.5,-.188,128
+8,Cee,7,2 1/2,24,4-6,.0598,54.6,+.500,98
+Ceco #4,Zee,8 1/2,2,24,5-0,.0847,60.2,+.688,181
+Ceco #5,Zee,8 1/2,2,24,5-0,.0845,57.8,+.188,193
+Ceco #2,Zee,10,2 3/4,24,5-0,.0833,61.5,0,286
+Ceco #5a,Zee,8 1/2,2 1/2,24,4-0,.0613,58.5,0,134
+9,Zee,9 1/2,3,20,2-6,.0660,63.9,-.125,241
+10R,Cee,8 1/2,2 1/2,24,5-0,.0897,58.3,+.313,217
+11,Cee,8 1/2,2 1/2,20,4-0,.0561,65.3,-.375,156
+12,Cee,8 1/2,2 1/2,30,6-0,.0895,58.3,-.125,135*

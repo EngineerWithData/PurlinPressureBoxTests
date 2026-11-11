@@ -1,0 +1,33 @@
+# Source: MBMA_7603 | Guedelhoefer, O.C. and Boggs, D.W. (1976), Table A-1, pp.73
+# Tag: MBMA_7603_TABLEA1_ZPURLINUPLIFTTESTLOG
+# Content: Log of the Z purlin uplift test giving the vacuum pressure and the specimen/instrumentation condition at each recorded load stage.
+# Data basis: measured: manometer vacuum pressures with test-log observations
+# Units: load_no dimensionless; load_psf in psf; description is text
+# Column definitions:
+#   load_no = load stage number of the Z purlin uplift test
+#   load_psf = uplift (vacuum) pressure held at that load stage, pounds per square foot
+#   description = printed note describing the condition of the specimen/instrumentation at that stage
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 90 pages); 13 character(s) were illegible and are marked [?], not guessed
+# ANOMALY FLAG: Load No. 13 is listed here as 31.6 psf (6 in. water) whereas the tabulated data on pages A-2 to A-8 print 31.2 psf for the same load stage; both values are preserved verbatim as printed and not reconciled.
+# Table is unlabeled in the report; it is printed on appendix page A-1.
+# The printed description for Load Nos. 1 through 6 is a single bracketed note; it is placed on the Load No. 1 row here and the other rows of that group are left blank.
+# Failure of the Z purlin system occurred between Load Nos. 14 and 15 at about 8.9 in. water (46.3 psf).
+load_no,load_psf,description
+1,0,"An initial loading sequence for the purpose of preloading the structure and testing instrumentation. For this sequence, turnbuckle sensors 45 and 46 were located at the south mid-span (Fig. 2, Section 4). All bracing straps had an undetermined amount of initial tension at Load No. 1. (bracketed note spans Load Nos. 1 to 6)"
+2,7.8,
+3,15.6,
+4,23.4,
+5,31.2,
+6,0,
+7,0,"Same conditions as Load No. 6. The automated data acquisition system was scanned to initialize the output of sensors 1 to 56 to zero. Displacement data, sensors 57 to 94, was not taken."
+8,0,"All turnbuckles are loose (unattached to bracing straps) to insure zero tension in the straps. Sensors 1 to 56 were again scanned to initalize their output to zero. Displacement data was not taken; the tabulated values of zero for Sensors 57 to 94 correspond to the Load No. 6 values. After this load stage, turnbuckle sensors 45 and 46 were moved to the north mid-span as indicated in Fig. 2 (at Section 11)."
+9,0,All turnbuckles are tight to put initial tension in the bracing straps.
+10,7.8,Load of 1.5 in. water vacuum pressure
+11,18.2,Load of 3.5 in. water vacuum pressure
+12,18.2,Same vacuum pressure; bracing straps levelled. Displacement data was not recorded.
+13,31.6,Load of 6 in. water vacuum pressure
+14,39,"Load of 7.5 in. water vacuum pressure. While increasing load beyond Load No. 14, failure occurred at approximately 8.9 in. water (46.3 psf)."
+15,0,Conditions immediately following removal of vacuum load after failure.
+16,46.8,Reloading made possible by externally supporting failed purlin. Second failure occurred while holding vacuum at this load. Only sensors 1 thru 50 had been scanned.

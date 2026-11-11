@@ -1,0 +1,23 @@
+# Source: MBMA_1103 | Gao, T. and Moen, C.D. (2011), Table 3, pp.12
+# Tag: MBMA_1103_TABLE3_UNITROTATIONALSTIFFNESSKO
+# Content: Unit panel-to-girt rotational stiffness K_o computed with the mechanical model using the measured dimensions of Table 1.
+# Data basis: computed: mechanical model Eqs. (12) and (13) using the measured dimensions of Table 1
+# Units: ko_kip_in_per_rad_per_in in kips-in/rad/in
+# Column definitions:
+#   specimen_name = specimen label as printed (see Table 1 for dimensions)
+#   ko_kip_in_per_rad_per_in = unit rotational stiffness K_o from Eq. (12)/(13), kips-in/rad/in
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 16 cells checked (AI, 2026-11-05): 16 correct, 0 errors; P(accuracy ≥ 0.8) = 97.7%, ≥ 0.9) = 83.3%, ≥ 0.95) = 58.2%
+# TEXT SOURCE: read from page images by the model (all 53 pages)
+# ANOMALY FLAG: The printed table is laid out horizontally in two blocks (specimen names across the top of each block with K_o beneath); it has been transposed to one specimen per row with values copied verbatim.
+# K_o of a Cee section is generally lower than that of a Zee section.
+# Specimens C10-1 and C6-1 correspond to C250-1 and C150-1 of Table 1.
+specimen_name,ko_kip_in_per_rad_per_in
+Z8-1,0.19
+Z8-2,0.25
+Z10-1,0.24
+Z10-2,0.27
+C8-1,0.17
+C8-2,0.18
+C10-1,0.22
+C6-1,0.13

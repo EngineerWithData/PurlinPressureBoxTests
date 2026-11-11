@@ -1,0 +1,38 @@
+# Source: MBMA_9003 | Hatch, J., Easterling, W.S. and Murray, T.M. (1990), Table 3.4, pp.37
+# Tag: MBMA_9003_TABLE34_ROTATIONALSTIFFNESSTESTS
+# Content: Rotational stiffness F and allowable rotation FED measured in cantilever purlin-to-deck connection tests for strong, medium and weak fastener locations of each purlin/deck combination.
+# Data basis: measured: load and vertical deflection recorded in 2 ft long purlin-to-deck rotational stiffness tests
+# Units: f_k_in_per_in_rad kip-in/in-rad; fed_rad radians; fastener_location_in and fastener_spacing_in inches
+# Column definitions:
+#   test_group = letter identifying the purlin/deck combination (see Table 3.1 and notes)
+#   test_designation = rotational stiffness test label (F = rotational stiffness test)
+#   f_k_in_per_in_rad = rotational stiffness of the purlin-to-deck connection, kip-in/in-rad
+#   fed_rad = allowable purlin rotation determined from the stiffness test, radians
+#   fastener_location_in = horizontal distance from face of purlin web to fastener, inches
+#   fastener_spacing_in = spacing of the fasteners along the flange, inches
+#   comment = qualitative fastener location category (Strong, Medium or Weak)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 224 pages)
+# Notes as printed: Fastener location is horizontal distance from face of purlin web to fastener location; FED = allowable purlin rotation.
+# Printed cross-reference of rotational stiffness test group to axial/interaction test series: A = 8 in. Z Interaction; B = 10 in. Z Interaction; C = 10 in. C Interaction; D = 10 in. Z Axial; E = 10 in. C Axial; F = 7 in. C Axial.
+# 'Not Recorded' entries indicate fastener locations were not recorded for the 8 in. Z tests.
+test_group,test_designation,f_k_in_per_in_rad,fed_rad,fastener_location_in,fastener_spacing_in,comment
+A,F-8Z-6-1,0.1091,0.2473,Not Recorded,6,Strong
+A,F-8Z-6-2,0.0778,0.4417,Not Recorded,6,Weak
+A,F-Simaan-6-1,0.0305,0.2953,Not Recorded,6,Weak
+B,F-10Z-12-7,0.1701,0.1860,3.00,12,Strong
+B,F-10Z-12-8,0.1395,0.2269,2.00,12,Medium
+B,F-10Z-12-9,0.0765,0.2557,0.50,12,Weak
+C,F-10C-12-7,0.2301,0.2588,0.75,12,Strong
+C,F-10C-12-8,0.1816,0.2156,1.50,12,Medium
+C,F-10C-12-9,0.0596,0.4049,2.75,12,Weak
+D,F-10Z-12-4,0.1401,0.2259,3.00,12,Strong
+D,F-10Z-12-5,0.1078,0.2588,2.00,12,Medium
+D,F-10Z-12-6,0.0445,0.2900,0.50,12,Weak
+E,F-10C-12-4,0.1922,0.2557,0.50,12,Strong
+E,F-10C-12-5,0.1564,0.2023,1.50,12,Medium
+E,F-10C-12-6,0.0579,0.2013,2.75,12,Weak
+F,F-7C-12-4,0.1426,0.2446,0.50,12,Strong
+F,F-7C-12-5,0.1192,0.2330,1.50,12,Medium
+F,F-7C-12-6,0.0487,0.2855,2.50,12,Weak

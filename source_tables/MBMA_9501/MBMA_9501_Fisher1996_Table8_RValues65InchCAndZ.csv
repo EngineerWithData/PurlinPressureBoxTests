@@ -1,0 +1,27 @@
+# Source: MBMA_9501 | Fisher, J.M. (1996), Table 8, pp.10
+# Tag: MBMA_9501_TABLE8_RVALUES65INCHCANDZ
+# Content: R values for all 6.5 inch deep C and Z members grouped together regardless of profile.
+# Data basis: mixed: measured uplift test results from this study and from proprietary manufacturer tests
+# Units: see column headers; R dimensionless
+# Column definitions:
+#   test_no = test identifier; M1 denotes proprietary tests from manufacturer 1
+#   member_type = cross-section profile, C or Z
+#   member_depth_in = nominal depth of the member, inches
+#   member_length_ft = simple span length of the member, feet
+#   member_thick_in = member thickness, inches
+#   r = reduction factor, tested moment divided by calculated nominal moment
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 47 pages)
+# ANOMALY FLAG: The test identifier 'M1' is repeated on three rows (proprietary manufacturer tests); preserved verbatim as printed.
+# Combination of Tables 2 and 5
+test_no,member_type,member_depth_in,member_length_ft,member_thick_in,r
+M1,Z,6.5,20.00,0.057,0.80
+M1,Z,6.5,20.00,0.057,0.80
+M1,Z,6.5,20.00,0.057,0.76
+5,Z,6.5,19.17,0.061,0.64
+6,Z,6.5,19.17,0.061,0.58
+16,Z,6.5,24.17,0.081,0.62
+12,C,6.5,19.17,0.060,0.64
+13,C,6.5,19.17,0.060,0.67
+17,C,6.5,24.17,0.082,0.79

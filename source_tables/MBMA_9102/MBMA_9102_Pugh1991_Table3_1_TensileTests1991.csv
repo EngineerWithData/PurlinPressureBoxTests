@@ -1,0 +1,25 @@
+# Source: MBMA_9102 | Pugh, A.D. and Murray, T.M. (1991), Table 3.1, pp.24
+# Tag: MBMA_9102_TABLE31_TENSILETESTS1991
+# Content: Thickness, yield stress, tensile strength and elongation measured from tensile coupons cut from each failed purlin of the 1991 base and multispan tests.
+# Data basis: measured: tensile coupons milled to ASTM E8 and tested in a 10 kip Instron machine
+# Units: see column headers
+# Column definitions:
+#   identification = test and purlin from which the tensile coupon was cut (see notes)
+#   thickness_in = measured thickness of the coupon, inches
+#   yield_stress_ksi = measured yield stress of the coupon, ksi
+#   tensile_strength_ksi = measured ultimate tensile strength of the coupon, ksi
+#   elongation_percent = measured elongation at fracture, percent
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 99 pages)
+# ANOMALY FLAG: The printed unit row under the headers reads "(in) (in) (ksi) %" - only four unit entries for five columns, and the yield stress column carries the unit "(in)" instead of ksi. The headers are preserved as printed; column units were assigned from the quantities named in the headers.
+# Identification suffix -1 denotes the single span base test, -3 the three span confirming test; (O) denotes opposed purlins.
+identification,thickness_in,yield_stress_ksi,tensile_strength_ksi,elongation_percent
+UZRP/S-1 1991,0.080,67.3,80.7,25.4
+UCRP/S-1 (O) 1991,0.061,50.8,76.7,30.1
+UZTP/F-1 (O) 1991,0.069,61.3,83.4,23.9
+UZTR/F-1 1991,0.073,57.5,77.5,30.1
+UZRP/S-3 1991,0.080,64.2,80.5,27.3
+UCRP/S-3 (O) 1991,0.059,49.5,76.5,30.2
+UZTP/F-3 (O) 1991,0.068,63.4,85.1,22.3
+UZTR/F-3 1991,0.075,56.4,75.4,29.6

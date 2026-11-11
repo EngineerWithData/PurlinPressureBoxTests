@@ -1,0 +1,406 @@
+{
+  "citation": "MBMA (1997)",
+  "code_tag": "MBMA_9702",
+  "experiment": "Full-scale two-purlin-line standing seam roof assemblies were loaded to failure under uplift in vacuum chambers as single-span (base) and three-span (confirming) tests at Virginia Tech and at the CECO Building Systems facility, and the measured confirming-test failure loads were compared with Base Test Method predictions.",
+  "title": "Base Test Method for Purlins Supporting a Standing Seam Roof System: Uplift Base and Three-Span Confirming Tests",
+  "variables": [
+    {
+      "availability": "direct",
+      "definition": "Designation printed for each individual single-span or three-span test as given on the test-summary sheet or derived from the Table 1 paired designation.",
+      "evidence": "Table S1 (pp. 8, 12-34) column test_id; Table Appendix A1 (pp. 12-23) and A2 (pp. 24-35) column test_id",
+      "name": "Test designation",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_id"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+        "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS",
+        "MBMA_9702_TABLEA2_CECOTHREESPANCONFIRMTESTS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Paired base-test and confirming-test designation that groups a single-span test with its three-span counterpart, as printed in Table 1.",
+      "evidence": "Table 1 (p. 8) column test_nos; Table S1 column test_set",
+      "name": "Base/confirming test set",
+      "note": "Three Virginia Tech set designations appear twice in Table 1 for different test sets.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_nos",
+        "test_set"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLE1_UPLIFTBASETESTSUMMARY",
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Role of the test within the Base Test Method, base for the single-span two-purlin test and confirming for the three-span test.",
+      "evidence": "Table S1 (pp. 8, 12-34) column test_role",
+      "name": "Test role (base or confirming)",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "test_role"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Laboratory where the test was performed, Virginia Tech or CECO Building Systems.",
+      "evidence": "Table S1 column test_facility; laboratory sub-heading rows in Table 1 (p. 8)",
+      "name": "Test facility",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_facility"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+        "MBMA_9702_TABLE1_UPLIFTBASETESTSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Calendar date on which the test was performed as printed on the appendix test-summary sheet.",
+      "evidence": "Table Appendix A1 (pp. 12-23) and A2 (pp. 24-35) column test_date; Table S1 column test_date",
+      "name": "Test date",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_date"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS",
+        "MBMA_9702_TABLEA2_CECOTHREESPANCONFIRMTESTS",
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Direction of the applied vacuum-chamber load, uplift for every test reported.",
+      "evidence": "Table S1 column load_direction; header note on load direction (p. 5)",
+      "name": "Load direction",
+      "note": "Constant (uplift) for all rows.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "load_direction"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Cross-section shape of the purlin, Z or C, read from the test designation (Virginia Tech) or the appendix section sketches (CECO).",
+      "evidence": "Table S1 column section_type; sketch note in Tables A1 and A2",
+      "name": "Purlin section type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "section_type"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+        "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS",
+        "MBMA_9702_TABLEA2_CECOTHREESPANCONFIRMTESTS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal depth of the purlin cross-section, 8 in. or 9.5 in. for the CECO tests, taken from the section sketches.",
+      "evidence": "Table S1 column depth_in; section-sketch notes in Tables A1 and A2",
+      "name": "Purlin depth",
+      "note": "For CECO rows it comes from sketches rather than a printed column in the appendix sheets.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "depth_in"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+        "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS",
+        "MBMA_9702_TABLEA2_CECOTHREESPANCONFIRMTESTS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured base-metal thickness of the purlin, reported per purlin line (A/B) and, for three-span tests, per bay.",
+      "evidence": "Table A1 columns t_a_in, t_b_in; Table A2 columns t_a_bay1_in through t_b_bay3_in; Table S1 column thickness_in",
+      "name": "Purlin base metal thickness",
+      "note": "Blank where no value was printed for Purlin B.",
+      "printed_symbol": "t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "thickness_in",
+        "t_a_in",
+        "t_b_in",
+        "t_a_bay1_in",
+        "t_a_bay2_in",
+        "t_a_bay3_in",
+        "t_b_bay1_in",
+        "t_b_bay2_in",
+        "t_b_bay3_in"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS",
+        "MBMA_9702_TABLEA2_CECOTHREESPANCONFIRMTESTS",
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured average yield stress of the purlin steel reported per purlin line on the test-summary sheet.",
+      "evidence": "Table A1 columns fy_a_ksi, fy_b_ksi; Table A2 columns fy_a_ksi, fy_b_ksi; Table S1 column yield_stress_ksi",
+      "name": "Measured yield stress",
+      "note": "Often printed only once, under the Purlin A column.",
+      "printed_symbol": "Fy",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "fy_a_ksi",
+        "fy_b_ksi",
+        "yield_stress_ksi"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS",
+        "MBMA_9702_TABLEA2_CECOTHREESPANCONFIRMTESTS",
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Clear span length of the test assembly; a single value for base tests and three bay lengths for the confirming tests (all 30 ft at CECO).",
+      "evidence": "Table A1 column span_ft; Table A2 column spans_ft; Table S1 column span_ft",
+      "name": "Span length",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "span_ft",
+        "spans_ft"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS",
+        "MBMA_9702_TABLEA2_CECOTHREESPANCONFIRMTESTS",
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of continuous spans in the test assembly, 1 for base tests and 3 for confirming tests.",
+      "evidence": "Table S1 column n_spans",
+      "name": "Number of spans",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_spans"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of parallel purlin lines in the test assembly, two for all tests.",
+      "evidence": "Table S1 column n_purlin_lines; header note that all assemblies are two purlin line systems (p. 6)",
+      "name": "Number of purlin lines",
+      "note": "Constant value of 2.",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_purlin_lines"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Type of roof panel and attachment used over the purlins, standing seam for all tests.",
+      "evidence": "Table S1 column panel_type",
+      "name": "Roof panel type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "panel_type"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "implied",
+      "definition": "Transverse spacing of the two opposed purlin lines, stated as 5 ft (tributary width 5 ft per purlin line) for all CECO tests.",
+      "evidence": "Header note in Tables A1, A2 and S1: \"All CECO tests used opposed purlins at 5 ft spacing (Appendix cover page)\"",
+      "name": "Purlin spacing / tributary width",
+      "note": "Stated in a note, not a column.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS",
+        "MBMA_9702_TABLEA2_CECOTHREESPANCONFIRMTESTS",
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "implied",
+      "definition": "Length of the purlin lap at the interior supports of the three-span tests: 0'-11 3/4\" (end bay) and 1'-11 3/4\" (interior bay) for 8 in. deep zees, 1'-5 3/4\" and 2'-11 3/4\" for 9.5 in. deep zees.",
+      "evidence": "Header note referencing the figure on page 11, in Tables A1, A2 and S1",
+      "name": "Purlin lap length",
+      "note": "Given in a note/figure only, by purlin depth and bay, not per specimen.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS",
+        "MBMA_9702_TABLEA2_CECOTHREESPANCONFIRMTESTS",
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft-in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Uplift failure load of the assembly as printed on the individual appendix test-summary sheet, the measured record of the vacuum-chamber test.",
+      "evidence": "Table A1 column failure_load_plf (pp. 12-23); Table A2 column failure_load_plf (pp. 24-35); Table S1 column failure_load_as_printed",
+      "name": "Measured uplift failure load (sheet)",
+      "note": "Differs slightly from the Table 1 values for several CECO tests without explanation.",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "failure_load_plf",
+        "failure_load_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS",
+        "MBMA_9702_TABLEA2_CECOTHREESPANCONFIRMTESTS",
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Uplift failure load as summarized in Table 1 for the base test and for the three-span confirming test, after weight/area and tributary-area corrections.",
+      "evidence": "Table 1 (p. 8) columns base_test_failure_load_plf and confirming_test_failure_load_plf; Table S1 column failure_load_table_1_plf",
+      "name": "Uplift failure load (Table 1)",
+      "note": "Virginia Tech rows carry this value in failure_load_as_printed instead.",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "base_test_failure_load_plf",
+        "confirming_test_failure_load_plf",
+        "failure_load_table_1_plf"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLE1_UPLIFTBASETESTSUMMARY",
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Failure load of the three-span confirming test predicted by applying the Base Test Method to the corresponding single-span base test result.",
+      "evidence": "Table 1 (p. 8) column predicted_confirming_failure_load_plf; Table S1 column predicted_failure_load_plf",
+      "name": "Predicted confirming test load",
+      "note": "Computed from the Table 1 base-test loads.",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "predicted_confirming_failure_load_plf",
+        "predicted_failure_load_plf"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLE1_UPLIFTBASETESTSUMMARY",
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of the Base Test Method predicted confirming-test load to the experimental confirming-test failure load; values below 1.0 are conservative, average reported as 0.90.",
+      "evidence": "Table 1 (p. 8) column predicted_over_experiment; Table S1 column predicted_to_experimental_ratio",
+      "name": "Predicted/experimental load ratio",
+      "note": "Entries 1.18* and 1.05** correspond to clip and panel failures.",
+      "printed_symbol": "",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "predicted_over_experiment",
+        "predicted_to_experimental_ratio"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLE1_UPLIFTBASETESTSUMMARY",
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Observed mode of failure (e.g. lateral-torsional buckling, flange/web buckling, clip or panel failure) described on the test-summary sheet or in a Table 1 footnote.",
+      "evidence": "Table A1 and A2 column failure_mode; Table S1 column failure_mode",
+      "name": "Failure mode",
+      "note": "Some descriptions carry question marks as printed.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "failure_mode"
+      ],
+      "table_tags": [
+        "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS",
+        "MBMA_9702_TABLEA2_CECOTHREESPANCONFIRMTESTS",
+        "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    }
+  ],
+  "year": "1997"
+}

@@ -1,0 +1,26 @@
+# Source: MBMA_9002 | Rayburn, L. and Murray, T.M. (1990), Table 4.2, pp.29
+# Tag: MBMA_9002_TABLE42_SERIESIITESTRESULTS
+# Content: Measured failure moments and computed section strengths for the four Series II single-span base tests (Z-purlins facing the same direction, rib deck with sliding clips).
+# Data basis: mixed: measured experimental failure moments with 1986 AISI constrained-bending computed section strengths
+# Units: see column headers
+# Column definitions:
+#   test = base test identification label (see notes for suffixes)
+#   insulation = whether 4 in. insulation was in place during the test (Yes/No)
+#   seff_in3 = effective section modulus of the purlin that failed, cubic inches
+#   fy_ksi = yield stress of material taken from the purlin which failed, ksi
+#   mn_in_kips = nominal section strength, Seff x Fy, inch-kips
+#   mus_in_kips = maximum moment corresponding to the experimental failure load, inch-kips
+#   r_percent = percentage of through-fastened capacity, x 100, percent
+#   failure_mode = observed mode of failure (LB or LM, see notes)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 134 pages); 2 character(s) were illegible and are marked [?], not guessed
+# ANOMALY FLAG: The printed legend of this table defines Wus and WAISI (loads) and R = Wus/WAISI x 100% while the columns are headed Mus (in-kips); preserved verbatim as printed and NOT corrected.
+# LB = local buckling of lip, flange, and web
+# LM = failure of cross section after considerable lateral movement
+# Legend printed with the table: Seff = effective section modules; Fy = yield stress of material taken from purlin which failed; Mn = nominal section strength, Seff x Fy; Wus = experimental failure load of base test; WAISI = 1986 AISI fully constrained flexural strength; R = Wus/WAISI x 100%
+test,insulation,seff_in3,fy_ksi,mn_in_kips,mus_in_kips,r_percent,failure_mode
+R-S-8Z0.06-25,Yes,1.76,59.5,104.8,57.6,54.7,LB
+R-S-8Z0.10-25,No,3.72,54.8,203.8,119.7,58.7,LM
+R-S-10Z0.073-25,No,3.22,60.8,195.5,108.6,55.5,LB
+R-S-10Z0.094-25,No,4.30,62.2,267.5,160.8,60.1,LB

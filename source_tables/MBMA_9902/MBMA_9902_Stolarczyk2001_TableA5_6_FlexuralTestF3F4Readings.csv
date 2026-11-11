@@ -1,0 +1,45 @@
+# Source: MBMA_9902 | Stolarczyk, J.A. and Fisher, J.M. (2001), Table A5-6, cont'd, pp.182-183
+# Tag: MBMA_9902_TABLEA56_FLEXURALTESTF3F4READINGS
+# Content: Chamber pressure and midspan deflections recorded during the uplift base tests of assemblies 3 and 4 (23-ft span).
+# Data basis: measured: pressure chamber manometer and dial gages during uplift base tests
+# Units: manometer in inches of water; pressure in psf; deflections in inches
+# Column definitions:
+#   test_no = flexural uplift test designation (F3, F4)
+#   manometer_in_h2o = manometer reading of chamber pressure, inches of water
+#   pressure_psf = corresponding uplift pressure, pounds per square foot
+#   dv_eave_in = vertical deflection at midspan of the eave-side purlin, inches
+#   dv_ridge_in = vertical deflection at midspan of the ridge-side purlin, inches
+#   dh_in = lateral (horizontal) translation of the purlins at midspan, inches
+#   comments = note recorded at that pressure step
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 195 pages)
+# F3 failure: lateral torsional inelastic buckling of flange and web at maximum moment region, maximum pressure 7.98 in. H2O.
+# F4 failure: lateral torsional inelastic buckling of flange and web at maximum moment region, maximum pressure 4.46 in. H2O.
+# The printed tables have no entries in the comments column; returned as "-" as printed.
+test_no,manometer_in_h2o,pressure_psf,dv_eave_in,dv_ridge_in,dh_in,comments
+F3,0.000,0.000,0.000,0.000,0.000,-
+F3,1.049,5.455,0.488,0.406,0.077,-
+F3,1.518,7.894,0.737,0.651,0.132,-
+F3,2.108,10.962,1.012,0.912,0.232,-
+F3,2.503,13.016,1.200,1.083,0.294,-
+F3,3.231,16.801,1.559,1.398,0.455,-
+F3,3.585,18.642,1.720,1.534,0.473,-
+F3,4.027,20.940,1.952,1.723,0.519,-
+F3,4.529,23.551,2.272,1.982,0.624,-
+F3,5.012,26.062,2.578,2.243,0.728,-
+F3,5.545,28.834,2.996,2.669,0.967,-
+F3,6.020,31.304,3.288,2.914,0.974,-
+F3,6.517,33.888,3.792,3.355,1.029,-
+F3,7.022,36.514,4.445,3.909,1.092,-
+F3,7.519,39.099,5.111,4.581,1.115,-
+F3,7.983,41.512,6.683,5.493,0.994,-
+F4,0.000,0.000,0.000,0.000,0.000,-
+F4,1.077,5.236,0.701,0.602,0.036,-
+F4,1.500,7.800,1.009,0.903,0.137,-
+F4,2.186,11.367,1.484,1.332,0.246,-
+F4,2.538,13.198,1.728,1.534,0.287,-
+F4,3.017,15.688,2.095,1.832,0.378,-
+F4,3.515,18.278,2.538,2.229,0.528,-
+F4,4.008,20.842,3.047,2.778,0.728,-
+F4,4.459,23.187,3.872,4.163,0.928,-

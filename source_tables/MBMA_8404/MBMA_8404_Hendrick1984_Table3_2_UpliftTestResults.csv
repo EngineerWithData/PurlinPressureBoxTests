@@ -1,0 +1,28 @@
+# Source: MBMA_8404 | Hendrick, D. and Murray, T.M. (1984), Table 3.2, pp.27
+# Tag: MBMA_8404_TABLE32_UPLIFTTESTRESULTS
+# Content: Predicted (AISI constrained bending reference) and measured failure loads, failure modes and bracing configurations for the nine simulated uplift loading tests.
+# Data basis: mixed: measured failure loads from the vacuum-chamber uplift tests compared with AISI constrained-bending predicted loads
+# Units: p_pred_plf and p_test_plf in pounds per lineal foot; p_test_over_p_pred dimensionless
+# Column definitions:
+#   test_no = uplift loading test designation number as printed (including footnote markers)
+#   p_pred_plf = AISI constrained bending (reference) failure load, pounds per lineal foot
+#   p_test_plf = actual failure load including dead load, pounds per lineal foot
+#   p_test_over_p_pred = ratio of actual to predicted failure load, printed in parentheses
+#   failure_mode = description of the observed failure (" means same as the row above)
+#   remarks = bracing and configuration notes (" means same as the row above)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 199 pages)
+# ANOMALY FLAG: Test 13 is printed as '13 **' with the footnote 'Failed due to error during construction of test setup'; this label is kept verbatim. The actual-to-predicted ratios are printed in parentheses beneath the actual failure load and are reproduced verbatim. Ditto marks (") mean 'same as the row above'. The symbol for centerline is printed as a special character and is transcribed here as '℄'. No values were altered.
+# Printed notes: 1. The test matrix is found in Table 1.1, page 3. * Based on Fy = 56 ksi and on implied factor of safety of 1.67. ** Failed due to error during construction of test setup.
+# '℄' denotes the midspan centerline in the printed remarks.
+test_no,p_pred_plf,p_test_plf,p_test_over_p_pred,failure_mode,remarks
+7,168.5,88.2,(0.52),Local Buckling of comp. flange and/or web of east test purlin.,No intermediate bracing. Fasteners pulled out of deck @ failure due to horiz. displacement.
+8,187.4,116.3,(0.62),Local buckling of comp. flange of west test purlin.,Bracing of purlins @ ℄. Test purlins in opposing directions.
+9,147.4,85.6,(0.58),"""",Bracing @ ends and @ ℄. Wood stiffener placed at center of test purlin.
+10,191.5,116.3,(0.61),Local buckling of comp. flange of east test purlin.,"Bracing @ ends and ℄. Wood stiffeners placed @ 2, 5, & 10 ft. from ℄ & @ ℄."
+11,187.6,111.2,(0.59),Local buckling of comp. lip and flange of east test purlin.,15 ft. 7x3 C-purlin attached to test purlins.
+12,185.6,131.6,(0.71),Local buckling of comp. flange and/or web of test purlins.,Bracing @ third-points and @ ends.
+13 **,185.8,124.0,(0.67),Local buckling of comp. flange and/or web of east test purlin.,Bracing @ ends and 2.5 ft. on each side of ℄.
+14,143.2,93.3,(0.65),Local buckling of comp. flange and lip of test purlins.,Bracing @ ends and one-third points.
+15,192.2,131.6,(0.68),Local buckling of comp. flange and/or web of test purlins.,""""

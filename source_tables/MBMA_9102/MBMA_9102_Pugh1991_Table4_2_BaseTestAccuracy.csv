@@ -1,0 +1,26 @@
+# Source: MBMA_9102 | Pugh, A.D. and Murray, T.M. (1991), Table 4.2, pp.30
+# Tag: MBMA_9102_TABLE42_BASETESTACCURACY
+# Content: Actual-to-predicted failure load ratios of the base test method for all 1990 and 1991 test sets that failed by purlin buckling.
+# Data basis: mixed: measured multispan failure loads compared with base-test-method predictions
+# Units: loads in plf; ratios dimensionless
+# Column definitions:
+#   test_designation = test set label (see notes for code)
+#   w_p3_1990_plf = base test method predicted three span failure load, 1990 tests, plf
+#   w_u3_1990_plf = actual three span failure load, 1990 tests, plf
+#   ratio_1990 = actual divided by predicted failure load for the 1990 tests, dimensionless
+#   w_p3_1991_plf = base test method predicted three span failure load, 1991 tests, plf
+#   w_u3_1991_plf = actual three span failure load, 1991 tests, plf
+#   ratio_1991 = actual divided by predicted failure load for the 1991 tests, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 99 pages)
+# ANOMALY FLAG: The UZTR/F* 1991 w_U3 and ratio cells are printed as dashes (deck failure, so no valid ratio); dashes are given as "-". Blank 1991 cells for test sets not repeated in 1991 are given as "". The text of Section 4.3 cites a 1990 UZRP/S ratio of 0.78 while the table prints 0.81; the table value is preserved verbatim.
+# Footnote as printed: * 1991 purlins were approximately 0.01" thicker than the 1990 purlins.
+# Printed dash cells "------" for UZTR/F* 1991 are recorded here as "-".
+test_designation,w_p3_1990_plf,w_u3_1990_plf,ratio_1990,w_p3_1991_plf,w_u3_1991_plf,ratio_1991
+UZRP/F,121.4,132.7,1.09,,,
+UZRP/S*,173.5,140.6,0.81,185.8,192.2,1.03
+UZRR/S (O),155.8,167.8,1.08,,,
+UCRP/S (O),94.3,112.4,1.19,123.0,108.5,0.882
+UZTP/F (O),189.6,169.2,0.89,173.7,171.2,0.986
+UZTR/F*,103.7,129.4,1.25,170.2,-,-

@@ -1,0 +1,25 @@
+# Source: MBMA_9102 | Pugh, A.D. and Murray, T.M. (1991), Table 3.2, pp.25
+# Tag: MBMA_9102_TABLE32_TESTS1991SUMMARY
+# Content: Measured failure loads and observed failure modes of the four 1991 base tests and their four corresponding three-span confirming tests.
+# Data basis: measured: uniform uplift applied in a vacuum chamber, load read from a U-tube manometer
+# Units: failure_load_plf in plf; other columns descriptive
+# Column definitions:
+#   identification = 1991 test set label (see notes for code)
+#   no_of_spans = number of spans of the roof assembly, One (base test) or Three (confirming test)
+#   failure_load_plf = measured uniform uplift load at failure, plf
+#   failure_mode = observed mode of failure (see notes)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 99 pages)
+# ANOMALY FLAG: The failure loads printed here differ from the corresponding Appendix A-D test summary sheets (e.g. 107.92 here vs 102.92 plf in Appendix A for UZRP/S one span; 71.67 vs 66.67; 115.50 vs 108.52; 100.08 vs 95.08; 178.20 vs 171.18; 96.58 vs 91.58; 189.08 vs 183.08) - each table value is about 5 plf higher. The printed table values are preserved verbatim and not corrected.
+# The identification cell is printed only on the first (One span) row of each pair; the continuation row is left blank and is given as "" here.
+# "Distortional" = distortional buckling of the compression lip, flange and web after significant lateral deflection; "Local" = local buckling of the compression lip, flange and web; "Deck Failure" = deck buckled at the clips before the purlins failed.
+identification,no_of_spans,failure_load_plf,failure_mode
+UZRP/S 1991,One,107.92,Distortional
+,Three,199.16,Distortional
+UCRP/S (O) 1991,One,71.67,Distortional
+,Three,115.50,Distortional
+UZTP/F (O) 1991,One,100.08,Local
+,Three,178.20,Local
+UZTR/F 1991,One,96.58,Local
+,Three,189.08,Deck Failure

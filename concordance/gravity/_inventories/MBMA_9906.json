@@ -1,0 +1,725 @@
+{
+  "citation": "Virginia Tech Report CE/VPI-ST 99/06, MBMA (1999)",
+  "code_tag": "MBMA_9906",
+  "experiment": "Single-span, two-purlin-line standing seam roof assemblies with Z-purlins of varying depth, thickness and flange width, several standing seam clip types, 22/24 gage panels and with or without insulation were loaded to failure by gravity (downward) vacuum-chamber pressure to measure failure loads, maximum moments and experimental base-test reduction factors (Rt).",
+  "title": "Base Test Method: Gravity Loading Tests of Standing Seam Roof Systems (Series 1-10)",
+  "variables": [
+    {
+      "availability": "direct",
+      "definition": "Test identification label as printed on each purlin test summary sheet, measured-dimension drawing, or the illustrative example table.",
+      "evidence": "Table S1 pp.53-619 (test_id), Table A pp.185-614 (test_id), Table 6.1 p.48 (test_no)",
+      "name": "Test identification",
+      "note": "Formats differ between tables (e.g. 'Test 1 (Z10)-C3' vs 'S1-10Z0.100-C1 Test 01' vs '1').",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_id",
+        "test_no"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY",
+        "MBMA_9906_TABLEA_MEASUREDFLANGEWIDTHS",
+        "MBMA_9906_TABLE61_GRAVITYBASETESTSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Designation of the test series (groups of tests sharing span, purlin size, panel gage, insulation and bracing).",
+      "evidence": "Table 4.1 p.22",
+      "name": "Test series designation",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "series"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLE41_TESTMATRIX"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of base tests conducted within a given test series.",
+      "evidence": "Table 4.1 p.22",
+      "name": "Number of tests in series",
+      "note": "Series 4 row carries no numeric data.",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "number_of_tests"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLE41_TESTMATRIX"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Simple span length of the test assembly as printed in the test matrix and on the summary/data sheets.",
+      "evidence": "Table 4.1 p.22 (span_length_ft_in); Table S1 (span_ft)",
+      "name": "Span length",
+      "note": "Printed both as feet-inches (25'-0\", 29'-4-1/2\") and as decimal feet on data sheets.",
+      "printed_symbol": "L",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "span_ft",
+        "span_length_ft_in"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLE41_TESTMATRIX",
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft-in / ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of spans in the test specimen (all base tests were single span).",
+      "evidence": "Table S1 column n_spans",
+      "name": "Number of spans",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_spans"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of parallel purlin lines in the test assembly (ridge and eave purlin lines).",
+      "evidence": "Table S1 column n_purlin_lines",
+      "name": "Number of purlin lines",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_purlin_lines"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "implied",
+      "definition": "Purlin lines were spaced 5 ft on centre with a 1 ft deck overhang, stated in the header notes for all tests.",
+      "evidence": "Table S1 header note: 'Purlin spacing was 5 ft o.c. with 1 ft deck overhang in all tests'",
+      "name": "Purlin spacing and deck overhang",
+      "note": "Stated once in a note, not a column.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal depth of the Z-purlin cross-section (8 in. or 10 in.).",
+      "evidence": "Table 4.1 p.22; Tables 5.1 p.35 and 5.2 p.39; Table S1 (depth_in)",
+      "name": "Purlin depth",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "depth_in",
+        "purlin_depth_in"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLE41_TESTMATRIX",
+        "MBMA_9906_TABLE51_AVGRVALUESFLANGEWIDTH",
+        "MBMA_9906_TABLE52_AVGRVALUESPANELTHICKNESS",
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Thickness of the Z-purlin sheet steel as printed on the summary sheet (measured) or as the nominal set value in the comparison tables.",
+      "evidence": "Table S1 (thickness_in); Tables 5.1/5.2 (purlin_thickness_in); Table 6.1 p.48",
+      "name": "Purlin thickness",
+      "note": "Some printed values have transcription issues (e.g. '105\"' for 0.105 in.).",
+      "printed_symbol": "t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "thickness_in",
+        "purlin_thickness_in"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY",
+        "MBMA_9906_TABLE51_AVGRVALUESFLANGEWIDTH",
+        "MBMA_9906_TABLE52_AVGRVALUESPANELTHICKNESS",
+        "MBMA_9906_TABLE61_GRAVITYBASETESTSUMMARY"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal width of the purlin flange (2 1/2 in. or 3 1/2 in.) for the series or comparison set.",
+      "evidence": "Table 4.1 p.22; Tables 5.1/5.2; Table S1 (flange_width_nominal_in)",
+      "name": "Nominal purlin flange width",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "flange_width_in",
+        "purlin_flange_width_in",
+        "flange_width_nominal_in"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLE41_TESTMATRIX",
+        "MBMA_9906_TABLE51_AVGRVALUESFLANGEWIDTH",
+        "MBMA_9906_TABLE52_AVGRVALUESPANELTHICKNESS",
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured width of the purlin top flange (the flange fastened to the roof panel), read from the per-test measured-dimension cross-section drawings.",
+      "evidence": "Table A pp.185-614",
+      "name": "Measured top flange width",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "top_flange_width_in"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLEA_MEASUREDFLANGEWIDTHS"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured width of the purlin bottom flange from the per-test measured-dimension cross-section drawings.",
+      "evidence": "Table A pp.185-614",
+      "name": "Measured bottom flange width",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "bottom_flange_width_in"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLEA_MEASUREDFLANGEWIDTHS"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Whether the measured purlin is the ridge-side or eave-side purlin line of the test assembly.",
+      "evidence": "Table A pp.185-614 column purlin",
+      "name": "Purlin line position",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "purlin"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLEA_MEASUREDFLANGEWIDTHS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Purlin specimen identification number(s) printed under the measured-dimension drawings and on the test summary sheets.",
+      "evidence": "Table A pp.185-614 (specimen_id); Table S1 (specimen_ids)",
+      "name": "Purlin specimen number",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "specimen_id",
+        "specimen_ids"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLEA_MEASUREDFLANGEWIDTHS",
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Thickness (gage) and type of the standing seam roof panel used in the test assembly.",
+      "evidence": "Table 4.1 p.22; Tables 5.1/5.2; Table S1 (panel_type)",
+      "name": "Roof panel gage / type",
+      "note": "Table S1 prints the panel as a type description ('Standing Seam'), gage given in series notes.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "panel_gage",
+        "panel_type"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLE41_TESTMATRIX",
+        "MBMA_9906_TABLE51_AVGRVALUESFLANGEWIDTH",
+        "MBMA_9906_TABLE52_AVGRVALUESPANELTHICKNESS",
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "gage"
+    },
+    {
+      "availability": "direct",
+      "definition": "Whether metal building insulation was installed between purlins and panel, and its thickness as printed.",
+      "evidence": "Table 4.1 p.22; Table S1 column insulation",
+      "name": "Insulation",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "insulation"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLE41_TESTMATRIX",
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Intermediate lateral bracing configuration (none/support only or third points); anti-roll clips were present at supports in all tests.",
+      "evidence": "Table 4.1 p.22; Table S1 column bracing and header note",
+      "name": "Lateral bracing configuration",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "bracing"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLE41_TESTMATRIX",
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Standing seam clip type used in the test (C1 low sliding, C2 low fixed, C3 tall sliding), or the clip type controlling the lowest Rt-values in a comparison set.",
+      "evidence": "Table S1 column clip_type; Tables 5.1/5.2 controlling_clip_type",
+      "name": "Standing seam clip type",
+      "note": "Summary sheets also print 'Short', 'Low', 'High', 'Sliding', 'Fixed', 'Floating'.",
+      "printed_symbol": "C1/C2/C3",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "clip_type",
+        "controlling_clip_type"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY",
+        "MBMA_9906_TABLE51_AVGRVALUESFLANGEWIDTH",
+        "MBMA_9906_TABLE52_AVGRVALUESPANELTHICKNESS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Purlin cross-section type (Z or C) as printed on the summary sheet.",
+      "evidence": "Table S1 column section_type",
+      "name": "Cross-section type",
+      "note": "All listed tests are Z sections.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "section_type"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Direction of the applied load; all base tests were gravity (downward) loading by vacuum chamber.",
+      "evidence": "Table S1 column load_direction and header notes",
+      "name": "Load direction",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "load_direction"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Total applied load per purlin line at failure as printed on the summary sheet, including the applied air-pressure line load plus deck and purlin self weight (and ridge purlin correction where listed).",
+      "evidence": "Table S1 column failure_load_as_printed with failure_load_unit",
+      "name": "Total applied load at failure",
+      "note": "Includes dead load; the applied-only load is a separate column.",
+      "printed_symbol": "Total Applied Load",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "failure_load_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Applied (vacuum-chamber air pressure) line loading per purlin line at failure, excluding deck and purlin self weight.",
+      "evidence": "Table S1 columns applied_line_loading_plf and applied_line_load_plf",
+      "name": "Applied line loading at failure",
+      "note": "Reported under two column names on different data sheets.",
+      "printed_symbol": "Applied Line Loading",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "applied_line_loading_plf",
+        "applied_line_load_plf"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Vacuum chamber pressure differential at failure, measured with U-tube manometer and pressure transducer.",
+      "evidence": "Table S1 columns pressure_in_h2o and failure_pressure_in_h2o",
+      "name": "Failure chamber pressure",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "measured_output",
+      "symbols": [
+        "pressure_in_h2o",
+        "failure_pressure_in_h2o"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in. H2O"
+    },
+    {
+      "availability": "direct",
+      "definition": "Weight of the roof deck per purlin line included in the total applied load (listed as 4.00 plf).",
+      "evidence": "Table S1 column weight_of_deck_plf and header note",
+      "name": "Deck weight",
+      "note": "",
+      "printed_symbol": "Weight of Deck",
+      "quantity_kind": "force",
+      "role": "specimen_parameter",
+      "symbols": [
+        "weight_of_deck_plf"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Self weight of the purlin per foot included in the total applied load.",
+      "evidence": "Table S1 column weight_of_purlin_plf",
+      "name": "Purlin self weight",
+      "note": "",
+      "printed_symbol": "Weight of Purlin",
+      "quantity_kind": "force",
+      "role": "specimen_parameter",
+      "symbols": [
+        "weight_of_purlin_plf"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Maximum midspan moment at failure, computed as M = wL^2/8 from the total applied load and printed on the summary sheet.",
+      "evidence": "Table S1 column failure_moment_as_printed with failure_moment_unit",
+      "name": "Maximum moment at failure",
+      "note": "Printed as 'kip in.' on summary pages and 'K-in' on data sheets.",
+      "printed_symbol": "Maximum Moment, Mts",
+      "quantity_kind": "moment",
+      "role": "measured_output",
+      "symbols": [
+        "failure_moment_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "kip-in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Description of the observed failure mode of the assembly as written on the test summary sheet.",
+      "evidence": "Table S1 column failure_mode",
+      "name": "Failure mode",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "failure_mode"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured coupon yield stress of the purlin steel (eave purlin) used in the theoretical strength calculation.",
+      "evidence": "Table S1 columns yield_stress_fy_ksi, yield_stress_ksi, fy_ksi",
+      "name": "Yield stress",
+      "note": "Reported under three column names on different data sheets.",
+      "printed_symbol": "Fy",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "yield_stress_fy_ksi",
+        "fy_ksi",
+        "yield_stress_ksi"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Effective section modulus of the purlin used in computing the theoretical (constrained) bending strength.",
+      "evidence": "Table S1 column seff_in3",
+      "name": "Effective section modulus",
+      "note": "Computed per cold-formed steel specification rather than measured.",
+      "printed_symbol": "Seff",
+      "quantity_kind": "area",
+      "role": "specimen_parameter",
+      "symbols": [
+        "seff_in3"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in.^3"
+    },
+    {
+      "availability": "direct",
+      "definition": "Theoretical constrained bending strength of the purlin, Mnt = Fy*Seff, as printed on the summary/data sheets and in the illustrative example table.",
+      "evidence": "Table S1 columns theoretical_moment_kip_in and theoretical_moment_as_printed; Table 6.1 p.48 column mnt_kip_in",
+      "name": "Theoretical moment Mnt",
+      "note": "Table 6.1 header prints it as 'Mnt = Seff * Fy (K-in.)'.",
+      "printed_symbol": "Mnt",
+      "quantity_kind": "moment",
+      "role": "predicted_value",
+      "symbols": [
+        "theoretical_moment_kip_in",
+        "mnt_kip_in",
+        "theoretical_moment_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY",
+        "MBMA_9906_TABLE61_GRAVITYBASETESTSUMMARY"
+      ],
+      "unit": "kip-in."
+    },
+    {
+      "availability": "simulated",
+      "definition": "Equivalent uniform line load corresponding to the theoretical bending strength of the purlin, as printed on the summary sheet.",
+      "evidence": "Table S1 column theoretical_line_load_plf",
+      "name": "Theoretical equivalent line load",
+      "note": "Some printed R-value lines use slightly different values than the tabulated line load.",
+      "printed_symbol": "Equivalent Line Load",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "theoretical_line_load_plf"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Base-test reduction factor Rt = failure (experimental) load or moment divided by the theoretical constrained strength, as printed on each summary page.",
+      "evidence": "Table S1 columns r_value, r_value_2, r_value_test_to_predicted; Table 6.1 p.48 column rt_value",
+      "name": "Experimental R-value (Rt)",
+      "note": "Printed under several column names; Rt = Mts/Mnt.",
+      "printed_symbol": "Rt",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "r_value",
+        "rt_value",
+        "r_value_2",
+        "r_value_test_to_predicted"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY",
+        "MBMA_9906_TABLE61_GRAVITYBASETESTSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Average of the experimental Rt-values of the controlling clip type for a parameter set, multiplied by 100 and reported as a percent.",
+      "evidence": "Table 5.1 p.35 and Table 5.2 p.39 column average_rt_x100",
+      "name": "Average Rt-value (x100)",
+      "note": "",
+      "printed_symbol": "Rt x 100",
+      "quantity_kind": "percentage",
+      "role": "derived_ratio",
+      "symbols": [
+        "average_rt_x100"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLE51_AVGRVALUESFLANGEWIDTH",
+        "MBMA_9906_TABLE52_AVGRVALUESPANELTHICKNESS"
+      ],
+      "unit": "%"
+    },
+    {
+      "availability": "direct",
+      "definition": "Percent difference between the average Rt-values of the two members of a compared pair (two flange widths or two panel gages).",
+      "evidence": "Table 5.1 p.35 and Table 5.2 p.39 column percent_difference",
+      "name": "Percent difference in average Rt",
+      "note": "Printed once per pair, repeated on the first row here.",
+      "printed_symbol": "",
+      "quantity_kind": "percentage",
+      "role": "derived_ratio",
+      "symbols": [
+        "percent_difference"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLE51_AVGRVALUESFLANGEWIDTH",
+        "MBMA_9906_TABLE52_AVGRVALUESPANELTHICKNESS"
+      ],
+      "unit": "%"
+    },
+    {
+      "availability": "direct",
+      "definition": "Qualitative conclusion printed beside each compared pair (e.g. 'Essentially the Same' or 'Rt Smaller for 2 1/2 in. Flange').",
+      "evidence": "Table 5.1 p.35 and Table 5.2 p.39 column note",
+      "name": "Comparison conclusion",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "note"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLE51_AVGRVALUESFLANGEWIDTH",
+        "MBMA_9906_TABLE52_AVGRVALUESPANELTHICKNESS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "implied",
+      "definition": "Mean and standard deviation of the Rt-values of the six base tests of the illustrative example, printed as Average and Standard Deviation rows at the bottom of the table.",
+      "evidence": "Table 6.1 p.48 Average and Standard Deviation rows and header note (0.555, 0.018; 0.751, 0.019)",
+      "name": "Mean and std. deviation of Rt",
+      "note": "Given as summary rows, not a column.",
+      "printed_symbol": "",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_9906_TABLE61_GRAVITYBASETESTSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "implied",
+      "definition": "Design reduction factors obtained by subtracting the standard deviation from the mean Rt of the thin and thick purlin test groups (Rt_min = 0.537, Rt_max = 0.733).",
+      "evidence": "Table 6.1 p.48 header note: 'Rt_min = 0.555 - 0.018 = 0.537 and Rt_max = 0.751 - 0.019 = 0.733'",
+      "name": "Reduced design R-values",
+      "note": "Derived in the text from the table values.",
+      "printed_symbol": "Rt_min, Rt_max",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_9906_TABLE61_GRAVITYBASETESTSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "implied",
+      "definition": "Minimum average constrained bending strength of the base-test group used in the reduction-factor equation of the illustrative example (115.03 K-in.).",
+      "evidence": "Table 6.1 p.48 header note: 'M̄nt_min = 115.03 K-in.'",
+      "name": "Minimum average Mnt",
+      "note": "Text elsewhere writes 115.04 in the equation denominator.",
+      "printed_symbol": "M̄nt_min",
+      "quantity_kind": "moment",
+      "role": "predicted_value",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_9906_TABLE61_GRAVITYBASETESTSUMMARY"
+      ],
+      "unit": "kip-in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Date on which the test was performed, as printed on the summary sheet.",
+      "evidence": "Table S1 column date",
+      "name": "Test date",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "date"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Figure number of the plot from which the averaged Rt-values in the comparison table were taken.",
+      "evidence": "Table 5.1 p.35 and Table 5.2 p.39 column figure",
+      "name": "Source figure number",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "figure"
+      ],
+      "table_tags": [
+        "MBMA_9906_TABLE51_AVGRVALUESFLANGEWIDTH",
+        "MBMA_9906_TABLE52_AVGRVALUESPANELTHICKNESS"
+      ],
+      "unit": ""
+    }
+  ],
+  "year": "1999"
+}

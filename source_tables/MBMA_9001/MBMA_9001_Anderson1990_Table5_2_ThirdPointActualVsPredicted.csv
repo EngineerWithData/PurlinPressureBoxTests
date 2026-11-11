@@ -1,0 +1,29 @@
+# Source: MBMA_9001 | Anderson, B.B. and Murray, T.M. (1990), Table 5.2, pp.44
+# Tag: MBMA_9001_TABLE52_THIRDPOINTACTUALVSPREDICTED
+# Content: Base test moments, stiffness-analysis moments, predicted three-span uplift failure loads and actual-to-predicted ratios for the rafter plus third point braced test sets.
+# Data basis: mixed: measured base test and three-span failure loads with stiffness-analysis and AISI-computed moments and predicted loads
+# Units: see column headers (plf for loads, in.-kips for moments, ksi for Fy, ratio dimensionless)
+# Column definitions:
+#   test_designation = test set label as printed (see Table 3.1 notes for the ID code)
+#   wu_base_plf = failure load of the single span base test, plf
+#   mus_kip_in = maximum (ultimate) moment determined from the single span base test, in.-kips
+#   fy_ksi = yield stress used in the analysis (from the three-span test coupons), ksi
+#   maisi_kip_in = 1986 AISI allowable constrained bending capacity times 1.67, in.-kips
+#   mmax_neg_kip_in = maximum negative moment from the 100 plf stiffness analysis, in.-kips
+#   mmax_pos_kip_in = maximum positive moment per purlin from the 100 plf stiffness analysis, in.-kips
+#   wp3_neg_plf = predicted three span failure load if M_max- controls, plf
+#   wp3_pos_plf = predicted three span failure load if M_max+ controls, plf
+#   wp3_plf = predicted failure load, minimum of wp3_neg_plf and wp3_pos_plf, plf
+#   wu_actual_plf = actual measured failure load of the three span test, plf (-- if not attained)
+#   wu_over_wp3 = ratio of actual to predicted three span failure load, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 174 pages)
+# ANOMALY FLAG: Printed base test load for U-Z-T-R/S is 195.9 plf whereas Table 4.3 and the appendix give 195.8 / 195.85 plf; the value is preserved verbatim and NOT corrected. M_AISI for U-Z-T-P/S(0) is printed with two decimals (181.08) while all other entries carry one decimal; preserved as printed. Rows for U-Z-T-P/S(0) and U-Z-T-R/S show "--" for actual load and ratio because those three-span tests ended in clip failures. Opposed-purlin designations printed as "(0)" (digit zero).
+# Definitions printed below the table: M_AISI = allowable moment capacity x 1.67 (assuming constrained bending); M_us = maximum moment from single span (base) test; M_max- = maximum negative moment from stiffness analysis (100 plf); M_max+ = maximum positive moment per purlin from stiffness analysis (100 plf); W_p3- and W_p3+ = predicted three span failure loads if M_max- or M_max+ controls; W_p3 = minimum of the two; W_u = actual failure load.
+# Tests U-Z-T-P/S-3(O) and U-Z-T-R/S-3 failed by standing seam clip failure, so no purlin failure load or ratio is reported.
+test_designation,wu_base_plf,mus_kip_in,fy_ksi,maisi_kip_in,mmax_neg_kip_in,mmax_pos_kip_in,wp3_neg_plf,wp3_pos_plf,wp3_plf,wu_actual_plf,wu_over_wp3
+U-Z-T-P/F(0),104.2,97.7,60.4,125.0,33.4,35.6,205.0,351.2,205.0,169.2,0.83
+U-Z-T-P/S(0),142.2,133.3,65.1,181.08,47.3,45.1,281.7,401.4,281.7,--,--
+U-Z-T-R/F,55.8,52.3,63.0,107.2,46.9,43.4,111.7,247.1,111.7,129.4,1.16
+U-Z-T-R/S,195.9,183.7,64.8,205.7,47.4,41.7,387.7,492.7,387.7,--,--

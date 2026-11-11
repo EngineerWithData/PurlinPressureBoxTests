@@ -1,0 +1,18 @@
+# Source: MBMA_9102 | Pugh, A.D. and Murray, T.M. (1991), Table 4.3, pp.31
+# Tag: MBMA_9102_TABLE43_FAILURELOADCOMPARISON
+# Content: Comparison of measured base test and multispan failure loads between the 1990 and 1991 tests for the two test sets built with identical components.
+# Data basis: measured: vacuum chamber uplift failure loads of the 1990 and 1991 assemblies
+# Units: all loads in plf
+# Column definitions:
+#   test_designation = test set label (see notes for code)
+#   w_us_1990_plf = measured 1990 simple span base test failure load, plf
+#   w_u3_1990_plf = measured 1990 three span confirming test failure load, plf
+#   w_us_1991_plf = measured 1991 simple span base test failure load, plf
+#   w_u3_1991_plf = measured 1991 three span confirming test failure load, plf
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 10 cells checked (AI, 2026-11-04): 10 correct, 0 errors; P(accuracy ≥ 0.8) = 91.4%, ≥ 0.9) = 68.6%, ≥ 0.95) = 43.1%
+# TEXT SOURCE: read from page images by the model (all 99 pages)
+# Only UCRP/S (O) and UZTP/F (O) are compared because the 1991 UZRP/S and UZTR/F purlins were about 0.01 in. thicker than their 1990 counterparts.
+test_designation,w_us_1990_plf,w_u3_1990_plf,w_us_1991_plf,w_u3_1991_plf
+UCRP/S (O),50.8,112.4,66.7,108.5
+UZTP/F (O),104.2,169.2,95.1,171.2

@@ -1,0 +1,35 @@
+# Source: MBMA_8703 | Perry, D., Golovin, M., Montague, D., LaBoube, R. and Wilson, L. (1987), Table C-13, pp.24
+# Tag: MBMA_8703_TABLEC13_PURLINDATATEST10R
+# Content: Measured cross-section dimensions of the 8 1/2 inch cee purlins used in Uplift Test #10R.
+# Data basis: measured: calipers/scale on the as-fabricated purlins before test
+# Units: see column headers; thicknesses in inches, lip angles in degrees
+# Column definitions:
+#   line = purlin line designation, A or B (two lines of purlins per test)
+#   span = location of the member in the three-span run (1/2, 2/3, 3/4)
+#   specimen_no = piece mark of the member measured
+#   depth_in = measured member depth at one end, inches
+#   t_in = measured thickness at one end, inches
+#   fy_ksi = yield stress, ksi (column left blank on this sheet)
+#   flange_width_top_in = top flange width measured at mid-span, inches
+#   flange_width_bot_in = bottom flange width measured at mid-span, inches
+#   lip_length_top_in = top flange lip length at mid-span, inches
+#   lip_length_bot_in = bottom flange lip length at mid-span, inches
+#   lip_angle_top_deg = top lip angle, degrees
+#   lip_angle_bot_deg = bottom lip angle, degrees
+#   r_web_top_in = top web/flange corner radius, inches
+#   r_lip_top_in = top flange/lip corner radius, inches
+#   r_web_bot_in = bottom web/flange corner radius, inches
+#   r_lip_bot_in = bottom flange/lip corner radius, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 76 pages); 1 character(s) were illegible and are marked [?], not guessed
+# All cees used in this test are the same cees that were used in Uplift Test #10.
+# Lip Angles are measured in degrees.
+# Top flange of cee is flange to which sheets are attached.
+line,span,specimen_no,depth_in,t_in,fy_ksi,flange_width_top_in,flange_width_bot_in,lip_length_top_in,lip_length_bot_in,lip_angle_top_deg,lip_angle_bot_deg,r_web_top_in,r_lip_top_in,r_web_bot_in,r_lip_bot_in
+A,1/2,C25EL,"8 7/16""",.0893,,"2 5/8""","2 11/16""","15/16""","15/16""",89,89,"3/8""","5/16""","3/8""","1/4"""
+A,2/3,C25I,"8 7/16""",.0887,,"2 21/32""","2 21/32""","15/16""","29/32""",88,90,"3/8""","5/16""","3/8""","1/4"""
+A,3/4,C25ER,"8 7/16""",.0897,,"2 5/8""","2 5/8""","29/32""","29/32""",90,91,"3/8""","5/16""","3/8""","1/4"""
+B,1/2,C25ER,"8 7/16""",.0889,,"2 5/8""","2 21/32""","31/32""","29/32""",90,89,"3/8""","5/16""","3/8""","1/4"""
+B,2/3,C25I,"8 7/16""",.0887,,"2 11/16""","2 11/16""","15/16""","29/32""",88,89,"3/8""","5/16""","3/8""","1/4"""
+B,3/4,C25EL,"8 7/16""",.0890,,"2 5/8""","2 5/8""","15/16""","15/16""",92,91,"3/8""","5/16""","3/8""","1/4"""

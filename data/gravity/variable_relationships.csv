@@ -1,0 +1,31 @@
+# How the pooled variables move together (Pearson correlation).
+# This is association across pooled specimens, not a design equation, and the papers'
+#   unequal parameter coverage can drive it. Read it as a pointer, not a result.
+group,variable_a,variable_b,n,correlation,strength
+tensile_coupons,elongation_pct,ultimate_tensile_strength_ksi,71,-0.705,moderate
+tensile_coupons,elongation_pct,yield_stress_ksi,70,-0.561,moderate
+tensile_coupons,elongation_pct,coupon_width_in,36,-0.559,moderate
+tensile_coupons,elongation_pct,coupon_thickness_in,71,0.348,weak
+measured_purlin_cross_sections,bottom_flange_to_web_radius_in,top_flange_to_web_radius_in,30,0.841,strong
+measured_purlin_cross_sections,bottom_flange_to_web_radius_in,thickness_in,30,0.539,moderate
+measured_purlin_cross_sections,bottom_flange_to_web_radius_in,top_lip_length_in,30,0.297,negligible
+measured_purlin_cross_sections,bottom_flange_to_web_radius_in,top_lip_angle_deg,30,-0.258,negligible
+measured_purlin_cross_sections,bottom_flange_to_web_radius_in,bottom_flange_width_in,30,0.245,negligible
+measured_purlin_cross_sections,bottom_flange_to_web_radius_in,bottom_lip_length_in,30,0.104,negligible
+measured_purlin_cross_sections,bottom_flange_to_web_radius_in,bottom_lip_angle_deg,30,-0.089,negligible
+measured_purlin_cross_sections,bottom_flange_to_web_radius_in,top_flange_width_in,30,-0.03,negligible
+computed_aisi_section_properties,deflection_per_100plf_in,predicted_failure_load_plf,26,-0.987,strong
+computed_aisi_section_properties,deflection_per_100plf_in,predicted_flexural_capacity_ftk,27,-0.983,strong
+computed_aisi_section_properties,deflection_per_100plf_in,allowable_web_stress_ksi,27,-0.983,strong
+computed_aisi_section_properties,deflection_per_100plf_in,allowable_moment_comp_flange_ftk,27,-0.973,strong
+computed_aisi_section_properties,deflection_per_100plf_in,i_strength_in4,26,-0.972,strong
+computed_aisi_section_properties,deflection_per_100plf_in,st_strength_in3,27,-0.969,strong
+computed_aisi_section_properties,deflection_per_100plf_in,allowable_moment_tension_flange_ftk,27,-0.967,strong
+computed_aisi_section_properties,deflection_per_100plf_in,sb_strength_in3,27,-0.967,strong
+computed_aisi_section_properties,deflection_per_100plf_in,allowable_moment_web_ftk,26,-0.966,strong
+computed_aisi_section_properties,deflection_per_100plf_in,i_deflection_in4,27,-0.965,strong
+computed_aisi_section_properties,deflection_per_100plf_in,gross_moment_of_inertia_in4,27,-0.963,strong
+computed_aisi_section_properties,deflection_per_100plf_in,sb_gross_in3,27,-0.963,strong
+computed_aisi_section_properties,deflection_per_100plf_in,st_gross_in3,27,-0.961,strong
+computed_aisi_section_properties,deflection_per_100plf_in,allowable_comp_flange_stress_ksi,27,-0.0,negligible
+computed_aisi_section_properties,deflection_per_100plf_in,allowable_tension_flange_stress_ksi,27,-0.0,negligible

@@ -1,0 +1,26 @@
+# Source: MBMA_9002 | Rayburn, L. and Murray, T.M. (1990), Table 4.4, pp.32
+# Tag: MBMA_9002_TABLE44_SERIESIVTESTRESULTS
+# Content: Measured failure moments and computed section strengths for the four Series IV single-span base tests conducted at 20 ft and 30 ft spans.
+# Data basis: mixed: measured experimental failure moments with 1986 AISI constrained-bending computed section strengths
+# Units: see column headers
+# Column definitions:
+#   test = base test identification label (see notes for suffixes)
+#   insulation = whether 4 in. insulation was in place during the test (Yes/No)
+#   seff_in3 = effective section modulus of the purlin that failed, cubic inches
+#   fy_ksi = yield stress of material taken from the purlin which failed, ksi
+#   mn_in_kips = nominal section strength, Seff x Fy, inch-kips
+#   mus_in_kips = maximum moment corresponding to the experimental failure load, inch-kips
+#   r_percent = percentage of through-fastened capacity, x 100, percent
+#   failure_mode = observed mode of failure (LB or LM, see notes)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 134 pages); 2 character(s) were illegible and are marked [?], not guessed
+# ANOMALY FLAG: The two C-purlin tests are printed as "R-F-9C0.075-20" and "R-F-9C0.105-30" although they use pan deck and are called P-F-9C0.075-20 and P-F-9C0.105-30 in Table 3.1, Table 4.5 and the appendices; the labels are preserved verbatim as printed and NOT corrected. The legend also defines Wus/WAISI (loads) while columns are headed Mus (in-kips).
+# LB = local buckling of lip, flange, and web
+# LM = failure cross section after considerable lateral movement
+# Legend printed with the table: Seff = effective section modules; Fy = yield stress of material taken from purlin which failed; Mn = nominal section strength, Seff x Fy; Wus = experimental failure load of base test; WAISI = 1986 AISI fully constrained flexural strength; R = Wus/WAISI x 100%
+test,insulation,seff_in3,fy_ksi,mn_in_kips,mus_in_kips,r_percent,failure_mode
+R-S-10Z0.094-20-0,No,4.51,59.3,267.5,157.0,58.7,LB
+R-S-10Z0.093-30-0,No,4.64,60.6,281.2,108.8,38.7,LM
+R-F-9C0.075-20,No,2.56,57.7,147.7,147.4,99.8,LB
+R-F-9C0.105-30,No,3.78,57.8,218.7,192.2,87.9,LB

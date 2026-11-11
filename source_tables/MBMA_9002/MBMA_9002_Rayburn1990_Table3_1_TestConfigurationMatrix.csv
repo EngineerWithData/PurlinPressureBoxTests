@@ -1,0 +1,38 @@
+# Source: MBMA_9002 | Rayburn, L. and Murray, T.M. (1990), Table 3.1, pp.16
+# Tag: MBMA_9002_TABLE31_TESTCONFIGURATIONMATRIX
+# Content: Matrix of the 17 single-span base test configurations, giving purlin type and orientation, panel and clip type, presence of insulation, and span length.
+# Data basis: input: test configurations selected for the experimental program
+# Units: span_length in feet-inches; all other columns are labels
+# Column definitions:
+#   series = test series the configuration belongs to (I-IV), as printed in the table body
+#   test_identification = test label: deck type-clip type-purlin size/thickness-span-orientation
+#   purlin_type = cross-section shape of the supporting purlins (Z- or C-)
+#   purlin_orientation = top flanges Opposed (opposite directions) or Facing (same direction)
+#   panel_type = standing seam deck panel shape, Rib or Pan (Fig. 3.1)
+#   clip_type = standing seam clip, Sliding (two-piece) or Fixed (Fig. 3.2)
+#   insulation_used = whether 4 in. blanket insulation was placed between purlin and clip
+#   span_length = simple span length of the base test, feet and inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 134 pages); 2 character(s) were illegible and are marked [?], not guessed
+# ANOMALY FLAG: Row "P-F-9C0.010-25" is printed with thickness "0.010" although the same test is called P-F-9C0.10-25 in Chapter IV and Table 4.3; the value is preserved verbatim as printed and NOT corrected. Series III tests are also listed in a different order (0.065 before 0.063) than in Table 4.3.
+# The printed table has series heading rows (Series I, II, III, IV); these headings were moved into an added leading 'series' column so that every row has the same number of entries.
+# Test identification system (Sec. 3.3): first letter R/P = rib or pan deck; second letter S/F = sliding or fixed clip; third identifier = purlin depth, shape and thickness; fourth = span in feet; trailing O = top flanges opposed.
+series,test_identification,purlin_type,purlin_orientation,panel_type,clip_type,insulation_used,span_length
+I,R-S-8Z0.060-25-0,Z-,Opposed,Rib,Sliding,No,"24'-9"""
+I,R-S-8.5Z0.06-25-0,Z-,Opposed,Rib,Sliding,Yes,25'
+I,R-S-10Z0.073-25-0,Z-,Opposed,Rib,Sliding,No,25'
+I,R-S-10Z0.092-25-0,Z-,Opposed,Rib,Sliding,No,25'
+II,R-S-8Z0.060-25,Z-,Facing,Rib,Sliding,Yes,25'
+II,R-S-8Z0.10-25,Z-,Facing,Rib,Sliding,No,25'
+II,R-S-10Z0.073-25,Z-,Facing,Rib,Sliding,No,25'
+II,R-S-10Z0.094-25,Z-,Facing,Rib,Sliding,No,25'
+III,P-F-9C0.065-25,C-,Facing,Pan,Fixed,No,25'
+III,P-F-9C0.063-25,C-,Facing,Pan,Fixed,No,25'
+III,P-F-9C0.074-25,C-,Facing,Pan,Fixed,No,25'
+III,P-F-9C0.010-25,C-,Facing,Pan,Fixed,No,25'
+III,P-F-9C0.064-25,C-,Facing,Pan,Fixed,Yes,25'
+IV,R-S-10Z0.094-20-0,Z-,Opposed,Rib,Sliding,No,20'
+IV,R-S-10Z0.093-30-0,Z-,Opposed,Rib,Sliding,No,30'
+IV,P-F-9C0.075-20,C-,Facing,Pan,Fixed,No,20'
+IV,P-F-9C0.105-30,C-,Facing,Pan,Fixed,No,30'

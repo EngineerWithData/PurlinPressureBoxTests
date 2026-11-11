@@ -1,0 +1,23 @@
+# Source: MBMA_9804 | Bryant, M.R. and Murray, T.M. (1999), Table 3.2, pp.38
+# Tag: MBMA_9804_TABLE32_FAILURELOADSANDLOCATIONS
+# Content: Applied uniform line load at failure and the observed failure location for each of the seven vacuum-chamber gravity load tests.
+# Data basis: measured: manometer pressure in vacuum chamber converted to line load at failure
+# Units: applied_load_at_failure_plf in plf; other columns dimensionless
+# Column definitions:
+#   identification = test identification label as printed
+#   number_of_spans = number of continuous spans in the test assembly
+#   applied_load_at_failure_plf = applied uniform line load at failure, pounds per linear foot
+#   failure_location = region of the test bay where failure occurred (see footnote)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 169 pages)
+# Footnote for entries marked *: "Local buckling immediately outside of the lapped portion of the purlin in the exterior span."
+# The failure load shown is the applied load only; the self-weight of the system is added later for analysis and comparison.
+identification,number_of_spans,applied_load_at_failure_plf,failure_location
+Test 1 Z-TF,3,320.8,Negative Region*
+Test 2 Z-SS,3,141.7,Positive Region
+Test 3 C-SS,3,210.8,Positive Region
+Test 4 C-TF,3,280.1,Negative Region*
+I. P. Test 1 Z-SS,2,104.8,Positive Region
+I. P. Test 2 Z-SS,2,100.8,Positive Region
+I. P. Test 3 Z-TF,2,161.2,Negative Region*

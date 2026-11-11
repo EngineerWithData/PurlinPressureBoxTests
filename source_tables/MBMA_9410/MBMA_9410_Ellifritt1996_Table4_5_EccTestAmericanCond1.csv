@@ -1,0 +1,26 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 4-5, pp.49
+# Tag: MBMA_9410_TABLE45_ECCTESTAMERICANCOND1
+# Content: Simulated (component) eccentric-load pullover tests on American panels (Fy = 80 ksi) with the screws offset from the center line (Condition 1), 5/1/95 to 5/19/95.
+# Data basis: measured: load at fastener failure in the simulated component test apparatus
+# Units: distances in inches; total_load_lbs in pounds; panel_thickness_gage in gage
+# Column definitions:
+#   test_number = test specimen number
+#   spacing_from_cl_in = offset of the screw from the panel center line, inches
+#   span_length_in = simulated panel span length, inches
+#   total_load_lbs = total load at fastener failure, pounds
+#   panel_thickness_gage = panel sheet thickness, gage
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# Eccentric Loading Condition #1 = offsetting the screws (Figure 4-3).
+test_number,spacing_from_cl_in,span_length_in,total_load_lbs,panel_thickness_gage
+1,2,13,507,24
+2,3,13,530,24
+3,9,13,385,24
+4,10,13,701,24
+5,12,13,660,24
+6,2,13,535,26
+7,3,13,605,26
+8,9,13,290,26
+9,10,13,356,26
+10,12,13,347,26

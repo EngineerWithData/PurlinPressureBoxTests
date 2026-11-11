@@ -1,0 +1,23 @@
+# Source: MBMA_9704 | Almoney, K. and Murray, T.M. (1998), Table 2.1, pp.8
+# Tag: MBMA_9704_TABLE21_TESTMATRIX
+# Content: Test matrix listing the purlin size, span and lap length into each of the three bays for the six three-span continuous lapped Z-purlin tests.
+# Data basis: input: as-built test configuration (purlin size, span and lap length) for each test
+# Units: span_ft in feet; lap_length_ft in feet; others dimensionless labels
+# Column definitions:
+#   test_identification = test designation(s) of the purlin assembly tested
+#   purlin_size = Z-purlin designation, 8.5 in. deep, last two digits = nominal thickness in thousandths of an inch
+#   span_ft = center-to-center span length of the bay, feet
+#   lap_length_ft = length of lap extending into the bay, feet
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 92 pages)
+# Footnote as printed: "*Into bay" (lap length is measured into the bay).
+# Each test identification spans three rows, one per bay (exterior, center, exterior); blank test_identification cells belong to the test named in the row above.
+# Purlin designation: 8.5Z64 = 8.5 in. deep Z-purlin with nominal thickness 0.064 in.
+test_identification,purlin_size,span_ft,lap_length_ft
+"FV20-1, -2, -3, -4",8.5Z64,20.0,1.50
+,8.5Z57,20.0,2.90
+,8.5Z64,20.0,1.50
+"FV25-1, -2",8.5Z72,25.0,1.50
+,8.5Z64,25.0,3.50
+,8.5Z72,25.0,1.50

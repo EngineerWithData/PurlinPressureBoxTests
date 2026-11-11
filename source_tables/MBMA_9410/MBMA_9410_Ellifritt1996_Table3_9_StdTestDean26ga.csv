@@ -1,0 +1,29 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 3-9, pp.38
+# Tag: MBMA_9410_TABLE39_STDTESTDEAN26GA
+# Content: Standard pullover test loads for 26 gage Dean steel (Fy = 80 ksi) from the earlier University of Florida research.
+# Data basis: measured: ultimate load in the standard pullover test (previous research)
+# Units: load_lb in pounds; pct_deviation_from_mean in percent
+# Column definitions:
+#   test_no = test specimen number
+#   load_lb = ultimate load recorded on the fastener, pounds
+#   pct_deviation_from_mean = deviation of the load from the series mean, percent
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: Tests 1 and 3 show "*" in the deviation column instead of a number (omitted from the statistics); preserved verbatim.
+# Printed footnote: * indicates tests that have been omitted from the calculation of the average and standard deviation due to errors involved during testing.
+# Printed summary: Average = 1962 lb; STDEV. = 254.
+test_no,load_lb,pct_deviation_from_mean
+1,820,*
+2,1740,11
+3,950,*
+4,1880,4
+5,1640,16
+6,2250,14
+7,1680,14
+8,1710,13
+9,2170,10
+10,1880,4
+11,2180,11
+12,2330,19
+13,2120,8

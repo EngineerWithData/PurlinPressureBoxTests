@@ -1,0 +1,66 @@
+# Source: MBMA_7603 | Guedelhoefer, O.C. and Boggs, D.W. (1976), Table Fig. 2, pp.11
+# Tag: MBMA_7603_TABLE2_ZPURLINSTRAINGAGELOCATIONS
+# Content: Locations (section, position and measured offset dimension) of the 48 strain gages / turnbuckle gages installed on the Z purlin uplift test specimen.
+# Data basis: measured: as-installed gage offsets recorded on the Z purlin test specimen
+# Units: sensor, section, position are labels; dim_in in inches
+# Column definitions:
+#   sensor = strain gage sensor number used in the data tables and plots
+#   section = cross-section number along the Z purlin assembly where the gage is located (Fig. 2)
+#   position = gage position letter within the cross section (Fig. 2 detail sketches)
+#   dim_in = offset dimension locating the gage within the section, inches (dash = not given)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 90 pages); 13 character(s) were illegible and are marked [?], not guessed
+# ANOMALY FLAG: Sensor 41 position is printed as "E OR F*" with the footnote "* POSITION OF SENSOR IS UNCERTAIN"; preserved verbatim. Sensors 39 to 48 have no dimension printed (shown as a dash).
+# Table is printed on drawing Sheet 2 (Fig. 2), 'Strain Gage Instrumentation - Z Purlin Uplift Test'.
+# Footnote: * POSITION OF SENSOR IS UNCERTAIN (applies to sensor 41).
+# Sensors 39-48 are turnbuckle/bracing strap gages for which no within-section dimension was recorded.
+sensor,section,position,dim_in
+1,2,A,1/2
+2,2,B,3/16
+3,2,C,1/4
+4,2,D,7/16
+5,2,E,3/16
+6,2,F,5/16
+7,4,A,1/2
+8,4,B,5/16
+9,4,C,9/16
+10,4,D,5/8
+11,6,A,9/16
+12,6,B,5/16
+13,6,C,1/2
+14,6,D,5/8
+15,3,C,1/2
+16,5,C,9/16
+17,7,A,1/2
+18,7,B,1/2
+19,8,A,5/8
+20,8,B,7/16
+21,8,C,5/8
+22,8,D,1/4
+23,9,A,1/4
+24,9,B,1/4
+25,10,A,3/4
+26,10,B,5/8
+27,10,C,9/16
+28,10,D,1/2
+29,11,A,1/2
+30,11,B,1/4
+31,11,C,1/2
+32,11,D,1/4
+33,12,A,7/16
+34,12,B,3/16
+35,12,C,3/16
+36,12,D,3/8
+37,12,E,3/16
+38,12,F,3/16
+39,1,C,-
+40,7,C,-
+41,8,E OR F*,-
+42,8,H,-
+43,9,C,-
+44,11,C,-
+45,11,F,-
+46,11,G,-
+47,11,H,-
+48,13,C,-

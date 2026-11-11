@@ -1,0 +1,37 @@
+# Source: MBMA_8703 | Perry, D., Golovin, M., Montague, D., LaBoube, R. and Wilson, L. (1987), Table C-3, pp.14
+# Tag: MBMA_8703_TABLEC3_PURLINDATATEST3
+# Content: Measured cross-section dimensions of the 9 1/2 inch zee purlins used in Uplift Test #3.
+# Data basis: measured: calipers/scale on the as-fabricated purlins before test
+# Units: see column headers; thicknesses in inches, lip angles in degrees
+# Column definitions:
+#   line = purlin line designation, A or B (two lines of purlins per test)
+#   span = location of the member in the three-span run (1/2, 2/3, 3/4)
+#   specimen_no = piece mark of the member measured
+#   depth_end1_in = measured member depth at one end, inches
+#   t_end1_in = measured thickness at that end, inches
+#   depth_end2_in = measured member depth at the other end, inches
+#   t_end2_in = measured thickness at the other end, inches
+#   fy_ksi = yield stress, ksi (column left blank on this sheet)
+#   flange_width_top_in = top flange width measured at mid-span, inches
+#   flange_width_bot_in = bottom flange width measured at mid-span, inches
+#   lip_length_top_in = top flange lip length at mid-span, inches
+#   lip_length_bot_in = bottom flange lip length at mid-span, inches
+#   lip_angle_top_deg = top lip angle, degrees
+#   lip_angle_bot_deg = bottom lip angle, degrees
+#   r_web_top_in = top web/flange corner radius, inches
+#   r_lip_top_in = top flange/lip corner radius, inches
+#   r_web_bot_in = bottom web/flange corner radius, inches
+#   r_lip_bot_in = bottom flange/lip corner radius, inches
+# EXTRACTION QUALITY: reconstructed — decimal points / column identities were inferred from context; VERIFY against the PDF before use
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 76 pages); 1 character(s) were illegible and are marked [?], not guessed
+# ANOMALY FLAG: The second depth/thickness reading printed on a separate line under each row has been folded into the extra columns depth_end2_in and t_end2_in; all values are verbatim.
+# Lip Angles vary between 40 and 50 degrees but cannot be measured accurately due to lip element being curved.
+# Bot. flange of zee is flange with holes punched in it to connect to support.
+line,span,specimen_no,depth_end1_in,t_end1_in,depth_end2_in,t_end2_in,fy_ksi,flange_width_top_in,flange_width_bot_in,lip_length_top_in,lip_length_bot_in,lip_angle_top_deg,lip_angle_bot_deg,r_web_top_in,r_lip_top_in,r_web_bot_in,r_lip_bot_in
+A,1/2,P5L,"9 1/2""",.0693,"9 1/2""",.0700,,"2 7/8""","3 1/8""","7/8""","31/32""",44,49,"11/64""","5/8""","11/64""","5/8"""
+A,2/3,P6,"9 1/2""",.0700,"9 1/2""",.0697,,"2 7/8""","3 1/8""","7/8""","1""",43,50,"11/64""","5/8""","11/64""","5/8"""
+A,3/4,P5R,"9 1/2""",.0697,"9 1/2""",.0700,,"2 13/16""","3 1/8""","7/8""","31/32""",43,50,"11/64""","5/8""","11/64""","5/8"""
+B,1/2,P5R,"9 1/2""",.0702,"9 1/2""",.0703,,"2 13/16""","3 1/16""","7/8""","1""",44,50,"11/64""","5/8""","11/64""","5/8"""
+B,2/3,P6,"9 1/2""",.0703,"9 1/2""",.0700,,"2 13/16""","3 1/8""","7/8""","1""",44,50,"11/64""","5/8""","11/64""","5/8"""
+B,3/4,P5L,"9 1/2""",.0697,"9 1/2""",.0695,,"2 7/8""","3 1/16""","29/32""","31/32""",45,51,"11/64""","5/8""","11/64""","5/8"""

@@ -1,0 +1,47 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 4-10, pp.65
+# Tag: MBMA_9410_TABLE410_STRAINGAGETESTDATA
+# Content: In-plane strains recorded by twelve gages on a 24 gage Pascoe (Fy = 55 ksi) panel as a concentrated load was applied to the purlin until pullover.
+# Data basis: measured: 12 strain gages (10,000 microstrain range) and 2 load cells during the component strain gage test
+# Units: t_load_lbs in pounds; strain gage readings in microstrain (printed as "me")
+# Column definitions:
+#   t_load_lbs = total load applied to the two fasteners at the reading, pounds
+#   sg_1_microstrain = reading of strain gage 1, microstrain (printed as "me")
+#   sg_2_microstrain = reading of strain gage 2, microstrain
+#   sg_3_microstrain = reading of strain gage 3, microstrain
+#   sg_4_microstrain = reading of strain gage 4, microstrain
+#   sg_5_microstrain = reading of strain gage 5, microstrain
+#   sg_6_microstrain = reading of strain gage 6, microstrain
+#   sg_7_microstrain = reading of strain gage 7, microstrain
+#   sg_8_microstrain = reading of strain gage 8, microstrain
+#   sg_9_microstrain = reading of strain gage 9, microstrain
+#   sg_10_microstrain = reading of strain gage 10, microstrain
+#   sg_11_microstrain = reading of strain gage 11, microstrain
+#   sg_12_microstrain = reading of strain gage 12, microstrain
+# EXTRACTION QUALITY: reconstructed — decimal points / column identities were inferred from context; VERIFY against the PDF before use
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: From the seventh data row onward only ELEVEN strain-gage values are printed instead of twelve; the twelfth column has been left blank exactly where the printed row ends, but it could not be confirmed whether the missing reading is SG 11 or SG 12 - human check required. Values such as the -6847.145 and -699.406 readings are preserved as printed.
+# Gage layout given in Figure 4-19; gages placed no closer than 2 inches from either screw.
+# Each reading was taken after one crank on the come-along until failure (Figure 4-24).
+# Figures 4-20 through 4-23 and 4-27/4-28 were generated from these readings.
+t_load_lbs,sg_1_microstrain,sg_2_microstrain,sg_3_microstrain,sg_4_microstrain,sg_5_microstrain,sg_6_microstrain,sg_7_microstrain,sg_8_microstrain,sg_9_microstrain,sg_10_microstrain,sg_11_microstrain,sg_12_microstrain
+0.856,4.773,0.398,-5.569,-2.784,0.398,1.193,0,-0.796,-0.398,0,2.377,-0.396
+813.24,6.762,46.541,5.967,47.336,48.928,22.673,42.961,93.484,-88.694,145.604,235.733,-185.734
+760.978,11.138,39.38,-1.591,36.596,44.552,22.673,38.983,87.516,-89.092,141.625,224.241,-187.318
+741.982,15.911,30.629,-2.387,27.049,38.187,25.855,33.016,78.764,-91.478,137.248,213.938,-192.465
+945.41,28.64,165.896,47.336,187.383,204.096,85.527,221.605,308.763,130.087,407.878,75.66,-699.406
+1142.024,63.249,170.273,117.753,181.812,415.442,93.484,518.959,449.68,514.18,777.447,188.973,-6847.145
+1065.043,66.829,-3.182,142.819,-87.103,377.624,-2.784,431.764,173.058,337.42,742.788,-106.142,
+1136.169,89.505,-120.508,187.383,-233.434,401.11,-40.173,410.665,58.077,246.278,725.659,-419.287,
+1120.427,83.538,-121.701,184.598,-235.819,396.732,-37.389,405.888,52.508,242.697,716.497,-421.662,
+1113.448,79.162,-122.894,183.006,-237.012,394.343,-36.593,403.101,49.325,240.707,711.717,-424.432,
+1106.79,79.957,-123.292,182.21,-237.807,392.751,-36.195,401.509,47.336,238.717,708.132,-424.432,
+1073.848,93.086,-132.836,161.519,-224.289,364.09,-31.025,358.915,91.097,156.347,776.65,-655.895,
+1073.109,92.29,-106.192,145.604,-174.986,329.062,-21.081,320.703,198.127,134.463,892.595,-828.729,
+1080.8,74.388,-90.682,115.366,-186.517,278.912,-38.184,261.401,185.792,118.548,879.844,-1026.801,
+1194.401,75.183,-51.707,122.925,-206.397,278.912,-66.025,261.401,198.525,142.421,918.099,-1260.352,
+1251.061,48.53,19.889,75.979,-157.888,151.572,-131.643,192.556,200.913,129.291,875.062,-1549.472,
+1277.385,26.651,73.99,-2.784,-85.512,46.541,-160.274,80.753,235.135,112.183,826.85,-1931.545,
+1294.982,21.48,127.301,-87.501,43.358,172.661,-133.631,-61.65,310.753,107.011,812.108,-2425.276,
+1353.701,17.502,173.456,-127.269,106.215,346.575,-93.466,-152.719,399.518,150.378,811.71,-2949.62,
+48.199,-17.899,-9.944,264.187,-49.321,274.137,-231.048,176.64,-102.215,-79.149,132.474,-1881.04,

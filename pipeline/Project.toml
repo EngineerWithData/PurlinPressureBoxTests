@@ -1,0 +1,15 @@
+[deps]
+DataAggregator = "3d8b5f47-2c91-4e63-a7d0-6b1f9c4a2e85"
+DataContext = "5e2a7c93-1f48-4d6b-b83e-9a0c5d71f264"
+DataExtractor = "7b1e2c5a-4d3f-4a8e-9c2b-1f6d8e0a3b47"
+DataHarmonizer = "9f3c7d21-6e84-4b2a-8d15-c0a7e9b4f612"
+DataValidator = "c4a2f9e1-8b3d-4f6a-9e2c-5d7b1a0f3e84"
+PDFTopicSorter = "503675a5-5112-4112-a674-8517f4c4cff0"
+
+[sources]
+DataAggregator = {rev = "main", url = "https://github.com/runtosolve/DataAggregator.jl"}
+DataContext = {rev = "main", url = "https://github.com/runtosolve/DataContext.jl"}
+DataExtractor = {rev = "main", url = "https://github.com/runtosolve/DataExtractor.jl"}
+DataHarmonizer = {rev = "main", url = "https://github.com/runtosolve/DataHarmonizer.jl"}
+DataValidator = {rev = "main", url = "https://github.com/runtosolve/DataValidator.jl"}
+PDFTopicSorter = {rev = "main", url = "https://github.com/runtosolve/PDFTopicSorter.jl"}

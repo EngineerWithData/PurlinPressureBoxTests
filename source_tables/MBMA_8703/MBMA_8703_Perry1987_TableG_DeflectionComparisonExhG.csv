@@ -1,0 +1,40 @@
+# Source: MBMA_8703 | Perry, D., Golovin, M., Montague, D., LaBoube, R. and Wilson, L. (1987), Table G, pp.31
+# Tag: MBMA_8703_TABLEG_DEFLECTIONCOMPARISONEXHG
+# Content: Measured horizontal and vertical deflections of the failed end-bay members compared with deflections calculated from AISI-6 and from elastic analysis, at the load of the last deflection reading.
+# Data basis: mixed: measured deflections with calculated (AISI-6 and elastic-analysis) deflections
+# Units: deflections in inches; load in lb./ft.
+# Column definitions:
+#   test_no = test identification
+#   measured_horiz_defl_in = measured movement of compression flange plus initial sweep (B + ao), inches
+#   calc_horiz_defl_at_load_in = horizontal deflection a from AISI-6 at the tabulated load, inches
+#   calc_horiz_defl_at_qu_in = horizontal deflection a from AISI-6 at the calculated ultimate load qu, inches
+#   measured_vert_defl_in = measured vertical deflection of the failed member, inches
+#   calc_vert_defl_in = vertical deflection from elastic analysis, inches
+#   load_lb_ft = load at which the last measured deflections were recorded, pounds per foot
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 76 pages); 1 character(s) were illegible and are marked [?], not guessed
+# ANOMALY FLAG: Measured horizontal deflection for Ceco 2 is printed as "-" (not measured) and is preserved verbatim.
+# Calculated Vertical Deflections are from elastic analysis.
+# Calculated Horizontal Deflections are based on the parameters of AISI-6 and adjusted to the load at which last measured deflections were taken.
+# Measured Horizontal Deflections tabulated are measured movement of flange plus initial deflection in order to correspond with calculated "a".
+test_no,measured_horiz_defl_in,calc_horiz_defl_at_load_in,calc_horiz_defl_at_qu_in,measured_vert_defl_in,calc_vert_defl_in,load_lb_ft
+1,1.4,1.0,1.5,2.95,2.31,124
+2,2.1,1.8,1.6,4.10,2.92,226
+3,1.9,1.2,1.7,3.55,2.41,123
+4,2.9,2.2,2.1,3.65,2.91,213
+5,1.9,4.0,2.4,2.15,1.02,267
+6,0.7,0.8,1.2,2.40,1.44,98
+6a,0.5,0.8,1.2,2.45,1.55,111
+6b,0.4,1.0,1.3,2.60,1.52,111
+6c,0.5,1.1,1.3,2.70,1.63,111
+9,1.5,2.6,2.0,1.90,0.91,228
+Ceco 4,1.6,1.6,2.6,2.06,1.70,165
+Ceco 5,0.9,1.5,1.9,2.31,1.97,191
+Ceco 2,-,2.2,2.3,2.05,1.45,253
+Ceco 5A,1.6,1.3,1.7,2.20,1.59,124
+7,3.1,2.9,2.9,3.70,1.42,123
+8,3.0,4.0,3.3,3.35,1.77,85
+10R,3.2,5.0,3.9,3.30,1.50,170
+11,3.6,4.3,3.0,3.20,1.03,145
+12,3.1,2.7,3.3,4.75,2.64,122

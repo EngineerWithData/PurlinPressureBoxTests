@@ -1,0 +1,23 @@
+# Source: MBMA_8310 | LaBoube, R.A. (1983), Table 3, pp.6
+# Tag: MBMA_8310_TABLE3_ROTATIONALRESTRAINTFACTORS
+# Content: Rotational restraint factors of the panel-to-purlin connection measured by F-tests for the four purlin-panel configurations used in the full-scale program.
+# Data basis: measured: F-test of panel-to-purlin connection rotational restraint
+# Units: purlin_thickness_in in inches; rotational_restraint_factor_lb_per_in_per_in in lb/in/in
+# Column definitions:
+#   test_configuration = panel-to-purlin test configuration number, 1 to 4
+#   purlin_section_type = purlin shape, C or Z
+#   purlin_thickness_in = purlin base metal thickness, inches
+#   rotational_restraint_factor_lb_per_in_per_in = measured panel-to-purlin rotational restraint, lb/in/in
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 16 cells checked (AI, 2026-11-04): 16 correct, 0 errors; P(accuracy ≥ 0.8) = 97.7%, ≥ 0.9) = 83.3%, ≥ 0.95) = 58.2%
+# TEXT SOURCE: read from page images by the model (all 8 pages)
+# ANOMALY FLAG: Table title is printed as 'ROATIONAL RESTRAINT FACTORS' (misspelling preserved as printed).
+# Note (1): Two tests were performed for each configuration.
+# Note (2): 26 Gage conventional roof panel was used for all tests.
+# Note (3): The fasteners were 1/4 x 14 SDS.
+# F-test procedure per Reference 2 (Haussler and Pabers, 1973).
+test_configuration,purlin_section_type,purlin_thickness_in,rotational_restraint_factor_lb_per_in_per_in
+1,C,0.071,1.46
+2,Z,0.071,1.67
+3,C,0.106,2.78
+4,Z,0.106,3.32

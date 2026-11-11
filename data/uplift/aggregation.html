@@ -1,0 +1,901 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MBMA Full-Scale C- and Z-Purlin Roof System Test Database (1976-1997)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>  :root{
+    --paper:#f1f0ec; --card:#fbfaf7; --ink:#15202f; --slate:#5c6b7d; --faint:#8b97a5;
+    --rule:#d3d6da; --hair:#e2e4e6; --reported:#2f7d5a; --reported-soft:#cfe3d8;
+    --derived:#c25a16; --derived-soft:#f0dcc9; --absent:#a6adb6; --navy:#1b2a44; --track:#e4e5e3;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#101820; --card:#17212b; --ink:#e4e2db; --slate:#9aa7b4; --faint:#6d7b89;
+      --rule:#2c3a49; --hair:#232f3c; --reported:#5fbe8c; --reported-soft:#1e4436;
+      --derived:#f08640; --derived-soft:#4a2e18; --absent:#5b6875; --navy:#c3cedd; --track:#22303d;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#101820; --card:#17212b; --ink:#e4e2db; --slate:#9aa7b4; --faint:#6d7b89;
+    --rule:#2c3a49; --hair:#232f3c; --reported:#5fbe8c; --reported-soft:#1e4436;
+    --derived:#f08640; --derived-soft:#4a2e18; --absent:#5b6875; --navy:#c3cedd; --track:#22303d;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--paper);color:var(--ink);margin:0;font-size:15px;line-height:1.55;
+    font-family:"IBM Plex Sans","Segoe UI",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1340px;margin:0 auto;padding:0 20px;padding-block:44px 64px;display:flex;flex-direction:column;gap:38px}
+  .eyebrow{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--slate);margin:0 0 14px}
+  h1{font-family:"IBM Plex Sans Condensed","IBM Plex Sans",sans-serif;font-weight:700;
+    font-size:clamp(28px,4.2vw,44px);line-height:1.05;letter-spacing:-.015em;margin:0;text-wrap:balance}
+  .lede{margin:14px 0 0;max-width:68ch;color:var(--slate);font-size:16px}
+  .rule-heavy{height:2px;background:var(--ink);margin-top:22px;opacity:.85}
+  h2{font-family:"IBM Plex Sans Condensed","IBM Plex Sans",sans-serif;font-weight:600;font-size:22px;margin:0}
+  .sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+  .sec-meta{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--faint);letter-spacing:.04em}
+  .sec-note{margin:0 0 18px;color:var(--slate);font-size:14px;max-width:76ch}
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+  .tile{background:var(--card);border:1px solid var(--hair);border-top:3px solid var(--navy);padding:14px 16px 16px}
+  .tile h3{margin:0;font-size:15px;font-family:"IBM Plex Sans Condensed","IBM Plex Sans",sans-serif}
+  .tile .big{font-family:"IBM Plex Mono",monospace;font-size:26px;font-weight:600;margin-top:6px;
+    font-variant-numeric:tabular-nums}
+  .tile p{margin:6px 0 0;font-size:12.5px;color:var(--slate);line-height:1.5}
+  .pill{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:10.5px;padding:2px 7px;
+    border:1px solid var(--rule);color:var(--slate);margin:3px 4px 0 0;white-space:nowrap}
+  .scroll{overflow-x:auto;border:1px solid var(--rule);background:var(--card)}
+  table{border-collapse:collapse;width:100%;font-size:13.5px}
+  thead th{position:sticky;top:0;z-index:3;background:var(--card);text-align:left;vertical-align:bottom;
+    font-family:"IBM Plex Sans Condensed","IBM Plex Sans",sans-serif;font-weight:600;font-size:12px;
+    letter-spacing:.06em;text-transform:uppercase;color:var(--slate);padding:12px 12px 9px;
+    border-bottom:2px solid var(--ink);white-space:nowrap}
+  tbody td{padding:10px 12px;border-bottom:1px solid var(--hair);vertical-align:top}
+  tbody tr:hover td{background:color-mix(in srgb,var(--navy) 4%,transparent)}
+  td.num{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .vname{font-weight:600}
+  .vunit{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--faint)}
+  .vdesc{color:var(--slate);font-size:12.5px;line-height:1.45;margin-top:3px;max-width:40ch}
+  .rangebar{position:relative;height:26px;min-width:190px}
+  .rangebar .axis{position:absolute;left:0;right:0;top:12px;height:1px;background:var(--rule)}
+  .rangebar .seg{position:absolute;height:5px;border-radius:3px;opacity:.9}
+  .rangebar .lab{position:absolute;font-family:"IBM Plex Mono",monospace;font-size:9.5px;color:var(--faint);top:16px}
+  .fillbar{display:flex;height:6px;background:var(--track);overflow:hidden;margin-bottom:4px;min-width:96px}
+  .fillbar span{display:block;height:100%}
+  .fillbar .s-rep{background:var(--reported)}
+  .fillbar .s-der{background:var(--derived)}
+  .small{font-size:11px;color:var(--faint);margin-top:2px}
+  .corr{display:flex;align-items:center;gap:8px}
+  .corr .track{position:relative;flex:1;min-width:120px;height:7px;background:var(--track)}
+  .corr .zero{position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--rule)}
+  .corr .fill{position:absolute;top:0;height:7px}
+  .corr .fill.pos{background:var(--reported)}
+  .corr .fill.neg{background:var(--derived)}
+  .corr .val{font-family:"IBM Plex Mono",monospace;font-size:12px;font-variant-numeric:tabular-nums;min-width:52px;text-align:right}
+  .legend{display:flex;flex-wrap:wrap;gap:8px 26px;padding:14px 16px;background:var(--card);border:1px solid var(--hair)}
+  .leg{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--slate)}
+  .leg b{color:var(--ink);font-weight:500}
+  .sw{width:14px;height:14px;flex:0 0 14px;border-radius:2px}
+  .sw.rep{background:var(--reported)} .sw.der{background:var(--derived)}
+  .sw.abs{border:1px solid var(--rule)}
+  .notes{border-top:2px solid var(--ink);padding-top:18px;display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+  .note h3{font-family:"IBM Plex Sans Condensed","IBM Plex Sans",sans-serif;font-size:13px;letter-spacing:.07em;
+    text-transform:uppercase;color:var(--slate);margin:0 0 7px;font-weight:600}
+  .note p,.note li{margin:0 0 9px;font-size:13.5px;color:var(--slate);line-height:1.55}
+  .note ul{margin:0;padding-left:18px}
+  .note code{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink);background:var(--card);
+    padding:1px 4px;border:1px solid var(--hair)}
+  .colophon{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--faint);letter-spacing:.03em}
+  .verdict{display:flex;flex-wrap:wrap;align-items:baseline;gap:16px;padding:16px 18px;border:1px solid var(--rule);
+    background:var(--card);border-left-width:5px;margin-bottom:16px}
+  .verdict .vbig{font-family:"IBM Plex Sans Condensed","IBM Plex Sans",sans-serif;font-size:26px;font-weight:700;letter-spacing:.02em}
+  .verdict .vsub{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--slate);font-variant-numeric:tabular-nums}
+  .verdict.v-pass{border-left-color:var(--reported)} .verdict.v-pass .vbig{color:var(--reported)}
+  .verdict.v-warn{border-left-color:var(--derived)} .verdict.v-warn .vbig{color:var(--derived)}
+  .verdict.v-fail{border-left-color:#c0392b} .verdict.v-fail .vbig{color:#c0392b}
+  .sev{font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:600;letter-spacing:.06em;padding:2px 6px;border-radius:2px;white-space:nowrap}
+  .sev-err{background:#c0392b;color:#fff} .sev-warn{background:var(--derived-soft);color:var(--derived)}
+  .sev-info{border:1px solid var(--rule);color:var(--faint)}
+  @media (max-width:640px){ .wrap{padding-block:32px 48px;gap:30px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<p class="eyebrow">SteelData Initiative &middot; Module 5 &middot; Aggregation</p>
+<h1>MBMA Full-Scale C- and Z-Purlin Roof System Test Database (1976-1997)</h1>
+<div class="rule-heavy"></div>
+<p class="lede">Eleven MBMA full-scale purlin test reports were pooled into five comparable populations defined by loading direction, panel attachment (through-fastened versus standing seam) and span continuity, with each paper's Table S1 strength summary as the primary table and its dimension, coupon and prediction tables joined as lookups. Rows were pooled only where the member type, panel restraint and span condition match, so MBMA_8404 splits across an uplift and a gravity group and the fastener-pullover program stands alone.</p>
+</header>
+<section>
+<div class="sec-head"><h2>What pooled</h2><span class="sec-meta">4 COMPARABLE GROUPS &middot; 199 SPECIMENS</span></div>
+<p class="sec-note">Rows may be pooled only when they describe the same kind of test on the same kind of member. Each group below is one such population; specimens are never matched between papers, they are pooled as independent samples.</p>
+<div class="tiles">
+<div class="tile">
+<h3>Simple-span C and Z purlins with through-fastened panels under uplift</h3>
+<div class="big">116 <span style="font-size:13px;font-weight:400">specimens</span></div>
+<p>Simple-span (single-span) assemblies of two C or Z purlin lines with a through-fastened (screwed) roof panel on the tension flange, loaded to failure by chamber suction; all rows share the same member type, panel attachment and span condition, so their strengths are directly comparable. Includes the MBMA_1103 wall girt tests (same test arrangement).</p>
+<div><span class="pill" style="border-color:hsl(200 55% 45%)">MBMA_1103 &times;50</span><span class="pill" style="border-color:hsl(28 55% 45%)">MBMA_9501 &times;29</span><span class="pill" style="border-color:hsl(150 55% 45%)">MBMA_8702 &times;12</span><span class="pill" style="border-color:hsl(320 55% 45%)">MBMA_8310 &times;9</span><span class="pill" style="border-color:hsl(95 55% 45%)">MBMA_8404 &times;8</span><span class="pill" style="border-color:hsl(260 55% 45%)">MBMA_8001 &times;7</span><span class="pill" style="border-color:hsl(200 55% 45%)">MBMA_9003 &times;1</span></div>
+<p>38 variables, 53% of cells filled</p>
+</div>
+<div class="tile">
+<h3>Standing seam roof systems on C and Z purlins under uplift</h3>
+<div class="big">40 <span style="font-size:13px;font-weight:400">specimens</span></div>
+<p>Vacuum-chamber uplift tests of standing seam roof systems on C or Z purlins, comprising single-span base tests and the matching three-span confirming tests of the Base Test Method; the clip-and-seam restraint makes these a different population from through-fastened assemblies.</p>
+<div><span class="pill" style="border-color:hsl(200 55% 45%)">MBMA_9001 &times;16</span><span class="pill" style="border-color:hsl(28 55% 45%)">MBMA_9702 &times;12</span><span class="pill" style="border-color:hsl(150 55% 45%)">MBMA_9102 &times;8</span><span class="pill" style="border-color:hsl(320 55% 45%)">MBMA_9902 &times;4</span></div>
+<p>33 variables, 64% of cells filled</p>
+</div>
+<div class="tile">
+<h3>Continuous multi-span C and Z purlins with through-fastened panels under uplift</h3>
+<div class="big">31 <span style="font-size:13px;font-weight:400">specimens</span></div>
+<p>Multi-span (mostly three-span) continuous lapped C and Z purlin assemblies with through-fastened panels tested to failure under chamber uplift; continuity over interior supports and the lapped splice make these a distinct population from simple-span tests.</p>
+<div><span class="pill" style="border-color:hsl(200 55% 45%)">MBMA_8703 &times;20</span><span class="pill" style="border-color:hsl(28 55% 45%)">MBMA_7603 &times;4</span><span class="pill" style="border-color:hsl(150 55% 45%)">MBMA_9105 &times;3</span><span class="pill" style="border-color:hsl(320 55% 45%)">MBMA_8803 &times;1</span><span class="pill" style="border-color:hsl(95 55% 45%)">MBMA_7501 &times;3</span></div>
+<p>31 variables, 60% of cells filled</p>
+</div>
+<div class="tile">
+<h3>Through-fastened panel fastener pullover tests in a vacuum box</h3>
+<div class="big">12 <span style="font-size:13px;font-weight:400">specimens</span></div>
+<p>Vacuum-box tests of through-fastened panel assemblies instrumented with load cells at every screw, loaded until fastener pullover or pullout; the measured quantity is a fastener load and a chamber pressure, not a purlin bending strength.</p>
+<div><span class="pill" style="border-color:hsl(200 55% 45%)">MBMA_9410 &times;12</span></div>
+<p>15 variables, 88% of cells filled</p>
+</div>
+</div>
+</section>
+<section>
+<div class="legend"><span class="leg"><span class="sw rep"></span><b>Reported</b> &mdash; a column in that paper</span><span class="leg"><span class="sw der"></span><b>Derived</b> &mdash; reconstructed by an exact rule</span><span class="leg"><span class="sw abs"></span><b>Missing</b> &mdash; that paper does not have it</span></div>
+</section>
+<section>
+<div class="sec-head"><h2>Simple-span C and Z purlins with through-fastened panels under uplift</h2><span class="sec-meta">116 SPECIMENS &middot; MBMA_1103 + MBMA_9501 + MBMA_8702 + MBMA_8310 + MBMA_8404 + MBMA_8001 + MBMA_9003</span></div>
+<p class="sec-note">Parameter ranges and distributions over the pooled specimens. The range bar shows what interval of each variable every paper covers, drawn on the pooled scale, so where the bars fail to overlap the papers are not testing the same thing.</p>
+<div class="scroll">
+<table>
+<thead>
+<tr><th>Variable</th><th>Coverage</th><th>Range across papers</th><th class="num">Min</th><th class="num">Median</th><th class="num">Max</th><th class="num">Mean</th><th class="num">SD</th><th class="num">Overlap</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="vname">test_id</div><span class="vunit">text</span><div class="vdesc">The label printed in the report that identifies each individual test specimen or assembly, needed to join the tables of a report.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">116 of 116</div></td>
+<td colspan="7"><span class="small">7 &times;4, 8 &times;4, 9 &times;4, 1 &times;3, 10 &times;3, 11 &times;3</span></td>
+</tr>
+<tr>
+<td><div class="vname">section_type</div><span class="vunit">text</span><div class="vdesc">Shape of the cold-formed member cross-section, C (Cee) or Z (Zee), which governs its torsional behaviour under uplift.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">116 of 116</div></td>
+<td colspan="7"><span class="small">Z &times;76, C &times;40</span></td>
+</tr>
+<tr>
+<td><div class="vname">load_direction</div><span class="vunit">text</span><div class="vdesc">Direction of the applied load relative to the member: uplift (wind suction), gravity, axial, or in-plane shear.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">116 of 116</div></td>
+<td colspan="7"><span class="small">uplift &times;116</span></td>
+</tr>
+<tr>
+<td><div class="vname">panel_type</div><span class="vunit">text</span><div class="vdesc">Description of the roof or wall panel and how it is attached to the member (through-fastened screws, standing seam clips), which governs the restraint the panel gives.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">116 of 116</div></td>
+<td colspan="7"><span class="small">through-fastened &times;99, 26 Gage conventional roof panel, self-drilling screws (through-fastened) &times;9, through-fastened (24-ga galvanized panel, screws at 1 ft) &times;6, through-fastened (24-ga galvanized panel, self-drilling screws at 1 ft) &times;1, through-fastened (26 ga screw-down) &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">bracing</div><span class="vunit">text</span><div class="vdesc">Description of any lateral or torsional bracing provided to the member in addition to the panel, such as braces at supports, third points or quarter points.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:31.9%"></span></div><div class="small">37 of 116</div></td>
+<td colspan="7"><span class="small">laterally unsupported &times;9, Mid-span &times;6, One-third span &times;6, diaphragm (panel) braced; simply supported ends &times;6, 15 ft. 7x3 C-purlin attached to each test purlin, centered at midspan; torsional restraint at rafters &times;1, Bracing @ ends and @ midspan; wood stiffener placed at center of test purlins &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">purlin_orientation</div><span class="vunit">text</span><div class="vdesc">Relative orientation of adjacent purlin lines (same direction, facing or opposed), which affects the system's torsional equilibrium.</div></td>
+<td><div class="fillbar"><span class="s-der" style="width:6.9%"></span></div><div class="small">8 of 116 &middot; 8 derived</div></td>
+<td colspan="7"><span class="small">opposed &times;8</span></td>
+</tr>
+<tr>
+<td><div class="vname">purlin_orientation_as_printed</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:6.9%"></span></div><div class="small">8 of 116</div></td>
+<td colspan="7"><span class="small">Opposing &times;7, Facing &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">opposed_flange_direction</div></td>
+<td><div class="fillbar"><span class="s-der" style="width:6.9%"></span></div><div class="small">8 of 116 &middot; 8 derived</div></td>
+<td colspan="7"><span class="small">out &times;7, in &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">insulation_present</div></td>
+<td><div class="fillbar"><span class="s-der" style="width:25.0%"></span></div><div class="small">29 of 116 &middot; 29 derived</div></td>
+<td colspan="7"><span class="small">none &times;22, blanket insulation present &times;7</span></td>
+</tr>
+<tr>
+<td><div class="vname">insulation_thickness_in</div><span class="vunit">text</span><div class="vdesc">Type and thickness of insulation placed between the panel and the member flange, which softens the panel-to-member connection.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:52.59%"></span></div><div class="small">61 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:66.67%;top:4px;background:hsl(200 55% 45%)" title="MBMA_1103: 0 to 4 (n=50)"></div><div class="seg" style="left:50.0%;width:50.0%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9501: 3 to 6 (n=11)"></div><div class="lab" style="left:0">0</div><div class="lab" style="right:0">6</div></div></td><td class="num">0</td><td class="num">2</td><td class="num">6</td><td class="num">2.1228</td><td class="num">1.7735</td><td class="num">17%</td>
+</tr>
+<tr>
+<td><div class="vname">n_spans</div><span class="vunit">count</span><div class="vdesc">Number of continuous spans in the tested assembly (single span, three-span continuous, etc.), which controls the moment distribution.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">116 of 116 &middot; 9 from a note</div></td>
+<td><span class="small">&mdash;</span></td><td class="num">1</td><td class="num">1</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">n_purlin_lines</div><span class="vunit">count</span><div class="vdesc">Number of parallel purlin or girt lines in the test assembly supporting the panel.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">116 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:1.2%;top:4px;background:hsl(200 55% 45%)" title="MBMA_1103: 2 to 2 (n=50)"></div><div class="seg" style="left:0.0%;width:1.2%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9501: 2 to 2 (n=29)"></div><div class="seg" style="left:0.0%;width:1.2%;top:16px;background:hsl(150 55% 45%)" title="MBMA_8702: 2 to 2 (n=12)"></div><div class="seg" style="left:0.0%;width:1.2%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8310: 2 to 2 (n=9)"></div><div class="seg" style="left:100.0%;width:1.2%;top:28px;background:hsl(95 55% 45%)" title="MBMA_8404: 4 to 4 (n=8)"></div><div class="seg" style="left:0.0%;width:1.2%;top:34px;background:hsl(260 55% 45%)" title="MBMA_8001: 2 to 2 (n=7)"></div><div class="seg" style="left:0.0%;width:1.2%;top:40px;background:hsl(200 55% 45%)" title="MBMA_9003: 2 to 2 (n=1)"></div><div class="lab" style="left:0">2</div><div class="lab" style="right:0">4</div></div></td><td class="num">2</td><td class="num">2</td><td class="num">4</td><td class="num">2.1379</td><td class="num">0.509</td><td class="num">0%</td>
+</tr>
+<tr>
+<td><div class="vname">span_ft</div><span class="vunit">ft</span><div class="vdesc">Clear span length of each bay of the test assembly between supports, the length over which bending moments develop.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:89.66%"></span><span class="s-der" style="width:10.34%"></span></div><div class="small">116 of 116 &middot; 12 derived</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:55.18%;width:1.2%;top:4px;background:hsl(200 55% 45%)" title="MBMA_1103: 24.5 to 24.5 (n=50)"></div><div class="seg" style="left:0.0%;width:100.0%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9501: 18.75 to 29.17 (n=29)"></div><div class="seg" style="left:10.0%;width:1.2%;top:16px;background:hsl(150 55% 45%)" title="MBMA_8702: 19.7917 to 19.7917 (n=12)"></div><div class="seg" style="left:12.0%;width:1.2%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8310: 20 to 20 (n=9)"></div><div class="seg" style="left:56.79%;width:3.2%;top:28px;background:hsl(95 55% 45%)" title="MBMA_8404: 24.667 to 25 (n=8)"></div><div class="seg" style="left:12.0%;width:1.2%;top:34px;background:hsl(260 55% 45%)" title="MBMA_8001: 20 to 20 (n=7)"></div><div class="seg" style="left:59.98%;width:1.2%;top:40px;background:hsl(200 55% 45%)" title="MBMA_9003: 25 to 25 (n=1)"></div><div class="lab" style="left:0">18.75</div><div class="lab" style="right:0">29.17</div></div></td><td class="num">18.75</td><td class="num">24.5</td><td class="num">29.17</td><td class="num">22.8643</td><td class="num">2.6465</td><td class="num">0%</td>
+</tr>
+<tr>
+<td><div class="vname">span_inches</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:10.34%"></span></div><div class="small">12 of 116</div></td>
+<td><span class="small">&mdash;</span></td><td class="num">237.5</td><td class="num">237.5</td><td class="num">237.5</td><td class="num">237.5</td><td class="num">0</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">tributary_width_ft</div><span class="vunit">ft</span><div class="vdesc">Plan width of roof carried by each purlin line, used to convert the measured chamber pressure into a line load on the member.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:93.1%"></span></div><div class="small">108 of 116 &middot; 58 from a note</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:100.0%;width:1.2%;top:4px;background:hsl(200 55% 45%)" title="MBMA_1103: 6.79 to 6.79 (n=50)"></div><div class="seg" style="left:30.44%;width:1.2%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9501: 4.27 to 4.27 (n=29)"></div><div class="seg" style="left:0.0%;width:1.2%;top:16px;background:hsl(150 55% 45%)" title="MBMA_8702: 3.167 to 3.167 (n=12)"></div><div class="seg" style="left:0.0%;width:1.2%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8310: 3.167 to 3.167 (n=9)"></div><div class="seg" style="left:50.59%;width:1.2%;top:28px;background:hsl(95 55% 45%)" title="MBMA_8404: 5 to 5 (n=8)"></div><div class="lab" style="left:0">3.167</div><div class="lab" style="right:0">6.79</div></div></td><td class="num">3.167</td><td class="num">5</td><td class="num">6.79</td><td class="num">5.2763</td><td class="num">1.4913</td><td class="num">0%</td>
+</tr>
+<tr>
+<td><div class="vname">depth_in</div><span class="vunit">in</span><div class="vdesc">Overall out-to-out web depth of the purlin or girt cross-section, the key geometric property controlling bending stiffness.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">116 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:30.0%;width:40.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_1103: 8 to 10 (n=50)"></div><div class="seg" style="left:0.0%;width:100.0%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9501: 6.5 to 11.5 (n=29)"></div><div class="seg" style="left:58.8%;width:3.8%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8310: 9.44 to 9.63 (n=9)"></div><div class="seg" style="left:50.0%;width:1.2%;top:28px;background:hsl(95 55% 45%)" title="MBMA_8404: 9 to 9 (n=8)"></div><div class="seg" style="left:28.4%;width:30.8%;top:34px;background:hsl(260 55% 45%)" title="MBMA_8001: 7.92 to 9.46 (n=7)"></div><div class="seg" style="left:70.0%;width:1.2%;top:40px;background:hsl(200 55% 45%)" title="MBMA_9003: 10 to 10 (n=1)"></div><div class="lab" style="left:0">6.5</div><div class="lab" style="right:0">11.5</div></div></td><td class="num">6.5</td><td class="num">8</td><td class="num">11.5</td><td class="num">8.7485</td><td class="num">1.0521</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">thickness_in</div><span class="vunit">in</span><div class="vdesc">Base (uncoated) steel thickness of the cold-formed purlin or girt, the dominant parameter for local buckling and strength.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:99.14%"></span></div><div class="small">115 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:73.13%;top:4px;background:hsl(200 55% 45%)" title="MBMA_1103: 0.059 to 0.102 (n=49)"></div><div class="seg" style="left:1.36%;width:98.64%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9501: 0.0598 to 0.1178 (n=29)"></div><div class="seg" style="left:20.41%;width:59.52%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8310: 0.071 to 0.106 (n=9)"></div><div class="seg" style="left:13.61%;width:22.11%;top:28px;background:hsl(95 55% 45%)" title="MBMA_8404: 0.067 to 0.08 (n=8)"></div><div class="seg" style="left:1.7%;width:93.54%;top:34px;background:hsl(260 55% 45%)" title="MBMA_8001: 0.06 to 0.115 (n=7)"></div><div class="seg" style="left:74.83%;width:1.2%;top:40px;background:hsl(200 55% 45%)" title="MBMA_9003: 0.103 to 0.103 (n=1)"></div><div class="lab" style="left:0">0.059</div><div class="lab" style="right:0">0.1178</div></div></td><td class="num">0.059</td><td class="num">0.0807</td><td class="num">0.1178</td><td class="num">0.0815</td><td class="num">0.0188</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">flange_width_in</div><span class="vunit">in</span><div class="vdesc">Width of the purlin or girt flange, reported separately for the compression (free) and tension (panel-attached) flanges.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:32.76%"></span></div><div class="small">38 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9501: 1.9 to 3.6 (n=29)"></div><div class="seg" style="left:50.0%;width:7.65%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8310: 2.75 to 2.88 (n=9)"></div><div class="lab" style="left:0">1.9</div><div class="lab" style="right:0">3.6</div></div></td><td class="num">1.9</td><td class="num">2.65</td><td class="num">3.6</td><td class="num">2.5542</td><td class="num">0.3425</td><td class="num">8%</td>
+</tr>
+<tr>
+<td><div class="vname">lip_length_in</div><span class="vunit">in</span><div class="vdesc">Length of the edge stiffener (lip) on the flange, which controls distortional buckling of the compression flange.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:32.76%"></span></div><div class="small">38 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9501: 0.6 to 1.2 (n=29)"></div><div class="seg" style="left:25.0%;width:21.67%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8310: 0.75 to 0.88 (n=9)"></div><div class="lab" style="left:0">0.6</div><div class="lab" style="right:0">1.2</div></div></td><td class="num">0.6</td><td class="num">0.915</td><td class="num">1.2</td><td class="num">0.92</td><td class="num">0.1394</td><td class="num">22%</td>
+</tr>
+<tr>
+<td><div class="vname">lip_angle_deg</div><span class="vunit">degrees</span><div class="vdesc">Angle between the flange and its stiffening lip, affecting the effectiveness of the edge stiffener.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:43.1%"></span></div><div class="small">50 of 116 &middot; 9 from a note</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9501: 39 to 95 (n=29)"></div><div class="seg" style="left:91.07%;width:1.2%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8310: 90 to 90 (n=9)"></div><div class="lab" style="left:0">39</div><div class="lab" style="right:0">95</div></div></td><td class="num">39</td><td class="num">52.5</td><td class="num">95</td><td class="num">65.9474</td><td class="num">20.8793</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">initial_sweep_in</div><span class="vunit">in</span><div class="vdesc">Initial lateral out-of-straightness (sweep) of the member measured before loading, an imperfection that reduces uplift capacity.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:7.76%"></span></div><div class="small">9 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8310: -0.25 to 0.5 (n=9)"></div><div class="lab" style="left:0">-0.25</div><div class="lab" style="right:0">0.5</div></div></td><td class="num">-0.25</td><td class="num">-0.063</td><td class="num">0.5</td><td class="num">0.0416</td><td class="num">0.2981</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">yield_stress_ksi</div><span class="vunit">ksi</span><div class="vdesc">Yield stress of the member steel measured on tensile coupons, the material property that sets the fully-yielded bending capacity.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:99.14%"></span></div><div class="small">115 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:28.23%;width:71.77%;top:4px;background:hsl(200 55% 45%)" title="MBMA_1103: 56.29 to 79.38 (n=49)"></div><div class="seg" style="left:4.01%;width:46.32%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9501: 48.5 to 63.4 (n=29)"></div><div class="seg" style="left:53.65%;width:1.2%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8310: 64.47 to 64.47 (n=9)"></div><div class="seg" style="left:0.0%;width:40.25%;top:28px;background:hsl(95 55% 45%)" title="MBMA_8404: 47.21 to 60.16 (n=8)"></div><div class="seg" style="left:31.36%;width:41.03%;top:34px;background:hsl(260 55% 45%)" title="MBMA_8001: 57.3 to 70.5 (n=7)"></div><div class="seg" style="left:30.74%;width:1.2%;top:40px;background:hsl(200 55% 45%)" title="MBMA_9003: 57.1 to 57.1 (n=1)"></div><div class="lab" style="left:0">47.21</div><div class="lab" style="right:0">79.38</div></div></td><td class="num">47.21</td><td class="num">60.06</td><td class="num">79.38</td><td class="num">60.7657</td><td class="num">5.9306</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">tensile_strength_ksi</div><span class="vunit">ksi</span><div class="vdesc">Ultimate tensile strength of the steel measured on tensile coupons, reported alongside yield stress.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:25.0%"></span></div><div class="small">29 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9501: 75.6 to 85 (n=29)"></div><div class="lab" style="left:0">75.6</div><div class="lab" style="right:0">85</div></div></td><td class="num">75.6</td><td class="num">80.4</td><td class="num">85</td><td class="num">79.8345</td><td class="num">2.7</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">elongation_pct</div><span class="vunit">%</span><div class="vdesc">Percent elongation of the tensile coupon at fracture, a measure of steel ductility.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:25.0%"></span></div><div class="small">29 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9501: 19.1 to 33 (n=29)"></div><div class="lab" style="left:0">19.1</div><div class="lab" style="right:0">33</div></div></td><td class="num">19.1</td><td class="num">25.6</td><td class="num">33</td><td class="num">25.1</td><td class="num">3.4098</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">rotational_restraint_k</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:7.76%"></span></div><div class="small">9 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8310: 1.46 to 3.32 (n=9)"></div><div class="lab" style="left:0">1.46</div><div class="lab" style="right:0">3.32</div></div></td><td class="num">1.46</td><td class="num">1.67</td><td class="num">3.32</td><td class="num">2.2367</td><td class="num">0.799</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">predicted_failure_load_plf</div><span class="vunit">plf</span><div class="vdesc">Failure load of the member calculated by a code or analytical method (Cornell, AISI drafts, MBMA proposal, base test method), for comparison with the measured load.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:25.0%"></span></div><div class="small">29 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:50.49%;top:16px;background:hsl(150 55% 45%)" title="MBMA_8702: 81.3 to 232.1 (n=12)"></div><div class="seg" style="left:9.88%;width:90.12%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8310: 110.8 to 380 (n=9)"></div><div class="seg" style="left:20.72%;width:16.4%;top:28px;background:hsl(95 55% 45%)" title="MBMA_8404: 143.2 to 192.2 (n=8)"></div><div class="lab" style="left:0">81.3</div><div class="lab" style="right:0">380</div></div></td><td class="num">81.3</td><td class="num">187.6</td><td class="num">380</td><td class="num">189.3207</td><td class="num">68.2973</td><td class="num">16%</td>
+</tr>
+<tr>
+<td><div class="vname">calculated_nominal_moment_ft_kips</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:25.0%"></span></div><div class="small">29 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9501: 6.15 to 22.28 (n=29)"></div><div class="lab" style="left:0">6.15</div><div class="lab" style="right:0">22.28</div></div></td><td class="num">6.15</td><td class="num">13.08</td><td class="num">22.28</td><td class="num">12.6914</td><td class="num">4.0206</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">test_to_predicted_ratio</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:25.0%"></span></div><div class="small">29 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:5.02%;width:94.98%;top:16px;background:hsl(150 55% 45%)" title="MBMA_8702: 0.6 to 2.115 (n=12)"></div><div class="seg" style="left:1.88%;width:26.96%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8310: 0.55 to 0.98 (n=9)"></div><div class="seg" style="left:0.0%;width:11.91%;top:28px;background:hsl(95 55% 45%)" title="MBMA_8404: 0.52 to 0.71 (n=8)"></div><div class="lab" style="left:0">0.52</div><div class="lab" style="right:0">2.115</div></div></td><td class="num">0.52</td><td class="num">0.71</td><td class="num">2.115</td><td class="num">0.9151</td><td class="num">0.4418</td><td class="num">7%</td>
+</tr>
+<tr>
+<td><div class="vname">r_factor</div><span class="vunit">—</span><div class="vdesc">Ratio of the measured failure load or moment to the capacity predicted by a code or analytical method, the headline measure of how well predictions match tests.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:67.24%"></span></div><div class="small">78 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:68.52%;top:4px;background:hsl(200 55% 45%)" title="MBMA_1103: 0.25 to 0.62 (n=49)"></div><div class="seg" style="left:40.74%;width:59.26%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9501: 0.47 to 0.79 (n=29)"></div><div class="lab" style="left:0">0.25</div><div class="lab" style="right:0">0.79</div></div></td><td class="num">0.25</td><td class="num">0.5</td><td class="num">0.79</td><td class="num">0.5041</td><td class="num">0.1033</td><td class="num">28%</td>
+</tr>
+<tr>
+<td><div class="vname">manometer_reading_at_failure_in_of_water</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:25.0%"></span></div><div class="small">29 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9501: 2.38 to 6 (n=29)"></div><div class="lab" style="left:0">2.38</div><div class="lab" style="right:0">6</div></div></td><td class="num">2.38</td><td class="num">4.625</td><td class="num">6</td><td class="num">4.5506</td><td class="num">0.7358</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">failure_load_plf</div><span class="vunit">plf</span><div class="vdesc">The maximum uniform load per foot carried by a single purlin or girt line at failure of the full-scale assembly, the headline strength result of each uplift test.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:74.14%"></span></div><div class="small">86 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:49.42%;top:4px;background:hsl(200 55% 45%)" title="MBMA_1103: 34.7 to 148.8 (n=49)"></div><div class="seg" style="left:38.46%;width:61.54%;top:16px;background:hsl(150 55% 45%)" title="MBMA_8702: 123.5 to 265.6 (n=12)"></div><div class="seg" style="left:28.19%;width:62.36%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8310: 99.8 to 243.8 (n=9)"></div><div class="seg" style="left:22.04%;width:19.92%;top:28px;background:hsl(95 55% 45%)" title="MBMA_8404: 85.6 to 131.6 (n=8)"></div><div class="seg" style="left:20.49%;width:63.66%;top:34px;background:hsl(260 55% 45%)" title="MBMA_8001: 82 to 229 (n=7)"></div><div class="seg" style="left:50.5%;width:1.2%;top:40px;background:hsl(200 55% 45%)" title="MBMA_9003: 151.3 to 151.3 (n=1)"></div><div class="lab" style="left:0">34.7</div><div class="lab" style="right:0">265.6</div></div></td><td class="num">34.7</td><td class="num">114.5</td><td class="num">265.6</td><td class="num">118.2081</td><td class="num">53.4484</td><td class="num">0%</td>
+</tr>
+<tr>
+<td><div class="vname">failure_moment_ft_kips</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:25.0%"></span></div><div class="small">29 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9501: 3.64 to 11.74 (n=29)"></div><div class="lab" style="left:0">3.64</div><div class="lab" style="right:0">11.74</div></div></td><td class="num">3.64</td><td class="num">7.44</td><td class="num">11.74</td><td class="num">7.19</td><td class="num">2.0252</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">failure_moment_kip_in</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:43.1%"></span><span class="s-der" style="width:25.0%"></span></div><div class="small">79 of 116 &middot; 29 derived</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:92.92%;top:4px;background:hsl(200 55% 45%)" title="MBMA_1103: 31.32 to 133.98 (n=49)"></div><div class="seg" style="left:11.19%;width:87.98%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9501: 43.68 to 140.88 (n=29)"></div><div class="seg" style="left:100.0%;width:1.2%;top:40px;background:hsl(200 55% 45%)" title="MBMA_9003: 141.8 to 141.8 (n=1)"></div><div class="lab" style="left:0">31.32</div><div class="lab" style="right:0">141.8</div></div></td><td class="num">31.32</td><td class="num">87.24</td><td class="num">141.8</td><td class="num">83.3516</td><td class="num">26.5827</td><td class="num">0%</td>
+</tr>
+<tr>
+<td><div class="vname">failure_mode</div><span class="vunit">text</span><div class="vdesc">Description or code for the mechanism that ended the test, such as local buckling, screw pull-over, panel tearing or yielding.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:92.24%"></span></div><div class="small">107 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_1103: 1 to 234 (n=50)"></div><div class="seg" style="left:0.0%;width:100.0%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9501: 1 to 234 (n=29)"></div><div class="lab" style="left:0">1</div><div class="lab" style="right:0">234</div></div></td><td class="num">1</td><td class="num">4</td><td class="num">234</td><td class="num">22.8608</td><td class="num">61.4155</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">insulation_material</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:43.1%"></span></div><div class="small">50 of 116</div></td>
+<td colspan="7"><span class="small">Thermax &times;35, None &times;13, R13 &times;2</span></td>
+</tr>
+<tr>
+<td><div class="vname">effective_section_modulus_in3</div><span class="vunit">in^3</span><div class="vdesc">Effective section modulus of the cold-formed section computed by effective-width analysis, used with the yield stress to give the fully braced bending capacity.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:42.24%"></span></div><div class="small">49 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_1103: 2.03 to 3.59 (n=49)"></div><div class="lab" style="left:0">2.03</div><div class="lab" style="right:0">3.59</div></div></td><td class="num">2.03</td><td class="num">3.04</td><td class="num">3.59</td><td class="num">2.772</td><td class="num">0.6342</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">screw_location_c_in</div><span class="vunit">in</span><div class="vdesc">Distance from the screw centreline to the pivot corner of the fastened flange, a geometric parameter that controls the rotational restraint of the girt.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:42.24%"></span></div><div class="small">49 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_1103: 0.47 to 2.1 (n=49)"></div><div class="lab" style="left:0">0.47</div><div class="lab" style="right:0">2.1</div></div></td><td class="num">0.47</td><td class="num">1.33</td><td class="num">2.1</td><td class="num">1.2759</td><td class="num">0.354</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">chamber_pressure_psf</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:42.24%"></span></div><div class="small">49 of 116</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_1103: 4.5 to 21.06 (n=49)"></div><div class="lab" style="left:0">4.5</div><div class="lab" style="right:0">21.06</div></div></td><td class="num">4.5</td><td class="num">11.18</td><td class="num">21.06</td><td class="num">12.4124</td><td class="num">4.2922</td><td class="num">&mdash;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sec-head" style="margin-top:26px"><h2 style="font-size:17px">What moves with failure_mode</h2></div>
+<p class="sec-note">Pearson correlation across the pooled specimens. This is association, not a design equation: the papers cover different parameter ranges, and that alone can create or hide a correlation.</p>
+<div class="scroll">
+<table>
+<thead>
+<tr><th>Parameter</th><th>Correlation with failure_mode</th><th class="num">n</th></tr>
+</thead>
+<tbody>
+<tr><td><span class="vname">effective_section_modulus_in3</span></td><td><div class="corr"><div class="track"><div class="zero"></div><div class="fill pos" style="left:50.0%;width:20.87%"></div></div><span class="val">+0.42</span></div></td><td class="num">49</td></tr>
+<tr><td><span class="vname">flange_width_in</span></td><td><div class="corr"><div class="track"><div class="zero"></div><div class="fill neg" style="left:32.63%;width:17.37%"></div></div><span class="val">-0.35</span></div></td><td class="num">29</td></tr>
+<tr><td><span class="vname">failure_load_plf</span></td><td><div class="corr"><div class="track"><div class="zero"></div><div class="fill pos" style="left:50.0%;width:15.89%"></div></div><span class="val">+0.32</span></div></td><td class="num">49</td></tr>
+<tr><td><span class="vname">chamber_pressure_psf</span></td><td><div class="corr"><div class="track"><div class="zero"></div><div class="fill pos" style="left:50.0%;width:15.76%"></div></div><span class="val">+0.32</span></div></td><td class="num">49</td></tr>
+<tr><td><span class="vname">manometer_reading_at_failure_in_of_water</span></td><td><div class="corr"><div class="track"><div class="zero"></div><div class="fill pos" style="left:50.0%;width:15.05%"></div></div><span class="val">+0.3</span></div></td><td class="num">29</td></tr>
+<tr><td><span class="vname">failure_moment_ft_kips</span></td><td><div class="corr"><div class="track"><div class="zero"></div><div class="fill neg" style="left:35.74%;width:14.26%"></div></div><span class="val">-0.29</span></div></td><td class="num">29</td></tr>
+<tr><td><span class="vname">screw_location_c_in</span></td><td><div class="corr"><div class="track"><div class="zero"></div><div class="fill pos" style="left:50.0%;width:12.03%"></div></div><span class="val">+0.24</span></div></td><td class="num">49</td></tr>
+<tr><td><span class="vname">elongation_pct</span></td><td><div class="corr"><div class="track"><div class="zero"></div><div class="fill neg" style="left:40.37%;width:9.63%"></div></div><span class="val">-0.19</span></div></td><td class="num">29</td></tr>
+<tr><td><span class="vname">insulation_thickness_in</span></td><td><div class="corr"><div class="track"><div class="zero"></div><div class="fill neg" style="left:40.63%;width:9.37%"></div></div><span class="val">-0.19</span></div></td><td class="num">57</td></tr>
+<tr><td><span class="vname">calculated_nominal_moment_ft_kips</span></td><td><div class="corr"><div class="track"><div class="zero"></div><div class="fill neg" style="left:41.42%;width:8.58%"></div></div><span class="val">-0.17</span></div></td><td class="num">29</td></tr>
+<tr><td><span class="vname">depth_in</span></td><td><div class="corr"><div class="track"><div class="zero"></div><div class="fill neg" style="left:41.89%;width:8.11%"></div></div><span class="val">-0.16</span></div></td><td class="num">79</td></tr>
+<tr><td><span class="vname">lip_angle_deg</span></td><td><div class="corr"><div class="track"><div class="zero"></div><div class="fill neg" style="left:42.74%;width:7.26%"></div></div><span class="val">-0.15</span></div></td><td class="num">29</td></tr>
+<tr><td><span class="vname">thickness_in</span></td><td><div class="corr"><div class="track"><div class="zero"></div><div class="fill pos" style="left:50.0%;width:7.02%"></div></div><span class="val">+0.14</span></div></td><td class="num">78</td></tr>
+<tr><td><span class="vname">span_ft</span></td><td><div class="corr"><div class="track"><div class="zero"></div><div class="fill neg" style="left:44.48%;width:5.52%"></div></div><span class="val">-0.11</span></div></td><td class="num">79</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section>
+<div class="sec-head"><h2>Standing seam roof systems on C and Z purlins under uplift</h2><span class="sec-meta">40 SPECIMENS &middot; MBMA_9001 + MBMA_9702 + MBMA_9102 + MBMA_9902</span></div>
+<p class="sec-note">Parameter ranges and distributions over the pooled specimens. The range bar shows what interval of each variable every paper covers, drawn on the pooled scale, so where the bars fail to overlap the papers are not testing the same thing.</p>
+<div class="scroll">
+<table>
+<thead>
+<tr><th>Variable</th><th>Coverage</th><th>Range across papers</th><th class="num">Min</th><th class="num">Median</th><th class="num">Max</th><th class="num">Mean</th><th class="num">SD</th><th class="num">Overlap</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="vname">test_id</div><span class="vunit">text</span><div class="vdesc">The label printed in the report that identifies each individual test specimen or assembly, needed to join the tables of a report.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">40 of 40</div></td>
+<td colspan="7"><span class="small">3S1 &times;1, 3S2a &times;1, 3S3 &times;1, 3S4 &times;1, 3S5 &times;1, 3S6 &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">section_type</div><span class="vunit">text</span><div class="vdesc">Shape of the cold-formed member cross-section, C (Cee) or Z (Zee), which governs its torsional behaviour under uplift.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">40 of 40</div></td>
+<td colspan="7"><span class="small">Z &times;36, C &times;4</span></td>
+</tr>
+<tr>
+<td><div class="vname">load_direction</div><span class="vunit">text</span><div class="vdesc">Direction of the applied load relative to the member: uplift (wind suction), gravity, axial, or in-plane shear.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">40 of 40</div></td>
+<td colspan="7"><span class="small">uplift &times;40</span></td>
+</tr>
+<tr>
+<td><div class="vname">panel_type</div><span class="vunit">text</span><div class="vdesc">Description of the roof or wall panel and how it is attached to the member (through-fastened screws, standing seam clips), which governs the restraint the panel gives.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">40 of 40</div></td>
+<td colspan="7"><span class="small">standing seam &times;12, standing seam, pan type &times;10, Pan Type Deck &times;6, standing seam, rib type &times;6, Rib Type Deck &times;2, standing seam - Pan (18-inch coverage, panel was not seamed) &times;2</span></td>
+</tr>
+<tr>
+<td><div class="vname">clip_type</div><span class="vunit">text</span><div class="vdesc">Type of standing seam clip connecting the panel to the purlin (sliding two-piece or fixed one-piece), affecting lateral restraint.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:70.0%"></span></div><div class="small">28 of 40</div></td>
+<td colspan="7"><span class="small">two piece sliding &times;10, one piece fixed &times;6, One Piece Fixed &times;4, Two Piece Sliding &times;4, Sliding (2 screws placed across the width of the flange) &times;3, Sliding (2 screws placed at the center of the purlin flange) &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">bracing</div><span class="vunit">text</span><div class="vdesc">Description of any lateral or torsional bracing provided to the member in addition to the panel, such as braces at supports, third points or quarter points.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:70.0%"></span></div><div class="small">28 of 40</div></td>
+<td colspan="7"><span class="small">rafters and third points &times;8, rafters only &times;8, Bracing at Supports Only (rafter) &times;4, Third Point Bracing (plus rafter) &times;4, panel/clip attachment only (no discrete bracing) &times;4</span></td>
+</tr>
+<tr>
+<td><div class="vname">purlin_orientation</div><span class="vunit">text</span><div class="vdesc">Relative orientation of adjacent purlin lines (same direction, facing or opposed), which affects the system's torsional equilibrium.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:40.0%"></span><span class="s-der" style="width:60.0%"></span></div><div class="small">40 of 40 &middot; 24 derived &middot; 16 from a note</div></td>
+<td colspan="7"><span class="small">opposed &times;24, same direction &times;16</span></td>
+</tr>
+<tr>
+<td><div class="vname">purlin_orientation_as_printed</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:40.0%"></span></div><div class="small">16 of 40</div></td>
+<td colspan="7"><span class="small">Facing &times;8, Opposed &times;8</span></td>
+</tr>
+<tr>
+<td><div class="vname">opposed_flange_direction</div></td>
+<td><div class="fillbar"></div><div class="small">0 of 40</div></td>
+<td colspan="7"><span class="small"></span></td>
+</tr>
+<tr>
+<td><div class="vname">test_role</div><span class="vunit">text</span><div class="vdesc">Which of the two test setups a row belongs to: single-span base test used as the predictor, or three-span confirming test.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:40.0%"></span><span class="s-der" style="width:60.0%"></span></div><div class="small">40 of 40 &middot; 24 derived &middot; 4 from a note</div></td>
+<td colspan="7"><span class="small">single-span base test &times;12, three-span confirming test &times;12, base &times;10, confirming &times;6</span></td>
+</tr>
+<tr>
+<td><div class="vname">n_spans</div><span class="vunit">count</span><div class="vdesc">Number of continuous spans in the tested assembly (single span, three-span continuous, etc.), which controls the moment distribution.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">40 of 40</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_9001: 1 to 3 (n=16)"></div><div class="seg" style="left:0.0%;width:100.0%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9702: 1 to 3 (n=12)"></div><div class="seg" style="left:0.0%;width:100.0%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9102: 1 to 3 (n=8)"></div><div class="seg" style="left:0.0%;width:1.2%;top:22px;background:hsl(320 55% 45%)" title="MBMA_9902: 1 to 1 (n=4)"></div><div class="lab" style="left:0">1</div><div class="lab" style="right:0">3</div></div></td><td class="num">1</td><td class="num">1</td><td class="num">3</td><td class="num">1.9</td><td class="num">1.0077</td><td class="num">0%</td>
+</tr>
+<tr>
+<td><div class="vname">n_purlin_lines</div><span class="vunit">count</span><div class="vdesc">Number of parallel purlin or girt lines in the test assembly supporting the panel.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">40 of 40</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_9001: 2 to 4 (n=16)"></div><div class="seg" style="left:0.0%;width:1.2%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9702: 2 to 2 (n=12)"></div><div class="seg" style="left:0.0%;width:100.0%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9102: 2 to 4 (n=8)"></div><div class="seg" style="left:0.0%;width:1.2%;top:22px;background:hsl(320 55% 45%)" title="MBMA_9902: 2 to 2 (n=4)"></div><div class="lab" style="left:0">2</div><div class="lab" style="right:0">4</div></div></td><td class="num">2</td><td class="num">2</td><td class="num">4</td><td class="num">2.45</td><td class="num">0.7494</td><td class="num">0%</td>
+</tr>
+<tr>
+<td><div class="vname">span_ft</div><span class="vunit">ft</span><div class="vdesc">Clear span length of each bay of the test assembly between supports, the length over which bending moments develop.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">40 of 40</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:7.14%;width:21.43%;top:4px;background:hsl(200 55% 45%)" title="MBMA_9001: 23.5 to 25 (n=16)"></div><div class="seg" style="left:100.0%;width:1.2%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9702: 30 to 30 (n=12)"></div><div class="seg" style="left:7.14%;width:21.43%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9102: 23.5 to 25 (n=8)"></div><div class="seg" style="left:0.0%;width:100.0%;top:22px;background:hsl(320 55% 45%)" title="MBMA_9902: 23 to 30 (n=4)"></div><div class="lab" style="left:0">23</div><div class="lab" style="right:0">30</div></div></td><td class="num">23</td><td class="num">25</td><td class="num">30</td><td class="num">26.2</td><td class="num">2.8974</td><td class="num">0%</td>
+</tr>
+<tr>
+<td><div class="vname">purlin_spacing_ft</div><span class="vunit">ft</span><div class="vdesc">On-center spacing of the parallel purlin or girt lines in the test assembly, which also sets the tributary width of the applied pressure.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:20.0%"></span></div><div class="small">8 of 40</div></td>
+<td colspan="7"><span class="small">5'-0&quot; O.C. &times;6, 3'-7&quot; O.C. &times;2</span></td>
+</tr>
+<tr>
+<td><div class="vname">tributary_width_ft</div><span class="vunit">ft</span><div class="vdesc">Plan width of roof carried by each purlin line, used to convert the measured chamber pressure into a line load on the member.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:30.0%"></span></div><div class="small">12 of 40 &middot; 12 from a note</div></td>
+<td><span class="small">&mdash;</span></td><td class="num">5</td><td class="num">5</td><td class="num">5</td><td class="num">5</td><td class="num">0</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">lap_length_in</div><span class="vunit">in</span><div class="vdesc">Length of the overlapping splice of purlins at interior supports of continuous assemblies, which strengthens the negative-moment region.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:10.0%"></span></div><div class="small">4 of 40</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9102: 28 to 66 (n=4)"></div><div class="lab" style="left:0">28</div><div class="lab" style="right:0">66</div></div></td><td class="num">28</td><td class="num">45</td><td class="num">66</td><td class="num">46</td><td class="num">18.3848</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">lap_length_ft_in</div><span class="vunit">in</span><div class="vdesc">Length of the overlapping splice of purlins at interior supports of continuous assemblies, which strengthens the negative-moment region.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:40.0%"></span></div><div class="small">16 of 40</div></td>
+<td colspan="7"><span class="small">2'4&quot; &times;2, 2'7&quot; &times;2, 3'11&quot; &times;2, 3'6&quot; &times;2, 4'5&quot; &times;2, 4'8&quot; &times;2</span></td>
+</tr>
+<tr>
+<td><div class="vname">depth_in</div><span class="vunit">in</span><div class="vdesc">Overall out-to-out web depth of the purlin or girt cross-section, the key geometric property controlling bending stiffness.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">40 of 40</div></td>
+<td colspan="7"><span class="small">8 &times;8, 9.5 &times;4, 8.00 &times;2, 7-13/16 to 8-1/4 &times;1, 7.8-7.95 &times;1, 7.936-7.999 &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">thickness_in</div><span class="vunit">in</span><div class="vdesc">Base (uncoated) steel thickness of the cold-formed purlin or girt, the dominant parameter for local buckling and strength.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">40 of 40</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:1.69%;width:64.41%;top:4px;background:hsl(200 55% 45%)" title="MBMA_9001: 0.06 to 0.098 (n=16)"></div><div class="seg" style="left:5.08%;width:30.51%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9102: 0.062 to 0.08 (n=8)"></div><div class="seg" style="left:0.0%;width:100.0%;top:22px;background:hsl(320 55% 45%)" title="MBMA_9902: 0.059 to 0.118 (n=4)"></div><div class="lab" style="left:0">0.059</div><div class="lab" style="right:0">0.118</div></div></td><td class="num">0.059</td><td class="num">0.069</td><td class="num">0.118</td><td class="num">0.0757</td><td class="num">0.0168</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">yield_stress_ksi</div><span class="vunit">ksi</span><div class="vdesc">Yield stress of the member steel measured on tensile coupons, the material property that sets the fully-yielded bending capacity.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">40 of 40</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:24.34%;width:73.01%;top:4px;background:hsl(200 55% 45%)" title="MBMA_9001: 51.3 to 67.5 (n=16)"></div><div class="seg" style="left:60.52%;width:39.48%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9702: 59.33 to 68.09 (n=12)"></div><div class="seg" style="left:16.22%;width:80.22%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9102: 49.5 to 67.3 (n=8)"></div><div class="seg" style="left:0.0%;width:61.74%;top:22px;background:hsl(320 55% 45%)" title="MBMA_9902: 45.9 to 59.6 (n=4)"></div><div class="lab" style="left:0">45.9</div><div class="lab" style="right:0">68.09</div></div></td><td class="num">45.9</td><td class="num">60.4</td><td class="num">68.09</td><td class="num">59.5491</td><td class="num">5.6544</td><td class="num">1%</td>
+</tr>
+<tr>
+<td><div class="vname">tensile_strength_ksi</div><span class="vunit">ksi</span><div class="vdesc">Ultimate tensile strength of the steel measured on tensile coupons, reported alongside yield stress.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:70.0%"></span></div><div class="small">28 of 40</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:45.02%;width:54.98%;top:4px;background:hsl(200 55% 45%)" title="MBMA_9001: 73.1 to 91.3 (n=16)"></div><div class="seg" style="left:51.96%;width:29.31%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9102: 75.4 to 85.1 (n=8)"></div><div class="seg" style="left:0.0%;width:67.07%;top:22px;background:hsl(320 55% 45%)" title="MBMA_9902: 58.2 to 80.4 (n=4)"></div><div class="lab" style="left:0">58.2</div><div class="lab" style="right:0">91.3</div></div></td><td class="num">58.2</td><td class="num">78.5</td><td class="num">91.3</td><td class="num">79.1607</td><td class="num">6.6348</td><td class="num">15%</td>
+</tr>
+<tr>
+<td><div class="vname">elongation_pct</div><span class="vunit">%</span><div class="vdesc">Percent elongation of the tensile coupon at fracture, a measure of steel ductility.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:70.0%"></span></div><div class="small">28 of 40</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:7.3%;width:92.7%;top:4px;background:hsl(200 55% 45%)" title="MBMA_9001: 19.4 to 41 (n=16)"></div><div class="seg" style="left:19.74%;width:33.91%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9102: 22.3 to 30.2 (n=8)"></div><div class="seg" style="left:0.0%;width:19.74%;top:22px;background:hsl(320 55% 45%)" title="MBMA_9902: 17.7 to 22.3 (n=4)"></div><div class="lab" style="left:0">17.7</div><div class="lab" style="right:0">41</div></div></td><td class="num">17.7</td><td class="num">28.4</td><td class="num">41</td><td class="num">27.8143</td><td class="num">6.1574</td><td class="num">0%</td>
+</tr>
+<tr>
+<td><div class="vname">predicted_failure_load_plf</div><span class="vunit">plf</span><div class="vdesc">Failure load of the member calculated by a code or analytical method (Cornell, AISI drafts, MBMA proposal, base test method), for comparison with the measured load.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:65.0%"></span></div><div class="small">26 of 40</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:10.58%;width:89.42%;top:4px;background:hsl(200 55% 45%)" title="MBMA_9001: 97.8 to 387.7 (n=16)"></div><div class="seg" style="left:0.0%;width:60.73%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9702: 63.5 to 260.4 (n=6)"></div><div class="seg" style="left:18.36%;width:19.36%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9102: 123.01 to 185.77 (n=4)"></div><div class="lab" style="left:0">63.5</div><div class="lab" style="right:0">387.7</div></div></td><td class="num">63.5</td><td class="num">166.61</td><td class="num">387.7</td><td class="num">168.7085</td><td class="num">69.7793</td><td class="num">19%</td>
+</tr>
+<tr>
+<td><div class="vname">test_to_predicted_ratio</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:45.0%"></span></div><div class="small">18 of 40</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:95.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_9001: 0.78 to 1.16 (n=8)"></div><div class="seg" style="left:50.0%;width:50.0%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9702: 0.98 to 1.18 (n=6)"></div><div class="seg" style="left:25.5%;width:37.0%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9102: 0.882 to 1.03 (n=4)"></div><div class="lab" style="left:0">0.78</div><div class="lab" style="right:0">1.18</div></div></td><td class="num">0.78</td><td class="num">1.03</td><td class="num">1.18</td><td class="num">1.0225</td><td class="num">0.1196</td><td class="num">13%</td>
+</tr>
+<tr>
+<td><div class="vname">failure_load_table_1_plf</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:65.0%"></span></div><div class="small">26 of 40</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:66.18%;top:4px;background:hsl(200 55% 45%)" title="MBMA_9001: 38.7 to 169.2 (n=10)"></div><div class="seg" style="left:0.35%;width:99.65%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9702: 39.4 to 235.9 (n=12)"></div><div class="seg" style="left:9.23%;width:67.6%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9102: 56.9 to 190.2 (n=4)"></div><div class="lab" style="left:0">38.7</div><div class="lab" style="right:0">235.9</div></div></td><td class="num">38.7</td><td class="num">111.15</td><td class="num">235.9</td><td class="num">114.8</td><td class="num">55.4641</td><td class="num">57%</td>
+</tr>
+<tr>
+<td><div class="vname">failure_load_plf</div><span class="vunit">plf</span><div class="vdesc">The maximum uniform load per foot carried by a single purlin or girt line at failure of the full-scale assembly, the headline strength result of each uplift test.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:90.0%"></span></div><div class="small">36 of 40</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:5.58%;width:87.79%;top:4px;background:hsl(200 55% 45%)" title="MBMA_9001: 50.8 to 222.9 (n=16)"></div><div class="seg" style="left:0.0%;width:100.0%;top:10px;background:hsl(28 55% 45%)" title="MBMA_9702: 39.87 to 235.9 (n=12)"></div><div class="seg" style="left:13.67%;width:64.02%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9102: 66.67 to 192.16 (n=8)"></div><div class="lab" style="left:0">39.87</div><div class="lab" style="right:0">235.9</div></div></td><td class="num">39.87</td><td class="num">128.15</td><td class="num">235.9</td><td class="num">129.9989</td><td class="num">53.7943</td><td class="num">64%</td>
+</tr>
+<tr>
+<td><div class="vname">failure_moment_kip_in</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:30.0%"></span><span class="s-der" style="width:10.0%"></span></div><div class="small">16 of 40 &middot; 4 derived</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_9001: 47.6 to 183.7 (n=8)"></div><div class="seg" style="left:10.95%;width:24.97%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9102: 62.5 to 96.49 (n=4)"></div><div class="seg" style="left:8.23%;width:47.61%;top:22px;background:hsl(320 55% 45%)" title="MBMA_9902: 58.8 to 123.6 (n=4)"></div><div class="lab" style="left:0">47.6</div><div class="lab" style="right:0">183.7</div></div></td><td class="num">47.6</td><td class="num">89.37</td><td class="num">183.7</td><td class="num">93.1369</td><td class="num">35.4671</td><td class="num">25%</td>
+</tr>
+<tr>
+<td><div class="vname">test_date</div><span class="vunit">text</span><div class="vdesc">Laboratory and calendar date on which the test was run, relevant where several facilities contributed data.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:30.0%"></span></div><div class="small">12 of 40</div></td>
+<td colspan="7"><span class="small">5/17/94 &times;1, 5/18/94 &times;1, 5/24/94 &times;1, 5/25/94 &times;1, 5/26/94 &times;1, 6/1/94 &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">test_facility</div><span class="vunit">text</span><div class="vdesc">Laboratory and calendar date on which the test was run, relevant where several facilities contributed data.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:30.0%"></span></div><div class="small">12 of 40</div></td>
+<td colspan="7"><span class="small">CECO Building Systems &times;12</span></td>
+</tr>
+<tr>
+<td><div class="vname">failure_mode</div><span class="vunit">text</span><div class="vdesc">Description or code for the mechanism that ended the test, such as local buckling, screw pull-over, panel tearing or yielding.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">40 of 40</div></td>
+<td colspan="7"><span class="small">DB &times;8, LB &times;6, Distortional &times;4, Local &times;3, 4 (Lateral torsional inelastic buckling of flange and web at maximum moment region) &times;2, CLIP &times;2</span></td>
+</tr>
+<tr>
+<td><div class="vname">failure_moment_ft_kips</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:10.0%"></span></div><div class="small">4 of 40</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:22px;background:hsl(320 55% 45%)" title="MBMA_9902: 4.9 to 10.3 (n=4)"></div><div class="lab" style="left:0">4.9</div><div class="lab" style="right:0">10.3</div></div></td><td class="num">4.9</td><td class="num">9.55</td><td class="num">10.3</td><td class="num">8.575</td><td class="num">2.4838</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">chamber_pressure_psf</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:10.0%"></span></div><div class="small">4 of 40</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:22px;background:hsl(320 55% 45%)" title="MBMA_9902: 23.187 to 41.512 (n=4)"></div><div class="lab" style="left:0">23.187</div><div class="lab" style="right:0">41.512</div></div></td><td class="num">23.187</td><td class="num">27.3</td><td class="num">41.512</td><td class="num">29.8248</td><td class="num">8.099</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">insulation</div><span class="vunit">text</span><div class="vdesc">Type and thickness of insulation placed between the panel and the member flange, which softens the panel-to-member connection.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:10.0%"></span></div><div class="small">4 of 40</div></td>
+<td colspan="7"><span class="small">Thermal block (styrofoam insulation) placed between each panel clip &times;2, 6-inch high density fiberglass insulation &times;1, 6-inch high density fiberglass insulation plus thermal block (styrofoam insulation) placed between each clip &times;1</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section>
+<div class="sec-head"><h2>Continuous multi-span C and Z purlins with through-fastened panels under uplift</h2><span class="sec-meta">31 SPECIMENS &middot; MBMA_8703 + MBMA_7603 + MBMA_9105 + MBMA_8803 + MBMA_7501</span></div>
+<p class="sec-note">Parameter ranges and distributions over the pooled specimens. The range bar shows what interval of each variable every paper covers, drawn on the pooled scale, so where the bars fail to overlap the papers are not testing the same thing.</p>
+<div class="scroll">
+<table>
+<thead>
+<tr><th>Variable</th><th>Coverage</th><th>Range across papers</th><th class="num">Min</th><th class="num">Median</th><th class="num">Max</th><th class="num">Mean</th><th class="num">SD</th><th class="num">Overlap</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="vname">test_id</div><span class="vunit">text</span><div class="vdesc">The label printed in the report that identifies each individual test specimen or assembly, needed to join the tables of a report.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">31 of 31</div></td>
+<td colspan="7"><span class="small">1 &times;1, 10 &times;1, 10R &times;1, 11 &times;1, 12 &times;1, 2 &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">section_type</div><span class="vunit">text</span><div class="vdesc">Shape of the cold-formed member cross-section, C (Cee) or Z (Zee), which governs its torsional behaviour under uplift.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">31 of 31</div></td>
+<td colspan="7"><span class="small">Zee &times;15, C &times;6, Cee &times;6, Z &times;4</span></td>
+</tr>
+<tr>
+<td><div class="vname">load_direction</div><span class="vunit">text</span><div class="vdesc">Direction of the applied load relative to the member: uplift (wind suction), gravity, axial, or in-plane shear.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">31 of 31</div></td>
+<td colspan="7"><span class="small">uplift &times;31</span></td>
+</tr>
+<tr>
+<td><div class="vname">panel_type</div><span class="vunit">text</span><div class="vdesc">Description of the roof or wall panel and how it is attached to the member (through-fastened screws, standing seam clips), which governs the restraint the panel gives.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">31 of 31</div></td>
+<td colspan="7"><span class="small">through-fastened (26 or 24 ga., 12x14 screws @ 12&quot; o.c.) &times;16, through-fastened (No. 14 self-tapping screws) &times;4, through-fastened &times;3, through-fastened, 26 gage (two layers) &times;2, 24 GA. RIBBED (AMER.), through-fastened &times;1, through-fastened, 24 gage &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">bracing</div><span class="vunit">text</span><div class="vdesc">Description of any lateral or torsional bracing provided to the member in addition to the panel, such as braces at supports, third points or quarter points.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">31 of 31</div></td>
+<td colspan="7"><span class="small">tension flange attached to panels; compression flange laterally unbraced; torsional restraint at supports &times;20, unbraced &times;3, braces at supports only; no intermediate braces &times;2, steel strap (2.0 in. x 0.0625 in.) welded to purlin flanges with turnbuckles at supports and intermediate (mid-span) brace &times;2, steel strap with turnbuckles at supports and intermediate (mid-span) brace &times;2, 2 x 2 x 1/8&quot; angle braces at quarter points on bottom (compression) flange of end bay purlins &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">n_spans</div><span class="vunit">count</span><div class="vdesc">Number of continuous spans in the tested assembly (single span, three-span continuous, etc.), which controls the moment distribution.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">31 of 31</div></td>
+<td><span class="small">&mdash;</span></td><td class="num">3</td><td class="num">3</td><td class="num">3</td><td class="num">3</td><td class="num">0</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">n_purlin_lines</div><span class="vunit">count</span><div class="vdesc">Number of parallel purlin or girt lines in the test assembly supporting the panel.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:90.32%"></span></div><div class="small">28 of 31</div></td>
+<td><span class="small">&mdash;</span></td><td class="num">2</td><td class="num">2</td><td class="num">2</td><td class="num">2</td><td class="num">0</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">span_ft</div><span class="vunit">ft</span><div class="vdesc">Clear span length of each bay of the test assembly between supports, the length over which bending moments develop.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:96.77%"></span></div><div class="small">30 of 31</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_8703: 20 to 30 (n=19)"></div><div class="seg" style="left:50.0%;width:1.2%;top:10px;background:hsl(28 55% 45%)" title="MBMA_7603: 25 to 25 (n=4)"></div><div class="seg" style="left:0.0%;width:100.0%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9105: 20 to 30 (n=3)"></div><div class="seg" style="left:100.0%;width:1.2%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8803: 30 to 30 (n=1)"></div><div class="seg" style="left:50.0%;width:1.2%;top:28px;background:hsl(95 55% 45%)" title="MBMA_7501: 25 to 25 (n=3)"></div><div class="lab" style="left:0">20</div><div class="lab" style="right:0">30</div></div></td><td class="num">20</td><td class="num">24</td><td class="num">30</td><td class="num">24.55</td><td class="num">3.6112</td><td class="num">0%</td>
+</tr>
+<tr>
+<td><div class="vname">purlin_spacing_ft</div><span class="vunit">ft</span><div class="vdesc">On-center spacing of the parallel purlin or girt lines in the test assembly, which also sets the tributary width of the applied pressure.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:12.9%"></span></div><div class="small">4 of 31</div></td>
+<td><span class="small">&mdash;</span></td><td class="num">5</td><td class="num">5</td><td class="num">5</td><td class="num">5</td><td class="num">0</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">tributary_width_ft</div><span class="vunit">ft</span><div class="vdesc">Plan width of roof carried by each purlin line, used to convert the measured chamber pressure into a line load on the member.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:90.32%"></span></div><div class="small">28 of 31 &middot; 24 from a note</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:100.0%;width:1.2%;top:4px;background:hsl(200 55% 45%)" title="MBMA_8703: 5.06 to 5.06 (n=20)"></div><div class="seg" style="left:0.0%;width:1.2%;top:10px;background:hsl(28 55% 45%)" title="MBMA_7603: 3.167 to 3.167 (n=4)"></div><div class="seg" style="left:96.83%;width:1.2%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9105: 5 to 5 (n=3)"></div><div class="seg" style="left:100.0%;width:1.2%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8803: 5.06 to 5.06 (n=1)"></div><div class="lab" style="left:0">3.167</div><div class="lab" style="right:0">5.06</div></div></td><td class="num">3.167</td><td class="num">5.06</td><td class="num">5.06</td><td class="num">4.7831</td><td class="num">0.6722</td><td class="num">0%</td>
+</tr>
+<tr>
+<td><div class="vname">lap_length_ft_in</div><span class="vunit">in</span><div class="vdesc">Length of the overlapping splice of purlins at interior supports of continuous assemblies, which strengthens the negative-moment region.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:64.52%"></span></div><div class="small">20 of 31</div></td>
+<td colspan="7"><span class="small">4-0 &times;6, 2-6 &times;5, 5-0 &times;4, 6-0 &times;3, 4-6 &times;2</span></td>
+</tr>
+<tr>
+<td><div class="vname">lap_length_in</div><span class="vunit">in</span><div class="vdesc">Length of the overlapping splice of purlins at interior supports of continuous assemblies, which strengthens the negative-moment region.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:9.68%"></span></div><div class="small">3 of 31</div></td>
+<td colspan="7"><span class="small">11 5/8 &times;1, 14 3/4 &times;1, 19 11/16 &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">lap_to_depth_ratio</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:9.68%"></span></div><div class="small">3 of 31</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9105: 1.66 to 2.18 (n=3)"></div><div class="lab" style="left:0">1.66</div><div class="lab" style="right:0">2.18</div></div></td><td class="num">1.66</td><td class="num">1.73</td><td class="num">2.18</td><td class="num">1.8567</td><td class="num">0.2822</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">depth_in</div><span class="vunit">in</span><div class="vdesc">Overall out-to-out web depth of the purlin or girt cross-section, the key geometric property controlling bending stiffness.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">31 of 31</div></td>
+<td colspan="7"><span class="small">8 1/2 &times;8, 9 1/2 &times;6, 7 &times;5, 6 1/2 &times;4, 8 &times;4, 9 &times;2</span></td>
+</tr>
+<tr>
+<td><div class="vname">thickness_in</div><span class="vunit">in</span><div class="vdesc">Base (uncoated) steel thickness of the cold-formed purlin or girt, the dominant parameter for local buckling and strength.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:96.77%"></span></div><div class="small">30 of 31</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:83.86%;top:4px;background:hsl(200 55% 45%)" title="MBMA_8703: 0.0561 to 0.1013 (n=19)"></div><div class="seg" style="left:35.06%;width:1.2%;top:10px;background:hsl(28 55% 45%)" title="MBMA_7603: 0.075 to 0.075 (n=4)"></div><div class="seg" style="left:62.89%;width:37.11%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9105: 0.09 to 0.11 (n=3)"></div><div class="seg" style="left:22.26%;width:1.2%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8803: 0.0681 to 0.0681 (n=1)"></div><div class="seg" style="left:35.06%;width:1.2%;top:28px;background:hsl(95 55% 45%)" title="MBMA_7501: 0.075 to 0.075 (n=3)"></div><div class="lab" style="left:0">0.0561</div><div class="lab" style="right:0">0.11</div></div></td><td class="num">0.0561</td><td class="num">0.075</td><td class="num">0.11</td><td class="num">0.0761</td><td class="num">0.0154</td><td class="num">0%</td>
+</tr>
+<tr>
+<td><div class="vname">flange_width_in</div><span class="vunit">in</span><div class="vdesc">Width of the purlin or girt flange, reported separately for the compression (free) and tension (panel-attached) flanges.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:77.42%"></span></div><div class="small">24 of 31</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_8703: 2 to 3 (n=20)"></div><div class="seg" style="left:100.0%;width:1.2%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9105: 3 to 3 (n=3)"></div><div class="seg" style="left:100.0%;width:1.2%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8803: 3 to 3 (n=1)"></div><div class="lab" style="left:0">2</div><div class="lab" style="right:0">3</div></div></td><td class="num">2</td><td class="num">3</td><td class="num">3</td><td class="num">2.6</td><td class="num">0.5071</td><td class="num">0%</td>
+</tr>
+<tr>
+<td><div class="vname">initial_sweep_in</div><span class="vunit">in</span><div class="vdesc">Initial lateral out-of-straightness (sweep) of the member measured before loading, an imperfection that reduces uplift capacity.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:64.52%"></span></div><div class="small">20 of 31</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_8703: -0.438 to 0.688 (n=19)"></div><div class="seg" style="left:38.9%;width:1.2%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8803: 0 to 0 (n=1)"></div><div class="lab" style="left:0">-0.438</div><div class="lab" style="right:0">0.688</div></div></td><td class="num">-0.438</td><td class="num">-0.125</td><td class="num">0.688</td><td class="num">-0.0469</td><td class="num">0.311</td><td class="num">0%</td>
+</tr>
+<tr>
+<td><div class="vname">yield_stress_ksi</div><span class="vunit">ksi</span><div class="vdesc">Yield stress of the member steel measured on tensile coupons, the material property that sets the fully-yielded bending capacity.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:83.87%"></span></div><div class="small">26 of 31</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_8703: 54.6 to 65.3 (n=19)"></div><div class="seg" style="left:40.19%;width:55.14%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9105: 58.9 to 64.8 (n=3)"></div><div class="seg" style="left:3.74%;width:1.2%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8803: 55 to 55 (n=1)"></div><div class="lab" style="left:0">54.6</div><div class="lab" style="right:0">65.3</div></div></td><td class="num">54.6</td><td class="num">58.3</td><td class="num">65.3</td><td class="num">59.2783</td><td class="num">3.2298</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">tensile_strength_ksi</div><span class="vunit">ksi</span><div class="vdesc">Ultimate tensile strength of the steel measured on tensile coupons, reported alongside yield stress.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:9.68%"></span></div><div class="small">3 of 31</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9105: 73.1 to 79 (n=3)"></div><div class="lab" style="left:0">73.1</div><div class="lab" style="right:0">79</div></div></td><td class="num">73.1</td><td class="num">78.2</td><td class="num">79</td><td class="num">76.7667</td><td class="num">3.2005</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">elongation_pct</div><span class="vunit">%</span><div class="vdesc">Percent elongation of the tensile coupon at fracture, a measure of steel ductility.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:9.68%"></span></div><div class="small">3 of 31</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9105: 26.3 to 32 (n=3)"></div><div class="lab" style="left:0">26.3</div><div class="lab" style="right:0">32</div></div></td><td class="num">26.3</td><td class="num">28.6</td><td class="num">32</td><td class="num">28.9667</td><td class="num">2.8676</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">effective_section_modulus_in3</div><span class="vunit">in^3</span><div class="vdesc">Effective section modulus of the cold-formed section computed by effective-width analysis, used with the yield stress to give the fully braced bending capacity.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:12.9%"></span></div><div class="small">4 of 31</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:21.7%;width:78.3%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9105: 2.97 to 3.8 (n=3)"></div><div class="seg" style="left:0.0%;width:1.2%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8803: 2.74 to 2.74 (n=1)"></div><div class="lab" style="left:0">2.74</div><div class="lab" style="right:0">3.8</div></div></td><td class="num">2.74</td><td class="num">3.14</td><td class="num">3.8</td><td class="num">3.205</td><td class="num">0.4606</td><td class="num">0%</td>
+</tr>
+<tr>
+<td><div class="vname">calculated_nominal_moment_kip_in</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:9.68%"></span></div><div class="small">3 of 31</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9105: 174.9 to 246.2 (n=3)"></div><div class="lab" style="left:0">174.9</div><div class="lab" style="right:0">246.2</div></div></td><td class="num">174.9</td><td class="num">208.5</td><td class="num">246.2</td><td class="num">209.8667</td><td class="num">35.6696</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">predicted_failure_load_plf</div><span class="vunit">plf</span><div class="vdesc">Failure load of the member calculated by a code or analytical method (Cornell, AISI drafts, MBMA proposal, base test method), for comparison with the measured load.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:64.52%"></span></div><div class="small">20 of 31</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_8703: 74 to 258 (n=19)"></div><div class="seg" style="left:33.7%;width:1.2%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8803: 136 to 136 (n=1)"></div><div class="lab" style="left:0">74</div><div class="lab" style="right:0">258</div></div></td><td class="num">74</td><td class="num">146</td><td class="num">258</td><td class="num">159.6</td><td class="num">45.6259</td><td class="num">0%</td>
+</tr>
+<tr>
+<td><div class="vname">test_to_predicted_ratio</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:64.52%"></span></div><div class="small">20 of 31</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_8703: 0.83 to 1.52 (n=19)"></div><div class="seg" style="left:21.74%;width:1.2%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8803: 0.98 to 0.98 (n=1)"></div><div class="lab" style="left:0">0.83</div><div class="lab" style="right:0">1.52</div></div></td><td class="num">0.83</td><td class="num">0.98</td><td class="num">1.52</td><td class="num">1.0665</td><td class="num">0.2107</td><td class="num">0%</td>
+</tr>
+<tr>
+<td><div class="vname">r_factor</div><span class="vunit">—</span><div class="vdesc">Ratio of the measured failure load or moment to the capacity predicted by a code or analytical method, the headline measure of how well predictions match tests.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:9.68%"></span></div><div class="small">3 of 31</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9105: 0.568 to 0.753 (n=3)"></div><div class="lab" style="left:0">0.568</div><div class="lab" style="right:0">0.753</div></div></td><td class="num">0.568</td><td class="num">0.719</td><td class="num">0.753</td><td class="num">0.68</td><td class="num">0.0985</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">chamber_pressure_psf</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:22.58%"></span></div><div class="small">7 of 31</div></td>
+<td colspan="7"><span class="small">46.3 &times;1, 46.8 &times;1, 59.8 &times;1, 64.5 &times;1, about 40 &times;1, about 42 &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">failure_load_plf</div><span class="vunit">plf</span><div class="vdesc">The maximum uniform load per foot carried by a single purlin or girt line at failure of the full-scale assembly, the headline strength result of each uplift test.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:87.1%"></span></div><div class="small">27 of 31</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:81.88%;top:4px;background:hsl(200 55% 45%)" title="MBMA_8703: 98 to 286 (n=19)"></div><div class="seg" style="left:21.17%;width:25.13%;top:10px;background:hsl(28 55% 45%)" title="MBMA_7603: 146.6 to 204.3 (n=4)"></div><div class="seg" style="left:27.83%;width:72.17%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9105: 161.9 to 327.6 (n=3)"></div><div class="seg" style="left:15.51%;width:1.2%;top:22px;background:hsl(320 55% 45%)" title="MBMA_8803: 133.6 to 133.6 (n=1)"></div><div class="lab" style="left:0">98</div><div class="lab" style="right:0">327.6</div></div></td><td class="num">98</td><td class="num">156</td><td class="num">327.6</td><td class="num">179.8519</td><td class="num">63.4581</td><td class="num">0%</td>
+</tr>
+<tr>
+<td><div class="vname">failure_moment_kip_in</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:9.68%"></span></div><div class="small">3 of 31</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:16px;background:hsl(150 55% 45%)" title="MBMA_9105: 125.8 to 157.1 (n=3)"></div><div class="lab" style="left:0">125.8</div><div class="lab" style="right:0">157.1</div></div></td><td class="num">125.8</td><td class="num">139.9</td><td class="num">157.1</td><td class="num">140.9333</td><td class="num">15.6756</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">failed_member</div><span class="vunit">text</span><div class="vdesc">Designation of which purlin line, span or piece within the assembly a measurement or failure refers to.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:61.29%"></span></div><div class="small">19 of 31</div></td>
+<td colspan="7"><span class="small">A3 &times;6, B3 &times;6, A1 &times;4, B1 &times;2, - &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">failure_mode</div><span class="vunit">text</span><div class="vdesc">Description or code for the mechanism that ended the test, such as local buckling, screw pull-over, panel tearing or yielding.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">31 of 31</div></td>
+<td colspan="7"><span class="small">yielding at web/compression flange juncture and buckling of web and compression flange &times;15, Local Buckle &times;2, Buckle formed in the south span purlin on the east side (purlin buckling) &times;1, Excessive Lateral Deflection &times;1, Member B3 failed by buckling of the web and compression flange at a distance of 10'-3&quot; from the end support (bottom flange/web buckled between middle and outside brace) &times;1, Northeast purlin buckled (top flange buckled outward) while load was held steady &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">deck_dead_load_psf</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:9.68%"></span></div><div class="small">3 of 31</div></td>
+<td><span class="small">&mdash;</span></td><td class="num">2.25</td><td class="num">2.25</td><td class="num">2.25</td><td class="num">2.25</td><td class="num">0</td><td class="num">&mdash;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section>
+<div class="sec-head"><h2>Through-fastened panel fastener pullover tests in a vacuum box</h2><span class="sec-meta">12 SPECIMENS &middot; MBMA_9410</span></div>
+<p class="sec-note">Parameter ranges and distributions over the pooled specimens. The range bar shows what interval of each variable every paper covers, drawn on the pooled scale, so where the bars fail to overlap the papers are not testing the same thing.</p>
+<div class="scroll">
+<table>
+<thead>
+<tr><th>Variable</th><th>Coverage</th><th>Range across papers</th><th class="num">Min</th><th class="num">Median</th><th class="num">Max</th><th class="num">Mean</th><th class="num">SD</th><th class="num">Overlap</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="vname">test_id</div><span class="vunit">text</span><div class="vdesc">The label printed in the report that identifies each individual test specimen or assembly, needed to join the tables of a report.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">12 of 12</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_9410: 2 to 13 (n=12)"></div><div class="lab" style="left:0">2</div><div class="lab" style="right:0">13</div></div></td><td class="num">2</td><td class="num">7.5</td><td class="num">13</td><td class="num">7.5</td><td class="num">3.6056</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">load_direction</div><span class="vunit">text</span><div class="vdesc">Direction of the applied load relative to the member: uplift (wind suction), gravity, axial, or in-plane shear.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">12 of 12</div></td>
+<td colspan="7"><span class="small">uplift &times;12</span></td>
+</tr>
+<tr>
+<td><div class="vname">panel_type</div><span class="vunit">text</span><div class="vdesc">Description of the roof or wall panel and how it is attached to the member (through-fastened screws, standing seam clips), which governs the restraint the panel gives.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">12 of 12</div></td>
+<td colspan="7"><span class="small">through-fastened &times;12</span></td>
+</tr>
+<tr>
+<td><div class="vname">panel_supplier</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">12 of 12</div></td>
+<td colspan="7"><span class="small">American &times;6, Pascoe &times;6</span></td>
+</tr>
+<tr>
+<td><div class="vname">panel_gage</div><span class="vunit">text</span><div class="vdesc">Description of the roof or wall panel and how it is attached to the member (through-fastened screws, standing seam clips), which governs the restraint the panel gives.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">12 of 12</div></td>
+<td colspan="7"><span class="small">24 Ga. &times;7, 26 Ga. &times;5</span></td>
+</tr>
+<tr>
+<td><div class="vname">bracing</div><span class="vunit">text</span><div class="vdesc">Description of any lateral or torsional bracing provided to the member in addition to the panel, such as braces at supports, third points or quarter points.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:8.33%"></span></div><div class="small">1 of 12</div></td>
+<td colspan="7"><span class="small">Supports laterally braced &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">n_spans</div><span class="vunit">count</span><div class="vdesc">Number of continuous spans in the tested assembly (single span, three-span continuous, etc.), which controls the moment distribution.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">12 of 12</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_9410: 1 to 2 (n=12)"></div><div class="lab" style="left:0">1</div><div class="lab" style="right:0">2</div></div></td><td class="num">1</td><td class="num">2</td><td class="num">2</td><td class="num">1.9167</td><td class="num">0.2887</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">n_purlin_lines</div><span class="vunit">count</span><div class="vdesc">Number of parallel purlin or girt lines in the test assembly supporting the panel.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:8.33%"></span></div><div class="small">1 of 12</div></td>
+<td colspan="7"><span class="small">2 &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">span_ft</div><span class="vunit">ft</span><div class="vdesc">Clear span length of each bay of the test assembly between supports, the length over which bending moments develop.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">12 of 12</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_9410: 3.5 to 4.1 (n=12)"></div><div class="lab" style="left:0">3.5</div><div class="lab" style="right:0">4.1</div></div></td><td class="num">3.5</td><td class="num">3.5</td><td class="num">4.1</td><td class="num">3.55</td><td class="num">0.1732</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">failed_load_cells</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">12 of 12</div></td>
+<td colspan="7"><span class="small">#3, #4, #6, #7 &times;3, 3#, #4, #5, #6, #7 &times;3, #3, #4, #5 &times;1, #3, #4, #5, #6, #7 &times;1, #4 &times;1, #4, #5, #6, #7 &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">chamber_pressure_psi</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">12 of 12</div></td>
+<td><div class="rangebar"><div class="axis"></div><div class="seg" style="left:0.0%;width:100.0%;top:4px;background:hsl(200 55% 45%)" title="MBMA_9410: 0.817 to 1.56 (n=12)"></div><div class="lab" style="left:0">0.817</div><div class="lab" style="right:0">1.56</div></div></td><td class="num">0.817</td><td class="num">1.2865</td><td class="num">1.56</td><td class="num">1.3047</td><td class="num">0.2129</td><td class="num">&mdash;</td>
+</tr>
+<tr>
+<td><div class="vname">fastener_pullover_load_lb</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">12 of 12</div></td>
+<td colspan="7"><span class="small">353.575 &times;1, 442.770 &times;1, 499.191, 535.096, 728.600 &times;1, 542.958, 736.705, 628.588, 688.254 &times;1, 575.901, 348.174, 577.321, 560.180, 721.035 &times;1, 652.790, 606.828, 706.583, 434.938, 715.617 &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">deflection_lvdt1_in</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">12 of 12</div></td>
+<td colspan="7"><span class="small">NA &times;2, 1.084, 1.424 &times;1, 1.903, 1.903, 1.903, 1.903 &times;1, 2.204 &times;1, 2.241, 2.241, 2.162 &times;1, 2.260, 6.501, 6.501, 6.501 &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">deflection_lvdt2_in</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">12 of 12</div></td>
+<td colspan="7"><span class="small">NA &times;2, 1.115, 1.115, 1.115 &times;1, 1.743, 1.743, 1.743, 1.743 &times;1, 1.874, 5.922, 5.922, 5.922 &times;1, 1.942, 2.365 &times;1, 1.969, 1.969, 4.661, 3.768 &times;1</span></td>
+</tr>
+<tr>
+<td><div class="vname">failure_mode</div><span class="vunit">text</span><div class="vdesc">Description or code for the mechanism that ended the test, such as local buckling, screw pull-over, panel tearing or yielding.</div></td>
+<td><div class="fillbar"><span class="s-rep" style="width:100.0%"></span></div><div class="small">12 of 12</div></td>
+<td colspan="7"><span class="small">Pullover (#3), Pullout (#4), Pullover (#6), Pullover (#7) &times;2, Pullover (#3, #4, #5, #6, #7) &times;2, Pullout (#3), Pullover (#4), Pullover (#5) &times;1, Pullover (#3), Pullout (#4), Pullover (#5), Pullover (#6), Pullover (#7) &times;1, Pullover (#3, #4, #5, #6, #7); Load Cell #5 malfunctioned so its peak load was not recorded &times;1, Pullover (#3, #4, #6, #7) &times;1</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section>
+<div class="sec-head"><h2>Merge audit</h2><span class="sec-meta">DETERMINISTIC &middot; NO MODEL</span></div>
+<p class="sec-note">These papers tabulate both the dimensions and the nondimensional ratios built from them, so the data can check the merge. Re-deriving a reported value from a paper's own ratios is independent of every decision the plan made, which means a broken join, a column mapped to the wrong place, a misapplied constant or a unit mistake all surface as a residual.</p>
+<div class="verdict v-fail"><div class="vbig">FAILED</div><div class="vsub">53 identity checks, 49 failed &middot; worst residual 11.95% &middot; join coverage 99.3% &middot; 199 rows from 209 source rows</div></div>
+<div class="scroll">
+<table>
+<thead>
+<tr><th>Severity</th><th>Check</th><th>Where</th><th>What</th></tr>
+</thead>
+<tbody>
+<tr><td><span class="sev sev-err">ERROR</span></td><td><span class="small">identity</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_1103</span></td><td>49 of 49 rows fail &quot;failure_load_plf = chamber_pressure_psf multiply tributary_width_ft&quot;; worst 11.9% at specimen C10DTH2-2 — every row fails, so either the mapping is wrong or this paper's ratio is nominal</td></tr>
+<tr><td><span class="sev sev-err">ERROR</span></td><td><span class="small">units</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_1103 vs MBMA_9003</span></td><td>&quot;failure_moment_kip_in&quot; ranges do not meet and the means differ by 1.76x, which is degF vs degC span — this looks like a unit mistake, not a difference in what was tested</td></tr>
+<tr><td><span class="sev sev-warn">WARNING</span></td><td><span class="small">duplicate</span></td><td><span class="small">continuous_span_through_fastened_uplift &amp;middot; MBMA_7501</span></td><td>specimens First Z-Section Purlin Assembly, Second Z-Section Purlin Assembly carry identical measurements; genuine repeat tests look like this too, so check they are distinct</td></tr>
+<tr><td><span class="sev sev-warn">WARNING</span></td><td><span class="small">join</span></td><td><span class="small">MBMA_8703</span></td><td>MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD attached to 19 of 20 specimens; 1 found no matching row, so those specimens carry no columns from it</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">continuous_span_through_fastened_uplift &amp;middot; MBMA_7603 vs MBMA_8803</span></td><td>&quot;span_ft&quot; ranges do not overlap (25 to 25 against 30 to 30); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">continuous_span_through_fastened_uplift &amp;middot; MBMA_7603 vs MBMA_8803</span></td><td>&quot;tributary_width_ft&quot; ranges do not overlap (3.167 to 3.167 against 5.06 to 5.06); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">continuous_span_through_fastened_uplift &amp;middot; MBMA_7603 vs MBMA_8803</span></td><td>&quot;thickness_in&quot; ranges do not overlap (0.075 to 0.075 against 0.0681 to 0.0681); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">continuous_span_through_fastened_uplift &amp;middot; MBMA_7603 vs MBMA_8803</span></td><td>&quot;failure_load_plf&quot; ranges do not overlap (146.6 to 204.3 against 133.6 to 133.6); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">continuous_span_through_fastened_uplift &amp;middot; MBMA_7603 vs MBMA_9105</span></td><td>&quot;tributary_width_ft&quot; ranges do not overlap (3.167 to 3.167 against 5 to 5); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">continuous_span_through_fastened_uplift &amp;middot; MBMA_7603 vs MBMA_9105</span></td><td>&quot;thickness_in&quot; ranges do not overlap (0.075 to 0.075 against 0.09 to 0.11); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">continuous_span_through_fastened_uplift &amp;middot; MBMA_8703 vs MBMA_7603</span></td><td>&quot;tributary_width_ft&quot; ranges do not overlap (5.06 to 5.06 against 3.167 to 3.167); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">continuous_span_through_fastened_uplift &amp;middot; MBMA_8703 vs MBMA_9105</span></td><td>&quot;tributary_width_ft&quot; ranges do not overlap (5.06 to 5.06 against 5 to 5); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">continuous_span_through_fastened_uplift &amp;middot; MBMA_8803 vs MBMA_7501</span></td><td>&quot;span_ft&quot; ranges do not overlap (30 to 30 against 25 to 25); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">continuous_span_through_fastened_uplift &amp;middot; MBMA_8803 vs MBMA_7501</span></td><td>&quot;thickness_in&quot; ranges do not overlap (0.0681 to 0.0681 against 0.075 to 0.075); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">continuous_span_through_fastened_uplift &amp;middot; MBMA_9105 vs MBMA_7501</span></td><td>&quot;thickness_in&quot; ranges do not overlap (0.09 to 0.11 against 0.075 to 0.075); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">continuous_span_through_fastened_uplift &amp;middot; MBMA_9105 vs MBMA_8803</span></td><td>&quot;tributary_width_ft&quot; ranges do not overlap (5 to 5 against 5.06 to 5.06); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">continuous_span_through_fastened_uplift &amp;middot; MBMA_9105 vs MBMA_8803</span></td><td>&quot;thickness_in&quot; ranges do not overlap (0.09 to 0.11 against 0.0681 to 0.0681); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">continuous_span_through_fastened_uplift &amp;middot; MBMA_9105 vs MBMA_8803</span></td><td>&quot;yield_stress_ksi&quot; ranges do not overlap (58.9 to 64.8 against 55 to 55); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">continuous_span_through_fastened_uplift &amp;middot; MBMA_9105 vs MBMA_8803</span></td><td>&quot;effective_section_modulus_in3&quot; ranges do not overlap (2.97 to 3.8 against 2.74 to 2.74); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">continuous_span_through_fastened_uplift &amp;middot; MBMA_9105 vs MBMA_8803</span></td><td>&quot;failure_load_plf&quot; ranges do not overlap (161.9 to 327.6 against 133.6 to 133.6); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_1103 vs MBMA_8001</span></td><td>&quot;span_ft&quot; ranges do not overlap (24.5 to 24.5 against 20 to 20); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_1103 vs MBMA_8310</span></td><td>&quot;span_ft&quot; ranges do not overlap (24.5 to 24.5 against 20 to 20); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_1103 vs MBMA_8310</span></td><td>&quot;tributary_width_ft&quot; ranges do not overlap (6.79 to 6.79 against 3.167 to 3.167); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_1103 vs MBMA_8404</span></td><td>&quot;n_purlin_lines&quot; ranges do not overlap (2 to 2 against 4 to 4); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_1103 vs MBMA_8404</span></td><td>&quot;span_ft&quot; ranges do not overlap (24.5 to 24.5 against 24.667 to 25); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_1103 vs MBMA_8404</span></td><td>&quot;tributary_width_ft&quot; ranges do not overlap (6.79 to 6.79 against 5 to 5); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_1103 vs MBMA_8702</span></td><td>&quot;span_ft&quot; ranges do not overlap (24.5 to 24.5 against 19.7917 to 19.7917); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_1103 vs MBMA_8702</span></td><td>&quot;tributary_width_ft&quot; ranges do not overlap (6.79 to 6.79 against 3.167 to 3.167); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_1103 vs MBMA_9003</span></td><td>&quot;span_ft&quot; ranges do not overlap (24.5 to 24.5 against 25 to 25); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_1103 vs MBMA_9003</span></td><td>&quot;thickness_in&quot; ranges do not overlap (0.059 to 0.102 against 0.103 to 0.103); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_1103 vs MBMA_9003</span></td><td>&quot;failure_load_plf&quot; ranges do not overlap (34.7 to 148.8 against 151.3 to 151.3); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_1103 vs MBMA_9501</span></td><td>&quot;tributary_width_ft&quot; ranges do not overlap (6.79 to 6.79 against 4.27 to 4.27); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8001 vs MBMA_9003</span></td><td>&quot;span_ft&quot; ranges do not overlap (20 to 20 against 25 to 25); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8001 vs MBMA_9003</span></td><td>&quot;depth_in&quot; ranges do not overlap (7.92 to 9.46 against 10 to 10); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8001 vs MBMA_9003</span></td><td>&quot;yield_stress_ksi&quot; ranges do not overlap (57.3 to 70.5 against 57.1 to 57.1); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8310 vs MBMA_8404</span></td><td>&quot;n_purlin_lines&quot; ranges do not overlap (2 to 2 against 4 to 4); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8310 vs MBMA_8404</span></td><td>&quot;span_ft&quot; ranges do not overlap (20 to 20 against 24.667 to 25); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8310 vs MBMA_8404</span></td><td>&quot;tributary_width_ft&quot; ranges do not overlap (3.167 to 3.167 against 5 to 5); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8310 vs MBMA_8404</span></td><td>&quot;depth_in&quot; ranges do not overlap (9.44 to 9.63 against 9 to 9); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8310 vs MBMA_8404</span></td><td>&quot;yield_stress_ksi&quot; ranges do not overlap (64.47 to 64.47 against 47.21 to 60.16); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8310 vs MBMA_9003</span></td><td>&quot;span_ft&quot; ranges do not overlap (20 to 20 against 25 to 25); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8310 vs MBMA_9003</span></td><td>&quot;depth_in&quot; ranges do not overlap (9.44 to 9.63 against 10 to 10); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8310 vs MBMA_9003</span></td><td>&quot;yield_stress_ksi&quot; ranges do not overlap (64.47 to 64.47 against 57.1 to 57.1); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8404 vs MBMA_8001</span></td><td>&quot;n_purlin_lines&quot; ranges do not overlap (4 to 4 against 2 to 2); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8404 vs MBMA_8001</span></td><td>&quot;span_ft&quot; ranges do not overlap (24.667 to 25 against 20 to 20); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8404 vs MBMA_9003</span></td><td>&quot;n_purlin_lines&quot; ranges do not overlap (4 to 4 against 2 to 2); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8404 vs MBMA_9003</span></td><td>&quot;depth_in&quot; ranges do not overlap (9 to 9 against 10 to 10); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8404 vs MBMA_9003</span></td><td>&quot;thickness_in&quot; ranges do not overlap (0.067 to 0.08 against 0.103 to 0.103); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8404 vs MBMA_9003</span></td><td>&quot;failure_load_plf&quot; ranges do not overlap (85.6 to 131.6 against 151.3 to 151.3); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8702 vs MBMA_8001</span></td><td>&quot;span_ft&quot; ranges do not overlap (19.7917 to 19.7917 against 20 to 20); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8702 vs MBMA_8310</span></td><td>&quot;span_ft&quot; ranges do not overlap (19.7917 to 19.7917 against 20 to 20); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8702 vs MBMA_8404</span></td><td>&quot;n_purlin_lines&quot; ranges do not overlap (2 to 2 against 4 to 4); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8702 vs MBMA_8404</span></td><td>&quot;span_ft&quot; ranges do not overlap (19.7917 to 19.7917 against 24.667 to 25); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8702 vs MBMA_8404</span></td><td>&quot;tributary_width_ft&quot; ranges do not overlap (3.167 to 3.167 against 5 to 5); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_8702 vs MBMA_9003</span></td><td>&quot;span_ft&quot; ranges do not overlap (19.7917 to 19.7917 against 25 to 25); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_9501 vs MBMA_8310</span></td><td>&quot;tributary_width_ft&quot; ranges do not overlap (4.27 to 4.27 against 3.167 to 3.167); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_9501 vs MBMA_8310</span></td><td>&quot;yield_stress_ksi&quot; ranges do not overlap (48.5 to 63.4 against 64.47 to 64.47); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_9501 vs MBMA_8404</span></td><td>&quot;n_purlin_lines&quot; ranges do not overlap (2 to 2 against 4 to 4); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_9501 vs MBMA_8404</span></td><td>&quot;tributary_width_ft&quot; ranges do not overlap (4.27 to 4.27 against 5 to 5); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_9501 vs MBMA_8702</span></td><td>&quot;tributary_width_ft&quot; ranges do not overlap (4.27 to 4.27 against 3.167 to 3.167); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">simple_span_through_fastened_uplift &amp;middot; MBMA_9501 vs MBMA_9003</span></td><td>&quot;failure_moment_kip_in&quot; ranges do not overlap (43.68 to 140.88 against 141.8 to 141.8); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">standing_seam_uplift_base_and_confirming &amp;middot; MBMA_9001 vs MBMA_9702</span></td><td>&quot;span_ft&quot; ranges do not overlap (23.5 to 25 against 30 to 30); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">range</span></td><td><span class="small">standing_seam_uplift_base_and_confirming &amp;middot; MBMA_9702 vs MBMA_9102</span></td><td>&quot;span_ft&quot; ranges do not overlap (30 to 30 against 23.5 to 25); pooled statistics for it describe two separate populations</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">rows</span></td><td><span class="small">MBMA_7501</span></td><td>3 of 6 rows of MBMA_7501_TABLES1_STRENGTHSUMMARY pooled; 3 excluded by the group filters</td></tr>
+<tr><td><span class="sev sev-info">INFO</span></td><td><span class="small">rows</span></td><td><span class="small">MBMA_8404</span></td><td>8 of 15 rows of MBMA_8404_TABLES1_STRENGTHSUMMARY pooled; 7 excluded by the group filters</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="notes">
+<div class="note"><h3>How a row was built</h3><p>Each paper's tables are joined into specimen rows on the specimen label, values stated once in a table note are filled in for every row of that table, and values absent as columns are reconstructed from the nondimensional ratios the papers tabulate. A reported value is never overwritten by a derived one.</p><p>This run derived <code>138</code> values and cross-checked <code>102</code> that were both reported and derivable.</p></div>
+<div class="note"><h3>Aggregation, not matching</h3><p>Specimens are pooled as independent samples. One paper's specimen Z1 has nothing to do with another's Z1, so nothing is joined across papers. What is compared across papers is the distribution of each variable, not any individual test.</p></div>
+<div class="note"><h3>Read the overlap before the mean</h3><p>A pooled mean over papers that explored different parameter ranges describes the mixture, not the physics. The overlap column says how much of each variable's range all the papers share: where it is low, the pooled statistics are dominated by whichever paper reached that far.</p></div>
+<div class="note"><h3>Judgement calls to review</h3><ul><li>The central split is loading direction and panel attachment: uplift puts the unattached (compression) flange free to move, gravity does not, and standing seam clips give far less rotational restraint than screwed panels. I therefore kept four purlin groups (simple-span through-fastened uplift, standing seam uplift, continuous through-fastened uplift, simple-span gravity) rather than pooling by section shape. C and Z sections are pooled within each group because section_type is carried as an identifier column and every member reports it.</li><li>MBMA_8404 contributes to two groups (its uplift and its gravity rows), split by a row filter on load_direction.</li><li>The simulated-gravity group (MBMA_8404 only, 7 rows) and the fastener-pullover group (MBMA_9410 only, 12 rows) each come from a single paper. They are retained because they are the only data of their kind in this collection, as permitted; a reviewer may drop them if single-source groups are unwanted.</li><li>MBMA_9410's standard pullover coupon tests (Tables 3-1 to 3-9) and simulated component tests (Tables 4-1 to 4-8) are deliberately excluded: they load one screw directly and are not full-scale assembly tests, so they are not comparable with the vacuum-box rows.</li><li>Reported failure loads are not consistently dead-load corrected: MBMA_8703/8803 subtract the assembly dead weight, MBMA_8404 gravity adds it, MBMA_7603/8310/8702/9001/9105 report applied chamber load only. Any cross-paper strength comparison should carry this flag.</li><li>MBMA_8702, MBMA_9702 and MBMA_9102 print depth, thickness and yield as multi-purlin or multi-bay strings ('0.0746 / 0.0745', 'A: .065 / .066 / .066', '7-13/16 to 8-1/4'). These cells need parsing into a representative value plus a range; no averaging rule is prescribed here.</li><li>MBMA_9501 reports no failure line load at all, only the tested moment (ft-kips) and R; its rows will have an empty failure_load_plf. Its own note warns against back-calculating loads from the appendix manometer readings, so no derivation for that is given.</li><li>MBMA_9001 and MBMA_9102 failure loads were later corrected by MBMA_9702 for a tributary-area error; both the original and corrected values are carried so a reviewer can choose.</li><li>MBMA_7603's two 'second (induced) failure' rows are reloads of an already-failed specimen with the failed purlin propped; they are not independent tests.</li><li>The prefix join from MBMA_9001 Table S1 to Table 3.1 assumes the suffix '-1'/'-3' is appended after the set designation; in the printed ids the '(0)' marker trails the suffix ('U-Z-T-P/F-1(0)' vs key 'U-Z-T-P/F(0)'), so the matcher may need to strip '(0)' before the prefix test.</li><li>Hand edits 2026-11-04: MBMA_9501 manometer readings are in inches of water, so the column is manometer_reading_at_failure_in_of_water (not psf); MBMA_9702 Table 1 loads are failure_load_table_1_plf, not 'corrected'.</li><li>Hand edit 2026-11-05: MBMA_1103 (added at Cris Moen's request) joined to this reviewed plan as a member of the simple-span through-fastened uplift group. A full replan was tried and rejected because it dropped test_id mappings, the MBMA_9410 group, two continuous-span specimens and the 2026-11-04 hand edits. Variable lap_length_over_depth renamed lap_to_depth_ratio so the header carries no inch unit (it is dimensionless). Headers ending _plf_lbft are plf (lb/ft); the suffix is redundant, not a unit change.</li><li>Load-direction filter (hand edit 2026-11-10, Cris Moen review): the 'simple_span_through_fastened_gravity' group (MBMA_8404 Tests 1-6, 16) was removed from the uplift set; those tests are pooled once, in the gravity set. MBMA_7501's three uplift assemblies joined the continuous-span group. MBMA_8404 Test 13 is dropped before harmonizing (authors call it invalid, p.34).</li><li>Partial joins fixed (hand edit 2026-11-10, Cris Moen review): MBMA_8703 Table D, MBMA_9001 Table 4.1 and MBMA_9501 Tables A1/A2 join on an added s1_test_id key (strength-summary spelling); MBMA_9001 Table 3.1 joins on the added configuration_id. Printed IDs are unchanged.</li><li>Variable 'span_in' renamed 'span_inches' (hand edit 2026-11-10): the new concordance appended a wrong unit suffix to it ('span_in_ft'); the values are inches.</li><li>purlin_orientation normalized to 'same direction' / 'opposed' (hand edit 2026-11-10, Cris Moen: orientation labels normalized to 'same direction' / 'opposed'). The printed wording is kept in purlin_orientation_as_printed; where the paper says which way the flanges of an opposed pair point, opposed_flange_direction holds 'in' (toward each other) or 'out'. Note MBMA_8404 'Facing' is opposed (flanges in) while MBMA_9001 'Facing' is same direction.</li></ul></div>
+<div class="note"><h3>Automatic checks</h3><ul><li>simple_span_through_fastened_uplift: these columns could not be matched to a harmonized variable, so they carry no unit or definition: purlin_orientation_as_printed, opposed_flange_direction, insulation_present, span_inches, rotational_restraint_k, calculated_nominal_moment_ft_kips, test_to_predicted_ratio, manometer_reading_at_failure_in_of_water, failure_moment_ft_kips, failure_moment_kip_in, insulation_material, chamber_pressure_psf</li><li>simple_span_through_fastened_uplift: MBMA_1103 &quot;failure_load_plf&quot; reported 117.2 but chamber_pressure_psf multiply tributary_width_ft gives 111.4239 (e.g. specimen Z8D-2); the reported value was kept — the paper's ratio is probably nominal or rounded</li><li>standing_seam_uplift_base_and_confirming: these columns could not be matched to a harmonized variable, so they carry no unit or definition: purlin_orientation_as_printed, opposed_flange_direction, test_to_predicted_ratio, failure_load_table_1_plf, failure_moment_kip_in, failure_moment_ft_kips, chamber_pressure_psf</li><li>continuous_span_through_fastened_uplift: these columns could not be matched to a harmonized variable, so they carry no unit or definition: lap_to_depth_ratio, calculated_nominal_moment_kip_in, test_to_predicted_ratio, chamber_pressure_psf, failure_moment_kip_in, deck_dead_load_psf</li><li>panel_fastener_pullover_vacuum_box: these columns could not be matched to a harmonized variable, so they carry no unit or definition: panel_supplier, failed_load_cells, chamber_pressure_psi, fastener_pullover_load_lb, deflection_lvdt1_in, deflection_lvdt2_in</li><li>panel_fastener_pullover_vacuum_box: only 1 paper contributes rows, so this group pools nothing</li></ul></div>
+<div class="note"><h3>Files</h3><p><code>aggregate_&lt;group&gt;.csv</code> is the pooled dataset, <code>_provenance.csv</code> mirrors it with the origin of every cell, <code>variable_statistics.csv</code> holds these distributions and <code>_plan/plan.json</code> is the plan that produced all of it. Edit the plan and re-run to change the aggregation without another model call.</p><p class="colophon">SteelData Initiative &middot; Module 5 &middot; 2026-11-10</p></div>
+</section>
+</div>
+</body>
+</html>

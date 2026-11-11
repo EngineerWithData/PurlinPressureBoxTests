@@ -1,0 +1,42 @@
+# Source: MBMA_7506 | Linehan, P.W.; Guedelhoefer, O.C. (Wiss, Janney, Elstner and Associates, Inc.) (1975), Table S1, pp.6-8, 10-11
+# Tag: MBMA_7506_TABLES1_STRENGTHSUMMARY
+# Content: Maximum/failure gravity load reached in the two full-scale three-span vacuum-chamber roof purlin system tests (one Z purlin system, one C purlin system).
+# Data basis: measured: vacuum-chamber gravity load tests; loads from manometer readings and support load cells, with the governing values as stated in the narrative and in Tables 1 and 2
+# Units: see column headers
+# Column definitions:
+#   test_id = identifier of the full-scale test as named in the report
+#   load_direction = direction of applied load (gravity or uplift)
+#   section_type = purlin cross-section shape as printed (C or Z)
+#   depth_in = nominal purlin web depth, in.
+#   thickness_in = purlin base steel thickness as printed, in.
+#   span_ft = individual span length(s) between supports, ft
+#   n_spans = number of continuous spans in the test assembly
+#   n_purlin_lines = number of parallel purlin lines loaded
+#   panel_type = roof deck attachment type and manufacturer as described
+#   bracing = bracing provided to the purlin flanges
+#   failure_load_as_printed = failure or maximum applied load exactly as printed in the report
+#   failure_load_unit = unit of the failure load exactly as printed
+#   failure_moment_as_printed = failure moment as printed (not reported)
+#   failure_moment_unit = unit of the failure moment as printed (not reported)
+#   failure_mode = description of what limited the test, as described in the report
+#   value_source = where in the report the strength value is stated
+#   pages = PDF page number(s) where the value is stated
+#   computed_load_at_last_increment_psf = load computed from the support load cells at the last recorded load increment, psf
+#   deck_buckling_onset_psf = load at which deck buckling was first observed, psf
+#   max_tensile_stress_psi = maximum tensile stress observed in the purlins, psi
+#   max_compressive_stress_psi = maximum compressive stress observed in the purlins, psi
+#   deck_manufacturer = manufacturer of the roof decking used
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 13 cells checked (AI, 2026-11-04): 13 correct, 0 errors, 7 unreadable; P(accuracy ≥ 0.8) = 95.6%, ≥ 0.9) = 77.1%, ≥ 0.95) = 51.2%
+# TEXT SOURCE: read from page images by the model (cached transcription)
+# Load sign convention: all loads are downward (gravity) pressures applied by evacuating a sealed timber/visqueen chamber built over the specimen; loads are reported as uniform pressure in psf over the roof area.
+# Tributary width: two purlin lines spaced 5 ft apart within a 6 ft 4 in. wide chamber; purlins span 3 bays of nominally 25 ft.
+# The report does not state whether the reported pressures include specimen dead load; loads given are the applied vacuum pressures.
+# Z purlin test: the narrative gives no single explicit failure load; a series of deck buckles at 33.36 psf prevented development of a total purlin buckle and the last recorded increment (Test 21) was 58 psf approximate / 58.12 psf computed from the load cells, so the tabulated strength is the last load step.
+# C purlin test: explicit statement on PDF page 8 - 'At 80 psf the eastern purlin of the southern exterior span failed by buckling ... and loading was discontinued.' The last tabulated increment in Table 2 (Test 76) is 72.6 psf approximate / 78.25 psf computed; Appendix C lists the same increment as 72.8 psf.
+# C purlin exterior spans used heavier material (t = 0.119 in.) than the interior span (t = 0.0773 in.); rake channels were used in the C purlin test only.
+# Max compressive stress for the Z test is reported only as '50,000 psi or greater' observed at Sensors 5, 30, 34 and 56.
+# No failure moments are reported.
+test_id,load_direction,section_type,depth_in,thickness_in,span_ft,n_spans,n_purlin_lines,panel_type,bracing,failure_load_as_printed,failure_load_unit,failure_moment_as_printed,failure_moment_unit,failure_mode,value_source,pages,computed_load_at_last_increment_psf,deck_buckling_onset_psf,max_tensile_stress_psi,max_compressive_stress_psi,deck_manufacturer
+Z Purlin Test,gravity,Z,8,0.075,"24'-10 1/2"", 25'-0"", 24'-10 1/2""",3,2,through-fastened metal roof deck (No. 14 self-tapping sheet metal screws),instrumented 16 ga x 2 in. steel straps welded to purlin at interior and exterior supports; no intermediate braces; no rake channels,58.12,psf,,,"Strength limited by the purlin decking; a series of deck buckles at 33.36 psf prevented development of a total purlin buckle, although substantial portions of the purlins were stressed beyond yield and permanent deformation occurred near strain gage Location 11",table 1 (Test 21 computed load); inferred: last load step,"6, 10",58.12,33.36,"90,000","50,000 psi or greater",Strand Steel
+C Purlin Test,gravity,C,7,"0.119 (exterior spans), 0.0773 (center span)","25'-0"", 25'-0"", 25'-0""",3,2,through-fastened metal roof deck (No. 14 self-tapping sheet metal screws),instrumented steel straps at interior and exterior supports; rake channels used; no intermediate braces,80,psf,,,Eastern purlin of the southern exterior span failed by buckling and loading was discontinued; local decking buckles began at 73.64 psf adjacent to both sides of the southern interior support,text,8,78.25,73.64,"83,000","90,900",Inland Ryerson

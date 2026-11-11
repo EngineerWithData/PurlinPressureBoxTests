@@ -1,0 +1,49 @@
+# Source: MBMA_8310 | LaBoube, R.A. (1983), Table S1, pp.4-6
+# Tag: MBMA_8310_TABLES1_STRENGTHSUMMARY
+# Content: Measured maximum uplift load at failure for nine full-scale tests of laterally unsupported C- and Z-purlins with through-fastened roof panels tested in a vacuum chamber, with the corresponding Cornell-method computed capacity and test-to-computed ratio.
+# Data basis: measured: failure loads P_u recorded by pressure transducer in full-scale vacuum-chamber uplift tests (Table 2); cross-section dimensions and F_y from Table 1 and rotational restraint factors from Table 3 (measured); P_c and P_u/P_c columns are the report's computed values/ratios
+# Units: see column headers
+# Column definitions:
+#   test_id = test number as printed in Tables 1 and 2
+#   load_direction = direction of applied load (simulated wind uplift by vacuum chamber)
+#   section_type = purlin cross-section shape, C or Z
+#   depth_in = overall web depth H of the purlin, in.
+#   thickness_in = base steel thickness t of the purlin, in.
+#   span_ft = length of the test purlins, ft
+#   n_spans = number of spans in the test specimen (not stated in report)
+#   n_purlin_lines = number of purlin lines in the test specimen
+#   panel_type = roof panel used and its attachment
+#   bracing = lateral bracing condition of the purlins
+#   failure_load_as_printed = maximum load at failure P_u exactly as printed
+#   failure_load_unit = unit of the failure load as printed
+#   failure_moment_as_printed = failure moment as printed (not reported)
+#   failure_moment_unit = unit of the failure moment (not reported)
+#   failure_mode = description of what limited the test (not reported)
+#   value_source = where in the report the failure load is stated
+#   pages = PDF page number(s) where the value is stated
+#   computed_load_pc_lb_per_ft = computed failure load P_c using the Cornell analytical method, lb/ft
+#   ratio_pu_pc = ratio of tested to computed failure load as printed
+#   yield_stress_ksi = measured yield stress F_y of the purlin steel, ksi
+#   rotational_restraint_factor_lb_per_in_per_in = experimentally determined panel-to-purlin rotational restraint factor for the corresponding configuration, lb/in/in
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 18 cells checked (AI, 2026-11-04): 18 correct, 0 errors, 2 unreadable; P(accuracy ≥ 0.8) = 98.6%, ≥ 0.9) = 86.5%, ≥ 0.95) = 62.3%
+# TEXT SOURCE: read from page images by the model (cached transcription)
+# ANOMALY FLAG: Table 2 header prints the ratio column as "P_u/P_c" with the subscripts split across lines ("P u/P / c"); Table 3 title is printed "ROATIONAL RESTRAINT FACTORS" (sic).
+# Load sign convention: all tests were simulated wind uplift (suction) produced by evacuating air from a vacuum chamber; load was recorded in 5 psf increments up to failure.
+# Tributary width conversion printed under Table 2: P(lb/ft) = Transducer Reading (psf) x (76/2) x (1/12), i.e. 76-in. wide chamber shared by two purlin lines (38 in. tributary width per purlin).
+# The report does not state whether the reported loads include dead load; P_u is the maximum transducer pressure prior to failure.
+# Each specimen consisted of two 20-ft long purlins with the tension flange screwed (1/4 x 14 SDS) to a 26 Gage conventional roof panel; purlins were laterally unsupported (compression flange unbraced).
+# Averages printed in Table 2 (not individual tests): .07 C = 102.2 lb/ft; .07 Z = 126.7 lb/ft; .10 C = 204.0 lb/ft; .10 Z = 239.3 lb/ft.
+# Failure mode is not described in the report; only the maximum pressure prior to failure is given.
+# Rotational restraint factors (Table 3) are per configuration (two F-tests each), not per full-scale test: 0.071 C = 1.46, 0.071 Z = 1.67, 0.106 C = 2.78, 0.106 Z = 3.32 lb/in/in.
+# Cross-section sweep a_o (Table 1): negative indicates sweep to the north, positive to the south; all corner radii 0.313 in.; edge stiffeners at 90 degrees to the flange.
+test_id,load_direction,section_type,depth_in,thickness_in,span_ft,n_spans,n_purlin_lines,panel_type,bracing,failure_load_as_printed,failure_load_unit,failure_moment_as_printed,failure_moment_unit,failure_mode,value_source,pages,computed_load_pc_lb_per_ft,ratio_pu_pc,yield_stress_ksi,rotational_restraint_factor_lb_per_in_per_in
+1,uplift,C,9.56,0.071,20,,2,"26 Gage conventional roof panel, self-drilling screws (through-fastened)",laterally unsupported,104.5,lb/ft,,,,table 2,5,110.8,.94,64.47,1.46
+2,uplift,C,9.50,0.071,20,,2,"26 Gage conventional roof panel, self-drilling screws (through-fastened)",laterally unsupported,99.8,lb/ft,,,,table 2,5,110.8,.90,64.47,1.46
+3,uplift,Z,9.50,0.071,20,,2,"26 Gage conventional roof panel, self-drilling screws (through-fastened)",laterally unsupported,123.5,lb/ft,,,,table 2,5,218.5,.57,64.47,1.67
+4,uplift,Z,9.50,0.071,20,,2,"26 Gage conventional roof panel, self-drilling screws (through-fastened)",laterally unsupported,136.2,lb/ft,,,,table 2,5,218.5,.62,64.47,1.67
+5,uplift,Z,9.63,0.071,20,,2,"26 Gage conventional roof panel, self-drilling screws (through-fastened)",laterally unsupported,120.3,lb/ft,,,,table 2,5,218.5,.55,64.47,1.67
+6,uplift,C,9.50,0.106,20,,2,"26 Gage conventional roof panel, self-drilling screws (through-fastened)",laterally unsupported,197.6,lb/ft,,,,table 2,5,215.3,.92,64.47,2.78
+7,uplift,C,9.56,0.106,20,,2,"26 Gage conventional roof panel, self-drilling screws (through-fastened)",laterally unsupported,210.3,lb/ft,,,,table 2,5,215.3,.98,64.47,2.78
+8,uplift,Z,9.44,0.106,20,,2,"26 Gage conventional roof panel, self-drilling screws (through-fastened)",laterally unsupported,234.7,lb/ft,,,,table 2,5,380.0,.62,64.47,3.32
+9,uplift,Z,9.56,0.106,20,,2,"26 Gage conventional roof panel, self-drilling screws (through-fastened)",laterally unsupported,243.8,lb/ft,,,,table 2,5,380.0,.64,64.47,3.32

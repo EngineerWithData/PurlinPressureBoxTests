@@ -1,0 +1,31 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 1-1, pp.20
+# Tag: MBMA_9410_TABLE11_PROPOSEDTESTINGPROGRAM
+# Content: Planned matrix of simulated (component and system) pullover tests by supplier, gage and steel grade.
+# Data basis: input: proposed test program submitted to the sponsor
+# Units: steel_grade_ksi in ksi; other columns dimensionless or descriptive
+# Column definitions:
+#   test_series = test series number as printed in the program
+#   installation_type = type of installation tested (component = single panel, system = multi-panel)
+#   supplier = panel steel supplier
+#   gages = sheet gages included in the series, as printed
+#   steel_grade_ksi = nominal yield grade of the panel steel, ksi
+#   number_of_tests = number of tests planned in the series
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: Test-series numbers 1-6 are repeated (once for component installations, once for system installations) and the last line (series 7) is a single merged cell reading "Other Tests as Directed by Sponsor" with no values; both preserved verbatim. Gage entries are printed with irregular spacing ("24& 26", "24 &26") and are kept as printed.
+# Row with series 7 is a merged cell in the printed table; remaining cells left empty.
+test_series,installation_type,supplier,gages,steel_grade_ksi,number_of_tests
+1,component,Pascoe,24& 26,55,18
+2,component,American,24 &26,80,18
+3,component,Pascoe,24 &26,55,10
+4,component,American,24 &26,80,10
+5,component,Pascoe,24 &26,55,14
+6,component,American,24 &26,80,14
+1,system,Pascoe,24& 26,55,4
+2,system,American,24 &26,80,4
+3,system,Pascoe,24 &26,55,4
+4,system,American,24 &26,80,4
+5,system,Pascoe,24 &26,55,4
+6,system,American,24 &26,80,4
+7,Other Tests as Directed by Sponsor,,,,

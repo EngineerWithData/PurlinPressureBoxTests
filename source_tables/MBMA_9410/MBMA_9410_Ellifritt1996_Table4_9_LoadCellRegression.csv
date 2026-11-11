@@ -1,0 +1,42 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 4-9, pp.59
+# Tag: MBMA_9410_TABLE49_LOADCELLREGRESSION
+# Content: Calibration readings (mV versus applied load) and the linear regression output for the eight purpose-built aluminium load cells.
+# Data basis: mixed: measured millivolt output at known calibration loads with least-squares regression output
+# Units: load_lbs in pounds; cell outputs in millivolts; regression statistics in mixed units as printed
+# Column definitions:
+#   load_lbs = calibration load applied to the load cell, pounds (or statistic name in the regression rows)
+#   cell_001_mv = output of load cell 001, millivolts
+#   cell_002_mv = output of load cell 002, millivolts
+#   cell_003_mv = output of load cell 003, millivolts
+#   cell_004_mv = output of load cell 004, millivolts
+#   cell_005_mv = output of load cell 005, millivolts
+#   cell_006_mv = output of load cell 006, millivolts
+#   cell_007_mv = output of load cell 007, millivolts
+#   cell_008_mv = output of load cell 008, millivolts
+# EXTRACTION QUALITY: reconstructed — decimal points / column identities were inferred from context; VERIFY against the PDF before use
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: COLUMN ALIGNMENT UNCERTAIN in the regression block: only SEVEN values are printed for EIGHT load cells. Comparison of the printed X coefficients with the calibration slopes indicates the omitted cell is Cell 005 (the printed values correspond to cells 001, 002, 003, 004, 006, 007, 008), but the values here have been left in their printed left-to-right order (cell_001_mv ... cell_007_mv columns) and cell_008_mv left blank; this needs human verification. Also, the Cell 001 reading at 1000 lb (-2.35) breaks the otherwise monotonic trend and "No. of Observations = 25" although only 13 load levels are printed; both preserved verbatim.
+# Each cell was built from 2024-T4 aluminium with four strain gages and reads up to 1,200 pounds.
+# The last seven rows are the printed regression statistics (constant, standard error of Y estimate, R squared, number of observations, degrees of freedom, X coefficient and standard error of coefficient).
+load_lbs,cell_001_mv,cell_002_mv,cell_003_mv,cell_004_mv,cell_005_mv,cell_006_mv,cell_007_mv,cell_008_mv
+0,1.48,-33.51,-11.26,-0.487,3.41,-0.004186,0.041224,-0.001398
+100,1.06,-34.02,-11.735,0.06,3.945,-0.004531,0.04169,-0.00186
+200,0.06,-34.51,-12.2,0.632,4.345,-0.005045,0.042145,-0.0024
+300,0.12,-34.97,-12.662,1.167,4.875,-0.00558,0.04255,-0.00292
+400,-0.37,-35.44,-13.115,1.685,5.355,-0.006091,0.04296,-0.00345
+500,-0.86,-35.92,-13.56,2.235,5.83,-0.0066,0.04338,-0.00399
+600,-1.35,-36.38,-14.015,2.785,6.305,-0.007098,0.04381,-0.00453
+700,-1.845,-36.84,-14.452,3.33,6.763,-0.007588,0.044255,-0.00506
+800,-2.345,-37.3,-14.9,3.9,7.235,-0.00808,0.04469,-0.0056
+900,-2.85,-37.78,-15.348,4.415,7.725,-0.00857,0.045185,-0.00613
+1000,-2.35,-38.24,-15.785,4.95,8.206,-0.00907,0.045675,-0.00666
+1100,-3.825,-38.7,-16.233,5.5,8.678,-0.00955,0.046175,-0.0072
+1200,-4.33,-39.18,-16.69,6.034,9.158,-0.01005,0.04669,-0.00774
+Constant,319.6817,-7150.77,-2510.77,86.88819,-822.069,-9200.54,-250.968,
+Std. Error of Y Estimate,6.035464,3.179256,3.641473,2.094943,6.139784,13.7518,2.99223,
+R squared,0.999742,0.999928,0.999906,0.999969,0.99733,0.998662,0.999937,
+No. of Observations,25,25,25,25,25,25,25,
+Degrees of Freedom,23,23,23,23,23,23,23,
+X Coefficient(s),-204.343,-213.093,-222.223,184.1777,-200892,223359.7,-187731,
+Std. Error of Coefficients,0.684204,0.375809,0.448896,0.21403,684.2784,1704.957,311.6033,

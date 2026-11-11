@@ -1,0 +1,24 @@
+# Source: MBMA_7603 | Guedelhoefer, O.C. and Boggs, D.W. (1976), Table Fig. 4, pp.13
+# Tag: MBMA_7603_TABLE4_CPURLININITIALSWEEP
+# Content: Initial sweep (out-of-straightness) of the top and bottom flanges of the two C purlins, measured from a string line after the purlins were aligned and attached to the supports.
+# Data basis: measured: string-line offsets on the as-built C purlin system before testing
+# Units: measurement is a text label; all sweep columns in inches
+# Column definitions:
+#   measurement = printed row label: sweep of top flange or sweep of bottom flange of the C purlin
+#   sweep_1_in = initial sweep (lateral offset from string line) at station 1, inches
+#   sweep_2_in = initial sweep (lateral offset from string line) at station 2, inches
+#   sweep_3_in = initial sweep (lateral offset from string line) at station 3, inches
+#   sweep_4_in = initial sweep (lateral offset from string line) at station 4, inches
+#   sweep_5_in = initial sweep (lateral offset from string line) at station 5, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 90 pages); 13 character(s) were illegible and are marked [?], not guessed
+# ANOMALY FLAG: Rows are not identified by purlin in the printed figure; the labels "SWEEP OF TOP" and "SWEEP OF BOTTOM" each appear twice (apparently once for each of the two C purlins) and are preserved verbatim as printed, uncorrected. The five measurement stations along the length are not dimensioned in the drawing.
+# Table appears in the plan view of Fig. 4 (Sheet 4, 'Details of Construction - C Purlin Uplift Test').
+# Values are printed with inch marks (e.g. 0.20"); the inch mark has been dropped and the unit carried in the column name.
+# First two rows correspond to one purlin and the last two rows to the other, as drawn in the plan view.
+measurement,sweep_1_in,sweep_2_in,sweep_3_in,sweep_4_in,sweep_5_in
+SWEEP OF TOP,0.20,0.12,0.10,0.15,0.40
+SWEEP OF BOTTOM,0.21,0.017,-0.125,0.06,0.42
+SWEEP OF TOP,0.27,-0.07,0.175,0.017,0.61
+SWEEP OF BOTTOM,0.32,0.033,0.20,0.017,0.63

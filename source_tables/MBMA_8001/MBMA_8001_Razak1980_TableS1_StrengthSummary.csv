@@ -1,0 +1,65 @@
+# Source: MBMA_8001 | Razak, M.A.A. (1980), Table S1, pp.76-77
+# Tag: MBMA_8001_TABLES1_STRENGTHSUMMARY
+# Content: Ultimate (failure) loads of the fourteen full-scale 20-ft single-span Z-purlin tests (seven vacuum/uplift tests on diaphragm-braced purlin-panel assemblies and seven beam tests on channel-braced purlin pairs), together with the observed failure location and mode.
+# Data basis: measured: failure loads read from Table 3.3 (Summary of Test Results); failure descriptions taken from the Section 3.9.1 narrative; yield stresses from Table 3.1 (tensile coupons)
+# Units: see column headers
+# Column definitions:
+#   test_id = test designation as printed (V = vacuum test, B = beam test)
+#   load_direction = direction of applied load relative to the purlin (uplift / gravity)
+#   section_type = purlin cross-section shape as printed
+#   depth_in = measured average purlin depth H for the purlin type, Table 3.2 (p. 75), in.
+#   thickness_in = measured average purlin thickness t for the purlin type, Table 3.2 (p. 75), in.
+#   depth_nominal_in = nominal purlin depth as printed in Table 3.3 (p. 76), in.
+#   thickness_nominal_in = nominal purlin thickness as printed in Table 3.3 (p. 76), in.
+#   span_ft = simple span length of the test specimen, ft
+#   n_spans = number of spans in the test assembly
+#   n_purlin_lines = number of parallel purlin lines in the test assembly
+#   panel_type = type of roof panel attachment used in the assembly (none for beam tests)
+#   bracing = bracing provided to the purlin bottom (tension) flange / overall assembly
+#   failure_load_as_printed = failure load exactly as printed in Table 3.3
+#   failure_load_unit = unit of the failure load exactly as printed
+#   failure_moment_as_printed = failure moment as printed (not reported)
+#   failure_moment_unit = unit of the failure moment as printed (not reported)
+#   failure_mode = description of the observed failure, condensed from the report's narrative
+#   value_source = where the failure load value was stated
+#   pages = PDF page numbers for the load value and the failure description
+#   purlin_type = manufacturer purlin type designation (A-E) as printed
+#   yield_stress_ksi = tensile coupon yield stress for that purlin type, ksi (Table 3.1)
+#   buckle_at_prepunched_hole = whether the local buckle occurred at a prepunched hole (Y/N/-)
+#   buckle_distance_to_midspan_in = distance of the local buckle from midspan, in. (m.s. = at midspan)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 9 cells checked (AI, 2026-11-10): 9 correct, 0 errors, 11 unreadable; P(accuracy ≥ 0.8) = 89.3%, ≥ 0.9) = 65.1%, ≥ 0.95) = 40.1%
+# TEXT SOURCE: read from page images by the model (cached transcription)
+# Load sign convention: all tests simulated wind uplift. In the vacuum tests the purlin-panel roof assembly was inverted and a vacuum suction applied through polyethylene sheeting; in the beam tests a four-point load was applied to the bottom (tension) flanges parallel to the web, so the beam tests model the same uplift action.
+# Tributary width: in the vacuum tests the two purlins were spaced 5 ft (60 in.) apart; failure loads are given per linear foot of purlin.
+# Table 3.3 footnote (2): 'In the beam test, failure load is given as the total load on the span divided by the span length.'
+# Table 3.3 footnote (4): 'Unless otherwise noted, local buckle occurred only in one purlin and in the web and the flange.'
+# Table 3.3 footnote (3): Y = Yes, N = No, for whether the buckle occurred at a prepunched (sag-rod) hole; 'm.s.' = at midspan.
+# The report does not state whether the reported loads include the dead weight of the assembly; no failure moments are reported.
+# Test V1 had fixed (rigid) end supports; all other tests had simply supported ends.
+# Test B2 reused a purlin that had already been tested (B1) and was badly distorted, which explains its lower failure load.
+# Panel used in the vacuum tests was a 24-gage galvanized panel attached with self-tapping or self-drilling screws at 1 ft spacing (through-fastened).
+# In the beam tests the two purlins were connected along their bottom flanges by sixteen channel sections at 1 ft spacing (plus four 16-in. I-sections at the load points), providing the bracing in place of a panel.
+# REVIEW 2026-11-06 (Cris Moen): only the vacuum tests V1-V7 enter the database (pressure box tests only). The beam tests B1-B7 (four-point loads through channels joining the bottom flanges, no panel, p.36) are kept in this file as the extracted record but are dropped from the sets (05_harmonize.jl DROP_ROWS).
+# REVIEW 2026-11-06 (Cris Moen): V1 had fixed purlin ends; the report attributes its higher failure load to the end fixity (p.34). V2-V7 were simply supported.
+# REVIEW 2026-11-06 (Cris Moen): the assembly was built panel-on-top and tested inverted, so self-weight acts with the suction (pp.28-29); the report does not say whether the Table 3.3 loads include it.
+# REVIEW 2026-11-06 (Cris Moen): V6 used self-drilling screws; the other vacuum tests used self-tapping screws in prepunched holes (p.29).
+# CORRECTED (review 2026-11-10, Cris Moen): depth_in and thickness_in now hold the measured Table 3.2 averages per purlin type (measured-value rule; dimensions scaled from sprayed profile images of 18 in. sections, p. 75); the nominal Table 3.3 values moved to depth_nominal_in and thickness_nominal_in.
+# REVIEW 2026-11-10 (Cris Moen): Table 3.3 vacuum-test loads are per linear foot of purlin (p. 76) (MBMA_8001-Q01).
+# REVIEW 2026-11-10 (Cris Moen): Tables 4.1 and 4.2 give one ultimate stress and rotation per purlin type, partly computed; the report does not say whether they refer to the failed purlin. They are kept as printed and do not enter the strength record (MBMA_8001-Q03).
+# REVIEW 2026-11-10 (Cris Moen): one panel profile is shown, a 24 ga galvanized panel (Fig. 3.6); purlins, panels and fasteners came from two manufacturers (p. 28), and which manufacturer supplied the panel for each purlin type is not stated (MBMA_8001-Q04).
+test_id,load_direction,section_type,depth_in,thickness_in,depth_nominal_in,thickness_nominal_in,span_ft,n_spans,n_purlin_lines,panel_type,bracing,failure_load_as_printed,failure_load_unit,failure_moment_as_printed,failure_moment_unit,failure_mode,value_source,pages,purlin_type,yield_stress_ksi,buckle_at_prepunched_hole,buckle_distance_to_midspan_in
+V1,uplift,Z,9.45,0.063,9-1/2,.063,20,1,2,"through-fastened (24-ga galvanized panel, screws at 1 ft)",diaphragm (panel) braced; ends of purlins fixed,145,LBS/FT,,,Local buckling of compression flange-web region at prepunched hole 4.8 in. from midspan in one purlin; fixed ends gave high failure load and small rotation,table 3.3,"76, 34",A,57.3,Y,4.8
+V5,uplift,Z,9.45,0.063,9-1/2,.063,20,1,2,"through-fastened (24-ga galvanized panel, screws at 1 ft)",diaphragm (panel) braced; simply supported ends,114,LBS/FT,,,Local buckling at the compression flange-web junction at midspan of one purlin; larger rotations and deflections than V1,table 3.3,"76, 35",A,57.3,N,m.s.
+B1,uplift,Z,9.45,0.063,9-1/2,.063,20,1,2,none,channel sections at 1 ft connecting bottom (tension) flanges; simply supported ends,119,LBS/FT,,,Sudden local buckling of the compression flange-web region at prepunched holes 15 in. from midspan of one purlin,table 3.3,"76, 36",A,57.3,Y,15
+B2,uplift,Z,9.45,0.063,9-1/2,.063,20,1,2,none,channel sections at 1 ft connecting bottom (tension) flanges; simply supported ends,96,LBS/FT,,,"Local buckling of compression flange-web region 12 in. from midspan, same manner as B1; purlin had been tested previously (in B1) and was badly distorted, so failure load was lower",table 3.3,"76, 36",A,57.3,-,-
+B3,uplift,Z,9.45,0.063,9-1/2,.063,20,1,2,none,channel sections at 1 ft connecting bottom (tension) flanges; simply supported ends,119,LBS/FT,,,Local buckling of compression flange-web region at midspan of one purlin (duplicate of B1; nearly same failure load),table 3.3,"76, 36",A,57.3,N,m.s.
+V2,uplift,Z,9.46,0.109,9-1/2,.110,20,1,2,"through-fastened (24-ga galvanized panel, screws at 1 ft)",diaphragm (panel) braced; simply supported ends,229,LBS/FT,,,Local buckling at prepunched hole 1.6 in. from midspan of one purlin; yielding accompanied by large lateral and vertical deflections,table 3.3,"76, 34",B,57.6,Y,1.6
+V7,uplift,Z,9.46,0.109,9-1/2,.110,20,1,2,"through-fastened (24-ga galvanized panel, screws at 1 ft)",diaphragm (panel) braced; simply supported ends,224,LBS/FT,,,"Local buckling in the web compression region at the prepunched hole location, 6 in. from midspan (duplicate of V2)",table 3.3,"76, 35",B,57.6,Y,6
+B5,uplift,Z,9.46,0.109,9-1/2,.110,20,1,2,none,channel sections at 1 ft connecting bottom (tension) flanges; simply supported ends,280,LBS/FT,,,Local buckling of the compression flange-web region at midspan of one purlin after large lateral deflections indicating yield,table 3.3,"76, 36-37",B,57.6,N,m.s.
+V4,uplift,Z,7.92,0.060,8,.063,20,1,2,"through-fastened (24-ga galvanized panel, screws at 1 ft)",diaphragm (panel) braced; simply supported ends,82,LBS/FT,,,"Local buckling in web and flange of one purlin at prepunched holes 6 in. from midspan, no noticeable yielding; the other purlin buckled locally in the flange stiffener",table 3.3,"76-77, 35",C,61.5,Y,6
+B6,uplift,Z,7.92,0.060,8,.063,20,1,2,none,channel sections at 1 ft connecting bottom (tension) flanges; simply supported ends,95,LBS/FT,,,Local buckling of compression flange-web region 6 in. from midspan at prepunched hole of one purlin; at failure the other purlin reacted violently and failed in the lip-stiffener of the compression flange,table 3.3,"76-77, 37",C,61.5,Y,6
+V3,uplift,Z,7.93,0.115,8,.110,20,1,2,"through-fastened (24-ga galvanized panel, screws at 1 ft)",diaphragm (panel) braced; simply supported ends,177,LBS/FT,,,"Local buckling in the web only, at midspan of one purlin, after some observable yielding",table 3.3,"76, 34-35",D,65.9,N,m.s.
+B4,uplift,Z,7.93,0.115,8,.110,20,1,2,none,channel sections at 1 ft connecting bottom (tension) flanges; simply supported ends,254,LBS/FT,,,Violent buckling of the flange lip-stiffener of one purlin at midspan; the other purlin deflected considerably and was restrained by the test machine column,table 3.3,"76-77, 36",D,65.9,N,m.s.
+V6,uplift,Z,7.92,0.069,8,.07,20,1,2,"through-fastened (24-ga galvanized panel, self-drilling screws at 1 ft)",diaphragm (panel) braced; simply supported ends,88,LBS/FT,,,"Flange lip-stiffener buckling at midspan: stiffeners twisted outwards until buckling occurred in one purlin, followed by the other",table 3.3,"76-77, 35",E,70.5,N,m.s.
+B7,uplift,Z,7.92,0.069,8,.07,20,1,2,none,channel sections at 1 ft connecting bottom (tension) flanges; simply supported ends,105,LBS/FT,,,Buckling of the compression flange lip-stiffener at midspan of one purlin; small lateral deflections observed,table 3.3,"76-77, 37",E,70.5,N,m.s.

@@ -1,0 +1,26 @@
+# Source: MBMA_8001 | Razak, M.A.A. and Peköz, T. (1980), Table 4.8, pp.85
+# Tag: MBMA_8001_TABLE48_MINSTIFFENERREQUIREMENT
+# Content: Minimum required edge-stiffener moment of inertia from the AISI Specification compared with the actual lip-stiffener moment of inertia, using total and flat flange widths.
+# Data basis: computed: AISI Specification Section 2.3.2.1 I_min formula applied to the measured purlin dimensions
+# Units: flange widths in inches; moments of inertia in in^4
+# Column definitions:
+#   purlin_type = purlin designation letter A–E
+#   flange_width_total_in = total flange width used in case I of the computation, inches
+#   imin_total_in4 = minimum required stiffener moment of inertia based on total flange width, in^4
+#   flange_width_flat_in = flat flange width used in case II of the computation, inches
+#   imin_flat_in4 = minimum required stiffener moment of inertia based on flat flange width, in^4
+#   stiffener_i_in4 = actual moment of inertia of the lip-stiffener about its own centroidal axis, in^4
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 130 pages)
+# Footnote (1): Total flange width used.
+# Footnote (2): Flat flange width used.
+# Footnote (3): Minimum stiffener moment of inertia required.
+# Footnote (4): Moment of inertia of stiffener.
+# The lip-stiffener angle (less than 90 degrees) was taken into account in computing I_min.
+purlin_type,flange_width_total_in,imin_total_in4,flange_width_flat_in,imin_flat_in4,stiffener_i_in4
+A,2.56,.00115,2.03,.00090,.00103
+B,2.65,.00590,2.02,.00428,.00527
+C,2.49,.00097,2.01,.00077,.00131
+D,2.56,.00667,1.86,.00454,.00494
+E,2.96,.00175,2.33,.00137,.00077

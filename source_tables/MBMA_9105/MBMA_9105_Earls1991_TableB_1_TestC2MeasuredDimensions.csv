@@ -1,0 +1,22 @@
+# Source: MBMA_9105 | Earls, C.J., Pugh, A.D. and Murray, T.M. (1991), Table unlabeled (Appendix B, p. B.1), pp.26
+# Tag: MBMA_9105_TABLEB1_TESTC2MEASUREDDIMENSIONS
+# Content: Measured thickness and sweep of each of the six purlin segments of Test C2 (3 @ 23 ft 6 in. spans), recorded before testing.
+# Data basis: measured: micrometer thickness and sweep measurements of the purlins before testing
+# Units: thickness_in inches; sweep_in inches
+# Column definitions:
+#   purlin_line = purlin line of the two-purlin assembly (North or South), as printed
+#   bay = span number of the three-span continuous system (1, 2 or 3)
+#   thickness_in = measured purlin base-metal thickness in that bay, inches
+#   sweep_in = measured initial sweep (lateral crookedness) of the purlin in that bay, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 19 cells checked (AI, 2026-11-04): 19 correct, 0 errors, 1 unreadable; P(accuracy ≥ 0.8) = 98.8%, ≥ 0.9) = 87.8%, ≥ 0.95) = 64.2%
+# TEXT SOURCE: read from page images by the model (all 42 pages)
+# Table is unlabeled in the report; it appears in the Test C2 Test Summary sheet, page B.1.
+# Test C2 failure load 296.4 plf, failure mode local buckle, test date July 10, 1991.
+purlin_line,bay,thickness_in,sweep_in
+North,1,0.093,3/8
+North,2,0.090,1/4
+North,3,0.095,1/8
+South,1,0.092,3/8
+South,2,0.093,1/4
+South,3,0.092,1/8

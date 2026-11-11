@@ -1,0 +1,33 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 4-6, pp.51
+# Tag: MBMA_9410_TABLE46_ECCTESTPASCOECOND2
+# Content: Simulated (component) eccentric-load pullover tests on Pascoe panels (Fy = 55 ksi) with the panel supports offset (Condition 2), 5/1/95 to 6/18/95.
+# Data basis: measured: individual load cell peak loads at fastener failure in the simulated component test
+# Units: distances in inches; loads in pounds; panel_thickness_gage in gage
+# Column definitions:
+#   test_number = test specimen number
+#   actual_distance_in = actual distance from the fastener to the fixed boundary, inches
+#   span_length_in = simulated panel span length, inches
+#   peak_load_max_lbs = larger of the two recorded peak fastener loads, pounds (* = fastener that failed)
+#   peak_load_min_lbs = smaller of the two recorded peak fastener loads, pounds (* = fastener that failed)
+#   panel_thickness_gage = panel sheet thickness, gage
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: In the printed table the asterisk marking the failed fastener is on a separate line beneath the MAX or MIN value; here the asterisk has been attached to the value it sits under. Test numbers 1-7 repeat for the 24 and 26 gage series as printed.
+# Eccentric Loading Condition #2 = offsetting the supports (Figure 4-4).
+# Printed footnote: * Indicates Fastener Failure.
+test_number,actual_distance_in,span_length_in,peak_load_max_lbs,peak_load_min_lbs,panel_thickness_gage
+1,13.5,15,813,567 *,24
+2,11.5,13,730 *,461,24
+3,9.5,11,663 *,541,24
+4,7.5,9,925,583 *,24
+5,5.5,7,863 *,473,24
+6,3.5,5,847,608 *,24
+7,23.5,25,800 *,415,24
+1,13.5,15,628,596 *,26
+2,11.5,13,762,610 *,26
+3,9.5,11,562 *,532,26
+4,7.5,9,495,425 *,26
+5,5.5,7,785 *,683,26
+6,3.5,5,755 *,555,26
+7,23.5,25,754 *,522,26

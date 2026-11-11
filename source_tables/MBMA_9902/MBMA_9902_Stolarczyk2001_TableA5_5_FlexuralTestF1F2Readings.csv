@@ -1,0 +1,40 @@
+# Source: MBMA_9902 | Stolarczyk, J.A. and Fisher, J.M. (2001), Table A5-5, cont'd, pp.180-181
+# Tag: MBMA_9902_TABLEA55_FLEXURALTESTF1F2READINGS
+# Content: Chamber pressure and midspan deflections recorded during the uplift base tests of assemblies 1 and 2 (30-ft span).
+# Data basis: measured: pressure chamber manometer and dial gages during uplift base tests
+# Units: manometer in inches of water; pressure in psf; deflections in inches
+# Column definitions:
+#   test_no = flexural uplift test designation (F1, F2)
+#   manometer_in_h2o = manometer reading of chamber pressure, inches of water
+#   pressure_psf = corresponding uplift pressure, pounds per square foot
+#   dv_east_in = vertical deflection measured at midspan over the east purlin, inches
+#   dv_west_in = vertical deflection measured at midspan over the west purlin, inches
+#   dh_in = lateral (horizontal) translation of the purlins at midspan, inches
+#   comments = note recorded at that pressure step (Max. = maximum pressure reached)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 195 pages)
+# F1 failure: purlin rolled and clips sheared, east purlin, flanges oriented to the west.
+# F2 failure: west purlin, web and flange buckle at purlin midspan.
+test_no,manometer_in_h2o,pressure_psf,dv_east_in,dv_west_in,dh_in,comments
+F1,0.0,0.0,0.00,0.00,0.00,-
+F1,1.0,5.2,0.72,0.72,0.20,-
+F1,1.5,7.8,0.97,0.95,0.30,-
+F1,2.0,10.4,1.40,1.32,0.40,-
+F1,2.5,13.0,1.73,1.67,0.50,-
+F1,3.0,15.6,2.09,1.97,0.60,-
+F1,3.5,18.2,2.57,2.40,0.78,-
+F1,4.0,20.8,2.98,2.82,0.90,-
+F1,4.5,23.4,3.33,3.22,1.04,-
+F1,5.0,26.0,4.07,3.87,1.42,-
+F1,5.5,28.6,-,-,-,Max.
+F2,0.0,0.0,0.00,0.00,0.00,-
+F2,1.0,5.2,0.76,0.68,0.23,-
+F2,1.5,7.8,1.16,1.10,0.36,-
+F2,2.0,10.4,1.66,1.48,0.44,-
+F2,2.5,13.0,2.01,1.93,0.55,-
+F2,3.0,15.6,2.26,2.26,0.65,-
+F2,3.5,18.2,2.58,2.74,0.73,-
+F2,4.0,20.8,2.95,3.10,0.81,-
+F2,4.5,23.4,3.35,3.67,0.99,-
+F2,5.0,26.0,-,-,-,Max.

@@ -1,0 +1,529 @@
+{
+  "citation": "MBMA Report 7603 (1976)",
+  "code_tag": "MBMA_7603",
+  "experiment": "Two full-scale, three-span (25 ft spans, 75 ft long) C and Z purlin roof systems with through-fastened steel deck were loaded to failure by uniform wind-uplift suction generated in a sealed vacuum chamber, with strain, displacement and bracing-strap (turnbuckle) instrumentation recorded at each load stage, plus three in-plane deck shear tests on a 10 ft section cut from the Z purlin specimen.",
+  "title": "Full-Scale Wind Uplift Tests of Three-Span C and Z Purlin Roof Systems with Through-Fastened Steel Deck",
+  "variables": [
+    {
+      "availability": "direct",
+      "definition": "Identifier assigned to each physical load test or failure event reported in the strength summary.",
+      "evidence": "Table S1, pages 6-8, 69",
+      "name": "Test identifier",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_id"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Direction of the applied loading for each test (uplift, gravity or in-plane shear).",
+      "evidence": "Table S1, pages 6-8, 69",
+      "name": "Load direction",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "load_direction"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Purlin cross-section shape as printed on the construction drawings (C or Z).",
+      "evidence": "Table S1, pages 6-8, 69",
+      "name": "Purlin section type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "section_type"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal web depth of the purlin taken from the construction drawings (8 in. for the Z, 7 in. for the C).",
+      "evidence": "Table S1, pages 6-8, 69",
+      "name": "Purlin web depth",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "depth_in"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Purlin base metal thickness as printed on the construction drawings; the C purlin has a thinner center span (0.073 in. corrected) and thicker exterior spans (0.119 in.).",
+      "evidence": "Table S1, pages 6-8, 69; correction note on C-purlin center-span thickness (printed 't = 0.773' on Fig. 4, PDF p13)",
+      "name": "Purlin base metal thickness",
+      "note": "C center-span value corrected from printed 0.773 in. to 0.073 in. by the curator",
+      "printed_symbol": "t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "thickness_in"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal span length between support beams of the continuous purlin specimen (actual Z-system spans 24'-10 1/2\", 25'-0\", 24'-10 1/2\").",
+      "evidence": "Table S1, pages 6-8, 69; header note on support beam spacing",
+      "name": "Span length",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "span_ft"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of continuous spans in the test specimen.",
+      "evidence": "Table S1, pages 6-8, 69",
+      "name": "Number of spans",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_spans"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of parallel purlin lines in the test specimen.",
+      "evidence": "Table S1, pages 6-8, 69",
+      "name": "Number of purlin lines",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "specimen_parameter",
+      "symbols": [
+        "n_purlin_lines"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Type of roof panel and its attachment to the purlin flanges (through-fastened with No. 14 self-tapping sheet metal screws in all tests).",
+      "evidence": "Table S1, pages 6-8, 69; deck attachment header note",
+      "name": "Deck panel / attachment type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "panel_type"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Bracing arrangement of the purlin compression flange, including the 2.0 in. x 0.0625 in. steel straps welded to the flanges with turnbuckles at supports and at mid-span.",
+      "evidence": "Table S1, pages 6-8, 69",
+      "name": "Bracing arrangement",
+      "note": "Strap size 2.0 in. x 0.0625 in. is embedded in the text of this column",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "bracing"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Maximum applied uniform uplift (vacuum) pressure sustained at failure, as printed in the report text.",
+      "evidence": "Table S1, pages 6-8, 69 (failure_load_as_printed with failure_load_unit = psf)",
+      "name": "Failure uplift pressure",
+      "note": "Deck shear test rows are blank because only load-displacement curves are printed; dead-load inclusion not stated",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "measured_output",
+      "symbols": [
+        "failure_load_as_printed",
+        "failure_load_unit"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "psf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Vacuum chamber pressure at failure expressed in inches of water as read from the water manometer.",
+      "evidence": "Table S1, pages 6-8, 69",
+      "name": "Vacuum pressure at failure",
+      "note": "Not printed for the Z purlin second (induced) failure",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "measured_output",
+      "symbols": [
+        "vacuum_pressure_in_water"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in. of water"
+    },
+    {
+      "availability": "direct",
+      "definition": "Failure moment column carried in the summary table; no moment values are reported by the paper.",
+      "evidence": "Table S1, pages 6-8, 69 (failure_moment_as_printed / failure_moment_unit columns empty)",
+      "name": "Failure moment",
+      "note": "Column present but empty in every row",
+      "printed_symbol": "",
+      "quantity_kind": "moment",
+      "role": "measured_output",
+      "symbols": [
+        "failure_moment_as_printed",
+        "failure_moment_unit"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Description of the limit state that ended each test (e.g. buckle formed in the south span purlin, top flange buckled outward).",
+      "evidence": "Table S1, pages 6-8, 69",
+      "name": "Failure mode",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "failure_mode"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Printed distance of the buckle from the nearest support beam, in feet and inches.",
+      "evidence": "Table S1, pages 6-8, 69",
+      "name": "Location of buckle from support",
+      "note": "Printed as ft-in strings (e.g. 7'-3\")",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "measured_output",
+      "symbols": [
+        "failure_location"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft-in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Center-to-center spacing of the two purlin lines in each specimen (5'-0\").",
+      "evidence": "Table S1, pages 6-8, 69; header note on purlin spacing",
+      "name": "Purlin spacing",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "purlin_spacing_ft"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "inferred",
+      "definition": "Plan width of uplift pressure carried by each purlin line, computed by the curator as 8 in. from the purlin to the chamber edge plus half of the 5'-0\" purlin spacing.",
+      "evidence": "Table S1 tributary width note (Cris Moen, open question MBMA_7603-Q01)",
+      "name": "Tributary width per purlin",
+      "note": "Not printed in the report; derived from Section 1 of the drawings",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "derived_ratio",
+      "symbols": [
+        "tributary_width_ft"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "inferred",
+      "definition": "Failure load per purlin line obtained by multiplying the printed failure pressure (psf) by the 3.167 ft tributary width.",
+      "evidence": "Table S1, pages 6-8, 69; tributary width note",
+      "name": "Failure load per purlin line",
+      "note": "Applied vacuum load only; dead load not included",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "derived_ratio",
+      "symbols": [
+        "failure_load_plf"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "lb/ft"
+    },
+    {
+      "availability": "implied",
+      "definition": "Overall length (75 ft) and sealed chamber width (6 ft 4 in.) of the three-span test specimens, stated in the loading header note.",
+      "evidence": "Table S1 header note on vacuum chamber construction, page 4 reference",
+      "name": "Specimen length and chamber width",
+      "note": "Stated in a note rather than as a column",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "(header note: 75 ft long, 6 ft 4 in. wide)"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Sequential number of each recorded load stage in the uplift tests (Z test 1-16; C test continues from 17).",
+      "evidence": "Table A-1 page 73; Table B-1 page 82",
+      "name": "Load stage number",
+      "note": "",
+      "printed_symbol": "Load No.",
+      "quantity_kind": "count",
+      "role": "identifier",
+      "symbols": [
+        "load_no"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLEA1_ZPURLINUPLIFTTESTLOG",
+        "MBMA_7603_TABLEB1_CPURLINUPLIFTTESTLOG"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Uplift (vacuum) pressure held in the chamber at each recorded load stage of the Z and C purlin tests.",
+      "evidence": "Table A-1 page 73; Table B-1 page 82",
+      "name": "Load stage uplift pressure",
+      "note": "Load No. 13 printed as 31.6 psf in the log but 31.2 psf in the data tables; some C-test zero values printed as '0.[?]'",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "measured_output",
+      "symbols": [
+        "load_psf"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLEA1_ZPURLINUPLIFTTESTLOG",
+        "MBMA_7603_TABLEB1_CPURLINUPLIFTTESTLOG"
+      ],
+      "unit": "psf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Printed narrative of the specimen and instrumentation condition (bracing tension, sensor status, failure events) at each load stage.",
+      "evidence": "Table A-1 page 73; Table B-1 page 82",
+      "name": "Load stage condition note",
+      "note": "Some notes are bracketed across several load stages",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "description"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLEA1_ZPURLINUPLIFTTESTLOG",
+        "MBMA_7603_TABLEB1_CPURLINUPLIFTTESTLOG"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number identifying each of the 48 strain gage / turnbuckle gage sensors installed on the Z purlin uplift specimen.",
+      "evidence": "Table on Fig. 2 (Sheet 2), page 11",
+      "name": "Strain gage sensor number",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "identifier",
+      "symbols": [
+        "sensor"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLE2_ZPURLINSTRAINGAGELOCATIONS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Cross-section number along the Z purlin assembly at which each gage is located, per Fig. 2.",
+      "evidence": "Table on Fig. 2 (Sheet 2), page 11",
+      "name": "Gage cross-section number",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "section"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLE2_ZPURLINSTRAINGAGELOCATIONS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Letter giving the gage position within the cross section per the Fig. 2 detail sketches.",
+      "evidence": "Table on Fig. 2 (Sheet 2), page 11",
+      "name": "Gage position letter",
+      "note": "Sensor 41 printed as 'E OR F*' with footnote that the position is uncertain",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "position"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLE2_ZPURLINSTRAINGAGELOCATIONS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Offset dimension locating the strain gage within the purlin cross section, measured in inches.",
+      "evidence": "Table on Fig. 2 (Sheet 2), page 11",
+      "name": "Gage offset dimension",
+      "note": "Blank (dash) for turnbuckle/strap gages 39-48",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "dim_in"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLE2_ZPURLINSTRAINGAGELOCATIONS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Label stating whether the sweep reading is for the top or the bottom flange of the C purlin.",
+      "evidence": "Table in plan view of Fig. 4 (Sheet 4), page 13",
+      "name": "Sweep measurement location label",
+      "note": "Rows are not identified by purlin; labels repeat for the two purlins",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "measurement"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLE4_CPURLININITIALSWEEP"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Initial out-of-straightness (lateral offset from a string line) of the C purlin top or bottom flange measured at five stations along the length after erection.",
+      "evidence": "Table in plan view of Fig. 4 (Sheet 4), page 13",
+      "name": "Initial flange sweep",
+      "note": "The five measurement stations are not dimensioned on the drawing",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "sweep_1_in",
+        "sweep_2_in",
+        "sweep_3_in",
+        "sweep_4_in",
+        "sweep_5_in"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLE4_CPURLININITIALSWEEP"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Distance from the south end of the structure at which the deck screw offset was measured.",
+      "evidence": "Table C, page 90 (note 1)",
+      "name": "Screw measurement station",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "location_ft"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLEC_CPURLINSCREWOFFSETS"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "As-built offset from the purlin web to the steel-deck attachment screw, measured for the east and west C purlins at each station.",
+      "evidence": "Table C, page 90 (note 2)",
+      "name": "Deck screw offset from web",
+      "note": "Fractional inch values printed as fractions (e.g. 1 1/4)",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "east_purlin_in",
+        "west_purlin_in"
+      ],
+      "table_tags": [
+        "MBMA_7603_TABLEC_CPURLINSCREWOFFSETS"
+      ],
+      "unit": "in"
+    }
+  ],
+  "year": "1976"
+}

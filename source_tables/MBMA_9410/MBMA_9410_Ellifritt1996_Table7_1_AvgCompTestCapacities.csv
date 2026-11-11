@@ -1,0 +1,22 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 7-1, pp.174
+# Tag: MBMA_9410_TABLE71_AVGCOMPTESTCAPACITIES
+# Content: Average load capacities of self-drilling screws determined from the simulated component tests for each loading condition and panel type.
+# Data basis: computed: averages of the measured component test fastener loads
+# Units: all load columns in pounds
+# Column definitions:
+#   panels = panel supplier and sheet gage
+#   concentric_lbs = average fastener load capacity under concentric loading, pounds
+#   eccentric_cond1_lbs = average fastener load capacity, eccentric condition 1 (screws offset), pounds
+#   eccentric_cond2_lbs = average fastener load capacity, eccentric condition 2 (supports offset), pounds
+#   fixed_end_concentric_lbs = average fastener load capacity, fixed end concentric test, pounds
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: The Dean 26 ga. row has values only for the concentric column; the remaining cells are blank as printed.
+# Fixed End Concentric and Eccentric Condition 1 values were judged unsuitable for determining the reduction factor (Section 7.1).
+panels,concentric_lbs,eccentric_cond1_lbs,eccentric_cond2_lbs,fixed_end_concentric_lbs
+Pascoe 24 ga.,1064,678,567,504
+Pascoe 26 ga.,1031,729,425,281
+American 24 ga.,1160,385,740,570
+American 26 ga.,920,290,341,466
+Dean 26 ga.,782,,,

@@ -1,0 +1,20 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 7-5, pp.175
+# Tag: MBMA_9410_TABLE75_COMPVSTHEORETICAL
+# Content: Comparison of simulated component test (biaxial concentric) pullover strengths with the theoretical predictions of Chapter 5.
+# Data basis: mixed: measured component test means with theory-predicted capacities
+# Units: strengths in pounds; percent_error in percent
+# Column definitions:
+#   panels = panel supplier and sheet gage
+#   component_test_pullover_strength_lb = mean pullover strength measured in the component tests, pounds
+#   theoretical_pullover_strength_lb = pullover strength predicted by the derived theory, pounds
+#   percent_error = difference between test and predicted strength, percent
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 16 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: The two American (grade E) cases show very large errors (79.741% and 45.109%), attributed in the text to poor bracing of the high strength panels; values preserved as printed.
+# Supporting spreadsheet calculations are Tables 7-7 through 7-10.
+panels,component_test_pullover_strength_lb,theoretical_pullover_strength_lb,percent_error
+Pascoe 24 Ga.,1064,1009,5.169
+Pascoe 26 Ga.,1031,972,5.723
+American 24 Ga.,1160,235,79.741
+American 26 Ga.,920,505,45.109

@@ -1,0 +1,18 @@
+# Source: MBMA_9902 | Stolarczyk, J.A. and Fisher, J.M. (2001), Table 6, pp.70
+# Tag: MBMA_9902_TABLE6_FEMVSEXPAXIAL
+# Content: Comparison of finite element predicted axial capacities with the corrected experimental axial test results for the four assemblies.
+# Data basis: mixed: computed GTSTRUDL finite element results compared with measured (corrected) test loads
+# Units: loads in kips; ratio dimensionless
+# Column definitions:
+#   assembly_no = standing seam roof assembly number (1-4, described in Section 3.2)
+#   fem_kip = axial capacity predicted by the finite element model, kips
+#   exp_kip = corrected experimental axial capacity, kips
+#   fem_over_exp = ratio of FEM result to experimental result, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 16 cells checked (AI, 2026-11-10): 16 correct, 0 errors; P(accuracy ≥ 0.8) = 97.7%, ≥ 0.9) = 83.3%, ≥ 0.95) = 58.2%
+# TEXT SOURCE: read from page images by the model (all 195 pages)
+assembly_no,fem_kip,exp_kip,fem_over_exp
+1,42.5,24.9,1.71
+2,33.8,27.5,1.23
+3,29.8,20.8,1.43
+4,7.4,8.1,0.91

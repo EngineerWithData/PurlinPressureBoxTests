@@ -1,0 +1,52 @@
+# Source: MBMA_9804 | Bryant, M.R. and Murray, T.M. (1999), Table S1, pp.29, 38, 65, 66, 78, 93, 107, 123, 139, 151, 161
+# Tag: MBMA_9804_TABLES1_STRENGTHSUMMARY
+# Content: Measured failure (ultimate) loads, governing moments, failure modes and test-to-predicted ratios for the seven full-scale multi-span continuous C- and Z-purlin roof assemblies tested under simulated uniform gravity load in a vacuum chamber.
+# Data basis: measured: vacuum-chamber uniform gravity load tests on two-line, multi-span lapped C- and Z-purlin assemblies; loads read from U-tube manometers (1 in. water = about 5.2 psf) and converted to line load by the report; moments from the report's non-prismatic stiffness analysis at the measured failure load; test-to-predicted ratios computed by the report using 1996 AISI Specification provisions
+# Units: see column headers
+# Column definitions:
+#   test_id = test designation as printed in the report
+#   load_direction = direction of applied loading (gravity or uplift)
+#   section_type = purlin cross-section shape, C or Z
+#   depth_in = measured purlin depth, in.
+#   thickness_in = measured purlin thickness, in.
+#   span_ft = span lengths of the continuous purlin line, ft
+#   n_spans = number of continuous spans in the test assembly
+#   n_purlin_lines = number of purlin lines in the test assembly
+#   panel_type = roof panel/deck system attached to the purlin top flange
+#   bracing = lateral bracing / anti-roll clip arrangement used
+#   failure_load_as_printed = applied uniform line load at failure as printed (does not include deck or purlin self weight)
+#   failure_load_unit = unit of the failure load, as printed
+#   failure_moment_as_printed = governing moment in the test bay at the failure load, as printed on the appendix test summary sheet
+#   failure_moment_unit = unit of the failure moment, as printed
+#   failure_mode = observed failure location/mode as printed
+#   value_source = where in the report the recorded values are stated
+#   pages = PDF page numbers where the values are stated
+#   total_load_incl_self_weight_plf = total applied load including weight of deck and purlin, plf (appendix summary sheet)
+#   failure_pressure_in_h2o = vacuum chamber pressure at failure, in. of water
+#   yield_stress_ksi = tensile coupon yield stress of the failed purlin material, ksi (Table 3.1)
+#   exp_to_pred_ip_not_brace_point = experimental/predicted failure load for the critical limit state assuming the inflection point is NOT a brace point (Table 5.2)
+#   exp_to_pred_ip_brace_point = experimental/predicted failure load for the critical limit state assuming the inflection point IS a brace point (Table 5.3)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 10 cells checked (AI, 2026-11-04): 10 correct, 0 errors, 10 unreadable; P(accuracy ≥ 0.8) = 91.4%, ≥ 0.9) = 68.6%, ≥ 0.95) = 43.1%
+# TEXT SOURCE: read from page images by the model (cached transcription)
+# ANOMALY FLAG: I. P. Test 2 Z-SS: Table 3.2 lists the applied failure load as 100.8 plf, while the Appendix F test summary sheet and Tables 5.2-5.4 list 102.8 plf applied (110.82 plf total). Likewise Table 3.2 lists Test 2 Z-SS at 141.7 plf and Test 4 C-TF at 280.1 plf, whereas the appendix summaries give 141.72 plf and 280.08 plf (and Tables 5.2-5.4 list total loads of 142.4 plf and 280.3 plf).
+# All tests were gravity loading simulated by evacuating a vacuum chamber; purlins spaced 5 ft o.c. with 1 ft deck overhang each side (panel width 7 ft). The tributary width used to convert pressure to line load is not stated; the printed loads follow 19.50 plf per in. of water (Virginia Tech) and 20.15 plf per in. (Ceco). (CORRECTED 2026-11-04, Cris Moen, open question MBMA_9804-Q01: this line previously stated a 5 ft tributary width.)
+# failure_load_as_printed is the APPLIED line load only (Table 3.2); the total load including deck weight (4.00 plf) plus purlin self weight is given separately in total_load_incl_self_weight_plf from the appendix test summary sheets.
+# Failure modes marked with * in Table 3.2 denote 'Local buckling immediately outside of the lapped portion of the purlin in the exterior span'; the appendix summary sheets describe these as combined shear plus bending at the face of the lap.
+# All purlins were oriented 'opposed' (top flanges facing opposite directions); all tests used two purlin lines.
+# Lap lengths: 2 ft total (1 ft into test bay) for Tests 1 and 2; 3 ft total (1 ft into test bay) for Tests 3 and 4; 3 ft total (1.5 ft into test bay) for the three I. P. tests.
+# I. P. Test 3 Z-TF used the standing seam panel profile screw-fastened directly to the purlin top flange, i.e. acting as a through-fastened panel.
+# Standing seam tests used a reduction factor R determined by the AISI Base Test Method (R = 0.435-0.453); R = 1.0 for through-fastened panels.
+# Yield stress for I. P. Test 3 Z-TF was taken the same as the other I. P. tests because coupon material was not available.
+# Tests 1-4 were conducted at Virginia Tech; I. P. Tests 1-3 were conducted at Ceco Building Systems, Columbus, Mississippi.
+# YIELD NOTE: Table 3.1 yield = average of the 0.2% offset yields of the coupons (p.37). Per coupon (0.2% offset, ksi): Test 2 Z-SS 49.3 (CH 13, p.99) and 50.6 (CH 14, p.100); Test 3 C-SS 87.7 (p.113) and 87.7 (p.114); Test 4 C-TF 75.0 (p.129) and 75.3 (p.130). Table 5.1 uses 50.6 (coupon CH 14 only), 87.5 (no coupon's 0.2% value; equals the p.113 coupon's 0.1% offset) and 75.0 (p.129 coupon only); the report gives no reason. yield_stress_ksi in the strength summary keeps the Table 3.1 averages as the measured value; Table 5.1 is kept as printed as the inputs behind the legacy predictions, not recomputed (open question MBMA_9804-Q04).
+# CORRECTION (Cris Moen, 2026-11-04; open question MBMA_9804-Q03): I. P. Test 2 Z-SS failure_load_as_printed changed from 100.8 (Table 3.2, p.38) to 102.8 plf, the applied load on the test summary sheet (p.150: total 110.82 - deck 4.00 - purlin 4.02 = 102.80), consistent with the 5.10 in. failure manometer reading x 20.15 plf/in. and with Tables 5.2-5.4; 100.8 corresponds to 5.0 in. Table3_2 keeps 100.8 as printed.
+# APPLIED LOAD NOTE (Cris Moen, 2026-11-04; open question MBMA_9804-Q02): Tables 5.2-5.4 experimental loads: despite the note that the experimental failure load includes sheeting and purlin weight (p.65), the printed values match the applied load (Table 3.2), not the total from the test sheets: Tests 1, 3, I.P. 1, I.P. 3 equal the applied load; Test 2 142.4 vs applied 141.7 (total 150.60); Test 4 280.3 vs applied 280.1 (total 288.07); I.P. 2 102.8 = applied per the test sheet. The experimental/predicted ratios therefore rest on applied loads; they are legacy values carried as printed.
+test_id,load_direction,section_type,depth_in,thickness_in,span_ft,n_spans,n_purlin_lines,panel_type,bracing,failure_load_as_printed,failure_load_unit,failure_moment_as_printed,failure_moment_unit,failure_mode,value_source,pages,total_load_incl_self_weight_plf,failure_pressure_in_h2o,yield_stress_ksi,exp_to_pred_ip_not_brace_point,exp_to_pred_ip_brace_point
+Test 1 Z-TF,gravity,Z,8.06,0.103,"2 @ 25, 1 @ 23",3,2,Through Fastened,None lateral; anti-roll clips at the supports of both purlin lines; bottom flanges bolted to rafters,320.8,plf,207.67,kip in.,Negative Region* (Combined Shear plus Bending at Face of Lap),"table 3.2 (load, mode); appendix A test summary sheet (moment, total load, pressure); table 5.2 and 5.3 (ratios)","38, 78, 65",329.82,16.45,55.5,1.085,1.081
+Test 2 Z-SS,gravity,Z,10.06,0.084,"2 @ 25, 1 @ 23",3,2,Standing Seam,None lateral; anti-roll clips at the supports of both purlin lines; bottom flanges bolted to rafters,141.7,plf,85.30,kip in.,Positive Region (positive moment failure of near purlin),"table 3.2 (load, mode); appendix B test summary sheet (moment, total load, pressure); table 5.2 and 5.3 (ratios)","38, 93, 65",150.60,7.27,50.0,1.026,1.026
+Test 3 C-SS,gravity,C,10.00,0.078,"1 @ 24.5, 1 @ 25, 1 @ 23",3,2,Standing Seam,None lateral; anti-roll clips at the exterior supports of both purlin lines; bottom flanges bolted to rafters,210.8,plf,119.82,kip in.,Positive Region (positive moment failure of near purlin),"table 3.2 (load, mode); appendix C test summary sheet (moment, total load, pressure); table 5.2 and 5.3 (ratios)","38, 107, 65",219.64,10.81,87.7,0.955,0.955
+Test 4 C-TF,gravity,C,8.00,0.078,"1 @ 24.5, 1 @ 25, 1 @ 23",3,2,Through Fastened,None lateral; anti-roll clips at the exterior supports of both purlin lines; bottom flanges bolted to rafters,280.1,plf,179.89,kip in.,Negative Region* (Combined Shear + Bending at Lap of Near Purlin),"table 3.2 (load, mode); appendix D test summary sheet (moment, total load, pressure); table 5.2 and 5.3 (ratios)","38, 123, 65",288.07,14.36,75.2,1.096,1.083
+I. P. Test 1 Z-SS,gravity,Z,8.50,0.078,2 @ 30,2,2,Standing Seam,None lateral; anti-roll clips at each rafter support for both purlin lines,104.8,plf,81.78,kip in.,Positive Region (positive moment failure of near purlin),"table 3.2 (load, mode); appendix E test summary sheet (moment, total load, pressure); table 5.2 and 5.3 (ratios)","38, 139, 65",112.84,5.20,69.5,1.013,1.013
+I. P. Test 2 Z-SS,gravity,Z,8.50,0.078,2 @ 30,2,2,Standing Seam,None lateral per summary sheet; anti-roll clips at each rafter support for both purlin lines; brace attached between the purlin lines at the theoretical inflection point,102.8,plf,80.33,kip in.,Positive Region (positive moment failure of Near purlin),"appendix F test summary sheet p.150 (load: 110.82 total - 4.00 deck - 4.02 purlin = 102.80; moment, total load, pressure); table 3.2 (mode; prints 100.8); table 5.2 and 5.3 (ratios)","38, 151, 65, 150",110.82,5.10,69.5,0.993,0.993
+I. P. Test 3 Z-TF,gravity,Z,8.50,0.078,2 @ 30,2,2,Through Fastened (standing seam panel screw fastened directly to purlin top flange),None lateral; anti-roll clips at each rafter support for both purlin lines,161.2,plf,188.49,kip in.,Negative Region* (Combined Shear plus Bending at Face of Lap),"table 3.2 (load, mode); appendix G test summary sheet (moment, total load, pressure); table 5.2 and 5.3 (ratios)","38, 161, 65",169.22,8.00,69.5,1.226,1.110

@@ -1,0 +1,37 @@
+# Source: MBMA_9002 | Rayburn, L. and Murray, T.M. (1990), Table 4.5, pp.34
+# Tag: MBMA_9002_TABLE45_TENSILECOUPONTESTRESULTS
+# Content: Tensile coupon results (thickness, yield stress, tensile strength, elongation) for coupons cut from the web of the failed purlin of each of the 17 base tests.
+# Data basis: measured: tensile coupon tests per ASTM standard specifications, yield stress by 0.2% offset
+# Units: see column headers
+# Column definitions:
+#   series = test series the coupon belongs to (I-IV), as printed in the table body
+#   test = base test identification label from which the coupon was taken
+#   thickness_in = measured thickness of the tensile coupon, inches
+#   fy_ksi = yield stress by 0.2% offset method, ksi
+#   fu_ksi = tensile strength of the coupon, ksi
+#   elongation_percent = percent elongation of the coupon, percent
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 134 pages); 2 character(s) were illegible and are marked [?], not guessed
+# ANOMALY FLAG: Several printed thicknesses do not match the thickness implied by the test label (e.g. R-S-10Z0.092-25-0 listed as 0.093 in., R-S-10Z0.094-25 listed as 0.093 in., P-F-9C0.063-25 listed as 0.064 in., P-F-9C0.10-25 listed as 0.107 in., P-F-9C0.075-20 listed as 0.074 in.); all values are preserved verbatim as printed and NOT corrected.
+# The printed table has series heading rows (Series I, II, III, IV); these headings were moved into an added leading 'series' column so that every row has the same number of entries.
+# * Test conducted at a span length of 24'-9" (applies to R-S-8Z0.060-25-0)
+# Coupons were taken from the web area of the failed purlin in each base test.
+series,test,thickness_in,fy_ksi,fu_ksi,elongation_percent
+I,R-S-8Z0.060-25-0   *,0.061,56.8,78.7,23.6
+I,R-S-8.5Z0.06-25-0,0.060,64.3,84.2,21.1
+I,R-S-10Z0.073-25-0,0.073,59.7,94.2,14.6
+I,R-S-10Z0.092-25-0,0.093,61.5,71.8,17.5
+II,R-S-8Z0.060-25,0.060,59.5,79.9,28.5
+II,R-S-8Z0.10-25,0.100,54.8,83.1,22.8
+II,R-S-10Z0.073-25,0.073,60.8,82.3,23.8
+II,R-S-10Z0.094-25,0.093,62.2,71.4,34.0
+III,P-F-9C0.063-25,0.064,58.3,80.6,20.7
+III,P-F-9C0.064-25,0.064,51.5,74.2,28.3
+III,P-F-9C0.065-25,0.065,57.2,78.6,25.2
+III,P-F-9C0.074-25,0.074,59.2,78.2,22.3
+III,P-F-9C0.10-25,0.107,59.1,78.8,34.1
+IV,R-S-10Z0.094-20-0,0.094,59.3,70.9,34.9
+IV,R-S-10Z0.093-30-0,0.093,60.6,72.6,36.5
+IV,P-F-9C0.075-20,0.074,57.7,79.5,17.6
+IV,P-F-9C0.105-30,0.105,57.8,79.7,16.6

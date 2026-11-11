@@ -1,0 +1,65 @@
+# Source: MBMA_8404 | Hendrick, D. and Murray, T.M. (1984), Table 2.2, pp.20
+# Tag: MBMA_8404_TABLE22_CPURLINPROPERTIES
+# Content: Computed cross-sectional properties, AISI moment capacities and uniform-load/deflection values for each interior test purlin, based on measured dimensions and an assumed yield stress of 56 ksi.
+# Data basis: computed: AISI local buckling and effective width criteria applied to the measured purlin dimensions with Fy = 56 ksi
+# Units: see column headers (in^4, in^3, ksi, ft-kips, plf, in. per 100 plf)
+# Column definitions:
+#   test_no = test designation number (repeated for the West purlin row)
+#   purlin_location = which interior test purlin the properties apply to (East or West)
+#   i_gross_in4 = gross moment of inertia about the horizontal axis, in^4
+#   s_t_gross_in3 = gross section modulus referred to the top fiber, in^3
+#   s_b_gross_in3 = gross section modulus referred to the bottom fiber, in^3
+#   i_strength_in4 = effective moment of inertia used for strength (AISI effective width), in^4
+#   s_t_strength_in3 = effective section modulus, top fiber, in^3
+#   s_b_strength_in3 = effective section modulus, bottom fiber (printed under heading S_t), in^3
+#   s_e_in3 = effective flange width BE from the AISI analysis, inches (printed in the S_e column)
+#   f_c_ksi = allowable compression stress used in the AISI analysis, ksi
+#   f_t_ksi = allowable tension stress used in the AISI analysis, ksi
+#   f_bw_ksi = allowable bending stress for the web, ksi
+#   m_c_ftk = allowable moment governed by compression flange, ft-kips
+#   m_t_ftk = allowable moment governed by tension flange, ft-kips
+#   m_w_ftk = allowable moment governed by the web, ft-kips
+#   m_u_ftk = governing moment capacity times 1.67 (factor of safety removed), ft-kips
+#   w_u_plf = uniform load corresponding to M_u for the test span, pounds per lineal foot
+#   i_defl_in4 = moment of inertia used for deflection calculations, in^4
+#   delta_per_100_in = midspan deflection per 100 plf of uniform load, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 199 pages)
+# ANOMALY FLAG: Several cells contain unreadable characters printed as [?] and are preserved verbatim: 7 West i_strength_in4 '13.3[?]2'; 9 East m_w_ftk '8.14[?]'; 15 East w_u_plf '1[?]4.277' and delta_per_100_in '1.[?]92'; 15 West w_u_plf '1[?]2.188'; 16 East w_u_plf '1[?]4.183' and delta_per_100_in '1.[?]91'; 16 West w_u_plf '1[?]6.801' and delta_per_100_in '1.[?]72'. In addition, the printed column group heading reads '(1.65*allowable)' whereas the individual AISI printouts in the appendices and the table footnotes elsewhere use 1.67; and the Test 3 East m_u_ftk is printed as '13.084' (identical to its moment of inertia) whereas the corresponding printout, Figure A.20, gives 13.439. Also the 'Strength' group prints the second section modulus heading as S_t rather than S_b. All values are preserved exactly as printed and NOT corrected.
+# Note printed with the table: All calculations are based on an assumed yield stress of 56 ksi; t = top, b = bottom.
+# Span used in the calculations is 25 ft 0 in. except Tests 15 and 16 (24 ft 8 in., per the appendix printouts).
+# Measured yield stress averaged 54.0 ksi (Table 3.3).
+test_no,purlin_location,i_gross_in4,s_t_gross_in3,s_b_gross_in3,i_strength_in4,s_t_strength_in3,s_b_strength_in3,s_e_in3,f_c_ksi,f_t_ksi,f_bw_ksi,m_c_ftk,m_t_ftk,m_w_ftk,m_u_ftk,w_u_plf,i_defl_in4,delta_per_100_in
+1,East,13.107,2.952,2.922,13.038,2.927,2.915,2.227,33.600,33.600,30.430,8.197,8.163,8.056,13.453,172.196,13.107,2.273
+1,West,13.076,2.941,2.918,13.024,2.923,2.914,2.218,33.600,33.600,30.430,8.183,8.158,8.042,13.430,171.906,13.076,2.279
+2,East,13.570,3.057,3.025,13.522,3.040,3.021,2.260,33.600,33.600,30.430,8.511,8.459,8.424,14.068,180.064,13.570,2.196
+2,West,13.204,2.967,2.950,13.136,2.942,2.944,2.227,33.600,33.600,30.430,8.238,8.244,8.095,13.518,173.035,13.204,2.256
+3,East,13.084,2.943,2.920,13.032,2.925,2.915,2.218,33.600,33.600,30.430,8.189,8.163,8.048,13.084,172.025,13.084,2.277
+3,West,13.237,2.974,2.959,13.209,2.964,2.957,2.234,33.600,33.600,30.568,8.298,8.279,8.193,13.681,175.123,13.237,2.251
+4,East,13.311,2.987,2.979,13.293,2.977,2.976,2.234,33.600,33.600,30.568,8.335,8.334,8.227,13.742,175.893,13.311,2.238
+4,West,13.090,2.952,2.914,13.022,2.927,2.908,2.227,33.600,33.600,30.430,8.196,8.143,8.056,13.453,172.202,13.090,2.276
+5,East,17.588,3.948,3.957,17.588,3.948,3.957,2.165,33.600,33.600,33.133,11.055,11.073,12.051,18.461,236.306,17.588,1.694
+5,West,17.591,3.948,3.958,17.591,3.948,3.958,2.165,33.600,33.600,33.133,11.054,11.083,12.049,18.460,236.287,17.591,1.694
+6,East,10.230,2.294,2.282,9.754,2.128,2.238,1.902,33.600,33.600,27.329,5.958,6.266,5.235,8.743,111.906,10.142,2.938
+6,West,10.205,2.279,2.291,9.776,2.215,2.251,1.887,33.600,33.600,27.329,5.950,6.303,5.227,8.730,111.739,10.154,2.934
+7,East,12.977,2.919,2.896,12.868,2.880,2.886,2.219,33.600,33.600,30.287,8.064,8.081,7.885,13.168,168.545,12.977,2.296
+7,West,13.403,3.011,2.996,13.3[?]2,2.989,2.991,2.252,33.600,33.600,30.568,8.369,8.374,8.262,13.797,176.607,13.403,2.233
+8,East,13.982,3.135,3.135,13.982,3.135,3.135,2.145,33.600,33.600,31.209,8.778,8.778,8.989,14.658,187.629,13.982,2.131
+8,West,14.017,3.130,3.155,14.017,3.130,3.155,2.145,33.600,33.600,31.209,8.765,8.835,8.973,14.637,187.358,14.017,2.126
+9,East,13.003,2.917,2.910,13.003,2.917,2.910,2.171,33.600,33.600,30.430,8.167,8.149,8.14[?],13.609,174.196,13.003,2.291
+9,West,11.987,2.687,2.680,11.750,2.603,2.658,2.105,33.600,33.600,29.343,7.290,7.444,6.895,11.514,147.381,11.987,2.485
+10,East,14.360,3.236,3.204,14.360,3.236,3.204,2.247,33.600,33.600,31.238,9.061,8.972,9.178,14.983,191.779,14.360,2.075
+10,West,14.280,3.199,3.205,14.280,3.199,3.205,2.288,33.600,33.600,31.209,8.957,8.973,9.033,14.957,191.455,14.280,2.086
+11,East,14.003,3.134,3.145,14.003,3.134,3.145,2.229,33.600,33.600,31.008,8.776,8.805,8.814,14.656,187.593,14.003,2.128
+11,West,14.079,3.142,3.171,14.079,3.142,3.171,2.249,33.600,33.600,31.008,8.797,8.879,8.833,14.690,188.034,14.079,2.116
+12,East,13.940,3.150,3.101,13.940,3.150,3.101,2.246,33.600,33.600,31.088,8.821,8.682,9.005,14.498,185.579,13.940,2.337
+12,West,14.008,3.147,3.134,14.008,3.147,3.134,2.269,33.600,33.600,31.088,8.811,8.776,8.852,14.656,187.598,14.008,2.127
+13,East,13.855,3.108,3.105,13.855,3.108,3.105,2.209,33.600,33.600,31.088,8.702,8.693,8.741,14.517,185.818,13.855,2.150
+13,West,14.075,3.158,3.153,14.075,3.158,3.153,2.206,33.600,33.600,31.088,8.842,8.830,9.019,14.745,188.741,14.075,2.117
+14,East,11.811,2.623,2.666,11.688,2.580,2.655,2.051,33.600,33.600,29.343,7.224,7.434,6.830,11.406,146.002,11.811,2.523
+14,West,11.650,2.612,2.604,11.436,2.537,2.584,2.081,33.600,33.600,29.257,7.103,7.236,6.698,11.186,143.180,11.650,2.557
+15,East,14.174,3.195,3.160,14.174,3.196,3.160,2.226,33.600,33.600,31.088,8.947,8.848,9.131,14.776,1[?]4.277,14.174,1.[?]92
+15,West,14.036,3.126,3.168,14.036,3.126,3.168,2.206,33.600,33.600,31.088,8.753,8.870,8.922,14.617,1[?]2.188,14.036,2.012
+16,East,14.182,3.158,3.201,14.182,3.158,3.210,2.206,33.600,33.600,31.088,8.844,8.962,9.014,14.769,1[?]4.183,14.182,1.[?]91
+16,West,14.316,3.213,3.210,14.316,3.219,3.210,2.268,33.600,33.600,31.209,9.012,8.963,9.091,14.968,1[?]6.801,14.316,1.[?]72

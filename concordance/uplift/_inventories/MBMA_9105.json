@@ -1,0 +1,1002 @@
+{
+  "citation": "MBMA Research Report 9105 (1991)",
+  "code_tag": "MBMA_9105",
+  "experiment": "Three two-purlin-line, three-span continuous, through-fastened, unbraced C-purlin roof assemblies with reduced interior-support lap lengths (20 ft, 23 ft 6 in. and 30 ft spans) were loaded to failure by uplift (vacuum) in a test chamber, and the measured failure loads were converted to failure moments and compared with computed constrained-bending capacities.",
+  "title": "Uplift Capacity of Unbraced, Continuous-Span, Through-Fastened C-Purlin Supported Roof Systems with Reduced Lap Lengths",
+  "variables": [
+    {
+      "availability": "direct",
+      "definition": "Designation of each three-span C-purlin uplift test assembly (C1, C2, C3).",
+      "evidence": "Table 2.1 p.10; Table 2.2 p.10; Table 3.1 p.12; Table S1",
+      "name": "Test designation",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test",
+        "test_id"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE21_TESTPARAMETERS",
+        "MBMA_9105_TABLE22_COUPONTESTRESULTS",
+        "MBMA_9105_TABLE31_SUMMARYOFTESTRESULTS",
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Grouping key naming the set of tests averaged in the reduction-factor statistics (Laboube et al. 1988 data, current tests, or all).",
+      "evidence": "Table 3.3 p.14",
+      "name": "Test set grouping",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_set"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE33_REDUCTIONFACTORSTATISTICS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Purlin line of the two-purlin-line assembly (North or South) to which a measured segment belongs.",
+      "evidence": "Appendix A/B/C measured-dimension and section-property tables",
+      "name": "Purlin line",
+      "note": "Reconstructed (inferred) for the section-property tables by matching the appendix sketches",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "purlin_line"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA1_TESTC1MEASUREDDIMENSIONS",
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB1_TESTC2MEASUREDDIMENSIONS",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC1_TESTC3MEASUREDDIMENSIONS",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Span (bay) number of the three-span continuous system in which a purlin segment is located.",
+      "evidence": "Appendix A/B/C measured-dimension and section-property tables",
+      "name": "Bay number",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "identifier",
+      "symbols": [
+        "bay"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA1_TESTC1MEASUREDDIMENSIONS",
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB1_TESTC2MEASUREDDIMENSIONS",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC1_TESTC3MEASUREDDIMENSIONS",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Length of each of the three equal continuous spans of the test assembly.",
+      "evidence": "Table 2.1 p.10; Table 3.1 p.12; Table S1",
+      "name": "Span length",
+      "note": "",
+      "printed_symbol": "L",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "span_ft"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE21_TESTPARAMETERS",
+        "MBMA_9105_TABLE31_SUMMARYOFTESTRESULTS",
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal depth of the C-purlin web as specified for the test assembly.",
+      "evidence": "Table 2.1 p.10; Table S1",
+      "name": "Nominal web depth",
+      "note": "",
+      "printed_symbol": "d",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "web_depth_in",
+        "depth_in"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE21_TESTPARAMETERS",
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal flange width of the C-purlin section.",
+      "evidence": "Table 2.1 p.10",
+      "name": "Nominal flange width",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "flange_width_in"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE21_TESTPARAMETERS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal base-metal thickness of the purlins used in the assembly.",
+      "evidence": "Table 2.1 p.10; Table S1",
+      "name": "Nominal purlin thickness",
+      "note": "",
+      "printed_symbol": "t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "thickness_in"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE21_TESTPARAMETERS",
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Lap length measured on each side of the interior support, from support centre to lap end.",
+      "evidence": "Table 2.1 p.10; Table S1",
+      "name": "Lap length at interior support",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "lap_length_in"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE21_TESTPARAMETERS",
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of the interior-support lap length to the nominal purlin depth.",
+      "evidence": "Table 2.1 p.10; Table S1",
+      "name": "Lap length to depth ratio",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "lap_length_over_depth"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE21_TESTPARAMETERS",
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured width of the ASTM E8 tension coupon cut from an undamaged region of a failed purlin.",
+      "evidence": "Table 2.2 p.10",
+      "name": "Coupon width",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "width_in"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE22_COUPONTESTRESULTS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured thickness of the tension coupon taken from the failed purlin.",
+      "evidence": "Table 2.2 p.10",
+      "name": "Coupon thickness",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "thickness_in"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE22_COUPONTESTRESULTS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Yield stress of the purlin steel measured in the tension coupon test and used as the program input and in Mth.",
+      "evidence": "Table 2.2 p.10; Table 3.1 p.12; Appendix section-property screens; Table S1",
+      "name": "Yield stress",
+      "note": "",
+      "printed_symbol": "Fy",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "fy_ksi",
+        "measured_fy_ksi"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE22_COUPONTESTRESULTS",
+        "MBMA_9105_TABLE31_SUMMARYOFTESTRESULTS",
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES",
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Tensile (ultimate) stress of the purlin steel from the coupon test.",
+      "evidence": "Table 2.2 p.10",
+      "name": "Tensile strength",
+      "note": "",
+      "printed_symbol": "Fu",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "fu_ksi"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE22_COUPONTESTRESULTS"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Percent elongation of the steel measured in the tension coupon test.",
+      "evidence": "Table 2.2 p.10",
+      "name": "Elongation",
+      "note": "Printed with a percent sign",
+      "printed_symbol": "",
+      "quantity_kind": "percentage",
+      "role": "material_property",
+      "symbols": [
+        "elongation_pct"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE22_COUPONTESTRESULTS"
+      ],
+      "unit": "%"
+    },
+    {
+      "availability": "direct",
+      "definition": "Modulus of elasticity of the steel input to the purlin analysis program.",
+      "evidence": "Appendix A/B/C section-property program screens",
+      "name": "Modulus of elasticity",
+      "note": "Assumed 29,500 ksi for all segments",
+      "printed_symbol": "E",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "e_ksi"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Maximum uniform uplift load per purlin line at failure, computed from the maximum chamber vacuum and the 5 ft tributary width.",
+      "evidence": "Table 3.1 p.12; Table S1; appendix test summary sheets",
+      "name": "Failure uplift load per purlin line",
+      "note": "Net applied vacuum load, dead load not included",
+      "printed_symbol": "wu",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "wu_plf",
+        "failure_load_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE31_SUMMARYOFTESTRESULTS",
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Failure moment of the purlin computed from the failure load as Mu = 0.08 wu L^2.",
+      "evidence": "Table 3.1 p.12 (Eq. 3.1); Table S1",
+      "name": "Failure moment",
+      "note": "",
+      "printed_symbol": "Mu",
+      "quantity_kind": "moment",
+      "role": "measured_output",
+      "symbols": [
+        "mu_kip_in",
+        "failure_moment_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE31_SUMMARYOFTESTRESULTS",
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "kip-in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Average effective section modulus of the six measured purlin cross sections of a test.",
+      "evidence": "Table 3.1 p.12; Table S1",
+      "name": "Average effective section modulus",
+      "note": "",
+      "printed_symbol": "Avg. Se",
+      "quantity_kind": "area",
+      "role": "specimen_parameter",
+      "symbols": [
+        "avg_se_in3"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE31_SUMMARYOFTESTRESULTS",
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in^3"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Theoretical constrained (fully braced) bending capacity computed as Mth = (Avg. Se) Fy.",
+      "evidence": "Table 3.1 p.12 (Eq. 3.2); Table S1",
+      "name": "Theoretical bending capacity",
+      "note": "",
+      "printed_symbol": "Mth",
+      "quantity_kind": "moment",
+      "role": "predicted_value",
+      "symbols": [
+        "mth_kip_in"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE31_SUMMARYOFTESTRESULTS",
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "kip-in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of the test failure moment to the theoretical constrained-bending moment, equal to the AISI Section C3.1.3 reduction factor R.",
+      "evidence": "Table 3.1 p.12; Table S1",
+      "name": "Reduction factor Mu/Mth (R)",
+      "note": "",
+      "printed_symbol": "Mu/Mth (R)",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "mu_over_mth"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE31_SUMMARYOFTESTRESULTS",
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Mean of the reduction factor R for each test set (previous Laboube et al. tests, current tests, all).",
+      "evidence": "Table 3.3 p.14",
+      "name": "Mean reduction factor",
+      "note": "",
+      "printed_symbol": "Mean R",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "mean_r"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE33_REDUCTIONFACTORSTATISTICS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Dispersion of the reduction factor R printed as standard deviation for each test set.",
+      "evidence": "Table 3.3 p.14",
+      "name": "Std deviation of reduction factor",
+      "note": "Text describes these values as coefficients of variation",
+      "printed_symbol": "Std. Deviation",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "std_deviation_r"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLE33_REDUCTIONFACTORSTATISTICS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "implied",
+      "definition": "Current AISI reduction factor for continuous-span C-sections (R = 0.60) quoted for comparison with the test values.",
+      "evidence": "Header note to Table S1",
+      "name": "AISI code reduction factor",
+      "note": "Single stated code value, not a column",
+      "printed_symbol": "R",
+      "quantity_kind": "ratio",
+      "role": "predicted_value",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Base-metal thickness of the purlin measured in each bay before testing (also the thickness entered into the analysis program).",
+      "evidence": "Appendix A/B/C test summary sheets and section-property screens",
+      "name": "Measured purlin thickness per bay",
+      "note": "Test C3 printed values duplicate Test C2 and disagree with the C3 program output",
+      "printed_symbol": "t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "thickness_in",
+        "t_in"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA1_TESTC1MEASUREDDIMENSIONS",
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB1_TESTC2MEASUREDDIMENSIONS",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC1_TESTC3MEASUREDDIMENSIONS",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Initial lateral crookedness (sweep) of each purlin segment measured before testing.",
+      "evidence": "Appendix A/B/C test summary sheets (pages A.1, B.1, C.1)",
+      "name": "Initial sweep",
+      "note": "Recorded as \"Negligible\" for all Test C1 segments",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "sweep_in"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA1_TESTC1MEASUREDDIMENSIONS",
+        "MBMA_9105_TABLEB1_TESTC2MEASUREDDIMENSIONS",
+        "MBMA_9105_TABLEC1_TESTC3MEASUREDDIMENSIONS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured overall depth of each purlin cross section entered into the analysis program.",
+      "evidence": "Appendix A/B/C section-property program screens",
+      "name": "Measured purlin depth",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "depth_in"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Overall lip dimension of the top (compression) flange of the measured cross section.",
+      "evidence": "Appendix A/B/C section-property program screens",
+      "name": "Top lip length",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "top_lip_in"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Overall lip dimension of the bottom (tension) flange of the measured cross section.",
+      "evidence": "Appendix A/B/C section-property program screens",
+      "name": "Bottom lip length",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "bottom_lip_in"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured width of the top (compression) flange of each purlin segment.",
+      "evidence": "Appendix A/B/C section-property program screens",
+      "name": "Top flange width",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "top_flange_in"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured width of the bottom (tension) flange of each purlin segment.",
+      "evidence": "Appendix A/B/C section-property program screens",
+      "name": "Bottom flange width",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "bottom_flange_in"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "implied",
+      "definition": "Angle of the stiffening lips, listed as 90 degrees on every analysis program screen.",
+      "evidence": "Header note to the Appendix A/B/C section-property tables",
+      "name": "Lip angle",
+      "note": "Constant stated in a note, not a column",
+      "printed_symbol": "",
+      "quantity_kind": "angle",
+      "role": "specimen_parameter",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "deg"
+    },
+    {
+      "availability": "implied",
+      "definition": "Corner radius between lip and flange input to the analysis (5/16 in. for C1 and C2, 3/8 in. for C3).",
+      "evidence": "Header notes to the Appendix A/B/C section-property tables",
+      "name": "Lip-to-flange radius",
+      "note": "Stated as a constant per test in a note",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "implied",
+      "definition": "Corner radius between flange and web input to the analysis (3/8 in. for C1, 5/16 in. for C2, 3/8 in. for C3).",
+      "evidence": "Header notes to the Appendix A/B/C section-property tables",
+      "name": "Flange-to-web radius",
+      "note": "Stated as a constant per test in a note",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Gross cross-sectional area of the measured purlin section computed by the analysis program.",
+      "evidence": "Appendix A/B/C section-property program screens",
+      "name": "Gross area",
+      "note": "",
+      "printed_symbol": "Ag",
+      "quantity_kind": "area",
+      "role": "specimen_parameter",
+      "symbols": [
+        "ag_in2"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "in^2"
+    },
+    {
+      "availability": "direct",
+      "definition": "Moment of inertia about the x-axis computed by the analysis program from the measured dimensions.",
+      "evidence": "Appendix A/B/C section-property program screens",
+      "name": "Moment of inertia Ix",
+      "note": "Unit in^4; nearest available quantity kind used",
+      "printed_symbol": "Ix",
+      "quantity_kind": "area",
+      "role": "specimen_parameter",
+      "symbols": [
+        "ix_in4"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "in^4"
+    },
+    {
+      "availability": "direct",
+      "definition": "Moment of inertia about the y-axis computed by the analysis program.",
+      "evidence": "Appendix A/B/C section-property program screens",
+      "name": "Moment of inertia Iy",
+      "note": "Unit in^4; nearest available quantity kind used",
+      "printed_symbol": "Iy",
+      "quantity_kind": "area",
+      "role": "specimen_parameter",
+      "symbols": [
+        "iy_in4"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "in^4"
+    },
+    {
+      "availability": "direct",
+      "definition": "Product of inertia of the measured cross section computed by the analysis program.",
+      "evidence": "Appendix A/B/C section-property program screens",
+      "name": "Product of inertia Ixy",
+      "note": "Unit in^4; nearest available quantity kind used",
+      "printed_symbol": "Ixy",
+      "quantity_kind": "area",
+      "role": "specimen_parameter",
+      "symbols": [
+        "ixy_in4"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "in^4"
+    },
+    {
+      "availability": "direct",
+      "definition": "Effective moment of inertia of the purlin section computed by the analysis program.",
+      "evidence": "Appendix A/B/C section-property program screens",
+      "name": "Effective moment of inertia",
+      "note": "Unit in^4; nearest available quantity kind used",
+      "printed_symbol": "Ieff",
+      "quantity_kind": "area",
+      "role": "specimen_parameter",
+      "symbols": [
+        "ieff_in4"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "in^4"
+    },
+    {
+      "availability": "direct",
+      "definition": "Effective section modulus of each measured purlin segment computed by the analysis program; averaged to give Avg. Se.",
+      "evidence": "Appendix A/B/C section-property program screens",
+      "name": "Effective section modulus",
+      "note": "",
+      "printed_symbol": "Seff",
+      "quantity_kind": "area",
+      "role": "specimen_parameter",
+      "symbols": [
+        "seff_in3"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "in^3"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Allowable positive bending moment of the measured section computed by the purlin analysis program.",
+      "evidence": "Appendix A/B/C section-property program screens",
+      "name": "Allowable positive moment",
+      "note": "",
+      "printed_symbol": "Ma (+)",
+      "quantity_kind": "moment",
+      "role": "predicted_value",
+      "symbols": [
+        "ma_pos_kip_in"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "kip-in"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Allowable negative bending moment of the measured section computed by the purlin analysis program.",
+      "evidence": "Appendix A/B/C section-property program screens",
+      "name": "Allowable negative moment",
+      "note": "",
+      "printed_symbol": "Ma (-)",
+      "quantity_kind": "moment",
+      "role": "predicted_value",
+      "symbols": [
+        "ma_neg_kip_in"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "kip-in"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Allowable shear strength of the purlin web computed by the analysis program.",
+      "evidence": "Appendix A/B/C section-property program screens",
+      "name": "Allowable shear strength",
+      "note": "Printed with a blank web-stiffener spacing (Based on a = \" \")",
+      "printed_symbol": "Va",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "va_kip"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "kips"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Allowable web crippling strength at an exterior support computed by the analysis program for N = 4 in.",
+      "evidence": "Appendix A/B/C section-property program screens",
+      "name": "Allowable exterior web crippling",
+      "note": "",
+      "printed_symbol": "Ext. Pa",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "ext_pa_kip"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "kips"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Allowable web crippling strength at an interior support computed by the analysis program for N = 4 in.",
+      "evidence": "Appendix A/B/C section-property program screens",
+      "name": "Allowable interior web crippling",
+      "note": "",
+      "printed_symbol": "Int. Pa",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "int_pa_kip"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "kips"
+    },
+    {
+      "availability": "implied",
+      "definition": "Bearing length assumed in the web crippling calculations, stated as N = 4 in. for all program screens.",
+      "evidence": "Header notes to the Appendix A/B/C section-property tables",
+      "name": "Bearing length N",
+      "note": "Stated in a note, not a column",
+      "printed_symbol": "N",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+        "MBMA_9105_TABLEB2_TESTC2SECTIONPROPERTIES",
+        "MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Direction of the applied load on the roof assembly (uplift, applied by evacuating air above the panels).",
+      "evidence": "Table S1 and header note",
+      "name": "Load direction",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "load_direction"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Cross-section shape of the purlins tested (C-section).",
+      "evidence": "Table S1",
+      "name": "Section type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "section_type"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of continuous spans in the test assembly (three for all tests).",
+      "evidence": "Table S1",
+      "name": "Number of spans",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_spans"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of parallel purlin lines in the test assembly (two for all tests).",
+      "evidence": "Table S1",
+      "name": "Number of purlin lines",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_purlin_lines"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "implied",
+      "definition": "Spacing of the purlin lines, 5 ft on centre, which also defines the tributary width used to compute wu.",
+      "evidence": "Header note to Table S1",
+      "name": "Purlin spacing / tributary width",
+      "note": "Stated in a note, not a column",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Type, attachment and gage of the roof panels used (through-fastened 26 or 24 gage, with two layers in C1 and C2).",
+      "evidence": "Table S1 and header notes",
+      "name": "Roof panel type and gage",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "panel_type"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Lateral bracing condition of the purlin compression (bottom) flange; all tests were unbraced.",
+      "evidence": "Table S1 and header note",
+      "name": "Bracing condition",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "bracing"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Observed mode that terminated each test (local buckling for C1 and C2; excessive lateral deflection for C3).",
+      "evidence": "Table S1; appendix test summary sheets pp.17, 26, 35",
+      "name": "Failure mode",
+      "note": "In the appendix measured-dimension tables it appears only as a header note",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "failure_mode"
+      ],
+      "table_tags": [
+        "MBMA_9105_TABLES1_STRENGTHSUMMARY",
+        "MBMA_9105_TABLEA1_TESTC1MEASUREDDIMENSIONS",
+        "MBMA_9105_TABLEB1_TESTC2MEASUREDDIMENSIONS",
+        "MBMA_9105_TABLEC1_TESTC3MEASUREDDIMENSIONS"
+      ],
+      "unit": ""
+    }
+  ],
+  "year": "1991"
+}

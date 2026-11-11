@@ -1,0 +1,33 @@
+# Source: MBMA_9906 | Trout, A.M. and Murray, T.M. (2000), Table 5.2, pp.39
+# Tag: MBMA_9906_TABLE52_AVGRVALUESPANELTHICKNESS
+# Content: Average experimental Rt-values for the controlling clip type compared between 22 and 24 gage roof panels for 8 in. and 10 in. deep purlins.
+# Data basis: computed: averages of the experimental Rt-values from the base tests plotted in Figures 5.5-5.10
+# Units: flange_width_in, purlin_depth_in, purlin_thickness_in in inches; average_rt_x100 and percent_difference in percent
+# Column definitions:
+#   figure = figure number of the plot from which the averages were taken
+#   panel_gage = roof panel thickness, gage
+#   flange_width_in = nominal purlin flange width, inches
+#   purlin_depth_in = nominal purlin depth, inches
+#   purlin_thickness_in = nominal purlin thickness, inches
+#   controlling_clip_type = clip type giving the lowest Rt-values for the set
+#   average_rt_x100 = average Rt-value for the controlling clip type times 100, percent
+#   percent_difference = percent difference between the two panel gages of the pair
+#   note = comment printed in the right-hand column of the table
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 619 pages); 9 character(s) were illegible and are marked [?], not guessed
+# Printed note: "Positive percent change indicates lower strength values obtained with 22 ga. roof panel thickness. Negative percent change indicates lower strength values obtained with 24 ga. roof panel thickness."
+# Percent difference and note are printed once for each pair of rows; here they are repeated on the first row of the pair with the paired row left blank.
+figure,panel_gage,flange_width_in,purlin_depth_in,purlin_thickness_in,controlling_clip_type,average_rt_x100,percent_difference,note
+5.5,22,2 ½,10,0.075,Tall Sliding,54.0,3.1,Essentially the Same
+5.5,24,2 ½,10,0.075,Tall Sliding,55.7,,
+5.6,22,2 ½,10,0.100,Tall Sliding,60.0,2.4,Essentially the Same
+5.6,24,2 ½,10,0.100,Tall Sliding,61.5,,
+5.7,22,3 ½,10,0.075,Tall Sliding,61.6,-0.9,Essentially the Same
+5.7,24,3 ½,10,0.075,Tall Sliding,61.1,,
+5.8,22,3 ½,10,0.100,Tall Sliding,59.0,-3.1,Essentially the Same
+5.8,24,3 ½,10,0.100,Tall Sliding,57.2,,
+5.9,22,2 ½,8,0.060,Tall Sliding,55.5,15.8,Rt for Tests With 22 ga. Panels is Lower
+5.9,24,2 ½,8,0.060,Tall Sliding,65.9,,
+5.10,22,2 ½,8,0.100,Tall Sliding,75.1,-17.2,Rt for Tests With 24 ga. Panels is Lower
+5.10,24,2 ½,8,0.100,Tall Sliding,64.1,,

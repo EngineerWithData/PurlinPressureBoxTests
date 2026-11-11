@@ -1,0 +1,17 @@
+# Source: MBMA_9501 | Fisher, J.M. (1996), Table 7, pp.9
+# Tag: MBMA_9501_TABLE7_RVALUES95INCHC
+# Content: R value for the single 9.5 inch deep C member tested in this study.
+# Data basis: measured: uplift test in the vacuum chamber
+# Units: see column headers; R dimensionless
+# Column definitions:
+#   test_no = test identifier from Table 1
+#   member_type = cross-section profile, C
+#   member_depth_in = nominal depth of the member, inches
+#   member_length_ft = simple span length of the member, feet
+#   member_thick_in = member thickness, inches
+#   r = reduction factor, tested moment divided by calculated nominal moment
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 6 cells checked (AI, 2026-11-04): 6 correct, 0 errors; P(accuracy ≥ 0.8) = 79.0%, ≥ 0.9) = 52.2%, ≥ 0.95) = 30.2%
+# TEXT SOURCE: read from page images by the model (all 47 pages)
+test_no,member_type,member_depth_in,member_length_ft,member_thick_in,r
+29,C,9.5,29.17,0.090,0.57

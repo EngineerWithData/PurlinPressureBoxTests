@@ -1,0 +1,36 @@
+# Source: MBMA_8903 | Brooks, S. and Murray, T.M. (1989), Table Z-T-R/S-3, pp.118
+# Tag: MBMA_8903_TABLEZTRS3_PURLINGEOMZTRS3
+# Content: Measured cross-section geometry, coupon yield stress and computed flexural capacity of the nine purlins of third point braced three span confirming test Z-T-R/S-3.
+# Data basis: mixed: measured cross-section dimensions and coupon yield stress with computed moment of inertia and AISI capacity
+# Units: units are given in each parameter label (inches, degrees, inches4, ksi, kip-inch)
+# Column definitions:
+#   parameter = measured cross-section dimension or computed property; unit given in the label
+#   east_ridge = value for the ridge purlin line in the east bay
+#   east_intermediate = value for the intermediate purlin line in the east bay
+#   east_eave = value for the eave purlin line in the east bay
+#   center_ridge = value for the ridge purlin line in the center bay
+#   center_intermediate = value for the intermediate purlin line in the center bay
+#   center_eave = value for the eave purlin line in the center bay
+#   west_ridge = value for the ridge purlin line in the west bay
+#   west_intermediate = value for the intermediate purlin line in the west bay
+#   west_eave = value for the eave purlin line in the west bay
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 120 pages)
+# Table is unnumbered; headed "TEST Z-T-R/S-3 MEASURED GEOMETRY OF PURLIN CROSS-SECTIONS" (page B.26).
+parameter,east_ridge,east_intermediate,east_eave,center_ridge,center_intermediate,center_eave,west_ridge,west_intermediate,west_eave
+TOP Vertical Lip Dimension (inches),0.81,0.81,0.81,0.81,0.81,0.81,0.81,0.81,0.81
+TOP Lip Angle (degree),47.0,47.0,47.0,47.0,47.0,44.0,47.0,45.0,45.0
+TOP Flange Width (inches),2.38,2.44,2.38,2.44,2.38,2.38,2.44,2.44,2.50
+TOP Radii Lip to Flange (inches),0.34,0.34,0.34,0.34,0.34,0.34,0.34,0.34,0.34
+TOP Radii Flange to Web (inches),0.22,0.22,0.22,0.22,0.22,0.22,0.22,0.22,0.22
+BOTTOM Vertical Lip Dimension (inches),0.75,0.75,0.75,0.75,0.75,0.75,0.75,0.75,0.75
+BOTTOM Lip Angle (degree),42.0,44.0,43.0,42.0,42.0,40.0,42.0,43.0,41.0
+BOTTOM Flange Width (inches),2.50,2.44,2.44,2.44,2.50,2.50,2.44,2.44,2.44
+BOTTOM Radii Lip to Flange (inches),0.34,0.34,0.34,0.34,0.34,0.34,0.34,0.34,0.34
+BOTTOM Radii Flange to Web (inches),0.22,0.22,0.22,0.22,0.22,0.22,0.22,0.22,0.22
+Total Depth (inches),9.575,9.575,9.575,9.575,9.575,9.575,9.575,9.575,9.575
+Thickness (inches),0.075,0.075,0.075,0.075,0.075,0.075,0.075,0.075,0.075
+Gross Moment of Inertia (inches4),16.06,16.00,15.92,16.06,16.06,16.21,16.06,16.08,16.25
+Material Yield Stress (ksi),62.57,62.57,62.57,62.57,62.57,62.57,62.57,62.57,62.57
+1986 AISI Allowable flexural capacity x 1.67 (kip-inch),198.3,196.5,197.6,196.8,198.3,197.7,196.8,197.7,195.5

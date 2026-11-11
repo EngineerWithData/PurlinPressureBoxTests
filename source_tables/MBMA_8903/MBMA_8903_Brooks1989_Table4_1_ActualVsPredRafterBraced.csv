@@ -1,0 +1,31 @@
+# Source: MBMA_8903 | Brooks, S. and Murray, T.M. (1989), Table 4.1, pp.27
+# Tag: MBMA_8903_TABLE41_ACTUALVSPREDRAFTERBRACED
+# Content: Comparison of measured three span failure loads with loads predicted by the base test method for the rafter braced test sets.
+# Data basis: mixed: measured base test and three span failure loads with base-test-method predicted capacities
+# Units: see column headers
+# Column definitions:
+#   test_designation = test set label (purlin, bracing, panel, clip, orientation code)
+#   wu_base_plf = failure load of the single span base test, plf per purlin line
+#   mus_kip_in = maximum moment of the single span base test at wu, inch-kips
+#   fy_ksi = measured yield stress used in the calculations, ksi
+#   maisi_kip_in = 1986 AISI allowable flexural capacity x 1.67 (constrained bending), inch-kips
+#   mmax_neg_kip_in = maximum negative moment from stiffness analysis at 100 plf, inch-kips
+#   mmax_pos_kip_in = maximum positive moment from stiffness analysis at 100 plf, inch-kips
+#   wp3_neg_plf = predicted three span failure load if the negative moment controls, plf
+#   wp3_pos_plf = predicted three span failure load if the positive moment controls, plf
+#   wp3_plf = predicted three span failure load, minimum of the two values, plf
+#   wu_3span_plf = actual measured failure load of the three span test, plf
+#   wu_over_wp3 = ratio of actual to predicted three span failure load, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 120 pages)
+# ANOMALY FLAG: The footnote "*Assumed yield stress" is printed but no value in the table carries an asterisk; preserved as printed. The single span failure load for Z-R-P/F is printed as 60.5 plf here but as 60.48 plf in Table 3.2; both preserved verbatim and NOT corrected.
+# Predicted loads follow the base test method of Figure 1.1: positive moment limited by the base test moment, negative moment limited by the fully braced AISI capacity.
+# For test set Z-R-R/S the three span failure was premature (shipping/handling damage) so the ratio 0.61 was excluded from the evaluation.
+test_designation,wu_base_plf,mus_kip_in,fy_ksi,maisi_kip_in,mmax_neg_kip_in,mmax_pos_kip_in,wp3_neg_plf,wp3_pos_plf,wp3_plf,wu_3span_plf,wu_over_wp3
+Z-R-R/S,136.5,128.0,59.80,197.0,40.10,50.70,491.3,252.4,252.4,152.9,0.61
+Z-R-R/F,64.5,60.5,68.51,109.9,51.10,51.40,215.1,117.7,117.7,107.1,0.91
+Z-R-P/F,60.5,56.7,59.93,105.4,46.40,51.20,227.2,110.7,110.7,102.5,0.93
+Z-R-P/S,80.0,75.0,59.02,174.1,47.20,51.00,368.9,147.0,147.0,128.2,0.87
+C-R-P/S,119.0,111.6,66.00,143.2,42.70,50.40,335.4,221.4,221.4,217.0,0.98
+Z-R-R/F (0),87.0,81.6,61.57,118.1,50.90,51.20,232.0,159.3,159.3,158.0,0.99

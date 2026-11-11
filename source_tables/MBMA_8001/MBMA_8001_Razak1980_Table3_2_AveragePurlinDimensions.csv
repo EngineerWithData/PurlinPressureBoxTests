@@ -1,0 +1,36 @@
+# Source: MBMA_8001 | Razak, M.A.A. and Peköz, T. (1980), Table 3.2, pp.75
+# Tag: MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS
+# Content: Averaged measured cross-sectional dimensions of the five Z-purlin types (top and bottom flange widths, lip lengths, lip angles, corner-radius-to-thickness ratios and thickness).
+# Data basis: measured: dimensions scaled from sprayed profile images of 18-inch purlin sections, averaged per purlin type
+# Units: see column headers (inches, degrees, dimensionless ratios)
+# Column definitions:
+#   purlin_type = purlin designation letter A–E (Fig. 3.5)
+#   h_in = overall depth H of the Z-section, inches (Fig. 3.5)
+#   bt_in = total top (compression) flange width b_t, inches (Fig. 3.5)
+#   wt_in = flat width w_t of the top flange, inches (Fig. 3.5)
+#   st_in = total top lip-stiffener length s_t, inches (Fig. 3.5)
+#   dt_in = flat width d_t of the top lip-stiffener, inches (Fig. 3.5)
+#   phit_deg = angle φ_t between top lip-stiffener and flange, degrees (Fig. 3.5)
+#   rcap_t_over_t = ratio R_t/t of top web-flange corner radius to thickness, dimensionless (Fig. 3.5)
+#   r_t_over_t = ratio r_t/t of top flange-stiffener corner radius to thickness, dimensionless (Fig. 3.5)
+#   t_in = purlin sheet thickness, inches
+#   bb_in = total bottom (tension) flange width b_b, inches (Fig. 3.5)
+#   wb_in = flat width w_b of the bottom flange, inches (Fig. 3.5)
+#   sb_in = total bottom lip-stiffener length s_b, inches (Fig. 3.5)
+#   db_in = flat width d_b of the bottom lip-stiffener, inches (Fig. 3.5)
+#   phib_deg = angle φ_b between bottom lip-stiffener and flange, degrees (Fig. 3.5)
+#   rcap_b_over_t = ratio R_b/t of bottom web-flange corner radius to thickness, dimensionless
+#   r_b_over_t = ratio r_b/t of bottom flange-stiffener corner radius to thickness, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 130 pages)
+# ANOMALY FLAG: The printed table is split into an upper block (top-flange dimensions, H and t) and a lower block (bottom-flange dimensions) on the same page; both blocks have been merged here into one row per purlin type, preserving all printed values.
+# Footnote (1): Dimensions as in Figure 3.5.
+# Subscript t refers to the top (compression) flange and subscript b to the bottom (tension) flange of the Z-section in the uplift test orientation.
+# The paper does not explicitly define R versus r; from Fig. 3.5, R is the web-flange corner radius and r the flange-stiffener corner radius.
+purlin_type,h_in,bt_in,wt_in,st_in,dt_in,phit_deg,rcap_t_over_t,r_t_over_t,t_in,bb_in,wb_in,sb_in,db_in,phib_deg,rcap_b_over_t,r_b_over_t
+A,9.45,2.56,2.03,0.76,0.60,42,5.17,8.13,0.063,2.65,2.10,0.84,0.64,44.5,5.40,8.60
+B,9.46,2.65,2.02,1.12,0.90,40,3.12,6.24,0.109,2.72,2.08,1.25,0.90,42,3.76,7.06
+C,7.92,2.49,2.01,0.86,0.64,40,5.00,6.54,0.060,2.42,2.01,0.86,0.68,36,3.67,8.67
+D,7.93,2.56,1.86,1.10,0.81,35.5,3.87,7.00,0.115,2.57,1.88,1.22,0.85,42,3.52,7.48
+E,7.92,2.96,2.33,0.74,0.48,35,4.42,8.70,0.069,2.92,2.38,0.74,0.47,36,5.14,9.86

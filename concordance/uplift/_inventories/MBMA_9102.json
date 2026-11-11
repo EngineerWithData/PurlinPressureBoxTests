@@ -1,0 +1,606 @@
+{
+  "citation": "Anderson, B.B. and Murray, T.M. (1991)",
+  "code_tag": "MBMA_9102",
+  "experiment": "Four sets of full-scale standing seam roof assemblies (Z and C purlins, pan or rib deck, sliding or fixed clips, rafter or third-point bracing) were loaded to failure by uplift in a vacuum chamber as single-span \"base\" tests and as matching three-span confirming tests, and the measured multispan capacities were compared with base-test-method predictions (supplemented by the companion 1990 test data).",
+  "title": "Base Test Method for Standing Seam Roof Systems: 1991 Uplift Tests of Z- and C-Purlin Supported Roof Assemblies",
+  "variables": [
+    {
+      "availability": "direct",
+      "definition": "Label of each test set or individual test coding purlin type, bracing, deck, clip and purlin orientation (suffix -1 one span, -3 three span, (O) opposed).",
+      "evidence": "Tables 1.1, 2.1, 3.1, 3.2, 3.3, 4.1-4.5 and Table S1, pp. 10-32 and 25-99",
+      "name": "Test designation",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_designation",
+        "identification",
+        "test",
+        "test_id"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE11_UPLIFT1990SUMMARY",
+        "MBMA_9102_TABLE21_TESTMATRIX1991",
+        "MBMA_9102_TABLE31_TENSILETESTS1991",
+        "MBMA_9102_TABLE32_TESTS1991SUMMARY",
+        "MBMA_9102_TABLE33_UPLIFTTESTDATABASE",
+        "MBMA_9102_TABLE41_BASETESTCALCS1991",
+        "MBMA_9102_TABLE42_BASETESTACCURACY",
+        "MBMA_9102_TABLE43_FAILURELOADCOMPARISON",
+        "MBMA_9102_TABLE44_BASE91PREDICTS90",
+        "MBMA_9102_TABLE45_BASE90PREDICTS91",
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Cross-section shape of the purlins in the assembly, Z or C, as listed in the test matrix and strength summary.",
+      "evidence": "Table 2.1 p. 13; Table S1",
+      "name": "Purlin section type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "purlin",
+        "section_type"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE21_TESTMATRIX1991",
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Lateral bracing arrangement of the purlins, either at the rafters (supports) only or at rafters plus third points.",
+      "evidence": "Table 2.1 p. 13; Table S1",
+      "name": "Bracing configuration",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "bracing"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE21_TESTMATRIX1991",
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Type of 24 ga. standing seam roof panel used, pan or rib profile.",
+      "evidence": "Table 2.1 p. 13; Table S1",
+      "name": "Deck/panel type",
+      "note": "The UZTR/F-1 1991 data sheet prints \"Pan Type Deck\" although the designation and Table 2.1 specify rib deck.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "deck",
+        "panel_type"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE21_TESTMATRIX1991",
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Standing seam clip type connecting panel to purlin, sliding (two piece) or fixed (one piece).",
+      "evidence": "Table 2.1 p. 13; Table S1",
+      "name": "Clip type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "clip",
+        "clip_type"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE21_TESTMATRIX1991",
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Orientation of adjacent purlin lines, all facing the same direction or opposed.",
+      "evidence": "Table 2.1 p. 13",
+      "name": "Purlin orientation",
+      "note": "Also encoded as \"(O)\" in the test designations.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "orientation"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE21_TESTMATRIX1991"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Total lap length at the interior rafters, measured between the ends of the lap (not between web bolts).",
+      "evidence": "Table 2.1 p. 13; repeated as lap_length_in in Table S1",
+      "name": "Lap length",
+      "note": "Laps were not necessarily equal on both sides of the interior rafter.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "lap_in",
+        "lap_length_in"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE21_TESTMATRIX1991",
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured base-metal thickness of the purlin, from tensile coupons cut from the failed purlin and from the per-purlin measured dimensions on the test summary sheets.",
+      "evidence": "Table 3.1 p. 24; Table S1 (ranges over the purlins of an assembly)",
+      "name": "Purlin thickness",
+      "note": "Table S1 values are ranges assembled from the test summary sheets.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "thickness_in"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE31_TENSILETESTS1991",
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured web depth of the purlins in the assembly, read from the test summary sheets.",
+      "evidence": "Table S1 (depth_in column)",
+      "name": "Purlin web depth",
+      "note": "Reported as a range over the purlins of an assembly.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "depth_in"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Yield stress of the purlin steel measured on tensile coupons cut from the failed purlins and used in the base-test-method calculations.",
+      "evidence": "Table 3.1 p. 24; Table 4.1 p. 29 (F_y); Table S1",
+      "name": "Yield stress",
+      "note": "The printed unit row of Table 3.1 erroneously shows \"(in)\" over the yield stress column.",
+      "printed_symbol": "Fy",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "yield_stress_ksi",
+        "fy_ksi"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE31_TENSILETESTS1991",
+        "MBMA_9102_TABLE41_BASETESTCALCS1991",
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Ultimate tensile strength of the purlin steel measured on the tensile coupons.",
+      "evidence": "Table 3.1 p. 24",
+      "name": "Tensile strength",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "tensile_strength_ksi"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE31_TENSILETESTS1991"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Elongation at fracture of the tensile coupon.",
+      "evidence": "Table 3.1 p. 24",
+      "name": "Elongation",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "percentage",
+      "role": "material_property",
+      "symbols": [
+        "elongation_percent"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE31_TENSILETESTS1991"
+      ],
+      "unit": "%"
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of spans in the tested roof assembly, one (base test) or three (confirming test).",
+      "evidence": "Tables 3.2 p. 25, 3.3 p. 26; Table S1",
+      "name": "Number of spans",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "no_of_spans",
+        "no_of_spans_1990",
+        "no_of_spans_1991",
+        "n_spans"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE32_TESTS1991SUMMARY",
+        "MBMA_9102_TABLE33_UPLIFTTESTDATABASE",
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Individual span length of the test assembly (25 ft for base tests, 23'-6\" for multispan tests).",
+      "evidence": "Table S1 (span_ft column)",
+      "name": "Span length",
+      "note": "",
+      "printed_symbol": "L",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "span_ft"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of purlin lines in the test assembly.",
+      "evidence": "Table S1 (n_purlin_lines column)",
+      "name": "Number of purlin lines",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_purlin_lines"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "On-center spacing of the purlin lines, 5'-0\" for facing purlins and 3'-7\" for opposed purlins; equals the tributary width of the line load.",
+      "evidence": "Table S1 (purlin_spacing column) and header note on tributary width",
+      "name": "Purlin spacing",
+      "note": "Printed as a text dimension string (e.g. \"5'-0\" O.C.\").",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "purlin_spacing"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft-in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Direction of the applied load; all tests reported are uplift (vacuum chamber) tests.",
+      "evidence": "Table S1 (load_direction column) and header note",
+      "name": "Load direction",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "load_direction"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured uniform uplift load per purlin line at failure of the assembly, reported for both one-span and three-span tests in the summary tables and data sheets.",
+      "evidence": "Table 3.2 p. 25; Table 3.3 p. 26; Table S1 (failure_load_as_printed, failure_load_table_3_2_plf)",
+      "name": "Measured uplift failure load",
+      "note": "Table 3.2/3.3 values exceed the appendix data-sheet values by about 5 plf (base tests) and 6-7 plf (multispan); the report gives no explanation.",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "failure_load_plf",
+        "failure_load_as_printed",
+        "failure_load_table_3_2_plf",
+        "failure_load_1990_plf",
+        "failure_load_1991_plf"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE32_TESTS1991SUMMARY",
+        "MBMA_9102_TABLE33_UPLIFTTESTDATABASE",
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured uniform uplift failure load of the simple-span base test, used as the predictor in the base test method.",
+      "evidence": "Table 4.1 p. 29 (w_US); Table 4.3 p. 31 (1990 and 1991 base tests)",
+      "name": "Base test failure load w_US",
+      "note": "Same physical quantity as the one-span rows of the measured failure load, repeated here in its prediction role.",
+      "printed_symbol": "w_US",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "w_us_plf",
+        "w_us_1990_plf",
+        "w_us_1991_plf"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE41_BASETESTCALCS1991",
+        "MBMA_9102_TABLE43_FAILURELOADCOMPARISON"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured uniform uplift failure load of the three-span confirming test, compared against the base-test prediction.",
+      "evidence": "Tables 1.1 p. 10, 4.1 p. 29, 4.2 p. 30, 4.3 p. 31, 4.4 and 4.5 p. 32",
+      "name": "Multispan failure load w_U3",
+      "note": "Dashes appear for UZTR/F 1991 because that test ended in deck failure.",
+      "printed_symbol": "w_U3",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "w_u3_plf",
+        "w_u3_1990_plf",
+        "w_u3_1991_plf"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE11_UPLIFT1990SUMMARY",
+        "MBMA_9102_TABLE41_BASETESTCALCS1991",
+        "MBMA_9102_TABLE42_BASETESTACCURACY",
+        "MBMA_9102_TABLE43_FAILURELOADCOMPARISON",
+        "MBMA_9102_TABLE44_BASE91PREDICTS90",
+        "MBMA_9102_TABLE45_BASE90PREDICTS91"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Failure load value recorded after the later 9702 correction/adjustment of the printed test loads.",
+      "evidence": "Table S1 (failure_load_corrected_9702_plf column)",
+      "name": "Corrected failure load (9702)",
+      "note": "Originates from a later report, not from the printed 1991 data sheets.",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "failure_load_corrected_9702_plf"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Observed mode of failure of each test: distortional buckling, local buckling, or deck failure at the clips.",
+      "evidence": "Table 3.2 p. 25; Table 3.3 p. 26; Table S1 (failure_mode and failure_mode_data_sheet)",
+      "name": "Failure mode",
+      "note": "The individual data sheets often print \"Local Buckle\" where Table 3.2 classifies the same test as Distortional.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "failure_mode",
+        "failure_mode_1990",
+        "failure_mode_1991",
+        "failure_mode_data_sheet"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE32_TESTS1991SUMMARY",
+        "MBMA_9102_TABLE33_UPLIFTTESTDATABASE",
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Maximum moment developed in the simple-span base test, computed as w_US L^2/8.",
+      "evidence": "Table 4.1 p. 29 (M_US); Table S1 (failure_moment_as_printed, Appendix E)",
+      "name": "Base test moment M_US",
+      "note": "Table 4.1 lists 85.2 k\" for UZTR/F 1991 while Appendix E computes 85.86 k\".",
+      "printed_symbol": "M_US",
+      "quantity_kind": "moment",
+      "role": "measured_output",
+      "symbols": [
+        "m_us_kip_in",
+        "failure_moment_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE41_BASETESTCALCS1991",
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "kip-in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Constrained bending capacity of the purlin section, S_eff x F_y (AISI allowable moment multiplied by 1.67).",
+      "evidence": "Table 4.1 p. 29 (M_AISI column)",
+      "name": "AISI constrained bending capacity",
+      "note": "",
+      "printed_symbol": "M_AISI",
+      "quantity_kind": "moment",
+      "role": "predicted_value",
+      "symbols": [
+        "m_aisi_kip_in"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE41_BASETESTCALCS1991"
+      ],
+      "unit": "kip-in"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Maximum negative moment per purlin from a stiffness analysis of the three-span system under 100 plf uniform load.",
+      "evidence": "Table 4.1 p. 29 (M-_max column); calculations in Appendix E",
+      "name": "Negative moment at 100 plf",
+      "note": "",
+      "printed_symbol": "M-_max",
+      "quantity_kind": "moment",
+      "role": "predicted_value",
+      "symbols": [
+        "m_neg_max_kip_in"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE41_BASETESTCALCS1991"
+      ],
+      "unit": "kip-in"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Maximum positive moment per purlin from a stiffness analysis of the three-span system under 100 plf uniform load.",
+      "evidence": "Table 4.1 p. 29 (M+_max column); calculations in Appendix E",
+      "name": "Positive moment at 100 plf",
+      "note": "",
+      "printed_symbol": "M+_max",
+      "quantity_kind": "moment",
+      "role": "predicted_value",
+      "symbols": [
+        "m_pos_max_kip_in"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE41_BASETESTCALCS1991"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Three-span failure load predicted on the assumption that the negative moment region controls, from the base test moment and the stiffness analysis.",
+      "evidence": "Table 4.1 p. 29 (w-_P3 column)",
+      "name": "Predicted load, negative moment",
+      "note": "For UZRP/S 1991 printed as 185.8 plf while the governing w_P3 prints 185.7 plf.",
+      "printed_symbol": "w-_P3",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "w_neg_p3_plf"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE41_BASETESTCALCS1991"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Three-span failure load predicted on the assumption that the positive moment region controls, from the AISI capacity and the stiffness analysis.",
+      "evidence": "Table 4.1 p. 29 (w+_P3 column)",
+      "name": "Predicted load, positive moment",
+      "note": "UCRP/S (O) 1991 printed as 368.8 plf; Appendix E computes 268.81 plf (corrected in the dataset).",
+      "printed_symbol": "w+_P3",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "w_pos_p3_plf"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE41_BASETESTCALCS1991"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Base test method predicted three-span failure load, taken as the minimum of the negative- and positive-moment controlled predictions for the same year's test set.",
+      "evidence": "Table 1.1 p. 10; Table 4.1 p. 29; Table 4.2 p. 30; Table S1 (predicted_failure_load_w_p3_plf)",
+      "name": "Predicted multispan failure load w_P3",
+      "note": "",
+      "printed_symbol": "w_P3",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "w_p3_plf",
+        "w_p3_1990_plf",
+        "w_p3_1991_plf",
+        "predicted_failure_load_w_p3_plf"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE11_UPLIFT1990SUMMARY",
+        "MBMA_9102_TABLE41_BASETESTCALCS1991",
+        "MBMA_9102_TABLE42_BASETESTACCURACY",
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Multispan failure load of one year's test predicted using the other year's base test result together with the corresponding stiffness model (1991 base test predicting the 1990 test, and 1990 base test predicting the 1991 test).",
+      "evidence": "Table 4.4 p. 32 (w_p3_1991_plf) and Table 4.5 p. 32 (w_p3_1990_plf)",
+      "name": "Cross-year predicted failure load",
+      "note": "Column names coincide with those of Table 4.2 but the meaning is the cross-year prediction.",
+      "printed_symbol": "w_P3",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "w_p3_1991_plf",
+        "w_p3_1990_plf"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE44_BASE91PREDICTS90",
+        "MBMA_9102_TABLE45_BASE90PREDICTS91"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of the actual measured three-span failure load to the base-test-method predicted failure load (values above 1.0 conservative).",
+      "evidence": "Table 1.1 p. 10; Table 4.1 p. 29; Table 4.2 p. 30; Tables 4.4 and 4.5 p. 32; Table S1",
+      "name": "Actual/predicted load ratio",
+      "note": "Section 4.3 cites 0.78 for UZRP/S 1990 while Tables 1.1 and 4.2 print 0.81; Table 4.4/4.5 ratios are cross-year comparisons.",
+      "printed_symbol": "w_U3/w_P3",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "w_u3_over_w_p3",
+        "ratio_1990",
+        "ratio_1991",
+        "ratio_w_u3_over_w_p3"
+      ],
+      "table_tags": [
+        "MBMA_9102_TABLE11_UPLIFT1990SUMMARY",
+        "MBMA_9102_TABLE41_BASETESTCALCS1991",
+        "MBMA_9102_TABLE42_BASETESTACCURACY",
+        "MBMA_9102_TABLE44_BASE91PREDICTS90",
+        "MBMA_9102_TABLE45_BASE90PREDICTS91",
+        "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    }
+  ],
+  "year": "1991"
+}

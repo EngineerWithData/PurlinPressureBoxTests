@@ -1,0 +1,24 @@
+# Source: MBMA_9102 | Pugh, A.D. and Murray, T.M. (1991), Table 1.1, pp.10
+# Tag: MBMA_9102_TABLE11_UPLIFT1990SUMMARY
+# Content: Predicted and actual failure loads, and their ratio, for the 1990 uplift test sets that failed by local or distortional buckling of a purlin in an end span.
+# Data basis: mixed: measured multispan failure loads with base-test-method predicted capacities (Anderson and Murray 1990 companion tests)
+# Units: w_p3_plf and w_u3_plf in plf; ratio dimensionless
+# Column definitions:
+#   test_designation = test set label (see notes for letter code meanings)
+#   w_p3_plf = failure load of the three-span test predicted by the base test method, plf
+#   w_u3_plf = actual measured failure load of the three-span confirming test, plf
+#   w_u3_over_w_p3 = ratio of actual to predicted three-span failure load, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 99 pages)
+# ANOMALY FLAG: Section 4.3 of the text states that test set UZRP/S 1990 had a ratio of 0.78, while this table prints 0.81; the printed table value is preserved verbatim and not corrected.
+# Test designation code: U = uplift; second letter Z or C = purlin cross section; third letter R = rafter bracing only, T = rafter plus third point bracing; fourth letter P = pan deck, R = rib deck; fifth letter F = one piece fixed clip, S = two piece sliding clip; (O) = purlins facing opposite directions.
+# A ratio greater than 1.0 is a conservative prediction; less than 1.0 is unconservative.
+# Data are from the 1990 phase of the same project (Anderson and Murray, 1990) and form part of the data base evaluated in this report.
+test_designation,w_p3_plf,w_u3_plf,w_u3_over_w_p3
+UZRP/F,121.4,132.7,1.09
+UZRP/S,173.5,140.6,0.81
+UZRR/S (O),155.8,167.8,1.08
+UCRP/S (O),94.3,112.4,1.19
+UZTP/F (O),189.6,169.2,0.89
+UZTR/F,103.7,129.4,1.25

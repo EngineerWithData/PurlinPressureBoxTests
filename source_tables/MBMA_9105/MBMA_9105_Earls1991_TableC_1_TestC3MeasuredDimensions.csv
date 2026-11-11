@@ -1,0 +1,23 @@
+# Source: MBMA_9105 | Earls, C.J., Pugh, A.D. and Murray, T.M. (1991), Table unlabeled (Appendix C, p. C.1), pp.35
+# Tag: MBMA_9105_TABLEC1_TESTC3MEASUREDDIMENSIONS
+# Content: Measured thickness and sweep of each of the six purlin segments of Test C3 (3 @ 30 ft spans), recorded before testing.
+# Data basis: measured: micrometer thickness and sweep measurements of the purlins before testing
+# Units: thickness_in inches; sweep_in inches
+# Column definitions:
+#   purlin_line = purlin line of the two-purlin assembly (North or South), as printed
+#   bay = span number of the three-span continuous system (1, 2 or 3)
+#   thickness_in = measured purlin base-metal thickness in that bay, inches
+#   sweep_in = measured initial sweep (lateral crookedness) of the purlin in that bay, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 19 correct, 1 error; P(accuracy ≥ 0.8) = 94.2%, ≥ 0.9) = 63.5%, ≥ 0.95) = 28.3%
+# TEXT SOURCE: read from page images by the model (all 42 pages)
+# ANOMALY FLAG: The thickness and sweep values printed for Test C3 are identical to those printed for Test C2, and they disagree with the C3 cross-section figures and program output (0.099-0.101 in.); values preserved verbatim as printed and not corrected.
+# Table is unlabeled in the report; it appears in the Test C3 Test Summary sheet, page C.1.
+# Test C3 failure load 161.9 plf, failure mode excessive lateral deflection, test date July 18, 1991.
+purlin_line,bay,thickness_in,sweep_in
+North,1,0.093,3/8
+North,2,0.090,1/4
+North,3,0.095,1/8
+South,1,0.092,3/8
+South,2,0.093,1/4
+South,3,0.092,1/8

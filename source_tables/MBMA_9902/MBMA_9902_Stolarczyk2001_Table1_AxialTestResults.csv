@@ -1,0 +1,19 @@
+# Source: MBMA_9902 | Stolarczyk, J.A. and Fisher, J.M. (2001), Table 1, pp.61
+# Tag: MBMA_9902_TABLE1_AXIALTESTRESULTS
+# Content: Measured failure loads and observed failure modes of the four full-scale axial (strut-purlin) tests on Z-purlins attached to standing seam roof assemblies.
+# Data basis: measured: 100-kip load cell during full-scale axial load tests
+# Units: failure_load_kip in kips; others dimensionless labels
+# Column definitions:
+#   test_no = axial test designation (A = axial test, number = standing seam assembly 1-4)
+#   failure_load_kip = maximum axial load reached in the full-scale test, kips
+#   failure_mode = failure mode number(s) observed, see notes for key
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 12 cells checked (AI, 2026-11-10): 12 correct, 0 errors; P(accuracy ≥ 0.8) = 94.5%, ≥ 0.9) = 74.6%, ≥ 0.95) = 48.7%
+# TEXT SOURCE: read from page images by the model (all 195 pages)
+# Failure Mode Key (p.62): 1. Lateral Buckle of Unsupported Flange; 2. Clips sheared; 3. Clip failure, panel seam not adequate to laterally support purlin, clips slid within seam; 4. Lateral torsional inelastic buckling of flange and web at maximum moment region; 5. Purlin rolled (lateral torsional buckle, no local buckling).
+# Assemblies 1-4 are described in Section 3.2 (panel type, clip type, purlin geometry, insulation).
+test_no,failure_load_kip,failure_mode
+A1,31.1,"1, 2"
+A2,35.0,1
+A3,27.4,3
+A4,10.5,3

@@ -1,0 +1,41 @@
+# Source: MBMA_9105 | Earls, C.J., Pugh, A.D. and Murray, T.M. (1991), Table unlabeled (Appendix C, pp. C.5-C.7), cont'd, pp.39-41
+# Tag: MBMA_9105_TABLEC2_TESTC3SECTIONPROPERTIES
+# Content: Measured cross-section dimensions of the six Test C3 purlin segments (30 ft spans) and the corresponding section properties and allowable strengths computed by the purlin analysis program (Version 1.3).
+# Data basis: mixed: measured cross-section dimensions input to a commercial PC program that computed the section properties and strengths
+# Units: see column headers
+# Column definitions:
+#   purlin_line = purlin line the segment belongs to (inferred by matching the appendix sketches)
+#   bay = Bay number shown on the program screen (1, 2 or 3)
+#   top_lip_in = overall lip dimension of the top (compression) flange, inches
+#   bottom_lip_in = overall lip dimension of the bottom (tension) flange, inches
+#   top_flange_in = width of the top flange, inches
+#   bottom_flange_in = width of the bottom flange, inches
+#   depth_in = measured overall purlin depth, inches
+#   t_in = measured purlin thickness used in the analysis, inches
+#   fy_ksi = yield stress input to the program (coupon value), ksi
+#   e_ksi = modulus of elasticity input to the program, ksi
+#   ag_in2 = gross cross-sectional area computed by the program, square inches
+#   ix_in4 = moment of inertia about the x-axis, inches^4
+#   iy_in4 = moment of inertia about the y-axis, inches^4
+#   ixy_in4 = product of inertia, inches^4
+#   ieff_in4 = effective moment of inertia, inches^4
+#   seff_in3 = effective section modulus, cubic inches
+#   ma_pos_kip_in = allowable positive bending moment computed by the program, kip-inches
+#   ma_neg_kip_in = allowable negative bending moment computed by the program, kip-inches
+#   va_kip = allowable shear strength computed by the program, kips
+#   ext_pa_kip = allowable exterior-support web crippling strength for N = 4 in., kips
+#   int_pa_kip = allowable interior-support web crippling strength for N = 4 in., kips
+# EXTRACTION QUALITY: reconstructed — decimal points / column identities were inferred from context; VERIFY against the PDF before use
+# VALIDATION: 17 cells checked (AI, 2026-11-04): 17 correct, 0 errors, 3 unreadable; P(accuracy ≥ 0.8) = 98.2%, ≥ 0.9) = 85.0%, ≥ 0.95) = 60.3%
+# TEXT SOURCE: read from page images by the model (all 42 pages)
+# ANOMALY FLAG: Purlin line (North/South) is not printed on the program screens; it was inferred by matching depths and thicknesses to the Appendix C cross-section sketches, so this column is reconstructed. All numeric values are verbatim as printed.
+# Table is unlabeled in the report; data taken from six program screen prints, pages C.5-C.7.
+# All screens list Lip Angle 90 degrees and lip-to-flange and flange-to-web radii of 3/8 in.
+# Job Id is "MBMA C-PURLIN - 30' SPAN" on the first three screens and "MBMA C-PURLIN TEST 3" on the last three; web crippling based on N = 4 in.
+purlin_line,bay,top_lip_in,bottom_lip_in,top_flange_in,bottom_flange_in,depth_in,t_in,fy_ksi,e_ksi,ag_in2,ix_in4,iy_in4,ixy_in4,ieff_in4,seff_in3,ma_pos_kip_in,ma_neg_kip_in,va_kip,ext_pa_kip,int_pa_kip
+North,1,7/8,5/8,3-1/8,3-1/16,8-15/16,0.101,64.8,29500,1.56,18.48,1.73,0.43,17.43,3.82,143.62,135.97,10.77,1.73,4.38
+North,2,15/16,13/16,3-1/16,3-1/4,8-3/4,0.099,64.8,29500,1.55,17.82,1.88,0.02,16.89,3.71,144.32,136.01,10.38,1.64,4.2
+North,3,7/8,11/16,3-1/8,3-1/4,8-3/4,0.099,64.8,29500,1.54,17.7,1.84,0.15,16.52,3.63,140.48,131.5,10.38,1.64,4.2
+South,1,7/8,5/8,3-1/8,3-1/16,9,0.101,64.8,29500,1.57,18.79,1.73,0.43,17.72,3.86,145.02,137.34,10.69,1.73,4.37
+South,2,7/8,11/16,3-3/16,3-3/16,8-7/8,0.1,64.8,29500,1.57,18.47,1.87,0.3,17.2,3.74,142.73,136.44,10.54,1.68,4.29
+South,3,"1""",13/16,3,3-1/4,8-7/8,0.099,64.8,29500,1.57,18.38,1.87,-0.01,17.71,3.87,150.65,138.35,10.22,1.64,4.2

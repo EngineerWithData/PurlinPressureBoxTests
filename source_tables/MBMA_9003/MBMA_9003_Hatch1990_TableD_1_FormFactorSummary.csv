@@ -1,0 +1,23 @@
+# Source: MBMA_9003 | Hatch, J., Easterling, W.S. and Murray, T.M. (1990), Table D.1, pp.55
+# Tag: MBMA_9003_TABLED1_FORMFACTORSUMMARY
+# Content: Form factors Q computed per the 1980 AISI Specification for representative purlin sections, with full area and strong-location axial capacity used to check elastic versus inelastic behavior.
+# Data basis: computed: form factor calculations per 1980 AISI Specification Section 3.6.1 (details in Figures D.1 to D.4)
+# Units: full_area_in2 square inches; pa_strong_kip kips; pa_over_area_ksi ksi; q dimensionless; half_q_fy_ksi ksi
+# Column definitions:
+#   test_designation = representative test for which the form factor was calculated
+#   full_area_in2 = full (unreduced) cross-sectional area of the purlin, square inches
+#   pa_strong_kip = axial capacity computed for the strong fastener location, kips
+#   pa_over_area_ksi = axial capacity divided by full area, ksi
+#   q = form factor accounting for local buckling, per 1980 AISI Section 3.6.1, dimensionless
+#   half_q_fy_ksi = one half of Q times the yield stress, ksi
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 224 pages)
+# ANOMALY FLAG: The last column value for SP-7C-12-1 is printed as '18.' (trailing decimal point with no digit) and the Q value as '.6'; both are preserved verbatim as printed. The printed column heading '.5 QFy' is interpreted as 0.5*Q*Fy.
+# These representative form factors were used in calculations for all tests using similar size and shape purlins.
+# Detailed element-by-element effective area calculations are given in Figures D.1 through D.4 (not reproduced here).
+test_designation,full_area_in2,pa_strong_kip,pa_over_area_ksi,q,half_q_fy_ksi
+SP-8Z-0,.89,12.3,13.8,.44,13.2
+SP-10Z-12-2,1.38,26.3,19.3,.45,13.5
+SP-7C-12-1,1.08,20.2,18.7,.6,18.
+SP-10C-12-1,1.84,28.2,15.3,.63,18.9

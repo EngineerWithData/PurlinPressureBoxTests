@@ -1,0 +1,65 @@
+# Source: MBMA_9902 | Stolarczyk, J.A.; Fisher, J.M. (2001), Table S1, pp.51-52, 61-66, 172-183
+# Tag: MBMA_9902_TABLES1_STRENGTHSUMMARY
+# Content: Measured ultimate strengths of the eight full-scale confirmatory tests performed in this study: four axial compression tests (A1-A4) and four uplift base tests (F1-F4) on Z-purlins with one flange attached to four different standing seam roof assemblies.
+# Data basis: measured: full-scale axial compression tests (Table 1, Appendix 5 data sheets) and uplift base tests per the AISI Base Test Method (Table 2, Appendix 5 data sheets), with tension coupon properties (Table 3) and failed-member dimensions (Table 4); the equivalent_axial_load_kips and stress_at_failure_ksi columns are the authors' corrected values from Table 5.
+# Units: see column headers
+# Column definitions:
+#   test_id = test designation as printed (A = axial test, F = flexural uplift test), -
+#   load_direction = direction/type of applied load, -
+#   section_type = cross-section shape of the tested member, -
+#   depth_in = nominal purlin depth from the assembly description in Section 3.2, in.
+#   thickness_in = nominal purlin thickness from the assembly description in Section 3.2, in.
+#   span_ft = purlin length (axial tests) or nominal span (flexural tests), ft
+#   n_spans = number of spans of the test specimen, - (not stated in report)
+#   n_purlin_lines = number of purlin lines in the test assembly, -
+#   panel_type = roof panel system and profile/coverage as described in Section 3.2, -
+#   bracing = lateral bracing provided to the purlin other than the panel, -
+#   failure_load_as_printed = failure axial load exactly as printed in Table 1, number
+#   failure_load_unit = unit of failure_load_as_printed exactly as printed, -
+#   failure_moment_as_printed = test moment at failure exactly as printed in Table 2, number
+#   failure_moment_unit = unit of failure_moment_as_printed exactly as printed, -
+#   failure_mode = failure mode number(s) as printed with the report's failure-mode key wording, -
+#   value_source = where the primary failure value is stated, -
+#   pages = PDF page numbers where the values in the row are stated, -
+#   assembly_no = standing seam roof assembly number (Section 3.2) used for the test, -
+#   clip_type = panel clip type and fastener arrangement as described in Section 3.2, -
+#   insulation = insulation used in the assembly as described in Section 3.2, -
+#   total_assembly_failure_load_kips = total failure load of the two-purlin assembly stated in the Appendix 5 failure description, kips
+#   equivalent_axial_load_kips = equivalent pure axial load from Table 5 (bending backed out of the test result and a 25 percent reduction applied for test end fixity), kips
+#   stress_at_failure_ksi = axial stress (axial tests) or bending stress (flexural tests) at failure as printed in Table 5, ksi
+#   max_pressure_in_h2o = maximum chamber pressure reached in the uplift test as printed on the data sheet, in. H2O
+#   max_pressure_psf = maximum chamber pressure reached in the uplift test as printed on the data sheet, psf
+#   measured_depth_h_in = measured depth H of the failed member from Table 4, in.
+#   measured_thickness_t_in = measured thickness t of the failed member from Table 4, in.
+#   fy_ksi = measured yield stress from tension tests (Table 3), ksi
+#   fu_ksi = measured tensile strength from tension tests (Table 3), ksi
+#   elongation_pct = measured elongation from tension tests (Table 3), %
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 13 cells checked (AI, 2026-11-10): 13 correct, 0 errors, 7 unreadable; P(accuracy ≥ 0.8) = 95.6%, ≥ 0.9) = 77.1%, ≥ 0.95) = 51.2%
+# TEXT SOURCE: read from page images by the model (cached transcription)
+# ANOMALY FLAG: The axial failure loads printed in Table 1 (31.1, 35.0, 27.4, 10.5 kips) are exactly one-half of the assembly failure loads recorded in the Appendix 5 data sheets (62.1, 70, 54.7, 21 kips), i.e. Table 1 appears to report the load per purlin of the two-purlin test assembly while the narrative reports the total jack load; both values are given in separate columns.
+# Failure mode key for axial/flexural tests (page 62): 1. Lateral Buckle of Unsupported Flange; 2. Clips sheared; 3. Clip failure, panel seam not adequate to laterally support purlin. Clips slid within seam; 4. Lateral torsional inelastic buckling of flange and web at maximum moment region; 5. Purlin rolled (lateral torsional buckle, no local buckling).
+# Axial tests: load applied in compression along the purlin axis with a hydraulic jack and loading rod through bolted load beams at each end; assembly tested upside down resting on rollers so that bending from self-weight was essentially eliminated. The test loads are jack loads and do not include dead load.
+# Flexural tests: uplift (wind suction simulated) applied with a pressure chamber and polyethylene membrane in accordance with the Base Test Method for Purlins Supporting a Standing Seam Roof (AISI Cold-Formed Steel Design Manual, Supplement No. 1). Catenary forces were relieved by slotted holes at the purlin-to-support-beam connections.
+# Purlin spacing / tributary width is not stated; only the panel coverage width is given (24-in., 16-in. and 18-in. coverage panels). Test moments in Table 2 are those reported for the flexural tests; Table 5 lists slightly more precise values (F1 10.27, F2 9.76, F3 9.28, F4 4.89 ft-kip).
+# The corrected (equivalent) axial loads in Table 5 were obtained by backing the strain-gage-measured bending moment out of the test result with an interaction equation and then reducing the result by 25 percent to remove the weak-axis end fixity provided by the bolted end-plate connections of the test fixture (Appendix 6).
+# Maximum pressures for F3 and F4 are also stated in the narrative of the data sheets as 7.98 in. H2O and 4.46 in. H2O respectively; the tabulated last readings are 7.983 (41.512 psf) and 4.459 (23.187 psf). For F1 and F2 the last pressure step is marked 'Max.' on the data sheet.
+# Bracing: no discrete bracing (sag angles, etc.) was used; lateral restraint was provided only by the standing seam panel/clip attachment to the top flange, with continuous L1x1x1/8 edge angles at the free panel edges in the axial tests. Some flexural test end connections used anti-roll clips (web-bolted connection angles).
+# REVIEW 2026-11-06 (Cris Moen): only the pressure-chamber flexural (uplift base) tests F1-F4 enter the database (pressure box tests only). The axial tests A1-A4 (hydraulic jack through load beams, no chamber, pp.56-57) stay in this file as the extracted record but are dropped from the sets (05_harmonize.jl DROP_ROWS/DROP_FILES).
+# REVIEW 2026-11-06 (Cris Moen): F1-F4 failure is recorded as the test moment as printed in Table 2 (p.62) and the maximum chamber pressure from the Appendix 5 data sheets (pp.180-183): F1 28.6, F2 26.0, F3 41.512, F4 23.187 psf. Purlin spacing (tributary width) is not stated, so no line load is computed.
+# REVIEW 2026-11-06 (Cris Moen): in the flexural tests both purlins faced the same direction (p.48); purlin ends were bolted to support beams, some with web-bolted anti-roll clips, with slotted holes to relieve catenary force (pp.48-49).
+# REVIEW 2026-11-06 (Cris Moen): Table 5 (p.65) prints more precise moments (10.27, 9.76, 9.28, 4.89 ft-kip); failure_moment_as_printed keeps the Table 2 values.
+# REVIEW 2026-11-10 (Cris Moen): F1-F4 are kept. The load was positive air pressure in a sealed pressure chamber pushing a polyethylene membrane up against the panel (uplift), not a vacuum (pp.57-58, Fig. 36 p.59); manometer readings in in. of water (pp.180-183). The flexural data may come from manufacturers' existing uplift base tests (p.50); the sheets name a witness (JAS) and test dates.
+# REVIEW 2026-11-10 (Cris Moen): n_spans = 1 filled for F1-F4 (blank in the extraction): each purlin is a single 30 or 23 ft member (p.51), deflections were taken at the assembly midspan (p.58), Fig. 36 shows one bay between two support beams (p.59), and the procedure is the AISI Base Test Method (p.60). The report does not say 'single span' in words (MBMA_9902-Q05).
+# REVIEW 2026-11-10 (Cris Moen): the effective section modulus (Table 5, p.66) was computed with CFS v3.04 (p.37); stress level and effective-width assumptions are not stated. stress_at_failure_ksi = M / S_e (e.g. F1: 10.27 x 12 / 4.05 = 30.4 ksi) is a computed value, carried as printed (MBMA_9902-Q02).
+# REVIEW 2026-11-10 (Cris Moen): clip spacing is not printed. One clip was attached at the male edge of each panel (p.53, axial assembly construction; axial samples identical to the flexural ones, p.50), so the spacing equals the panel coverage: 24 in. F1, 16 in. F2, 18 in. F3 and F4 (p.51) (MBMA_9902-Q03).
+# REVIEW 2026-11-10 (Cris Moen): two purlin lines in every flexural test: east and west purlin deflections and 'Failure of east purlin' (p.180), deflections over each purlin (p.58) (MBMA_9902-Q04).
+test_id,load_direction,section_type,depth_in,thickness_in,span_ft,n_spans,n_purlin_lines,panel_type,bracing,failure_load_as_printed,failure_load_unit,failure_moment_as_printed,failure_moment_unit,failure_mode,value_source,pages,assembly_no,clip_type,insulation,total_assembly_failure_load_kips,equivalent_axial_load_kips,stress_at_failure_ksi,max_pressure_in_h2o,max_pressure_psf,measured_depth_h_in,measured_thickness_t_in,fy_ksi,fu_ksi,elongation_pct
+A1,axial compression,Z,8.5,0.120,30,,2,standing seam - Trapezoidal (24-inch coverage),panel/clip attachment only (no discrete bracing); edge angles at free panel edges,31.1,kips,,,"1, 2 (Lateral Buckle of Unsupported Flange; Clips sheared)",table 1,"51, 61, 63-64, 66, 172",1,Sliding (2 screws placed across the width of the flange),6-inch high density fiberglass insulation,62.1,24.9,14.6,,,8.52,0.120,50.5,74.8,20.2
+A2,axial compression,Z,8.5,0.120,30,,2,standing seam - Pan (16-inch coverage),panel/clip attachment only (no discrete bracing); edge angles at free panel edges,35.0,kips,,,1 (Lateral Buckle of Unsupported Flange),table 1,"51, 61, 63-64, 66, 174",2,Sliding (2 screws placed at the center of the purlin flange),6-inch high density fiberglass insulation plus thermal block (styrofoam insulation) placed between each clip,70,27.5,16.5,,,8.53,0.116,54.2,76.3,18.9
+A3,axial compression,Z,8,0.100,23,,2,"standing seam - Pan (18-inch coverage, panel was not seamed)",panel/clip attachment only (no discrete bracing); edge angles at free panel edges,27.4,kips,,,"3 (Clip failure, panel seam not adequate to laterally support purlin. Clips slid within seam)",table 1,"52, 61, 63-64, 66, 176",3,Sliding (2 screws placed across the width of the flange),Thermal block (styrofoam insulation) placed between each panel clip,54.7,20.8,15.6,,,7.93,0.095,67.1,84.0,20.5
+A4,axial compression,Z,8,0.060,23,,2,"standing seam - Pan (18-inch coverage, panel was not seamed)",panel/clip attachment only (no discrete bracing); edge angles at free panel edges,10.5,kips,,,"3 (Clip failure, panel seam not adequate to laterally support purlin. Clips slid within seam)",table 1,"52, 61, 63-64, 66, 178",4,Sliding (2 screws placed across the width of the flange),Thermal block (styrofoam insulation) placed between each panel clip,21,8.1,9.5,,,7.93,0.060,67.0,85.3,20.6
+F1,uplift,Z,8.5,0.120,30,1,2,standing seam - Trapezoidal (24-inch coverage),panel/clip attachment only (no discrete bracing),,,10.3,Ft.-Kip,"2, 5 (Clips sheared; Purlin rolled (lateral torsional buckle, no local buckling))",table 2,"51, 62-64, 66, 180",1,Sliding (2 screws placed across the width of the flange),6-inch high density fiberglass insulation,,,30.4,5.5,28.6,8.35,0.116,56.3,80.4,21.1
+F2,uplift,Z,8.5,0.120,30,1,2,standing seam - Pan (16-inch coverage),panel/clip attachment only (no discrete bracing),,,9.8,Ft.-Kip,4 (Lateral torsional inelastic buckling of flange and web at maximum moment region),table 2,"51, 62-64, 66, 181",2,Sliding (2 screws placed at the center of the purlin flange),6-inch high density fiberglass insulation plus thermal block (styrofoam insulation) placed between each clip,,,28.5,5.0,26.0,8.38,0.118,59.6,78.6,20.1
+F3,uplift,Z,8,0.100,23,1,2,"standing seam - Pan (18-inch coverage, panel was not seamed)",panel/clip attachment only (no discrete bracing),,,9.3,Ft.-Kip,"4, 2 (Lateral torsional inelastic buckling of flange and web at maximum moment region; Clips sheared)",table 2,"52, 62-64, 66, 182",3,Sliding (2 screws placed across the width of the flange),Thermal block (styrofoam insulation) placed between each panel clip,,,33.1,7.983,41.512,8.00,0.100,54.6,67.3,17.7
+F4,uplift,Z,8,0.060,23,1,2,"standing seam - Pan (18-inch coverage, panel was not seamed)",panel/clip attachment only (no discrete bracing),,,4.9,Ft.-Kip,4 (Lateral torsional inelastic buckling of flange and web at maximum moment region),table 2,"52, 62-64, 66, 183",4,Sliding (2 screws placed across the width of the flange),Thermal block (styrofoam insulation) placed between each panel clip,,,29.1,4.459,23.187,8.00,0.059,45.9,58.2,22.3

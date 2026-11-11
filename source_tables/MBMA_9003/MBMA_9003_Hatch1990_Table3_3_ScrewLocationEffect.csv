@@ -1,0 +1,25 @@
+# Source: MBMA_9003 | Hatch, J., Easterling, W.S. and Murray, T.M. (1990), Table 3.3, pp.31
+# Tag: MBMA_9003_TABLE33_SCREWLOCATIONEFFECT
+# Content: Computed axial capacities of the eight axial-load specimens using weak and strong fastener-location rotational stiffnesses, showing the sensitivity of strength to screw location.
+# Data basis: computed: Simaan's STUDA2 axial capacity analysis using measured weak and strong rotational stiffness values
+# Units: span_ft feet; pa_low_kip, pa_high_kip kips; ratio dimensionless
+# Column definitions:
+#   test_designation = test identification label (SP = strut purlin project, see notes)
+#   span_ft = simple span length of the tested purlins as printed in this table, feet
+#   pa_low_kip = axial capacity computed using the weak (low) rotational stiffness data, kips
+#   pa_high_kip = axial capacity computed using the strong (high) rotational stiffness data, kips
+#   pa_high_over_pa_low = ratio of high to low computed axial capacity, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 224 pages)
+# ANOMALY FLAG: The spans listed here disagree with Table 3.2 for the 7 in. C tests: SP-7C-12-3 is 21 ft here but 15 ft in Table 3.2, and SP-7C-12-2 is 25 ft here but 19 ft in Table 3.2; SP-10Z-12-2 is 25 ft in both. Values are preserved verbatim as printed and NOT corrected.
+# NOTE as printed: Pa (Low) was calculated using the weak rotational stiffness data; Pa (High) was calculated using the strong rotational stiffness data.
+test_designation,span_ft,pa_low_kip,pa_high_kip,pa_high_over_pa_low
+SP-7C-12-1,17,13.1,20.2,1.54
+SP-7C-12-3,21,13.4,19.9,1.49
+SP-7C-12-2,25,13.3,21.4,1.60
+SP-10C-12-1,17,19.5,28.5,1.46
+SP-10C-12-2,25,14.6,26.2,1.79
+SP-10Z-12-1,17,17.7,23.9,1.35
+SP-10Z-12-3,21,14.5,23.7,1.63
+SP-10Z-12-2,25,13.5,26.3,1.95

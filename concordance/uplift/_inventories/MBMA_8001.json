@@ -1,0 +1,942 @@
+{
+  "citation": "Pekoz, T. (1980)",
+  "code_tag": "MBMA_8001",
+  "experiment": "Fourteen full-scale 20-ft single-span tests on pairs of cold-formed Z-purlins — seven vacuum (pressure-box) uplift tests on through-fastened diaphragm-braced purlin/panel assemblies and seven channel-braced beam tests — were run to failure, with measured cross-section dimensions, tensile coupon properties, strains, rotations and rotational restraint factors recorded and compared with computed capacities.",
+  "title": "Behavior of Z-Purlins Subjected to Wind Uplift",
+  "variables": [
+    {
+      "availability": "direct",
+      "definition": "Designation letter A–E identifying the Z-section manufacturer/profile used in a test.",
+      "evidence": "Column 'purlin_type' in Tables 3.1, 3.2, 3.3, 4.1, 4.2, 4.3, 4.4, 4.6, 4.8, 4.9 and S1",
+      "name": "Purlin type",
+      "note": "In Table 4.6 this column also carries the printed statistic labels (Mean, St. Dev., St. Dev./Mean).",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "purlin_type"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE31_MATERIALPROPERTIESTENSILE",
+        "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS",
+        "MBMA_8001_TABLE33_SUMMARYOFTESTRESULTS",
+        "MBMA_8001_TABLE41_TESTULTIMATESTRESSES",
+        "MBMA_8001_TABLE42_ULTIMATEROTATIONSANDF",
+        "MBMA_8001_TABLE43_WEBROTATIONALDEFORMATION",
+        "MBMA_8001_TABLE44_YIELDANDULTIMATESTRESSES",
+        "MBMA_8001_TABLE46_VACUUMTESTLOADRATIOS",
+        "MBMA_8001_TABLE48_MINSTIFFENERREQUIREMENT",
+        "MBMA_8001_TABLE49_EFFECTIVEWIDTHSDESMOND",
+        "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Test designation with V for vacuum (uplift pressure-box) test and B for beam test, followed by a sequence number.",
+      "evidence": "Column 'test_id' in Table 3.3 (pp. 76-77) and Table S1",
+      "name": "Test identifier",
+      "note": "Table 3.3 footnote (1): V designates vacuum - B designates beam test.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_id"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE33_SUMMARYOFTESTRESULTS",
+        "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Average tensile yield stress of three coupons taken from each purlin type.",
+      "evidence": "Table 3.1 (p. 74) 'fy_ksi'; repeated in Tables 4.1, 4.4 and as 'yield_stress_ksi' in Table S1",
+      "name": "Coupon yield stress",
+      "note": "",
+      "printed_symbol": "σ_y / F_y",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "fy_ksi",
+        "yield_stress_ksi"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE31_MATERIALPROPERTIESTENSILE",
+        "MBMA_8001_TABLE41_TESTULTIMATESTRESSES",
+        "MBMA_8001_TABLE44_YIELDANDULTIMATESTRESSES",
+        "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Average tensile ultimate (rupture) stress of three coupons per purlin type.",
+      "evidence": "Table 3.1 (p. 74), column 'fu_ksi'",
+      "name": "Coupon ultimate stress",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "fu_ksi"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE31_MATERIALPROPERTIESTENSILE"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Average percent elongation measured in the tensile coupon tests for each purlin type.",
+      "evidence": "Table 3.1 (p. 74), column 'elongation_pct'",
+      "name": "Coupon elongation",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "percentage",
+      "role": "material_property",
+      "symbols": [
+        "elongation_pct"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE31_MATERIALPROPERTIESTENSILE"
+      ],
+      "unit": "%"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured average overall depth H of the Z-section, scaled from sprayed profile images of 18 in. sections.",
+      "evidence": "Table 3.2 (p. 75) 'h_in'; carried into Table S1 as 'depth_in'",
+      "name": "Measured purlin depth",
+      "note": "",
+      "printed_symbol": "H",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "h_in",
+        "depth_in"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS",
+        "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured average base-metal thickness of the purlin sheet for each purlin type.",
+      "evidence": "Table 3.2 (p. 75) 't_in'; carried into Table S1 as 'thickness_in'",
+      "name": "Measured purlin thickness",
+      "note": "",
+      "printed_symbol": "t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "t_in",
+        "thickness_in"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS",
+        "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal (catalog) depth of the purlin section as printed in the test summary.",
+      "evidence": "Table 3.3 (p. 76) 'nom_depth_in'; Table S1 'depth_nominal_in'",
+      "name": "Nominal purlin depth",
+      "note": "Printed as fractions, e.g. 9-1/2.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "nom_depth_in",
+        "depth_nominal_in"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE33_SUMMARYOFTESTRESULTS",
+        "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal thickness of the purlin sheet as printed in the test summary.",
+      "evidence": "Table 3.3 (p. 76) 'nom_thick_in'; Table S1 'thickness_nominal_in'",
+      "name": "Nominal purlin thickness",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "nom_thick_in",
+        "thickness_nominal_in"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE33_SUMMARYOFTESTRESULTS",
+        "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured total (out-to-out) width of the top (compression in uplift) flange; the same value is used as the total flange width in the stiffener-requirement calculation.",
+      "evidence": "Table 3.2 (p. 75) 'bt_in'; Table 4.8 (p. 85) 'flange_width_total_in'",
+      "name": "Top flange total width",
+      "note": "",
+      "printed_symbol": "b_t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "bt_in",
+        "flange_width_total_in"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS",
+        "MBMA_8001_TABLE48_MINSTIFFENERREQUIREMENT"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured flat (between corner radii) width of the top compression flange; the same value is used as the flat flange width in the stiffener-requirement calculation.",
+      "evidence": "Table 3.2 (p. 75) 'wt_in'; Table 4.8 (p. 85) 'flange_width_flat_in'",
+      "name": "Top flange flat width",
+      "note": "",
+      "printed_symbol": "w_t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "wt_in",
+        "flange_width_flat_in"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS",
+        "MBMA_8001_TABLE48_MINSTIFFENERREQUIREMENT"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured total length of the lip stiffener on the top flange.",
+      "evidence": "Table 3.2 (p. 75), column 'st_in'",
+      "name": "Top lip stiffener total length",
+      "note": "",
+      "printed_symbol": "s_t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "st_in"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured flat width of the top-flange lip stiffener (excluding corner radius).",
+      "evidence": "Table 3.2 (p. 75), column 'dt_in'",
+      "name": "Top lip stiffener flat width",
+      "note": "",
+      "printed_symbol": "d_t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "dt_in"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured angle between the top lip stiffener and the top flange.",
+      "evidence": "Table 3.2 (p. 75), column 'phit_deg'",
+      "name": "Top lip stiffener angle",
+      "note": "",
+      "printed_symbol": "φ_t",
+      "quantity_kind": "angle",
+      "role": "specimen_parameter",
+      "symbols": [
+        "phit_deg"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS"
+      ],
+      "unit": "degrees"
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of the top web-to-flange corner radius to the sheet thickness.",
+      "evidence": "Table 3.2 (p. 75), column 'rcap_t_over_t'",
+      "name": "Top web-flange radius / thickness",
+      "note": "R vs r distinction inferred from Fig. 3.5 per header note.",
+      "printed_symbol": "R_t/t",
+      "quantity_kind": "ratio",
+      "role": "specimen_parameter",
+      "symbols": [
+        "rcap_t_over_t"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of the top flange-to-stiffener corner radius to the sheet thickness.",
+      "evidence": "Table 3.2 (p. 75), column 'r_t_over_t'",
+      "name": "Top flange-lip radius / thickness",
+      "note": "",
+      "printed_symbol": "r_t/t",
+      "quantity_kind": "ratio",
+      "role": "specimen_parameter",
+      "symbols": [
+        "r_t_over_t"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured total (out-to-out) width of the bottom (tension in uplift) flange.",
+      "evidence": "Table 3.2 (p. 75), column 'bb_in'",
+      "name": "Bottom flange total width",
+      "note": "",
+      "printed_symbol": "b_b",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "bb_in"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured flat width of the bottom flange between corner radii.",
+      "evidence": "Table 3.2 (p. 75), column 'wb_in'",
+      "name": "Bottom flange flat width",
+      "note": "",
+      "printed_symbol": "w_b",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "wb_in"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured total length of the lip stiffener on the bottom flange.",
+      "evidence": "Table 3.2 (p. 75), column 'sb_in'",
+      "name": "Bottom lip stiffener total length",
+      "note": "",
+      "printed_symbol": "s_b",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "sb_in"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured flat width of the bottom-flange lip stiffener.",
+      "evidence": "Table 3.2 (p. 75), column 'db_in'",
+      "name": "Bottom lip stiffener flat width",
+      "note": "",
+      "printed_symbol": "d_b",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "db_in"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured angle between the bottom lip stiffener and the bottom flange.",
+      "evidence": "Table 3.2 (p. 75), column 'phib_deg'",
+      "name": "Bottom lip stiffener angle",
+      "note": "",
+      "printed_symbol": "φ_b",
+      "quantity_kind": "angle",
+      "role": "specimen_parameter",
+      "symbols": [
+        "phib_deg"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS"
+      ],
+      "unit": "degrees"
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of the bottom web-to-flange corner radius to the sheet thickness.",
+      "evidence": "Table 3.2 (p. 75), column 'rcap_b_over_t'",
+      "name": "Bottom web-flange radius / thickness",
+      "note": "",
+      "printed_symbol": "R_b/t",
+      "quantity_kind": "ratio",
+      "role": "specimen_parameter",
+      "symbols": [
+        "rcap_b_over_t"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of the bottom flange-to-stiffener corner radius to the sheet thickness.",
+      "evidence": "Table 3.2 (p. 75), column 'r_b_over_t'",
+      "name": "Bottom flange-lip radius / thickness",
+      "note": "",
+      "printed_symbol": "r_b/t",
+      "quantity_kind": "ratio",
+      "role": "specimen_parameter",
+      "symbols": [
+        "r_b_over_t"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Web depth-to-thickness ratio H/t of the purlin section used to characterize web slenderness.",
+      "evidence": "Table 4.3 (p. 80), column 'h_over_t'",
+      "name": "Web slenderness H/t",
+      "note": "",
+      "printed_symbol": "H/t",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "h_over_t"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE43_WEBROTATIONALDEFORMATION"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Failure load per linear foot of purlin at ultimate, taken as the vacuum pressure load per foot or, for beam tests, the total span load divided by the span length.",
+      "evidence": "Table 3.3 (pp. 76-77) 'fail_load_lb_per_ft'; Table S1 'failure_load_as_printed' with unit LBS/FT",
+      "name": "Failure load per foot",
+      "note": "Report does not state whether the dead weight of the assembly is included.",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "fail_load_lb_per_ft",
+        "failure_load_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE33_SUMMARYOFTESTRESULTS",
+        "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "lb/ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Flag stating whether the observed local buckle occurred at a prepunched (sag-rod) hole, Y/N.",
+      "evidence": "Table 3.3 'at_a_hole'; Table S1 'buckle_at_prepunched_hole'; footnote (3): Y-Yes; N-No",
+      "name": "Buckle at prepunched hole",
+      "note": "Printed as '-' for test B2 where the location was not recorded.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "at_a_hole",
+        "buckle_at_prepunched_hole"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE33_SUMMARYOFTESTRESULTS",
+        "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Distance from the observed local buckle to midspan of the purlin, measured after the test.",
+      "evidence": "Table 3.3 'dist_buckle_to_midspan_in'; Table S1 'buckle_distance_to_midspan_in'",
+      "name": "Distance of buckle from midspan",
+      "note": "'m.s.' is printed when the buckle was at midspan; '-' when not recorded.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "measured_output",
+      "symbols": [
+        "dist_buckle_to_midspan_in",
+        "buckle_distance_to_midspan_in"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE33_SUMMARYOFTESTRESULTS",
+        "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Description of the observed failure (location and mode, e.g. local buckling of the compression flange-web region, flange-stiffener buckling, yielding with large deflections), given as footnote reference numbers in Table 3.3 and as narrative text in Table S1.",
+      "evidence": "Table 3.3 'comments' with footnotes (4)-(10); Table S1 'failure_mode'",
+      "name": "Failure mode / comments",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "failure_mode",
+        "comments"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE33_SUMMARYOFTESTRESULTS",
+        "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Ultimate stress reached in the vacuum (uplift) test, computed from the last recorded strains before failure.",
+      "evidence": "Table 4.1 (p. 78), column 'vacuum_stress_ksi'",
+      "name": "Vacuum test ultimate stress",
+      "note": "Printed as 'y' (yielded) for purlin type B; one value per purlin type, not per test.",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "measured_output",
+      "symbols": [
+        "vacuum_stress_ksi"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE41_TESTULTIMATESTRESSES"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Vacuum-test ultimate stress expressed as a percentage of the coupon yield stress.",
+      "evidence": "Table 4.1 (p. 78), column 'vacuum_pct_fy'",
+      "name": "Vacuum stress as % of yield",
+      "note": "Blank where the purlin yielded.",
+      "printed_symbol": "%σ_y",
+      "quantity_kind": "percentage",
+      "role": "derived_ratio",
+      "symbols": [
+        "vacuum_pct_fy"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE41_TESTULTIMATESTRESSES"
+      ],
+      "unit": "%"
+    },
+    {
+      "availability": "direct",
+      "definition": "Ultimate stress reached in the channel-braced beam test, computed from the last recorded strains before failure.",
+      "evidence": "Table 4.1 (p. 78), column 'beam_stress_ksi'",
+      "name": "Beam test ultimate stress",
+      "note": "Printed as 'y' (yielded) for purlin types B, C and D.",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "measured_output",
+      "symbols": [
+        "beam_stress_ksi"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE41_TESTULTIMATESTRESSES"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Beam-test ultimate stress expressed as a percentage of the coupon yield stress.",
+      "evidence": "Table 4.1 (p. 78), column 'beam_pct_fy'",
+      "name": "Beam stress as % of yield",
+      "note": "Blank where the purlin yielded.",
+      "printed_symbol": "%σ_y",
+      "quantity_kind": "percentage",
+      "role": "derived_ratio",
+      "symbols": [
+        "beam_pct_fy"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE41_TESTULTIMATESTRESSES"
+      ],
+      "unit": "%"
+    },
+    {
+      "availability": "direct",
+      "definition": "Maximum purlin cross-section rotation measured at failure in the vacuum (diaphragm-braced) test.",
+      "evidence": "Table 4.2 (p. 79), column 'vacuum_max_rot_rad'",
+      "name": "Vacuum test maximum rotation",
+      "note": "",
+      "printed_symbol": "θ",
+      "quantity_kind": "angle",
+      "role": "measured_output",
+      "symbols": [
+        "vacuum_max_rot_rad"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE42_ULTIMATEROTATIONSANDF"
+      ],
+      "unit": "radians"
+    },
+    {
+      "availability": "direct",
+      "definition": "Maximum purlin cross-section rotation measured at failure in the channel-braced beam test.",
+      "evidence": "Table 4.2 (p. 79), column 'beam_max_rot_rad'",
+      "name": "Beam test maximum rotation",
+      "note": "",
+      "printed_symbol": "θ",
+      "quantity_kind": "angle",
+      "role": "measured_output",
+      "symbols": [
+        "beam_max_rot_rad"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE42_ULTIMATEROTATIONSANDF"
+      ],
+      "unit": "radians"
+    },
+    {
+      "availability": "direct",
+      "definition": "Experimentally determined rotational restraint factor F for the diaphragm-braced (vacuum) set-up, also used as the input F in the vacuum-test load-ratio analyses.",
+      "evidence": "Table 4.2 (p. 79) 'vacuum_f_kin_per_in_per_rad'; Table 4.6 (p. 83) 'f_kin_per_in_per_rad'",
+      "name": "Rotational restraint factor, diaphragm",
+      "note": "Footnote (2) of Table 4.2: F is in k-in/in/rad.",
+      "printed_symbol": "F",
+      "quantity_kind": "ratio",
+      "role": "measured_output",
+      "symbols": [
+        "vacuum_f_kin_per_in_per_rad",
+        "f_kin_per_in_per_rad"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE42_ULTIMATEROTATIONSANDF",
+        "MBMA_8001_TABLE46_VACUUMTESTLOADRATIOS"
+      ],
+      "unit": "kip-in/in/radian"
+    },
+    {
+      "availability": "direct",
+      "definition": "Experimentally determined rotational restraint factor F for the channel-braced (beam test) set-up.",
+      "evidence": "Table 4.2 (p. 79), column 'beam_f_kin_per_in_per_rad'",
+      "name": "Rotational restraint factor, channel",
+      "note": "",
+      "printed_symbol": "F",
+      "quantity_kind": "ratio",
+      "role": "measured_output",
+      "symbols": [
+        "beam_f_kin_per_in_per_rad"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE42_ULTIMATEROTATIONSANDF"
+      ],
+      "unit": "kip-in/in/radian"
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of the purlin web (cross-sectional) rotational deformation θ_p to the total rotation θ measured in the diaphragm-braced F tests.",
+      "evidence": "Table 4.3 (p. 80), column 'theta_p_over_theta_v', footnote (1)",
+      "name": "Web rotation fraction, diaphragm",
+      "note": "",
+      "printed_symbol": "θ_p/θ",
+      "quantity_kind": "ratio",
+      "role": "measured_output",
+      "symbols": [
+        "theta_p_over_theta_v"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE43_WEBROTATIONALDEFORMATION"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of the purlin web (cross-sectional) rotational deformation θ_p to the total rotation θ measured in the channel-braced F tests.",
+      "evidence": "Table 4.3 (p. 80), column 'theta_p_over_theta_b', footnote (2)",
+      "name": "Web rotation fraction, channel",
+      "note": "",
+      "printed_symbol": "θ_p/θ",
+      "quantity_kind": "ratio",
+      "role": "measured_output",
+      "symbols": [
+        "theta_p_over_theta_b"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE43_WEBROTATIONALDEFORMATION"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "simulated",
+      "definition": "Maximum web compressive stress computed from the AISI expression for beams with stiffened compression flanges, F_bw = [1.21 - .000337(h/t)√F_y]F_y.",
+      "evidence": "Table 4.4 (p. 81) 'fbw_s_ksi', footnote (1)",
+      "name": "Web stress F_bw, stiffened flange",
+      "note": "",
+      "printed_symbol": "F_bw",
+      "quantity_kind": "stress",
+      "role": "predicted_value",
+      "symbols": [
+        "fbw_s_ksi"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE44_YIELDANDULTIMATESTRESSES"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Maximum web compressive stress computed from the AISI expression for beams with unstiffened compression flanges, F_bw = [1.257 - .000508(h/t)√F_y]F_y.",
+      "evidence": "Table 4.4 (p. 81) 'fbw_u_ksi', footnote (2)",
+      "name": "Web stress F_bw, unstiffened flange",
+      "note": "",
+      "printed_symbol": "F_bw",
+      "quantity_kind": "stress",
+      "role": "predicted_value",
+      "symbols": [
+        "fbw_u_ksi"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE44_YIELDANDULTIMATESTRESSES"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of the observed vacuum-test ultimate load to the load computed by each of eight analysis types (a-h) that combine ultimate stress F_y or F_bw with full, edge-stiffened effective or unstiffened effective flange widths on total or flat width bases.",
+      "evidence": "Table 4.6 (p. 83), columns 'ratio_a' through 'ratio_h'; analysis types defined in Table 4.5",
+      "name": "Test / computed load ratio",
+      "note": "Eight analysis variants are reported as separate columns; the table also contains printed Mean, St. Dev. and St. Dev./Mean rows.",
+      "printed_symbol": "q_test/q_computed",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "ratio_a",
+        "ratio_b",
+        "ratio_c",
+        "ratio_d",
+        "ratio_e",
+        "ratio_f",
+        "ratio_g",
+        "ratio_h"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE46_VACUUMTESTLOADRATIOS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "simulated",
+      "definition": "Minimum edge-stiffener moment of inertia required by the AISI Specification, computed on the total flange width (case I) and on the flat flange width (case II), accounting for the lip angle being less than 90 degrees.",
+      "evidence": "Table 4.8 (p. 85), columns 'imin_total_in4' and 'imin_flat_in4', footnotes (1)-(3)",
+      "name": "Minimum required stiffener I",
+      "note": "Two bases (total and flat flange width) are reported as separate columns.",
+      "printed_symbol": "I_min",
+      "quantity_kind": "area",
+      "role": "predicted_value",
+      "symbols": [
+        "imin_total_in4",
+        "imin_flat_in4"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE48_MINSTIFFENERREQUIREMENT"
+      ],
+      "unit": "in^4"
+    },
+    {
+      "availability": "direct",
+      "definition": "Actual moment of inertia of the lip stiffener about its own centroidal axis, computed from the measured stiffener dimensions.",
+      "evidence": "Table 4.8 (p. 85), column 'stiffener_i_in4', footnote (4)",
+      "name": "Actual lip stiffener moment of inertia",
+      "note": "",
+      "printed_symbol": "I_s",
+      "quantity_kind": "area",
+      "role": "specimen_parameter",
+      "symbols": [
+        "stiffener_i_in4"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE48_MINSTIFFENERREQUIREMENT"
+      ],
+      "unit": "in^4"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Effective width of the compression flange computed by Desmond's method on the total-width basis, the flat-width basis, and treating flange plus stiffener as unstiffened.",
+      "evidence": "Table 4.9 (p. 86), columns 'w_total_in', 'w_flat_in', 'w_unstiff_in'",
+      "name": "Effective compression flange width",
+      "note": "Footnote (2) marks fully effective values; one value printed as '1.86²'.",
+      "printed_symbol": "W",
+      "quantity_kind": "length",
+      "role": "predicted_value",
+      "symbols": [
+        "w_total_in",
+        "w_flat_in",
+        "w_unstiff_in"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE49_EFFECTIVEWIDTHSDESMOND"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Reduced (effective) length of the partial lip stiffener computed by Desmond's method on the total-width and flat-width bases.",
+      "evidence": "Table 4.9 (p. 86), columns 's_total_in' and 's_flat_in', footnote (1)",
+      "name": "Effective stiffener length",
+      "note": "",
+      "printed_symbol": "S",
+      "quantity_kind": "length",
+      "role": "predicted_value",
+      "symbols": [
+        "s_total_in",
+        "s_flat_in"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLE49_EFFECTIVEWIDTHSDESMOND"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Direction of the applied load relative to the purlin: uplift for the vacuum tests, gravity for the beam tests.",
+      "evidence": "Table S1, column 'load_direction'",
+      "name": "Load direction",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "load_direction"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Cross-section shape of the test member, Z for all tests.",
+      "evidence": "Table S1, column 'section_type'",
+      "name": "Section shape",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "section_type"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Simple span length of the test assembly, 20 ft for all tests.",
+      "evidence": "Table S1, column 'span_ft'",
+      "name": "Span length",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "span_ft"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of spans in the test assembly (single span for all tests).",
+      "evidence": "Table S1, column 'n_spans'",
+      "name": "Number of spans",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_spans"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of parallel purlin lines in the test assembly (two for all tests).",
+      "evidence": "Table S1, column 'n_purlin_lines'",
+      "name": "Number of purlin lines",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_purlin_lines"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Type of roof panel and attachment used in the assembly: through-fastened 24-gage galvanized panel with screws at 1 ft for vacuum tests, none for beam tests.",
+      "evidence": "Table S1, column 'panel_type'; header notes on panel and fasteners (p. 29)",
+      "name": "Panel type and attachment",
+      "note": "V6 used self-drilling screws; other vacuum tests used self-tapping screws in prepunched holes.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "panel_type"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Bracing and end-restraint condition of the assembly: diaphragm (panel) braced or channel braced, with simply supported or fixed purlin ends.",
+      "evidence": "Table S1, column 'bracing'; Table 3.3 footnote (9) 'Ends of purlins were fixed'",
+      "name": "Bracing and end restraint",
+      "note": "Only test V1 had fixed ends.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "bracing"
+      ],
+      "table_tags": [
+        "MBMA_8001_TABLES1_STRENGTHSUMMARY",
+        "MBMA_8001_TABLE33_SUMMARYOFTESTRESULTS"
+      ],
+      "unit": ""
+    }
+  ],
+  "year": "1980"
+}

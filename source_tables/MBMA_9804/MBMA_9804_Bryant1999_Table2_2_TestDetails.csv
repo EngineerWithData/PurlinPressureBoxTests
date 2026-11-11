@@ -1,0 +1,27 @@
+# Source: MBMA_9804 | Bryant, M.R. and Murray, T.M. (1999), Table 2.2, pp.30
+# Tag: MBMA_9804_TABLE22_TESTDETAILS
+# Content: Detailed span lengths, lap lengths and panel types for each of the seven tests.
+# Data basis: input: as-built test assembly dimensions specified for the test program
+# Units: span and lap columns in feet (units printed in cells); other columns text
+# Column definitions:
+#   test_number = test identification label as printed
+#   purlin_type = purlin depth and cross-section shape used in the test
+#   test_bay_span_ft = span length of the instrumented test bay, feet
+#   middle_bay_span_ft = span length of the middle bay (three-span tests only), feet
+#   end_bay_span_ft = span length of the opposite end bay, feet
+#   total_lap_ft = total lap length of the purlins over an interior support, feet
+#   lap_into_test_bay_ft = length the lap extends into the test bay from the support, feet
+#   panel_type = roof panel/deck system used in the test
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 169 pages)
+# ANOMALY FLAG: The lap-into-test-bay entry for I. P. Test 2 Z-SS is printed with a stray leading mark as "· 1.5 ft."; preserved verbatim and not corrected. The two-span I. P. tests have no middle bay, so those cells are empty as printed.
+# Lap lengths are the total length of overlapping purlins centered on the interior support.
+test_number,purlin_type,test_bay_span_ft,middle_bay_span_ft,end_bay_span_ft,total_lap_ft,lap_into_test_bay_ft,panel_type
+Test 1 Z-TF,8 in. Z,25 ft.,25 ft.,23 ft.,2 ft.,1 ft.,Through Fastened
+Test 2 Z-SS,10 in. Z,25 ft.,25 ft.,23 ft.,2 ft.,1 ft.,Standing Seam
+Test 3 C-SS,10 in. C,24.5 ft.,25 ft.,23 ft.,3 ft.,1 ft.,Standing Seam
+Test 4 C-TF,8 in. C,24.5 ft.,25 ft.,23 ft.,3 ft.,1 ft.,Through Fastened
+I. P. Test 1 Z-SS,8.5 in. Z,30 ft.,,30 ft.,3 ft.,1.5 ft.,Standing Seam
+I. P. Test 2 Z-SS,8.5 in. Z,30 ft.,,30 ft.,3 ft.,· 1.5 ft.,Standing Seam
+I. P. Test 3 Z-TF,8.5 in. Z,30 ft.,,30 ft.,3 ft.,1.5 ft.,Through Fastened

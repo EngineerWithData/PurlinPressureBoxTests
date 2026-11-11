@@ -1,0 +1,515 @@
+{
+  "citation": "Metal Building Manufacturers Association (1983)",
+  "code_tag": "MBMA_8310",
+  "experiment": "Nine full-scale vacuum-chamber uplift tests were run on pairs of 20-ft laterally unsupported C- and Z-purlins with tension flanges through-fastened to 26-gage roof panels, and the measured failure loads were compared with Cornell-method computed capacities, supplemented by F-tests of the panel-to-purlin rotational restraint.",
+  "title": "Full-Scale Uplift Tests of Laterally Unsupported C- and Z-Purlins with Through-Fastened Roof Panels",
+  "variables": [
+    {
+      "availability": "direct",
+      "definition": "Sequential number identifying each of the nine full-scale uplift test specimens.",
+      "evidence": "Table 1 p.4, Table 2 p.5, Table S1 pp.4-6",
+      "name": "Test number",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "identifier",
+      "symbols": [
+        "test_no",
+        "test_id"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS",
+        "MBMA_8310_TABLE2_UPLIFTLOADCOMPARISONS",
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Cross-section shape of the purlin, reported as C or Z.",
+      "evidence": "Table 1 p.4, Table 3 p.6, Table S1 pp.4-6",
+      "name": "Purlin section shape",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "section_type",
+        "purlin_section_type"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS",
+        "MBMA_8310_TABLE3_ROTATIONALRESTRAINTFACTORS",
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Combined thickness-and-shape designation (e.g. '.07 C') used in Table 2 to group specimens for averaging.",
+      "evidence": "Table 2 p.5, section_type column",
+      "name": "Specimen group designation",
+      "note": "Same column name as the shape column but holds a thickness+shape label",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "section_type"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE2_UPLIFTLOADCOMPARISONS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured base metal thickness of the purlin steel, excluding coating.",
+      "evidence": "Table 1 p.4 (t_in), Table 3 p.6, Table S1 pp.4-6",
+      "name": "Purlin base metal thickness",
+      "note": "",
+      "printed_symbol": "t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "t_in",
+        "thickness_in",
+        "purlin_thickness_in"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS",
+        "MBMA_8310_TABLE3_ROTATIONALRESTRAINTFACTORS",
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured overall web depth of the purlin cross section as defined in Fig. 1.",
+      "evidence": "Table 1 p.4 (h_in), Table S1 pp.4-6 (depth_in)",
+      "name": "Overall web depth",
+      "note": "",
+      "printed_symbol": "H",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "h_in",
+        "depth_in"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS",
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured width of flange 1 of the purlin, per the Fig. 1 notation.",
+      "evidence": "Table 1 p.4",
+      "name": "Flange 1 width",
+      "note": "",
+      "printed_symbol": "b1",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "b1_in"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured width of flange 2 of the purlin, per the Fig. 1 notation.",
+      "evidence": "Table 1 p.4",
+      "name": "Flange 2 width",
+      "note": "",
+      "printed_symbol": "b2",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "b2_in"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured length of the edge stiffener lip on flange 1, per Fig. 1.",
+      "evidence": "Table 1 p.4",
+      "name": "Edge stiffener 1 length",
+      "note": "",
+      "printed_symbol": "l1",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "l1_in"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured length of the edge stiffener lip on flange 2, per Fig. 1.",
+      "evidence": "Table 1 p.4",
+      "name": "Edge stiffener 2 length",
+      "note": "",
+      "printed_symbol": "l2",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "l2_in"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Initial lateral sweep (out-of-straightness offset) of the purlin, negative to the north and positive to the south.",
+      "evidence": "Table 1 p.4, Note (5)",
+      "name": "Initial sweep",
+      "note": "Sign convention is directional, not magnitude-only",
+      "printed_symbol": "ao",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "ao_in"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS",
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "implied",
+      "definition": "Inside corner radius of all purlin bends, stated as a single value for all specimens.",
+      "evidence": "Table 1 Note (2) p.4; repeated in Table S1 notes",
+      "name": "Corner radius",
+      "note": "Single value 0.313 in for all specimens",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "Note (2)"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS",
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "implied",
+      "definition": "Inclination of the edge stiffener lips relative to the flange, stated as 90 degrees for all specimens.",
+      "evidence": "Table 1 Note (3) p.4; repeated in Table S1 notes",
+      "name": "Edge stiffener angle",
+      "note": "Single value for all specimens",
+      "printed_symbol": "",
+      "quantity_kind": "angle",
+      "role": "specimen_parameter",
+      "symbols": [
+        "Note (3)"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS",
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "degrees"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured yield stress of the purlin steel, reported as a single value of 64.47 ksi applied to all specimens.",
+      "evidence": "Table 1 Note (4) p.4; column yield_stress_ksi in Table S1",
+      "name": "Yield stress",
+      "note": "Same value for all nine tests",
+      "printed_symbol": "Fy",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "yield_stress_ksi",
+        "Note (4): Fy"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS",
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Maximum uniform uplift line load carried by the purlin at failure, converted from the maximum vacuum-chamber transducer pressure using the tributary width.",
+      "evidence": "Table 2 p.5 (pu_lb_per_ft); Table S1 failure_load_as_printed",
+      "name": "Tested failure load",
+      "note": "Report does not state whether dead load is included",
+      "printed_symbol": "Pu",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "pu_lb_per_ft",
+        "failure_load_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE2_UPLIFTLOADCOMPARISONS",
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "lb/ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Unit in which the maximum failure load is printed (lb/ft).",
+      "evidence": "Table S1 column failure_load_unit",
+      "name": "Failure load unit",
+      "note": "Metadata column, constant lb/ft",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "failure_load_unit"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Group mean of the tested failure loads for each thickness-and-shape group, printed as interleaved 'Average' rows in Table 2.",
+      "evidence": "Table 2 p.5 'Average' rows; values restated in Table S1 notes (.07 C = 102.2, .07 Z = 126.7, .10 C = 204.0, .10 Z = 239.3 lb/ft)",
+      "name": "Group average tested load",
+      "note": "Reported only per group, not per test",
+      "printed_symbol": "Pu (avg)",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "pu_lb_per_ft"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE2_UPLIFTLOADCOMPARISONS",
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "lb/ft"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Failure load predicted for each specimen using the Cornell analytical method for laterally unsupported purlins.",
+      "evidence": "Table 2 p.5; Table S1 computed_load_pc_lb_per_ft",
+      "name": "Computed failure load (Cornell)",
+      "note": "",
+      "printed_symbol": "Pc",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "pc_lb_per_ft",
+        "computed_load_pc_lb_per_ft"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE2_UPLIFTLOADCOMPARISONS",
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "lb/ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of the tested maximum uplift load to the Cornell-method computed failure load.",
+      "evidence": "Table 2 p.5 (header printed 'P u/P /c'); Table S1 ratio_pu_pc",
+      "name": "Test-to-computed load ratio",
+      "note": "Header printed in broken two-line form",
+      "printed_symbol": "Pu/Pc",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "pu_over_pc",
+        "ratio_pu_pc"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE2_UPLIFTLOADCOMPARISONS",
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Identification number (1 to 4) of each panel-to-purlin F-test configuration.",
+      "evidence": "Table 3 p.6",
+      "name": "F-test configuration number",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "identifier",
+      "symbols": [
+        "test_configuration"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE3_ROTATIONALRESTRAINTFACTORS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Rotational restraint of the panel-to-purlin connection measured by the F-test procedure of Reference 2 for each purlin thickness and shape configuration.",
+      "evidence": "Table 3 p.6; carried per configuration into Table S1",
+      "name": "Rotational restraint factor",
+      "note": "Reported per configuration (two F-tests each), not per full-scale test",
+      "printed_symbol": "F",
+      "quantity_kind": "ratio",
+      "role": "measured_output",
+      "symbols": [
+        "rotational_restraint_factor_lb_per_in_per_in"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE3_ROTATIONALRESTRAINTFACTORS",
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "lb/in/in"
+    },
+    {
+      "availability": "implied",
+      "definition": "Number of replicate F-tests performed for each panel-to-purlin configuration, stated as two.",
+      "evidence": "Table 3 Note (1) p.6",
+      "name": "F-tests per configuration",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "Note (1)"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLE3_ROTATIONALRESTRAINTFACTORS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Direction of the applied load, simulated wind uplift produced by the vacuum chamber.",
+      "evidence": "Table S1 column load_direction",
+      "name": "Load direction",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "load_direction"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Length of each test purlin, 20 ft for all specimens.",
+      "evidence": "Table S1 column span_ft; Table 1 note 'two 20-ft long purlins'",
+      "name": "Purlin span length",
+      "note": "Number of spans is not stated in the report",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "span_ft"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+        "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of parallel purlin lines in each test specimen, two for all tests.",
+      "evidence": "Table S1 column n_purlin_lines; Table 1 note",
+      "name": "Number of purlin lines",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_purlin_lines"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+        "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Description of the roof panel and its attachment: 26-gage conventional through-fastened roof panel screwed to the tension flange.",
+      "evidence": "Table S1 column panel_type; Table 3 Notes (2) and (3)",
+      "name": "Roof panel type and attachment",
+      "note": "Panel gage and fastener type (1/4 x 14 SDS) stated in Table 3 notes",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "panel_type"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+        "MBMA_8310_TABLE3_ROTATIONALRESTRAINTFACTORS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Lateral bracing condition of the purlin compression flange, laterally unsupported for all tests.",
+      "evidence": "Table S1 column bracing",
+      "name": "Lateral bracing condition",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "bracing"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "implied",
+      "definition": "Tributary width per purlin line used to convert chamber pressure to line load, 38 in. (76-in. chamber shared by two purlin lines).",
+      "evidence": "Conversion note printed under Table 2: P(lb/ft) = reading (psf) x (76/2) x (1/12)",
+      "name": "Tributary width per purlin",
+      "note": "Given only in the load-conversion formula",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "Tributary width conversion"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+        "MBMA_8310_TABLE2_UPLIFTLOADCOMPARISONS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Report location (table and PDF page) from which each reported failure load was taken.",
+      "evidence": "Table S1 columns value_source and pages",
+      "name": "Value source and page",
+      "note": "Provenance metadata, not a physical quantity",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "value_source",
+        "pages"
+      ],
+      "table_tags": [
+        "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    }
+  ],
+  "year": "1983"
+}

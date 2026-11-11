@@ -1,0 +1,42 @@
+# Source: MBMA_8803 | Golovin, M. and Fisher, J.M. (1988), Table E, pp.9
+# Tag: MBMA_8803_TABLEE_UPLIFTTESTREADINGS
+# Content: Load-step tabulation of manometer pressure, total uplift load, vertical deflections and bottom-flange horizontal movements of purlins A-1, B-1, A-3 and B-3, end-support horizontal movements and observer remarks during MBMA Uplift Test #B-1 (March 28, 1988).
+# Data basis: measured: manometer pressure readings and dial-gauge deflection/movement readings during the pressure-box uplift test
+# Units: manometer in inches of water; load in lb/ft; all deflection and movement readings in inches
+# Column definitions:
+#   manometer_reading_in_h2o = pressure-box manometer reading on one leg, inches of water
+#   total_load_lb_per_ft = total uplift load on the purlin, pounds per foot
+#   reading_type = "\u0394" = vertical deflection reading, "B" = horizontal movement of bottom flange
+#   a1_in = reading on member A-1 at the north end bay, inches
+#   b1_in = reading on member B-1 at the north end bay, inches
+#   a3_in = reading on member A-3 at the south end bay, inches
+#   b3_in = reading on member B-3 at the south end bay, inches
+#   line1_in = horizontal movement of end support beam at line 1, inches
+#   line4_in = horizontal movement of end support beam at line 4, inches
+#   observations = observer notes recorded at that load step
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 15 pages); 4 character(s) were illegible and are marked [?], not guessed
+# ANOMALY FLAG: At the failure step (2.7 in. H2O) the deflection readings for A-1, B-1 and A-3 are blank and 'FAILURE' is printed in the B-3 cell; in the following B-row the dashes appear shifted one column to the left relative to the headings. Values are preserved verbatim as printed and NOT corrected.
+# Test setup: 9 1/2 in. Zees (American), 24 ga. ribbed panels, continuous 30'/30'/30' spans, laps 1'-3" end and interior, pressure-box loading; end-bay zees had 2x2x1/8 angle braces on the bottom flange at the quarter points.
+# Readings recorded by WRH, 3-29-88 (Attachment E).
+# Negative total load of -8.5 lb/ft at zero manometer reading represents dead load.
+# Last pair of rows are residual readings after removal of load.
+# Dashes '\u2014' are printed where no reading was taken; blank cells are blank as printed.
+manometer_reading_in_h2o,total_load_lb_per_ft,reading_type,a1_in,b1_in,a3_in,b3_in,line1_in,line4_in,observations
+0,-8.5-,Δ,4.85,5.30,5.10,5.85,.492,.431,SHEET FASTENERS ARE PRETTY MUCH IN CENTER OF FLANGE. MEMBERS ARE STRAIGHT.
+,,B,4.90,5.00,4.90,5.00,,,
+"1""",44.2,Δ,3.70,4.25,4.00,4.70,.544,.470,NO CHANGE OTHER THAN IN SPAN 1/2 SET-UP SHIFTED SLIGHTY TO WEST AND BRACE ROLLERS ARE NOW TOUCHING SIDE OF BOX.
+,,B,5.00,5.05,4.90,5.00,,,
+"1 1/2""",70.5,Δ,3.05,3.60,3.35,4.05,.576,.502,NO CHANGE
+,,B,5.00,5.05,4.90,5.00,,,
+"2""",96.8,Δ,2.40,2.90,2.55,3.30,.616,.539,NO APPARANT CHANGES OTHER THAN INCREASED VERTICAL DEFLECTION.
+,,B,5.00,5.05,4.90,5.00,,,
+"2 1/4""",110.0,Δ,2.10,2.60,2.25,3.00,.633,.553,BOTTOM FLANGE LIPS OF ZEES ARE GETTING WAVY.
+,,B,5.00,5.05,4.90,5.05,,,
+"2 1/2""",123.1,Δ,1.70,2.10,1.80,2.60,.667,.578,IN SPAN 1/2 THERE IS SOME DISTORTION IN BOT. FLANGE @ BRACE CONNECTION
+,,B,5.00,5.05,4.90,5.05,,,
+"2.7""",133.7,Δ,,,,FAILURE,—,—,"IN GOING UP TO 2 3/4"" LOAD FAILURE OCCURRED @ 2.7"". BOT. FLANGE/WEB OF (B3) BUCKLED BTWN. MIDDLE AND OUTSIDE BRACE, WHILE"
+,,B,—,—,—,,,,
+"0""",-8.5,Δ,4.25,4.65,—,—,—,—,"(A3) DID NOT COMPLETELY FAIL BOT. FLANGE LIP ""TENTED"" ABOUT 6"" SOUTH OF MID. BRACE"
+,,B,5.00,5.05,—,—,,,RESIDUAL READINGS AFTER REMOVAL OF LOAD

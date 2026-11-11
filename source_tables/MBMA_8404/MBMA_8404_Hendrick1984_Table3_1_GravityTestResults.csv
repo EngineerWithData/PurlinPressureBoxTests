@@ -1,0 +1,26 @@
+# Source: MBMA_8404 | Hendrick, D. and Murray, T.M. (1984), Table 3.1, pp.26
+# Tag: MBMA_8404_TABLE31_GRAVITYTESTRESULTS
+# Content: Predicted (AISI constrained bending) and measured failure loads, failure modes and configurations for the seven simulated gravity loading tests.
+# Data basis: mixed: measured failure loads from the vacuum-chamber tests compared with AISI constrained-bending predicted loads
+# Units: p_pred_plf and p_test_plf in pounds per lineal foot; p_test_over_p_pred dimensionless
+# Column definitions:
+#   test_no = gravity loading test designation number
+#   p_pred_plf = AISI constrained bending failure load, pounds per lineal foot
+#   p_test_plf = actual failure load including dead load, pounds per lineal foot
+#   p_test_over_p_pred = ratio of actual to predicted failure load, printed in parentheses
+#   failure_mode = description of the observed failure (" means same as the row above)
+#   remarks = test configuration notes (" means same as the row above)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 199 pages)
+# ANOMALY FLAG: The actual-to-predicted ratios are printed in parentheses beneath the actual failure load and are reproduced verbatim with their parentheses. Ditto marks (") in the printed failure-mode and remarks columns are kept as printed and mean 'same as the row above'. No values were altered.
+# Printed notes: 1. The test matrix is found in Table 1.1, page 3. * Based on Fy = 56 ksi and on implied factor of safety of 1.67.
+# Reported failure loads are the sum of the applied load plus the dead load supported by a test purlin.
+test_no,p_pred_plf,p_test_plf,p_test_over_p_pred,failure_mode,remarks
+1,172.2,149.5,(0.87),Local buckling of the flange and/or web of east and west test purlin,All purlins in same direction.  No intermediate bracing.
+2,180.1,167.4,(0.93),"""",Test purlins facing each other. No intermediate bracing.
+3,172.0,162.3,(0.94),"""",""""
+4,175.9,154.6,(0.88),Local buckling of comp. flange and/or web of east test purlin.,Same as test 1 except purlins clipped to rafters.
+5,236.3,266.3,(1.13),Local buckling of comp. flange and/or web of test purlins,Same as test 2 except 12 gage purlins were used.
+6,111.7,97.7,(0.87),Local buckling of comp. flange and/or web of east test purlins.,Same as test 2 except 16 gage purlins were used.
+16,194.2,182.0,(0.94),Local buckling of comp. flange and/or web of east test purlin,Bracing @ ends and @ one-third points.

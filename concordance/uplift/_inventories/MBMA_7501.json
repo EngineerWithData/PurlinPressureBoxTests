@@ -1,0 +1,605 @@
+{
+  "citation": "Metal Building Manufacturers Association (1975)",
+  "code_tag": "MBMA_7501",
+  "experiment": "Three full-scale, three-span continuous lapped purlin assemblies (two Z-section and one C-section, 25 ft spans, through-fastened 'SR' deck) were loaded to failure by vacuum to simulate wind uplift, with dial gages recording web displacements and twist and strain gages recording strains/stresses at each load level, supplemented by pilot screw-connection capacity tests.",
+  "title": "Simulated Wind-Uplift Tests of Three-Span Continuous Lapped C- and Z-Section Purlin Assemblies",
+  "variables": [
+    {
+      "availability": "direct",
+      "definition": "Identification name of the tested assembly or pilot screw-connection specimen as given in the report.",
+      "evidence": "Table S1, pages 5, 7, 8, 11, 98 (column test_id)",
+      "name": "Test specimen identifier",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_id"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Direction of the applied load; all full-scale tests were simulated wind uplift applied as vacuum.",
+      "evidence": "Table S1 (column load_direction) and header note on vacuum loading",
+      "name": "Load direction",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "load_direction"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Cross-sectional shape of the purlin, C or Z, as built in the assembly.",
+      "evidence": "Table S1 (column section_type)",
+      "name": "Purlin section type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "section_type"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal depth of the purlin cross-section (8 in. for the Z assemblies, 7 in. for the C assembly).",
+      "evidence": "Table S1 (column depth_in)",
+      "name": "Purlin depth",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "depth_in"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Base steel thickness of the purlin, reported separately for the C-section end spans and center span.",
+      "evidence": "Table S1 (column thickness_in); header note on the .119/.1119 discrepancy",
+      "name": "Purlin thickness",
+      "note": "C-section end-span thickness printed as .119 in Fig. 2b and .1119 in Section 6.",
+      "printed_symbol": "T",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "thickness_in"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Length of each individual span of the continuous assembly (25 ft).",
+      "evidence": "Table S1 (column span_ft)",
+      "name": "Span length",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "span_ft"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of continuous spans in the assembly (three in all full-scale tests).",
+      "evidence": "Table S1 (column n_spans)",
+      "name": "Number of spans",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_spans"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "inferred",
+      "definition": "Number of parallel purlin lines in the assembly; a column exists but the report never states the number in words, so it must be read off the figures.",
+      "evidence": "Table S1 (column n_purlin_lines) and header note that the count is not stated",
+      "name": "Number of purlin lines",
+      "note": "Column is blank in all rows.",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "specimen_parameter",
+      "symbols": [
+        "n_purlin_lines"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Type of roof panel and its attachment to the purlins (through-fastened 'SR' panel with #14 self-tapping screws).",
+      "evidence": "Table S1 (column panel_type) and header note describing the SR panel",
+      "name": "Roof panel/attachment type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "panel_type"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "implied",
+      "definition": "Base steel thickness of the 'SR' roof deck panel, stated as t = .021 in. for all assemblies in the table header note.",
+      "evidence": "Table S1 header note: deck was the \"SR\" panel, t = .021 in.",
+      "name": "Roof deck thickness",
+      "note": "Single stated value, not a column.",
+      "printed_symbol": "t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "implied",
+      "definition": "Transverse spacing of the purlin lines, stated in the header note as 5 ft for the Z assemblies and about 61 in. for the C assembly.",
+      "evidence": "Table S1 header note on purlin spacing (Figs. 1a, 2a)",
+      "name": "Purlin spacing",
+      "note": "Stated in a note, not a column.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft/in"
+    },
+    {
+      "availability": "implied",
+      "definition": "Length of the roof deck cantilevered beyond the outside purlin lines, 8 in. for the Z assemblies and 5.5 in. for the C assembly.",
+      "evidence": "Table S1 header note on deck overhangs",
+      "name": "Deck overhang beyond outside purlin",
+      "note": "Stated in a note, not a column.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Lateral/torsional bracing arrangement used in the final test of each assembly (braces at supports only, with or without intermediate braces or rake channels).",
+      "evidence": "Table S1 (column bracing) and header note on braces and rake channels",
+      "name": "Bracing condition",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "bracing"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Failure (ultimate) load of the assembly or pilot screw connection exactly as printed in the report, obtained by increasing vacuum pressure until collapse.",
+      "evidence": "Table S1 (column failure_load_as_printed, with unit in failure_load_unit), pages 5, 7, 8, 11, 98",
+      "name": "Failure (ultimate) load",
+      "note": "Printed as approximate values ('about 40', 'about 50' psf); screw-test rows give load per screw.",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "measured_output",
+      "symbols": [
+        "failure_load_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "psf (per screw for pilot tests)"
+    },
+    {
+      "availability": "direct",
+      "definition": "Verbal description of the observed mode that terminated the test (plastic buckling, screw pull-over, deck tearing).",
+      "evidence": "Table S1 (column failure_mode)",
+      "name": "Failure mode",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "failure_mode"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Highest vacuum load level at which dial- and strain-gage readings were recorded during the test.",
+      "evidence": "Table S1 (column last_recorded_load_psf)",
+      "name": "Last recorded gage load",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "test_condition",
+      "symbols": [
+        "last_recorded_load_psf"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "psf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Dead weight of the test assembly per square foot of horizontal projection, acting in addition to the applied vacuum pressure.",
+      "evidence": "Table S1 (column dead_load_psf) and header note on plot origins shifted by the dead load",
+      "name": "Assembly dead load",
+      "note": "Different values for C-section end spans and center span.",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "test_condition",
+      "symbols": [
+        "dead_load_psf"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "psf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Yield stress of the purlin steel measured on tensile coupons, reported as individual coupon values by purlin type.",
+      "evidence": "Table S1 (column yield_stress_ksi); header note quoting Section 6 coupon results",
+      "name": "Coupon yield stress",
+      "note": "Reported by purlin type only; Z values repeated for both Z assembly rows.",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "yield_stress_ksi"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Applied vacuum (simulated wind uplift) pressure at which each set of dial- and strain-gage readings was taken.",
+      "evidence": "Appendix tables A2, A3, B1-B3, B6, B7, C2-C9 (columns load_psf / p_psf)",
+      "name": "Applied uplift load level",
+      "note": "Some load labels are duplicated or reset ('reset 21', '27 Base') and are preserved as printed.",
+      "printed_symbol": "p",
+      "quantity_kind": "stress",
+      "role": "test_condition",
+      "symbols": [
+        "load_psf",
+        "p_psf"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLEA2_APPA2ZSEC1ROTATIONS",
+        "MBMA_7501_TABLEA3_APPA3ZSEC1STRAINSTRESS",
+        "MBMA_7501_TABLEB1_APPB1CSECSTRAIN1TO14",
+        "MBMA_7501_TABLEB2_APPB2CSECSTRAIN15TO28",
+        "MBMA_7501_TABLEB3_APPB3CSECSTRAIN29TO41",
+        "MBMA_7501_TABLEB6_APPB6CSECROTATIONS",
+        "MBMA_7501_TABLEB7_APPB7CSECDIALGAGES28TO33",
+        "MBMA_7501_TABLEC2_APPC2ZSEC2DIALGAGES",
+        "MBMA_7501_TABLEC3_APPC3ZSEC2STRAIN1TO8",
+        "MBMA_7501_TABLEC4_APPC4ZSEC2STRAIN9TO16",
+        "MBMA_7501_TABLEC5_APPC5ZSEC2STRAIN17TO24",
+        "MBMA_7501_TABLEC6_APPC6ZSEC2STRAIN25TO32",
+        "MBMA_7501_TABLEC7_APPC7ZSEC2STRAIN33TO40",
+        "MBMA_7501_TABLEC8_APPC8ZSEC2STRAIN41TO48",
+        "MBMA_7501_TABLEC9_APPC9ZSEC2STRAIN49TO56"
+      ],
+      "unit": "psf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Raw dial gage reading at each load level, from which displacements are computed; parenthesised or bracketed values are reset readings.",
+      "evidence": "Appendix B7 (columns g28_rdg...g33_rdg), page 95; Appendix C2 (columns g16_rdg...g19_rdg), page 97",
+      "name": "Dial gage reading",
+      "note": "Readings printed as x10^-3 in. in B7 (gage 32 in inches); reset values merged into the reading cell.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "measured_output",
+      "symbols": [
+        "g28_rdg",
+        "g29_rdg",
+        "g30_rdg",
+        "g31_rdg",
+        "g32_rdg",
+        "g33_rdg",
+        "g16_rdg",
+        "g17_rdg",
+        "g18_rdg",
+        "g19_rdg"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLEB7_APPB7CSECDIALGAGES28TO33",
+        "MBMA_7501_TABLEC2_APPC2ZSEC2DIALGAGES"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Horizontal displacement at an individual dial gage location, obtained from the dial gage readings at each load level.",
+      "evidence": "Appendix A2 (p.87), B6 (p.94), B7 (p.95), C2 (p.97) — columns u5_in, u6_in, ... u33_in",
+      "name": "Dial gage horizontal displacement",
+      "note": "Gage locations are given in Figs. 6, 22 and 37; one B6 header is printed ambiguously as 'u[?]' (taken as gage 19).",
+      "printed_symbol": "u",
+      "quantity_kind": "length",
+      "role": "measured_output",
+      "symbols": [
+        "u5_in",
+        "u6_in",
+        "u7_in",
+        "u8_in",
+        "u11_in",
+        "u12_in",
+        "u13_in",
+        "u14_in",
+        "u17_in",
+        "u18_in",
+        "u19_in",
+        "u20_in",
+        "u25_in",
+        "u26_in",
+        "u27_in",
+        "u28_in",
+        "u2_in",
+        "u3_in",
+        "u9_in",
+        "u10_in",
+        "u22_in",
+        "u23_in",
+        "u4_in",
+        "u29_in",
+        "u16_in",
+        "u30_in",
+        "u31_in",
+        "u32_in",
+        "u33_in"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLEA2_APPA2ZSEC1ROTATIONS",
+        "MBMA_7501_TABLEB6_APPB6CSECROTATIONS",
+        "MBMA_7501_TABLEB7_APPB7CSECDIALGAGES28TO33",
+        "MBMA_7501_TABLEC2_APPC2ZSEC2DIALGAGES"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Difference between the horizontal displacements of a vertically paired set of dial gages on the same purlin web, used to compute twist.",
+      "evidence": "Appendix A2 (p.87) and B6 (p.94) — columns u6_minus_u5_in, u2_minus_u3_in, etc.",
+      "name": "Paired gage displacement difference",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "derived_ratio",
+      "symbols": [
+        "u6_minus_u5_in",
+        "u8_minus_u7_in",
+        "u12_minus_u11_in",
+        "u14_minus_u13_in",
+        "u18_minus_u17_in",
+        "u20_minus_u19_in",
+        "u26_minus_u25_in",
+        "u28_minus_u27_in",
+        "u2_minus_u3_in",
+        "u9_minus_u10_in",
+        "u6_minus_u7_in",
+        "u22_minus_u23_in",
+        "u19_minus_u20_in",
+        "u25_minus_u26_in",
+        "u4_minus_u5_in",
+        "u28_minus_u29_in"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLEA2_APPA2ZSEC1ROTATIONS",
+        "MBMA_7501_TABLEB6_APPB6CSECROTATIONS"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Twist of the purlin cross-section expressed as the tangent of the rotation angle, computed from the difference of paired dial gage displacements divided by their vertical separation.",
+      "evidence": "Appendix A2 (p.87), B6 (p.94), C2 (p.97) — tan_theta_* and u15_u16_tan / u18_u19_tan columns",
+      "name": "Twist angle (tangent)",
+      "note": "In Appendix C2 defined explicitly as (U15-U16)/4 and (U18-U19)/4.",
+      "printed_symbol": "tan θ",
+      "quantity_kind": "ratio",
+      "role": "measured_output",
+      "symbols": [
+        "tan_theta_5_6",
+        "tan_theta_7_8",
+        "tan_theta_11_12",
+        "tan_theta_13_14",
+        "tan_theta_17_18",
+        "tan_theta_19_20",
+        "tan_theta_25_26",
+        "tan_theta_27_28",
+        "tan_theta_2_3",
+        "tan_theta_9_10",
+        "tan_theta_6_7",
+        "tan_theta_22_23",
+        "tan_theta_4_5",
+        "tan_theta_28_29",
+        "u15_u16_tan",
+        "u18_u19_tan"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLEA2_APPA2ZSEC1ROTATIONS",
+        "MBMA_7501_TABLEB6_APPB6CSECROTATIONS",
+        "MBMA_7501_TABLEC2_APPC2ZSEC2DIALGAGES"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Horizontal (lateral) displacement of the mid-height of the purlin web, computed as the mean/interpolated value of the paired dial gage displacements.",
+      "evidence": "Appendix A2 (p.87), B6 (p.94), C2 (p.97) — um_* and u15_u16_avg_in / u18_u19_avg_in columns",
+      "name": "Mid-web horizontal displacement",
+      "note": "In Appendix C2 defined as (U15+U16)/2 and (U18+U19)/2.",
+      "printed_symbol": "um",
+      "quantity_kind": "length",
+      "role": "measured_output",
+      "symbols": [
+        "um_5_6_in",
+        "um_7_8_in",
+        "um_11_12_in",
+        "um_13_14_in",
+        "um_17_18_in",
+        "um_19_20_in",
+        "um_25_26_in",
+        "um_27_28_in",
+        "um_2_3_in",
+        "um_9_10_in",
+        "um_6_7_in",
+        "um_22_23_in",
+        "um_4_5_in",
+        "um_28_29_in",
+        "u15_u16_avg_in",
+        "u18_u19_avg_in"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLEA2_APPA2ZSEC1ROTATIONS",
+        "MBMA_7501_TABLEB6_APPB6CSECROTATIONS",
+        "MBMA_7501_TABLEC2_APPC2ZSEC2DIALGAGES"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Strain gage reading at each gage and load level, recorded in micro in/in on the strain indicator.",
+      "evidence": "Appendix A3 (p.88), B1-B3 (pp.89-91), C3-C9 (pp.98-104) — columns g1_rdg_microin ... g56_rdg_microin",
+      "name": "Strain gage reading",
+      "note": "Some gages printed 'X' (no gage), some readings missing or truncated with [?] markers; gage 32 in Appendix B3 is noted defective.",
+      "printed_symbol": "",
+      "quantity_kind": "ratio",
+      "role": "measured_output",
+      "symbols": [
+        "g1_rdg_microin",
+        "g2_rdg_microin",
+        "g3_rdg_microin",
+        "g10_rdg_microin",
+        "g20_rdg_microin",
+        "g30_rdg_microin",
+        "g41_rdg_microin",
+        "g48_rdg_microin",
+        "g56_rdg_microin"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLEA3_APPA3ZSEC1STRAINSTRESS",
+        "MBMA_7501_TABLEB1_APPB1CSECSTRAIN1TO14",
+        "MBMA_7501_TABLEB2_APPB2CSECSTRAIN15TO28",
+        "MBMA_7501_TABLEB3_APPB3CSECSTRAIN29TO41",
+        "MBMA_7501_TABLEC3_APPC3ZSEC2STRAIN1TO8",
+        "MBMA_7501_TABLEC4_APPC4ZSEC2STRAIN9TO16",
+        "MBMA_7501_TABLEC5_APPC5ZSEC2STRAIN17TO24",
+        "MBMA_7501_TABLEC6_APPC6ZSEC2STRAIN25TO32",
+        "MBMA_7501_TABLEC7_APPC7ZSEC2STRAIN33TO40",
+        "MBMA_7501_TABLEC8_APPC8ZSEC2STRAIN41TO48",
+        "MBMA_7501_TABLEC9_APPC9ZSEC2STRAIN49TO56"
+      ],
+      "unit": "micro in/in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Stress at each strain gage location, computed from the change in gage reading multiplied by the elastic modulus (reading x 30x10^3/10^6 = reading x .03).",
+      "evidence": "Appendix A3 (p.88), B1-B3 (pp.89-91), C3-C9 (pp.98-104) — columns g1_stress_ksi ... g56_stress_ksi",
+      "name": "Stress from strain gage",
+      "note": "Zero-load rows carry sign markers instead of stresses; many values truncated or contain [?].",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "measured_output",
+      "symbols": [
+        "g1_stress_ksi",
+        "g2_stress_ksi",
+        "g3_stress_ksi",
+        "g10_stress_ksi",
+        "g20_stress_ksi",
+        "g30_stress_ksi",
+        "g41_stress_ksi",
+        "g48_stress_ksi",
+        "g56_stress_ksi"
+      ],
+      "table_tags": [
+        "MBMA_7501_TABLEA3_APPA3ZSEC1STRAINSTRESS",
+        "MBMA_7501_TABLEB1_APPB1CSECSTRAIN1TO14",
+        "MBMA_7501_TABLEB2_APPB2CSECSTRAIN15TO28",
+        "MBMA_7501_TABLEB3_APPB3CSECSTRAIN29TO41",
+        "MBMA_7501_TABLEC3_APPC3ZSEC2STRAIN1TO8",
+        "MBMA_7501_TABLEC4_APPC4ZSEC2STRAIN9TO16",
+        "MBMA_7501_TABLEC5_APPC5ZSEC2STRAIN17TO24",
+        "MBMA_7501_TABLEC6_APPC6ZSEC2STRAIN25TO32",
+        "MBMA_7501_TABLEC7_APPC7ZSEC2STRAIN33TO40",
+        "MBMA_7501_TABLEC8_APPC8ZSEC2STRAIN41TO48",
+        "MBMA_7501_TABLEC9_APPC9ZSEC2STRAIN49TO56"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "implied",
+      "definition": "Elastic modulus of the steel used to convert strain gage readings to stress, stated in the column definitions as 30x10^3 ksi (factor .03 ksi per micro in/in).",
+      "evidence": "Column definition in Appendices A3/B1/B2/B3: 'stress from gage 1 (reading x 30x10^3/10^6)'",
+      "name": "Elastic modulus used for stresses",
+      "note": "Assumed value, not measured in the tests.",
+      "printed_symbol": "E",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [],
+      "table_tags": [
+        "MBMA_7501_TABLEA3_APPA3ZSEC1STRAINSTRESS",
+        "MBMA_7501_TABLEB1_APPB1CSECSTRAIN1TO14",
+        "MBMA_7501_TABLEB2_APPB2CSECSTRAIN15TO28",
+        "MBMA_7501_TABLEB3_APPB3CSECSTRAIN29TO41"
+      ],
+      "unit": "ksi"
+    }
+  ],
+  "year": "1975"
+}

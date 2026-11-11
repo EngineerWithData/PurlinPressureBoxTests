@@ -1,0 +1,24 @@
+# Source: MBMA_9001 | Anderson, B.B. and Murray, T.M. (1990), Table 4.3, pp.38
+# Tag: MBMA_9001_TABLE43_THIRDPOINTBRACEDTESTRESULTS
+# Content: Failure loads and failure modes of the four rafter-plus-third-point braced base tests and their corresponding three-span confirming uplift tests.
+# Data basis: measured: vacuum chamber uplift tests with manometer / pressure transducer load measurement
+# Units: failure_load_plf in plf; other columns descriptive
+# Column definitions:
+#   test_designation = test set label as printed (see Table 3.1 notes for the ID code)
+#   no_of_spans = number of spans in the test assembly, One (base test) or Three (confirming test)
+#   failure_load_plf = uniform uplift failure load of the assembly, pounds per lineal foot
+#   failure_mode = observed mode of failure (LB and CLIP defined in table footnotes)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 174 pages)
+# ANOMALY FLAG: Test designations are printed only once per pair of rows; blank cells given as "". Printed failure loads differ slightly from the corresponding appendix test summary sheets (212.9 vs 213.0 plf for U-Z-T-P/S-3(O), 195.8 vs 195.85 plf for U-Z-T-R/S-1, 222.9 vs 223.0 plf for U-Z-T-R/S-3); the table values are preserved verbatim and NOT corrected.
+# Footnotes printed below table: "LB - Local buckling of compression lip, flange, and web." and "CLIP - Separation of deck from purlin by failure clip."
+test_designation,no_of_spans,failure_load_plf,failure_mode
+U-Z-T-P/F(0),One,104.2,LB
+,Three,169.2,LB
+U-Z-T-P/S(0),One,142.2,LB
+,Three,212.9,CLIP
+U-Z-T-R/F,One,55.8,LB
+,Three,129.4,LB
+U-Z-T-R/S,One,195.8,LB
+,Three,222.9,CLIP

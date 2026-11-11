@@ -1,0 +1,54 @@
+# Source: MBMA_8404 | Hendrick, D. and Murray, T.M. (1984), Table 3.3, pp.36
+# Tag: MBMA_8404_TABLE33_COUPONTESTRESULTS
+# Content: Standard tensile coupon test results (thickness, width, yield stress, ultimate stress and elongation) for samples cut from the test purlins of each test.
+# Data basis: measured: standard tensile coupon tests on samples cut from the test purlins
+# Units: thickness_in and width_in in inches; fy_ksi and fu_ksi in ksi; elongation_pct in percent
+# Column definitions:
+#   test_no = test number the coupon came from, or 'Ext' for the exterior purlin of Test 1
+#   purlin_location = purlin the coupon was cut from: E = east test purlin, W = west test purlin
+#   thickness_in = measured coupon thickness, inches
+#   width_in = measured coupon width, inches
+#   fy_ksi = measured yield stress of the coupon, ksi
+#   fu_ksi = measured ultimate tensile stress of the coupon, ksi
+#   elongation_pct = measured elongation at fracture, percent
+# EXTRACTION QUALITY: ocr_repaired — only unambiguous single-character OCR fixes, each listed under ANOMALY FLAG
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 199 pages)
+# ANOMALY FLAG: OCR REPAIR: '.57.87' → '57.87' (row 'Test 10, W', column fy_ksi) — a stray leading period in the printed/scanned cell. Two cells contain unreadable characters preserved verbatim: Test 13 E thickness_in '0.07[?]' and Test 14 W fy_ksi '55.2[?]'. The second row of the table is labelled 'Ext E' (exterior east purlin of Test 1) rather than a test number; this label is preserved verbatim in the test_no column. The test number is printed only on the East row of each pair and has been repeated on the West rows so that every row is complete.
+# Printed legend: E = east test purlin, W = west test purlin, Ext = exterior purlin.
+# The last row gives the averages of the 32 coupons (yield, ultimate, elongation only).
+# The table is titled 'Tensile Coupon Test Results' on the page and 'Coupon Test Results' in the List of Tables.
+test_no,purlin_location,thickness_in,width_in,fy_ksi,fu_ksi,elongation_pct
+1,E,0.073,0.493,55.97,70.28,25.5
+Ext,E,0.076,0.499,56.81,71.20,25.5
+2,E,0.074,0.498,57.18,70.73,26.5
+2,W,0.074,0.496,57.22,70.84,27.0
+3,E,0.074,0.495,57.65,71.58,27.5
+3,W,0.075,0.493,55.68,68.97,28.5
+4,E,0.075,0.500,55.47,69.87,26.2
+4,W,0.074,0.487,56.94,70.28,26.5
+5,E,0.100,0.498,54.71,69.74,31.0
+5,W,0.100,0.501,55.47,68.79,30.5
+6,E,0.056,0.499,58.72,70.46,27.5
+6,W,0.056,0.498,60.22,71.33,26.0
+7,E,0.072,0.496,56.55,70.19,25.5
+7,W,0.075,0.500,54.13,68.80,32.5
+8,E,0.079,0.497,47.21,70.05,29.0
+8,W,0.078,0.498,49.95,72.35,26.0
+9,E,0.074,0.498,60.16,72.63,27.0
+9,W,0.067,0.497,56.33,69.88,30.0
+10,E,0.081,0.494,52.25,71.75,28.5
+10,W,0.080,0.493,57.87,70.81,29.0
+11,E,0.080,0.499,49.12,72.68,26.5
+11,W,0.079,0.493,49.87,71.47,27.0
+12,E,0.079,0.493,53.21,72.24,26.0
+12,W,0.080,0.493,49.75,70.56,28.0
+13,E,0.07[?],0.494,47.53,69.87,29.0
+13,W,0.079,0.493,51.16,71.21,30.5
+14,E,0.068,0.493,55.22,67.76,25.0
+14,W,0.067,0.494,55.2[?],68.58,25.5
+15,E,0.079,0.494,48.46,69.74,29.0
+15,W,0.079,0.493,49.87,70.95,29.5
+16,E,0.081,0.499,52.23,70.05,30.5
+16,W,0.081,0.495,51.37,71.57,30.0
+,Avg.,,,54.05,70.54,27.9

@@ -1,0 +1,93 @@
+# Source: MBMA_7603 | Guedelhoefer, O.C. and Boggs, D.W. (1976), Table C, cont'd, pp.90
+# Tag: MBMA_7603_TABLEC_CPURLINSCREWOFFSETS
+# Content: As-built offset of each steel-deck attachment screw from the purlin web, measured along the length of the C purlin uplift test specimen.
+# Data basis: measured: as-built screw positions recorded on the C purlin specimen
+# Units: location_ft in feet; east_purlin_in and west_purlin_in in inches
+# Column definitions:
+#   location_ft = distance from the south end of the structure, feet (note 1)
+#   east_purlin_in = offset from the web of the east purlin to the deck screw, inches (note 2)
+#   west_purlin_in = offset from the web of the west purlin to the deck screw, inches (note 2)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 90 pages); 13 character(s) were illegible and are marked [?], not guessed
+# Printed in Appendix C as two side-by-side half-tables (locations 0-35 and 36-75); merged here in location order.
+# Note 1: Location is given by distance, in feet, from the south end of the structure.
+# Note 2: Screw offset is the dimension, in inches, from the web of the purlin to the screw attaching the steel deck.
+# Fractional inch values are kept exactly as printed (e.g. 1 1/4).
+location_ft,east_purlin_in,west_purlin_in
+0,1,1 1/2
+1,1,1 1/2
+2,1,1 1/2
+3,1 1/4,1 3/8
+4,1 1/4,1 3/8
+5,1 3/8,1 1/8
+6,1 1/2,1
+7,1 1/2,1
+8,1 3/4,7/8
+9,1 3/8,1 1/8
+10,1 1/4,1 1/8
+11,1 3/8,1
+12,1 1/4,1 1/8
+13,1 1/4,1
+14,1 1/4,7/8
+15,1 1/4,1
+16,1 1/4,1
+17,1 3/8,7/8
+18,1 3/8,7/8
+19,1 3/8,3/4
+20,1 1/2,5/8
+21,1 1/2,5/8
+22,1 1/2,5/8
+23,1 3/4,1/2
+24,1 1/4,1
+25,1 1/4,3/4
+26,1 1/4,3/4
+27,7/8,1 1/2
+28,3/4,1 3/4
+29,5/8,2
+30,1,1 3/4
+31,7/8,2
+32,1/2,2 1/8
+33,7/8,1 3/4
+34,3/4,2
+35,7/8,2 1/8
+36,3/4,1 1/2
+37,3/8,1 3/4
+38,1 1/4,2
+39,1,1 3/8
+40,3/4,1 1/2
+41,1,1 5/8
+42,7/8,1 3/8
+43,3/4,1 5/8
+44,1 1/4,1 5/8
+45,1 1/4,1 1/4
+46,1,1 1/4
+47,1 1/4,1 1/2
+48,1 3/8,1
+49,1 1/2,3/4
+50,1 1/4,3/4
+51,1 3/8,3/4
+52,1 5/8,1/2
+53,1 3/8,1/4
+54,1 5/8,1/2
+55,1 5/8,3/8
+56,1 3/8,3/4
+57,1 1/2,1
+58,1 5/8,3/4
+59,1 3/8,3/4
+60,1 3/8,1
+61,1 3/8,1
+62,1 5/8,7/8
+63,1 1/2,1 1/8
+64,1 1/2,1
+65,1 5/8,7/8
+66,1 5/8,1 1/8
+67,2,7/8
+68,1 3/4,1/2
+69,2,7/8
+70,1 1/4,1/2
+71,1 7/8,1 1/2
+72,1 1/2,7/8
+73,1 1/2,1 1/4
+74,1 1/2,1 1/4
+75,1 1/2,1 5/8

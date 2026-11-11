@@ -1,0 +1,34 @@
+# Source: MBMA_9102 | Pugh, A.D. and Murray, T.M. (1991), Table 3.3, pp.26
+# Tag: MBMA_9102_TABLE33_UPLIFTTESTDATABASE
+# Content: Combined data base of measured uplift failure loads and failure modes for all standing seam base and multispan tests conducted at Virginia Tech in 1990 and 1991.
+# Data basis: measured: vacuum chamber uplift tests of 1990 and 1991 base and multispan roof assemblies
+# Units: failure loads in plf; other columns descriptive
+# Column definitions:
+#   test = test set label (see notes for code)
+#   no_of_spans_1990 = number of spans of the 1990 assembly, One or Three
+#   failure_load_1990_plf = measured 1990 uniform uplift failure load, plf
+#   failure_mode_1990 = observed failure mode of the 1990 test
+#   no_of_spans_1991 = number of spans of the 1991 assembly, One or Three
+#   failure_load_1991_plf = measured 1991 uniform uplift failure load, plf
+#   failure_mode_1991 = observed failure mode of the 1991 test
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 99 pages)
+# ANOMALY FLAG: The 1991 columns of the UCRP/S (O) row print One = 96.6 and Three = 189.1 plf, which are the UZTR/F 1991 values and contradict the 66.7/108.5 plf (Tables 4.1, 4.3) and 71.67/115.50 plf (Table 3.2) reported elsewhere for UCRP/S (O) 1991; also the 1991 UCRP/S (O) failure mode is printed as Distortional while the matching numbers belong to a Local/Deck pair. Values are preserved verbatim as printed and not corrected. The 1991 loads also differ slightly from Table 3.2 (107.9 vs 107.92, 199.2 vs 199.16, etc. - rounding).
+# Footnote as printed: * 1991 purlins were approximately 0.01" thicker than the 1990 purlins.
+# The test label is printed only on the first (One span) row of each pair; continuation rows are blank and are given as "" here.
+# Blank 1991 cells indicate test sets that were not repeated in 1991.
+# Failure modes: Distortional = distortional buckling of compression lip/flange/web; Local = local buckling; Deck = deck buckling at the clips.
+test,no_of_spans_1990,failure_load_1990_plf,failure_mode_1990,no_of_spans_1991,failure_load_1991_plf,failure_mode_1991
+UZRP/F,One,65.3,Distortional,,,
+,Three,132.7,Distortional,,,
+UZRP/S*,One,95.6,Distortional,One,107.9,Distortional
+,Three,140.6,Distortional,Three,199.2,Distortional
+UZRR/S (O),One,84.4,Distortional,,,
+,Three,167.8,Distortional,,,
+UCRP/S (O),One,50.8,Distortional,One,96.6,Distortional
+,Three,112.4,Distortional,Three,189.1,Distortional
+UZTP/F (O),One,104.2,Local,One,100.1,Local
+,Three,169.2,Local,Three,178.2,Local
+UZTR/F*,One,55.8,Local,One,96.6,Local
+,Three,129.4,Local,Three,189.1,Deck

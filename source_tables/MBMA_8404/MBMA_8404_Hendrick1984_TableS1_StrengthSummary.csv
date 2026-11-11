@@ -1,0 +1,65 @@
+# Source: MBMA_8404 | Hendrick, D. and Murray, T.M. (1984), Table S1, cont'd, pp.26-27, 36, 42, 52, 61, 70, 80, 89, 99, 110, 120, 130, 140, 150, 160, 170, 180, 190
+# Tag: MBMA_8404_TABLES1_STRENGTHSUMMARY
+# Content: Ultimate (failure) loads of sixteen full-scale, simple-span, cold-formed C-purlin supported roof system tests (seven simulated gravity and nine simulated uplift) loaded to failure in a vacuum chamber, with the corresponding AISI constrained-bending reference loads, test-to-predicted ratios and observed failure modes.
+# Data basis: measured: failure loads observed in full-scale vacuum-chamber roof-system tests (Tables 3.1 and 3.2 and the appendix test summaries); the AISI predicted loads and actual/predicted ratios are computed by the authors (AISI criteria, constrained bending, Fy = 56 ksi assumed, factor of safety 1.67 removed) and the yield stresses are measured tensile coupon values from Table 3.3.
+# Units: see column headers
+# Column definitions:
+#   test_id = test number as designated in the report (Tests 1-16)
+#   load_direction = direction of the simulated load applied by the vacuum chamber (gravity or uplift)
+#   section_type = cold-formed cross-section shape of the test purlins
+#   depth_in = nominal total depth of the test purlins, in.
+#   thickness_in = measured base-metal thickness of the test purlin(s) as given in the appendix test summary, in.
+#   span_ft = simple-span length of the purlins, ft
+#   n_spans = number of spans (1 = simple span)
+#   n_purlin_lines = number of parallel purlin lines in the test assembly (two interior test purlins plus two outer purlins)
+#   panel_type = type of roof panel/attachment used
+#   bracing = intermediate/torsional bracing and purlin-to-rafter connection arrangement for the test
+#   failure_load_as_printed = failure (ultimate) load per purlin line exactly as printed in the summary table
+#   failure_load_unit = unit of the failure load exactly as printed
+#   failure_moment_as_printed = failure moment as printed (not reported)
+#   failure_moment_unit = unit of the failure moment (not reported)
+#   failure_mode = description of the observed failure mode as printed
+#   value_source = where in the report the failure load is stated
+#   pages = PDF page number(s) where the row's values are stated
+#   nominal_gage = nominal sheet gage of the test purlin material as printed
+#   purlin_orientation = relative orientation of the test purlin flanges (same, facing, opposing) as printed in Table 1.1
+#   aisi_predicted_load_plf = predicted failure load from AISI constrained-bending criteria with factor of safety (1.67) removed, plf
+#   actual_to_predicted_ratio = ratio of actual failure load to the AISI predicted (reference) load as printed in parentheses
+#   yield_stress_east_ksi = measured tensile coupon yield stress of the east test purlin, ksi (Table 3.3)
+#   yield_stress_west_ksi = measured tensile coupon yield stress of the west test purlin, ksi (Table 3.3)
+# EXTRACTION QUALITY: ocr_repaired — only unambiguous single-character OCR fixes, each listed under ANOMALY FLAG
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (cached transcription)
+# ANOMALY FLAG: In Tables 3.1 and 3.2 several failure-mode and remark cells are printed as ditto marks (") repeating the row above; these have been expanded. Table 3.3 prints the Test 14 west-purlin yield stress with an illegible last digit ("55.2[?]") and the Test 10 west value as ".57.87".
+# Merged from Table 3.1 (gravity loading, PDF p. 26), Table 3.2 (uplift loading, PDF p. 27), the appendix test summaries, and Table 3.3 (coupon yield stresses, PDF p. 36).
+# Failure loads are uniform loads per purlin line and are the sum of the applied vacuum (simulated live) load plus the dead load supported by a test purlin (e.g. Test 1: 140.63 plf applied + 8.9 plf dead load = 149.5 plf).
+# Purlins were spaced 5 ft. 0 in. on center (tributary width 5 ft.); each test assembly had four purlin lines, the two inside 9x3 C-purlins being the test purlins and the two edge 7x3 C-purlins being approximately 60% as strong/stiff.
+# Roof panels were nominally 26 gage conventional through-fastened panels, 2 ft. 6 in. by 15 ft., attached with No. 12 x 1 in. self-drilling fasteners at 15 3/4 in. on center (sheet-to-sheet at 30 in. o.c.).
+# AISI predicted (reference) loads are based on an assumed yield stress Fy = 56 ksi and the constrained bending assumption, with the implied factor of safety of 1.67 removed; unbraced length of the compression flange was not considered.
+# Table 3.2 footnote for Test 13: "Failed due to error during construction of test setup"; the report states these results are not considered valid.
+# Test 7 failed by excessive lateral displacement causing web buckling and pull-out of the purlin-to-panel fasteners.
+# Dittos (") in the printed failure-mode column have been expanded: Tests 2 and 3 repeat the Test 1 mode; Test 9 repeats the Test 8 mode.
+# Tests 15 and 16 were 24 ft. 8 in. spans (printed as 24.667 ft in the AISI analysis output); all other tests were 25 ft. 0 in.
+# Test 1 purlins were bolted directly to the rafters (no shear clips) with calibrated dynamometer torsional restraint braces at the rafters; all other tests used shear clips.
+# Test 1 west-purlin coupon yield stress is not reported in Table 3.3 (an exterior purlin coupon, 56.81 ksi, is listed instead).
+# Test 14 west-purlin yield stress is printed with an illegible final digit ("55.2?"); recorded here as 55.2.
+# BRACING NOTE: The report contradicts itself on intermediate bracing for Tests 10 and 14 (open question MBMA_8404-Q04, resolved by Cris Moen 2026-10-26). Test 10: braced at ends and midspan (Section 1.2 p.8, Section 3.3 p.33 'similar to Test 9', Table 3.2 remark, test summary B.31 p.140); Table 1.1's 'None' is the outlier. Test 14: braced at ends and third points (Table 1.1 p.7, Section 1.2 p.8, Table 3.2 remark, test summary B.71 p.180); Section 3.3's '2.5 ft each side of midspan' (p.34) repeats the Test 13 description and is treated as a text error.
+# PREDICTION NOTE (Cris Moen, 2026-10-27; open question MBMA_8404-Q03): failure_load_as_printed is the tested ultimate load (Actual Failure Load, Tables 3.1 p.26 and 3.2 p.27), one uniform load per purlin line per test. aisi_predicted_load_plf and actual_to_predicted_ratio are legacy predictions carried as printed; the report does not state which test purlin's Table 2.2 w_u the single predicted value corresponds to. Both purlins' predictions are in MBMA_8404_Hendrick1984_Table2_2_CPurlinProperties.csv.
+# REVIEW 2026-11-10 (Cris Moen): Test 13 is dropped from the sets (05_harmonize.jl DROP_ROWS), with its coupon, cross-section and property rows. The authors state its results are not valid because of an error during construction of the test setup (Sec. 3.3 p.34; Table 3.2 footnote p.36); the error is not described. The report's conclusions still list it at 67% of the reference load (p.39). The row stays here as the extracted record.
+test_id,load_direction,section_type,depth_in,thickness_in,span_ft,n_spans,n_purlin_lines,panel_type,bracing,failure_load_as_printed,failure_load_unit,failure_moment_as_printed,failure_moment_unit,failure_mode,value_source,pages,nominal_gage,purlin_orientation,aisi_predicted_load_plf,actual_to_predicted_ratio,yield_stress_east_ksi,yield_stress_west_ksi
+1,gravity,C,9.00,0.074,25.000,1,4,through-fastened,None; torsional restraint at east rafters (calibrated dynamometers); purlins bolted directly to rafters (no shear clips),149.5,plf,,,Local buckling of the flange and/or web of east and west test purlin,table 3.1,"26, 36, 42",14,Same,172.2,0.87,55.97,
+2,gravity,C,9.00,0.0755,25.000,1,4,through-fastened,None; purlins clipped to rafters; panel torsional restraint,167.4,plf,,,Local buckling of the flange and/or web of east and west test purlin,table 3.1,"26, 36, 52",14,Facing,180.1,0.93,57.18,57.22
+3,gravity,C,9.00,0.074,25.000,1,4,through-fastened,None; purlins clipped to rafters; panel torsional restraint,162.3,plf,,,Local buckling of the flange and/or web of east and west test purlin,table 3.1,"26, 36, 61",14,Facing,172.0,0.94,57.65,55.68
+4,gravity,C,9.00,0.075,25.000,1,4,through-fastened,None; purlins clipped to rafters (same as Test 1 except shear clips used),154.6,plf,,,Local buckling of comp. flange and/or web of east test purlin.,table 3.1,"26, 36, 70",14,Same,175.9,0.88,55.47,56.94
+5,gravity,C,9.00,0.100,25.000,1,4,through-fastened,None; purlins clipped to rafters; 12 gage test purlins,266.3,plf,,,Local buckling of comp. flange and/or web of test purlins,table 3.1,"26, 36, 80",12,Facing,236.3,1.13,54.71,55.47
+6,gravity,C,9.00,0.057,25.000,1,4,through-fastened,None; purlins clipped to rafters; 16 gage test purlins,97.7,plf,,,Local buckling of comp. flange and/or web of east test purlins.,table 3.1,"26, 36, 89",16,Facing,111.7,0.87,58.72,60.22
+16,gravity,C,9.00,0.079,24.667,1,4,through-fastened,Bracing @ ends and @ one-third points (test and outer purlins); purlins clipped to rafters,182.0,plf,,,Local buckling of comp. flange and/or web of east test purlin,table 3.1,"26, 36, 99",14,Opposing,194.2,0.94,52.23,51.37
+7,uplift,C,9.00,0.075,25.000,1,4,through-fastened,No intermediate bracing; purlins clipped to rafters; panel torsional restraint,88.2,plf,,,Local Buckling of comp. flange and/or web of east test purlin; fasteners pulled out of deck @ failure due to horiz. displacement,table 3.2,"27, 36, 110",14,Facing,168.5,0.52,56.55,54.13
+8,uplift,C,9.00,0.08,25.000,1,4,through-fastened,Bracing of purlins @ midspan (1 in. from bottom flange); purlins clipped to rafters,116.3,plf,,,Local buckling of comp. flange of west test purlin.,table 3.2,"27, 36, 120",14,Opposing,187.4,0.62,47.21,49.95
+9,uplift,C,9.00,0.067,25.000,1,4,through-fastened,Bracing @ ends and @ midspan; wood stiffener placed at center of test purlins,85.6,plf,,,Local buckling of comp. flange of west test purlin,table 3.2,"27, 36, 130",14,Opposing,147.4,0.58,60.16,56.33
+10,uplift,C,9.00,0.08,25.000,1,4,through-fastened,"Bracing @ ends and midspan; wood stiffeners placed @ 2, 5 & 10 ft. from midspan and @ midspan",116.3,plf,,,Local buckling of comp. flange of east test purlin.,table 3.2,"27, 36, 140",14,Opposing,191.5,0.61,52.25,57.87
+11,uplift,C,9.00,0.079,25.000,1,4,through-fastened,"15 ft. 7x3 C-purlin attached to each test purlin, centered at midspan; torsional restraint at rafters",111.2,plf,,,Local buckling of comp. lip and flange of east test purlin.,table 3.2,"27, 36, 150",14,Opposing,187.6,0.59,49.12,49.87
+12,uplift,C,9.00,0.079,25.000,1,4,through-fastened,Bracing @ third-points and @ ends (2 in. from compression flange),131.6,plf,,,Local buckling of comp. flange and/or web of test purlins.,table 3.2,"27, 36, 160",14,Opposing,185.6,0.71,53.21,49.75
+13,uplift,C,9.00,0.079,25.000,1,4,through-fastened,Bracing @ ends and 2.5 ft. on each side of midspan,124.0,plf,,,Local buckling of comp. flange and/or web of east test purlin. (Failed due to error during construction of test setup),table 3.2,"27, 36, 170",14,Opposing,185.8,0.67,47.53,51.16
+14,uplift,C,9.00,0.067,25.000,1,4,through-fastened,Bracing @ ends and one-third points (test and outer purlins),93.3,plf,,,Local buckling of comp. flange and lip of test purlins.,table 3.2,"27, 36, 180",14,Opposing,143.2,0.65,55.22,55.2
+15,uplift,C,9.00,0.079,24.667,1,4,through-fastened,Bracing @ ends and one-third points of compression flange,131.6,plf,,,Local buckling of comp. flange and/or web of test purlins.,table 3.2,"27, 36, 190",14,Opposing,192.2,0.68,48.46,49.87

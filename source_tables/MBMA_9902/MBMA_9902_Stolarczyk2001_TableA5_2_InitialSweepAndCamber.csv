@@ -1,0 +1,20 @@
+# Source: MBMA_9902 | Stolarczyk, J.A. and Fisher, J.M. (2001), Table A5-2, pp.171
+# Tag: MBMA_9902_TABLEA52_INITIALSWEEPANDCAMBER
+# Content: Measured initial lateral sweep and vertical camber of each purlin prior to the axial load tests.
+# Data basis: measured: initial out-of-straightness measurements before each axial test
+# Units: all columns in inches
+# Column definitions:
+#   test_no = axial test designation (A1-A4)
+#   sweep_east_purlin_in = initial lateral sweep of the east purlin with direction, inches
+#   sweep_west_purlin_in = initial lateral sweep of the west purlin with direction, inches
+#   camber_east_purlin_in = initial vertical camber of the east purlin with direction, inches
+#   camber_west_purlin_in = initial vertical camber of the west purlin with direction, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 195 pages)
+# Direction words (East, West, Up) are printed with the value and are retained.
+test_no,sweep_east_purlin_in,sweep_west_purlin_in,camber_east_purlin_in,camber_west_purlin_in
+A1,0.00,0.31 East,0.13 Up,0.33 Up
+A2,0.06 West,0.25 West,0.44 Up,0.63 Up
+A3,0.25 West,0.00,0.25 Up,0.31 Up
+A4,0.25 West,0.44 West,0.75 Up,0.25 Up

@@ -1,0 +1,22 @@
+# Source: MBMA_9902 | Stolarczyk, J.A. and Fisher, J.M. (2001), Table 3, pp.63
+# Tag: MBMA_9902_TABLE3_TENSIONTESTRESULTS
+# Content: Tensile coupon properties of the purlin material for each axial and flexural test specimen, per ASTM A370.
+# Data basis: measured: tension coupon tests per ASTM A370
+# Units: fy_ksi and fu_ksi in ksi; elongation_pct in percent
+# Column definitions:
+#   test_no = test specimen designation (A = axial test purlin, F = flexural test purlin)
+#   fy_ksi = measured yield strength of the purlin steel, ksi
+#   fu_ksi = measured tensile strength of the purlin steel, ksi
+#   elongation_pct = measured elongation at fracture, percent
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 195 pages)
+test_no,fy_ksi,fu_ksi,elongation_pct
+A1,50.5,74.8,20.2
+A2,54.2,76.3,18.9
+A3,67.1,84.0,20.5
+A4,67.0,85.3,20.6
+F1,56.3,80.4,21.1
+F2,59.6,78.6,20.1
+F3,54.6,67.3,17.7
+F4,45.9,58.2,22.3

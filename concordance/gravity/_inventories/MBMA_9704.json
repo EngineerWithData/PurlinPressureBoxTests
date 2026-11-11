@@ -1,0 +1,637 @@
+{
+  "citation": "Murray, T.M. (1997)",
+  "code_tag": "MBMA_9704",
+  "experiment": "Six three-span continuous lapped Z-purlin assemblies (two purlin lines, 20 ft spans, through-fastened roof panel) were loaded to failure with simulated gravity load in a vacuum chamber, and the measured failure loads and modes were compared with AISI shear-plus-bending predictions.",
+  "title": "Vacuum Chamber Tests of Three-Span Continuous Lapped Z-Purlin Systems: Shear Plus Bending Limit State",
+  "variables": [
+    {
+      "availability": "direct",
+      "definition": "Test designation of the purlin assembly as printed in the report (e.g. FV20-1).",
+      "evidence": "Tables 2.1, 2.2 (p.8), 3.1 and 3.2 (p.16), Table S1",
+      "name": "Test identification",
+      "note": "FV20-3 and FV20-3A are the same test.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_identification",
+        "test_no",
+        "test_id"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE21_TESTMATRIX",
+        "MBMA_9704_TABLE22_TENSILECOUPONTESTRESULTS",
+        "MBMA_9704_TABLE31_UNITYCHECKCALCRESULTS",
+        "MBMA_9704_TABLE32_SUMMARYOFTESTRESULTS",
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Z-purlin designation of each bay, 8.5 in. deep with the last two digits giving nominal thickness in thousandths of an inch.",
+      "evidence": "Table 2.1, p.8",
+      "name": "Purlin size designation",
+      "note": "Given per bay; end bays and center bay may differ.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "purlin_size"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE21_TESTMATRIX"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Cross-section shape of the test member, recorded as Z for all tests.",
+      "evidence": "Table S1 column section_type",
+      "name": "Section type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "section_type"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal out-to-out depth of the Z-purlin section (8.5 in. for all tests).",
+      "evidence": "Table S1 column depth_in; implied by the 8.5Z designations in Table 2.1",
+      "name": "Purlin depth",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "depth_in"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured thickness of the tensile coupon machined from the web of the failed purlin.",
+      "evidence": "Table 2.2, p.8; repeated in Table S1",
+      "name": "Coupon (purlin) thickness",
+      "note": "Report does not state which purlin of the assembly the coupon came from.",
+      "printed_symbol": "t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "thickness_in"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE22_TENSILECOUPONTESTRESULTS",
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Center-to-center span length of each of the three continuous bays (20.0 ft for all tests).",
+      "evidence": "Table 2.1, p.8; Table S1 column span_ft",
+      "name": "Span length",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "span_ft"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE21_TESTMATRIX",
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Length of the lapped purlin extending into each bay from the interior supports.",
+      "evidence": "Table 2.1, p.8",
+      "name": "Lap length into bay",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "lap_length_ft"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE21_TESTMATRIX"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of continuous spans in the test setup (three for every test).",
+      "evidence": "Table S1 column n_spans",
+      "name": "Number of spans",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_spans"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of parallel purlin lines in the vacuum-chamber test assembly (two for every test).",
+      "evidence": "Table S1 column n_purlin_lines",
+      "name": "Number of purlin lines",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_purlin_lines"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured yield stress of the purlin steel from a standard tensile coupon taken from undamaged web material of the failed purlin.",
+      "evidence": "Table 2.2, p.8; repeated in Table S1",
+      "name": "Yield stress",
+      "note": "",
+      "printed_symbol": "Fy",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "yield_stress_ksi"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE22_TENSILECOUPONTESTRESULTS",
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured ultimate tensile strength of the purlin steel from the tensile coupon test.",
+      "evidence": "Table 2.2, p.8; repeated in Table S1",
+      "name": "Tensile strength",
+      "note": "",
+      "printed_symbol": "Fu",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "tensile_strength_ksi"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE22_TENSILECOUPONTESTRESULTS",
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured elongation of the tensile coupon at fracture.",
+      "evidence": "Table 2.2, p.8",
+      "name": "Coupon elongation",
+      "note": "Gage length not stated in the table.",
+      "printed_symbol": "",
+      "quantity_kind": "percentage",
+      "role": "material_property",
+      "symbols": [
+        "elongation_pct"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE22_TENSILECOUPONTESTRESULTS"
+      ],
+      "unit": "%"
+    },
+    {
+      "availability": "direct",
+      "definition": "Direction of the applied load, gravity simulated by evacuating air from the vacuum chamber.",
+      "evidence": "Table S1 column load_direction and header note on load direction",
+      "name": "Load direction",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "load_direction"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Roof panel/deck type attached to the purlins as printed on the appendix test summary (through-fastened screw-down panel; doubled for FV20-3).",
+      "evidence": "Table S1 column panel_type",
+      "name": "Roof panel type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "panel_type"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Lateral bracing condition of the purlin lines as printed on the appendix test summary (at supports only).",
+      "evidence": "Table S1 column bracing",
+      "name": "Bracing condition",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "bracing"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Direction the purlin top flanges face as printed on each test's summary sheet (both out, or opposed/in).",
+      "evidence": "Table S1 column purlin_orientation; per-test sheets pp.22, 31, 42, 55, 68, 81",
+      "name": "Purlin orientation",
+      "note": "Conflicts with Chapter 2 text which says all tests had opposed top flanges (MBMA_9704-Q04).",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "purlin_orientation"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "implied",
+      "definition": "Center-to-center spacing of the two purlin lines, 4'-11\" for FV20-1 and FV20-2 and 5'-0\" for the remaining tests, with a 1'-0\" deck overhang.",
+      "evidence": "Table S1 header note on purlin spacing",
+      "name": "Purlin spacing and deck overhang",
+      "note": "Stated in a note, not a column.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "purlin spacing (note)"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft-in"
+    },
+    {
+      "availability": "implied",
+      "definition": "Tributary width of 3.75 ft used by the report to convert chamber pressure (psf) to a line load on one purlin.",
+      "evidence": "Table S1 header note: Applied Loading = 3.75 x pressure (psf)",
+      "name": "Tributary width factor",
+      "note": "Report does not explain the 3.75 ft value and it does not follow from the purlin spacing (MBMA_9704-Q01).",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "3.75 ft tributary width (note)"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "implied",
+      "definition": "Purlin self-weight added to the applied line load, 8 plf for all tests except FV20-3 where 12 plf was used for the doubled panel.",
+      "evidence": "Table S1 header notes on failure load composition and FV20-3 self-weight",
+      "name": "Purlin self-weight included",
+      "note": "Stated in notes, not a column.",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "test_condition",
+      "symbols": [
+        "self-weight (note)"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "implied",
+      "definition": "Support detail: anti-roll clips at all supports (both lines) with web stiffeners on the south line for FV20-1 and FV20-2, and anti-roll clips with no web stiffeners for the other tests.",
+      "evidence": "Table S1 header note on anti-roll clips and web stiffeners",
+      "name": "Support restraint detail",
+      "note": "Stated in a note, not a column.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "anti-roll clips / web stiffeners (note)"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Chamber differential pressure at failure measured with U-tube manometers, as printed on the appendix test summary.",
+      "evidence": "Table S1 column pressure_at_failure_psf; appendix sheets",
+      "name": "Chamber pressure at failure",
+      "note": "Approximate values printed for FV20-4 and FV25-2 (MBMA_9704-Q02).",
+      "printed_symbol": "",
+      "quantity_kind": "stress",
+      "role": "measured_output",
+      "symbols": [
+        "pressure_at_failure_psf"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "psf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Total uniform line load on one purlin at failure, computed as 3.75 ft times the failure pressure plus purlin self-weight, as printed in Table 3.2.",
+      "evidence": "Table 3.2, p.16; Table S1 column failure_load_as_printed",
+      "name": "Actual failure load",
+      "note": "Printed values carried as given despite the FV20-4 pressure-factor inconsistency.",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "actual_failure_load_plf",
+        "failure_load_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE32_SUMMARYOFTESTRESULTS",
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Observed failure mode described in the report for each test (e.g. purlin rolling and web crippling at support, flexural failure after web lateral buckling).",
+      "evidence": "Table S1 column failure_mode; appendix test summaries",
+      "name": "Observed failure mode",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "failure_mode"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "simulated",
+      "definition": "Failure load predicted by the AISI shear-plus-bending interaction limit state.",
+      "evidence": "Table 3.2, p.16; Table S1 column predicted_failure_load_plf",
+      "name": "Predicted failure load",
+      "note": "One value per test; report does not say which purlin line governs (MBMA_9704-Q03).",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "predicted_failure_load_plf"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE32_SUMMARYOFTESTRESULTS",
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "plf"
+    },
+    {
+      "availability": "direct",
+      "definition": "Actual failure load expressed as a percentage of the shear-plus-bending predicted failure load.",
+      "evidence": "Table 3.2, p.16; Table S1 column percent_of_predicted_load",
+      "name": "Test-to-predicted load ratio",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "percentage",
+      "role": "derived_ratio",
+      "symbols": [
+        "percent_of_predicted_load"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE32_SUMMARYOFTESTRESULTS",
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "%"
+    },
+    {
+      "availability": "direct",
+      "definition": "Yes/No entry stating whether the predicted shear-plus-bending limit state was the mode actually observed, with footnote marker.",
+      "evidence": "Table 3.2, p.16 (footnotes 1 and 2); Table S1 column expected_failure_mode_flag",
+      "name": "Expected failure mode occurred",
+      "note": "Footnote 1 = purlin failed at exterior support; 2 = bottom flanges buckled over support.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "expected_failure_mode",
+        "expected_failure_mode_flag"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE32_SUMMARYOFTESTRESULTS",
+        "MBMA_9704_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "simulated",
+      "definition": "Required moment in the positive moment region at the recorded failure load, from a stiffness analysis of the lapped continuous system.",
+      "evidence": "Table 3.1, p.16",
+      "name": "Required moment, positive region",
+      "note": "Analysis value, not a measured failure moment.",
+      "printed_symbol": "Mu",
+      "quantity_kind": "moment",
+      "role": "predicted_value",
+      "symbols": [
+        "mu_pos_ft_kips"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE31_UNITYCHECKCALCRESULTS"
+      ],
+      "unit": "ft-kips"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Nominal flexural strength about the centroidal x-axis in the positive moment region computed per AISI.",
+      "evidence": "Table 3.1, p.16",
+      "name": "Nominal moment, positive region",
+      "note": "",
+      "printed_symbol": "Mnxo",
+      "quantity_kind": "moment",
+      "role": "predicted_value",
+      "symbols": [
+        "mnxo_pos_ft_kips"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE31_UNITYCHECKCALCRESULTS"
+      ],
+      "unit": "ft-kips"
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio Mu/Mnxo in the positive moment region at the failure load (positive-moment unity check).",
+      "evidence": "Table 3.1, p.16 and header note",
+      "name": "Unity check, positive region",
+      "note": "",
+      "printed_symbol": "Mu/Mnxo",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "unity_check_pos"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE31_UNITYCHECKCALCRESULTS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "simulated",
+      "definition": "Required moment just outside the lap in the negative moment region at the recorded failure load, from stiffness analysis.",
+      "evidence": "Table 3.1, p.16",
+      "name": "Required moment, negative region",
+      "note": "Analysis value, not a measured failure moment.",
+      "printed_symbol": "Mu",
+      "quantity_kind": "moment",
+      "role": "predicted_value",
+      "symbols": [
+        "mu_neg_ft_kips"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE31_UNITYCHECKCALCRESULTS"
+      ],
+      "unit": "ft-kips"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Nominal flexural strength in the negative moment region just outside the lap computed per AISI.",
+      "evidence": "Table 3.1, p.16",
+      "name": "Nominal moment, negative region",
+      "note": "",
+      "printed_symbol": "Mnxo",
+      "quantity_kind": "moment",
+      "role": "predicted_value",
+      "symbols": [
+        "mnxo_neg_ft_kips"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE31_UNITYCHECKCALCRESULTS"
+      ],
+      "unit": "ft-kips"
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of required to nominal moment in the negative moment region at the failure load.",
+      "evidence": "Table 3.1, p.16",
+      "name": "Moment ratio, negative region",
+      "note": "",
+      "printed_symbol": "Mu/Mnxo",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "mu_over_mnxo_neg"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE31_UNITYCHECKCALCRESULTS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "simulated",
+      "definition": "Required shear strength just outside the lap at the recorded failure load, from stiffness analysis.",
+      "evidence": "Table 3.1, p.16",
+      "name": "Required shear",
+      "note": "",
+      "printed_symbol": "Vu",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "vu_kips"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE31_UNITYCHECKCALCRESULTS"
+      ],
+      "unit": "kips"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Nominal shear strength of the purlin web when shear alone exists, computed per AISI.",
+      "evidence": "Table 3.1, p.16",
+      "name": "Nominal shear strength",
+      "note": "",
+      "printed_symbol": "Vn",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "vn_kips"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE31_UNITYCHECKCALCRESULTS"
+      ],
+      "unit": "kips"
+    },
+    {
+      "availability": "direct",
+      "definition": "Ratio of required to nominal shear strength just outside the lap at the failure load.",
+      "evidence": "Table 3.1, p.16",
+      "name": "Shear ratio",
+      "note": "",
+      "printed_symbol": "Vu/Vn",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "vu_over_vn"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE31_UNITYCHECKCALCRESULTS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Shear-plus-bending interaction unity check in the negative moment region, (Mu/Mnxo)^2 + (Vu/Vn)^2 per AISI Eq. C3.3.2-1.",
+      "evidence": "Table 3.1, p.16 and header note",
+      "name": "Unity check, negative region",
+      "note": "",
+      "printed_symbol": "(Mu/Mnxo)^2+(Vu/Vn)^2",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "unity_check_neg"
+      ],
+      "table_tags": [
+        "MBMA_9704_TABLE31_UNITYCHECKCALCRESULTS"
+      ],
+      "unit": ""
+    }
+  ],
+  "year": "1997"
+}

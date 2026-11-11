@@ -1,0 +1,26 @@
+# Source: MBMA_9003 | Hatch, J., Easterling, W.S. and Murray, T.M. (1990), Table 3.1, pp.25
+# Tag: MBMA_9003_TABLE31_TESTCOMPONENTS
+# Content: Purlin shape, depth, thickness, deck gage, fastener type and spacing used in each group of full-scale strut-purlin roof assembly tests.
+# Data basis: input: nominal component properties of the roof assemblies built for each test group
+# Units: purlin_depth_in inches; purlin_thickness_in inches; fastener_spacing_in inches; deck_gage gage number; others dimensionless
+# Column definitions:
+#   test_group = letter identifying the group of tests sharing these components
+#   purlin_shape = cold-formed section shape, Z or C
+#   purlin_depth_in = nominal depth of the purlin section, inches
+#   purlin_thickness_in = nominal thickness of the purlin material, inches
+#   deck_gage = gage of the through-fastened roof deck panel
+#   fastener = fastener type used to attach deck to purlin (SDF, see notes)
+#   fastener_spacing_in = spacing of the structural fasteners along the purlin flange, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 224 pages)
+# SDF = #12 self drilling structural fasteners at the spacing listed and #14 self drilling side-lap fasteners at 2 ft 0 in. O.C.
+# Tests in each group (printed below the table): Group A = SP-8Z-0, SP-8Z-0-2, SP-8Z-25, SP-8Z-50, SP-8Z-75, SP-8Z-M; Group B = SP-10Z-0, SP-10Z-25, SP-10Z-50, SP-10Z-75, SP-10Z-M; Group C = SP-10C-0, SP-10C-25, SP-10C-50, SP-10C-75, SP-10C-M; Group D = SP-10Z-12-1, SP-10Z-12-2, SP-10Z-12-3; Group E = SP-10C-12-1, SP-10C-12-2; Group F = SP-7C-12-1, SP-7C-12-2, SP-7C-12-3.
+# All decking was conventional through-fastened 26 ga. panel, 7 ft wide, attached to the bottom (tension) flange.
+test_group,purlin_shape,purlin_depth_in,purlin_thickness_in,deck_gage,fastener,fastener_spacing_in
+A,Z,8,0.060,26,SDF,6
+B,Z,10,0.083,26,SDF,12
+C,C,10,0.104,26,SDF,12
+D,Z,10,0.074,26,SDF,12
+E,C,10,0.100,26,SDF,12
+F,C,7,0.075,26,SDF,12

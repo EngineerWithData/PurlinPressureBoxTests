@@ -1,0 +1,5051 @@
+{
+  "canonical_variables": [
+    {
+      "canonical_unit": "plf",
+      "conversion_needed": true,
+      "description": "The maximum uniform load per foot carried by a single purlin or girt line at failure of the full-scale assembly, the headline strength result of each uplift test.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table 2 p.5 (pu_lb_per_ft); Table S1",
+          "note": "Dead load inclusion not stated",
+          "symbol": "pu_lb_per_ft, failure_load_as_printed",
+          "table_tags": [
+            "MBMA_8310_TABLE2_UPLIFTLOADCOMPARISONS",
+            "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "lb/ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table 3 (p. 21) column pu_lb_ft; Table S1",
+          "note": "Pressure only, no self-weight term",
+          "symbol": "pu_lb_ft, failure_load_as_printed",
+          "table_tags": [
+            "MBMA_8702_TABLE3_PURLINTESTRESULTS",
+            "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "lb/ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table B p.11; Tables D, E, F pp.28-30; Table S1",
+          "note": "Dead weight already deducted",
+          "symbol": "failure_load_lb_ft, test_failure_load_lb_ft, failure_load_as_printed",
+          "table_tags": [
+            "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+            "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD",
+            "MBMA_8703_TABLEE_MBMAPROPOSALEXHIBITE",
+            "MBMA_8703_TABLEF_COMPARISONSUMMARYEXHIBITF",
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "lb/ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table 1 p.2; Table 2 p.3; Table S1",
+          "note": "Three printed roundings of the same result",
+          "symbol": "failure_load_lb_per_ft, failure_load_as_printed",
+          "table_tags": [
+            "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+            "MBMA_8803_TABLE2_TESTVSPREDICTEDUPLIFTLOADS",
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "lb/ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 3.1 p.26; Table 3.2 p.27; Table S1",
+          "note": "Includes dead load carried by the test purlin",
+          "symbol": "p_test_plf, failure_load_as_printed",
+          "table_tags": [
+            "MBMA_8404_TABLE31_GRAVITYTESTRESULTS",
+            "MBMA_8404_TABLE32_UPLIFTTESTRESULTS",
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "plf"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 3.3 (pp. 76-77); Table S1",
+          "note": "Beam tests converted from total span load",
+          "symbol": "fail_load_lb_per_ft, failure_load_as_printed",
+          "table_tags": [
+            "MBMA_8001_TABLE33_SUMMARYOFTESTRESULTS",
+            "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "lb/ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table 3.1 p.12; Table S1",
+          "note": "Dead load not included",
+          "symbol": "wu_plf, failure_load_as_printed",
+          "table_tags": [
+            "MBMA_9105_TABLE31_SUMMARYOFTESTRESULTS",
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "plf"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table 3.2 p. 25; Table 3.3 p. 26; Table S1",
+          "note": "Table 3.2/3.3 values exceed appendix sheets by 5-7 plf",
+          "symbol": "failure_load_plf, failure_load_as_printed",
+          "table_tags": [
+            "MBMA_9102_TABLE32_TESTS1991SUMMARY",
+            "MBMA_9102_TABLE33_UPLIFTTESTDATABASE",
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "plf"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9702",
+          "evidence": "Tables A1/A2 column failure_load_plf; Table S1",
+          "note": "Sheet values differ slightly from Table 1 values",
+          "symbol": "failure_load_plf, failure_load_as_printed",
+          "table_tags": [
+            "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS",
+            "MBMA_9702_TABLEA2_CECOTHREESPANCONFIRMTESTS",
+            "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "plf"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table S1 column failure_load_as_printed / applied_uplift_at_failure_plf",
+          "note": "Mixed units: kips for axial tests, plf for uplift tests",
+          "symbol": "failure_load_as_printed, applied_uplift_at_failure_plf",
+          "table_tags": [
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "kips or plf"
+        },
+        {
+          "availability": "inferred",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table S1 column failure_load_plf, tributary width note",
+          "note": "Derived by curator from pressure x 3.167 ft tributary width",
+          "symbol": "failure_load_plf",
+          "table_tags": [
+            "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "lb/ft"
+        },
+        {
+          "availability": "inferred",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table S1 column failure_load_plf; hand calculation note",
+          "note": "Hand calculation during extraction, not printed",
+          "symbol": "failure_load_plf",
+          "table_tags": [
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "plf"
+        }
+      ],
+      "name": "Failure line load per purlin line",
+      "quantity_kind": "force",
+      "role": "measured_output"
+    },
+    {
+      "canonical_unit": "text",
+      "conversion_needed": false,
+      "description": "Description or code for the mechanism that ended the test, such as local buckling, screw pull-over, panel tearing or yielding.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table C p.49; Table S1; legend with Appendix C",
+          "note": "Numeric codes 1-4, combinations printed as '2,3,4'",
+          "symbol": "failure_mode",
+          "table_tags": [
+            "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Table S1 column failure_mode",
+          "note": "",
+          "symbol": "failure_mode",
+          "table_tags": [
+            "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table S1 pages 6-8, 69",
+          "note": "",
+          "symbol": "failure_mode",
+          "table_tags": [
+            "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 3.3 'comments' footnotes (4)-(10); Table S1",
+          "note": "Footnote numbers in Table 3.3, narrative in Table S1",
+          "symbol": "failure_mode, comments",
+          "table_tags": [
+            "MBMA_8001_TABLE33_SUMMARYOFTESTRESULTS",
+            "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 3.1 p.26; Table 3.2 p.27; Table S1",
+          "note": "Ditto marks mean same as row above",
+          "symbol": "failure_mode",
+          "table_tags": [
+            "MBMA_8404_TABLE31_GRAVITYTESTRESULTS",
+            "MBMA_8404_TABLE32_UPLIFTTESTRESULTS",
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table S1 column failure_mode",
+          "note": "",
+          "symbol": "failure_mode",
+          "table_tags": [
+            "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table S1 p.11, from narrative p.5",
+          "note": "",
+          "symbol": "failure_mode",
+          "table_tags": [
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table S1 column failure_mode; Table E observations",
+          "note": "Includes buckle location",
+          "symbol": "failure_mode",
+          "table_tags": [
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table S1 column failure_mode",
+          "note": "",
+          "symbol": "failure_mode",
+          "table_tags": [
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table 3.2 p. 25; Table 3.3 p. 26; Table S1",
+          "note": "Data sheets print 'Local Buckle' where Table 3.2 says Distortional",
+          "symbol": "failure_mode, failure_mode_data_sheet",
+          "table_tags": [
+            "MBMA_9102_TABLE32_TESTS1991SUMMARY",
+            "MBMA_9102_TABLE33_UPLIFTTESTDATABASE",
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table S1; appendix sheets pp.17, 26, 35",
+          "note": "",
+          "symbol": "failure_mode",
+          "table_tags": [
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9702",
+          "evidence": "Tables A1/A2 and Table S1 column failure_mode",
+          "note": "Some descriptions carry printed question marks",
+          "symbol": "failure_mode",
+          "table_tags": [
+            "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS",
+            "MBMA_9702_TABLEA2_CECOTHREESPANCONFIRMTESTS",
+            "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Comments columns Tables 3-1 to 4-2; Table S1",
+          "note": "Pullover/pullout/panel buckling of fastener tests",
+          "symbol": "comments, failure_mode, comments_as_printed",
+          "table_tags": [
+            "MBMA_9410_TABLE31_STDTESTPASCOE24GA",
+            "MBMA_9410_TABLE41_SIMTESTPASCOECONC",
+            "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        }
+      ],
+      "name": "Observed failure mode",
+      "quantity_kind": "category",
+      "role": "measured_output"
+    },
+    {
+      "canonical_unit": "psf",
+      "conversion_needed": true,
+      "description": "The uniform suction pressure applied by the vacuum chamber at failure (or at each recorded load stage), before conversion to a line load on the member.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table C p.49 (pressure_psf); Table S1",
+          "note": "Blank for test Z8D-1 which failed by panel bending",
+          "symbol": "pressure_psf, failure_load_as_printed",
+          "table_tags": [
+            "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "psf"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Table S1 column failure_load_as_printed, pages 5, 7, 8, 11",
+          "note": "Printed as approximate values ('about 40 psf'); screw rows give load per screw",
+          "symbol": "failure_load_as_printed",
+          "table_tags": [
+            "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "psf"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table S1 pages 6-8, 69; also vacuum_pressure_in_water",
+          "note": "Also reported in inches of water",
+          "symbol": "failure_load_as_printed, vacuum_pressure_in_water",
+          "table_tags": [
+            "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "psf / in. of water"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Table S1 failure_load_as_printed and peak_pressures_psi, pp. 99-111",
+          "note": "Reported in psi, not psf; panel-system capacity",
+          "symbol": "failure_load_as_printed, peak_pressures_psi",
+          "table_tags": [
+            "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "psi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table E p.9",
+          "note": "Manometer reading at each load step; failure at 2.7 in H2O",
+          "symbol": "manometer_reading_in_h2o",
+          "table_tags": [
+            "MBMA_8803_TABLEE_UPLIFTTESTREADINGS"
+          ],
+          "unit": "in H2O"
+        }
+      ],
+      "name": "Chamber pressure at failure",
+      "quantity_kind": "stress",
+      "role": "measured_output"
+    },
+    {
+      "canonical_unit": "kip-in",
+      "conversion_needed": true,
+      "description": "The bending moment in the member at failure, computed from the measured failure load and span, used to compare with code bending capacities.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table C p.49 (mt_kip_in); Table S1",
+          "note": "From Eqs. (14) and (15), includes self weight",
+          "symbol": "mt_kip_in, failure_moment_as_printed",
+          "table_tags": [
+            "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "kip-in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table 3.1 p.12 (Eq. 3.1); Table S1",
+          "note": "Mu = 0.08 wu L^2 for three-span continuous",
+          "symbol": "mu_kip_in, failure_moment_as_printed",
+          "table_tags": [
+            "MBMA_9105_TABLE31_SUMMARYOFTESTRESULTS",
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "kip-in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table 4.1 p. 29 (M_US); Table S1",
+          "note": "Base test moment w_US L^2/8; Table 4.1 and Appendix E differ slightly",
+          "symbol": "m_us_kip_in, failure_moment_as_printed",
+          "table_tags": [
+            "MBMA_9102_TABLE41_BASETESTCALCS1991",
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "kip-in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table S1 column failure_moment_as_printed",
+          "note": "",
+          "symbol": "failure_moment_as_printed",
+          "table_tags": [
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in-kip"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table S1 columns failure_moment_as_printed / unit",
+          "note": "Column present but empty in every row",
+          "symbol": "failure_moment_as_printed",
+          "table_tags": [
+            "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table S1 columns failure_moment_as_printed and unit",
+          "note": "Columns empty; moment available only via Mt/Mn",
+          "symbol": "failure_moment_as_printed",
+          "table_tags": [
+            "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        }
+      ],
+      "name": "Failure moment",
+      "quantity_kind": "moment",
+      "role": "measured_output"
+    },
+    {
+      "canonical_unit": "in",
+      "conversion_needed": false,
+      "description": "Measured lateral (horizontal) movement of the purlin web or compression flange during loading, showing how much the unbraced member drifted sideways.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Appendix A2 p.87, B6 p.94, B7 p.95, C2 p.97",
+          "note": "Per-gage displacements and mid-web averages",
+          "symbol": "u5_in ... u33_in; um_5_6_in etc.",
+          "table_tags": [
+            "MBMA_7501_TABLEA2_APPA2ZSEC1ROTATIONS",
+            "MBMA_7501_TABLEB6_APPB6CSECROTATIONS",
+            "MBMA_7501_TABLEB7_APPB7CSECDIALGAGES28TO33",
+            "MBMA_7501_TABLEC2_APPC2ZSEC2DIALGAGES"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table G p.31; Table I p.33",
+          "note": "Includes initial sweep (B + ao); Table I differs slightly from Table G",
+          "symbol": "measured_horiz_defl_in, d_h_in",
+          "table_tags": [
+            "MBMA_8703_TABLEG_DEFLECTIONCOMPARISONEXHG",
+            "MBMA_8703_TABLEI_CATENARYCHECKEXHIBITI"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table E p.9",
+          "note": "Same columns hold vertical or horizontal readings per reading_type flag",
+          "symbol": "a1_in, b1_in, a3_in, b3_in",
+          "table_tags": [
+            "MBMA_8803_TABLEE_UPLIFTTESTREADINGS"
+          ],
+          "unit": "in"
+        }
+      ],
+      "name": "Lateral deflection of purlin",
+      "quantity_kind": "length",
+      "role": "measured_output"
+    },
+    {
+      "canonical_unit": "in",
+      "conversion_needed": false,
+      "description": "Measured vertical (downward or upward) deflection of the test member under load, typically at midspan of the critical bay.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table G p.31; Table I p.33",
+          "note": "",
+          "symbol": "measured_vert_defl_in, d_v_in",
+          "table_tags": [
+            "MBMA_8703_TABLEG_DEFLECTIONCOMPARISONEXHG",
+            "MBMA_8703_TABLEI_CATENARYCHECKEXHIBITI"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table E p.9",
+          "note": "Rows flagged with Δ are vertical deflection readings",
+          "symbol": "a1_in, b1_in, a3_in, b3_in (reading_type Δ)",
+          "table_tags": [
+            "MBMA_8803_TABLEE_UPLIFTTESTREADINGS"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Tables 4-12 to 4-23 pp. 87-98; Table S1 peak_lvdt columns",
+          "note": "Panel displacement rather than purlin deflection",
+          "symbol": "lvdt1_in, lvdt2_in, peak_lvdt1_in, peak_lvdt2_in",
+          "table_tags": [
+            "MBMA_9410_TABLE412_VACUUMBOXTEST2",
+            "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Table 4-3, p. 45",
+          "note": "Component test deflection at the fastener",
+          "symbol": "defl_left_fastener_in, defl_right_fastener_in",
+          "table_tags": [
+            "MBMA_9410_TABLE43_SIMTESTDEANCONC"
+          ],
+          "unit": "in."
+        }
+      ],
+      "name": "Measured vertical deflection",
+      "quantity_kind": "length",
+      "role": "measured_output"
+    },
+    {
+      "canonical_unit": "radians",
+      "conversion_needed": true,
+      "description": "Rotation (twist) of the purlin cross-section under load, measured from paired dial gage displacements, indicating torsional response of the unbraced member.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Appendix A2 p.87, B6 p.94, C2 p.97",
+          "note": "Reported as tangent of the angle, dimensionless",
+          "symbol": "tan_theta_5_6 etc., u15_u16_tan",
+          "table_tags": [
+            "MBMA_7501_TABLEA2_APPA2ZSEC1ROTATIONS",
+            "MBMA_7501_TABLEB6_APPB6CSECROTATIONS",
+            "MBMA_7501_TABLEC2_APPC2ZSEC2DIALGAGES"
+          ],
+          "unit": "—"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 4.2 (p. 79)",
+          "note": "Reported separately for vacuum and beam tests",
+          "symbol": "vacuum_max_rot_rad, beam_max_rot_rad",
+          "table_tags": [
+            "MBMA_8001_TABLE42_ULTIMATEROTATIONSANDF"
+          ],
+          "unit": "radians"
+        }
+      ],
+      "name": "Cross-section rotation at failure",
+      "quantity_kind": "angle",
+      "role": "measured_output"
+    },
+    {
+      "canonical_unit": "kip-in/in/rad",
+      "conversion_needed": true,
+      "description": "Stiffness of the panel-to-purlin connection against rotation of the member, measured in companion F-tests and used in lateral-torsional strength models.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 4.2 p. 79; Table 4.6 p. 83",
+          "note": "Reported for diaphragm-braced and channel-braced setups",
+          "symbol": "vacuum_f_kin_per_in_per_rad, beam_f_kin_per_in_per_rad",
+          "table_tags": [
+            "MBMA_8001_TABLE42_ULTIMATEROTATIONSANDF",
+            "MBMA_8001_TABLE46_VACUUMTESTLOADRATIOS"
+          ],
+          "unit": "kip-in/in/radian"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table 3 p.6; Table S1",
+          "note": "Per configuration (two F-tests each), not per full-scale test",
+          "symbol": "rotational_restraint_factor_lb_per_in_per_in",
+          "table_tags": [
+            "MBMA_8310_TABLE3_ROTATIONALRESTRAINTFACTORS",
+            "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "lb/in/in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table H p.32",
+          "note": "Zee tests only",
+          "symbol": "k_f_test_kip_in_in",
+          "table_tags": [
+            "MBMA_8703_TABLEH_KTESTVSCALCEXHIBITH"
+          ],
+          "unit": "kip/in./in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table 2 p.11",
+          "note": "Printed in N/mm although test plots are in lbs and in.",
+          "symbol": "test_slope_n_per_mm",
+          "table_tags": [
+            "MBMA_1103_TABLE2_MODELVSTESTSTIFFNESS"
+          ],
+          "unit": "N/mm"
+        }
+      ],
+      "name": "Measured rotational restraint stiffness",
+      "quantity_kind": "ratio",
+      "role": "measured_output"
+    },
+    {
+      "canonical_unit": "ksi",
+      "conversion_needed": false,
+      "description": "Stress in the member computed from strain gage readings at a given load, used to track how the section is stressed before failure.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Appendix A3 p.88, B1-B3 pp.89-91, C3-C9 pp.98-104",
+          "note": "Computed as reading x 0.03 ksi",
+          "symbol": "g1_stress_ksi ... g56_stress_ksi",
+          "table_tags": [
+            "MBMA_7501_TABLEA3_APPA3ZSEC1STRAINSTRESS",
+            "MBMA_7501_TABLEB1_APPB1CSECSTRAIN1TO14",
+            "MBMA_7501_TABLEC3_APPC3ZSEC2STRAIN1TO8"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 4.1 (p. 78)",
+          "note": "Printed as 'y' where the purlin yielded; one value per purlin type",
+          "symbol": "vacuum_stress_ksi, beam_stress_ksi",
+          "table_tags": [
+            "MBMA_8001_TABLE41_TESTULTIMATESTRESSES"
+          ],
+          "unit": "ksi"
+        }
+      ],
+      "name": "Measured stress from strain gages",
+      "quantity_kind": "stress",
+      "role": "measured_output"
+    },
+    {
+      "canonical_unit": "microstrain",
+      "conversion_needed": false,
+      "description": "Raw strain gage readings taken on the member or panel at each applied load level.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Appendix A3, B1-B3, C3-C9",
+          "note": "Some gages printed 'X' (no gage) or defective",
+          "symbol": "g1_rdg_microin ... g56_rdg_microin",
+          "table_tags": [
+            "MBMA_7501_TABLEA3_APPA3ZSEC1STRAINSTRESS",
+            "MBMA_7501_TABLEB1_APPB1CSECSTRAIN1TO14",
+            "MBMA_7501_TABLEC3_APPC3ZSEC2STRAIN1TO8"
+          ],
+          "unit": "micro in/in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Table 4-10, p. 65; gage layout Fig. 4-19",
+          "note": "From the seventh row on only eleven values are printed",
+          "symbol": "sg_1_microstrain ... sg_12_microstrain",
+          "table_tags": [
+            "MBMA_9410_TABLE410_STRAINGAGETESTDATA"
+          ],
+          "unit": "microstrain"
+        }
+      ],
+      "name": "Strain gage reading",
+      "quantity_kind": "ratio",
+      "role": "measured_output"
+    },
+    {
+      "canonical_unit": "lbs",
+      "conversion_needed": false,
+      "description": "Load carried by an individual through-fastening screw at failure or at a load stage, measuring the pullover strength of the panel-to-purlin connection.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Tables 3-1 to 3-9, 4-1 to 4-8, 4-12 to 4-23, 7-1 to 7-6; Table S1",
+          "note": "Standard, component and system test fastener loads",
+          "symbol": "tl_load_lbs, ld_per_scw_lbs, peak_load_max_lbs, lcell3_lb",
+          "table_tags": [
+            "MBMA_9410_TABLE31_STDTESTPASCOE24GA",
+            "MBMA_9410_TABLE41_SIMTESTPASCOECONC",
+            "MBMA_9410_TABLE48_FIXEDENDCONCLOADTEST",
+            "MBMA_9410_TABLE71_AVGCOMPTESTCAPACITIES",
+            "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "lbs"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Table S1 (pilot screw-connection rows)",
+          "note": "Pilot screw-connection capacity tests, load per screw",
+          "symbol": "failure_load_as_printed",
+          "table_tags": [
+            "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "lb per screw"
+        }
+      ],
+      "name": "Fastener load at failure",
+      "quantity_kind": "force",
+      "role": "measured_output"
+    },
+    {
+      "canonical_unit": "in",
+      "conversion_needed": false,
+      "description": "Distance from the observed buckle or failure location to the nearest support or to midspan, recording where the member failed.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 3.3; Table S1",
+          "note": "'m.s.' printed when buckle was at midspan",
+          "symbol": "dist_buckle_to_midspan_in",
+          "table_tags": [
+            "MBMA_8001_TABLE33_SUMMARYOFTESTRESULTS",
+            "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table S1, pages 6-8, 69",
+          "note": "Printed as ft-in strings (e.g. 7'-3\")",
+          "symbol": "failure_location",
+          "table_tags": [
+            "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft-in"
+        }
+      ],
+      "name": "Failure location along span",
+      "quantity_kind": "length",
+      "role": "measured_output"
+    },
+    {
+      "canonical_unit": "in",
+      "conversion_needed": false,
+      "description": "Longitudinal inward movement of the end supports during the test, checked to confirm catenary (membrane) forces were relieved.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table I p.33",
+          "note": "Averaged where both ends were measured",
+          "symbol": "measured_support_movement_in",
+          "table_tags": [
+            "MBMA_8703_TABLEI_CATENARYCHECKEXHIBITI"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table E p.9; note in Table S1",
+          "note": "Average 0.161 in. judged sufficient",
+          "symbol": "line1_in, line4_in",
+          "table_tags": [
+            "MBMA_8803_TABLEE_UPLIFTTESTREADINGS",
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        }
+      ],
+      "name": "End support horizontal movement",
+      "quantity_kind": "length",
+      "role": "measured_output"
+    },
+    {
+      "canonical_unit": "in",
+      "conversion_needed": false,
+      "description": "Overall out-to-out web depth of the purlin or girt cross-section, the key geometric property controlling bending stiffness.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table 1 p.5; Table 5 p.18; Table 7 p.22; Table C p.49; Table S1",
+          "note": "Nominal in test matrix, measured in Tables 1 and 7",
+          "symbol": "h_in, web_in, depth_in",
+          "table_tags": [
+            "MBMA_1103_TABLE1_ROTRESTRAINTSPECIMENDIMS",
+            "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX",
+            "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS",
+            "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Table S1 column depth_in",
+          "note": "Nominal",
+          "symbol": "depth_in",
+          "table_tags": [
+            "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table S1 pages 6-8, 69",
+          "note": "From construction drawings",
+          "symbol": "depth_in",
+          "table_tags": [
+            "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 3.2 p. 75; Table 3.3 p. 76; Table S1",
+          "note": "Both measured (h_in) and nominal columns exist",
+          "symbol": "h_in, depth_in, nom_depth_in",
+          "table_tags": [
+            "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS",
+            "MBMA_8001_TABLE33_SUMMARYOFTESTRESULTS",
+            "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table 1 p.4; Table S1",
+          "note": "Measured",
+          "symbol": "h_in, depth_in",
+          "table_tags": [
+            "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS",
+            "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 2.1 p.18; Table S1",
+          "note": "Nominal 9 in. C-purlin",
+          "symbol": "total_depth_in, depth_in",
+          "table_tags": [
+            "MBMA_8404_TABLE21_MEASUREDCPURLINDIMENSIONS",
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table 2 pp. 5, 15; Table S1",
+          "note": "Test 9 south printed '9 7.063', corrected",
+          "symbol": "h_in, depth_in",
+          "table_tags": [
+            "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS",
+            "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table B p.11; Tables C-1 to C-16; Table S1",
+          "note": "Nominal in Table B, measured on purlin-data sheets",
+          "symbol": "depth_in, depth_end1_in, depth_end2_in",
+          "table_tags": [
+            "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+            "MBMA_8703_TABLEC1_PURLINDATATEST1",
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table 1 p.2; Table A p.4; Table S1",
+          "note": "Table A value measured at one end",
+          "symbol": "depth_in",
+          "table_tags": [
+            "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+            "MBMA_8803_TABLEA_PURLINDIMENSIONDATA",
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table 3.1 p. 25; Table S1",
+          "note": "Nominal",
+          "symbol": "purlin_depth_in, depth_in",
+          "table_tags": [
+            "MBMA_9003_TABLE31_TESTCOMPONENTS",
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table S1 depth_in column",
+          "note": "Reported as a range over the purlins of an assembly",
+          "symbol": "depth_in",
+          "table_tags": [
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table 2.1 p.10; Appendix section-property screens; Table S1",
+          "note": "Nominal and measured per segment",
+          "symbol": "web_depth_in, depth_in",
+          "table_tags": [
+            "MBMA_9105_TABLE21_TESTPARAMETERS",
+            "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9702",
+          "evidence": "Table S1 depth_in; CECO section sketches",
+          "note": "From sketches for CECO rows",
+          "symbol": "depth_in",
+          "table_tags": [
+            "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+            "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS"
+          ],
+          "unit": "in"
+        }
+      ],
+      "name": "Member web depth",
+      "quantity_kind": "length",
+      "role": "specimen_parameter"
+    },
+    {
+      "canonical_unit": "in",
+      "conversion_needed": false,
+      "description": "Base (uncoated) steel thickness of the cold-formed purlin or girt, the dominant parameter for local buckling and strength.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table 1 p.5; Table 7 p.22; Table S1",
+          "note": "In Tables 5 and C 'thickness_in' is insulation thickness instead",
+          "symbol": "t_in, thickness_in",
+          "table_tags": [
+            "MBMA_1103_TABLE1_ROTRESTRAINTSPECIMENDIMS",
+            "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS",
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Table S1 column thickness_in",
+          "note": "C end-span printed as .119 and .1119 in different places",
+          "symbol": "thickness_in",
+          "table_tags": [
+            "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table S1 pages 6-8, 69",
+          "note": "C center-span corrected from printed 0.773 to 0.073 in.",
+          "symbol": "thickness_in",
+          "table_tags": [
+            "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 3.2 p. 75; Table 3.3 p. 76; Table S1",
+          "note": "Measured and nominal columns both present",
+          "symbol": "t_in, thickness_in, nom_thick_in",
+          "table_tags": [
+            "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS",
+            "MBMA_8001_TABLE33_SUMMARYOFTESTRESULTS",
+            "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table 1 p.4; Table 3 p.6; Table S1",
+          "note": "",
+          "symbol": "t_in, thickness_in, purlin_thickness_in",
+          "table_tags": [
+            "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS",
+            "MBMA_8310_TABLE3_ROTATIONALRESTRAINTFACTORS",
+            "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 2.1 p.18; Table 3.3 p.36; Table S1",
+          "note": "Also measured on the tensile coupons",
+          "symbol": "thickness_in",
+          "table_tags": [
+            "MBMA_8404_TABLE21_MEASUREDCPURLINDIMENSIONS",
+            "MBMA_8404_TABLE33_COUPONTESTRESULTS",
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table 2 pp. 5, 15; Table S1",
+          "note": "",
+          "symbol": "t_in, thickness_in",
+          "table_tags": [
+            "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS",
+            "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table B p.11; Tables C-1 to C-16; Table S1",
+          "note": "Some sheets give thickness at both ends",
+          "symbol": "t_in, thickness_in, t_end1_in, t_end2_in",
+          "table_tags": [
+            "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+            "MBMA_8703_TABLEC1_PURLINDATATEST1",
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table 1 p.2; Table A p.4; Table S1",
+          "note": "Coupon thickness in Table D is a separate quantity",
+          "symbol": "t_in, thickness_in",
+          "table_tags": [
+            "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+            "MBMA_8803_TABLEA_PURLINDIMENSIONDATA",
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table 3.1 p. 25; Table 3.5 p. 40; Table S1",
+          "note": "Nominal (Table 3.1) and coupon-measured (Table 3.5)",
+          "symbol": "purlin_thickness_in, thickness_in",
+          "table_tags": [
+            "MBMA_9003_TABLE31_TESTCOMPONENTS",
+            "MBMA_9003_TABLE35_COUPONTESTRESULTS",
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table 3.1 p. 24; Table S1",
+          "note": "Table S1 values are ranges over the assembly",
+          "symbol": "thickness_in",
+          "table_tags": [
+            "MBMA_9102_TABLE31_TENSILETESTS1991",
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table 2.1 p.10; Appendix A/B/C sheets; Table S1",
+          "note": "Test C3 printed values duplicate Test C2",
+          "symbol": "thickness_in, t_in",
+          "table_tags": [
+            "MBMA_9105_TABLE21_TESTPARAMETERS",
+            "MBMA_9105_TABLEA1_TESTC1MEASUREDDIMENSIONS",
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9702",
+          "evidence": "Tables A1/A2; Table S1",
+          "note": "Per purlin line and per bay",
+          "symbol": "thickness_in, t_a_in, t_b_in",
+          "table_tags": [
+            "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS",
+            "MBMA_9702_TABLEA2_CECOTHREESPANCONFIRMTESTS",
+            "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        }
+      ],
+      "name": "Base metal thickness",
+      "quantity_kind": "length",
+      "role": "specimen_parameter"
+    },
+    {
+      "canonical_unit": "text",
+      "conversion_needed": false,
+      "description": "Shape of the cold-formed member cross-section, C (Cee) or Z (Zee), which governs its torsional behaviour under uplift.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table 1 p.5; Table 5 p.18; Table C p.49; Table S1",
+          "note": "",
+          "symbol": "member_profile, girt, section_type",
+          "table_tags": [
+            "MBMA_1103_TABLE1_ROTRESTRAINTSPECIMENDIMS",
+            "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX",
+            "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Table S1 column section_type",
+          "note": "",
+          "symbol": "section_type",
+          "table_tags": [
+            "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table S1 pages 6-8, 69",
+          "note": "",
+          "symbol": "section_type",
+          "table_tags": [
+            "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table S1 column section_type",
+          "note": "Z for all tests",
+          "symbol": "section_type",
+          "table_tags": [
+            "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table 1 p.4; Table 3 p.6; Table S1",
+          "note": "A second 'section_type' column in Table 2 holds a thickness+shape label",
+          "symbol": "section_type, purlin_section_type",
+          "table_tags": [
+            "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS",
+            "MBMA_8310_TABLE3_ROTATIONALRESTRAINTFACTORS",
+            "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table S1 column section_type",
+          "note": "C-section for all tests",
+          "symbol": "section_type",
+          "table_tags": [
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table 1 pp. 4, 13; Table S1",
+          "note": "",
+          "symbol": "purlin_section_type, section_type",
+          "table_tags": [
+            "MBMA_8702_TABLE1_PURLINTESTSPECIMENS",
+            "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table B p.11; Table S1",
+          "note": "Printed as Zee or Cee",
+          "symbol": "section, section_type",
+          "table_tags": [
+            "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table 1 p.2; Table S1",
+          "note": "Zee",
+          "symbol": "section, section_type",
+          "table_tags": [
+            "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table 3.1 p. 25; Table S1",
+          "note": "",
+          "symbol": "purlin_shape, section_type",
+          "table_tags": [
+            "MBMA_9003_TABLE31_TESTCOMPONENTS",
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table 2.1 p. 13; Table S1",
+          "note": "",
+          "symbol": "purlin, section_type",
+          "table_tags": [
+            "MBMA_9102_TABLE21_TESTMATRIX1991",
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table S1",
+          "note": "C-section for all tests",
+          "symbol": "section_type",
+          "table_tags": [
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9702",
+          "evidence": "Table S1 column section_type",
+          "note": "From designation or sketches",
+          "symbol": "section_type",
+          "table_tags": [
+            "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        }
+      ],
+      "name": "Section shape (C or Z)",
+      "quantity_kind": "category",
+      "role": "specimen_parameter"
+    },
+    {
+      "canonical_unit": "in",
+      "conversion_needed": false,
+      "description": "Width of the purlin or girt flange, reported separately for the compression (free) and tension (panel-attached) flanges.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table 7 p.22",
+          "note": "Compression and tension flange widths separately",
+          "symbol": "b_comp_in, b_tens_in",
+          "table_tags": [
+            "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 3.2 p. 75; Table 4.8 p. 85",
+          "note": "Total and flat widths given separately",
+          "symbol": "bt_in, wt_in, bb_in, wb_in",
+          "table_tags": [
+            "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS",
+            "MBMA_8001_TABLE48_MINSTIFFENERREQUIREMENT"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table 1 p.4",
+          "note": "Flange 1 and flange 2 per Fig. 1",
+          "symbol": "b1_in, b2_in",
+          "table_tags": [
+            "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 2.1 p.18",
+          "note": "Top and bottom flange widths",
+          "symbol": "w1_in, w2_in",
+          "table_tags": [
+            "MBMA_8404_TABLE21_MEASUREDCPURLINDIMENSIONS"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table 2 pp. 5, 15",
+          "note": "Test 3 north corrected from 3.938 to 2.938 in.",
+          "symbol": "b1_in, b2_in",
+          "table_tags": [
+            "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table B p.11; Tables C-1 to C-16; Table S1",
+          "note": "Nominal plus measured top/bottom",
+          "symbol": "flange_in, flange_width_top_in, flange_width_bot_in",
+          "table_tags": [
+            "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+            "MBMA_8703_TABLEC1_PURLINDATATEST1",
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table 1 p.2; Table A p.4",
+          "note": "",
+          "symbol": "flange_width_in, flange_width_top_in, flange_width_bot_in",
+          "table_tags": [
+            "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+            "MBMA_8803_TABLEA_PURLINDIMENSIONDATA"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table 2.1 p.10; Appendix section-property screens",
+          "note": "",
+          "symbol": "flange_width_in, top_flange_in, bottom_flange_in",
+          "table_tags": [
+            "MBMA_9105_TABLE21_TESTPARAMETERS",
+            "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES"
+          ],
+          "unit": "in"
+        }
+      ],
+      "name": "Flange width",
+      "quantity_kind": "length",
+      "role": "specimen_parameter"
+    },
+    {
+      "canonical_unit": "in",
+      "conversion_needed": false,
+      "description": "Length of the edge stiffener (lip) on the flange, which controls distortional buckling of the compression flange.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table 7 p.22",
+          "note": "",
+          "symbol": "d_comp_in, d_tens_in",
+          "table_tags": [
+            "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 3.2 p. 75",
+          "note": "Total and flat lip widths",
+          "symbol": "st_in, dt_in, sb_in, db_in",
+          "table_tags": [
+            "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table 1 p.4",
+          "note": "",
+          "symbol": "l1_in, l2_in",
+          "table_tags": [
+            "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 2.1 p.18",
+          "note": "",
+          "symbol": "t1_in, t2_in",
+          "table_tags": [
+            "MBMA_8404_TABLE21_MEASUREDCPURLINDIMENSIONS"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table 2 pp. 5, 15",
+          "note": "Test 5 south corrected from 8.813 to 0.813 in.",
+          "symbol": "l1_in, l2_in",
+          "table_tags": [
+            "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Tables C-1 to C-16 pp.12-27",
+          "note": "",
+          "symbol": "lip_length_top_in, lip_length_bot_in",
+          "table_tags": [
+            "MBMA_8703_TABLEC1_PURLINDATATEST1"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table A p.4",
+          "note": "",
+          "symbol": "lip_length_top_in, lip_length_bot_in",
+          "table_tags": [
+            "MBMA_8803_TABLEA_PURLINDIMENSIONDATA"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Appendix A/B/C section-property screens",
+          "note": "",
+          "symbol": "top_lip_in, bottom_lip_in",
+          "table_tags": [
+            "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES"
+          ],
+          "unit": "in"
+        }
+      ],
+      "name": "Lip (edge stiffener) length",
+      "quantity_kind": "length",
+      "role": "specimen_parameter"
+    },
+    {
+      "canonical_unit": "degrees",
+      "conversion_needed": false,
+      "description": "Angle between the flange and its stiffening lip, affecting the effectiveness of the edge stiffener.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table 7 p.22",
+          "note": "",
+          "symbol": "theta_comp_deg, theta_tens_deg",
+          "table_tags": [
+            "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS"
+          ],
+          "unit": "degrees"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 3.2 p. 75",
+          "note": "",
+          "symbol": "phit_deg, phib_deg",
+          "table_tags": [
+            "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS"
+          ],
+          "unit": "degrees"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table 1 Note (3) p.4",
+          "note": "Single value 90 degrees for all specimens",
+          "symbol": "Note (3)",
+          "table_tags": [
+            "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS"
+          ],
+          "unit": "degrees"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 2.1 p.18",
+          "note": "",
+          "symbol": "theta1_deg, theta2_deg",
+          "table_tags": [
+            "MBMA_8404_TABLE21_MEASUREDCPURLINDIMENSIONS"
+          ],
+          "unit": "deg"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table 2 pp. 5, 15; Table S1",
+          "note": "",
+          "symbol": "phi_deg, lip_angle_deg",
+          "table_tags": [
+            "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS",
+            "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "degrees"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Tables C-1 to C-16 pp.12-27",
+          "note": "Tests 1-5 note lip angles vary 40-50 deg, not accurately measurable",
+          "symbol": "lip_angle_top_deg, lip_angle_bot_deg",
+          "table_tags": [
+            "MBMA_8703_TABLEC1_PURLINDATATEST1"
+          ],
+          "unit": "degrees"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table A p.4",
+          "note": "",
+          "symbol": "lip_angle_top_deg, lip_angle_bot_deg",
+          "table_tags": [
+            "MBMA_8803_TABLEA_PURLINDIMENSIONDATA"
+          ],
+          "unit": "degrees"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_9105",
+          "evidence": "Header note to Appendix section-property tables",
+          "note": "Constant 90 degrees stated in a note",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES"
+          ],
+          "unit": "deg"
+        }
+      ],
+      "name": "Lip angle",
+      "quantity_kind": "angle",
+      "role": "specimen_parameter"
+    },
+    {
+      "canonical_unit": "in",
+      "conversion_needed": false,
+      "description": "Inside bend radius at the web-to-flange and flange-to-lip corners of the cold-formed section.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table 7 p.22",
+          "note": "Single radius value",
+          "symbol": "r_in",
+          "table_tags": [
+            "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 3.2 p. 75",
+          "note": "Reported as radius/thickness ratios, not absolute lengths",
+          "symbol": "rcap_t_over_t, r_t_over_t, rcap_b_over_t, r_b_over_t",
+          "table_tags": [
+            "MBMA_8001_TABLE32_AVERAGEPURLINDIMENSIONS"
+          ],
+          "unit": "—"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table 1 Note (2) p.4",
+          "note": "Single value 0.313 in for all specimens",
+          "symbol": "Note (2)",
+          "table_tags": [
+            "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 2.1 p.18",
+          "note": "Four separate corner radii",
+          "symbol": "r1_in, r2_in, r3_in, r4_in",
+          "table_tags": [
+            "MBMA_8404_TABLE21_MEASUREDCPURLINDIMENSIONS"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table 2 pp. 5, 15",
+          "note": "",
+          "symbol": "r1_in, r2_in",
+          "table_tags": [
+            "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Tables C-1 to C-16 pp.12-27",
+          "note": "Four radii per section",
+          "symbol": "r_web_top_in, r_lip_top_in, r_web_bot_in, r_lip_bot_in",
+          "table_tags": [
+            "MBMA_8703_TABLEC1_PURLINDATATEST1"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table A p.4",
+          "note": "",
+          "symbol": "radius_top_web_in, radius_bot_web_in, radius_top_lip_in, radius_bot_lip_in",
+          "table_tags": [
+            "MBMA_8803_TABLEA_PURLINDIMENSIONDATA"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_9105",
+          "evidence": "Header notes to Appendix section-property tables",
+          "note": "Stated as constants per test in a note",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES"
+          ],
+          "unit": "in"
+        }
+      ],
+      "name": "Corner radius",
+      "quantity_kind": "length",
+      "role": "specimen_parameter"
+    },
+    {
+      "canonical_unit": "in",
+      "conversion_needed": false,
+      "description": "Initial lateral out-of-straightness (sweep) of the member measured before loading, an imperfection that reduces uplift capacity.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table 7 p.22",
+          "note": "Printed as '-' (not measured) for many specimens",
+          "symbol": "imperfection_in",
+          "table_tags": [
+            "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table in plan view of Fig. 4 (Sheet 4), page 13",
+          "note": "Five stations, top and bottom flange, stations not dimensioned",
+          "symbol": "sweep_1_in ... sweep_5_in",
+          "table_tags": [
+            "MBMA_7603_TABLE4_CPURLININITIALSWEEP"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table 1 p.4, Note (5); Table S1",
+          "note": "Signed (negative north, positive south)",
+          "symbol": "ao_in",
+          "table_tags": [
+            "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS",
+            "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table 2 pp. 5, 15",
+          "note": "Negative toward the south",
+          "symbol": "ao_in",
+          "table_tags": [
+            "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table B p.11; Table S1",
+          "note": "Used as ao in the AISI-4/-5/-6 predictions",
+          "symbol": "initial_sweep_in",
+          "table_tags": [
+            "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table 1 p.2; Table S1",
+          "note": "Zero because discrete braces held the purlins straight",
+          "symbol": "initial_sweep_in",
+          "table_tags": [
+            "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Appendix A/B/C test summary sheets pp. A.1, B.1, C.1",
+          "note": "Recorded as 'Negligible' for all Test C1 segments",
+          "symbol": "sweep_in",
+          "table_tags": [
+            "MBMA_9105_TABLEA1_TESTC1MEASUREDDIMENSIONS",
+            "MBMA_9105_TABLEB1_TESTC2MEASUREDDIMENSIONS",
+            "MBMA_9105_TABLEC1_TESTC3MEASUREDDIMENSIONS"
+          ],
+          "unit": "in"
+        }
+      ],
+      "name": "Initial lateral sweep",
+      "quantity_kind": "length",
+      "role": "specimen_parameter"
+    },
+    {
+      "canonical_unit": "ft",
+      "conversion_needed": true,
+      "description": "On-center spacing of the parallel purlin or girt lines in the test assembly, which also sets the tributary width of the applied pressure.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table S1 pages 6-8, 69; header note",
+          "note": "5'-0\" for both specimens",
+          "symbol": "purlin_spacing_ft",
+          "table_tags": [
+            "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table S1 purlin_spacing column",
+          "note": "Printed as text dimension string",
+          "symbol": "purlin_spacing",
+          "table_tags": [
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft-in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Header note of Table 1 and Table S1",
+          "note": "Stated in a header note, not a column",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_8702_TABLE1_PURLINTESTSPECIMENS",
+            "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_7501",
+          "evidence": "Table S1 header note (Figs. 1a, 2a)",
+          "note": "5 ft for Z, about 61 in. for C; stated in a note",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft/in"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_1103",
+          "evidence": "Note under Table 5 p.18; Section 4.2 p.17",
+          "note": "7 ft web-to-web girt spacing; stated in a note",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX",
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table S1 header note",
+          "note": "5 ft o.c.; stated only in a header note",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_9003",
+          "evidence": "Header note of Table S1",
+          "note": "5 ft centers with 7 ft wide deck",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_9105",
+          "evidence": "Header note to Table S1",
+          "note": "5 ft o.c., equals tributary width",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_9702",
+          "evidence": "Header note in Tables A1, A2 and S1",
+          "note": "5 ft for all CECO tests",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        }
+      ],
+      "name": "Purlin line spacing",
+      "quantity_kind": "length",
+      "role": "specimen_parameter"
+    },
+    {
+      "canonical_unit": "ft",
+      "conversion_needed": true,
+      "description": "Plan width of roof carried by each purlin line, used to convert the measured chamber pressure into a line load on the member.",
+      "members": [
+        {
+          "availability": "inferred",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table S1 column tributary_width_ft; Eq. 14 p.21",
+          "note": "L_p/2 = 6.79 ft, derived",
+          "symbol": "tributary_width_ft",
+          "table_tags": [
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "inferred",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table S1 tributary width note (open question MBMA_7603-Q01)",
+          "note": "Curator-derived 3.167 ft, not printed",
+          "symbol": "tributary_width_ft",
+          "table_tags": [
+            "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_8310",
+          "evidence": "Conversion note under Table 2",
+          "note": "38 in. (76-in. chamber shared by two lines)",
+          "symbol": "Tributary width conversion",
+          "table_tags": [
+            "MBMA_8310_TABLE2_UPLIFTLOADCOMPARISONS",
+            "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_8703",
+          "evidence": "Header note to Table B p.11 and Table S1",
+          "note": "5.06 ft; stated in a note",
+          "symbol": "tributary width 5.06 ft",
+          "table_tags": [
+            "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table S1 header note on load conversion",
+          "note": "5.06 ft; stated in a note",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        }
+      ],
+      "name": "Tributary width per member",
+      "quantity_kind": "length",
+      "role": "specimen_parameter"
+    },
+    {
+      "canonical_unit": "in^3",
+      "conversion_needed": false,
+      "description": "Effective section modulus of the cold-formed section computed by effective-width analysis, used with the yield stress to give the fully braced bending capacity.",
+      "members": [
+        {
+          "availability": "simulated",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table 7 p.22; Table C p.49; Table S1",
+          "note": "Computed with the software CFS from measured dimensions",
+          "symbol": "se_in3, effective_section_modulus_se_in3",
+          "table_tags": [
+            "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS",
+            "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in^3"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table 2 p.3; Table S1",
+          "note": "",
+          "symbol": "se_in3",
+          "table_tags": [
+            "MBMA_8803_TABLE2_TESTVSPREDICTEDUPLIFTLOADS",
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in^3"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table 3.1 p.12; Appendix screens; Table S1",
+          "note": "Per segment and averaged over six sections",
+          "symbol": "avg_se_in3, seff_in3",
+          "table_tags": [
+            "MBMA_9105_TABLE31_SUMMARYOFTESTRESULTS",
+            "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES",
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in^3"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 2.2 p.20",
+          "note": "Top and bottom fiber effective section moduli",
+          "symbol": "s_t_strength_in3, s_b_strength_in3",
+          "table_tags": [
+            "MBMA_8404_TABLE22_CPURLINPROPERTIES"
+          ],
+          "unit": "in^3"
+        }
+      ],
+      "name": "Effective section modulus",
+      "quantity_kind": "area",
+      "role": "specimen_parameter"
+    },
+    {
+      "canonical_unit": "ft",
+      "conversion_needed": true,
+      "description": "Clear span length of each bay of the test assembly between supports, the length over which bending moments develop.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Note under Table C p.49; Table S1 column span_ft",
+          "note": "24.5 ft for all 50 tests",
+          "symbol": "span_ft",
+          "table_tags": [
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY",
+            "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Table S1 column span_ft",
+          "note": "25 ft",
+          "symbol": "span_ft",
+          "table_tags": [
+            "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table S1 pages 6-8, 69",
+          "note": "Nominal 25 ft; actual Z spans slightly less",
+          "symbol": "span_ft",
+          "table_tags": [
+            "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table S1 column span_ft",
+          "note": "20 ft for all tests",
+          "symbol": "span_ft",
+          "table_tags": [
+            "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table S1 column span_ft; Table 1 note",
+          "note": "20 ft",
+          "symbol": "span_ft",
+          "table_tags": [
+            "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+            "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table S1 column span_ft; Tables 1.1 and 2.2 header notes",
+          "note": "25 ft except Tests 15 and 16 at 24 ft 8 in.",
+          "symbol": "span_ft",
+          "table_tags": [
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY",
+            "MBMA_8404_TABLE11_TESTMATRIX"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table 1 pp. 4, 13; Table S1",
+          "note": "Printed only in inches (237.5 in.); span_ft column empty",
+          "symbol": "span_in, span_in_in",
+          "table_tags": [
+            "MBMA_8702_TABLE1_PURLINTESTSPECIMENS",
+            "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table B p.11; Table S1; Table I p.33",
+          "note": "End bay span; interior bay 1 ft longer in some tests",
+          "symbol": "span_ft, l_in",
+          "table_tags": [
+            "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+            "MBMA_8703_TABLEI_CATENARYCHECKEXHIBITI"
+          ],
+          "unit": "ft (in. in Table I)"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table 1 p.2; Table S1",
+          "note": "30 ft bays",
+          "symbol": "span_ft",
+          "table_tags": [
+            "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table S1 column span_ft",
+          "note": "",
+          "symbol": "span_ft",
+          "table_tags": [
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table S1 span_ft column",
+          "note": "25 ft base tests, 23'-6\" multispan",
+          "symbol": "span_ft",
+          "table_tags": [
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table 2.1 p.10; Table 3.1 p.12; Table S1",
+          "note": "20, 23.5 and 30 ft",
+          "symbol": "span_ft",
+          "table_tags": [
+            "MBMA_9105_TABLE21_TESTPARAMETERS",
+            "MBMA_9105_TABLE31_SUMMARYOFTESTRESULTS",
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9702",
+          "evidence": "Tables A1/A2; Table S1",
+          "note": "Three bay lengths listed for confirming tests",
+          "symbol": "span_ft, spans_ft",
+          "table_tags": [
+            "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS",
+            "MBMA_9702_TABLEA2_CECOTHREESPANCONFIRMTESTS",
+            "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Tables 4-1 to 4-8 (in.); Table S1 (ft)",
+          "note": "Panel span, inches for component tests and feet for system tests",
+          "symbol": "span_in, span_length_in, span_ft",
+          "table_tags": [
+            "MBMA_9410_TABLE41_SIMTESTPASCOECONC",
+            "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in. / ft"
+        }
+      ],
+      "name": "Span length",
+      "quantity_kind": "length",
+      "role": "test_condition"
+    },
+    {
+      "canonical_unit": "ksi",
+      "conversion_needed": true,
+      "description": "Yield stress of the member steel measured on tensile coupons, the material property that sets the fully-yielded bending capacity.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table 6 p.21; Table C p.49; Table S1",
+          "note": "Average of three coupons from the failed girt",
+          "symbol": "fy_ksi, yield_stress_fy_ksi",
+          "table_tags": [
+            "MBMA_1103_TABLE6_MEASUREDGIRTYIELDSTRESS",
+            "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Table S1 column yield_stress_ksi",
+          "note": "Reported by purlin type only",
+          "symbol": "yield_stress_ksi",
+          "table_tags": [
+            "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 3.1 p. 74; Tables 4.1, 4.4; Table S1",
+          "note": "Average of three coupons per purlin type",
+          "symbol": "fy_ksi, yield_stress_ksi",
+          "table_tags": [
+            "MBMA_8001_TABLE31_MATERIALPROPERTIESTENSILE",
+            "MBMA_8001_TABLE41_TESTULTIMATESTRESSES",
+            "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table 1 Note (4) p.4; Table S1",
+          "note": "Single value 64.47 ksi for all nine tests",
+          "symbol": "yield_stress_ksi",
+          "table_tags": [
+            "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS",
+            "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 3.3 p.36; Table S1",
+          "note": "Per east/west purlin; 32-coupon average 54.0 ksi",
+          "symbol": "fy_ksi, yield_stress_east_ksi, yield_stress_west_ksi",
+          "table_tags": [
+            "MBMA_8404_TABLE33_COUPONTESTRESULTS",
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table 2 pp. 5, 15; Table S1",
+          "note": "Per purlin and as north/south pair",
+          "symbol": "fy_ksi",
+          "table_tags": [
+            "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS",
+            "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table B p.11; Table S1",
+          "note": "Blank on all C purlin-data sheets",
+          "symbol": "fy_ksi",
+          "table_tags": [
+            "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table 1 p.2; Table 2 p.3; Table A p.4; Table D pp.7-8; Table S1",
+          "note": "Table D prints coupon yield stress in psi",
+          "symbol": "fy_ksi, yield_ksi, stress_yp_psi",
+          "table_tags": [
+            "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+            "MBMA_8803_TABLEA_PURLINDIMENSIONDATA",
+            "MBMA_8803_TABLED_TENSIONCOUPONRESULTS",
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ksi / psi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table 3.5 p. 40; Table S1",
+          "note": "Coupon cut from web of failed purlin",
+          "symbol": "yield_stress_ksi",
+          "table_tags": [
+            "MBMA_9003_TABLE35_COUPONTESTRESULTS",
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table 3.1 p. 24; Table 4.1 p. 29; Table S1",
+          "note": "Table 3.1 unit row erroneously shows '(in)'",
+          "symbol": "yield_stress_ksi, fy_ksi",
+          "table_tags": [
+            "MBMA_9102_TABLE31_TENSILETESTS1991",
+            "MBMA_9102_TABLE41_BASETESTCALCS1991",
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table 2.2 p.10; Table 3.1 p.12; Table S1",
+          "note": "",
+          "symbol": "fy_ksi, measured_fy_ksi",
+          "table_tags": [
+            "MBMA_9105_TABLE22_COUPONTESTRESULTS",
+            "MBMA_9105_TABLE31_SUMMARYOFTESTRESULTS",
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9702",
+          "evidence": "Tables A1/A2; Table S1",
+          "note": "Per purlin line, often printed only for Purlin A",
+          "symbol": "fy_a_ksi, fy_b_ksi, yield_stress_ksi",
+          "table_tags": [
+            "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS",
+            "MBMA_9702_TABLEA2_CECOTHREESPANCONFIRMTESTS",
+            "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Table 2-1 p. 23",
+          "note": "Panel sheet steel, not purlin; reported in psi",
+          "symbol": "pascoe_26ga, pascoe_24ga, american_26ga, american_24ga",
+          "table_tags": [
+            "MBMA_9410_TABLE21_TENSILETESTRESULTS"
+          ],
+          "unit": "psi"
+        }
+      ],
+      "name": "Coupon yield stress",
+      "quantity_kind": "stress",
+      "role": "material_property"
+    },
+    {
+      "canonical_unit": "ksi",
+      "conversion_needed": true,
+      "description": "Ultimate tensile strength of the steel measured on tensile coupons, reported alongside yield stress.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 3.1 (p. 74)",
+          "note": "Average of three coupons per purlin type",
+          "symbol": "fu_ksi",
+          "table_tags": [
+            "MBMA_8001_TABLE31_MATERIALPROPERTIESTENSILE"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 3.3 p.36",
+          "note": "",
+          "symbol": "fu_ksi",
+          "table_tags": [
+            "MBMA_8404_TABLE33_COUPONTESTRESULTS"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table D pp.7-8",
+          "note": "Printed in psi",
+          "symbol": "stress_failure_psi",
+          "table_tags": [
+            "MBMA_8803_TABLED_TENSIONCOUPONRESULTS"
+          ],
+          "unit": "psi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table 3.5 p. 40",
+          "note": "SP-10C-12-2 has Fu equal to Fy as printed",
+          "symbol": "tensile_strength_ksi",
+          "table_tags": [
+            "MBMA_9003_TABLE35_COUPONTESTRESULTS"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table 3.1 p. 24",
+          "note": "",
+          "symbol": "tensile_strength_ksi",
+          "table_tags": [
+            "MBMA_9102_TABLE31_TENSILETESTS1991"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table 2.2 p.10",
+          "note": "",
+          "symbol": "fu_ksi",
+          "table_tags": [
+            "MBMA_9105_TABLE22_COUPONTESTRESULTS"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Table 2-1 p. 23",
+          "note": "Panel sheet steel, reported in psi",
+          "symbol": "pascoe_26ga, pascoe_24ga, american_26ga, american_24ga",
+          "table_tags": [
+            "MBMA_9410_TABLE21_TENSILETESTRESULTS"
+          ],
+          "unit": "psi"
+        }
+      ],
+      "name": "Coupon tensile strength",
+      "quantity_kind": "stress",
+      "role": "material_property"
+    },
+    {
+      "canonical_unit": "%",
+      "conversion_needed": false,
+      "description": "Percent elongation of the tensile coupon at fracture, a measure of steel ductility.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 3.1 (p. 74)",
+          "note": "",
+          "symbol": "elongation_pct",
+          "table_tags": [
+            "MBMA_8001_TABLE31_MATERIALPROPERTIESTENSILE"
+          ],
+          "unit": "%"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 3.3 p.36",
+          "note": "",
+          "symbol": "elongation_pct",
+          "table_tags": [
+            "MBMA_8404_TABLE33_COUPONTESTRESULTS"
+          ],
+          "unit": "%"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table D pp.7-8",
+          "note": "Over 2 in. gauge length",
+          "symbol": "elongation_pct",
+          "table_tags": [
+            "MBMA_8803_TABLED_TENSIONCOUPONRESULTS"
+          ],
+          "unit": "%"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table 3.5 p. 40",
+          "note": "",
+          "symbol": "elongation_pct",
+          "table_tags": [
+            "MBMA_9003_TABLE35_COUPONTESTRESULTS"
+          ],
+          "unit": "%"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table 3.1 p. 24",
+          "note": "",
+          "symbol": "elongation_percent",
+          "table_tags": [
+            "MBMA_9102_TABLE31_TENSILETESTS1991"
+          ],
+          "unit": "%"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table 2.2 p.10",
+          "note": "Printed with a percent sign",
+          "symbol": "elongation_pct",
+          "table_tags": [
+            "MBMA_9105_TABLE22_COUPONTESTRESULTS"
+          ],
+          "unit": "%"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Table 2-1 p. 23",
+          "note": "Panel sheet steel",
+          "symbol": "pascoe_26ga, pascoe_24ga, american_26ga, american_24ga",
+          "table_tags": [
+            "MBMA_9410_TABLE21_TENSILETESTRESULTS"
+          ],
+          "unit": "%"
+        }
+      ],
+      "name": "Coupon elongation",
+      "quantity_kind": "percentage",
+      "role": "material_property"
+    },
+    {
+      "canonical_unit": "ksi",
+      "conversion_needed": false,
+      "description": "Elastic modulus of the steel assumed or input in the stress and section-property calculations.",
+      "members": [
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_7501",
+          "evidence": "Column definitions in Appendices A3/B1/B2/B3",
+          "note": "Assumed 30x10^3 ksi, not measured",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_7501_TABLEA3_APPA3ZSEC1STRAINSTRESS",
+            "MBMA_7501_TABLEB1_APPB1CSECSTRAIN1TO14"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Appendix A/B/C section-property program screens",
+          "note": "Assumed 29,500 ksi for all segments",
+          "symbol": "e_ksi",
+          "table_tags": [
+            "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES"
+          ],
+          "unit": "ksi"
+        }
+      ],
+      "name": "Elastic modulus of steel",
+      "quantity_kind": "stress",
+      "role": "material_property"
+    },
+    {
+      "canonical_unit": "ksi",
+      "conversion_needed": false,
+      "description": "Yield stress of the roof or wall panel sheet steel, distinct from the purlin steel, affecting panel bending and fastener pullover.",
+      "members": [
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_1103",
+          "evidence": "Note under Table 6 p.21 and note under Table 5 p.18",
+          "note": "50 ksi for panel D, 80 ksi for panel B; single stated values",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX",
+            "MBMA_1103_TABLE6_MEASUREDGIRTYIELDSTRESS"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Table 1-1 p. 20; Table 4-8 p. 55; Table 2-1 p. 23",
+          "note": "Nominal grade 55/80 ksi and measured values in psi",
+          "symbol": "steel_grade_ksi, company_fy",
+          "table_tags": [
+            "MBMA_9410_TABLE11_PROPOSEDTESTINGPROGRAM",
+            "MBMA_9410_TABLE48_FIXEDENDCONCLOADTEST",
+            "MBMA_9410_TABLE21_TENSILETESTRESULTS"
+          ],
+          "unit": "ksi"
+        }
+      ],
+      "name": "Panel steel yield stress",
+      "quantity_kind": "stress",
+      "role": "material_property"
+    },
+    {
+      "canonical_unit": "—",
+      "conversion_needed": false,
+      "description": "Ratio of the measured failure load or moment to the capacity predicted by a code or analytical method, the headline measure of how well predictions match tests.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table C p.49 (r); Table S1",
+          "note": "R = M_t/(S_e F_y); not normalized to C = B/2",
+          "symbol": "r, r_factor",
+          "table_tags": [
+            "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "—"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 4.6 (p. 83)",
+          "note": "Eight analysis variants (a-h) reported as separate columns",
+          "symbol": "ratio_a ... ratio_h",
+          "table_tags": [
+            "MBMA_8001_TABLE46_VACUUMTESTLOADRATIOS"
+          ],
+          "unit": "—"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table 2 p.5; Table S1",
+          "note": "Against Cornell-method computed load",
+          "symbol": "pu_over_pc, ratio_pu_pc",
+          "table_tags": [
+            "MBMA_8310_TABLE2_UPLIFTLOADCOMPARISONS",
+            "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "—"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 3.1 p.26; Table 3.2 p.27; Table S1",
+          "note": "Against AISI constrained-bending prediction",
+          "symbol": "p_test_over_p_pred, actual_to_predicted_ratio",
+          "table_tags": [
+            "MBMA_8404_TABLE31_GRAVITYTESTRESULTS",
+            "MBMA_8404_TABLE32_UPLIFTTESTRESULTS",
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "—"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table 3 p. 21; Table 3 p. 6; Table S1",
+          "note": "Four different ratio columns (Pc, Pc', Pc\", Mt/Mn)",
+          "symbol": "pu_over_pc, pu_over_pc_prime, pu_over_pc_dprime, mt_over_mn",
+          "table_tags": [
+            "MBMA_8702_TABLE3_PURLINTESTRESULTS",
+            "MBMA_8702_TABLE3_MOMENTCAPACITYCOMPARISON",
+            "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "—"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table D p.28; Table E p.29; Table F p.30; Table H p.32; Table S1",
+          "note": "Six AISI variants plus MBMA proposal and tested-K ratios",
+          "symbol": "aisi1_ratio ... aisi6_ratio, mbma_ratio, ratio_test_k",
+          "table_tags": [
+            "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD",
+            "MBMA_8703_TABLEE_MBMAPROPOSALEXHIBITE",
+            "MBMA_8703_TABLEF_COMPARISONSUMMARYEXHIBITF",
+            "MBMA_8703_TABLEH_KTESTVSCALCEXHIBITH",
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "—"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table 2 p.3; Table S1",
+          "note": "MBMA ratio printed as 1.10 in tables and 1.09 in hand calc",
+          "symbol": "aisi6_ratio, mbma_ratio",
+          "table_tags": [
+            "MBMA_8803_TABLE2_TESTVSPREDICTEDUPLIFTLOADS",
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "—"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table S1 columns actual_over_predicted, p_over_pa, m_over_max",
+          "note": "Separate ratios for axial and moment",
+          "symbol": "actual_over_predicted, p_over_pa_as_printed, m_over_max_as_printed",
+          "table_tags": [
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "—"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Tables 1.1, 4.1, 4.2, 4.4, 4.5; Table S1",
+          "note": "Section 4.3 cites 0.78 where Tables print 0.81 for UZRP/S 1990",
+          "symbol": "w_u3_over_w_p3, ratio_w_u3_over_w_p3",
+          "table_tags": [
+            "MBMA_9102_TABLE11_UPLIFT1990SUMMARY",
+            "MBMA_9102_TABLE41_BASETESTCALCS1991",
+            "MBMA_9102_TABLE42_BASETESTACCURACY",
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "—"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table 3.1 p.12; Table S1",
+          "note": "Equal to the AISI C3.1.3 reduction factor R",
+          "symbol": "mu_over_mth",
+          "table_tags": [
+            "MBMA_9105_TABLE31_SUMMARYOFTESTRESULTS",
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "—"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9702",
+          "evidence": "Table 1 p. 8; Table S1",
+          "note": "Inverted sense: predicted divided by experimental",
+          "symbol": "predicted_over_experiment, predicted_to_experimental_ratio",
+          "table_tags": [
+            "MBMA_9702_TABLE1_UPLIFTBASETESTSUMMARY",
+            "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "—"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Table 7-3 p. 175; Tables 7-4 to 7-6",
+          "note": "Reduction factor and percent error of theory",
+          "symbol": "component_tests, system_tests, percent_error",
+          "table_tags": [
+            "MBMA_9410_TABLE73_REDUCTIONFACTORS",
+            "MBMA_9410_TABLE74_STDVSTHEORETICAL",
+            "MBMA_9410_TABLE75_COMPVSTHEORETICAL",
+            "MBMA_9410_TABLE76_SYSTEMVSTHEORETICAL"
+          ],
+          "unit": "—"
+        }
+      ],
+      "name": "Test-to-predicted strength ratio",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio"
+    },
+    {
+      "canonical_unit": "plf",
+      "conversion_needed": true,
+      "description": "Failure load of the member calculated by a code or analytical method (Cornell, AISI drafts, MBMA proposal, base test method), for comparison with the measured load.",
+      "members": [
+        {
+          "availability": "simulated",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table 2 p.5; Table S1",
+          "note": "Cornell analytical method",
+          "symbol": "pc_lb_per_ft, computed_load_pc_lb_per_ft",
+          "table_tags": [
+            "MBMA_8310_TABLE2_UPLIFTLOADCOMPARISONS",
+            "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "lb/ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 3.1 p.26; Table 3.2 p.27; Table S1",
+          "note": "AISI constrained-bending with FS removed, Fy = 56 ksi",
+          "symbol": "p_pred_plf, aisi_predicted_load_plf",
+          "table_tags": [
+            "MBMA_8404_TABLE31_GRAVITYTESTRESULTS",
+            "MBMA_8404_TABLE32_UPLIFTTESTRESULTS",
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "plf"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table 3 p. 21",
+          "note": "Three alternative prediction columns",
+          "symbol": "pc_lb_ft, pc_prime_lb_ft, pc_dprime_lb_ft",
+          "table_tags": [
+            "MBMA_8702_TABLE3_PURLINTESTRESULTS"
+          ],
+          "unit": "lb/ft"
+        },
+        {
+          "availability": "simulated",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table D p.28; Table E p.29; Table F p.30; Table H p.32",
+          "note": "Six AISI draft variants plus MBMA formula and tested-K capacity",
+          "symbol": "aisi1_load_lb_ft ... aisi6_load_lb_ft, w_ult_formula_lb_ft, cap_test_k_lb_ft",
+          "table_tags": [
+            "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD",
+            "MBMA_8703_TABLEE_MBMAPROPOSALEXHIBITE",
+            "MBMA_8703_TABLEF_COMPARISONSUMMARYEXHIBITF",
+            "MBMA_8703_TABLEH_KTESTVSCALCEXHIBITH"
+          ],
+          "unit": "lb./ft."
+        },
+        {
+          "availability": "simulated",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table 2 p.3; Table S1",
+          "note": "AISI-6 and MBMA Ad Hoc Task Force methods",
+          "symbol": "aisi6_load_lb_per_ft, mbma_load_lb_per_ft",
+          "table_tags": [
+            "MBMA_8803_TABLE2_TESTVSPREDICTEDUPLIFTLOADS",
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "lb/ft"
+        },
+        {
+          "availability": "simulated",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table 1.1 p. 10; Table 4.1 p. 29; Table 4.2 p. 30; Table S1",
+          "note": "Base test method prediction, min of negative/positive moment cases",
+          "symbol": "w_p3_plf, predicted_failure_load_w_p3_plf",
+          "table_tags": [
+            "MBMA_9102_TABLE11_UPLIFT1990SUMMARY",
+            "MBMA_9102_TABLE41_BASETESTCALCS1991",
+            "MBMA_9102_TABLE42_BASETESTACCURACY",
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "plf"
+        },
+        {
+          "availability": "simulated",
+          "code_tag": "MBMA_9702",
+          "evidence": "Table 1 p. 8; Table S1",
+          "note": "Base Test Method applied to the matching base test",
+          "symbol": "predicted_confirming_failure_load_plf, predicted_failure_load_plf",
+          "table_tags": [
+            "MBMA_9702_TABLE1_UPLIFTBASETESTSUMMARY",
+            "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "plf"
+        },
+        {
+          "availability": "simulated",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table S1 column predicted_axial_load_kips",
+          "note": "Axial load, printed 'TBD' for the 8 in. Z tests",
+          "symbol": "predicted_axial_load_kips",
+          "table_tags": [
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "kips"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 2.2 p.20",
+          "note": "Uniform load corresponding to Mu, per purlin",
+          "symbol": "w_u_plf",
+          "table_tags": [
+            "MBMA_8404_TABLE22_CPURLINPROPERTIES"
+          ],
+          "unit": "plf"
+        }
+      ],
+      "name": "Predicted failure load",
+      "quantity_kind": "force",
+      "role": "predicted_value"
+    },
+    {
+      "canonical_unit": "kip-in",
+      "conversion_needed": true,
+      "description": "Bending moment capacity of the section computed from code provisions, used as the reference against which the test moment is judged.",
+      "members": [
+        {
+          "availability": "simulated",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table 3.1 p.12 (Eq. 3.2); Table S1",
+          "note": "Mth = (Avg. Se) Fy",
+          "symbol": "mth_kip_in",
+          "table_tags": [
+            "MBMA_9105_TABLE31_SUMMARYOFTESTRESULTS",
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "kip-in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table 4.1 p. 29 (M_AISI column)",
+          "note": "S_eff x F_y (allowable x 1.67)",
+          "symbol": "m_aisi_kip_in",
+          "table_tags": [
+            "MBMA_9102_TABLE41_BASETESTCALCS1991"
+          ],
+          "unit": "kip-in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 2.2 p.20",
+          "note": "Allowable moments by limit state plus Mu = FS x allowable",
+          "symbol": "m_c_ftk, m_t_ftk, m_w_ftk, m_u_ftk",
+          "table_tags": [
+            "MBMA_8404_TABLE22_CPURLINPROPERTIES"
+          ],
+          "unit": "ft-kips"
+        },
+        {
+          "availability": "simulated",
+          "code_tag": "MBMA_9105",
+          "evidence": "Appendix A/B/C section-property program screens",
+          "note": "Program-computed allowable moments per segment",
+          "symbol": "ma_pos_kip_in, ma_neg_kip_in",
+          "table_tags": [
+            "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES"
+          ],
+          "unit": "kip-in"
+        },
+        {
+          "availability": "simulated",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table 4.1 p. 29; Appendix E",
+          "note": "Per purlin at 100 plf from stiffness analysis",
+          "symbol": "m_neg_max_kip_in, m_pos_max_kip_in",
+          "table_tags": [
+            "MBMA_9102_TABLE41_BASETESTCALCS1991"
+          ],
+          "unit": "kip-in"
+        }
+      ],
+      "name": "Predicted moment capacity",
+      "quantity_kind": "moment",
+      "role": "predicted_value"
+    },
+    {
+      "canonical_unit": "ksi",
+      "conversion_needed": false,
+      "description": "Code-based allowable or limiting stress used in capacity calculations for the compression flange, tension flange or web.",
+      "members": [
+        {
+          "availability": "simulated",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 4.4 (p. 81), footnotes (1)-(2)",
+          "note": "AISI web stress for stiffened and unstiffened compression flange",
+          "symbol": "fbw_s_ksi, fbw_u_ksi",
+          "table_tags": [
+            "MBMA_8001_TABLE44_YIELDANDULTIMATESTRESSES"
+          ],
+          "unit": "ksi"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 2.2 p.20",
+          "note": "Allowable compression 33.6 ksi = 0.6 x 56 ksi",
+          "symbol": "f_c_ksi, f_t_ksi, f_bw_ksi",
+          "table_tags": [
+            "MBMA_8404_TABLE22_CPURLINPROPERTIES"
+          ],
+          "unit": "ksi"
+        }
+      ],
+      "name": "Allowable/limiting design stress",
+      "quantity_kind": "stress",
+      "role": "predicted_value"
+    },
+    {
+      "canonical_unit": "kip-in/in/rad",
+      "conversion_needed": true,
+      "description": "Panel-to-member rotational restraint stiffness computed from a mechanical model or code formula, compared against F-test measurements.",
+      "members": [
+        {
+          "availability": "simulated",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table 2 p.11; Table 3 p.12",
+          "note": "Model slope printed in N/mm; Ko in kips-in/rad/in",
+          "symbol": "model_slope_n_per_mm, ko_kip_in_per_rad_per_in",
+          "table_tags": [
+            "MBMA_1103_TABLE2_MODELVSTESTSTIFFNESS",
+            "MBMA_1103_TABLE3_UNITROTATIONALSTIFFNESSKO"
+          ],
+          "unit": "N/mm; kips-in/rad/in"
+        },
+        {
+          "availability": "simulated",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table H p.32; header note to Table D p.28",
+          "note": "K = [15.3(t-0.06)+1.73] x 10^-3",
+          "symbol": "k_calculated_kip_in_in",
+          "table_tags": [
+            "MBMA_8703_TABLEH_KTESTVSCALCEXHIBITH"
+          ],
+          "unit": "kip/in./in."
+        }
+      ],
+      "name": "Calculated rotational restraint stiffness",
+      "quantity_kind": "ratio",
+      "role": "predicted_value"
+    },
+    {
+      "canonical_unit": "in",
+      "conversion_needed": false,
+      "description": "Lateral or vertical deflection of the member predicted by analysis at the test load or at the calculated ultimate load.",
+      "members": [
+        {
+          "availability": "simulated",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table G p.31; Table I p.33",
+          "note": "Horizontal at test load and at qu; vertical from elastic analysis; required support movement",
+          "symbol": "calc_horiz_defl_at_load_in, calc_horiz_defl_at_qu_in, calc_vert_defl_in, delta_required_in",
+          "table_tags": [
+            "MBMA_8703_TABLEG_DEFLECTIONCOMPARISONEXHG",
+            "MBMA_8703_TABLEI_CATENARYCHECKEXHIBITI"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 2.2 p.20",
+          "note": "Per 100 plf of uniform load",
+          "symbol": "delta_per_100_in",
+          "table_tags": [
+            "MBMA_8404_TABLE22_CPURLINPROPERTIES"
+          ],
+          "unit": "in per 100 plf"
+        }
+      ],
+      "name": "Calculated deflection",
+      "quantity_kind": "length",
+      "role": "predicted_value"
+    },
+    {
+      "canonical_unit": "lbs",
+      "conversion_needed": false,
+      "description": "Pullover strength of a single screw fastener predicted by the biaxial membrane theory developed in the report.",
+      "members": [
+        {
+          "availability": "simulated",
+          "code_tag": "MBMA_9410",
+          "evidence": "Tables 7-4, 7-5, 7-6 p. 175; Step 7 rows of Tables 7-7 to 7-14",
+          "note": "Reported in lbs in comparison tables and in kips as Pnov in spreadsheets",
+          "symbol": "theoretical_pullover_strength_lb",
+          "table_tags": [
+            "MBMA_9410_TABLE74_STDVSTHEORETICAL",
+            "MBMA_9410_TABLE75_COMPVSTHEORETICAL",
+            "MBMA_9410_TABLE76_SYSTEMVSTHEORETICAL",
+            "MBMA_9410_TABLE77_COMPCALCPASCOE24GA"
+          ],
+          "unit": "lbs / kips"
+        }
+      ],
+      "name": "Predicted fastener pullover strength",
+      "quantity_kind": "force",
+      "role": "predicted_value"
+    },
+    {
+      "canonical_unit": "text",
+      "conversion_needed": false,
+      "description": "Direction of the applied load relative to the member: uplift (wind suction), gravity, axial, or in-plane shear.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table S1 column load_direction",
+          "note": "Uplift for all 50 tests",
+          "symbol": "load_direction",
+          "table_tags": [
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Table S1 column load_direction",
+          "note": "",
+          "symbol": "load_direction",
+          "table_tags": [
+            "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table S1 pages 6-8, 69",
+          "note": "Uplift, gravity or in-plane shear",
+          "symbol": "load_direction",
+          "table_tags": [
+            "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table S1 column load_direction",
+          "note": "Uplift for vacuum tests, gravity for beam tests",
+          "symbol": "load_direction",
+          "table_tags": [
+            "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table S1 column load_direction",
+          "note": "",
+          "symbol": "load_direction",
+          "table_tags": [
+            "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 1.1 side heading p.7; Table S1",
+          "note": "Simulated gravity Tests 1-6, 16; uplift Tests 7-15",
+          "symbol": "loading_type, load_direction",
+          "table_tags": [
+            "MBMA_8404_TABLE11_TESTMATRIX",
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table S1 column load_direction",
+          "note": "",
+          "symbol": "load_direction",
+          "table_tags": [
+            "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table S1 p.11",
+          "note": "",
+          "symbol": "load_direction",
+          "table_tags": [
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table S1 column load_direction",
+          "note": "",
+          "symbol": "load_direction",
+          "table_tags": [
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table S1 column load_direction",
+          "note": "Uplift, axial, or combined",
+          "symbol": "load_direction",
+          "table_tags": [
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table S1 column load_direction",
+          "note": "",
+          "symbol": "load_direction",
+          "table_tags": [
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table S1 and header note",
+          "note": "",
+          "symbol": "load_direction",
+          "table_tags": [
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9702",
+          "evidence": "Table S1 column load_direction",
+          "note": "Uplift for all tests",
+          "symbol": "load_direction",
+          "table_tags": [
+            "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Table S1 load_direction column",
+          "note": "",
+          "symbol": "load_direction",
+          "table_tags": [
+            "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        }
+      ],
+      "name": "Load direction",
+      "quantity_kind": "category",
+      "role": "test_condition"
+    },
+    {
+      "canonical_unit": "count",
+      "conversion_needed": false,
+      "description": "Number of continuous spans in the tested assembly (single span, three-span continuous, etc.), which controls the moment distribution.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table S1 column n_spans",
+          "note": "Simple span (1)",
+          "symbol": "n_spans",
+          "table_tags": [
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Table S1 column n_spans",
+          "note": "Three for all full-scale tests",
+          "symbol": "n_spans",
+          "table_tags": [
+            "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table S1 pages 6-8, 69",
+          "note": "",
+          "symbol": "n_spans",
+          "table_tags": [
+            "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table S1 column n_spans",
+          "note": "Single span for all tests",
+          "symbol": "n_spans",
+          "table_tags": [
+            "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table S1 column n_spans",
+          "note": "All simple span",
+          "symbol": "n_spans",
+          "table_tags": [
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table S1 column n_spans",
+          "note": "",
+          "symbol": "n_spans",
+          "table_tags": [
+            "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table S1 p.11",
+          "note": "Three for all tests",
+          "symbol": "n_spans",
+          "table_tags": [
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table S1 column n_spans",
+          "note": "",
+          "symbol": "n_spans",
+          "table_tags": [
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table S1 column n_spans",
+          "note": "All single-span",
+          "symbol": "n_spans",
+          "table_tags": [
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Tables 3.2 p. 25, 3.3 p. 26; Table S1",
+          "note": "1 for base tests, 3 for confirming tests",
+          "symbol": "no_of_spans, n_spans",
+          "table_tags": [
+            "MBMA_9102_TABLE32_TESTS1991SUMMARY",
+            "MBMA_9102_TABLE33_UPLIFTTESTDATABASE",
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table S1",
+          "note": "Three for all tests",
+          "symbol": "n_spans",
+          "table_tags": [
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9702",
+          "evidence": "Table S1 column n_spans",
+          "note": "1 base, 3 confirming",
+          "symbol": "n_spans",
+          "table_tags": [
+            "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Table S1 n_spans pp. 99-111",
+          "note": "One or two",
+          "symbol": "n_spans",
+          "table_tags": [
+            "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        }
+      ],
+      "name": "Number of spans",
+      "quantity_kind": "count",
+      "role": "test_condition"
+    },
+    {
+      "canonical_unit": "count",
+      "conversion_needed": false,
+      "description": "Number of parallel purlin or girt lines in the test assembly supporting the panel.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table S1 column n_purlin_lines; Section 4.2 p.17",
+          "note": "Two girt lines; typically only one failed",
+          "symbol": "n_purlin_lines",
+          "table_tags": [
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "inferred",
+          "code_tag": "MBMA_7501",
+          "evidence": "Table S1 column n_purlin_lines",
+          "note": "Column is blank in all rows; must be read off figures",
+          "symbol": "n_purlin_lines",
+          "table_tags": [
+            "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table S1 pages 6-8, 69",
+          "note": "",
+          "symbol": "n_purlin_lines",
+          "table_tags": [
+            "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table S1 column n_purlin_lines",
+          "note": "Two for all tests",
+          "symbol": "n_purlin_lines",
+          "table_tags": [
+            "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table S1; Table 1 note",
+          "note": "Two",
+          "symbol": "n_purlin_lines",
+          "table_tags": [
+            "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table S1 column n_purlin_lines and header note",
+          "note": "Four lines: two interior test purlins plus two edge purlins",
+          "symbol": "n_purlin_lines",
+          "table_tags": [
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table S1 column n_purlin_lines",
+          "note": "Two",
+          "symbol": "n_purlin_lines",
+          "table_tags": [
+            "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table S1 p.11",
+          "note": "Two, flanges opposed",
+          "symbol": "n_purlin_lines",
+          "table_tags": [
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table S1 column n_purlin_lines",
+          "note": "",
+          "symbol": "n_purlin_lines",
+          "table_tags": [
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table S1 column n_purlin_lines",
+          "note": "",
+          "symbol": "n_purlin_lines",
+          "table_tags": [
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table S1 n_purlin_lines column",
+          "note": "",
+          "symbol": "n_purlin_lines",
+          "table_tags": [
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table S1",
+          "note": "Two for all tests",
+          "symbol": "n_purlin_lines",
+          "table_tags": [
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9702",
+          "evidence": "Table S1 column n_purlin_lines; header note p. 6",
+          "note": "Constant value of 2",
+          "symbol": "n_purlin_lines",
+          "table_tags": [
+            "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Table S1 n_purlin_lines pp. 99-111",
+          "note": "Stated only for Test 2",
+          "symbol": "n_purlin_lines",
+          "table_tags": [
+            "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        }
+      ],
+      "name": "Number of purlin lines",
+      "quantity_kind": "count",
+      "role": "test_condition"
+    },
+    {
+      "canonical_unit": "text",
+      "conversion_needed": false,
+      "description": "Description of the roof or wall panel and how it is attached to the member (through-fastened screws, standing seam clips), which governs the restraint the panel gives.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table 5 p.18; Table C p.49; Table S1",
+          "note": "Panel designation D or B; attachment through-fastened for all",
+          "symbol": "panel, panel_designation, panel_type",
+          "table_tags": [
+            "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX",
+            "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Table S1 column panel_type and header note",
+          "note": "'SR' panel, t = .021 in., #14 self-tapping screws",
+          "symbol": "panel_type",
+          "table_tags": [
+            "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table S1 pages 6-8, 69",
+          "note": "Through-fastened with No. 14 screws",
+          "symbol": "panel_type",
+          "table_tags": [
+            "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table S1 column panel_type; header notes p. 29",
+          "note": "24-gage through-fastened for vacuum tests, none for beam tests",
+          "symbol": "panel_type",
+          "table_tags": [
+            "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table S1; Table 3 Notes (2) and (3)",
+          "note": "26-gage through-fastened, 1/4 x 14 SDS",
+          "symbol": "panel_type",
+          "table_tags": [
+            "MBMA_8310_TABLES1_STRENGTHSUMMARY",
+            "MBMA_8310_TABLE3_ROTATIONALRESTRAINTFACTORS"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table S1 column panel_type and header note",
+          "note": "Nominally 26 gage through-fastened",
+          "symbol": "panel_type",
+          "table_tags": [
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table S1 column panel_type and header note",
+          "note": "24 ga through-fastened, screws at 12 in. o.c.",
+          "symbol": "panel_type",
+          "table_tags": [
+            "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table S1 p.11 and header note",
+          "note": "26 or 24 gauge, double 26 ga for Tests 10R and 11",
+          "symbol": "panel_type",
+          "table_tags": [
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table S1 column panel_type",
+          "note": "24 ga ribbed, through-fastened",
+          "symbol": "panel_type",
+          "table_tags": [
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table S1 column panel_type; Table 3.1 deck_gage",
+          "note": "Through-fastened 26 ga screw-down",
+          "symbol": "panel_type, deck_gage",
+          "table_tags": [
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY",
+            "MBMA_9003_TABLE31_TESTCOMPONENTS"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table 2.1 p. 13; Table S1",
+          "note": "24 ga standing seam, pan or rib; UZTR/F-1 sheet contradicts Table 2.1",
+          "symbol": "deck, panel_type",
+          "table_tags": [
+            "MBMA_9102_TABLE21_TESTMATRIX1991",
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table S1 and header notes",
+          "note": "Through-fastened 26 or 24 gage, two layers in C1 and C2",
+          "symbol": "panel_type",
+          "table_tags": [
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9702",
+          "evidence": "Table S1 column panel_type",
+          "note": "Standing seam for all tests",
+          "symbol": "panel_type",
+          "table_tags": [
+            "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Table S1 panel_type pp. 99-111; gage columns in Tables 3-x/4-x",
+          "note": "24 or 26 gage through-fastened",
+          "symbol": "panel_type, panel_gage",
+          "table_tags": [
+            "MBMA_9410_TABLES1_STRENGTHSUMMARY",
+            "MBMA_9410_TABLE31_STDTESTPASCOE24GA"
+          ],
+          "unit": ""
+        }
+      ],
+      "name": "Panel type and attachment",
+      "quantity_kind": "category",
+      "role": "test_condition"
+    },
+    {
+      "canonical_unit": "text",
+      "conversion_needed": false,
+      "description": "Description of any lateral or torsional bracing provided to the member in addition to the panel, such as braces at supports, third points or quarter points.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table S1 column bracing",
+          "note": "All entries blank (none stated)",
+          "symbol": "bracing",
+          "table_tags": [
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Table S1 column bracing and header note",
+          "note": "Braces at supports, with or without intermediate braces or rake channels",
+          "symbol": "bracing",
+          "table_tags": [
+            "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table S1 pages 6-8, 69",
+          "note": "Strap size embedded in the column text",
+          "symbol": "bracing",
+          "table_tags": [
+            "MBMA_7603_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table S1 column bracing; Table 3.3 footnote (9)",
+          "note": "Diaphragm or channel braced; only V1 had fixed ends",
+          "symbol": "bracing",
+          "table_tags": [
+            "MBMA_8001_TABLES1_STRENGTHSUMMARY",
+            "MBMA_8001_TABLE33_SUMMARYOFTESTRESULTS"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table S1 column bracing",
+          "note": "Laterally unsupported for all tests",
+          "symbol": "bracing",
+          "table_tags": [
+            "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 1.1 p.7; Table S1 column bracing",
+          "note": "Also shear clips and torsional restraint columns",
+          "symbol": "intermediate_braces, bracing",
+          "table_tags": [
+            "MBMA_8404_TABLE11_TESTMATRIX",
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table 1 pp. 4, 13; Table S1",
+          "note": "Mid-span or one-third span brace",
+          "symbol": "brace_location, bracing",
+          "table_tags": [
+            "MBMA_8702_TABLE1_PURLINTESTSPECIMENS",
+            "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table S1 p.11 and header notes",
+          "note": "Compression flange laterally unbraced",
+          "symbol": "bracing",
+          "table_tags": [
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table S1 column bracing",
+          "note": "2x2x1/8 in. angles at quarter points of end-bay bottom flanges",
+          "symbol": "bracing",
+          "table_tags": [
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table S1 column bracing",
+          "note": "Lateral supports at ends only",
+          "symbol": "bracing",
+          "table_tags": [
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table 2.1 p. 13; Table S1",
+          "note": "Rafters only or rafters plus third points",
+          "symbol": "bracing",
+          "table_tags": [
+            "MBMA_9102_TABLE21_TESTMATRIX1991",
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table S1 and header note",
+          "note": "All tests unbraced",
+          "symbol": "bracing",
+          "table_tags": [
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Table S1 bracing column",
+          "note": "Stated only for some tests",
+          "symbol": "bracing",
+          "table_tags": [
+            "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        }
+      ],
+      "name": "Bracing condition",
+      "quantity_kind": "category",
+      "role": "test_condition"
+    },
+    {
+      "canonical_unit": "in",
+      "conversion_needed": true,
+      "description": "Length of the overlapping splice of purlins at interior supports of continuous assemblies, which strengthens the negative-moment region.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table B p.11; Table S1",
+          "note": "Printed as feet-inches, lap bolt to lap bolt",
+          "symbol": "lap_ft, total_lap_ft",
+          "table_tags": [
+            "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft-in."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table 1 p.2; Table S1",
+          "note": "Printed as 2-6 (ft-in)",
+          "symbol": "lap_ft_in, lap_length_ft_in",
+          "table_tags": [
+            "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft-in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table 2.1 p. 13; Table S1",
+          "note": "Total lap, laps not necessarily equal on both sides",
+          "symbol": "lap_in, lap_length_in",
+          "table_tags": [
+            "MBMA_9102_TABLE21_TESTMATRIX1991",
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table 2.1 p.10; Table S1",
+          "note": "Measured each side of support, from support centre to lap end",
+          "symbol": "lap_length_in",
+          "table_tags": [
+            "MBMA_9105_TABLE21_TESTPARAMETERS",
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_9702",
+          "evidence": "Header note referencing the figure on page 11",
+          "note": "Given by purlin depth and bay in a note/figure only",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS",
+            "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "ft-in"
+        }
+      ],
+      "name": "Lap length at interior supports",
+      "quantity_kind": "length",
+      "role": "test_condition"
+    },
+    {
+      "canonical_unit": "in",
+      "conversion_needed": true,
+      "description": "Spacing of the screws attaching the panel to the member flange, which determines how much rotational restraint the panel delivers.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table 3.1 p. 25; Table S1",
+          "note": "#12 self-drilling structural fasteners",
+          "symbol": "fastener_spacing_in",
+          "table_tags": [
+            "MBMA_9003_TABLE31_TESTCOMPONENTS",
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_1103",
+          "evidence": "Notes under Table 1 p.5, Table 5 p.18 and Section 4.2 p.17",
+          "note": "12 in. o.c. #12-14 screws; test 13 used washers",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_1103_TABLE1_ROTRESTRAINTSPECIMENDIMS",
+            "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX",
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table S1 header note on fasteners",
+          "note": "No. 12 x 1 in. SDS at 15 3/4 in. o.c.",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Tables 4-1, 4-2, 4-8 header notes",
+          "note": "Arrangement code F/C rather than a spacing dimension",
+          "symbol": "spacing",
+          "table_tags": [
+            "MBMA_9410_TABLE41_SIMTESTPASCOECONC",
+            "MBMA_9410_TABLE48_FIXEDENDCONCLOADTEST"
+          ],
+          "unit": ""
+        }
+      ],
+      "name": "Panel fastener spacing",
+      "quantity_kind": "length",
+      "role": "test_condition"
+    },
+    {
+      "canonical_unit": "plf",
+      "conversion_needed": true,
+      "description": "Self weight of the roof or wall assembly per foot of purlin (or per square foot), added to or subtracted from the chamber pressure load.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Table S1 column dead_load_psf and header note",
+          "note": "Different values for C end spans and center span",
+          "symbol": "dead_load_psf",
+          "table_tags": [
+            "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "psf"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table S1 FACTORS note; Table E note",
+          "note": "8.5 lb/ft subtracted from applied load",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY",
+            "MBMA_8803_TABLEE_UPLIFTTESTREADINGS"
+          ],
+          "unit": "lb/ft"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table S1 header note (Test 1: 8.9 plf)",
+          "note": "Only one example value given",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "plf"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_9003",
+          "evidence": "Header notes of Table S1 (p. 33)",
+          "note": "About 5-9 plf depending on assembly type",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "plf"
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_1103",
+          "evidence": "Note under Table S1 citing Eq. 14 p.21",
+          "note": "Panel 35 lbs per panel plus girt self weight by section",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "lbs"
+        }
+      ],
+      "name": "Assembly dead load",
+      "quantity_kind": "force",
+      "role": "test_condition"
+    },
+    {
+      "canonical_unit": "psf",
+      "conversion_needed": true,
+      "description": "The applied chamber pressure (or line load) at each intermediate load stage at which gage readings were recorded, giving load-deformation history.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Appendix tables A2, A3, B1-B3, B6, B7, C2-C9",
+          "note": "Some load labels duplicated or reset",
+          "symbol": "load_psf, p_psf",
+          "table_tags": [
+            "MBMA_7501_TABLEA2_APPA2ZSEC1ROTATIONS",
+            "MBMA_7501_TABLEA3_APPA3ZSEC1STRAINSTRESS",
+            "MBMA_7501_TABLEB1_APPB1CSECSTRAIN1TO14",
+            "MBMA_7501_TABLEC2_APPC2ZSEC2DIALGAGES"
+          ],
+          "unit": "psf"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table A-1 page 73; Table B-1 page 82",
+          "note": "Load No. 13 printed as 31.6 psf in log but 31.2 elsewhere",
+          "symbol": "load_psf",
+          "table_tags": [
+            "MBMA_7603_TABLEA1_ZPURLINUPLIFTTESTLOG",
+            "MBMA_7603_TABLEB1_CPURLINUPLIFTTESTLOG"
+          ],
+          "unit": "psf"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table E p.9",
+          "note": "Line load per step after dead load subtraction",
+          "symbol": "total_load_lb_per_ft",
+          "table_tags": [
+            "MBMA_8803_TABLEE_UPLIFTTESTREADINGS"
+          ],
+          "unit": "lb/ft"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table G p.31",
+          "note": "Load at which the last deflection readings were recorded",
+          "symbol": "load_lb_ft",
+          "table_tags": [
+            "MBMA_8703_TABLEG_DEFLECTIONCOMPARISONEXHG"
+          ],
+          "unit": "lb./ft."
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Table S1 column last_recorded_load_psf",
+          "note": "Highest load level with gage readings",
+          "symbol": "last_recorded_load_psf",
+          "table_tags": [
+            "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "psf"
+        }
+      ],
+      "name": "Applied load at recorded stage",
+      "quantity_kind": "stress",
+      "role": "test_condition"
+    },
+    {
+      "canonical_unit": "text",
+      "conversion_needed": false,
+      "description": "Type and thickness of insulation placed between the panel and the member flange, which softens the panel-to-member connection.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table 5 p.18; Table C p.49; Table S1",
+          "note": "None, R13 fiberglass blanket or Thermax rigid board, with nominal thickness",
+          "symbol": "insulation, insulation_type, insulation_thickness_in",
+          "table_tags": [
+            "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX",
+            "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "— / in"
+        }
+      ],
+      "name": "Insulation type and thickness",
+      "quantity_kind": "category",
+      "role": "test_condition"
+    },
+    {
+      "canonical_unit": "text",
+      "conversion_needed": false,
+      "description": "Relative orientation of adjacent purlin lines (same direction, facing or opposed), which affects the system's torsional equilibrium.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 1.1 p.7; Table S1",
+          "note": "Same, Facing or Opposing, per sketches in Table 1.1",
+          "symbol": "purlin_orientation",
+          "table_tags": [
+            "MBMA_8404_TABLE11_TESTMATRIX",
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table 2.1 p. 13",
+          "note": "Also encoded as '(O)' in the test designations",
+          "symbol": "orientation",
+          "table_tags": [
+            "MBMA_9102_TABLE21_TESTMATRIX1991"
+          ],
+          "unit": ""
+        }
+      ],
+      "name": "Purlin orientation in pair",
+      "quantity_kind": "category",
+      "role": "test_condition"
+    },
+    {
+      "canonical_unit": "text",
+      "conversion_needed": false,
+      "description": "Type of standing seam clip connecting the panel to the purlin (sliding two-piece or fixed one-piece), affecting lateral restraint.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Table 2.1 p. 13; Table S1",
+          "note": "",
+          "symbol": "clip, clip_type",
+          "table_tags": [
+            "MBMA_9102_TABLE21_TESTMATRIX1991",
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        }
+      ],
+      "name": "Standing seam clip type",
+      "quantity_kind": "category",
+      "role": "test_condition"
+    },
+    {
+      "canonical_unit": "text",
+      "conversion_needed": false,
+      "description": "The label printed in the report that identifies each individual test specimen or assembly, needed to join the tables of a report.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table 1 p.5; Table 5 p.18; Table C p.49; Table S1",
+          "note": "Names differ between tables (C250-1 vs C10-1) and are preserved verbatim",
+          "symbol": "specimen_name, test_name, test_id, test_no",
+          "table_tags": [
+            "MBMA_1103_TABLE1_ROTRESTRAINTSPECIMENDIMS",
+            "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX",
+            "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7501",
+          "evidence": "Table S1 column test_id, pages 5, 7, 8, 11, 98",
+          "note": "",
+          "symbol": "test_id",
+          "table_tags": [
+            "MBMA_7501_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table S1 pages 6-8, 69; load_no in Tables A-1/B-1",
+          "note": "Also a load stage number per test",
+          "symbol": "test_id, load_no",
+          "table_tags": [
+            "MBMA_7603_TABLES1_STRENGTHSUMMARY",
+            "MBMA_7603_TABLEA1_ZPURLINUPLIFTTESTLOG"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 3.3 pp. 76-77; Table S1",
+          "note": "V = vacuum, B = beam test; purlin_type A-E is a separate key",
+          "symbol": "test_id, purlin_type",
+          "table_tags": [
+            "MBMA_8001_TABLE33_SUMMARYOFTESTRESULTS",
+            "MBMA_8001_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table 1 p.4; Table 2 p.5; Table S1",
+          "note": "",
+          "symbol": "test_no, test_id",
+          "table_tags": [
+            "MBMA_8310_TABLE1_PURLINCROSSSECTIONDIMENSIONS",
+            "MBMA_8310_TABLE2_UPLIFTLOADCOMPARISONS",
+            "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 1.1 p.7; Tables 2.1, 2.2, 3.1-3.3; Table S1",
+          "note": "Test 13 printed as '13 **' with invalid-result footnote",
+          "symbol": "test_no, test_id, purlin_location",
+          "table_tags": [
+            "MBMA_8404_TABLE11_TESTMATRIX",
+            "MBMA_8404_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Tables 1, 2, 3; Table S1",
+          "note": "Also purlin_location N/S within each specimen",
+          "symbol": "test_no, test_id, purlin_location",
+          "table_tags": [
+            "MBMA_8702_TABLE1_PURLINTESTSPECIMENS",
+            "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table B p.11; Tables C-1..C-16; Tables D-I; Table S1",
+          "note": "Table D prints 'Ceco n' while Table S1 uses 'Ceco #n'",
+          "symbol": "test_no, test_id, s1_test_id",
+          "table_tags": [
+            "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table 1 p.2; Table 2 p.3; Table S1",
+          "note": "#B-1 braced test; #3 is the unbraced reference",
+          "symbol": "test_no, test_id",
+          "table_tags": [
+            "MBMA_8803_TABLE1_TESTPARAMETERSANDFAILURELOADS",
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9003",
+          "evidence": "Table S1 column test_id; Table 3.5 p. 40",
+          "note": "Encodes depth, shape and fastener spacing or uplift level",
+          "symbol": "test_id, test_designation",
+          "table_tags": [
+            "MBMA_9003_TABLES1_STRENGTHSUMMARY",
+            "MBMA_9003_TABLE35_COUPONTESTRESULTS"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Tables 1.1, 2.1, 3.1-3.3, 4.1-4.5; Table S1",
+          "note": "Encodes purlin, bracing, deck, clip, orientation and span count",
+          "symbol": "test_designation, identification, test_id",
+          "table_tags": [
+            "MBMA_9102_TABLE21_TESTMATRIX1991",
+            "MBMA_9102_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table 2.1 p.10; Table 3.1 p.12; Table S1",
+          "note": "C1, C2, C3",
+          "symbol": "test, test_id",
+          "table_tags": [
+            "MBMA_9105_TABLE21_TESTPARAMETERS",
+            "MBMA_9105_TABLE31_SUMMARYOFTESTRESULTS",
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9702",
+          "evidence": "Table S1; Tables A1 and A2",
+          "note": "Plus a base/confirming test_set pairing key",
+          "symbol": "test_id, test_set",
+          "table_tags": [
+            "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+            "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Tables 3-1 to 4-8; Table S1",
+          "note": "Numbers restart within each table; some are letters",
+          "symbol": "test_no, test_number, test_id",
+          "table_tags": [
+            "MBMA_9410_TABLE31_STDTESTPASCOE24GA",
+            "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        }
+      ],
+      "name": "Test/specimen identifier",
+      "quantity_kind": "category",
+      "role": "identifier"
+    },
+    {
+      "canonical_unit": "text",
+      "conversion_needed": false,
+      "description": "Designation of which purlin line, span or piece within the assembly a measurement or failure refers to.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table S1 p.11; Tables C-1 to C-16",
+          "note": "Failed member designation plus line/span/piece mark",
+          "symbol": "failed_member, line, span, specimen_no",
+          "table_tags": [
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+            "MBMA_8703_TABLEC1_PURLINDATATEST1"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table A p.4; Table D pp.7-8",
+          "note": "",
+          "symbol": "line, span, specimen_no, pc_mark, member",
+          "table_tags": [
+            "MBMA_8803_TABLEA_PURLINDIMENSIONDATA",
+            "MBMA_8803_TABLED_TENSIONCOUPONRESULTS"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Tables 2.1, 2.2, 3.3",
+          "note": "East or West interior test purlin",
+          "symbol": "purlin_location",
+          "table_tags": [
+            "MBMA_8404_TABLE21_MEASUREDCPURLINDIMENSIONS",
+            "MBMA_8404_TABLE22_CPURLINPROPERTIES",
+            "MBMA_8404_TABLE33_COUPONTESTRESULTS"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table 2 pp. 5, 15",
+          "note": "N = north, S = south",
+          "symbol": "purlin_location",
+          "table_tags": [
+            "MBMA_8702_TABLE2_PURLINCROSSSECTIONDIMS"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Appendix A/B/C tables",
+          "note": "Purlin line inferred for the section-property tables",
+          "symbol": "purlin_line, bay",
+          "table_tags": [
+            "MBMA_9105_TABLEA1_TESTC1MEASUREDDIMENSIONS",
+            "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9702",
+          "evidence": "Tables A1/A2 per-purlin columns",
+          "note": "Encoded in column names (A/B, bay1-3)",
+          "symbol": "t_a_in, t_b_in, fy_a_ksi, fy_b_ksi",
+          "table_tags": [
+            "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS",
+            "MBMA_9702_TABLEA2_CECOTHREESPANCONFIRMTESTS"
+          ],
+          "unit": ""
+        }
+      ],
+      "name": "Member/purlin line identifier",
+      "quantity_kind": "category",
+      "role": "identifier"
+    },
+    {
+      "canonical_unit": "text",
+      "conversion_needed": false,
+      "description": "Report table, page or hand-calculation from which each summarised value was taken, recorded as provenance rather than a physical quantity.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table S1 columns value_source and pages",
+          "note": "Bookkeeping metadata",
+          "symbol": "value_source, pages",
+          "table_tags": [
+            "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8702",
+          "evidence": "Table S1 columns value_source and pages",
+          "note": "Bookkeeping metadata",
+          "symbol": "value_source, pages",
+          "table_tags": [
+            "MBMA_8702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8703",
+          "evidence": "Table S1 p.11",
+          "note": "Bookkeeping metadata",
+          "symbol": "value_source, pages",
+          "table_tags": [
+            "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8803",
+          "evidence": "Table S1 columns value_source and pages",
+          "note": "Bookkeeping metadata",
+          "symbol": "value_source, pages",
+          "table_tags": [
+            "MBMA_8803_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        }
+      ],
+      "name": "Value source and page",
+      "quantity_kind": "category",
+      "role": "identifier"
+    },
+    {
+      "canonical_unit": "text",
+      "conversion_needed": false,
+      "description": "Laboratory and calendar date on which the test was run, relevant where several facilities contributed data.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9702",
+          "evidence": "Table S1 columns test_facility and test_date; Tables A1/A2",
+          "note": "Virginia Tech or CECO Building Systems",
+          "symbol": "test_facility, test_date",
+          "table_tags": [
+            "MBMA_9702_TABLES1_STRENGTHSUMMARY",
+            "MBMA_9702_TABLEA1_CECOSIMPLESPANBASETESTS"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Tables 4-12 to 4-23, pp. 87-98",
+          "note": "Scan date and clock time in the time histories",
+          "symbol": "date, time_hhmmss",
+          "table_tags": [
+            "MBMA_9410_TABLE412_VACUUMBOXTEST2"
+          ],
+          "unit": ""
+        }
+      ],
+      "name": "Test facility and date",
+      "quantity_kind": "category",
+      "role": "identifier"
+    },
+    {
+      "canonical_unit": "text",
+      "conversion_needed": false,
+      "description": "Which of the two test setups a row belongs to: single-span base test used as the predictor, or three-span confirming test.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9702",
+          "evidence": "Table S1 column test_role",
+          "note": "",
+          "symbol": "test_role",
+          "table_tags": [
+            "MBMA_9702_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": ""
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9102",
+          "evidence": "Test designation suffix -1 / -3; Tables 4.1-4.3",
+          "note": "Encoded in the designation and in w_US / w_U3 columns",
+          "symbol": "test_designation suffix, w_us_plf, w_u3_plf",
+          "table_tags": [
+            "MBMA_9102_TABLE41_BASETESTCALCS1991",
+            "MBMA_9102_TABLE43_FAILURELOADCOMPARISON"
+          ],
+          "unit": ""
+        }
+      ],
+      "name": "Base vs confirming test role",
+      "quantity_kind": "category",
+      "role": "identifier"
+    },
+    {
+      "canonical_unit": "in^4",
+      "conversion_needed": false,
+      "description": "Gross and effective moments of inertia and gross section moduli of the cross-section computed from measured dimensions, used in deflection and strength calculations.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 2.2 p.20",
+          "note": "Gross, strength and deflection moments of inertia",
+          "symbol": "i_gross_in4, i_strength_in4, i_defl_in4, s_t_gross_in3, s_b_gross_in3",
+          "table_tags": [
+            "MBMA_8404_TABLE22_CPURLINPROPERTIES"
+          ],
+          "unit": "in^4 / in^3"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Appendix A/B/C section-property program screens",
+          "note": "Program-computed per measured segment",
+          "symbol": "ix_in4, iy_in4, ixy_in4, ieff_in4, ag_in2",
+          "table_tags": [
+            "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES"
+          ],
+          "unit": "in^4 / in^2"
+        }
+      ],
+      "name": "Section moment of inertia and area",
+      "quantity_kind": "area",
+      "role": "specimen_parameter"
+    },
+    {
+      "canonical_unit": "—",
+      "conversion_needed": false,
+      "description": "Ratio of web depth to sheet thickness, a slenderness measure that governs web bending and crippling behaviour.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 4.3 (p. 80)",
+          "note": "",
+          "symbol": "h_over_t",
+          "table_tags": [
+            "MBMA_8001_TABLE43_WEBROTATIONALDEFORMATION"
+          ],
+          "unit": "—"
+        }
+      ],
+      "name": "Web slenderness h/t",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio"
+    },
+    {
+      "canonical_unit": "—",
+      "conversion_needed": false,
+      "description": "Ratio of lap length at the interior support to the purlin depth, a design parameter for continuous lapped systems.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table 2.1 p.10; Table S1",
+          "note": "",
+          "symbol": "lap_length_over_depth",
+          "table_tags": [
+            "MBMA_9105_TABLE21_TESTPARAMETERS",
+            "MBMA_9105_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "—"
+        }
+      ],
+      "name": "Lap length to depth ratio",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio"
+    },
+    {
+      "canonical_unit": "%",
+      "conversion_needed": false,
+      "description": "Ultimate stress reached in the test expressed as a percentage of the coupon yield stress, showing how close the section came to yielding.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 4.1 (p. 78)",
+          "note": "Blank where the purlin yielded",
+          "symbol": "vacuum_pct_fy, beam_pct_fy",
+          "table_tags": [
+            "MBMA_8001_TABLE41_TESTULTIMATESTRESSES"
+          ],
+          "unit": "%"
+        }
+      ],
+      "name": "Test stress as percent of yield",
+      "quantity_kind": "percentage",
+      "role": "derived_ratio"
+    },
+    {
+      "canonical_unit": "%",
+      "conversion_needed": false,
+      "description": "Ratio of model-predicted panel-to-girt rotational stiffness to the measured F-test stiffness, expressed as a percentage.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table 2 p.11, header printed as 'a/b'",
+          "note": "",
+          "symbol": "a_over_b_percent",
+          "table_tags": [
+            "MBMA_1103_TABLE2_MODELVSTESTSTIFFNESS"
+          ],
+          "unit": "%"
+        }
+      ],
+      "name": "Model to test stiffness ratio",
+      "quantity_kind": "percentage",
+      "role": "derived_ratio"
+    },
+    {
+      "canonical_unit": "—",
+      "conversion_needed": false,
+      "description": "Fraction of the total measured rotation that occurred as deformation of the purlin web itself rather than rigid-body rotation.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 4.3 (p. 80), footnotes (1)-(2)",
+          "note": "Separate columns for diaphragm and channel braced tests",
+          "symbol": "theta_p_over_theta_v, theta_p_over_theta_b",
+          "table_tags": [
+            "MBMA_8001_TABLE43_WEBROTATIONALDEFORMATION"
+          ],
+          "unit": "—"
+        }
+      ],
+      "name": "Web rotation fraction",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio"
+    },
+    {
+      "canonical_unit": "—",
+      "conversion_needed": false,
+      "description": "Mean and dispersion of the strength reduction factor R across a group of tests, used to recommend a code value.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9105",
+          "evidence": "Table 3.3 p.14",
+          "note": "Text describes these as coefficients of variation",
+          "symbol": "mean_r, std_deviation_r",
+          "table_tags": [
+            "MBMA_9105_TABLE33_REDUCTIONFACTORSTATISTICS"
+          ],
+          "unit": "—"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8310",
+          "evidence": "Table 2 p.5 'Average' rows; Table S1 notes",
+          "note": "Group averages of tested loads, not of R",
+          "symbol": "pu_lb_per_ft (Average rows)",
+          "table_tags": [
+            "MBMA_8310_TABLE2_UPLIFTLOADCOMPARISONS",
+            "MBMA_8310_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "lb/ft"
+        }
+      ],
+      "name": "Group statistics of reduction factor",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio"
+    },
+    {
+      "canonical_unit": "in",
+      "conversion_needed": false,
+      "description": "Distance from the screw centreline to the pivot corner of the fastened flange, a geometric parameter that controls the rotational restraint of the girt.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table 1 p.5 (b_avg_in, c_avg_in); Table C p.49; Table S1",
+          "note": "B reported only for Cee specimens; R-factors not normalized to C = B/2",
+          "symbol": "b_avg_in, c_avg_in, c_in, screw_location_c_in",
+          "table_tags": [
+            "MBMA_1103_TABLE1_ROTRESTRAINTSPECIMENDIMS",
+            "MBMA_1103_TABLEC_VACUUMBOXRESULTSSUMMARY",
+            "MBMA_1103_TABLES1_STRENGTHSUMMARY"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table C, page 90 (note 2)",
+          "note": "Measured for the east and west C purlins at stations along the length",
+          "symbol": "east_purlin_in, west_purlin_in, location_ft",
+          "table_tags": [
+            "MBMA_7603_TABLEC_CPURLINSCREWOFFSETS"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Tables 4-4 to 4-7, pp. 47-53",
+          "note": "Eccentric component test conditions 1 and 2",
+          "symbol": "spacing_from_cl_in, actual_distance_in",
+          "table_tags": [
+            "MBMA_9410_TABLE44_ECCTESTPASCOECOND1",
+            "MBMA_9410_TABLE46_ECCTESTPASCOECOND2"
+          ],
+          "unit": "in."
+        }
+      ],
+      "name": "Screw location on flange",
+      "quantity_kind": "length",
+      "role": "specimen_parameter"
+    },
+    {
+      "canonical_unit": "degrees",
+      "conversion_needed": false,
+      "description": "Measured angle between the web and the flange of the formed section, a shape imperfection affecting section properties.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_1103",
+          "evidence": "Table 7 p.22",
+          "note": "",
+          "symbol": "alpha_comp_deg, alpha_tens_deg",
+          "table_tags": [
+            "MBMA_1103_TABLE7_GIRTCROSSSECTIONDIMS"
+          ],
+          "unit": "degrees"
+        }
+      ],
+      "name": "Web-to-flange angle",
+      "quantity_kind": "angle",
+      "role": "specimen_parameter"
+    },
+    {
+      "canonical_unit": "in^4",
+      "conversion_needed": false,
+      "description": "Actual and code-required moments of inertia of the lip edge stiffener, checked to confirm the flange is adequately stiffened.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 4.8 (p. 85), footnotes (1)-(4)",
+          "note": "Required value computed on total and flat flange width bases",
+          "symbol": "stiffener_i_in4, imin_total_in4, imin_flat_in4",
+          "table_tags": [
+            "MBMA_8001_TABLE48_MINSTIFFENERREQUIREMENT"
+          ],
+          "unit": "in^4"
+        }
+      ],
+      "name": "Lip stiffener moment of inertia",
+      "quantity_kind": "area",
+      "role": "specimen_parameter"
+    },
+    {
+      "canonical_unit": "in",
+      "conversion_needed": false,
+      "description": "Effective (reduced) width of the compression flange and effective stiffener length computed by effective-width methods.",
+      "members": [
+        {
+          "availability": "simulated",
+          "code_tag": "MBMA_8001",
+          "evidence": "Table 4.9 (p. 86)",
+          "note": "Desmond's method, three bases; one value printed as '1.86²'",
+          "symbol": "w_total_in, w_flat_in, w_unstiff_in, s_total_in, s_flat_in",
+          "table_tags": [
+            "MBMA_8001_TABLE49_EFFECTIVEWIDTHSDESMOND"
+          ],
+          "unit": "in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_8404",
+          "evidence": "Table 2.2 p.20 column s_e_in3",
+          "note": "Column heading S_e but values are an effective width in inches",
+          "symbol": "s_e_in3",
+          "table_tags": [
+            "MBMA_8404_TABLE22_CPURLINPROPERTIES"
+          ],
+          "unit": "in"
+        }
+      ],
+      "name": "Effective compression flange width",
+      "quantity_kind": "length",
+      "role": "predicted_value"
+    },
+    {
+      "canonical_unit": "kips",
+      "conversion_needed": false,
+      "description": "Code-computed allowable shear and web crippling strengths of the purlin web at supports.",
+      "members": [
+        {
+          "availability": "simulated",
+          "code_tag": "MBMA_9105",
+          "evidence": "Appendix A/B/C section-property program screens",
+          "note": "Web crippling computed for N = 4 in.; shear printed with blank stiffener spacing",
+          "symbol": "va_kip, ext_pa_kip, int_pa_kip",
+          "table_tags": [
+            "MBMA_9105_TABLEA2_TESTC1SECTIONPROPERTIES"
+          ],
+          "unit": "kips"
+        }
+      ],
+      "name": "Allowable shear and web crippling",
+      "quantity_kind": "force",
+      "role": "predicted_value"
+    },
+    {
+      "canonical_unit": "text",
+      "conversion_needed": false,
+      "description": "Location and identification of each strain or displacement gage on the specimen, needed to interpret the recorded readings.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_7603",
+          "evidence": "Table on Fig. 2 (Sheet 2), page 11",
+          "note": "Sensor 41 printed as 'E OR F*' with uncertain position",
+          "symbol": "sensor, section, position, dim_in",
+          "table_tags": [
+            "MBMA_7603_TABLE2_ZPURLINSTRAINGAGELOCATIONS"
+          ],
+          "unit": "— / in"
+        },
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Table 4-9 p. 59",
+          "note": "Load cell calibration loads and millivolt outputs",
+          "symbol": "load_lbs, cell_001_mv ... cell_008_mv",
+          "table_tags": [
+            "MBMA_9410_TABLE49_LOADCELLREGRESSION"
+          ],
+          "unit": "lbs / mV"
+        }
+      ],
+      "name": "Instrumentation location and calibration",
+      "quantity_kind": "category",
+      "role": "test_condition"
+    },
+    {
+      "canonical_unit": "in",
+      "conversion_needed": false,
+      "description": "Dimensions of the panel rib profile (height, half-width, web projection and slant length) used in the biaxial membrane pullover theory.",
+      "members": [
+        {
+          "availability": "direct",
+          "code_tag": "MBMA_9410",
+          "evidence": "Figures 7-6 and 7-7, p. 196",
+          "note": "Read from the dimensioned figure",
+          "symbol": "rib_height_in, rib_top_half_width_in, web_horizontal_projection_in, web_slant_length_in, l_o_in, delta_max_in",
+          "table_tags": [
+            "MBMA_9410_FIG7_6_7_7_PANELRIBPROFILE"
+          ],
+          "unit": "in."
+        },
+        {
+          "availability": "implied",
+          "code_tag": "MBMA_1103",
+          "evidence": "Note under Table 5 p.18",
+          "note": "1-1/8 in. for panel D, 1-1/4 in. for panel B; stated in a note",
+          "symbol": "?",
+          "table_tags": [
+            "MBMA_1103_TABLE5_VACUUMBOXTESTMATRIX"
+          ],
+          "unit": "in"
+        }
+      ],
+      "name": "Panel rib profile dimensions",
+      "quantity_kind": "length",
+      "role": "specimen_parameter"
+    }
+  ],
+  "notes": [
+    "Measured failure loads are reported in three different physical forms across the set: chamber pressure (psf or psi), line load per purlin line (plf), and for MBMA_9003 an axial load in kips. I kept 'Failure line load per purlin line' and 'Chamber pressure at failure' as separate rows, and placed MBMA_9003's mixed kips/plf column in the line-load row with a unit caveat; a reviewer should decide whether the axial-load tests belong in that row at all.",
+    "MBMA_7501's pilot screw-connection rows report load per screw under the same failure_load_as_printed column as the psf assembly loads; I listed that paper in both the pressure row and the fastener-load row.",
+    "Tributary width is printed in some reports, derived by the curator in MBMA_7603 and MBMA_1103, and appears only inside a conversion formula in MBMA_8310 (38 in.). Treated as one row despite differing availability.",
+    "Panel-to-member rotational restraint is reported with incompatible units: kip-in/in/rad (MBMA_8001, MBMA_8703), lb/in/in (MBMA_8310) and N/mm slopes (MBMA_1103). These are dimensionally related but not identical; conversion must be checked before pooling.",
+    "MBMA_1103's Table 5/C column 'thickness_in' is insulation thickness, not steel thickness. It is kept in the Insulation row, not in Base metal thickness.",
+    "Measured section thickness and coupon thickness are merged into one 'Base metal thickness' row for most papers, but MBMA_8803 and MBMA_9105 print coupon thickness as a separate quantity from the purlin micrometer thickness; only the purlin value was assigned to that row.",
+    "Test-to-predicted ratios were pooled into one row even though the denominators differ by method (Cornell, AISI drafts, MBMA proposal, base test method) and MBMA_9702 inverts the sense (predicted/experimental). Rows should be filtered by method before any statistics.",
+    "MBMA_1103's R-factor (Mt/SeFy) and MBMA_9105's Mu/Mth are the same AISI reduction factor R and were merged into the test-to-predicted ratio row; a reviewer may prefer a dedicated 'reduction factor R' row.",
+    "Gross/effective moments of inertia, section moduli and program-computed section properties were grouped into one specimen-parameter row; effective section modulus Se was kept separate because it is the key strength input.",
+    "MBMA_8001 reports corner radii only as radius/thickness ratios while other papers report absolute radii; they are in the same row with a unit caveat.",
+    "MBMA_9410 is a fastener-pullover study rather than a purlin-bending study, so most of its rows (fastener load, rib profile, transverse stress-strain model) do not overlap with the purlin papers; only load direction, span, spans/lines, panel type and coupon properties overlap.",
+    "MBMA_9001, MBMA_9501 and MBMA_9902 supplied no variable inventories and therefore appear in no member list."
+  ],
+  "set_title": "Full-scale uplift tests of C and Z purlins and girts",
+  "summary": "All seventeen MBMA reports document full-scale vacuum-chamber tests of cold-formed C and Z purlin or girt assemblies with attached metal panels, reporting a failure load, a failure mode, the measured cross-section geometry and the coupon yield stress, and most compare the result with a code or analytical prediction. They diverge in how the failure load is expressed (chamber pressure, line load per purlin line, moment or axial load), in span continuity and bracing, and in scope: several add panel-to-purlin rotational restraint F-tests, strain and deflection histories, standing-seam base-test predictions, or screw pullover component tests."
+}

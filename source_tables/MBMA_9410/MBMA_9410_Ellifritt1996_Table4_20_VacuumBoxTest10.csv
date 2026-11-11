@@ -1,0 +1,50 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 4-20, pp.95
+# Tag: MBMA_9410_TABLE420_VACUUMBOXTEST10
+# Content: Time history of panel displacements, chamber pressure and individual fastener loads for vacuum box test 10 (two span system, 26 gage American panels).
+# Data basis: measured: pressure transducer, LVDTs and six load cells logged during the vacuum box test
+# Units: pt_psi in psi; LVDTs in inches; load cells in pounds
+# Column definitions:
+#   date = calendar date of the scan, mm/dd/yy
+#   time_hhmmss = clock time of the scan
+#   lvdt1_in = displacement measured by LVDT 1, inches
+#   lvdt2_in = displacement measured by LVDT 2, inches
+#   pt_psi = chamber pressure from the pressure transducer, psi
+#   lcell3_lb = load on the fastener at load cell 3, pounds
+#   lcell4_lb = load on the fastener at load cell 4, pounds
+#   lcell5_lb = load on the fastener at load cell 5, pounds
+#   lcell6_lb = load on the fastener at load cell 6, pounds
+#   lcell7_lb = load on the fastener at load cell 7, pounds
+#   lcell8_lb = load on the fastener at load cell 8, pounds
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: Load cell 8 reads large negative values throughout (lost channel) and load cell 5 locks at about -808.7 lb after the sixteenth scan; preserved verbatim. The printed summary lists the first failed cell as "3#".
+# Printed summary: Test Number 10; Failed Cells 3# (Pullover), #4 (Pullout), #5, #6, #7 (Pullover); Peak Loads 575.901 / 348.174 / 577.321 / 560.180 / 721.035; Peak Pressures 1.256/1.162/1.162/1.162/1.256; Peak LVDT 1 5.854/2.035/2.035/2.035/5.854; Peak LVDT 2 6.359/2.370/2.370/2.370/6.359; Elapsed Time 00:47.7; Size 26 Ga.; Type American.
+# Printed comments: Good test. Minor panel buckling. One pullout failure. Lost Load Cell #8.
+date,time_hhmmss,lvdt1_in,lvdt2_in,pt_psi,lcell3_lb,lcell4_lb,lcell5_lb,lcell6_lb,lcell7_lb,lcell8_lb
+12/07/95,15:07:28.399,1.419,1.683,-0.201,45.121,227.936,18.006,123.415,276.806,-5687.812
+12/07/95,15:07:30.399,1.419,1.683,-0.200,43.706,227.357,10.466,110.769,276.302,-5326.563
+12/07/95,15:07:32.399,1.419,1.683,-0.201,44.412,227.521,11.897,118.459,276.218,-5713.083
+12/07/95,15:07:34.399,1.419,1.683,-0.201,26.117,216.116,-240.295,-171.393,285.164,-6649.831
+12/07/95,15:07:36.399,1.419,1.683,-0.198,38.092,223.814,-128.999,43.819,279.599,-5819.806
+12/07/95,15:07:38.399,1.419,1.683,-0.201,52.945,232.309,126.870,253.399,270.905,-5779.072
+12/07/95,15:07:40.399,1.453,1.728,-0.173,53.918,233.789,133.928,253.037,274.181,-4851.864
+12/07/95,15:07:42.399,1.765,2.074,-0.034,92.606,281.861,238.031,253.497,373.301,-4547.011
+12/07/95,15:07:44.399,2.098,2.495,0.184,175.723,360.879,333.360,473.783,572.234,-4342.151
+12/07/95,15:07:46.399,2.444,2.843,0.357,246.773,441.037,434.465,620.475,703.022,-4779.875
+12/07/95,15:07:48.399,2.733,3.211,0.567,297.993,501.098,465.784,617.153,806.636,-6479.686
+12/07/95,15:07:50.399,2.957,3.488,0.707,344.183,538.758,528.899,666.417,841.559,-6292.466
+12/07/95,15:07:52.399,3.262,3.827,0.826,370.104,544.980,548.042,676.281,865.751,-6434.805
+12/07/95,15:07:54.399,3.454,4.053,0.961,415.766,576.109,595.327,683.595,908.948,-6152.069
+12/07/95,15:07:56.399,3.652,4.271,1.061,398.461,542.377,541.879,577.297,668.120,-7628.277
+12/07/95,15:07:58.399,6.350,6.919,0.835,403.067,48.053,-808.868,437.865,738.995,-5576.222
+12/07/95,15:08:00.399,6.626,7.243,0.919,509.816,36.124,-808.671,548.645,832.676,-5563.283
+12/07/95,15:08:02.399,6.984,7.784,0.980,561.479,39.563,-808.561,452.367,880.325,-6280.126
+12/07/95,15:08:04.399,7.273,8.043,1.055,621.023,36.672,-808.654,458.133,997.841,-5958.412
+12/07/95,15:08:06.399,7.621,8.090,0.886,-15.537,45.213,-808.673,337.015,860.690,-6196.821
+12/07/95,15:08:08.399,7.785,8.362,1.031,-15.297,43.004,-808.883,334.845,915.920,-7236.854
+12/07/95,15:08:10.399,8.019,8.749,1.115,-15.426,44.871,-808.664,349.401,903.425,-7501.145
+12/07/95,15:08:12.399,8.342,9.021,1.196,-15.524,46.270,-808.647,280.825,900.527,-6926.590
+12/07/95,15:08:14.399,8.590,9.296,1.270,-15.155,48.182,-808.748,279.449,907.394,-7355.680
+12/07/95,15:08:16.100,8.772,9.476,1.315,-15.095,54.221,-808.725,227.631,916.928,-6608.612
+12/07/95,15:08:16.199,8.879,9.550,1.319,-15.364,42.179,-808.660,-89.579,0.803,-6882.024

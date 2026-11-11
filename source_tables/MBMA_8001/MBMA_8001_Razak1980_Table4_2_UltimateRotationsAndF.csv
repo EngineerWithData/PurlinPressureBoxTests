@@ -1,0 +1,23 @@
+# Source: MBMA_8001 | Razak, M.A.A. and Peköz, T. (1980), Table 4.2, pp.79
+# Tag: MBMA_8001_TABLE42_ULTIMATEROTATIONSANDF
+# Content: Maximum purlin rotations measured at failure in the vacuum and beam tests, with the corresponding experimentally determined rotational restraint factors F.
+# Data basis: mixed: rotations computed from measured dial-gage deflections; F obtained from separate rotational restraint tests (moment divided by maximum test rotation)
+# Units: rotations in radians; F in kip-in/in/radian
+# Column definitions:
+#   purlin_type = purlin designation letter A–E
+#   vacuum_max_rot_rad = maximum purlin rotation at failure in the vacuum test, radians
+#   vacuum_f_kin_per_in_per_rad = rotational restraint factor F for the diaphragm-braced (vacuum) set-up, kip-in per inch per radian
+#   beam_max_rot_rad = maximum purlin rotation at failure in the beam test, radians
+#   beam_f_kin_per_in_per_rad = rotational restraint factor F for the channel-braced (beam) set-up, kip-in per inch per radian
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 130 pages)
+# The printed table heading is "ROTATIONAL RESTRAINT FACTORS (F)" while the list of tables calls it "Test Ultimate Rotations and F Values".
+# Footnote (1): F not based on this value (see Fig. 4.21).
+# Footnote (2): F is in k-in/in/rad.
+purlin_type,vacuum_max_rot_rad,vacuum_f_kin_per_in_per_rad,beam_max_rot_rad,beam_f_kin_per_in_per_rad
+A,.250,.084,.284,.173
+B,.275,.141,.223,.392
+C,.203,.073,.225,.185
+D,.238,.150,.137,.413
+E,.060(1),.115,.144,.246

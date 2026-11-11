@@ -1,0 +1,29 @@
+# Source: MBMA_9804 | Bryant, M.R. and Murray, T.M. (1999), Table 5.1, pp.64
+# Tag: MBMA_9804_TABLE51_PURLINPROPERTIES
+# Content: Section and material properties of the failed purlin in each test used for the AISI strength predictions.
+# Data basis: mixed: measured yield stress and dimensions with computed effective section modulus, Cb and Base Test reduction factor R
+# Units: see column headers; r and cb dimensionless
+# Column definitions:
+#   test_number = test identification label as printed
+#   se_in3 = effective section modulus of the failed purlin, cubic inches
+#   fy_ksi = measured material yield stress used in the evaluation, ksi
+#   se_fy_kip_in = effective yield moment, product of Se and Fy, kip-inches
+#   lb_in = distance from the end of the lap to the theoretical inflection point in the test bay, inches
+#   r = standing seam roof system reduction factor from the AISI Base Test Method, dimensionless
+#   cb = moment gradient coefficient from AISI Eq. C3.1.2-11, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 169 pages)
+# ANOMALY FLAG: The yield stresses listed here (e.g. 50.6 ksi for Test 2, 87.5 ksi for Test 3, 75.0 ksi for Test 4, 69.5 ksi for the I.P. tests) differ slightly from the coupon values in Table 3.1; values preserved verbatim as printed.
+# Printed note: "Lb is the distance from the end of the lap to the inflection point in the test bay."
+# R was determined using the AISI Base Test Method; R is taken as 1.00 for through fastened panel.
+# YIELD NOTE: Table 3.1 yield = average of the 0.2% offset yields of the coupons (p.37). Per coupon (0.2% offset, ksi): Test 2 Z-SS 49.3 (CH 13, p.99) and 50.6 (CH 14, p.100); Test 3 C-SS 87.7 (p.113) and 87.7 (p.114); Test 4 C-TF 75.0 (p.129) and 75.3 (p.130). Table 5.1 uses 50.6 (coupon CH 14 only), 87.5 (no coupon's 0.2% value; equals the p.113 coupon's 0.1% offset) and 75.0 (p.129 coupon only); the report gives no reason. yield_stress_ksi in the strength summary keeps the Table 3.1 averages as the measured value; Table 5.1 is kept as printed as the inputs behind the legacy predictions, not recomputed (open question MBMA_9804-Q04).
+# NAME NOTE (review 2026-11-10, Cris Moen): s1_test_id is a join key added for aggregation; it holds the test name as spelled in the TableS1 strength summary. The printed test name in the first column is unchanged. Table 5.1 prints 'I.P. Test n'; the strength summary has 'I. P. Test n'.
+test_number,se_in3,fy_ksi,se_fy_kip_in,lb_in,r,cb,s1_test_id
+Test 1 Z-TF,3.54,55.5,196.5,52.5,1.00,1.76,Test 1 Z-TF
+Test 2 Z-SS,3.78,50.6,191.3,54.8,0.44,1.77,Test 2 Z-SS
+Test 3 C-SS,3.15,87.5,275.6,53.2,0.45,1.76,Test 3 C-SS
+Test 4 C-TF,2.42,75.0,181.5,53.2,1.00,1.76,Test 4 C-TF
+I.P. Test 1 Z-SS,2.66,69.5,184.9,78.0,0.44,1.78,I. P. Test 1 Z-SS
+I.P. Test 2 Z-SS,2.66,69.5,184.9,78.0,0.44,1.78,I. P. Test 2 Z-SS
+I.P. Test 3 Z-TF,2.66,69.5,184.9,78.0,1.00,1.78,I. P. Test 3 Z-TF

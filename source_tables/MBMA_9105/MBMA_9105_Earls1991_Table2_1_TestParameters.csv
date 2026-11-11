@@ -1,0 +1,23 @@
+# Source: MBMA_9105 | Earls, C.J., Pugh, A.D. and Murray, T.M. (1991), Table 2.1, pp.10
+# Tag: MBMA_9105_TABLE21_TESTPARAMETERS
+# Content: Nominal geometry, span and interior-support lap length of the three multispan C-purlin uplift test assemblies.
+# Data basis: input: nominal purlin dimensions and measured lap lengths of the three test assemblies
+# Units: span_ft feet; web_depth_in, flange_width_in, thickness_in, lap_length_in inches; ratio dimensionless
+# Column definitions:
+#   test = test designation of the three-span C-purlin roof assembly (C1, C2, C3)
+#   span_ft = length of each of the three equal spans, feet
+#   web_depth_in = nominal depth of the C-purlin web, inches
+#   flange_width_in = nominal flange width of the C-purlin, inches
+#   thickness_in = nominal purlin base-metal thickness, inches
+#   lap_length_in = lap length on each side of interior support (support centre to lap end), in
+#   lap_length_over_depth = ratio of lap length to purlin depth, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 42 pages)
+# Printed with tests as columns and parameters as rows; transposed here so each test is one row.
+# Footnote of printed table: "*Each side of support" (applies to lap length).
+# Tests C1, C2 and C3 correspond to 20 ft., 23 ft. 6 in. and 30 ft. spans respectively.
+test,span_ft,web_depth_in,flange_width_in,thickness_in,lap_length_in,lap_length_over_depth
+C1,20,7,3,0.110,11 5/8,1.66
+C2,23.5,8 1/2,3 1/4,0.090,14 3/4,1.73
+C3,30,9,3,0.100,19 11/16,2.18

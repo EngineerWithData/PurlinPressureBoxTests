@@ -1,0 +1,27 @@
+# Source: MBMA_9002 | Rayburn, L. and Murray, T.M. (1990), Table 4.1, pp.27
+# Tag: MBMA_9002_TABLE41_SERIESITESTRESULTS
+# Content: Measured failure moments and computed section strengths for the four Series I single-span base tests (Z-purlins, flanges opposed, rib deck with sliding clips).
+# Data basis: mixed: measured experimental failure moments with 1986 AISI constrained-bending computed section strengths
+# Units: see column headers
+# Column definitions:
+#   test = base test identification label (see notes for suffixes)
+#   insulation = whether 4 in. insulation was in place during the test (Yes/No)
+#   seff_in3 = effective section modulus of the purlin that failed, cubic inches
+#   fy_ksi = yield stress of material taken from the purlin which failed, ksi
+#   mn_in_kips = nominal section strength, Seff x Fy, inch-kips
+#   mus_in_kips = maximum moment corresponding to the experimental failure load, inch-kips
+#   r_percent = percentage of through-fastened capacity, Mus/MAISI x 100, percent
+#   failure_mode = observed mode of failure (LB or LM, see notes)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 134 pages); 2 character(s) were illegible and are marked [?], not guessed
+# ANOMALY FLAG: The second row is printed "R-S-8Z0.06-25-0", identical to the first row's label (without the asterisk), although Table 3.1 and Table 4.5 identify this test as R-S-8.5Z0.06-25-0; the duplicate label is preserved verbatim as printed and NOT corrected. Also, the legend defines Mus as "Experimental failure load of base test" and R as Mus/MAISI while the column is headed Mn; preserved as printed.
+# LB = local buckling of lip, flange, and web
+# LM = failure of cross section after considerable lateral movement
+# * Test conducted at a span length of 24'-9"
+# Legend printed with the table: Seff = effective section modulus; Fy = yield stress of material taken from purlin which failed; Mn = nominal section strength, Seff x Fy; Mus = experimental failure load of base test; R = Mus/MAISI x 100%
+test,insulation,seff_in3,fy_ksi,mn_in_kips,mus_in_kips,r_percent,failure_mode
+R-S-8Z0.06-25-0*,No,1.85,56.8,105.0,54.7,52.1,LB
+R-S-8Z0.06-25-0,Yes,1.63,64.3,104.7,54.6,52.2,LB
+R-S-10Z0.073-25-0,No,3.22,59.7,191.8,115.7,60.3,LB
+R-S-10Z0.092-25-0,No,4.26,61.5,261.9,160.2,61.2,LM

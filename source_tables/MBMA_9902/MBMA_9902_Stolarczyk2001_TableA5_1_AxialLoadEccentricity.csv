@@ -1,0 +1,20 @@
+# Source: MBMA_9902 | Stolarczyk, J.A. and Fisher, J.M. (2001), Table A5-1, pp.171
+# Tag: MBMA_9902_TABLEA51_AXIALLOADECCENTRICITY
+# Content: Measured location of the axial load beam centroid with respect to the purlin centroid at each of the four attachment points before the axial tests.
+# Data basis: measured: tape/scale measurement of load beam position before each axial test
+# Units: all columns in inches
+# Column definitions:
+#   test_no = axial test designation (A1-A4)
+#   ne_in = eccentricity of the axial load relative to the purlin centroid at the northeast attachment, inches
+#   nw_in = eccentricity at the northwest attachment, inches
+#   se_in = eccentricity at the southeast attachment, inches
+#   sw_in = eccentricity at the southwest attachment, inches
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 195 pages)
+# Sign convention per sketch on page 171: +e above the purlin centerline, -e below.
+test_no,ne_in,nw_in,se_in,sw_in
+A1,+0.24,+0.33,+0.28,+0.09
+A2,0.00,-0.06,-0.03,+0.03
+A3,0.00,+0.06,+0.01,+0.03
+A4,0.00,0.00,-0.03,0.00

@@ -1,0 +1,27 @@
+# Source: MBMA_9804 | Bryant, M.R. and Murray, T.M. (1999), Table 3.1, pp.37
+# Tag: MBMA_9804_TABLE31_TENSILETESTRESULTS
+# Content: Measured tensile coupon properties of material cut from the web of a failed purlin in each test.
+# Data basis: measured: standard ASTM A370 tension coupon tests on purlin web material
+# Units: see column headers
+# Column definitions:
+#   identification = test from which the tensile coupon was taken
+#   thickness_in = measured coupon thickness, inches
+#   width_in = measured coupon width, inches
+#   yield_stress_ksi = measured yield stress of the purlin material, ksi
+#   tensile_strength_ksi = measured ultimate tensile strength, ksi
+#   elongation_pct = measured elongation at fracture, percent
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 169 pages)
+# ANOMALY FLAG: The I.P. Test 3 Z-TF row has blank tensile strength and elongation cells because no coupon material was available; its yield stress was assumed equal to the other I. P. tests. Blanks preserved as empty strings.
+# Where more than one coupon was tested, average values are reported.
+# The I. P. Test 3 Z-TF yield stress is taken the same as the other I. P. Tests because coupon material was not available.
+# GAGE LENGTH NOTE: elongation_pct is on a 2 in. gage length for every coupon (Cris Moen, 2026-10-26, open question MBMA_9804-Q05). The Test 1 sheet prints gage length 2.000 in. (p.84); the other sheets print about 8.0 in. (7.991-8.015), which is longer than their printed total length of 8.0 in. and is taken as an entry error. Elongations are therefore comparable across tests.
+identification,thickness_in,width_in,yield_stress_ksi,tensile_strength_ksi,elongation_pct
+Test 1 Z-TF,0.104,1.504,55.5,76.7,37
+Test 2 Z-SS,0.076,1.501,50.0,76.5,22
+Test 3 C-SS,0.078,1.506,87.7,101.6,10
+Test 4 C-TF,0.079,1.506,75.2,88.7,15
+I.P. Test 1 Z-SS,0.077,1.502,69.5,78.3,20
+I.P. Test 2 Z-SS,0.078,1.501,69.5,78.2,21
+I.P. Test 3 Z-TF,0.077,2.050,69.5,,

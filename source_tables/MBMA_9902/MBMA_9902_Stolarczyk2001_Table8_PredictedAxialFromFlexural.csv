@@ -1,0 +1,21 @@
+# Source: MBMA_9902 | Stolarczyk, J.A. and Fisher, J.M. (2001), Table 8, pp.75
+# Tag: MBMA_9902_TABLE8_PREDICTEDAXIALFROMFLEXURAL
+# Content: Axial loads predicted from the flexural test results using the proposed lower-bound k_af equations.
+# Data basis: computed: proposed Equations 1-3 applied to measured flexural uplift test stresses
+# Units: stresses in ksi; area in in^2; load in kips; d_over_t and k_af dimensionless
+# Column definitions:
+#   test_no = flexural uplift test designation (F1-F4)
+#   flexural_stress_at_failure_ksi = flexural stress in the purlin at failure of the uplift test, ksi
+#   d_over_t = purlin depth divided by thickness, dimensionless
+#   k_af = axial-to-flexural strength ratio from proposed Equations 1-3, dimensionless
+#   axial_stress_ksi = predicted axial stress = k_af times flexural stress at failure, ksi
+#   gross_area_in2 = gross cross-sectional area of the purlin, square inches
+#   predicted_load_kip = predicted axial load = axial stress times gross area, kips
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-10): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 195 pages)
+test_no,flexural_stress_at_failure_ksi,d_over_t,k_af,axial_stress_ksi,gross_area_in2,predicted_load_kip
+F1,30.4,71,0.36,10.9,1.71,18.7
+F2,28.5,74,0.36,10.3,1.67,17.1
+F3,33.1,83,0.36,11.9,1.33,15.8
+F4,29.1,133,0.20,5.8,0.85,4.9

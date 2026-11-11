@@ -1,0 +1,1421 @@
+{
+  "citation": "MBMA Research Report 9410 (1996)",
+  "code_tag": "MBMA_9410",
+  "experiment": "Standard (AISI) pullover coupon tests, simulated single-panel component pullover tests (concentric, two eccentric conditions, fixed-end) and full-scale vacuum-box system tests were run on 24 and 26 gage Pascoe (Fy = 55 ksi) and American (Fy = 80 ksi) through-fastened roof panels attached with #12 self-drilling screws, with fastener loads, panel displacements, chamber pressure and strains recorded to failure and compared with a derived biaxial membrane pullover theory.",
+  "title": "Pullover Strength of Self-Drilling Screw Fasteners in Through-Fastened Metal Roof Systems",
+  "variables": [
+    {
+      "availability": "direct",
+      "definition": "Test or specimen number identifying each pullover, component or vacuum-box test.",
+      "evidence": "Tables 3-1 to 3-9, 4-1 to 4-8, Table S1 (pp. 28-55, 99-111)",
+      "name": "Test number",
+      "note": "Numbers restart within each table and some are letters (A, B, C) in Table 4-3.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_no",
+        "test_number",
+        "test_id"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE31_STDTESTPASCOE24GA",
+        "MBMA_9410_TABLE32_NORMDISTPASCOE24GA",
+        "MBMA_9410_TABLE33_STDTESTPASCOE26GA",
+        "MBMA_9410_TABLE34_NORMDISTPASCOE26GA",
+        "MBMA_9410_TABLE35_STDTESTAMERICAN24GA",
+        "MBMA_9410_TABLE36_NORMDISTAMERICAN24GA",
+        "MBMA_9410_TABLE37_STDTESTAMERICAN26GA",
+        "MBMA_9410_TABLE38_NORMDISTAMERICAN26GA",
+        "MBMA_9410_TABLE39_STDTESTDEAN26GA",
+        "MBMA_9410_TABLE41_SIMTESTPASCOECONC",
+        "MBMA_9410_TABLE42_SIMTESTAMERICANCONC",
+        "MBMA_9410_TABLE43_SIMTESTDEANCONC",
+        "MBMA_9410_TABLE44_ECCTESTPASCOECOND1",
+        "MBMA_9410_TABLE45_ECCTESTAMERICANCOND1",
+        "MBMA_9410_TABLE46_ECCTESTPASCOECOND2",
+        "MBMA_9410_TABLE47_ECCTESTAMERICANCOND2",
+        "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of the planned test series in the proposed testing program matrix.",
+      "evidence": "Table 1-1, p. 20",
+      "name": "Test series number",
+      "note": "Series numbers 1-6 repeat for component and system installations.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_series"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE11_PROPOSEDTESTINGPROGRAM"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Whether the planned tests were component (single panel) or system (multi-panel) installations.",
+      "evidence": "Table 1-1, p. 20",
+      "name": "Installation type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "installation_type"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE11_PROPOSEDTESTINGPROGRAM"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Supplier of the panel sheet steel (Pascoe, American or Dean), given as a column value or as a column heading in the transposed tables.",
+      "evidence": "Table 1-1 p. 20; Table 2-1 p. 23; Table 4-8 p. 55; Tables 7-1 to 7-6 pp. 174-175; Table S1 pp. 99-111; Figures 7-6/7-7 p. 196",
+      "name": "Panel steel supplier",
+      "note": "In Tables 2-1 and 7-2 the supplier appears as part of the column name (e.g. pascoe_24ga).",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "supplier",
+        "panel_supplier",
+        "company_fy",
+        "panels",
+        "pascoe_26ga",
+        "pascoe_24ga",
+        "american_26ga",
+        "american_24ga"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE11_PROPOSEDTESTINGPROGRAM",
+        "MBMA_9410_TABLE21_TENSILETESTRESULTS",
+        "MBMA_9410_TABLE48_FIXEDENDCONCLOADTEST",
+        "MBMA_9410_TABLE71_AVGCOMPTESTCAPACITIES",
+        "MBMA_9410_TABLE72_AVGSYSTEMTESTCAPACITIES",
+        "MBMA_9410_TABLE73_REDUCTIONFACTORS",
+        "MBMA_9410_TABLE74_STDVSTHEORETICAL",
+        "MBMA_9410_TABLE75_COMPVSTHEORETICAL",
+        "MBMA_9410_TABLE76_SYSTEMVSTHEORETICAL",
+        "MBMA_9410_TABLES1_STRENGTHSUMMARY",
+        "MBMA_9410_FIG7_6_7_7_PANELRIBPROFILE"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Sheet gage designation of the roof panel tested (24 or 26 gage).",
+      "evidence": "Tables 3-1 to 3-7, Tables 4-1 to 4-8, Table 1-1, Table S1",
+      "name": "Panel sheet gage",
+      "note": "Gage entries in Table 1-1 are printed with irregular spacing ('24& 26').",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "pl_th_gage",
+        "th_gage",
+        "panel_thickness_gage",
+        "panel_gage",
+        "gages"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE11_PROPOSEDTESTINGPROGRAM",
+        "MBMA_9410_TABLE31_STDTESTPASCOE24GA",
+        "MBMA_9410_TABLE33_STDTESTPASCOE26GA",
+        "MBMA_9410_TABLE35_STDTESTAMERICAN24GA",
+        "MBMA_9410_TABLE37_STDTESTAMERICAN26GA",
+        "MBMA_9410_TABLE41_SIMTESTPASCOECONC",
+        "MBMA_9410_TABLE42_SIMTESTAMERICANCONC",
+        "MBMA_9410_TABLE44_ECCTESTPASCOECOND1",
+        "MBMA_9410_TABLE45_ECCTESTAMERICANCOND1",
+        "MBMA_9410_TABLE46_ECCTESTPASCOECOND2",
+        "MBMA_9410_TABLE47_ECCTESTAMERICANCOND2",
+        "MBMA_9410_TABLE48_FIXEDENDCONCLOADTEST",
+        "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "gage"
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal yield grade of the panel steel (55 ksi Pascoe, 80 ksi American grade E) as printed in the test program and test-table headings.",
+      "evidence": "Table 1-1 p. 20; Table 4-8 p. 55 (company_fy)",
+      "name": "Nominal panel steel grade",
+      "note": "",
+      "printed_symbol": "Fy",
+      "quantity_kind": "stress",
+      "role": "specimen_parameter",
+      "symbols": [
+        "steel_grade_ksi",
+        "company_fy"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE11_PROPOSEDTESTINGPROGRAM",
+        "MBMA_9410_TABLE48_FIXEDENDCONCLOADTEST"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of tests planned in each series of the proposed testing program.",
+      "evidence": "Table 1-1, p. 20",
+      "name": "Number of planned tests",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "number_of_tests"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE11_PROPOSEDTESTINGPROGRAM"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured thickness of the tensile coupon taken from each panel sheet, averaged per ASTM A370 testing.",
+      "evidence": "Table 2-1 row 'Th. =', p. 23",
+      "name": "Coupon sheet thickness",
+      "note": "24 ga Pascoe printed as 0.0234 in. but 0.0239 in. is used in the Chapter 7 calculations.",
+      "printed_symbol": "Th.",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "pascoe_26ga",
+        "pascoe_24ga",
+        "american_26ga",
+        "american_24ga"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE21_TENSILETESTRESULTS"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Ultimate load carried by the tensile coupon.",
+      "evidence": "Table 2-1 row 'Pu =', p. 23",
+      "name": "Coupon ultimate load",
+      "note": "",
+      "printed_symbol": "Pu",
+      "quantity_kind": "force",
+      "role": "material_property",
+      "symbols": [
+        "pascoe_26ga",
+        "pascoe_24ga",
+        "american_26ga",
+        "american_24ga"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE21_TENSILETESTRESULTS"
+      ],
+      "unit": "lbs."
+    },
+    {
+      "availability": "direct",
+      "definition": "Elongation of the coupon measured at the ultimate load.",
+      "evidence": "Table 2-1 row 'DLu =', p. 23",
+      "name": "Coupon elongation at ultimate",
+      "note": "Pascoe values (~1.24 in.) are orders of magnitude larger than American values (~0.011 in.) as printed.",
+      "printed_symbol": "DLu",
+      "quantity_kind": "length",
+      "role": "material_property",
+      "symbols": [
+        "pascoe_26ga",
+        "pascoe_24ga",
+        "american_26ga",
+        "american_24ga"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE21_TENSILETESTRESULTS"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Load at yield recorded in the tensile coupon test.",
+      "evidence": "Table 2-1 row 'Py =', p. 23",
+      "name": "Coupon yield load",
+      "note": "",
+      "printed_symbol": "Py",
+      "quantity_kind": "force",
+      "role": "material_property",
+      "symbols": [
+        "pascoe_26ga",
+        "pascoe_24ga",
+        "american_26ga",
+        "american_24ga"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE21_TENSILETESTRESULTS"
+      ],
+      "unit": "lbs."
+    },
+    {
+      "availability": "direct",
+      "definition": "Width of the reduced section of the tensile coupon.",
+      "evidence": "Table 2-1 row 'Red. W', p. 23",
+      "name": "Coupon reduced-section width",
+      "note": "",
+      "printed_symbol": "Red. W",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "pascoe_26ga",
+        "pascoe_24ga",
+        "american_26ga",
+        "american_24ga"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE21_TENSILETESTRESULTS"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Cross-sectional area of the reduced section of the tensile coupon.",
+      "evidence": "Table 2-1 row 'Red. A', p. 23",
+      "name": "Coupon reduced-section area",
+      "note": "",
+      "printed_symbol": "Red. A",
+      "quantity_kind": "area",
+      "role": "specimen_parameter",
+      "symbols": [
+        "pascoe_26ga",
+        "pascoe_24ga",
+        "american_26ga",
+        "american_24ga"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE21_TENSILETESTRESULTS"
+      ],
+      "unit": "in.^2"
+    },
+    {
+      "availability": "direct",
+      "definition": "Percent reduction of coupon cross-sectional area at fracture.",
+      "evidence": "Table 2-1 row '% A Red.', p. 23",
+      "name": "Coupon area reduction",
+      "note": "",
+      "printed_symbol": "% A Red.",
+      "quantity_kind": "percentage",
+      "role": "material_property",
+      "symbols": [
+        "pascoe_26ga",
+        "pascoe_24ga",
+        "american_26ga",
+        "american_24ga"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE21_TENSILETESTRESULTS"
+      ],
+      "unit": "%"
+    },
+    {
+      "availability": "direct",
+      "definition": "Percent elongation of the tensile coupon.",
+      "evidence": "Table 2-1 row '% Elong.', p. 23",
+      "name": "Coupon percent elongation",
+      "note": "",
+      "printed_symbol": "% Elong.",
+      "quantity_kind": "percentage",
+      "role": "material_property",
+      "symbols": [
+        "pascoe_26ga",
+        "pascoe_24ga",
+        "american_26ga",
+        "american_24ga"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE21_TENSILETESTRESULTS"
+      ],
+      "unit": "%"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured yield stress of each panel sheet from the tensile coupon test.",
+      "evidence": "Table 2-1 (yield stress row), p. 23; cited in the table note (26 ga Pascoe 59300 psi, 24 ga Pascoe 50600 psi)",
+      "name": "Measured yield stress",
+      "note": "26 ga Pascoe yield printed higher than 24 ga Pascoe.",
+      "printed_symbol": "Fy",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "pascoe_26ga",
+        "pascoe_24ga",
+        "american_26ga",
+        "american_24ga"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE21_TENSILETESTRESULTS"
+      ],
+      "unit": "psi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured ultimate tensile stress of each panel sheet from the tensile coupon test.",
+      "evidence": "Table 2-1 (ultimate stress row), p. 23",
+      "name": "Measured ultimate tensile stress",
+      "note": "",
+      "printed_symbol": "Fu",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "pascoe_26ga",
+        "pascoe_24ga",
+        "american_26ga",
+        "american_24ga"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE21_TENSILETESTRESULTS"
+      ],
+      "unit": "psi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Ultimate load carried by a single #12 self-drilling screw in the standard (AISI) pullover coupon test, also listed in ascending order in the companion normal-distribution tables.",
+      "evidence": "Tables 3-1, 3-3, 3-5, 3-7, 3-9 and the sorted columns of Tables 3-2, 3-4, 3-6, 3-8, pp. 28-38",
+      "name": "Standard pullover test ultimate load",
+      "note": "Column name tl_load_lbs is reused in Tables 4-1/4-2 for the load on two fasteners.",
+      "printed_symbol": "TL Load",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "tl_load_lbs",
+        "load_lb",
+        "sorted_loads_lbs"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE31_STDTESTPASCOE24GA",
+        "MBMA_9410_TABLE32_NORMDISTPASCOE24GA",
+        "MBMA_9410_TABLE33_STDTESTPASCOE26GA",
+        "MBMA_9410_TABLE34_NORMDISTPASCOE26GA",
+        "MBMA_9410_TABLE35_STDTESTAMERICAN24GA",
+        "MBMA_9410_TABLE36_NORMDISTAMERICAN24GA",
+        "MBMA_9410_TABLE37_STDTESTAMERICAN26GA",
+        "MBMA_9410_TABLE38_NORMDISTAMERICAN26GA",
+        "MBMA_9410_TABLE39_STDTESTDEAN26GA"
+      ],
+      "unit": "lbs"
+    },
+    {
+      "availability": "direct",
+      "definition": "Standardized normal variate (Z, printed as 'composita') computed for each sorted standard-test load to screen outliers.",
+      "evidence": "Tables 3-2, 3-4, 3-6, 3-8, pp. 29-36",
+      "name": "Standardized normal variate Z",
+      "note": "Rejection region taken as |Z| >= 1.96.",
+      "printed_symbol": "Z",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "sorted_cmpsta",
+        "sorted_composita"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE32_NORMDISTPASCOE24GA",
+        "MBMA_9410_TABLE34_NORMDISTPASCOE26GA",
+        "MBMA_9410_TABLE36_NORMDISTAMERICAN24GA",
+        "MBMA_9410_TABLE38_NORMDISTAMERICAN26GA"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Deviation of an individual test load from the series mean, expressed as a percentage.",
+      "evidence": "Table 3-9 p. 38; Table 4-3 p. 45",
+      "name": "Percent deviation from series mean",
+      "note": "Preliminary tests show '*' instead of a number.",
+      "printed_symbol": "% Dev.",
+      "quantity_kind": "percentage",
+      "role": "derived_ratio",
+      "symbols": [
+        "pct_deviation_from_mean",
+        "pct_dev_from_mean"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE39_STDTESTDEAN26GA",
+        "MBMA_9410_TABLE43_SIMTESTDEANCONC"
+      ],
+      "unit": "%"
+    },
+    {
+      "availability": "direct",
+      "definition": "Observed failure mode and remarks for each test (pullover, pullout, panel buckling, eccentric loading marked '*').",
+      "evidence": "Comments columns of Tables 3-1 to 3-7 and 4-1/4-2; failure_mode and comments_as_printed in Table S1",
+      "name": "Failure mode and test comments",
+      "note": "Multi-line printed comments were joined into one string.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "comments",
+        "failure_mode",
+        "comments_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE31_STDTESTPASCOE24GA",
+        "MBMA_9410_TABLE33_STDTESTPASCOE26GA",
+        "MBMA_9410_TABLE35_STDTESTAMERICAN24GA",
+        "MBMA_9410_TABLE37_STDTESTAMERICAN26GA",
+        "MBMA_9410_TABLE41_SIMTESTPASCOECONC",
+        "MBMA_9410_TABLE42_SIMTESTAMERICANCONC",
+        "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Screw arrangement in the simulated component tests: F = one screw in the centre of each outer valley, C = two screws in the centre valley.",
+      "evidence": "Tables 4-1, 4-2 and 4-8, pp. 43-55 (header notes define F and C)",
+      "name": "Screw arrangement",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "spacing"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE41_SIMTESTPASCOECONC",
+        "MBMA_9410_TABLE42_SIMTESTAMERICANCONC",
+        "MBMA_9410_TABLE48_FIXEDENDCONCLOADTEST"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Simulated or clear span length of the panel between supports in the component and vacuum-box tests.",
+      "evidence": "Tables 4-1, 4-2, 4-4 to 4-8 (inches, pp. 43-55); Table S1 (feet, pp. 99-111)",
+      "name": "Panel span length",
+      "note": "Reported in inches for component tests and in feet for the vacuum-box system tests; Test 20/21 prints '21 & 17'.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "span_in",
+        "span_length_in",
+        "span_ft"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE41_SIMTESTPASCOECONC",
+        "MBMA_9410_TABLE42_SIMTESTAMERICANCONC",
+        "MBMA_9410_TABLE44_ECCTESTPASCOECOND1",
+        "MBMA_9410_TABLE45_ECCTESTAMERICANCOND1",
+        "MBMA_9410_TABLE46_ECCTESTPASCOECOND2",
+        "MBMA_9410_TABLE47_ECCTESTAMERICANCOND2",
+        "MBMA_9410_TABLE48_FIXEDENDCONCLOADTEST",
+        "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in. / ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Total load applied to the two fasteners of the simulated component specimen at failure (also the applied load at each strain-gage reading).",
+      "evidence": "Tables 4-1, 4-2 (tl_load_lbs, pp. 43-44), Table 4-3 (total_load_lbs, p. 45), Tables 4-4/4-5 (total_load_lbs, pp. 47-49), Table 4-10 (t_load_lbs, p. 65)",
+      "name": "Total load on two fasteners at failure",
+      "note": "Tests 20/21 of Table 4-2 print approximate values ('Apx. 1500').",
+      "printed_symbol": "TL Load",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "tl_load_lbs",
+        "total_load_lbs",
+        "t_load_lbs"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE41_SIMTESTPASCOECONC",
+        "MBMA_9410_TABLE42_SIMTESTAMERICANCONC",
+        "MBMA_9410_TABLE43_SIMTESTDEANCONC",
+        "MBMA_9410_TABLE44_ECCTESTPASCOECOND1",
+        "MBMA_9410_TABLE45_ECCTESTAMERICANCOND1",
+        "MBMA_9410_TABLE410_STRAINGAGETESTDATA"
+      ],
+      "unit": "lbs"
+    },
+    {
+      "availability": "direct",
+      "definition": "Load carried per screw at failure, obtained by dividing the total specimen load by two.",
+      "evidence": "Tables 4-1, 4-2 (ld_per_scw_lbs, pp. 43-44); Table 4-3 (load_per_screw_lbs, p. 45)",
+      "name": "Load per screw at failure",
+      "note": "",
+      "printed_symbol": "Ld. per Scw.",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "ld_per_scw_lbs",
+        "load_per_screw_lbs"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE41_SIMTESTPASCOECONC",
+        "MBMA_9410_TABLE42_SIMTESTAMERICANCONC",
+        "MBMA_9410_TABLE43_SIMTESTDEANCONC"
+      ],
+      "unit": "lbs"
+    },
+    {
+      "availability": "direct",
+      "definition": "Offset of the screws from the panel centre line in eccentric loading condition 1.",
+      "evidence": "Tables 4-4 and 4-5, pp. 47-49",
+      "name": "Screw offset from panel centre line",
+      "note": "Eccentric condition 1 is illustrated in Figure 4-3.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "spacing_from_cl_in"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE44_ECCTESTPASCOECOND1",
+        "MBMA_9410_TABLE45_ECCTESTAMERICANCOND1"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Actual distance from the fastener to the fixed boundary when the panel supports were offset (eccentric condition 2).",
+      "evidence": "Tables 4-6 and 4-7, pp. 51-53",
+      "name": "Fastener-to-fixed-boundary distance",
+      "note": "Eccentric condition 2 is illustrated in Figure 4-4.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "actual_distance_in"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE46_ECCTESTPASCOECOND2",
+        "MBMA_9410_TABLE47_ECCTESTAMERICANCOND2"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Peak load recorded at each of the two instrumented fasteners (larger and smaller value of the pair) in the eccentric and fixed-end component tests, in the system-test summaries and in Table 7-2.",
+      "evidence": "Tables 4-6, 4-7, 4-8 (pp. 51-55); Table 7-2 p. 174; Table S1 fastener_peak_loads_lb pp. 99-111",
+      "name": "Fastener peak load",
+      "note": "An asterisk marks the fastener that failed; Table 7-2 entries carry a loading-type code (e, e*, c).",
+      "printed_symbol": "Peak Load MAX / MIN",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "peak_load_max_lbs",
+        "peak_load_min_lbs",
+        "fastener_peak_loads_lb",
+        "pascoe_24ga",
+        "pascoe_26ga",
+        "american_24ga",
+        "american_26ga"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE46_ECCTESTPASCOECOND2",
+        "MBMA_9410_TABLE47_ECCTESTAMERICANCOND2",
+        "MBMA_9410_TABLE48_FIXEDENDCONCLOADTEST",
+        "MBMA_9410_TABLE72_AVGSYSTEMTESTCAPACITIES",
+        "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "lbs"
+    },
+    {
+      "availability": "direct",
+      "definition": "Deflection measured at the left and right fastener in the earlier Dean-steel component tests.",
+      "evidence": "Table 4-3, p. 45",
+      "name": "Deflection at fastener",
+      "note": "Underlining identifying the failed fastener could not be captured.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "measured_output",
+      "symbols": [
+        "defl_left_fastener_in",
+        "defl_right_fastener_in"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE43_SIMTESTDEANCONC"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Rate at which load was applied in the earlier Dean-steel component tests.",
+      "evidence": "Table 4-3, p. 45",
+      "name": "Rate of load application",
+      "note": "Test 10 (84.5 lbs/sec) is an order of magnitude above the others.",
+      "printed_symbol": "",
+      "quantity_kind": "flow",
+      "role": "test_condition",
+      "symbols": [
+        "load_rate_lbs_per_sec"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE43_SIMTESTDEANCONC"
+      ],
+      "unit": "lbs/sec"
+    },
+    {
+      "availability": "direct",
+      "definition": "In-plane strain recorded by each of twelve strain gages on a 24 gage Pascoe panel as load was applied to pullover.",
+      "evidence": "Table 4-10, p. 65; gage layout in Figure 4-19",
+      "name": "Panel strain gage reading",
+      "note": "From the seventh row on only eleven values are printed; the missing gage is unconfirmed.",
+      "printed_symbol": "me",
+      "quantity_kind": "ratio",
+      "role": "measured_output",
+      "symbols": [
+        "sg_1_microstrain",
+        "sg_2_microstrain",
+        "sg_3_microstrain",
+        "sg_4_microstrain",
+        "sg_5_microstrain",
+        "sg_6_microstrain",
+        "sg_7_microstrain",
+        "sg_8_microstrain",
+        "sg_9_microstrain",
+        "sg_10_microstrain",
+        "sg_11_microstrain",
+        "sg_12_microstrain"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE410_STRAINGAGETESTDATA"
+      ],
+      "unit": "microstrain"
+    },
+    {
+      "availability": "direct",
+      "definition": "Load applied to each purpose-built aluminium load cell during calibration.",
+      "evidence": "Table 4-9, p. 59",
+      "name": "Load cell calibration load",
+      "note": "Thirteen load levels printed although 'No. of Observations = 25'.",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "test_condition",
+      "symbols": [
+        "load_lbs"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE49_LOADCELLREGRESSION"
+      ],
+      "unit": "lbs"
+    },
+    {
+      "availability": "direct",
+      "definition": "Millivolt output of each of the eight 2024-T4 aluminium load cells at each calibration load.",
+      "evidence": "Table 4-9, p. 59",
+      "name": "Load cell millivolt output",
+      "note": "Cell 001 reading at 1000 lb breaks the monotonic trend; column alignment of the regression block is uncertain.",
+      "printed_symbol": "",
+      "quantity_kind": "ratio",
+      "role": "measured_output",
+      "symbols": [
+        "cell_001_mv",
+        "cell_002_mv",
+        "cell_003_mv",
+        "cell_004_mv",
+        "cell_005_mv",
+        "cell_006_mv",
+        "cell_007_mv",
+        "cell_008_mv"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE49_LOADCELLREGRESSION"
+      ],
+      "unit": "mV"
+    },
+    {
+      "availability": "direct",
+      "definition": "Linear regression output for each load cell calibration (constant, standard error of Y estimate, R squared, number of observations, degrees of freedom, X coefficient and standard error of coefficient), printed as the last seven rows of the calibration table.",
+      "evidence": "Table 4-9 regression block, p. 59",
+      "name": "Load cell calibration regression stats",
+      "note": "Only seven sets of values are printed for eight cells; the omitted cell appears to be Cell 005.",
+      "printed_symbol": "",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "load_lbs",
+        "cell_001_mv",
+        "cell_002_mv",
+        "cell_003_mv",
+        "cell_004_mv",
+        "cell_005_mv",
+        "cell_006_mv",
+        "cell_007_mv"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE49_LOADCELLREGRESSION"
+      ],
+      "unit": "mixed"
+    },
+    {
+      "availability": "direct",
+      "definition": "Calendar date and clock time of each data scan in the vacuum-box time histories.",
+      "evidence": "Tables 4-12 to 4-23, pp. 87-98",
+      "name": "Scan date and time",
+      "note": "Rows are sampled roughly every 2 s although logging was at 0.25 s intervals.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "date",
+        "time_hhmmss"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE412_VACUUMBOXTEST2",
+        "MBMA_9410_TABLE413_VACUUMBOXTEST3",
+        "MBMA_9410_TABLE414_VACUUMBOXTEST4",
+        "MBMA_9410_TABLE415_VACUUMBOXTEST5",
+        "MBMA_9410_TABLE416_VACUUMBOXTEST6",
+        "MBMA_9410_TABLE417_VACUUMBOXTEST7",
+        "MBMA_9410_TABLE418_VACUUMBOXTEST8",
+        "MBMA_9410_TABLE419_VACUUMBOXTEST9",
+        "MBMA_9410_TABLE420_VACUUMBOXTEST10",
+        "MBMA_9410_TABLE421_VACUUMBOXTEST11",
+        "MBMA_9410_TABLE422_VACUUMBOXTEST12",
+        "MBMA_9410_TABLE423_VACUUMBOXTEST13"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Panel displacement measured by LVDT 1 and LVDT 2 during the vacuum-box tests, both as a time history and as the value at each fastener failure.",
+      "evidence": "Tables 4-12 to 4-23 (lvdt1_in, lvdt2_in, pp. 87-98); Table S1 peak_lvdt columns, pp. 99-111",
+      "name": "Panel displacement (LVDT)",
+      "note": "Some values print 'NA' in the summary blocks.",
+      "printed_symbol": "LVDT 1 / LVDT 2",
+      "quantity_kind": "length",
+      "role": "measured_output",
+      "symbols": [
+        "lvdt1_in",
+        "lvdt2_in",
+        "peak_lvdt1_in",
+        "peak_lvdt2_in"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE412_VACUUMBOXTEST2",
+        "MBMA_9410_TABLE413_VACUUMBOXTEST3",
+        "MBMA_9410_TABLE414_VACUUMBOXTEST4",
+        "MBMA_9410_TABLE415_VACUUMBOXTEST5",
+        "MBMA_9410_TABLE416_VACUUMBOXTEST6",
+        "MBMA_9410_TABLE417_VACUUMBOXTEST7",
+        "MBMA_9410_TABLE418_VACUUMBOXTEST8",
+        "MBMA_9410_TABLE419_VACUUMBOXTEST9",
+        "MBMA_9410_TABLE420_VACUUMBOXTEST10",
+        "MBMA_9410_TABLE421_VACUUMBOXTEST11",
+        "MBMA_9410_TABLE422_VACUUMBOXTEST12",
+        "MBMA_9410_TABLE423_VACUUMBOXTEST13",
+        "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Negative chamber pressure recorded by the pressure transducer at each scan of the vacuum-box tests.",
+      "evidence": "Tables 4-12 to 4-23, pp. 87-98",
+      "name": "Chamber pressure time history",
+      "note": "Several cells were extracted with a space in place of the decimal point.",
+      "printed_symbol": "P.T.",
+      "quantity_kind": "stress",
+      "role": "measured_output",
+      "symbols": [
+        "pt_psi"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE412_VACUUMBOXTEST2",
+        "MBMA_9410_TABLE413_VACUUMBOXTEST3",
+        "MBMA_9410_TABLE414_VACUUMBOXTEST4",
+        "MBMA_9410_TABLE415_VACUUMBOXTEST5",
+        "MBMA_9410_TABLE416_VACUUMBOXTEST6",
+        "MBMA_9410_TABLE417_VACUUMBOXTEST7",
+        "MBMA_9410_TABLE418_VACUUMBOXTEST8",
+        "MBMA_9410_TABLE419_VACUUMBOXTEST9",
+        "MBMA_9410_TABLE420_VACUUMBOXTEST10",
+        "MBMA_9410_TABLE421_VACUUMBOXTEST11",
+        "MBMA_9410_TABLE422_VACUUMBOXTEST12",
+        "MBMA_9410_TABLE423_VACUUMBOXTEST13"
+      ],
+      "unit": "psi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Individual fastener load recorded by each aluminium load cell at each scan of the vacuum-box tests.",
+      "evidence": "Tables 4-12 to 4-23, pp. 87-98",
+      "name": "Fastener load from load cell",
+      "note": "Load cells 5 and 8 were lost/locked in several tests and print large negative values.",
+      "printed_symbol": "LCELL",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "lcell3_lb",
+        "lcell4_lb",
+        "lcell5_lb",
+        "lcell6_lb",
+        "lcell7_lb",
+        "lcell8_lb",
+        "lcell1_lb"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE412_VACUUMBOXTEST2",
+        "MBMA_9410_TABLE413_VACUUMBOXTEST3",
+        "MBMA_9410_TABLE414_VACUUMBOXTEST4",
+        "MBMA_9410_TABLE415_VACUUMBOXTEST5",
+        "MBMA_9410_TABLE416_VACUUMBOXTEST6",
+        "MBMA_9410_TABLE417_VACUUMBOXTEST7",
+        "MBMA_9410_TABLE418_VACUUMBOXTEST8",
+        "MBMA_9410_TABLE419_VACUUMBOXTEST9",
+        "MBMA_9410_TABLE420_VACUUMBOXTEST10",
+        "MBMA_9410_TABLE421_VACUUMBOXTEST11",
+        "MBMA_9410_TABLE422_VACUUMBOXTEST12",
+        "MBMA_9410_TABLE423_VACUUMBOXTEST13"
+      ],
+      "unit": "lbs"
+    },
+    {
+      "availability": "direct",
+      "definition": "Governing (largest printed) negative chamber pressure in the summary block of each vacuum-box test, taken as the system uplift capacity, together with the pressure at each listed fastener failure.",
+      "evidence": "Table S1 failure_load_as_printed and peak_pressures_psi, pp. 99-111",
+      "name": "Peak chamber pressure at failure",
+      "note": "Peak values must be taken from the summary block, not from the sampled time-history rows.",
+      "printed_symbol": "Peak Pressure",
+      "quantity_kind": "stress",
+      "role": "measured_output",
+      "symbols": [
+        "failure_load_as_printed",
+        "peak_pressures_psi"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "psi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Load-cell numbers at which a fastener failure (pullover or pullout) was recorded in each vacuum-box test.",
+      "evidence": "Table S1 failed_load_cells, pp. 99-111",
+      "name": "Failed load cell numbers",
+      "note": "Tests 8-10 print the first failed cell as '3#'.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "failed_load_cells"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Elapsed duration of each vacuum-box test as printed in the summary block (mm:ss).",
+      "evidence": "Table S1 elapsed_time_min_sec, pp. 99-111",
+      "name": "Elapsed test duration",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "elapsed_time_min_sec"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "mm:ss"
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of spans in the vacuum-box test assembly (one or two).",
+      "evidence": "Table S1 n_spans, pp. 99-111",
+      "name": "Number of spans",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_spans"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of purlin support lines in the vacuum-box assembly, where stated.",
+      "evidence": "Table S1 n_purlin_lines, pp. 99-111",
+      "name": "Number of purlin lines",
+      "note": "Stated only for Test 2.",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_purlin_lines"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Panel-to-purlin attachment type for the roof system tested (through-fastened).",
+      "evidence": "Table S1 panel_type, pp. 99-111",
+      "name": "Panel attachment type",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "panel_type"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Direction of the applied load on the roof system (uplift produced by chamber vacuum) and the bracing provided to supports and panels.",
+      "evidence": "Table S1 load_direction and bracing columns, pp. 99-111",
+      "name": "Load direction and bracing",
+      "note": "Bracing stated only for some tests.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "load_direction",
+        "bracing"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Flat half-width of the rib top measured from the rib centreline on the dimensioned panel rib profile.",
+      "evidence": "Figures 7-6 and 7-7, p. 196",
+      "name": "Rib top half width",
+      "note": "Read from the dimensioned figure.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "rib_top_half_width_in"
+      ],
+      "table_tags": [
+        "MBMA_9410_FIG7_6_7_7_PANELRIBPROFILE"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Horizontal projection of the sloping rib web on the dimensioned panel rib profile.",
+      "evidence": "Figures 7-6 and 7-7, p. 196",
+      "name": "Rib web horizontal projection",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "web_horizontal_projection_in"
+      ],
+      "table_tags": [
+        "MBMA_9410_FIG7_6_7_7_PANELRIBPROFILE"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Vertical height of the panel rib from valley to rib top.",
+      "evidence": "Figures 7-6 and 7-7, p. 196",
+      "name": "Rib height",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "rib_height_in"
+      ],
+      "table_tags": [
+        "MBMA_9410_FIG7_6_7_7_PANELRIBPROFILE"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Length of the sloping rib web measured along the web.",
+      "evidence": "Figures 7-6 and 7-7, p. 196",
+      "name": "Rib web slant length",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "web_slant_length_in"
+      ],
+      "table_tags": [
+        "MBMA_9410_FIG7_6_7_7_PANELRIBPROFILE"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Horizontal reference length measured from the rib centreline used as l_o in the transverse strain calculation.",
+      "evidence": "Figures 7-6 and 7-7 (arrow labelled 6), p. 196",
+      "name": "Transverse reference length l_o",
+      "note": "",
+      "printed_symbol": "l_o",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "l_o_in"
+      ],
+      "table_tags": [
+        "MBMA_9410_FIG7_6_7_7_PANELRIBPROFILE"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Maximum transverse extension available from flattening the rib, taken as web slant length minus web horizontal projection.",
+      "evidence": "Figures 7-6 and 7-7, p. 196",
+      "name": "Maximum rib flattening delta_max",
+      "note": "",
+      "printed_symbol": "delta_max",
+      "quantity_kind": "length",
+      "role": "derived_ratio",
+      "symbols": [
+        "delta_max_in"
+      ],
+      "table_tags": [
+        "MBMA_9410_FIG7_6_7_7_PANELRIBPROFILE"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Transverse membrane strain of the panel at the knee and at the ultimate point of the bilinear transverse stress-strain model (delta_max / l_o at ultimate); also appears as input in the design spreadsheets.",
+      "evidence": "Figures 7-6/7-7 p. 196 (boxed values); Data Input rows of Tables 7-7 to 7-14 and the note to Table 7-12",
+      "name": "Transverse strain eps_beta",
+      "note": "Table 7-12 uses dummy values (9999, 8888) to model a free edge.",
+      "printed_symbol": "εβ",
+      "quantity_kind": "ratio",
+      "role": "material_property",
+      "symbols": [
+        "eps_beta_u",
+        "eps_beta_knee",
+        "value"
+      ],
+      "table_tags": [
+        "MBMA_9410_FIG7_6_7_7_PANELRIBPROFILE",
+        "MBMA_9410_TABLE77_COMPCALCPASCOE24GA",
+        "MBMA_9410_TABLE78_COMPCALCPASCOE26GA",
+        "MBMA_9410_TABLE79_COMPCALCAMERICAN24GA",
+        "MBMA_9410_TABLE710_COMPCALCAMERICAN26GA",
+        "MBMA_9410_TABLE711_SYSCALCPASCOE24GA",
+        "MBMA_9410_TABLE712_SYSCALCPASCOE26GA",
+        "MBMA_9410_TABLE713_SYSCALCAMERICAN24GA",
+        "MBMA_9410_TABLE714_SYSCALCAMERICAN26GA"
+      ],
+      "unit": "in./in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Transverse membrane stress of the panel at the knee and at the ultimate strain of the bilinear transverse model, and the transverse stress values used in the design spreadsheets.",
+      "evidence": "Figures 7-6/7-7 p. 196 (axis labels, two comma-separated values each); notes to Tables 7-12 and 7-14",
+      "name": "Transverse stress F_beta",
+      "note": "The figures do not say which of the two printed values belongs to which gage; Table 7-14 prints 97.4 ksi where Table 7-10 uses 10.5 ksi.",
+      "printed_symbol": "Fβ",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "F_beta_knee_ksi_as_printed",
+        "F_beta_u_ksi_as_printed",
+        "value"
+      ],
+      "table_tags": [
+        "MBMA_9410_FIG7_6_7_7_PANELRIBPROFILE",
+        "MBMA_9410_TABLE77_COMPCALCPASCOE24GA",
+        "MBMA_9410_TABLE78_COMPCALCPASCOE26GA",
+        "MBMA_9410_TABLE79_COMPCALCAMERICAN24GA",
+        "MBMA_9410_TABLE710_COMPCALCAMERICAN26GA",
+        "MBMA_9410_TABLE711_SYSCALCPASCOE24GA",
+        "MBMA_9410_TABLE712_SYSCALCPASCOE26GA",
+        "MBMA_9410_TABLE713_SYSCALCAMERICAN24GA",
+        "MBMA_9410_TABLE714_SYSCALCAMERICAN26GA"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Average load capacity of a self-drilling screw from the simulated component tests, tabulated by loading condition (concentric, eccentric condition 1, eccentric condition 2, fixed-end concentric) and used as the measured component strength in the theory comparison.",
+      "evidence": "Table 7-1 p. 174; component_test_pullover_strength_lb in Table 7-5 p. 175",
+      "name": "Average component test fastener capacity",
+      "note": "Dean 26 ga has a value only for the concentric column; the fixed-end and eccentric-1 values were judged unsuitable for the reduction factor.",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "concentric_lbs",
+        "eccentric_cond1_lbs",
+        "eccentric_cond2_lbs",
+        "fixed_end_concentric_lbs",
+        "component_test_pullover_strength_lb"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE71_AVGCOMPTESTCAPACITIES",
+        "MBMA_9410_TABLE75_COMPVSTHEORETICAL"
+      ],
+      "unit": "lbs"
+    },
+    {
+      "availability": "direct",
+      "definition": "Mean fastener pullover strength measured in the vacuum-box system tests for each panel type (average of the peak loads of Table 7-2).",
+      "evidence": "Table 7-6 p. 175; averages rows of Table 7-2 p. 174",
+      "name": "Mean system test pullover strength",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "system_test_pullover_strength_lb"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE76_SYSTEMVSTHEORETICAL",
+        "MBMA_9410_TABLE72_AVGSYSTEMTESTCAPACITIES"
+      ],
+      "unit": "lbs"
+    },
+    {
+      "availability": "direct",
+      "definition": "Mean pullover strength measured in the standard (uniaxial concentric) AISI test for each panel type, used as the reference strength in the comparisons.",
+      "evidence": "Table 7-4, p. 175",
+      "name": "Mean standard test pullover strength",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "standard_test_pullover_strength_lb"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE74_STDVSTHEORETICAL"
+      ],
+      "unit": "lbs"
+    },
+    {
+      "availability": "direct",
+      "definition": "Reduction factor to be applied to the Standard Pullover Test / AISI Equation E4.4.2.1 strength, derived from the component and from the system test capacities.",
+      "evidence": "Table 7-3, p. 175",
+      "name": "Pullover strength reduction factor",
+      "note": "The lowest system-test factor (0.235) is the recommended value.",
+      "printed_symbol": "",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "component_tests",
+        "system_tests"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE73_REDUCTIONFACTORS"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "simulated",
+      "definition": "Pullover strength predicted by the derived Chapter 5 biaxial membrane theory, reported in pounds in the comparison tables and as Pnov in kips in the Step 7 row of the design spreadsheets.",
+      "evidence": "Tables 7-4, 7-5, 7-6 p. 175; Step 7 rows and header notes of Tables 7-7 to 7-14, pp. 184-191",
+      "name": "Predicted pullover strength Pnov",
+      "note": "Pnov values range from 0.234779 to 1.009245 kips; the 24 ga American component case differs from test by 79.7%.",
+      "printed_symbol": "Pnov",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "theoretical_pullover_strength_lb",
+        "value"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE74_STDVSTHEORETICAL",
+        "MBMA_9410_TABLE75_COMPVSTHEORETICAL",
+        "MBMA_9410_TABLE76_SYSTEMVSTHEORETICAL",
+        "MBMA_9410_TABLE77_COMPCALCPASCOE24GA",
+        "MBMA_9410_TABLE78_COMPCALCPASCOE26GA",
+        "MBMA_9410_TABLE79_COMPCALCAMERICAN24GA",
+        "MBMA_9410_TABLE710_COMPCALCAMERICAN26GA",
+        "MBMA_9410_TABLE711_SYSCALCPASCOE24GA",
+        "MBMA_9410_TABLE712_SYSCALCPASCOE26GA",
+        "MBMA_9410_TABLE713_SYSCALCAMERICAN24GA",
+        "MBMA_9410_TABLE714_SYSCALCAMERICAN26GA"
+      ],
+      "unit": "lbs / kips"
+    },
+    {
+      "availability": "direct",
+      "definition": "Percent difference between the measured pullover strength and the theoretical prediction.",
+      "evidence": "Tables 7-4, 7-5 and 7-6, p. 175",
+      "name": "Percent error of prediction",
+      "note": "Two American grade E component cases show 79.741% and 45.109%.",
+      "printed_symbol": "",
+      "quantity_kind": "percentage",
+      "role": "derived_ratio",
+      "symbols": [
+        "percent_error"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE74_STDVSTHEORETICAL",
+        "MBMA_9410_TABLE75_COMPVSTHEORETICAL",
+        "MBMA_9410_TABLE76_SYSTEMVSTHEORETICAL"
+      ],
+      "unit": "%"
+    },
+    {
+      "availability": "direct",
+      "definition": "Name of each printed spreadsheet parameter and the calculation block (Data Input, Step 1 ... Step 7) it belongs to in the design-procedure sheets.",
+      "evidence": "Tables 7-7 to 7-14, pp. 184-191",
+      "name": "Design calculation parameter label",
+      "note": "Greek symbols are written out; Λ is the printed symbol for the deflection Δ.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "parameter",
+        "block",
+        "unit"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE77_COMPCALCPASCOE24GA",
+        "MBMA_9410_TABLE78_COMPCALCPASCOE26GA",
+        "MBMA_9410_TABLE79_COMPCALCAMERICAN24GA",
+        "MBMA_9410_TABLE710_COMPCALCAMERICAN26GA",
+        "MBMA_9410_TABLE711_SYSCALCPASCOE24GA",
+        "MBMA_9410_TABLE712_SYSCALCPASCOE26GA",
+        "MBMA_9410_TABLE713_SYSCALCAMERICAN24GA",
+        "MBMA_9410_TABLE714_SYSCALCAMERICAN26GA"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Longitudinal (along-rib) distance from the fastener to the panel boundary, maximum and minimum, entered as Lαmax and Lαmin in the design spreadsheets.",
+      "evidence": "Data Input rows of Tables 7-7 to 7-14, pp. 184-191",
+      "name": "Longitudinal distance L_alpha",
+      "note": "Values are 6.5-24.6 in. depending on the test modelled.",
+      "printed_symbol": "Lαmax, Lαmin",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "value"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE77_COMPCALCPASCOE24GA",
+        "MBMA_9410_TABLE78_COMPCALCPASCOE26GA",
+        "MBMA_9410_TABLE79_COMPCALCAMERICAN24GA",
+        "MBMA_9410_TABLE710_COMPCALCAMERICAN26GA",
+        "MBMA_9410_TABLE711_SYSCALCPASCOE24GA",
+        "MBMA_9410_TABLE712_SYSCALCPASCOE26GA",
+        "MBMA_9410_TABLE713_SYSCALCAMERICAN24GA",
+        "MBMA_9410_TABLE714_SYSCALCAMERICAN26GA"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Transverse (across-rib) distance from the fastener to the panel boundary, maximum and minimum, entered as Lβmax and Lβmin in the design spreadsheets.",
+      "evidence": "Data Input rows of Tables 7-7 to 7-14, pp. 184-191",
+      "name": "Transverse distance L_beta",
+      "note": "",
+      "printed_symbol": "Lβmax, Lβmin",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "value"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE77_COMPCALCPASCOE24GA",
+        "MBMA_9410_TABLE78_COMPCALCPASCOE26GA",
+        "MBMA_9410_TABLE79_COMPCALCAMERICAN24GA",
+        "MBMA_9410_TABLE710_COMPCALCAMERICAN26GA",
+        "MBMA_9410_TABLE711_SYSCALCPASCOE24GA",
+        "MBMA_9410_TABLE712_SYSCALCPASCOE26GA",
+        "MBMA_9410_TABLE713_SYSCALCAMERICAN24GA",
+        "MBMA_9410_TABLE714_SYSCALCAMERICAN26GA"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Washer-to-hole geometry ratio (dw+dh)/(dw-dh) evaluated in Step 6 of the design spreadsheets from the screw washer diameter dw and the panel hole diameter dh.",
+      "evidence": "Step 6 rows of Tables 7-7 to 7-14; note to Table 7-10, p. 187",
+      "name": "Washer/hole diameter ratio",
+      "note": "Table 7-10 prints the ratio as (dw+dh)/(dα-dh), apparently a typographical error.",
+      "printed_symbol": "(dw+dh)/(dw-dh)",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "value"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE77_COMPCALCPASCOE24GA",
+        "MBMA_9410_TABLE78_COMPCALCPASCOE26GA",
+        "MBMA_9410_TABLE79_COMPCALCAMERICAN24GA",
+        "MBMA_9410_TABLE710_COMPCALCAMERICAN26GA",
+        "MBMA_9410_TABLE711_SYSCALCPASCOE24GA",
+        "MBMA_9410_TABLE712_SYSCALCPASCOE26GA",
+        "MBMA_9410_TABLE713_SYSCALCAMERICAN24GA",
+        "MBMA_9410_TABLE714_SYSCALCAMERICAN26GA"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Transverse deflection term Λβ (printed Λ for Δ) computed in the design spreadsheets, e.g. Λβminu = 172000 in for the free-edge model.",
+      "evidence": "Design-procedure rows of Tables 7-7 to 7-14; note to Table 7-12, p. 189",
+      "name": "Transverse deflection Lambda_beta",
+      "note": "Free-edge case uses a dummy very large value.",
+      "printed_symbol": "Λβ",
+      "quantity_kind": "length",
+      "role": "predicted_value",
+      "symbols": [
+        "value"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE77_COMPCALCPASCOE24GA",
+        "MBMA_9410_TABLE78_COMPCALCPASCOE26GA",
+        "MBMA_9410_TABLE79_COMPCALCAMERICAN24GA",
+        "MBMA_9410_TABLE710_COMPCALCAMERICAN26GA",
+        "MBMA_9410_TABLE711_SYSCALCPASCOE24GA",
+        "MBMA_9410_TABLE712_SYSCALCPASCOE26GA",
+        "MBMA_9410_TABLE713_SYSCALCAMERICAN24GA",
+        "MBMA_9410_TABLE714_SYSCALCAMERICAN26GA"
+      ],
+      "unit": "in"
+    },
+    {
+      "availability": "direct",
+      "definition": "Elastic and plastic transverse moduli (Eeβ, Epβ) of the bilinear transverse stress-strain model used in the design spreadsheets.",
+      "evidence": "Design-procedure rows of Tables 7-7 to 7-14; note to Table 7-12 (Eeβmin = 0.000743 ksi, Epβmin = 0.053465 ksi), p. 189",
+      "name": "Transverse moduli Ee_beta and Ep_beta",
+      "note": "Free-edge case uses near-zero dummy moduli.",
+      "printed_symbol": "Eeβ, Epβ",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "value"
+      ],
+      "table_tags": [
+        "MBMA_9410_TABLE77_COMPCALCPASCOE24GA",
+        "MBMA_9410_TABLE78_COMPCALCPASCOE26GA",
+        "MBMA_9410_TABLE79_COMPCALCAMERICAN24GA",
+        "MBMA_9410_TABLE710_COMPCALCAMERICAN26GA",
+        "MBMA_9410_TABLE711_SYSCALCPASCOE24GA",
+        "MBMA_9410_TABLE712_SYSCALCPASCOE26GA",
+        "MBMA_9410_TABLE713_SYSCALCAMERICAN24GA",
+        "MBMA_9410_TABLE714_SYSCALCAMERICAN26GA"
+      ],
+      "unit": "ksi"
+    }
+  ],
+  "year": "1996"
+}

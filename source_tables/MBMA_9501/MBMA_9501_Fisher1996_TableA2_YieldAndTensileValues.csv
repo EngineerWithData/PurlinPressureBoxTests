@@ -1,0 +1,45 @@
+# Source: MBMA_9501 | Fisher, J.M. (1996), Table A2, pp.17
+# Tag: MBMA_9501_TABLEA2_YIELDANDTENSILEVALUES
+# Content: Measured yield strength, tensile strength and percent elongation of the steel in each failed test member.
+# Data basis: measured: tension coupon tests on the failed members
+# Units: fy_ksi and fu_ksi in ksi; elongation in percent
+# Column definitions:
+#   test_no = test identifier corresponding to Table 1
+#   fy_ksi = measured yield strength of the member steel, ksi
+#   fu_ksi = measured tensile strength of the member steel, ksi
+#   elongation_percent = measured percent elongation of the coupon, percent
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 47 pages)
+# FAILED MEMBER NOTE: the Appendix 1 dimensions and material data are for the failed member of each two-purlin assembly only (p.4: 'for each of the failed members'). Whether the second purlin was identical is not reported; do not assume it (open question MBMA_9501-Q05).
+# NAME NOTE (review 2026-11-10, Cris Moen): s1_test_id is a join key added for aggregation; it holds the test name as spelled in the TableS1 strength summary. The printed test name in the first column is unchanged. Appendix A prints the insulated tests without the 'I' suffix (3, 4, 21-25); Table 1 and the strength summary print them as 3I, 4I, 21I-25I.
+test_no,fy_ksi,fu_ksi,elongation_percent,s1_test_id
+1,58.7,77.7,26.8,1
+2,59.0,78.6,33.0,2
+3,59.1,78.2,29.1,3I
+4,58.8,77.8,26.7,4I
+5,59.6,81.7,26.7,5
+6,61.1,82.9,25.8,6
+7,63.4,81.7,22.4,7
+8,58.0,78.2,22.9,8
+9,62.5,84.0,25.0,9
+10,60.9,85.0,28.2,10
+11,55.9,76.0,30.1,11
+12,61.9,83.4,28.3,12
+13,62.1,82.8,25.9,13
+14,60.9,80.6,28.5,14
+15,59.2,79.2,24.8,15
+16,62.4,75.6,27.0,16
+17,61.0,81.8,28.6,17
+18,62.1,81.4,25.6,18
+19,56.7,81.9,26.2,19
+20,58.0,80.0,23.0,20
+21,48.5,80.4,23.7,21I
+22,58.7,79.8,20.3,22I
+23,59.6,80.5,24.6,23I
+24,58.6,81.3,23.0,24I
+25,60.7,80.6,20.2,25I
+26,59.5,76.8,19.8,26
+27,49.5,76.0,22.0,27
+28,51.8,75.7,20.6,28
+29,55.9,75.6,19.1,29

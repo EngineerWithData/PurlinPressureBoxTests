@@ -1,0 +1,29 @@
+# Source: MBMA_8903 | Brooks, S. and Murray, T.M. (1989), Table 3.2, pp.23
+# Tag: MBMA_8903_TABLE32_RAFTERBRACEDTESTRESULTS
+# Content: Measured failure loads and observed failure modes of the single span base tests and three span confirming tests with bracing at the rafters only.
+# Data basis: measured: vacuum chamber loading with U-tube manometer, loaded to failure
+# Units: failure_load_plf in plf; other columns are labels
+# Column definitions:
+#   test_designation = test set label, printed only on the first row of each pair
+#   no_of_spans = number of spans in the test, one (base test) or three (confirming test)
+#   failure_load_plf = measured failure load per purlin line, pounds per linear foot
+#   failure_mode = observed mode of failure (see notes for abbreviations)
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 120 pages)
+# ANOMALY FLAG: The test designation is printed only once for each pair of rows (single span and three span); the blank second cell is preserved verbatim as an empty string and NOT filled in.
+# LB = Local buckling of lip, flange, web.
+# LM = Failure of cross-section after considerable lateral movement.
+test_designation,no_of_spans,failure_load_plf,failure_mode
+Z-R-R/S,one,136.5,LM
+,three,152.9,LM
+Z-R-R/F,one,64.5,LM
+,three,107.1,LM
+Z-R-P/S,one,80.0,LM
+,three,128.2,LM
+Z-R-P/F,one,60.48,LM
+,three,102.5,LM
+C-R-P/S,one,119.0,LB
+,three,217.0,LB
+Z-R-R/F (0),one,87.0,LB
+,three,158.0,LB

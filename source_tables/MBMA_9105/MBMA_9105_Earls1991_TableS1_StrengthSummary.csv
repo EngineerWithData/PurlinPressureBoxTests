@@ -1,0 +1,45 @@
+# Source: MBMA_9105 | Earls, C.J., Pugh, A.D., and Murray, T.M. (1991), Table S1, pp.10, 12, 17, 26, 35
+# Tag: MBMA_9105_TABLES1_STRENGTHSUMMARY
+# Content: Measured ultimate uplift capacities of three, two-purlin-line, three-span continuous, through-fastened, unbraced C-purlin supported roof systems tested to failure in a vacuum chamber, with reduced lap lengths (1.66d to 2.18d) at interior supports.
+# Data basis: measured: failure loads from the largest vacuum recorded in each full-scale vacuum-chamber uplift test and tributary width per purlin line; moments computed from the measured failure load as Mu = 0.08 wu L^2; Fy from coupon tests; Se computed from measured cross-section dimensions
+# Units: see column headers
+# Column definitions:
+#   test_id = test designation as printed in the report
+#   load_direction = direction of applied loading (uplift or gravity)
+#   section_type = purlin cross-section shape
+#   depth_in = nominal purlin web depth, in.
+#   thickness_in = nominal purlin thickness, in.
+#   span_ft = individual span length, ft
+#   n_spans = number of continuous spans in the test assembly
+#   n_purlin_lines = number of parallel purlin lines in the assembly
+#   panel_type = roof panel attachment type and gage
+#   bracing = lateral bracing condition of the purlin compression (bottom) flange
+#   failure_load_as_printed = failure (maximum) uniform uplift load per purlin line as printed
+#   failure_load_unit = unit of the failure load exactly as printed
+#   failure_moment_as_printed = failure moment computed from the failure load as printed, Mu = 0.08 wu L^2
+#   failure_moment_unit = unit of the failure moment exactly as printed
+#   failure_mode = observed mode that terminated the test, as printed
+#   value_source = where in the report the failure value is stated
+#   pages = PDF page number(s) where the values are stated
+#   mu_over_mth = ratio of experimental failure moment to theoretical constrained-bending moment (equals reduction factor R)
+#   measured_fy_ksi = measured coupon yield stress, ksi
+#   avg_se_in3 = average effective section modulus of the six purlins, in.^3
+#   mth_kip_in = theoretical through-fastened constrained bending capacity, (Avg. Se)Fy, kip-in.
+#   lap_length_in = lap length each side of interior support, in.
+#   lap_length_over_depth = ratio of lap length to purlin depth
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 19 cells checked (AI, 2026-11-04): 19 correct, 0 errors, 1 unreadable; P(accuracy ≥ 0.8) = 98.8%, ≥ 0.9) = 87.8%, ≥ 0.95) = 64.2%
+# TEXT SOURCE: read from page images by the model (cached transcription)
+# ANOMALY FLAG: Report body text states tests C1, C2, C3 correspond to 20 ft., 23 ft. 6 in. and 30 ft. spans, but Section 2.2 first writes "corresponding to 20 ft., 23 ft. 6 in. and 30 ft. spans" while Table 2.1 lists span 23.5 ft for C2; Table 3.1 is printed as "Table 3.1  Summary of Test" (title truncated, listed as "Summary of Test Results" in the List of Tables).
+# Load direction is uplift (wind suction) applied by evacuating air above the roof panels; loads are net applied vacuum loads and do not include dead load.
+# Purlin lines spaced 5 ft on center; failure load wu is the uniform load per purlin line based on the tributary area (5 ft tributary width).
+# Failure moment computed by the report as Mu = 0.08 wu L^2 (Eq. 3.1), consistent with the previous research (Laboube et al. 1988).
+# Mu/Mth corresponds to the AISI reduction factor R for continuous span C-sections (current AISI value R = 0.60).
+# Purlins were unbraced (no discrete lateral braces); compression (bottom) flange laterally unbraced, tension flange attached to through-fastened deck.
+# Test C1 panels were 26 gage; during the initial run panels pulled over the screws in an end bay, so panels were replaced and a second layer was added over the entire assembly before the reported failure load was obtained. Test C2 used two layers of 26 gage panels. Test C3 used 24 gage panels with no pull-over failure.
+# Nominal depth and thickness are taken from Table 2.1; measured per-bay thicknesses are given in Appendices A, B and C (e.g. C1 measured 0.105-0.107 in., coupon thickness 0.107 in.).
+# Failure modes are stated in the appendix test summary sheets (pages 17, 26, 35): C1 and C2 local buckling of purlins, C3 excessive lateral deflection of all purlins in the end bays.
+test_id,load_direction,section_type,depth_in,thickness_in,span_ft,n_spans,n_purlin_lines,panel_type,bracing,failure_load_as_printed,failure_load_unit,failure_moment_as_printed,failure_moment_unit,failure_mode,value_source,pages,mu_over_mth,measured_fy_ksi,avg_se_in3,mth_kip_in,lap_length_in,lap_length_over_depth
+C1,uplift,C,7,0.110,20,3,2,"through-fastened, 26 gage (two layers)",unbraced,327.6,plf,125.8,kip-in,Local Buckle,table 3.1; failure mode from text (Appendix A),"12, 17",0.719,58.9,2.97,174.9,11 5/8,1.66
+C2,uplift,C,8 1/2,0.090,23.5,3,2,"through-fastened, 26 gage (two layers)",unbraced,296.4,plf,157.1,kip-in,Local Buckle,table 3.1; failure mode from text (Appendix B),"12, 26",0.753,63.0,3.31,208.5,14 3/4,1.73
+C3,uplift,C,9,0.100,30,3,2,"through-fastened, 24 gage",unbraced,161.9,plf,139.9,kip-in,Excessive Lateral Deflection,table 3.1; failure mode from text (Appendix C),"12, 35",0.568,64.8,3.80,246.2,19 11/16,2.18

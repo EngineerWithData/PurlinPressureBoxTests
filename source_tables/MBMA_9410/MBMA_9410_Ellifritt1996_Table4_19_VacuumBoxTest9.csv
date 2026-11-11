@@ -1,0 +1,56 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 4-19, pp.94
+# Tag: MBMA_9410_TABLE419_VACUUMBOXTEST9
+# Content: Time history of panel displacements, chamber pressure and individual fastener loads for vacuum box test 9 (two span system, 26 gage American panels).
+# Data basis: measured: pressure transducer, LVDTs and six load cells logged during the vacuum box test
+# Units: pt_psi in psi; LVDTs in inches; load cells in pounds
+# Column definitions:
+#   date = calendar date of the scan, mm/dd/yy
+#   time_hhmmss = clock time of the scan
+#   lvdt1_in = displacement measured by LVDT 1, inches
+#   lvdt2_in = displacement measured by LVDT 2, inches
+#   pt_psi = chamber pressure from the pressure transducer, psi
+#   lcell3_lb = load on the fastener at load cell 3, pounds
+#   lcell4_lb = load on the fastener at load cell 4, pounds
+#   lcell5_lb = load on the fastener at load cell 5, pounds
+#   lcell6_lb = load on the fastener at load cell 6, pounds
+#   lcell7_lb = load on the fastener at load cell 7, pounds
+#   lcell8_lb = load on the fastener at load cell 8, pounds
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: Load cell 8 reads large negative values throughout (lost channel) and load cell 5 reads near zero (malfunctioned), as stated in the printed comments; preserved verbatim. The rows timed 13:21:56.699 and 13:21:57.000 contain identical readings; preserved as printed. The printed summary lists the first failed cell as "3#" and gives "NA" for cell #5 peak values.
+# Printed summary: Test Number 9; Failed Cells 3#, #4, #5, #6, #7, all Pullover; Peak Loads 658.380 / 528.730 / NA / 363.796 / 569.037; Peak Pressures 1.287/1.205/NA/1.151/1.287; Peak LVDT 1 and 2 NA; Elapsed Time 00:55; Size 26 Ga.; Type American.
+# Printed comments: Fair test. Minor panel buckling. Major leaks and no LVDT's used. No pullout failure. Lost Load Cell #8. Load Cell #5 malfunctioned.
+date,time_hhmmss,lvdt1_in,lvdt2_in,pt_psi,lcell3_lb,lcell4_lb,lcell5_lb,lcell6_lb,lcell7_lb,lcell8_lb
+12/07/95,13:21:02.699,7.439,6.361,0.006,40.211,118.303,5.188,57.509,151.331,-5377.965
+12/07/95,13:21:04.699,7.537,6.288,0.008,40.100,118.368,5.244,57.449,151.352,-5233.173
+12/07/95,13:21:06.699,7.562,6.307,0.008,40.395,118.431,5.305,57.417,151.415,-5815.867
+12/07/95,13:21:08.699,7.487,6.310,0.009,40.260,118.436,5.242,57.393,151.436,-4919.734
+12/07/95,13:21:10.699,7.580,6.428,0.005,40.067,118.410,5.217,57.367,151.457,-5606.967
+12/07/95,13:21:12.699,7.465,6.112,0.011,40.260,118.488,5.202,57.007,151.163,-3937.753
+12/07/95,13:21:14.699,7.546,6.329,0.066,49.014,129.632,4.013,42.479,136.673,-5871.055
+12/07/95,13:21:16.699,7.611,6.453,0.255,95.271,182.348,3.809,58.997,158.450,-7548.450
+12/07/95,13:21:18.699,7.681,6.626,0.391,129.849,243.463,3.842,103.801,200.156,-5878.510
+12/07/95,13:21:20.699,7.565,6.597,0.574,165.733,349.854,3.941,188.131,278.528,-5989.510
+12/07/95,13:21:22.699,7.475,6.480,0.691,185.857,397.912,4.063,218.103,335.291,-5787.438
+12/07/95,13:21:24.699,7.465,6.427,0.823,210.421,458.198,3.699,267.573,400.664,-5737.133
+12/07/95,13:21:26.699,7.500,6.417,0.907,224.707,498.210,3.424,302.761,441.509,-5626.482
+12/07/95,13:21:28.699,7.585,6.483,0.995,244.365,539.936,2.842,344.395,485.945,-5670.000
+12/07/95,13:21:30.699,7.580,6.495,1.052,254.423,570.815,2.896,370.941,518.075,-5601.345
+12/07/95,13:21:32.699,7.485,6.255,1.118,265.980,602.973,2.758,401.839,556.988,-5005.830
+12/07/95,13:21:34.699,7.487,6.216,1.157,274.603,622.733,2.552,421.305,581.894,-5549.073
+12/07/95,13:21:36.699,7.524,6.345,1.210,286.223,647.033,2.455,318.383,523.472,-5826.407
+12/07/95,13:21:38.699,7.618,6.501,1.068,537.257,33.438,-11.824,348.205,559.319,-6041.014
+12/07/95,13:21:40.699,7.554,6.279,1.142,589.979,33.379,-5.074,392.735,596.867,-5601.452
+12/07/95,13:21:42.699,7.656,6.442,1.176,615.428,34.078,-6.241,409.347,618.140,-6311.003
+12/07/95,13:21:44.699,7.556,6.312,1.225,649.842,34.927,-8.051,411.593,656.381,-5489.529
+12/07/95,13:21:46.699,7.643,6.431,1.245,671.192,36.291,-13.453,391.505,692.333,-5746.605
+12/07/95,13:21:48.699,7.603,6.452,1.273,688.662,36.372,-12.358,396.349,708.272,-5927.868
+12/07/95,13:21:50.699,7.470,6.355,1.292,698.592,36.583,-13.201,399.461,720.368,-5775.439
+12/07/95,13:21:52.699,7.643,6.429,0.921,529.733,40.753,-43.396,-61.041,-14.611,-5272.598
+12/07/95,13:21:54.699,7.663,6.583,1.002,570.309,40.655,-30.652,-57.149,-14.128,-6593.517
+12/07/95,13:21:56.699,7.626,6.483,1.079,609.081,40.079,-26.061,-52.643,-14.044,-3014.320
+12/07/95,13:21:57.000,7.626,6.483,1.079,609.081,40.079,-26.061,-52.643,-14.044,-3014.320
+12/07/95,13:21:59.000,7.676,6.515,0.787,419.229,39.672,-24.264,-50.341,-14.044,-6549.153
+12/07/95,13:22:01.000,7.604,6.395,0.464,202.910,41.260,-30.831,-55.541,-13.561,-5737.131
+12/07/95,13:22:03.000,7.622,6.592,0.287,116.248,40.374,-27.186,-53.153,-13.666,-6176.674

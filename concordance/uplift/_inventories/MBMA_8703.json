@@ -1,0 +1,1327 @@
+{
+  "citation": "MBMA (1987)",
+  "code_tag": "MBMA_8703",
+  "experiment": "Nineteen full-scale three-span continuous lapped Z- and C-purlin roof assemblies, with the tension flange through-fastened to steel roof panels and the compression flange laterally unbraced, were loaded to failure by air pressure (uplift) in a vacuum chamber, and the measured failure loads, member dimensions, sweeps and deflections were compared with draft AISI C3.1.3 and proposed MBMA predictions.",
+  "title": "Full-Scale Uplift Tests of Continuous Lapped Z- and C-Purlin Roof Systems (Report 8703)",
+  "variables": [
+    {
+      "availability": "direct",
+      "definition": "Label of the uplift test (1-12, 6A-6C, 10R, Ceco tests), used to join every table in the report.",
+      "evidence": "Table B p.11; Tables C-1..C-16; Tables D-I pp.28-33; Table S1 p.11",
+      "name": "Test identification",
+      "note": "Table D prints 'Ceco n' while Table S1 uses 'Ceco #n'; s1_test_id is an added join key.",
+      "printed_symbol": "Test No.",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "test_no",
+        "test_id",
+        "s1_test_id"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+        "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD",
+        "MBMA_8703_TABLEE_MBMAPROPOSALEXHIBITE",
+        "MBMA_8703_TABLEF_COMPARISONSUMMARYEXHIBITF",
+        "MBMA_8703_TABLEG_DEFLECTIONCOMPARISONEXHG",
+        "MBMA_8703_TABLEH_KTESTVSCALCEXHIBITH",
+        "MBMA_8703_TABLEI_CATENARYCHECKEXHIBITI",
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Purlin cross-section type, printed as Zee or Cee.",
+      "evidence": "Table B p.11; Table S1 p.11",
+      "name": "Cross-section type",
+      "note": "",
+      "printed_symbol": "Section",
+      "quantity_kind": "category",
+      "role": "specimen_parameter",
+      "symbols": [
+        "section",
+        "section_type"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal web depth of the purlin as designated (e.g. 9 1/2, 8 1/2, 7, 6 1/2 in.).",
+      "evidence": "Table B p.11; Table S1 p.11",
+      "name": "Nominal purlin depth",
+      "note": "",
+      "printed_symbol": "Depth",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "depth_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Web depth of each purlin measured at the member end(s) on the purlin-data sheets.",
+      "evidence": "Tables C-1 to C-16, pp.12-27",
+      "name": "Measured purlin depth",
+      "note": "Some sheets report depth at both ends (depth_end1_in / depth_end2_in).",
+      "printed_symbol": "Depth",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "depth_in",
+        "depth_end1_in",
+        "depth_end2_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEC1_PURLINDATATEST1",
+        "MBMA_8703_TABLEC2_PURLINDATATEST2",
+        "MBMA_8703_TABLEC3_PURLINDATATEST3",
+        "MBMA_8703_TABLEC4_PURLINDATATEST4",
+        "MBMA_8703_TABLEC5_PURLINDATATEST5",
+        "MBMA_8703_TABLEC6_PURLINDATATEST6",
+        "MBMA_8703_TABLEC7_PURLINDATATEST6A",
+        "MBMA_8703_TABLEC8_PURLINDATATEST6B",
+        "MBMA_8703_TABLEC9_PURLINDATATEST6C",
+        "MBMA_8703_TABLEC10_PURLINDATATEST7",
+        "MBMA_8703_TABLEC11_PURLINDATATEST8",
+        "MBMA_8703_TABLEC12_PURLINDATATEST9",
+        "MBMA_8703_TABLEC13_PURLINDATATEST10R",
+        "MBMA_8703_TABLEC14_PURLINDATATEST11",
+        "MBMA_8703_TABLEC15_PURLINDATATEST12",
+        "MBMA_8703_TABLEC16_PURLINDATACECOTEST5A"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Nominal flange width of the purlin section as designated.",
+      "evidence": "Table B p.11; Table S1 p.11",
+      "name": "Nominal flange width",
+      "note": "",
+      "printed_symbol": "Flange",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "flange_in",
+        "flange_width_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Width of the top (panel-attached) flange measured at mid-span of each purlin.",
+      "evidence": "Tables C-1 to C-16, pp.12-27",
+      "name": "Measured top flange width",
+      "note": "",
+      "printed_symbol": "Flange Width Top",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "flange_width_top_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEC1_PURLINDATATEST1",
+        "MBMA_8703_TABLEC2_PURLINDATATEST2",
+        "MBMA_8703_TABLEC3_PURLINDATATEST3",
+        "MBMA_8703_TABLEC4_PURLINDATATEST4",
+        "MBMA_8703_TABLEC5_PURLINDATATEST5",
+        "MBMA_8703_TABLEC6_PURLINDATATEST6",
+        "MBMA_8703_TABLEC7_PURLINDATATEST6A",
+        "MBMA_8703_TABLEC8_PURLINDATATEST6B",
+        "MBMA_8703_TABLEC9_PURLINDATATEST6C",
+        "MBMA_8703_TABLEC10_PURLINDATATEST7",
+        "MBMA_8703_TABLEC11_PURLINDATATEST8",
+        "MBMA_8703_TABLEC12_PURLINDATATEST9",
+        "MBMA_8703_TABLEC13_PURLINDATATEST10R",
+        "MBMA_8703_TABLEC14_PURLINDATATEST11",
+        "MBMA_8703_TABLEC15_PURLINDATATEST12",
+        "MBMA_8703_TABLEC16_PURLINDATACECOTEST5A"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Width of the bottom (support-attached) flange measured at mid-span of each purlin.",
+      "evidence": "Tables C-1 to C-16, pp.12-27",
+      "name": "Measured bottom flange width",
+      "note": "",
+      "printed_symbol": "Flange Width Bot.",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "flange_width_bot_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEC1_PURLINDATATEST1",
+        "MBMA_8703_TABLEC2_PURLINDATATEST2",
+        "MBMA_8703_TABLEC3_PURLINDATATEST3",
+        "MBMA_8703_TABLEC4_PURLINDATATEST4",
+        "MBMA_8703_TABLEC5_PURLINDATATEST5",
+        "MBMA_8703_TABLEC6_PURLINDATATEST6",
+        "MBMA_8703_TABLEC7_PURLINDATATEST6A",
+        "MBMA_8703_TABLEC8_PURLINDATATEST6B",
+        "MBMA_8703_TABLEC9_PURLINDATATEST6C",
+        "MBMA_8703_TABLEC10_PURLINDATATEST7",
+        "MBMA_8703_TABLEC11_PURLINDATATEST8",
+        "MBMA_8703_TABLEC12_PURLINDATATEST9",
+        "MBMA_8703_TABLEC13_PURLINDATATEST10R",
+        "MBMA_8703_TABLEC14_PURLINDATATEST11",
+        "MBMA_8703_TABLEC15_PURLINDATATEST12",
+        "MBMA_8703_TABLEC16_PURLINDATACECOTEST5A"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Length of the stiffening lip on the top flange measured at mid-span.",
+      "evidence": "Tables C-1 to C-16, pp.12-27",
+      "name": "Top flange lip length",
+      "note": "",
+      "printed_symbol": "Lip Length Top",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "lip_length_top_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEC1_PURLINDATATEST1",
+        "MBMA_8703_TABLEC2_PURLINDATATEST2",
+        "MBMA_8703_TABLEC3_PURLINDATATEST3",
+        "MBMA_8703_TABLEC4_PURLINDATATEST4",
+        "MBMA_8703_TABLEC5_PURLINDATATEST5",
+        "MBMA_8703_TABLEC6_PURLINDATATEST6",
+        "MBMA_8703_TABLEC7_PURLINDATATEST6A",
+        "MBMA_8703_TABLEC8_PURLINDATATEST6B",
+        "MBMA_8703_TABLEC9_PURLINDATATEST6C",
+        "MBMA_8703_TABLEC10_PURLINDATATEST7",
+        "MBMA_8703_TABLEC11_PURLINDATATEST8",
+        "MBMA_8703_TABLEC12_PURLINDATATEST9",
+        "MBMA_8703_TABLEC13_PURLINDATATEST10R",
+        "MBMA_8703_TABLEC14_PURLINDATATEST11",
+        "MBMA_8703_TABLEC15_PURLINDATATEST12",
+        "MBMA_8703_TABLEC16_PURLINDATACECOTEST5A"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Length of the stiffening lip on the bottom flange measured at mid-span.",
+      "evidence": "Tables C-1 to C-16, pp.12-27",
+      "name": "Bottom flange lip length",
+      "note": "",
+      "printed_symbol": "Lip Length Bot.",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "lip_length_bot_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEC1_PURLINDATATEST1",
+        "MBMA_8703_TABLEC2_PURLINDATATEST2",
+        "MBMA_8703_TABLEC3_PURLINDATATEST3",
+        "MBMA_8703_TABLEC4_PURLINDATATEST4",
+        "MBMA_8703_TABLEC5_PURLINDATATEST5",
+        "MBMA_8703_TABLEC6_PURLINDATATEST6",
+        "MBMA_8703_TABLEC7_PURLINDATATEST6A",
+        "MBMA_8703_TABLEC8_PURLINDATATEST6B",
+        "MBMA_8703_TABLEC9_PURLINDATATEST6C",
+        "MBMA_8703_TABLEC10_PURLINDATATEST7",
+        "MBMA_8703_TABLEC11_PURLINDATATEST8",
+        "MBMA_8703_TABLEC12_PURLINDATATEST9",
+        "MBMA_8703_TABLEC13_PURLINDATATEST10R",
+        "MBMA_8703_TABLEC14_PURLINDATATEST11",
+        "MBMA_8703_TABLEC15_PURLINDATATEST12",
+        "MBMA_8703_TABLEC16_PURLINDATACECOTEST5A"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Angle between the top flange and its stiffening lip, measured in degrees.",
+      "evidence": "Tables C-1 to C-16, pp.12-27",
+      "name": "Top lip angle",
+      "note": "For Tests 1-5 the note says lip angles vary 40-50 deg and cannot be measured accurately.",
+      "printed_symbol": "Lip Angle Top",
+      "quantity_kind": "angle",
+      "role": "specimen_parameter",
+      "symbols": [
+        "lip_angle_top_deg"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEC1_PURLINDATATEST1",
+        "MBMA_8703_TABLEC2_PURLINDATATEST2",
+        "MBMA_8703_TABLEC3_PURLINDATATEST3",
+        "MBMA_8703_TABLEC4_PURLINDATATEST4",
+        "MBMA_8703_TABLEC5_PURLINDATATEST5",
+        "MBMA_8703_TABLEC6_PURLINDATATEST6",
+        "MBMA_8703_TABLEC7_PURLINDATATEST6A",
+        "MBMA_8703_TABLEC8_PURLINDATATEST6B",
+        "MBMA_8703_TABLEC9_PURLINDATATEST6C",
+        "MBMA_8703_TABLEC10_PURLINDATATEST7",
+        "MBMA_8703_TABLEC11_PURLINDATATEST8",
+        "MBMA_8703_TABLEC12_PURLINDATATEST9",
+        "MBMA_8703_TABLEC13_PURLINDATATEST10R",
+        "MBMA_8703_TABLEC14_PURLINDATATEST11",
+        "MBMA_8703_TABLEC15_PURLINDATATEST12",
+        "MBMA_8703_TABLEC16_PURLINDATACECOTEST5A"
+      ],
+      "unit": "degrees"
+    },
+    {
+      "availability": "direct",
+      "definition": "Angle between the bottom flange and its stiffening lip, measured in degrees.",
+      "evidence": "Tables C-1 to C-16, pp.12-27",
+      "name": "Bottom lip angle",
+      "note": "",
+      "printed_symbol": "Lip Angle Bot.",
+      "quantity_kind": "angle",
+      "role": "specimen_parameter",
+      "symbols": [
+        "lip_angle_bot_deg"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEC1_PURLINDATATEST1",
+        "MBMA_8703_TABLEC2_PURLINDATATEST2",
+        "MBMA_8703_TABLEC3_PURLINDATATEST3",
+        "MBMA_8703_TABLEC4_PURLINDATATEST4",
+        "MBMA_8703_TABLEC5_PURLINDATATEST5",
+        "MBMA_8703_TABLEC6_PURLINDATATEST6",
+        "MBMA_8703_TABLEC7_PURLINDATATEST6A",
+        "MBMA_8703_TABLEC8_PURLINDATATEST6B",
+        "MBMA_8703_TABLEC9_PURLINDATATEST6C",
+        "MBMA_8703_TABLEC10_PURLINDATATEST7",
+        "MBMA_8703_TABLEC11_PURLINDATATEST8",
+        "MBMA_8703_TABLEC12_PURLINDATATEST9",
+        "MBMA_8703_TABLEC13_PURLINDATATEST10R",
+        "MBMA_8703_TABLEC14_PURLINDATATEST11",
+        "MBMA_8703_TABLEC15_PURLINDATATEST12",
+        "MBMA_8703_TABLEC16_PURLINDATACECOTEST5A"
+      ],
+      "unit": "degrees"
+    },
+    {
+      "availability": "direct",
+      "definition": "Inside corner radius at the junction of the web and the top flange.",
+      "evidence": "Tables C-1 to C-16, pp.12-27",
+      "name": "Top web/flange corner radius",
+      "note": "",
+      "printed_symbol": "R Web Top",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "r_web_top_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEC1_PURLINDATATEST1",
+        "MBMA_8703_TABLEC2_PURLINDATATEST2",
+        "MBMA_8703_TABLEC3_PURLINDATATEST3",
+        "MBMA_8703_TABLEC4_PURLINDATATEST4",
+        "MBMA_8703_TABLEC5_PURLINDATATEST5",
+        "MBMA_8703_TABLEC6_PURLINDATATEST6",
+        "MBMA_8703_TABLEC7_PURLINDATATEST6A",
+        "MBMA_8703_TABLEC8_PURLINDATATEST6B",
+        "MBMA_8703_TABLEC9_PURLINDATATEST6C",
+        "MBMA_8703_TABLEC10_PURLINDATATEST7",
+        "MBMA_8703_TABLEC11_PURLINDATATEST8",
+        "MBMA_8703_TABLEC12_PURLINDATATEST9",
+        "MBMA_8703_TABLEC13_PURLINDATATEST10R",
+        "MBMA_8703_TABLEC14_PURLINDATATEST11",
+        "MBMA_8703_TABLEC15_PURLINDATATEST12",
+        "MBMA_8703_TABLEC16_PURLINDATACECOTEST5A"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Inside corner radius between the top flange and its stiffening lip.",
+      "evidence": "Tables C-1 to C-16, pp.12-27",
+      "name": "Top flange/lip corner radius",
+      "note": "",
+      "printed_symbol": "R Lip Top",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "r_lip_top_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEC1_PURLINDATATEST1",
+        "MBMA_8703_TABLEC2_PURLINDATATEST2",
+        "MBMA_8703_TABLEC3_PURLINDATATEST3",
+        "MBMA_8703_TABLEC4_PURLINDATATEST4",
+        "MBMA_8703_TABLEC5_PURLINDATATEST5",
+        "MBMA_8703_TABLEC6_PURLINDATATEST6",
+        "MBMA_8703_TABLEC7_PURLINDATATEST6A",
+        "MBMA_8703_TABLEC8_PURLINDATATEST6B",
+        "MBMA_8703_TABLEC9_PURLINDATATEST6C",
+        "MBMA_8703_TABLEC10_PURLINDATATEST7",
+        "MBMA_8703_TABLEC11_PURLINDATATEST8",
+        "MBMA_8703_TABLEC12_PURLINDATATEST9",
+        "MBMA_8703_TABLEC13_PURLINDATATEST10R",
+        "MBMA_8703_TABLEC14_PURLINDATATEST11",
+        "MBMA_8703_TABLEC15_PURLINDATATEST12",
+        "MBMA_8703_TABLEC16_PURLINDATACECOTEST5A"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Inside corner radius at the junction of the web and the bottom flange.",
+      "evidence": "Tables C-1 to C-16, pp.12-27",
+      "name": "Bottom web/flange corner radius",
+      "note": "",
+      "printed_symbol": "R Web Bot.",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "r_web_bot_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEC1_PURLINDATATEST1",
+        "MBMA_8703_TABLEC2_PURLINDATATEST2",
+        "MBMA_8703_TABLEC3_PURLINDATATEST3",
+        "MBMA_8703_TABLEC4_PURLINDATATEST4",
+        "MBMA_8703_TABLEC5_PURLINDATATEST5",
+        "MBMA_8703_TABLEC6_PURLINDATATEST6",
+        "MBMA_8703_TABLEC7_PURLINDATATEST6A",
+        "MBMA_8703_TABLEC8_PURLINDATATEST6B",
+        "MBMA_8703_TABLEC9_PURLINDATATEST6C",
+        "MBMA_8703_TABLEC10_PURLINDATATEST7",
+        "MBMA_8703_TABLEC11_PURLINDATATEST8",
+        "MBMA_8703_TABLEC12_PURLINDATATEST9",
+        "MBMA_8703_TABLEC13_PURLINDATATEST10R",
+        "MBMA_8703_TABLEC14_PURLINDATATEST11",
+        "MBMA_8703_TABLEC15_PURLINDATATEST12",
+        "MBMA_8703_TABLEC16_PURLINDATACECOTEST5A"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Inside corner radius between the bottom flange and its stiffening lip.",
+      "evidence": "Tables C-1 to C-16, pp.12-27",
+      "name": "Bottom flange/lip corner radius",
+      "note": "",
+      "printed_symbol": "R Lip Bot.",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "r_lip_bot_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEC1_PURLINDATATEST1",
+        "MBMA_8703_TABLEC2_PURLINDATATEST2",
+        "MBMA_8703_TABLEC3_PURLINDATATEST3",
+        "MBMA_8703_TABLEC4_PURLINDATATEST4",
+        "MBMA_8703_TABLEC5_PURLINDATATEST5",
+        "MBMA_8703_TABLEC6_PURLINDATATEST6",
+        "MBMA_8703_TABLEC7_PURLINDATATEST6A",
+        "MBMA_8703_TABLEC8_PURLINDATATEST6B",
+        "MBMA_8703_TABLEC9_PURLINDATATEST6C",
+        "MBMA_8703_TABLEC10_PURLINDATATEST7",
+        "MBMA_8703_TABLEC11_PURLINDATATEST8",
+        "MBMA_8703_TABLEC12_PURLINDATATEST9",
+        "MBMA_8703_TABLEC13_PURLINDATATEST10R",
+        "MBMA_8703_TABLEC14_PURLINDATATEST11",
+        "MBMA_8703_TABLEC15_PURLINDATATEST12",
+        "MBMA_8703_TABLEC16_PURLINDATACECOTEST5A"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Base-metal thickness measured with a micrometer on each purlin (Table B and S1 give the value for the member that failed).",
+      "evidence": "Table B p.11; Tables C-1 to C-16 pp.12-27; Table S1 p.11",
+      "name": "Base metal thickness",
+      "note": "Some purlin-data sheets give thickness at both ends (t_end1_in / t_end2_in).",
+      "printed_symbol": "t",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "t_in",
+        "thickness_in",
+        "t_end1_in",
+        "t_end2_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+        "MBMA_8703_TABLEC1_PURLINDATATEST1",
+        "MBMA_8703_TABLEC2_PURLINDATATEST2",
+        "MBMA_8703_TABLEC3_PURLINDATATEST3",
+        "MBMA_8703_TABLEC4_PURLINDATATEST4",
+        "MBMA_8703_TABLEC5_PURLINDATATEST5",
+        "MBMA_8703_TABLEC6_PURLINDATATEST6",
+        "MBMA_8703_TABLEC7_PURLINDATATEST6A",
+        "MBMA_8703_TABLEC8_PURLINDATATEST6B",
+        "MBMA_8703_TABLEC9_PURLINDATATEST6C",
+        "MBMA_8703_TABLEC10_PURLINDATATEST7",
+        "MBMA_8703_TABLEC11_PURLINDATATEST8",
+        "MBMA_8703_TABLEC12_PURLINDATATEST9",
+        "MBMA_8703_TABLEC13_PURLINDATATEST10R",
+        "MBMA_8703_TABLEC14_PURLINDATATEST11",
+        "MBMA_8703_TABLEC15_PURLINDATATEST12",
+        "MBMA_8703_TABLEC16_PURLINDATACECOTEST5A"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Yield stress of the steel from tension coupons cut from the failed member.",
+      "evidence": "Table B p.11; Table S1 p.11 (column present but blank on the C purlin-data sheets)",
+      "name": "Yield stress",
+      "note": "The fy_ksi column is left blank on all C purlin-data sheets.",
+      "printed_symbol": "Fy",
+      "quantity_kind": "stress",
+      "role": "material_property",
+      "symbols": [
+        "fy_ksi"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+        "MBMA_8703_TABLEC1_PURLINDATATEST1",
+        "MBMA_8703_TABLEC2_PURLINDATATEST2",
+        "MBMA_8703_TABLEC3_PURLINDATATEST3",
+        "MBMA_8703_TABLEC4_PURLINDATATEST4",
+        "MBMA_8703_TABLEC5_PURLINDATATEST5",
+        "MBMA_8703_TABLEC6_PURLINDATATEST6",
+        "MBMA_8703_TABLEC7_PURLINDATATEST6A",
+        "MBMA_8703_TABLEC8_PURLINDATATEST6B",
+        "MBMA_8703_TABLEC9_PURLINDATATEST6C",
+        "MBMA_8703_TABLEC10_PURLINDATATEST7",
+        "MBMA_8703_TABLEC11_PURLINDATATEST8",
+        "MBMA_8703_TABLEC12_PURLINDATATEST9",
+        "MBMA_8703_TABLEC13_PURLINDATATEST10R",
+        "MBMA_8703_TABLEC14_PURLINDATATEST11",
+        "MBMA_8703_TABLEC15_PURLINDATATEST12",
+        "MBMA_8703_TABLEC16_PURLINDATACECOTEST5A"
+      ],
+      "unit": "ksi"
+    },
+    {
+      "availability": "direct",
+      "definition": "Initial lateral out-of-straightness (sweep) measured on the member that failed, positive toward the bottom-flange lip and negative toward the web.",
+      "evidence": "Table B p.11; Table S1 p.11",
+      "name": "Initial sweep",
+      "note": "Used as ao in the AISI-4, -5 and -6 predictions.",
+      "printed_symbol": "ao",
+      "quantity_kind": "length",
+      "role": "specimen_parameter",
+      "symbols": [
+        "initial_sweep_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Length of the end bay of the three-span continuous run (Table I prints the same span in inches).",
+      "evidence": "Table B p.11; Table S1 p.11; Table I p.33",
+      "name": "End bay span",
+      "note": "Interior bay is 1'-0\" longer than the end bay in some tests; Table I column l_in is in inches.",
+      "printed_symbol": "B, L",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "span_ft",
+        "l_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY",
+        "MBMA_8703_TABLEI_CATENARYCHECKEXHIBITI"
+      ],
+      "unit": "ft (in. in Table I)"
+    },
+    {
+      "availability": "direct",
+      "definition": "Total lap length at the interior supports, measured lap bolt to lap bolt.",
+      "evidence": "Table B p.11; Table S1 p.11",
+      "name": "Total lap length",
+      "note": "Printed as feet-inches, e.g. 6-0.",
+      "printed_symbol": "Lap",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "lap_ft",
+        "total_lap_ft"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft-in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of continuous spans in the tested purlin run (three for all tests).",
+      "evidence": "Table S1 p.11",
+      "name": "Number of spans",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_spans"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Number of parallel purlin lines in the test assembly (two, flanges opposed).",
+      "evidence": "Table S1 p.11",
+      "name": "Number of purlin lines",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "count",
+      "role": "test_condition",
+      "symbols": [
+        "n_purlin_lines"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Description of the roof panel and its fastening (26 or 24 gauge galvanized panels, 1 1/4 in. ribs at 12 in. o.c., 12x14 self-drilling screws at 12 in. o.c.; double 26 gauge for Tests 10R and 11).",
+      "evidence": "Table S1 p.11 and its header note",
+      "name": "Panel / fastening system",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "panel_type"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Bracing condition: tension flange attached to panels, compression flange laterally unbraced, top flange torsionally restrained at supports by a wide-flange shape attached to the panels.",
+      "evidence": "Table S1 p.11 and its header notes",
+      "name": "Bracing condition",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "bracing"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Direction of the applied air-pressure loading (uplift for all tests).",
+      "evidence": "Table S1 p.11",
+      "name": "Load direction",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "test_condition",
+      "symbols": [
+        "load_direction"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "implied",
+      "definition": "Tributary width of 5.06 ft used with the chamber pressure (manometer reading x 10.4) to convert pressure to a uniform line load on each purlin, less the dead weight of the assembly.",
+      "evidence": "Header note to Table B p.11 and Table S1 p.11",
+      "name": "Tributary width per purlin",
+      "note": "Stated in a note, not a column.",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "test_condition",
+      "symbols": [
+        "tributary width 5.06 ft"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "ft"
+    },
+    {
+      "availability": "direct",
+      "definition": "Uniform uplift load per foot on one purlin at failure, computed from chamber pressure times the tributary width minus assembly dead weight.",
+      "evidence": "Table B p.11; Tables D, E, F pp.28-30; Table S1 p.11",
+      "name": "Measured failure load",
+      "note": "Test 12 printed as '135*' (panels failed, purlin did not); Test 9 printed as 240 in Table F but 241 elsewhere; Test 10 has no load.",
+      "printed_symbol": "Failure Load / Test",
+      "quantity_kind": "force",
+      "role": "measured_output",
+      "symbols": [
+        "failure_load_lb_ft",
+        "test_failure_load_lb_ft",
+        "test_actual_lb_ft",
+        "failure_load_as_printed"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEB_TESTPARAMETERSEXHIBITB",
+        "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD",
+        "MBMA_8703_TABLEE_MBMAPROPOSALEXHIBITE",
+        "MBMA_8703_TABLEF_COMPARISONSUMMARYEXHIBITF",
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": "lb./ft."
+    },
+    {
+      "availability": "direct",
+      "definition": "Observed failure mode of the assembly (yielding at the web/compression-flange juncture with web and flange buckling, local flange/lip buckling, or panel tearing).",
+      "evidence": "Table S1 p.11, taken from the narrative p.5",
+      "name": "Failure mode",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "measured_output",
+      "symbols": [
+        "failure_mode"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Purlin line and span designation (e.g. A3, B3) of the member in which failure occurred.",
+      "evidence": "Table S1 p.11, from the list on p.6",
+      "name": "Failed member designation",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "failed_member"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Designation A or B of the two parallel purlin lines on each purlin-data sheet.",
+      "evidence": "Tables C-1 to C-16, pp.12-27",
+      "name": "Purlin line",
+      "note": "",
+      "printed_symbol": "Line",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "line"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEC1_PURLINDATATEST1",
+        "MBMA_8703_TABLEC2_PURLINDATATEST2",
+        "MBMA_8703_TABLEC3_PURLINDATATEST3",
+        "MBMA_8703_TABLEC4_PURLINDATATEST4",
+        "MBMA_8703_TABLEC5_PURLINDATATEST5",
+        "MBMA_8703_TABLEC6_PURLINDATATEST6",
+        "MBMA_8703_TABLEC7_PURLINDATATEST6A",
+        "MBMA_8703_TABLEC8_PURLINDATATEST6B",
+        "MBMA_8703_TABLEC9_PURLINDATATEST6C",
+        "MBMA_8703_TABLEC10_PURLINDATATEST7",
+        "MBMA_8703_TABLEC11_PURLINDATATEST8",
+        "MBMA_8703_TABLEC12_PURLINDATATEST9",
+        "MBMA_8703_TABLEC13_PURLINDATATEST10R",
+        "MBMA_8703_TABLEC14_PURLINDATATEST11",
+        "MBMA_8703_TABLEC15_PURLINDATATEST12",
+        "MBMA_8703_TABLEC16_PURLINDATACECOTEST5A"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Position of the measured member within the three-span run, printed as 1/2, 2/3 or 3/4 (support-to-support location).",
+      "evidence": "Tables C-1 to C-16, pp.12-27",
+      "name": "Member location in run",
+      "note": "",
+      "printed_symbol": "Span",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "span"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEC1_PURLINDATATEST1",
+        "MBMA_8703_TABLEC2_PURLINDATATEST2",
+        "MBMA_8703_TABLEC3_PURLINDATATEST3",
+        "MBMA_8703_TABLEC4_PURLINDATATEST4",
+        "MBMA_8703_TABLEC5_PURLINDATATEST5",
+        "MBMA_8703_TABLEC6_PURLINDATATEST6",
+        "MBMA_8703_TABLEC7_PURLINDATATEST6A",
+        "MBMA_8703_TABLEC8_PURLINDATATEST6B",
+        "MBMA_8703_TABLEC9_PURLINDATATEST6C",
+        "MBMA_8703_TABLEC10_PURLINDATATEST7",
+        "MBMA_8703_TABLEC11_PURLINDATATEST8",
+        "MBMA_8703_TABLEC12_PURLINDATATEST9",
+        "MBMA_8703_TABLEC13_PURLINDATATEST10R",
+        "MBMA_8703_TABLEC14_PURLINDATATEST11",
+        "MBMA_8703_TABLEC15_PURLINDATATEST12",
+        "MBMA_8703_TABLEC16_PURLINDATACECOTEST5A"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Piece mark or description (e.g. P1004, C25EL, End Span) of the individual purlin measured.",
+      "evidence": "Tables C-1 to C-16, pp.12-27",
+      "name": "Specimen piece mark",
+      "note": "On the 6 1/2 in. zee sheets this column holds 'End Span' or 'Int. Span' instead of a mark.",
+      "printed_symbol": "Specimen No.",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "specimen_no"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEC1_PURLINDATATEST1",
+        "MBMA_8703_TABLEC2_PURLINDATATEST2",
+        "MBMA_8703_TABLEC3_PURLINDATATEST3",
+        "MBMA_8703_TABLEC4_PURLINDATATEST4",
+        "MBMA_8703_TABLEC5_PURLINDATATEST5",
+        "MBMA_8703_TABLEC6_PURLINDATATEST6",
+        "MBMA_8703_TABLEC7_PURLINDATATEST6A",
+        "MBMA_8703_TABLEC8_PURLINDATATEST6B",
+        "MBMA_8703_TABLEC9_PURLINDATATEST6C",
+        "MBMA_8703_TABLEC10_PURLINDATATEST7",
+        "MBMA_8703_TABLEC11_PURLINDATATEST8",
+        "MBMA_8703_TABLEC12_PURLINDATATEST9",
+        "MBMA_8703_TABLEC13_PURLINDATATEST10R",
+        "MBMA_8703_TABLEC14_PURLINDATATEST11",
+        "MBMA_8703_TABLEC15_PURLINDATATEST12",
+        "MBMA_8703_TABLEC16_PURLINDATACECOTEST5A"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "simulated",
+      "definition": "Failure load predicted by the 5/1/86 draft AISI Section C3.1.3 with n as drafted and ao = L/500.",
+      "evidence": "Table D p.28",
+      "name": "AISI-1 predicted load",
+      "note": "",
+      "printed_symbol": "AISI-1",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "aisi1_load_lb_ft"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD"
+      ],
+      "unit": "lb./ft."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured failure load divided by the AISI-1 predicted load.",
+      "evidence": "Table D p.28",
+      "name": "Test/AISI-1 ratio",
+      "note": "Mean and standard deviation rows are printed below each block.",
+      "printed_symbol": "Ratio",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "aisi1_ratio"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "simulated",
+      "definition": "Failure load predicted by the draft AISI C3.1.3 with n = 0.7 (zees only) and ao = L/500.",
+      "evidence": "Table D p.28",
+      "name": "AISI-2 predicted load",
+      "note": "Blank for the cee tests.",
+      "printed_symbol": "AISI-2",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "aisi2_load_lb_ft"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD"
+      ],
+      "unit": "lb./ft."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured failure load divided by the AISI-2 predicted load.",
+      "evidence": "Table D p.28",
+      "name": "Test/AISI-2 ratio",
+      "note": "Zees only.",
+      "printed_symbol": "Ratio",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "aisi2_ratio"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "simulated",
+      "definition": "Failure load predicted by the draft AISI C3.1.3 with n = 1.0 and ao = L/500.",
+      "evidence": "Table D p.28",
+      "name": "AISI-3 predicted load",
+      "note": "",
+      "printed_symbol": "AISI-3",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "aisi3_load_lb_ft"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD"
+      ],
+      "unit": "lb./ft."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured failure load divided by the AISI-3 predicted load.",
+      "evidence": "Table D p.28",
+      "name": "Test/AISI-3 ratio",
+      "note": "",
+      "printed_symbol": "Ratio",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "aisi3_ratio"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "simulated",
+      "definition": "Failure load predicted by the draft AISI C3.1.3 with n as drafted and ao equal to the actual measured sweep.",
+      "evidence": "Table D p.28",
+      "name": "AISI-4 predicted load",
+      "note": "",
+      "printed_symbol": "AISI-4",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "aisi4_load_lb_ft"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD"
+      ],
+      "unit": "lb./ft."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured failure load divided by the AISI-4 predicted load.",
+      "evidence": "Table D p.28",
+      "name": "Test/AISI-4 ratio",
+      "note": "",
+      "printed_symbol": "Ratio",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "aisi4_ratio"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "simulated",
+      "definition": "Failure load predicted by the draft AISI C3.1.3 with n = 0.7 (zees only) and ao equal to the actual measured sweep.",
+      "evidence": "Table D p.28",
+      "name": "AISI-5 predicted load",
+      "note": "Blank for the cee tests.",
+      "printed_symbol": "AISI-5",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "aisi5_load_lb_ft"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD"
+      ],
+      "unit": "lb./ft."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured failure load divided by the AISI-5 predicted load.",
+      "evidence": "Table D p.28",
+      "name": "Test/AISI-5 ratio",
+      "note": "Zees only.",
+      "printed_symbol": "Ratio",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "aisi5_ratio"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "simulated",
+      "definition": "Failure load predicted by the draft AISI C3.1.3 with n = 1.0 and ao equal to the actual measured sweep (also tabulated in Table F and as the calculated-K capacity in Table H).",
+      "evidence": "Table D p.28; Table F p.30; Table H p.32",
+      "name": "AISI-6 predicted load",
+      "note": "",
+      "printed_symbol": "AISI-6",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "aisi6_load_lb_ft",
+        "aisi_pred_lb_ft",
+        "cap_calc_k_lb_ft"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD",
+        "MBMA_8703_TABLEF_COMPARISONSUMMARYEXHIBITF",
+        "MBMA_8703_TABLEH_KTESTVSCALCEXHIBITH"
+      ],
+      "unit": "lb./ft."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured failure load divided by the AISI-6 predicted load.",
+      "evidence": "Table D p.28; Table F p.30; Table H p.32; Table S1 p.11",
+      "name": "Test/AISI-6 ratio",
+      "note": "",
+      "printed_symbol": "Ratio",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "aisi6_ratio",
+        "aisi_ratio",
+        "ratio_calc_k",
+        "ratio_test_over_aisi6"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLED_TESTVSAISIDRAFTEXHIBITD",
+        "MBMA_8703_TABLEF_COMPARISONSUMMARYEXHIBITF",
+        "MBMA_8703_TABLEH_KTESTVSCALCEXHIBITH",
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "simulated",
+      "definition": "Ultimate uniform load from the proposed MBMA formula w_ult = 0.729 Fy Se / B^2 for zees and 0.625 Fy Se / B^2 for cees (reduction factor R = 0.70 zees, 0.60 cees).",
+      "evidence": "Table E p.29; Table F p.30",
+      "name": "MBMA proposed ultimate load",
+      "note": "Se is the effective section modulus per 1986 AISI.",
+      "printed_symbol": "w ult",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "w_ult_formula_lb_ft",
+        "mbma_pred_lb_ft"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEE_MBMAPROPOSALEXHIBITE",
+        "MBMA_8703_TABLEF_COMPARISONSUMMARYEXHIBITF"
+      ],
+      "unit": "lb./ft."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured failure load divided by the MBMA proposed ultimate load.",
+      "evidence": "Table E p.29; Table F p.30; Table S1 p.11",
+      "name": "Test/MBMA ratio",
+      "note": "",
+      "printed_symbol": "Ratio",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "ratio",
+        "mbma_ratio",
+        "ratio_test_over_mbma"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEE_MBMAPROPOSALEXHIBITE",
+        "MBMA_8703_TABLEF_COMPARISONSUMMARYEXHIBITF",
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Rotational (torsional) restraint stiffness of the panel-to-purlin connection obtained from the companion 'F' tests.",
+      "evidence": "Table H p.32",
+      "name": "Tested rotational restraint K",
+      "note": "Zee tests only.",
+      "printed_symbol": "K (F test)",
+      "quantity_kind": "ratio",
+      "role": "material_property",
+      "symbols": [
+        "k_f_test_kip_in_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEH_KTESTVSCALCEXHIBITH"
+      ],
+      "unit": "kip/in./in."
+    },
+    {
+      "availability": "simulated",
+      "definition": "Rotational restraint stiffness computed from the draft formula K = [15.3(t-0.06)+1.73] x 10^-3.",
+      "evidence": "Table H p.32; header note to Table D p.28",
+      "name": "Calculated rotational restraint K",
+      "note": "",
+      "printed_symbol": "K calculated",
+      "quantity_kind": "ratio",
+      "role": "predicted_value",
+      "symbols": [
+        "k_calculated_kip_in_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEH_KTESTVSCALCEXHIBITH"
+      ],
+      "unit": "kip/in./in."
+    },
+    {
+      "availability": "simulated",
+      "definition": "Capacity computed from AISI-6 using the K measured in the 'F' test.",
+      "evidence": "Table H p.32",
+      "name": "Capacity using tested K",
+      "note": "Zee tests only.",
+      "printed_symbol": "Cap.",
+      "quantity_kind": "force",
+      "role": "predicted_value",
+      "symbols": [
+        "cap_test_k_lb_ft"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEH_KTESTVSCALCEXHIBITH"
+      ],
+      "unit": "lb./ft."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured failure load divided by the AISI-6 capacity computed with the tested K.",
+      "evidence": "Table H p.32",
+      "name": "Test/capacity ratio (tested K)",
+      "note": "",
+      "printed_symbol": "Ratio",
+      "quantity_kind": "ratio",
+      "role": "derived_ratio",
+      "symbols": [
+        "ratio_test_k"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEH_KTESTVSCALCEXHIBITH"
+      ],
+      "unit": ""
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured lateral movement of the compression flange plus the initial sweep (B + ao) of the failed end-bay member.",
+      "evidence": "Table G p.31; Table I p.33 (column d_h_in)",
+      "name": "Measured horizontal deflection",
+      "note": "Table I values differ slightly from Table G; Ceco 2 printed as '-' (not measured).",
+      "printed_symbol": "a (measured)",
+      "quantity_kind": "length",
+      "role": "measured_output",
+      "symbols": [
+        "measured_horiz_defl_in",
+        "d_h_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEG_DEFLECTIONCOMPARISONEXHG",
+        "MBMA_8703_TABLEI_CATENARYCHECKEXHIBITI"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "simulated",
+      "definition": "Horizontal deflection a from the AISI-6 parameters, adjusted to the load at which the last deflections were measured.",
+      "evidence": "Table G p.31",
+      "name": "Calculated horiz. defl. at test load",
+      "note": "",
+      "printed_symbol": "a (calc.)",
+      "quantity_kind": "length",
+      "role": "predicted_value",
+      "symbols": [
+        "calc_horiz_defl_at_load_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEG_DEFLECTIONCOMPARISONEXHG"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "simulated",
+      "definition": "Horizontal deflection a from AISI-6 evaluated at the calculated ultimate load qu.",
+      "evidence": "Table G p.31",
+      "name": "Calculated horiz. defl. at qu",
+      "note": "",
+      "printed_symbol": "a at qu",
+      "quantity_kind": "length",
+      "role": "predicted_value",
+      "symbols": [
+        "calc_horiz_defl_at_qu_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEG_DEFLECTIONCOMPARISONEXHG"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured vertical deflection of the failed end-bay member at the load of the last reading.",
+      "evidence": "Table G p.31; Table I p.33 (column d_v_in)",
+      "name": "Measured vertical deflection",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "measured_output",
+      "symbols": [
+        "measured_vert_defl_in",
+        "d_v_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEG_DEFLECTIONCOMPARISONEXHG",
+        "MBMA_8703_TABLEI_CATENARYCHECKEXHIBITI"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "simulated",
+      "definition": "Vertical deflection of the member computed from elastic continuous-beam analysis.",
+      "evidence": "Table G p.31",
+      "name": "Calculated vertical deflection",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "predicted_value",
+      "symbols": [
+        "calc_vert_defl_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEG_DEFLECTIONCOMPARISONEXHG"
+      ],
+      "unit": "lb./ft."
+    },
+    {
+      "availability": "direct",
+      "definition": "Uniform load on the member at which the last set of deflection readings was recorded.",
+      "evidence": "Table G p.31",
+      "name": "Load at last deflection reading",
+      "note": "",
+      "printed_symbol": "Load",
+      "quantity_kind": "force",
+      "role": "test_condition",
+      "symbols": [
+        "load_lb_ft"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEG_DEFLECTIONCOMPARISONEXHG"
+      ],
+      "unit": "lb./ft."
+    },
+    {
+      "availability": "direct",
+      "definition": "Square of the resultant member deflection d, computed as the sum of the squares of the horizontal and vertical deflections.",
+      "evidence": "Table I p.33",
+      "name": "Squared resultant deflection",
+      "note": "",
+      "printed_symbol": "d2",
+      "quantity_kind": "area",
+      "role": "derived_ratio",
+      "symbols": [
+        "d2_in2"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEI_CATENARYCHECKEXHIBITI"
+      ],
+      "unit": "in^2"
+    },
+    {
+      "availability": "simulated",
+      "definition": "Inward movement of one end support required to relieve catenary forces, computed as Δ = 8d²/3L.",
+      "evidence": "Table I p.33",
+      "name": "Required support movement",
+      "note": "",
+      "printed_symbol": "Δ",
+      "quantity_kind": "length",
+      "role": "predicted_value",
+      "symbols": [
+        "delta_required_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEI_CATENARYCHECKEXHIBITI"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Measured inward movement of the end support(s) during the test; averaged where both ends were measured.",
+      "evidence": "Table I p.33",
+      "name": "Measured support movement",
+      "note": "",
+      "printed_symbol": "",
+      "quantity_kind": "length",
+      "role": "measured_output",
+      "symbols": [
+        "measured_support_movement_in"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLEI_CATENARYCHECKEXHIBITI"
+      ],
+      "unit": "in."
+    },
+    {
+      "availability": "direct",
+      "definition": "Source table and PDF page in the report from which the tabulated failure load was taken.",
+      "evidence": "Table S1 p.11",
+      "name": "Value source and page",
+      "note": "Provenance metadata, not a physical quantity.",
+      "printed_symbol": "",
+      "quantity_kind": "category",
+      "role": "identifier",
+      "symbols": [
+        "value_source",
+        "pages"
+      ],
+      "table_tags": [
+        "MBMA_8703_TABLES1_STRENGTHSUMMARY"
+      ],
+      "unit": ""
+    }
+  ],
+  "year": "1987"
+}

@@ -1,0 +1,31 @@
+# Source: MBMA_9804 | Bryant, M.R. and Murray, T.M. (1999), Table 5.2, pp.65
+# Tag: MBMA_9804_TABLE52_STRENGTHIPNOTBRACEPOINT
+# Content: Predicted strengths and failure loads from the 1996 AISI Specifications assuming the inflection point is NOT a brace point (Cb = 1.0), compared with experimental failure loads.
+# Data basis: mixed: computed 1996 AISI nominal strengths compared with measured experimental failure loads
+# Units: moment columns in kip-inches; shear in kips; loads in plf; ratios dimensionless
+# Column definitions:
+#   test_number = test identification label as printed
+#   positive_moment_strength_kip_in = nominal positive moment region strength (R Se Fy), kip-inches
+#   negative_moment_strength_kip_in = nominal negative moment strength with Cb = 1.0, kip-inches
+#   shear_strength_kip = nominal shear strength per AISI Section C3.2, kips
+#   shear_bending_neg_moment_kip_in = negative moment strength reduced by combined shear and bending interaction, kip-inches
+#   critical_limit_state = governing predicted limit state
+#   predicted_failure_load_plf = predicted uniform failure load for the critical limit state, plf
+#   experimental_failure_load_plf = measured failure load including deck and purlin self-weight, plf
+#   exp_over_pred_shear_bending = ratio of experimental to predicted load for shear-bending limit state
+#   exp_over_pred_critical = ratio of experimental to predicted load for the critical limit state
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 169 pages)
+# ANOMALY FLAG: The critical limit state is printed inconsistently as "Shear - Bending" for Tests 1 and I.P. 3 but "Shear + Bending" for Test 4; preserved verbatim. The experimental failure load listed for I.P. Test 2 Z-SS (102.8 plf) differs from the 100.8 plf given in Table 3.2; preserved verbatim and not corrected.
+# Experimental failure load is the applied load plus roof sheeting weight times tributary width plus purlin weight.
+# The ratio of experimental-to-predicted failure loads varies between 0.955 and 1.226 with an average of 1.056 and standard deviation 0.0896.
+# APPLIED LOAD NOTE (Cris Moen, 2026-11-04; open question MBMA_9804-Q02): despite the note that the experimental failure load includes sheeting and purlin weight (p.65), the printed values match the applied load (Table 3.2), not the total from the test sheets: Tests 1, 3, I.P. 1, I.P. 3 equal the applied load; Test 2 142.4 vs applied 141.7 (total 150.60); Test 4 280.3 vs applied 280.1 (total 288.07); I.P. 2 102.8 = applied per the test sheet. The experimental/predicted ratios therefore rest on applied loads; they are legacy values carried as printed.
+test_number,positive_moment_strength_kip_in,negative_moment_strength_kip_in,shear_strength_kip,shear_bending_neg_moment_kip_in,critical_limit_state,predicted_failure_load_plf,experimental_failure_load_plf,exp_over_pred_shear_bending,exp_over_pred_critical
+Test 1 Z-TF,196.5,195.7,19.8,191.6,Shear - Bending,295.7,320.8,1.085,1.085
+Test 2 Z-SS,83.4,191.3,8.4,171.9,Positive Moment,138.8,142.4,0.563,1.026
+Test 3 C-SS,125.0,275.6,7.2,210.1,Positive Moment,220.7,210.8,0.618,0.955
+Test 4 C-TF,181.5,179.1,9.1,164.4,Shear + Bending,255.7,280.3,1.096,1.096
+I.P  Test 1 Z-SS,80.5,162.1,8.3,155.0,Positive Moment,103.5,104.8,0.797,1.013
+I.P. Test 2 Z-SS,80.5,162.1,8.3,155.0,Positive Moment,103.5,102.8,0.782,0.993
+I.P  Test 3 Z-TF,184.9,162.1,8.3,155.0,Shear - Bending,131.5,161.2,1.226,1.226

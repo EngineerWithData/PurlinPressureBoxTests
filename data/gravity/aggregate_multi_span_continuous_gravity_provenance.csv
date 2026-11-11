@@ -1,0 +1,28 @@
+# Origin of every cell in aggregate_multi_span_continuous_gravity.csv
+# R = reported as a column in that paper; C = constant stated in a table note;
+# D = derived from other variables by an exact rule; - = not available.
+source_paper,specimen_id,source_tables,specimen_id,load_direction,section_type,panel_type,clip_type,bracing,purlin_orientation,purlin_orientation_as_printed,opposed_flange_direction,n_spans,n_purlin_lines,span_ft,purlin_spacing_ft,total_lap_ft,depth_in,thickness_in,se_in3,yield_stress_ksi,r,predicted_failure_load_plf,failure_load_plf,failure_load_psf,load_unit_as_printed,total_load_incl_self_weight_plf,manometer_reading_at_failure_in_of_water,failure_moment_kip_in,moment_unit_as_printed,test_to_predicted_ratio,percent_deviation_from_actual,failure_mode,tensile_strength_ksi,failure_pressure_psf,percent_of_predicted_load
+MBMA_8903,Z-R-R/S-3,MBMA_8903_TABLES1_STRENGTHSUMMARY; MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS,-,R,R,R,R,R,-,-,-,R,R,R,-,-,R,R,-,R,-,-,R,-,R,-,-,-,-,R,-,R,-,-,-
+MBMA_8903,Z-R-R/F-3,MBMA_8903_TABLES1_STRENGTHSUMMARY; MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS,-,R,R,R,R,R,-,-,-,R,R,R,-,-,R,R,-,R,-,-,R,-,R,-,-,-,-,R,-,R,-,-,-
+MBMA_8903,Z-R-P/F-3,MBMA_8903_TABLES1_STRENGTHSUMMARY; MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS,-,R,R,R,R,R,-,-,-,R,R,R,-,-,R,R,-,R,-,-,R,-,R,-,-,-,-,R,-,R,-,-,-
+MBMA_8903,Z-R-P/S-3,MBMA_8903_TABLES1_STRENGTHSUMMARY; MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS,-,R,R,R,R,R,-,-,-,R,R,R,-,-,R,R,-,R,-,-,R,-,R,-,-,-,-,R,-,R,-,-,-
+MBMA_8903,C-R-P/S-3,MBMA_8903_TABLES1_STRENGTHSUMMARY; MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS,-,R,R,R,R,R,-,-,-,R,R,R,-,-,R,R,-,R,-,-,R,-,R,-,-,-,-,R,-,R,-,-,-
+MBMA_8903,Z-R-R/F-3 (0),MBMA_8903_TABLES1_STRENGTHSUMMARY; MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS,-,R,R,R,R,R,-,-,-,R,R,R,-,-,R,R,-,R,-,-,R,-,R,-,-,-,-,R,-,R,-,-,-
+MBMA_8903,Z-T-P/F-3,MBMA_8903_TABLES1_STRENGTHSUMMARY; MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS,-,R,R,R,R,R,-,-,-,R,R,R,-,-,R,R,-,R,-,-,R,-,R,-,-,-,-,R,-,R,-,-,-
+MBMA_8903,Z-T-P/S-3,MBMA_8903_TABLES1_STRENGTHSUMMARY; MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS,-,R,R,R,R,R,-,-,-,R,R,R,-,-,R,R,-,R,-,-,R,-,R,-,-,-,-,R,-,R,-,-,-
+MBMA_8903,Z-T-R/S-3,MBMA_8903_TABLES1_STRENGTHSUMMARY; MBMA_8903_TABLE21_MATRIXOFTESTCONFIGURATIONS,-,R,R,R,R,R,-,-,-,R,R,R,-,-,R,R,-,R,-,-,R,-,R,-,-,-,-,R,-,R,-,-,-
+MBMA_9804,Test 1 Z-TF,MBMA_9804_TABLES1_STRENGTHSUMMARY; MBMA_9804_TABLE22_TESTDETAILS; MBMA_9804_TABLE51_PURLINPROPERTIES,-,R,R,R,-,R,-,-,-,R,R,R,C,-,R,R,-,R,-,-,R,-,R,R,R,R,R,R,-,R,-,-,-
+MBMA_9804,Test 2 Z-SS,MBMA_9804_TABLES1_STRENGTHSUMMARY; MBMA_9804_TABLE22_TESTDETAILS; MBMA_9804_TABLE51_PURLINPROPERTIES,-,R,R,R,-,R,-,-,-,R,R,R,C,-,R,R,-,R,-,-,R,-,R,R,R,R,R,R,-,R,-,-,-
+MBMA_9804,Test 3 C-SS,MBMA_9804_TABLES1_STRENGTHSUMMARY; MBMA_9804_TABLE22_TESTDETAILS; MBMA_9804_TABLE51_PURLINPROPERTIES,-,R,R,R,-,R,-,-,-,R,R,R,C,-,R,R,-,R,-,-,R,-,R,R,R,R,R,R,-,R,-,-,-
+MBMA_9804,Test 4 C-TF,MBMA_9804_TABLES1_STRENGTHSUMMARY; MBMA_9804_TABLE22_TESTDETAILS; MBMA_9804_TABLE51_PURLINPROPERTIES,-,R,R,R,-,R,-,-,-,R,R,R,C,-,R,R,-,R,-,-,R,-,R,R,R,R,R,R,-,R,-,-,-
+MBMA_9804,I. P. Test 1 Z-SS,MBMA_9804_TABLES1_STRENGTHSUMMARY; MBMA_9804_TABLE22_TESTDETAILS; MBMA_9804_TABLE51_PURLINPROPERTIES,-,R,R,R,-,R,-,-,-,R,R,R,C,-,R,R,-,R,-,-,R,-,R,R,R,R,R,R,-,R,-,-,-
+MBMA_9804,I. P. Test 2 Z-SS,MBMA_9804_TABLES1_STRENGTHSUMMARY; MBMA_9804_TABLE22_TESTDETAILS; MBMA_9804_TABLE51_PURLINPROPERTIES,-,R,R,R,-,R,-,-,-,R,R,R,C,-,R,R,-,R,-,-,R,-,R,R,R,R,R,R,-,R,-,-,-
+MBMA_9804,I. P. Test 3 Z-TF,MBMA_9804_TABLES1_STRENGTHSUMMARY; MBMA_9804_TABLE22_TESTDETAILS; MBMA_9804_TABLE51_PURLINPROPERTIES,-,R,R,R,-,R,-,-,-,R,R,R,C,-,R,R,-,R,-,-,R,-,R,R,R,R,R,R,-,R,-,-,-
+MBMA_7506,Z Purlin Test,MBMA_7506_TABLES1_STRENGTHSUMMARY,-,R,R,R,-,R,-,-,-,R,R,R,-,-,R,R,-,-,-,-,-,R,R,-,-,-,-,-,-,R,-,-,-
+MBMA_7506,C Purlin Test,MBMA_7506_TABLES1_STRENGTHSUMMARY,-,R,R,R,-,R,-,-,-,R,R,R,-,-,R,R,-,-,-,-,-,R,R,-,-,-,-,-,-,R,-,-,-
+MBMA_9704,FV20-1,MBMA_9704_TABLES1_STRENGTHSUMMARY,-,R,R,R,-,R,D,R,D,R,R,R,-,-,R,R,-,R,-,R,-,-,R,R,-,-,-,-,-,R,R,R,R
+MBMA_9704,FV20-2,MBMA_9704_TABLES1_STRENGTHSUMMARY,-,R,R,R,-,R,D,R,D,R,R,R,-,-,R,R,-,R,-,R,-,-,R,R,-,-,-,-,-,R,R,R,R
+MBMA_9704,FV20-3,MBMA_9704_TABLES1_STRENGTHSUMMARY,-,R,R,R,-,R,D,R,D,R,R,R,-,-,R,R,-,R,-,R,-,-,R,R,-,-,-,-,-,R,R,R,R
+MBMA_9704,FV20-4,MBMA_9704_TABLES1_STRENGTHSUMMARY,-,R,R,R,-,R,D,R,D,R,R,R,-,-,R,R,-,R,-,R,-,-,R,R,-,-,-,-,-,R,R,R,R
+MBMA_9704,FV25-1,MBMA_9704_TABLES1_STRENGTHSUMMARY,-,R,R,R,-,R,D,R,D,R,R,R,-,-,R,R,-,R,-,R,-,-,R,R,-,-,-,-,-,R,R,R,R
+MBMA_9704,FV25-2,MBMA_9704_TABLES1_STRENGTHSUMMARY,-,R,R,R,-,R,D,R,D,R,R,R,-,-,R,R,-,R,-,R,-,-,R,R,-,-,-,-,-,R,R,R,R

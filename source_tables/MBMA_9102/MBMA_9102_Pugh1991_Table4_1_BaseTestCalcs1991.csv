@@ -1,0 +1,30 @@
+# Source: MBMA_9102 | Pugh, A.D. and Murray, T.M. (1991), Table 4.1, pp.29
+# Tag: MBMA_9102_TABLE41_BASETESTCALCS1991
+# Content: Base test failure loads, moments, AISI constrained bending capacities, stiffness-analysis moments and the resulting predicted versus actual multispan failure loads for the 1991 test sets.
+# Data basis: mixed: measured base test and multispan failure loads with moments from a 100 plf stiffness analysis and AISI 1986 constrained bending capacities
+# Units: see column headers (plf for loads, kip-in for moments, ksi for yield stress, ratio dimensionless)
+# Column definitions:
+#   test_designation = 1991 test set label (see notes for code)
+#   w_us_plf = measured failure load of the simple span base test, plf
+#   m_us_kip_in = maximum moment of the base test, w_US L^2/8, kip-in
+#   fy_ksi = measured yield stress of the multispan test purlin material, ksi
+#   m_aisi_kip_in = constrained bending capacity S_eff x F_y (allowable moment x 1.67), kip-in
+#   m_neg_max_kip_in = maximum negative moment per purlin from 100 plf stiffness analysis, kip-in
+#   m_pos_max_kip_in = maximum positive moment per purlin from 100 plf stiffness analysis, kip-in
+#   w_neg_p3_plf = predicted three span failure load if the negative moment controls, plf
+#   w_pos_p3_plf = predicted three span failure load if the positive moment controls, plf
+#   w_p3_plf = predicted three span failure load, the minimum of the two values, plf
+#   w_u3_plf = actual measured failure load of the three span test, plf
+#   w_u3_over_w_p3 = ratio of actual to predicted three span failure load, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 19 correct, 1 error; P(accuracy ≥ 0.8) = 94.2%, ≥ 0.9) = 63.5%, ≥ 0.95) = 28.3%
+# TEXT SOURCE: read from page images by the model (all 99 pages)
+# ANOMALY FLAG: Two printed inconsistencies, preserved verbatim: (1) for UZRP/S 1991 the controlling negative-moment prediction is printed as w-_P3 = 185.8 plf but w_P3 = 185.7 plf; (2) for UCRP/S (O) 1991 w+_P3 is printed as 368.8 plf whereas Appendix E computes 268.81 plf. The UZTR/F 1991 row has dashes for w_U3 and the ratio because that test failed in the deck; dashes are given as "-".
+# Definitions printed below the table: w_US = failure load of base test; M_US = maximum moment of base test; F_y = multispan material yield stress; M_AISI = allowable moment capacity x 1.67 (assuming constrained bending); M-_MAX and M+_MAX = maximum negative and positive moments from the 100 plf stiffness analysis; w-_P3 and w+_P3 = predicted three span failure loads if the respective moment controls; w_U3 = actual failure load of the multispan test.
+# Step by step calculations for each test set appear in Appendix E.
+# CORRECTION (Cris Moen, 2026-10-27; open question MBMA_9102-Q05): UCRP/S (O) 1991 w_pos_p3_plf changed from the printed 368.8 to 268.8 plf (typo): Appendix E (p.97) computes 114.30 x 100 / 42.52 = 268.81. The negative-moment branch (123.0) governs, so w_p3_plf and the ratio are unchanged. The ANOMALY FLAG above records the printed value.
+test_designation,w_us_plf,m_us_kip_in,fy_ksi,m_aisi_kip_in,m_neg_max_kip_in,m_pos_max_kip_in,w_neg_p3_plf,w_pos_p3_plf,w_p3_plf,w_u3_plf,w_u3_over_w_p3
+UZRP/S 1991,102.9,96.5,64.2,163.8,51.9,53.5,185.8,306.3,185.7,192.2,1.03
+UCRP/S (O) 1991,66.7,62.5,49.5,114.3,50.8,42.5,123.0,268.8,123.0,108.5,0.882
+UZTP/F (O) 1991,95.1,89.1,63.4,127.9,51.3,52.8,173.7,242.4,173.7,171.2,0.986
+UZTR/F 1991,91.6,85.2,56.4,133.7,50.4,46.0,170.2,290.8,170.2,-,-

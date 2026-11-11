@@ -1,0 +1,64 @@
+# Source: MBMA_1103 | Gao, T. and Moen, C.D. (2011), Table 6, pp.21
+# Tag: MBMA_1103_TABLE6_MEASUREDGIRTYIELDSTRESS
+# Content: Average measured tensile yield stress of three coupons (two flanges and web) taken from the failed girt of each vacuum box test.
+# Data basis: measured: tensile coupon tests on untested segments of each failed girt
+# Units: fy_ksi in ksi
+# Column definitions:
+#   test_name = label of the test whose failed girt was coupon-tested
+#   fy_ksi = average tensile yield stress of three coupons from the failed girt, ksi
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-05): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 53 pages)
+# ANOMALY FLAG: The printed table has three side-by-side (test name, yield stress) pairs per line; rows are returned column group by column group in printed order. Tests Z8DR4-1 and Z8DR4-2 of Table 5 appear here as Z8D4R13-1 and Z8D4R13-2; printed names preserved verbatim. Test Z8D-1 is absent (it failed by panel bending).
+# Panel yield stresses measured with one coupon each: panel D = 50 ksi, panel B = 80 ksi.
+# Surface paint was removed with acetone and steel wool before measuring base metal thickness.
+test_name,fy_ksi
+Z8D-2,60.97
+Z8D-3,60.18
+Z8DTH1-1,62.05
+Z8DTH1-2,60.61
+Z8DTH2-1,61.38
+Z8DTH2-2,61.71
+Z8DTH4-1,61.89
+Z8DTH4-2,61.00
+Z8D4R13-1,62.05
+Z8D4R13-2,60.60
+Z8B-1,62.76
+Z8B-2W,60.58
+Z8BTH1-1,61.03
+Z8BTH1-2,60.98
+Z8BTH2-1,61.53
+Z8BTH2-2,61.50
+Z8BTH4-1,61.01
+Z10D-1,58.49
+Z10D-2,58.09
+Z10DTH1-1,58.53
+Z10DTH1-2,59.30
+Z10DTH2-1,58.80
+Z10DTH2-2,58.35
+Z10DTH4-1,57.62
+Z10DTH4-2,59.35
+Z10B-1,58.21
+Z10B-2,57.88
+Z10BTH1-1,58.35
+Z10BTH1-2,57.69
+Z10BTH2-1,57.73
+Z10BTH2-2,58.35
+Z10BTH4-1,56.29
+Z10BTH4-2,59.38
+C8D-1,75.73
+C8D-2,75.34
+C8DTH1-1,76.16
+C8DTH1-2,76.31
+C8DTH2-1,74.52
+C8DTH2-2,76.95
+C8DTH4-1,78.44
+C8DTH4-2,79.38
+C10D-1,61.30
+C10D-2,60.06
+C10DTH1-1,59.57
+C10DTH1-2,59.42
+C10DTH2-1,59.93
+C10DTH2-2,59.85
+C10DTH4-1,60.42
+C10DTH4-2,59.94

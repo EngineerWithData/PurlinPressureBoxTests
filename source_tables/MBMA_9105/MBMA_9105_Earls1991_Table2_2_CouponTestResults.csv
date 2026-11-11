@@ -1,0 +1,21 @@
+# Source: MBMA_9105 | Earls, C.J., Pugh, A.D. and Murray, T.M. (1991), Table 2.2, pp.10
+# Tag: MBMA_9105_TABLE22_COUPONTESTRESULTS
+# Content: Tension coupon results for material taken from an undamaged section of a failed purlin in each test, tested per ASTM E8.
+# Data basis: measured: ASTM E8 tension coupon tests on material from a failed purlin of each assembly
+# Units: width_in, thickness_in inches; fy_ksi, fu_ksi ksi; elongation_pct percent
+# Column definitions:
+#   test = test designation the coupon was taken from (C1, C2, C3)
+#   width_in = measured width of the tension coupon, inches
+#   thickness_in = measured thickness of the tension coupon, inches
+#   fy_ksi = measured yield stress of the purlin steel, ksi
+#   fu_ksi = measured tensile (ultimate) stress of the purlin steel, ksi
+#   elongation_pct = percent elongation measured in the tension coupon test
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: all 18 cells checked (AI, 2026-11-04): 18 correct, 0 errors; P(accuracy ≥ 0.8) = 98.6%, ≥ 0.9) = 86.5%, ≥ 0.95) = 62.3%
+# TEXT SOURCE: read from page images by the model (all 42 pages)
+# Printed with tests as columns and properties as rows; transposed here so each test is one row.
+# Percent elongation values printed with a percent sign, kept verbatim.
+test,width_in,thickness_in,fy_ksi,fu_ksi,elongation_pct
+C1,0.498,0.107,58.9,73.1,32.0%
+C2,0.498,0.092,63.0,78.2,28.6%
+C3,0.505,0.100,64.8,79.0,26.3%

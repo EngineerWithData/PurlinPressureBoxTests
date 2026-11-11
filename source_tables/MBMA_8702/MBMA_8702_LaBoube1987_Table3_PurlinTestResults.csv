@@ -1,0 +1,37 @@
+# Source: MBMA_8702 | LaBoube, R.A. (1987), Table 3, pp.21
+# Tag: MBMA_8702_TABLE3_PURLINTESTRESULTS
+# Content: Measured ultimate uplift loads of the 12 braced purlin specimens compared with failure loads computed by the Cornell University method, an unstiffened-flange section analysis, and the modified Cornell method.
+# Data basis: mixed: measured failure loads from vacuum uplift tests with analytically computed failure loads and their ratios
+# Units: pu_lb_ft, pc_lb_ft, pc_prime_lb_ft, pc_dprime_lb_ft in lb/ft; ratio columns dimensionless
+# Column definitions:
+#   test_no = purlin test specimen number as printed
+#   pu_lb_ft = maximum uniform uplift load at failure measured in the vacuum chamber, lb/ft
+#   pc_lb_ft = failure load computed by the Cornell University method (Ref. 1), lb/ft
+#   pc_prime_lb_ft = failure load computed for an unstiffened-flange purlin section, lb/ft
+#   pc_dprime_lb_ft = failure load computed by the modified Cornell University method, lb/ft
+#   pu_over_pc = ratio of tested failure load to Cornell-computed failure load, dimensionless
+#   pu_over_pc_prime = ratio of tested load to unstiffened-flange computed load, dimensionless
+#   pu_over_pc_dprime = ratio of tested load to modified-Cornell computed load, dimensionless
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 34 pages)
+# ANOMALY FLAG: Two different tables carry the label "Table 3" in this document (see also the moment-capacity comparison on page 6); labels preserved as printed. Dashes ("-") indicate that the corresponding computed load was not evaluated for that specimen and are kept as printed. The Mean and Standard deviation rows apply only to the Pu/Pc" column.
+# Pu = maximum load at failure; Pc = failure load computed by Cornell University Method (Ref. 1); Pc' = failure load for unstiffened flange purlin; Pc" = failure load computed by modified Cornell University method.
+# Note on conversion: P(lb/ft) = Transducer Reading (psf) x 76/2 x 1/12.
+# Mean of Pu/Pc" = 1.026, standard deviation = 0.1010 (tests 5-12).
+# SELF-WEIGHT NOTE (Cris Moen, 2026-10-27; open question MBMA_8702-Q05): P_u is pressure only, by the report's formula P (lb/ft) = transducer reading (psf) x (76 in./2) x (1/12) (Table 3 note, p.21); no self-weight term. The specimen was mounted inverted, purlins on top (p.12). The report does not address self-weight; values carried as printed with no adjustment.
+test_no,pu_lb_ft,pc_lb_ft,pc_prime_lb_ft,pc_dprime_lb_ft,pu_over_pc,pu_over_pc_prime,pu_over_pc_dprime
+1,123.5,195.1,140.5,-,0.633,0.867,-
+2,139.3,232.1,139.7,-,0.600,0.998,-
+3,136.2,165.0,141.2,-,0.825,0.964,-
+4,146.8,191.9,160.6,-,0.765,0.914,-
+5,225.0,175.0,-,195.0,1.286,-,1.154
+6,215.6,184.4,-,210.0,1.169,-,1.027
+7,265.6,230.0,-,235.0,1.155,-,1.130
+8,259.4,230.0,-,233.1,1.128,-,1.113
+9,181.3,140.6,-,210.0,1.289,-,0.863
+10,187.5,106.3,-,200.0,1.765,-,0.938
+11,184.4,87.5,-,185.0,2.107,-,0.997
+12,171.9,81.3,-,174.1,2.115,-,0.987
+Mean,,,,,,,1.026
+Standard deviation,,,,,,,0.1010

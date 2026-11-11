@@ -1,0 +1,56 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 4-22, pp.97
+# Tag: MBMA_9410_TABLE422_VACUUMBOXTEST12
+# Content: Time history of panel displacements, chamber pressure and individual fastener loads for vacuum box test 12 (two span system, 24 gage American panels).
+# Data basis: measured: pressure transducer, LVDTs and load cells logged during the vacuum box test
+# Units: pt_psi in psi; LVDTs in inches; load cells in pounds
+# Column definitions:
+#   date = calendar date of the scan, mm/dd/yy
+#   time_hhmmss = clock time of the scan
+#   lvdt1_in = displacement measured by LVDT 1, inches
+#   lvdt2_in = displacement measured by LVDT 2, inches
+#   pt_psi = chamber pressure from the pressure transducer, psi
+#   lcell3_lb = load on the fastener at load cell 3, pounds
+#   lcell4_lb = load on the fastener at load cell 4, pounds
+#   lcell5_lb = load on the fastener at load cell 5, pounds
+#   lcell6_lb = load on the fastener at load cell 6, pounds
+#   lcell7_lb = load on the fastener at load cell 7, pounds
+#   lcell8_lb = load on the fastener at load cell 8, pounds
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 0 cells checked (AI, 2026-11-04): 0 correct, 0 errors, 20 unreadable; P(accuracy ≥ 0.8) = 20.0%, ≥ 0.9) = 10.0%, ≥ 0.95) = 5.0%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# ANOMALY FLAG: A large number of cells in this table were extracted with a space where the decimal point is printed (e.g. "18:30:11 600", "1 376", "238 290", "152 813", "-5608 835", "0 326", "2 504", "4 847", "-7 845", "-23 611", "10 127"); every such value is preserved exactly as extracted and was NOT corrected. Load cell 5 is locked at about -808.6 lb and load cell 8 reads about -5300 to -8700 lb throughout (lost channels).
+# Printed summary: Test Number 12; Failed Cells #3, #4, #6, #7, all Pullover; Peak Loads 660.332 / 725 553 / 604.976 / 649.761; Peak Pressures 1.264 / 1 514 / 1 514 / 1.514; Peak LVDT 1 2.260 / 6 501 / 6.501 / 6.501; Peak LVDT 2 1.874 / 5 922 / 5.922 / 5.922; Elapsed Time 02:29.1; Size 24 Ga.; Type American.
+# Printed comments: Excellent test. Minor panel buckling. No pullout failure. Lost Load Cell #8. Lost Load Cell #5.
+date,time_hhmmss,lvdt1_in,lvdt2_in,pt_psi,lcell3_lb,lcell4_lb,lcell5_lb,lcell6_lb,lcell7_lb,lcell8_lb
+12/07/95,18:30:11 600,1.138,1 376,-0.195,238 290,152 813,-808.782,89 299,240 875,-5608 835
+12/07/95,18:30:16 600,1.141,1.375,-0.196,238 255,152 761,-808.422,89.193,241 001,-5344 896
+12/07/95,18:30:21 600,1.169,1.402,-0.187,238 583,152 781,-808.490,88.919,240 770,-6155 640
+12/07/95,18:30:26 600,1.570,1.781,-0 028,287 824,196 092,-808 816,151 651,277.184,-5997 132
+12/07/95,18:30:31.600,2.111,2 211,0 326,485 326,356 272,-808.765,330 883,473 135,-7219 982
+12/07/95,18:30:36 600,2 504,2 530,0 593,632 175,461 097,-808.748,479 759,620 660,-5764 753
+12/07/95,18:30:41 600,2.765,2 748,0.762,712 277,508 394,-808.633,575 319,695 294,-5267 492
+12/07/95,18:30:46 600,2.909,2 995,0 843,766 122,557 021,-808.618,656 973,731.771,-6891 348
+12/07/95,18:30:51 600,3.070,3.093,0 934,817 027,598 959,-808.570,717 983,749 894,-6507 936
+12/07/95,18:30:56 600,3 186,3.132,0 993,849 760,627 943,-808.582,755 493,758 693,-6595 403
+12/07/95,18:31:01 600,3.333,3.217,1 034,884 760,651 105,-808.530,780 977,769 592,-6750 452
+12/07/95,18:31:06 600,3.397,3 250,1 069,898 623,666 454,-808.797,795.705,769 907,-6701 297
+12/07/95,18:31:11 600,3.472,3 276,1 079,774 359,700 911,-808 624,829 877,773 771,-6251 100
+12/07/95,18:31:16 600,3 575,3.322,1 089,605 512,714.904,-808 658,837 371,775 787,-6162 004
+12/07/95,18:31:21 600,4 847,4 714,0 938,-7 845,710 619,-808 633,772 941,683 891,-7885 797
+12/07/95,18:31:26 600,5 273,5 014,1.016,-5 622,743 960,-808 637,749 441,717 281,-6407 666
+12/07/95,18:31:31 600,5 575,5.244,1.049,-4 834,778 215,-808 574,778 597,733 829,-7636 583
+12/07/95,18:31:36 600,5 942,5 652,1.052,-4 424,785 544,-808 841,723.251,740 738,-6303 270
+12/07/95,18:31:41 600,6 084,5 813,1.077,-4.118,796 148,-808 723,693.441,754 598,-8664 259
+12/07/95,18:31:46 600,6 181,5 923,1.094,-4.021,799 177,-808 591,653 243,761 486,-6631 349
+12/07/95,18:31:51 600,6 352,5 991,1.096,-3 724,799 639,-808 658,626 887,761 465,-7795 406
+12/07/95,18:31:56 600,6 405,6 013,1.093,-3 767,798 628,-808 744,611 933,761 675,-7439 096
+12/07/95,18:32:01 600,6 443,6.045,1.104,-3 734,800 827,-808 561,610 577,763 187,-6557.516
+12/07/95,18:32:06 600,6 467,6.082,1.110,-3 508,801 954,-808 551,608 791,764 720,-7270 580
+12/07/95,18:32:11 600,6 566,6.196,1.165,-3 287,839 809,-808 526,650 361,797 816,-6385 910
+12/07/95,18:32:16 600,6 858,6 611,1.191,-3 537,820 791,-808 448,718.259,866 654,-6891.422
+12/07/95,18:32:21 600,7 219,6 839,1.244,-3 186,832 793,-808 595,761.723,885 449,-6834 275
+12/07/95,18:32:26 600,7 380,7 008,1.276,-3 204,848 848,-808 450,795.801,910 838,-6809 189
+12/07/95,18:32:31 600,7 484,7.111,1.298,-3 186,866 284,-808 607,802.699,928 940,-6464 238
+12/07/95,18:32:36 600,7 586,7.229,1.313,-3 003,872 727,-808 540,783 885,932 195,-7201 556
+12/07/95,18:32:40 699,7 639,7.298,1.319,-2 913,878 366,-808 753,694 275,890 636,-6060 846
+12/07/95,18:32:40.800,7 645,7.305,0 030,-7.747,108 243,-808 643,-23 611,10 127,-6182 854

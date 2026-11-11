@@ -1,0 +1,35 @@
+# Source: MBMA_9410 | Ellifritt, D.S. and Kreiner, J.S. (1996), Table 3-2, pp.29
+# Tag: MBMA_9410_TABLE32_NORMDISTPASCOE24GA
+# Content: Standardized normal distribution (Z) values computed from the 24 gage Pascoe standard pullover test loads.
+# Data basis: computed: standardized normal variate from the Table 3-1 mean and standard deviation
+# Units: sorted_cmpsta dimensionless; sorted_loads_lbs in pounds
+# Column definitions:
+#   sorted_cmpsta = standardized normal variate (composita) of the sorted load, dimensionless
+#   sorted_loads_lbs = ultimate load sorted in ascending order, pounds
+#   test_no = test number from Table 3-1 corresponding to the load
+# EXTRACTION QUALITY: clean — values copied exactly as extracted from the PDF text
+# VALIDATION: 20 cells checked (AI, 2026-11-04): 20 correct, 0 errors; P(accuracy ≥ 0.8) = 99.1%, ≥ 0.9) = 89.1%, ≥ 0.95) = 65.9%
+# TEXT SOURCE: read from page images by the model (all 206 pages)
+# Area of rejection taken as |Z| >= 1.96; only test 15 falls in that area.
+sorted_cmpsta,sorted_loads_lbs,test_no
+-1.9961,1430,15
+-1.55369,1510,16
+-1.33249,1550,12
+-1.11129,1590,8
+-0.77948,1650,2
+-0.39237,1720,6
+-0.39237,1720,14
+-0.28177,1740,19
+-0.22647,1750,4
+0.050034,1800,3
+0.050034,1800,13
+0.050034,1800,21
+0.160636,1820,20
+0.38184,1860,18
+0.437141,1870,10
+0.713645,1920,1
+0.713645,1920,11
+0.768946,1930,9
+1.377257,2040,7
+1.59846,2080,17
+1.764363,2110,5
